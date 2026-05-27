@@ -199,6 +199,18 @@ function downloadPDF() {
 }
 /*-------------------------------------- PDF-DOWNLOADER ----------------------------------------*/
 
+/*-------------------------------------- CARD-SHOW ----------------------------------------*/
+document.addEventListener("click", function (e) {
+  const header = e.target.closest(".table-card-header");
+  if (!header) return;
+
+  const card = header.closest(".section-card");
+  const body = card.querySelector(".table-card-body");
+
+  body.classList.toggle("show");
+});
+/*-------------------------------------- CARD-SHOW ----------------------------------------*/
+
 function getOTP() {
   return Array.from(otpInputs).map(input => input.value).join('');
 }
@@ -223,6 +235,10 @@ function showSection(sectionId, btn){
 
 function toggleSidebar(){
   document.getElementById("sidebar").classList.toggle("show");
+}
+
+function closeSidebar(){
+  document.getElementById("sidebar").classList.remove("show");
 }
 
 function filterByDateRange(tableId, fromId, toId){
