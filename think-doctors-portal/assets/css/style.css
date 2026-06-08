@@ -370,23 +370,21 @@ table{
     margin:0 6px 6px 0;
 }
 
-@media(max-width:991px){
-    .sidebar{
-    transform:translateX(-100%);
-    transition:.3s;
-    }
+.sidebar{
+transform:translateX(-100%);
+transition:.3s;
+}
 
-    .sidebar.show{
-    transform:translateX(0);
-    }
+.sidebar.show{
+transform:translateX(0);
+}
 
-    .main{
-    margin-left:0;
-    }
+.main{
+margin-left:0;
+}
 
-    .mobile-toggle{
-    display:inline-flex;
-    }
+.mobile-toggle{
+display:inline-flex;
 }
 
 button.btn.btn-brand:hover {
@@ -1167,6 +1165,15 @@ button.btn.dropdown-toggle {
     font-weight: 400;
     margin-bottom: 0;
 }
+
+.modal-backdrop {
+    background-color: #00000050;
+    backdrop-filter: blur(5px);
+}
+
+.modal-backdrop.show {
+    opacity: 1;
+}
 /*-------------------------------------- MODAL ----------------------------------------*/
 
 /*-------------------------------------- DROPDOWN ----------------------------------------*/
@@ -1357,7 +1364,27 @@ table tbody tr td {
         border-right-width: 2px;
     }
     .bottom-island {
+        bottom: unset;
+        top: 0;
+        left: 40px;
+        width: unset;
+        background: none;
+        backdrop-filter: none;
+        padding: 12px 0;
+    }
+    .bottom-island-bar {
+        max-width: unset;
+        background: none;
+        border: none;
+    }
+    .bottom-island-bar a.bottom-island-pill:nth-child(odd) {
         display: none;
+    }
+    a.bottom-island-pill.active {
+        background: #fff;
+        color: #4E71FF;
+        border-radius: 10px;
+        padding: 5px 10px;
     }
     .sidebar {
         width: 270px;
