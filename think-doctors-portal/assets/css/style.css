@@ -18,6 +18,10 @@ body{
     color:var(--dark);
 }
 
+a {
+    text-decoration: none;
+}
+
 label {
     color: #0b122e;
     font-size: 13px;
@@ -140,10 +144,10 @@ img {
 .bottom-island-bar {
     height: auto;
     width: 100%;
-    max-width: 75%;
+    max-width: 70%;
     margin: 0 auto;
     background: #ffffff91;
-    border-bottom: 4px solid var(--border);
+    border-bottom: 6px solid var(--border);
     box-shadow: 0 18px 45px rgba(15, 23, 42, .07);
     border-radius: 50px;
     display: flex;
@@ -152,7 +156,7 @@ img {
 }
 
 a.bottom-island-pill {
-    padding: 8px 15px;
+    padding: 6px 15px;
     border-radius: 15px;
     background: #fff;
     color: #4E71FF;
@@ -182,6 +186,21 @@ a.bottom-island-pill.active {
 .inner-page-section .main {
     margin-left: 0;
     min-height: auto;
+}
+
+.inner-page-section.profile .main-overlay,
+.inner-page-section.profile .profile-top-decor,
+.inner-page-section.profile .profile-top-decor::after {
+    border-radius: 0;
+}
+
+.inner-page-section.profile .portal-section {
+    padding: 0;
+}
+
+.inner-page-section.profile .content {
+    background: none;
+    border: none;
 }
 
 .main-overlay {
@@ -302,8 +321,8 @@ table{
 }
 
 .badge-soft.profile-badge-top img {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #f3f3f3;
@@ -833,7 +852,7 @@ button.btn.dropdown-toggle {
     height: auto;
     width: 100%;
     padding: 10px 0;
-    background: #b3d8a81c;
+    background: #4e71ff0a;
     text-align: center;
 }
 
@@ -843,9 +862,14 @@ button.btn.dropdown-toggle {
     color: #0b122e;
 }
 
-.login-condition-bottom p span {
+.login-condition-bottom p a {
     font-weight: 500;
     color: #4E71FF;
+    text-decoration: none;
+}
+
+.login-condition-bottom p a:hover {
+    text-decoration: underline;
 }
 
 .login-card h5 {
@@ -900,14 +924,16 @@ button.btn.dropdown-toggle {
     height: auto;
     width: 100%;
     border-radius: 10px;
+    border-bottom: 1px solid #ffffffcf;
     position: relative;
     z-index: 1;
 }
 
 .sec-card-decor {
     position: absolute;
-    top: 4px;
-    right: 20px;
+    top: 50%;
+    right: 0;
+    transform: translate(-40%, -50%);
     padding: 7px;
     border-radius: 10px;
     background: #ffffff40;
@@ -1079,6 +1105,16 @@ button.btn.dropdown-toggle {
     justify-content: space-between;
 }
 
+.table-cta .btn-re-brand {
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.table-cta .btn-brand {
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
 .btn-re-brand {
     background: linear-gradient(325deg, #8dd8ff8a, #fff);
     color: #0b122eeb;
@@ -1195,6 +1231,10 @@ button.btn.dropdown-toggle {
     text-decoration: none;
 }
 
+.modal-normal-instrustion a i {
+    color: #211C84;
+}
+
 .modal-backdrop {
     background-color: #00000050;
     backdrop-filter: blur(5px);
@@ -1253,7 +1293,7 @@ button.btn.dropdown-toggle {
 /*-------------------------------------- SWITCH ----------------------------------------*/
 
 .form-switch {
-    padding-left: 18px;
+    padding-left: 20px;
 }
 
 .form-check-input {
@@ -1300,12 +1340,12 @@ button.btn.dropdown-toggle {
     position: absolute;
     top: 3px;
     left: 8px;
-    font-size: 17px;
+    font-size: 15px;
     color: #211C84;
 }
 
 .icon-input input {
-    padding-left: 40px;
+    padding-left: 35px;
 }
 
 .profile-top-decor {
@@ -1373,7 +1413,7 @@ table tbody tr td {
 .doctor-card-info p {
     color: #0b122e;
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .doctor-card-info p:last-child {
@@ -1382,6 +1422,7 @@ table tbody tr td {
 
 .doctor-card-info p strong {
     color: #211C84;
+    font-weight: 600;
 }
 
 .doc-float-btn {
@@ -1399,6 +1440,41 @@ table tbody tr td {
 .form-check .form-check-input {
     float: unset;
     margin-left: -1em;
+}
+
+a.call-notifier {
+    display: block;
+    position: fixed;
+    bottom: 20%;
+    right: -22%;
+    border: 1px solid var(--border);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, .07);
+    border-radius: 50px;
+    padding: 8px 15px 8px 4px;
+    background: #ffffff70;
+    backdrop-filter: blur(20px);
+    font-size: 11px;
+    color: #211C84;
+    margin-bottom: 0;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+a.call-notifier i {
+    padding: 7px 8px;
+    border-radius: 50%;
+    background: #1bad1b;
+    color: #fff;
+    font-size: 12px;
+}
+
+a.call-notifier:hover {
+    right: 0;
+}
+
+.doc-float-btn .btn-brand {
+    padding: 6px 10px;
+    border-radius: 50px;
 }
 
 @media screen and (min-width: 576px) and (max-width: 1920px) {
@@ -1467,9 +1543,6 @@ table tbody tr td {
         font-size: 15px;
         padding: 20px 10px;
     }
-    .sec-card-decor {
-        top: 7px;
-    }
     .modal-normal-instrustion {
         padding: 12px 0;
     }
@@ -1518,7 +1591,7 @@ table tbody tr td {
         border-radius: 0 !important;
     }
     .topbar {
-        padding: 12px 15px;
+        padding: 10px 15px;
     }
     .login-card {
         padding: 18px 20px;
@@ -1539,7 +1612,7 @@ table tbody tr td {
         padding: 18px 0;
     }
     .inner-page-section .content {
-        padding: 20px 10px 90px;
+        padding: 20px 10px 80px;
     }
     .time-slot-card {
         padding: 2px 8px;
