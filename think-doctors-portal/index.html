@@ -306,7 +306,7 @@
       </div>
 
       <button class="nav-btn mt-2" onclick="showSection('refer',this)">
-        <i class="bi bi-person-gear"></i> Refer
+        <i class="bi bi-building-add"></i> Refer
       </button>
 
       <div class="sub-menu">
@@ -1362,9 +1362,9 @@
                       <th>Gender</th>
                       <th>Age</th>
                       <th>Appointment Date</th>
-                      <th>Time Slot</th>
+                      <th>Time</th>
                       <th>Symptoms</th>
-                      <th>Registration File</th>
+                      <th>File</th>
                     </tr>
                   </thead>
 
@@ -1468,6 +1468,156 @@
               </div>
             </div>
           </section>
+
+          <section id="referIn" class="portal-section d-none">
+
+            <div class="section-card p-0">
+              <div class="head-portion">
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Refer In</h5>
+              </div>
+            </div>
+
+            <div class="section-card">
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Doctor Name: Dr. Abhimanyu</h3>
+              </div>
+
+              <div class="table-responsive">
+                <table id="referInListTable" class="table table-bordered align-middle">
+                  <thead>
+                    <tr>
+                      <th width="80" valign="middle">#</th>
+                      <th valign="middle">Reffered By</th>
+                      <th>
+                        <div class="d-flex align-items-center justify-content-between">
+                          Date
+                          <div class="sec-card-decor relative ms-1">
+                            <img src="assets/images/filter-funel.png" alt="decor icon">
+                          </div>
+                        </div></th>
+                      <th>
+                        <div class="d-flex align-items-center justify-content-between">
+                          Department
+                          <div class="sec-card-decor relative ms-1">
+                            <img src="assets/images/filter-funel.png" alt="decor icon">
+                          </div>
+                        </div>
+                      </th>
+                      <th valign="middle">Contact</th>
+                      <th>
+                        <div class="d-flex align-items-center justify-content-between">
+                          Associated Branch
+                          <div class="sec-card-decor relative ms-1">
+                            <img src="assets/images/filter-funel.png" alt="decor icon">
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td width="80">01</td>
+                      <td>Dr. Amit Kumar Das</td>
+                      <td>09-05-2026</td>
+                      <td>Cardiology</td>
+                      <td>
+                        <span class="badge bg-danger">Nil</span>
+                      </td>
+                      <td>New Branch 2</td>
+                    </tr>
+                    <tr>
+                      <td width="80">02</td>
+                      <td>Dr. Priya Saha</td>
+                      <td>09-05-2026</td>
+                      <td>Urology</td>
+                      <td>+91 XXXXXXXXXX</td>
+                      <td>Branch Elgin Road</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section id="referOut" class="portal-section d-none">
+
+            <div class="section-card p-0">
+              <div class="head-portion">
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Refer Out</h5>
+              </div>
+            </div>
+
+            <div class="section-card">
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Doctor Name: Dr. Abhimanyu</h3>
+              </div>
+
+              <div class="table-responsive">
+                <table id="referOutListTable" class="table table-bordered align-middle">
+                  <thead>
+                    <tr>
+                      <th width="80" valign="middle">#</th>
+                      <th valign="middle">Reffered By</th>
+                      <th>
+                        <div class="d-flex align-items-center justify-content-between">
+                          Date
+                          <div class="sec-card-decor relative ms-1">
+                            <img src="assets/images/filter-funel.png" alt="decor icon">
+                          </div>
+                        </div></th>
+                      <th>
+                        <div class="d-flex align-items-center justify-content-between">
+                          Department
+                          <div class="sec-card-decor relative ms-1">
+                            <img src="assets/images/filter-funel.png" alt="decor icon">
+                          </div>
+                        </div>
+                      </th>
+                      <th valign="middle">Contact</th>
+                      <th>
+                        <div class="d-flex align-items-center justify-content-between">
+                          Associated Branch
+                          <div class="sec-card-decor relative ms-1">
+                            <img src="assets/images/filter-funel.png" alt="decor icon">
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td width="80">01</td>
+                      <td>Dr. Amit Kumar Das</td>
+                      <td>09-05-2026</td>
+                      <td>Cardiology</td>
+                      <td>
+                        <span class="badge bg-danger">Nil</span>
+                      </td>
+                      <td>New Branch 2</td>
+                    </tr>
+                    <tr>
+                      <td width="80">02</td>
+                      <td>Dr. Priya Saha</td>
+                      <td>09-05-2026</td>
+                      <td>Urology</td>
+                      <td>+91 XXXXXXXXXX</td>
+                      <td>Branch Elgin Road</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
           
         </div>
 
@@ -1495,15 +1645,14 @@
 
   </div>
 
-  <div class="modal fade" id="prescriptionModal" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="prescriptionModal" tabindex="-1">
     <div class="modal-dialog modal-xl modal-dialog-scrollable">
       <div class="modal-content" style="overflow:hidden;">
         <div class="modal-header" style="background:#eef7ff;">
           <div>
             <h5 class="modal-title fw-bold">Online Prescription</h5>
-            <small class="text-muted">Patient details are auto fetched from booking check-in.</small>
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
         </div>
 
         <div class="modal-body">
@@ -1791,7 +1940,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
         </div>
         <div class="modal-body py-3">
-          <div class="filter-box g-3">
+          <div class="filter-box g-3 mb-2 p-0">
             <div class="check-list-part">
               <label class="form-label mb-0">Share Person One</label>
               <input id="" type="checkbox">
@@ -1829,7 +1978,7 @@
               <input id="" type="checkbox">
             </div>
           </div>
-          <div class="text-center">
+          <div class="text-end">
             <button class="btn btn-brand" onclick="">
               Share
             </button>
