@@ -342,6 +342,7 @@
         <div class="content">
 
           <section id="dashboard" class="portal-section d-none">
+
             <div class="section-card p-0">
               <div class="head-portion">
                 <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Dashboard</h5>
@@ -349,6 +350,7 @@
             </div>
 
             <div class="section-card">
+
               <!-- <div class="card shadow-sm p-3 rounded-4" style="max-width:420px;">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <h5 class="mb-0">Data Shower</h5>
@@ -356,6 +358,131 @@
                 </div>
                 <canvas id="circleChart" width="380" height="280"></canvas>
               </div> -->
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Business Overview</h3>
+              </div>
+              
+              <div class="row gx-2 align-items-end">
+                <div class="col-sm-4 col-9">
+                  <select id="regDate" class="form-select">
+                    <option value="0" selected="">Today</option>
+                    <option value="1">Last 7 days</option>
+                    <option value="2">This Month</option>
+                    <option value="3">Last Month</option>
+                    <option value="4">Custom Date Range</option>
+                  </select>
+                </div>
+
+                <div class="col-sm-2 col-3">
+                  <button class="btn btn-brand w-100" onclick="filterByDateRange('consultancyTable','consultFromDate','consultToDate')">
+                    Search
+                  </button>
+                </div>
+              </div>
+
+              <div class="row gx-2 mt-3">
+                <div class="col-sm-6 col-6">
+                  <div class="doctor-card p-3">
+                    <div class="icon-soft"><i class="bi bi-person-plus"></i></div>
+                    <h5 class="fw-bold">12</h5>
+                    <h6>Referred Patients</h6>
+                    <span class="badge bg-info">2 New Today</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-6">
+                  <div class="doctor-card p-3">
+                    <div class="icon-soft"><i class="bi bi-file-earmark-plus"></i></div>
+                    <h5 class="fw-bold">12</h5>
+                    <h6>Referred Patients</h6>
+                    <span class="badge bg-info">460 + Appointed</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="section-card">
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Business Overview</h3>
+              </div>
+
+              <div class="earnings-card">
+                <div class="total-earning-main">
+                  <div>
+                    <h6 class="usable-medium-label">Total Earnings</h6>
+                    <h3 class="usable-large-label">₹18,400</h3>
+                    <h5 class="usable-small-label"><i class="fa-solid fa-arrow-up"></i> 5.4% vs yesterday</h5>
+                  </div>
+
+                  <div class="mini-chart">
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <svg viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 60 C18 58, 25 46, 42 48 C58 50, 62 38, 76 36 C92 34, 98 20, 112 16" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                      <circle cx="112" cy="16" r="5" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="row gx-2">
+                  <div class="col-sm-6 col-6">
+                    <div class="earning-mini-box">
+                      <h6 class="usable-medium-label">Total Earnings</h6>
+                      <h3 class="usable-large-label">₹18,400</h3>
+                      <h5 class="usable-small-label"><i class="fa-solid fa-arrow-up"></i> 5.4%</h5>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-6">
+                    <div class="earning-mini-box">
+                      <h6 class="usable-medium-label">Total Earnings</h6>
+                      <h3 class="usable-large-label">₹18,400</h3>
+                      <h5 class="usable-small-label"><i class="fa-solid fa-arrow-up"></i> 5.4%</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="doctor-card menu-card mb-3">
+              <div>
+                <h3>Booking</h3>
+                <p>Manage confirmed clinic and polyclinic bookings in one place.</p>
+              </div>
+              <a href="#" class="btn btn-brand">
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+
+            <div class="doctor-card menu-card mb-3">
+              <div>
+                <h3>Point Earnings</h3>
+                <p>Track diagnostic referrals, patient conversions and point value.</p>
+              </div>
+              <a href="#" class="btn btn-brand">
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+
+            <div class="doctor-card menu-card mb-3">
+              <div>
+                <h3>Consultancy Earnings</h3>
+                <p>View consultation earnings, paid amount and payment history.</p>
+              </div>
+              <a href="#" class="btn btn-brand">
+                <i class="bi bi-chevron-right"></i>
+              </a>
             </div>
 
           </section>
@@ -1201,7 +1328,7 @@
 
           </section>
 
-          <section id="selfRegistration" class="portal-section d-none">
+          <section id="selfRegistration" class="portal-section d-none">  
 
             <div class="section-card p-0">
               <div class="head-portion">
@@ -1237,7 +1364,7 @@
                       <th>Appointment Date</th>
                       <th>Time Slot</th>
                       <th>Symptoms</th>
-                      <th>Patient Registration File</th>
+                      <th>Registration File</th>
                     </tr>
                   </thead>
 
