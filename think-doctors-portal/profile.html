@@ -91,7 +91,7 @@
                 </div> -->
                 <div class="profile-top-decor">
                 
-                  <div class="col-sm-3 col-5">
+                  <div class="col-sm-2 col-6">
                     <div class="profile-img-block">
                       <img src="assets/images/dummy-doctor.jpg" alt="doctor-img" />
                       <div class="profile-pic-change" data-bs-toggle="modal" data-bs-target="#profile_pic_chng">
@@ -177,31 +177,26 @@
                         <div class="row">
                           <div class="col-sm-12 col-12 mb-3">
                             <div class="d-flex align-items-center">
-                              <label class="form-label me-2">Show Number on Portal ?</label>
-                              <div class="d-flex align-items-center">
-                                <div class="form-check me-2">
-                                  <input class="form-check-input" type="checkbox" id="agreeYes" value="yes">
-                                  <label class="form-check-label" for="agreeYes">Yes</label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" id="agreeNo" value="no">
-                                  <label class="form-check-label" for="agreeNo">No</label>
-                                </div>
+                              <label class="form-label me-2 mb-0">Show Number on Portal</label>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="">
                               </div>
+
+                              <!-- <div class="form-check me-2">
+                                <input class="form-check-input" type="checkbox" id="agreeYes" value="yes">
+                                <label class="form-check-label" for="agreeYes">Yes</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="agreeNo" value="no">
+                                <label class="form-check-label" for="agreeNo">No</label>
+                              </div> -->
                             </div>
                           </div>
                           <div class="col-sm-12 col-12 mb-3">
                             <div class="d-flex align-items-center">
-                              <label class="form-label me-2">Show Fees on Portal ?</label>
-                              <div class="d-flex align-items-center">
-                                <div class="form-check me-2">
-                                  <input class="form-check-input" type="checkbox" id="agreeYes" value="yes">
-                                  <label class="form-check-label" for="agreeYes">Yes</label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" id="agreeNo" value="no">
-                                  <label class="form-check-label" for="agreeNo">No</label>
-                                </div>
+                              <label class="form-label me-2 mb-0">Show Fees on Portal</label>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="">
                               </div>
                             </div>
                           </div>
@@ -247,94 +242,10 @@
       <div class="modal-content">
         <div class="modal-body py-0">
           <div class="modal-normal-instrustion">
-            <h6>View Profile Pictue</h6>
+            <a href="#">View Profile Pictue</a>
           </div>
           <div class="modal-normal-instrustion">
-            <h6>Change Profile Pictue</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--------------------- MODAL SECTION ------------------------>
-
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="profile_name_edit_modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Edit The Profile</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-12">
-              <label class="form-label">Doctor's Full Name:</label>
-              <input id="doctorFName" type="text" class="form-control" placeholder="" value="Dr. Ranjit Halder">
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand w-100" data-bs-dismiss="modal">
-              Update <i class="bi bi-pencil px-1"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--------------------- MODAL SECTION ------------------------>
-
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="profile_mob_edit_modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Edit The Profile</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-12">
-              <label class="form-label">Contact No:</label>
-              <input id="doctorMobile" type="number" class="form-control" placeholder="" value="9876543210">
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand w-100" data-bs-dismiss="modal">
-              Update <i class="bi bi-pencil px-1"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--------------------- MODAL SECTION ------------------------>
-
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="profile_add_edit_modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Edit The Profile</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-12">
-              <label class="form-label">Doctor's Full Name:</label>
-              <textarea id="doctorAdd" rows="4" class="form-control" placeholder="" value="">21/1, Shibpur, Howrah 712 134</textarea>
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand w-100" data-bs-dismiss="modal">
-              Update <i class="bi bi-pencil px-1"></i>
-            </button>
+            <a href="#">Change Profile Pictue</a>
           </div>
         </div>
       </div>
