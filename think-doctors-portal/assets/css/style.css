@@ -140,7 +140,7 @@ img {
 .bottom-island-bar {
     height: auto;
     width: 100%;
-    max-width: 80%;
+    max-width: 75%;
     margin: 0 auto;
     background: #ffffff91;
     border-bottom: 4px solid var(--border);
@@ -152,8 +152,8 @@ img {
 }
 
 a.bottom-island-pill {
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 8px 15px;
+    border-radius: 15px;
     background: #fff;
     color: #4E71FF;
     display: block;
@@ -262,7 +262,7 @@ a.bottom-island-pill.active {
     border:1px solid var(--border);
     border-radius:16px;
     padding:15px 5px;
-    margin-bottom:18px;
+    margin-bottom:15px;
 }
 
 table{
@@ -522,21 +522,50 @@ button.btn.dropdown-toggle {
 .mobile-table-head-new {
     height: auto;
     width: 100%;
-    max-width: 70%;
-    padding: 15px 18px;
-    border-radius: 5px;
-    background: linear-gradient(-135deg,#b3d8a8 20%,#8DD8FF 100%);
-    border: 1px solid #eef2f8;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, .07);
     margin-bottom: 15px;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+}
+
+.decor-head-circle-outer,
+.decor-head-circle-inner {
+    display: inline-block;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+}
+
+.decor-head-circle-outer {
+    height: 25px;
+    width: 25px;
+    background: #4e71ff26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: circleGrowing 1s ease-in-out infinite;
+}
+
+@keyframes circleGrowing {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+}
+
+.decor-head-circle-inner {
+    height: 13px;
+    width: 13px;
+    background: #4e71ff73;
 }
 
 .mobile-table-head-new h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 0;
-    color: #211C84;
+    color: #4E71FF;
 }
 
 .up-ip {
@@ -877,16 +906,16 @@ button.btn.dropdown-toggle {
 
 .sec-card-decor {
     position: absolute;
-    top: 6px;
+    top: 4px;
     right: 20px;
-    padding: 8px;
+    padding: 7px;
     border-radius: 10px;
     background: #ffffff40;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     cursor: pointer;
 }
 
@@ -1159,11 +1188,11 @@ button.btn.dropdown-toggle {
     padding: 10px 0;
 }
 
-.modal-normal-instrustion h6  {
+.modal-normal-instrustion a  {
     color: #0b122e;
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 0;
+    text-decoration: none;
 }
 
 .modal-backdrop {
@@ -1174,6 +1203,13 @@ button.btn.dropdown-toggle {
 .modal-backdrop.show {
     opacity: 1;
 }
+
+@media (min-width: 576px) {
+    .modal#booking_invoice_shower_modal .modal-dialog {
+        max-width: 1100px;
+    }
+}
+
 /*-------------------------------------- MODAL ----------------------------------------*/
 
 /*-------------------------------------- DROPDOWN ----------------------------------------*/
@@ -1213,6 +1249,19 @@ button.btn.dropdown-toggle {
 }
 
 /*-------------------------------------- DROPDOWN ----------------------------------------*/
+
+/*-------------------------------------- SWITCH ----------------------------------------*/
+
+.form-switch {
+    padding-left: 18px;
+}
+
+.form-check-input {
+    height: 20px;
+    border: 1px solid #4e71ff61;
+}
+
+/*-------------------------------------- SWITCH ----------------------------------------*/
 
 .badge {
     font-weight: 500;
@@ -1323,8 +1372,8 @@ table tbody tr td {
 
 .doctor-card-info p {
     color: #0b122e;
-    font-size: 14px;
-    margin-bottom: 12px;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 .doctor-card-info p:last-child {
@@ -1366,7 +1415,7 @@ table tbody tr td {
     .bottom-island {
         bottom: unset;
         top: 0;
-        left: 40px;
+        left: 35px;
         width: unset;
         background: none;
         backdrop-filter: none;
@@ -1395,20 +1444,12 @@ table tbody tr td {
     .mobile-table-head-new h3 {
         font-size: 18px;
     }
-    .mobile-table-head-new {
-        max-width: 20%;
-        padding: 10px 18px;
-    }
     .table thead th,
     .table tbody tr td {
         font-size: 13px;
     }
     .modal-header {
         padding: 14px 20px;
-    }
-    #selfRegistration .mobile-table-head-new,
-    #sentLinkTracking .mobile-table-head-new {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .file-icon {
         max-width: 40px;
@@ -1426,6 +1467,12 @@ table tbody tr td {
         font-size: 15px;
         padding: 20px 10px;
     }
+    .sec-card-decor {
+        top: 7px;
+    }
+    .modal-normal-instrustion {
+        padding: 12px 0;
+    }
 }
 @media(max-width: 992px) {
     .mobile-table-head-new h3 {
@@ -1438,11 +1485,8 @@ table tbody tr td {
 }
 
 @media(max-width: 768px) {
-    .mobile-table-head-new {
-        padding: 8px 15px;
-    }
     .mobile-table-head-new h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
     .up-btn {
         margin: 15px 0;
@@ -1468,7 +1512,7 @@ table tbody tr td {
         margin-bottom: 8px;
     }
     input.form-control.otp-input.text-center {
-        height: 50px;
+        height: 45px;
         border-width: 0;
         border-bottom: 2px solid #b3d8a8;
         border-radius: 0 !important;
@@ -1492,7 +1536,7 @@ table tbody tr td {
         width: 100%;
     }
     .content {
-        padding: 20px 0;
+        padding: 18px 0;
     }
     .inner-page-section .content {
         padding: 20px 10px 90px;
@@ -1527,11 +1571,17 @@ table tbody tr td {
         color: #0b122e;
         margin-bottom: 0;
     }
+    .head-portion {
+        padding: 10px 18px;
+    }
     .head-portion h5 i {
-        font-size: 20px;
+        font-size: 18px;
     }
     .head-portion h5 {
-        font-size: 17px;
+        font-size: 16px;
+    }
+    .btn-brand {
+        padding: 9px 8px;
     }
 }
 
