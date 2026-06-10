@@ -1474,17 +1474,13 @@
             <div class="section-card p-0">
               <div class="head-portion">
                 <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Refer In</h5>
+                <div class="sec-card-decor" data-bs-toggle="modal" data-bs-target="#refer_in_setup_modal">
+                  <img src="assets/images/filter.png" alt="decor icon">
+                </div>
               </div>
             </div>
 
             <div class="section-card">
-
-              <div class="mobile-table-head-new">
-                <span class="decor-head-circle-outer me-2">
-                  <span class="decor-head-circle-inner"></span>
-                </span>
-                <h3>Doctor Name: Dr. Abhimanyu</h3>
-              </div>
 
               <div class="table-responsive">
                 <table id="referInListTable" class="table table-bordered align-middle">
@@ -1492,30 +1488,10 @@
                     <tr>
                       <th width="80" valign="middle">#</th>
                       <th valign="middle">Reffered By</th>
-                      <th>
-                        <div class="d-flex align-items-center justify-content-between">
-                          Date
-                          <div class="sec-card-decor relative ms-1">
-                            <img src="assets/images/filter-funel.png" alt="decor icon">
-                          </div>
-                        </div></th>
-                      <th>
-                        <div class="d-flex align-items-center justify-content-between">
-                          Department
-                          <div class="sec-card-decor relative ms-1">
-                            <img src="assets/images/filter-funel.png" alt="decor icon">
-                          </div>
-                        </div>
-                      </th>
+                      <th valign="middle">Date</th>
+                      <th valign="middle">Department</th>
                       <th valign="middle">Contact</th>
-                      <th>
-                        <div class="d-flex align-items-center justify-content-between">
-                          Associated Branch
-                          <div class="sec-card-decor relative ms-1">
-                            <img src="assets/images/filter-funel.png" alt="decor icon">
-                          </div>
-                        </div>
-                      </th>
+                      <th valign="middle">Associated Branch</th>
                     </tr>
                   </thead>
 
@@ -1549,17 +1525,13 @@
             <div class="section-card p-0">
               <div class="head-portion">
                 <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Refer Out</h5>
+                <div class="sec-card-decor" data-bs-toggle="modal" data-bs-target="#refer_out_setup_modal">
+                  <img src="assets/images/filter.png" alt="decor icon">
+                </div>
               </div>
             </div>
 
             <div class="section-card">
-
-              <div class="mobile-table-head-new">
-                <span class="decor-head-circle-outer me-2">
-                  <span class="decor-head-circle-inner"></span>
-                </span>
-                <h3>Doctor Name: Dr. Abhimanyu</h3>
-              </div>
 
               <div class="table-responsive">
                 <table id="referOutListTable" class="table table-bordered align-middle">
@@ -1567,30 +1539,10 @@
                     <tr>
                       <th width="80" valign="middle">#</th>
                       <th valign="middle">Reffered By</th>
-                      <th>
-                        <div class="d-flex align-items-center justify-content-between">
-                          Date
-                          <div class="sec-card-decor relative ms-1">
-                            <img src="assets/images/filter-funel.png" alt="decor icon">
-                          </div>
-                        </div></th>
-                      <th>
-                        <div class="d-flex align-items-center justify-content-between">
-                          Department
-                          <div class="sec-card-decor relative ms-1">
-                            <img src="assets/images/filter-funel.png" alt="decor icon">
-                          </div>
-                        </div>
-                      </th>
+                      <th valign="middle">Date</th>
+                      <th valign="middle">Department</th>
                       <th valign="middle">Contact</th>
-                      <th>
-                        <div class="d-flex align-items-center justify-content-between">
-                          Associated Branch
-                          <div class="sec-card-decor relative ms-1">
-                            <img src="assets/images/filter-funel.png" alt="decor icon">
-                          </div>
-                        </div>
-                      </th>
+                      <th valign="middle">Associated Branch</th>
                     </tr>
                   </thead>
 
@@ -1844,6 +1796,7 @@
   <div class="modal fade" id="booking_invoice_shower_modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
         <div class="modal-body py-2">
           <div class="filter-box row g-0 p-0">
             <div class="col-sm-12 col-12">
@@ -2173,6 +2126,116 @@
             <div class="col-sm-10 col-9">
               <label class="form-label">Search Contact</label>
               <input id="patientSearch" type="tel" class="form-control" placeholder="Search your patient by their contact number ...">
+            </div>
+
+            <div class="col-sm-2 col-3">
+              <button class="btn btn-brand w-100" onclick="">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------- MODAL SECTION ------------------------>
+
+  <!--------------------- MODAL SECTION ------------------------>
+  <div class="modal fade" id="refer_in_setup_modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style="background:#eef7ff;">
+          <div>
+            <h5 class="modal-title fw-bold">Refer In</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body py-2">
+          <div class="filter-box row gx-2 p-0 align-items-end">
+            <div class="col-sm-6 col-6 mb-3">
+              <label class="form-label">Date</label>
+              <select id="referInDate" class="form-select">
+                <option value="0" selected="">Today</option>
+                <option value="1">Last 7 days</option>
+                <option value="2">This Month</option>
+                <option value="3">Last Month</option>
+                <option value="4">Custom Date Range</option>
+              </select>
+            </div>
+
+            <div class="col-sm-6 col-6 mb-3">
+              <label class="form-label">Department</label>
+              <select id="referInDept" class="form-select">
+                <option value="">Select</option>
+                <option value="">Cardiology</option>
+                <option value="">Gynocology</option>
+                <option value="">Urology</option>
+              </select>
+            </div>
+
+            <div class="col-sm-10 col-9">
+              <label class="form-label">Associated Branch</label>
+              <select id="referInBranch" class="form-select">
+                <option value="">Select</option>
+                <option value="pat">Branch Elgin Road</option>
+                <option value="con">New Branch 2</option>
+                <option value="abh">Mandir Branch</option>
+              </select>
+            </div>
+
+            <div class="col-sm-2 col-3">
+              <button class="btn btn-brand w-100" onclick="">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------- MODAL SECTION ------------------------>
+  
+  <!--------------------- MODAL SECTION ------------------------>
+  <div class="modal fade" id="refer_out_setup_modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style="background:#eef7ff;">
+          <div>
+            <h5 class="modal-title fw-bold">Refer Out</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body py-2">
+          <div class="filter-box row gx-2 p-0 align-items-end">
+            <div class="col-sm-6 col-6 mb-3">
+              <label class="form-label">Date</label>
+              <select id="referInDate" class="form-select">
+                <option value="0" selected="">Today</option>
+                <option value="1">Last 7 days</option>
+                <option value="2">This Month</option>
+                <option value="3">Last Month</option>
+                <option value="4">Custom Date Range</option>
+              </select>
+            </div>
+
+            <div class="col-sm-6 col-6 mb-3">
+              <label class="form-label">Department</label>
+              <select id="referInDept" class="form-select">
+                <option value="">Select</option>
+                <option value="">Cardiology</option>
+                <option value="">Gynocology</option>
+                <option value="">Urology</option>
+              </select>
+            </div>
+
+            <div class="col-sm-10 col-9">
+              <label class="form-label">Associated Branch</label>
+              <select id="referInBranch" class="form-select">
+                <option value="">Select</option>
+                <option value="pat">Branch Elgin Road</option>
+                <option value="con">New Branch 2</option>
+                <option value="abh">Mandir Branch</option>
+              </select>
             </div>
 
             <div class="col-sm-2 col-3">
