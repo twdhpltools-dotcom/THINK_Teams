@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="main-overlay">
+      <div class="main-overlay pt-2">
 
         <div class="container">
           <div class="content">
@@ -127,7 +127,7 @@
                   </select>
                 </div>
                 <div class="col-sm-5 col-9 mb-2">
-                  <input id="patiendMobNumber" type="number" class="form-control" placeholder="Enter Mobile Number">
+                  <input id="patiendMobNumber" type="tel" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')" class="form-control" placeholder="Enter Mobile Number">
                 </div>
                 <div class="col-sm-6 col-6 mb-2">
                   <label class="form-label">ABHA Id</label>
@@ -137,7 +137,7 @@
                   <label class="form-label">Date</label>
                   <input id="patientDate" type="date" class="form-control">
                 </div>
-                <div class="col-sm-6 col-12 mb-2">
+                <div class="col-sm-6 col-12 mb-3">
                   <label class="form-label">Time Slot</label>
                   <div class="time-slot-grid" id="patientTimeSlot">
                     <div class="time-slot-card">09:00 AM</div>
