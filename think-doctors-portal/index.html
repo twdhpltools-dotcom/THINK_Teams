@@ -42,7 +42,7 @@
         <p class="text-muted mb-3">Your Digital Clinic Starts Here</p>
 
         <div class="mb-3">
-          <label class="form-label">Verify your mobile number</label>
+          <label class="form-label">Verify your Mobile Number</label>
           <input id="doctorContact" type="tel" class="form-control" placeholder="Enter mobile number">
         </div>
 
@@ -294,28 +294,42 @@
       </div>
 
       <button class="nav-btn mt-2" onclick="showSection('consultant',this)">
-        <i class="bi bi-people me-2"></i> Find Consultant
+        <i class="bi bi-people me-2"></i> Consultant
       </button>
 
       <button class="nav-btn mt-2" onclick="showSection('selfRegistration',this)">
+        <i class="bi bi-file-bar-graph me-2"></i> Self Registration
+      </button>
+
+      <button class="nav-btn mt-2" onclick="showSection('sentLinkTracking',this)">
+        <i class="bi bi-file-check me-2"></i> Sent Link Tracking
+      </button>
+
+      <!-- <button class="nav-btn mt-2" onclick="toggleSentTrackingMenu()">
         <i class="bi bi-file-bar-graph me-2"></i> Registration
       </button>
 
-      <div class="sub-menu">
+      <div class="sub-menu" id="send_tracking_sub">
         <button class="nav-btn" onclick="showSection('sentLinkTracking',this)"><i class="bi bi-file-check me-2"></i> Sent Link Tracking</button>
-      </div>
+      </div> -->
 
-      <button class="nav-btn mt-2" onclick="showSection('refer',this)">
-        <i class="bi bi-building-add"></i> Refer
+      <button class="nav-btn mt-2" onclick="toggleReferMenu()">
+        <i class="bi bi-building-add me-2"></i> Refer
       </button>
 
-      <div class="sub-menu">
-        <button class="nav-btn" onclick="showSection('referIn',this)"><i class="bi bi-person-plus me-2"></i> Refer-In</button>
+      <div class="sub-menu" id="refer_sub">
+        <button class="nav-btn" onclick="showSection('referIn',this)">
+          <i class="bi bi-person-plus me-2"></i> Refer-In
+        </button>
+
+        <button class="nav-btn" onclick="showSection('referOut',this)">
+          <i class="bi bi-person-dash me-2"></i> Refer-Out
+        </button>
       </div>
 
-      <div class="sub-menu">
-        <button class="nav-btn" onclick="showSection('referOut',this)"><i class="bi bi-person-dash me-2"></i> Refer-Out</button>
-      </div>
+      <button class="nav-btn" onclick="showSection('clinic',this)">
+        <i class="bi bi-clock-history me-2"></i> Clinic & Schedule
+      </button>
     </aside>
 
     <main class="main w-100">
@@ -687,7 +701,7 @@
             <div class="section-card p-0">
               <div class="head-portion">
                 <!-- <span class="home-chip">Portal for Booking</span> -->
-                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Booking</h5>
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Booking [For ThinkLab Users]</h5>
                 <!-- <p>Lorem ipsum <span>dolor sit</span> amet</p> -->
                 <div class="sec-card-decor" data-bs-toggle="modal" data-bs-target="#booking_setup_modal">
                   <img src="assets/images/filter.png" alt="decor icon" />
@@ -715,8 +729,8 @@
                     <!-- <div class="sub-heading-card-decor">
                       <span>Q-01</span>
                     </div> -->
-                    <div class="d-flex align-items-center my-2">
-                      <h6>Q-01</h6>
+                    <div class="d-flex align-items-center mt-2">
+                      <h6 style="filter: blur(1px); opacity: 0.5;">Q-03</h6>
                       <h4>Female • 39</h4>
                     </div>
                   </div>
@@ -738,11 +752,130 @@
                       </div>
                     </div>
                   </div> -->
+                  <div class="main-table-upadted w-100 pt-2 mt-2">
+                    <div class="table-cta">
+                      <button class="btn-brand me-2">Re-Schedule</button>
+                      <div>
+                        <button class="btn-re-brand me-1">Payment</button>
+                        <button class="btn-re-brand" data-bs-toggle="modal" data-bs-target="#booking_invoice_shower_modal"><i class="bi bi-eye"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card ms-3">
+                <div class="d-flex align-items-start justify-content-between w-100 table-card-header">
+                  <p class="floting-sl">02</p>
+                  <div>
+                    <h5 class="mb-1">Priya Saha <span class="badge bg-success ms-1"><i class="bi bi-calendar-check"></i> Booking</span></h5>
+                    <div class="d-flex align-items-center mt-2">
+                      <h6>Q-02</h6>
+                      <h4>Female • 39</h4>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct" data-bs-toggle="modal" data-bs-target="#prescriptionModal"><i class="bi bi-check-circle"></i></button>
+                    <button class="btn-checkin wrong ms-1"><i class="bi bi-x-circle"></i></button>
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 pt-2 mt-2">
+                    <div class="table-cta">
+                      <button class="btn-brand me-2">Re-Schedule</button>
+                      <div>
+                        <button class="btn-re-brand me-1">Payment</button>
+                        <button class="btn-re-brand" data-bs-toggle="modal" data-bs-target="#booking_invoice_shower_modal"><i class="bi bi-eye"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Branch Elgin Road</h3>
+              </div>
+
+              <div class="sub-heading-card ms-3">
+                <div class="d-flex align-items-start justify-content-between w-100 table-card-header">
+                  <p class="floting-sl">03</p>
+                  <div>
+                    <h5 class="mb-1">Test Swapna <span class="badge bg-danger ms-1"><i class="bi bi-x-circle"></i> Cancelled</span></h5>               
+                    <div class="d-flex align-items-center mt-2">
+                      <h6 style="filter: blur(1px); opacity: 0.5;">Q-03</h6>
+                      <h4>Female • 23</h4>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct"><i class="bi bi-check-circle"></i></button>
+                    <button class="btn-checkin wrong ms-1"><i class="bi bi-x-circle"></i></button>
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 pt-2 mt-2">
+                    <div class="table-cta">
+                      <button class="btn-brand me-2">Re-Schedule</button>
+                      <div>
+                        <button class="btn-re-brand me-1">Payment</button>
+                        <button class="btn-re-brand" data-bs-toggle="modal" data-bs-target="#booking_invoice_shower_modal"><i class="bi bi-eye"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card p-0 mt-4">
+              <div class="head-portion">
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Booking [For Individual Users]</h5>
+                <div class="sec-card-decor" data-bs-toggle="modal" data-bs-target="#booking_setup_modal">
+                  <img src="assets/images/filter.png" alt="decor icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Shibpur Branch</h3>
+              </div>
+
+              <div class="sub-heading-card ms-3">
+                <div class="d-flex align-items-start justify-content-between w-100 table-card-header">
+                  <p class="floting-sl">01</p>
+                  <div>
+                    <h5 class="mb-1">Priya Saha
+                      <span class="badge bg-info ms-1">
+                        <i class="bi bi-check2-square"></i> Appointment
+                      </span>
+                    </h5>
+                    <div class="d-flex align-items-center my-2">
+                      <h6 style="filter: blur(1px); opacity: 0.5;">Q-03</h6>
+                      <h4>Female • 39</h4>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct"><i class="bi bi-check-circle"></i></button>
+                    <button class="btn-checkin wrong ms-1"><i class="bi bi-x-circle"></i></button>
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
                   <div class="main-table-upadted w-100 pt-2">
                     <div class="table-cta">
                       <button class="btn-brand me-2">Re-Schedule</button>
                       <div>
                         <button class="btn-re-brand me-1">Payment</button>
+                        <button class="btn-re-brand me-1">Refund</button>
                         <button class="btn-re-brand" data-bs-toggle="modal" data-bs-target="#booking_invoice_shower_modal"><i class="bi bi-eye"></i></button>
                       </div>
                     </div>
@@ -772,6 +905,7 @@
                       <button class="btn-brand me-2">Re-Schedule</button>
                       <div>
                         <button class="btn-re-brand me-1">Payment</button>
+                        <button class="btn-re-brand me-1">Refund</button>
                         <button class="btn-re-brand" data-bs-toggle="modal" data-bs-target="#booking_invoice_shower_modal"><i class="bi bi-eye"></i></button>
                       </div>
                     </div>
@@ -810,6 +944,7 @@
                       <button class="btn-brand me-2">Re-Schedule</button>
                       <div>
                         <button class="btn-re-brand me-1">Payment</button>
+                        <button class="btn-re-brand me-1">Refund</button>
                         <button class="btn-re-brand" data-bs-toggle="modal" data-bs-target="#booking_invoice_shower_modal"><i class="bi bi-eye"></i></button>
                       </div>
                     </div>
@@ -824,7 +959,7 @@
 
             <div class="section-card p-0">
               <div class="head-portion">
-                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Financial Transaction</h5>
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Financial Transaction [For ThinkLab Users]</h5>
               </div>
             </div>
 
@@ -1001,12 +1136,11 @@
                   <thead>
                     <tr>
                       <th>SL No</th>
-                      <th>Patient Name</th>
+                      <th>Name</th>
                       <th>Schedule</th>
-                      <th>Payment</th>
-                      <th>Clinic Charge</th>
-                      <th>Due</th>
                       <th>Consultation</th>
+                      <th>Discount</th>
+                      <th>Remark</th>
                     </tr>
                   </thead>
 
@@ -1017,8 +1151,7 @@
                       <td>01-05-2026, 10:30 AM</td>
                       <td>₹800</td>
                       <td>₹500</td>
-                      <td>₹0</td>
-                      <td>₹300</td>
+                      <td>Average</td>
                     </tr>
                     <tr data-date="2026-05-03">
                       <td>2</td>
@@ -1026,8 +1159,7 @@
                       <td>03-05-2026, 11:30 AM</td>
                       <td>₹700</td>
                       <td>₹450</td>
-                      <td>₹100</td>
-                      <td>₹250</td>
+                      <td>Outstanding</td>
                     </tr>
                     <tr data-date="2026-05-06">
                       <td>3</td>
@@ -1035,8 +1167,7 @@
                       <td>06-05-2026, 12:00 PM</td>
                       <td>₹900</td>
                       <td>₹600</td>
-                      <td>₹0</td>
-                      <td>₹300</td>
+                      <td>Average</td>
                     </tr>
                     <tr data-date="2026-05-09">
                       <td>4</td>
@@ -1044,8 +1175,7 @@
                       <td>09-05-2026, 01:15 PM</td>
                       <td>₹800</td>
                       <td>₹500</td>
-                      <td>₹0</td>
-                      <td>₹300</td>
+                      <td>Good</td>
                     </tr>
                     <tr data-date="2026-05-12">
                       <td>5</td>
@@ -1053,13 +1183,17 @@
                       <td>12-05-2026, 02:30 PM</td>
                       <td>₹1000</td>
                       <td>₹650</td>
-                      <td>₹100</td>
-                      <td>₹350</td>
+                      <td>Good</td>
                     </tr>
 
-                    <tr class="fw-bold table-light total-row"><td colspan="3">Total Payment</td><td>₹4,200</td><td colspan="3"></td></tr>
-                    <tr class="fw-bold table-light total-row"><td colspan="4">Total Clinic Charge</td><td>₹2,700</td><td colspan="2"></td></tr>
-                    <tr class="fw-bold table-light total-row"><td colspan="6">Total Consultation Fees</td><td>₹1,500</td></tr>
+                    <tr class="fw-bold table-light total-row">
+                      <td colspan="4">Total Clinic Charge</td>
+                      <td>₹2,700</td><td colspan="2"></td>
+                    </tr>
+                    <tr class="fw-bold table-light total-row">
+                      <td colspan="3">Total Consultation Fees</td>
+                      <td>₹1,500</td><td colspan="2"></td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -1181,6 +1315,249 @@
                 </table>
               </div> -->
             </div>
+
+            <div class="section-card p-0 mt-4">
+              <div class="head-portion">
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Financial Transaction [For Individual Users]</h5>
+              </div>
+            </div>
+
+            <div class="section-card">
+
+              <div class="filter-box row gx-2 align-items-end">
+                <div class="col-sm-4 col-7">
+                  <label class="form-label">Search Patient</label>
+                  <input id="patientSearch" type="tel" class="form-control" placeholder="Search your patient by their name ...">
+                </div>
+
+                <div class="col-sm-2 col-3">
+                  <button class="btn btn-brand w-100" onclick="filterByDateRange('consultancyTable','consultFromDate','consultToDate')">
+                    Search
+                  </button>
+                </div>
+
+                <div class="col-sm-2 col-2">
+                  <div class="sec-card-decor relative" data-bs-toggle="modal" data-bs-target="#financial_transaction_modal">
+                    <img src="assets/images/filter.png" alt="decor icon">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Shibpur Branch</h3>
+              </div>
+
+              <div class="table-responsive">
+                <table id="pointsTable" class="table table-bordered align-middle">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>INV No</th>
+                      <th>Patient Name</th>
+                      <th>Referrer</th>
+                      <th>Referrer Amount</th>
+                      <th>Amount</th>
+                      <th>Discount</th>
+                      <th>Points Amt</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr data-date="2026-05-01" data-branch="HO">
+                      <td>01-05-2026</td>
+                      <td>INV1025</td>
+                      <td>Rahul Das</td>
+                      <td>Mr. Suman Roy</td>
+                      <td>₹150</td>
+                      <td>₹2,500</td>
+                      <td>₹200</td>
+                      <td>₹500</td>
+                    </tr>
+                    <tr data-date="2026-05-02" data-branch="Branch Elgin Road">
+                      <td>02-05-2026</td>
+                      <td>INV1029</td>
+                      <td>Priya Saha</td>
+                      <td>Mrs. Anita Das</td>
+                      <td>₹120</td>
+                      <td>₹1,900</td>
+                      <td>₹100</td>
+                      <td>₹350</td>
+                    </tr>
+                    <tr data-date="2026-05-04" data-branch="Shibpur Branch">
+                      <td>04-05-2026</td>
+                      <td>INV1038</td>
+                      <td>Amit Ghosh</td>
+                      <td>Mr. Pradip Sen</td>
+                      <td>₹200</td>
+                      <td>₹3,200</td>
+                      <td>₹300</td>
+                      <td>₹650</td>
+                    </tr>
+                    <tr data-date="2026-05-07" data-branch="New Branch 2">
+                      <td>07-05-2026</td>
+                      <td>INV1052</td>
+                      <td>Moumita Sen</td>
+                      <td>Direct</td>
+                      <td>₹0</td>
+                      <td>₹2,800</td>
+                      <td>₹250</td>
+                      <td>₹600</td>
+                    </tr>
+                    <tr data-date="2026-05-10" data-branch="HO">
+                      <td>10-05-2026</td>
+                      <td>INV1067</td>
+                      <td>Sourav Roy</td>
+                      <td>Dr. Kunal Mitra</td>
+                      <td>₹250</td>
+                      <td>₹4,000</td>
+                      <td>₹400</td>
+                      <td>₹850</td>
+                    </tr>
+                    <tr data-date="2026-05-12" data-branch="Branch Elgin Road">
+                      <td>12-05-2026</td>
+                      <td>INV1081</td>
+                      <td>Rina Paul</td>
+                      <td>Ms. Riya Paul</td>
+                      <td>₹100</td>
+                      <td>₹2,200</td>
+                      <td>₹150</td>
+                      <td>₹480</td>
+                    </tr>
+                    <tr data-date="2026-05-14" data-branch="Shibpur Branch">
+                      <td>14-05-2026</td>
+                      <td>INV1094</td>
+                      <td>Biswajit Pal</td>
+                      <td>Direct</td>
+                      <td>₹0</td>
+                      <td>₹1,650</td>
+                      <td>₹50</td>
+                      <td>₹300</td>
+                    </tr>
+                    <tr data-date="2026-05-16" data-branch="New Branch 2">
+                      <td>16-05-2026</td>
+                      <td>INV1102</td>
+                      <td>Tanushree Dey</td>
+                      <td>Mr. Akash Dey</td>
+                      <td>₹180</td>
+                      <td>₹2,950</td>
+                      <td>₹200</td>
+                      <td>₹570</td>
+                    </tr>
+
+                    <tr class="fw-bold table-light total-row">
+                      <td colspan="4">Total</td>
+                      <td id="pointsRefTotal">₹1,100</td>
+                      <td id="pointsAmountTotal">₹23,400</td>
+                      <td id="pointsDiscountTotal">₹1,700</td>
+                      <td id="pointsTotal">₹4,300</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="filter-box row gx-2 align-items-end">
+                <div class="col-sm-4 col-7">
+                  <label class="form-label">Search Patient</label>
+                  <input id="patientSearch" type="tel" class="form-control" placeholder="Search your patient by their name ...">
+                </div>
+
+                <div class="col-sm-2 col-3">
+                  <button class="btn btn-brand w-100" onclick="filterByDateRange('consultancyTable','consultFromDate','consultToDate')">
+                    Search
+                  </button>
+                </div>
+
+                <div class="col-sm-2 col-2">
+                  <div class="sec-card-decor relative" data-bs-toggle="modal" data-bs-target="#financial_transaction_modal">
+                    <img src="assets/images/filter.png" alt="decor icon">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Branch Elgin Road</h3>
+              </div>
+
+              <div class="table-responsive">
+                <table id="consultancyTable" class="table table-bordered align-middle">
+                  <thead>
+                    <tr>
+                      <th>SL No</th>
+                      <th>Name</th>
+                      <th>Schedule</th>
+                      <th>Amount</th>
+                      <th>Discount</th>
+                      <th>Paid</th>
+                      <th>Refund</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr data-date="2026-05-01">
+                      <td>1</td>
+                      <td>Suman Das</td>
+                      <td>01-05-2026, 10:30 AM</td>
+                      <td>₹800</td>
+                      <td>₹500</td>
+                      <td>429</td>
+                      <td>₹730</td>
+                    </tr>
+                    <tr data-date="2026-05-03">
+                      <td>2</td>
+                      <td>Ankita Roy</td>
+                      <td>03-05-2026, 11:30 AM</td>
+                      <td>₹800</td>
+                      <td>₹500</td>
+                      <td>429</td>
+                      <td>₹730</td>
+                    </tr>
+                    <tr data-date="2026-05-06">
+                      <td>3</td>
+                      <td>Debjit Sen</td>
+                      <td>06-05-2026, 12:00 PM</td>
+                      <td>₹800</td>
+                      <td>₹500</td>
+                      <td>429</td>
+                      <td>₹730</td>
+                    </tr>
+                    <tr data-date="2026-05-09">
+                      <td>4</td>
+                      <td>Moumita Pal</td>
+                      <td>09-05-2026, 01:15 PM</td>
+                      <td>₹800</td>
+                      <td>₹500</td>
+                      <td>429</td>
+                      <td>₹730</td>
+                    </tr>
+                    <tr data-date="2026-05-12">
+                      <td>5</td>
+                      <td>Ritwik Ghosh</td>
+                      <td>12-05-2026, 02:30 PM</td>
+                      <td>₹800</td>
+                      <td>₹500</td>
+                      <td>429</td>
+                      <td>₹730</td>
+                    </tr>
+
+                    <tr class="fw-bold table-light total-row">
+                      <td colspan="3">Total Clinic Charge</td>
+                      <td>₹2,700</td><td colspan="3"></td>
+                    </tr>
+                    <tr class="fw-bold table-light total-row">
+                      <td colspan="6">Total Consultation Fees</td>
+                      <td>₹1,500</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
           </section>
 
           <section id="consultant" class="portal-section d-none">
@@ -1569,6 +1946,359 @@
                 </table>
               </div>
             </div>
+          </section>
+
+          <section id="clinic" class="portal-section d-none">
+
+            <div class="section-card p-0">
+              <div class="head-portion">
+                <h5 class="fw-bold m-0"><i class="bi bi-cursor-fill"></i> Clinic & Schedule</h5>
+              </div>
+            </div>
+
+            <div class="section-card">
+
+              <div class="mobile-table-head-new">
+                <span class="decor-head-circle-outer me-2">
+                  <span class="decor-head-circle-inner"></span>
+                </span>
+                <h3>Select Location</h3>
+              </div>
+              
+              <div class="row gx-2 align-items-end">
+                <div class="col-sm-4 col-12">
+                  <select id="scheduleBranch" class="form-select">
+                    <option value="HO">HO</option>
+                    <option value="Branch Elgin Road">Branch Elgin Road</option>
+                    <option value="Shibpur Branch">Shibpur Branch</option>
+                    <option value="New Branch 2">New Branch 2</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- <div class="row gx-2 mt-3">
+                <div class="col-sm-12 col-12">
+                  <div class="doctor-card p-3">
+                    <h6>Weekly Summary</h6>
+                    <div class="d-flex flex-wrap mt-3">
+                      <div class="new-head-ico">
+                        <i class="bi bi-calendar3"></i>
+                      </div>
+                      <div>
+                        <div class="d-flex align-items-center mt-2">
+                          <div class="summary-bordered ps-0">
+                            <h5 class="fw-bold mb-1">5</h5>
+                            <span class="badge bg-info">Days Active</span>
+                          </div>
+                          <div class="summary-bordered">
+                            <h5 class="fw-bold mb-1">5</h5>
+                            <span class="badge bg-info">Days Active</span>
+                          </div>
+                          <div class="summary-bordered pe-0">
+                            <h5 class="fw-bold mb-1">5</h5>
+                            <span class="badge bg-info">Days Active</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+
+            <div class="section-card">
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-one">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">SUNDAY</h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                      <!-- <div>
+                        <button class="btn-re-brand"><i class="bi bi-copy"></i></button>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-two">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">MONDAY <span class="badge bg-success ms-2"><i class="bi bi-check2-circle"></i> ACTIVE</span></h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" checked />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-three">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">TUESDAY</h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-four">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">WEDNESDAY <span class="badge bg-success ms-2"><i class="bi bi-check2-circle"></i> ACTIVE</span></h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" checked />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-five">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">THURSDAY <span class="badge bg-success ms-2"><i class="bi bi-check2-circle"></i> ACTIVE</span></h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" checked />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-three">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">FRIDAY <span class="badge bg-success ms-2"><i class="bi bi-check2-circle"></i> ACTIVE</span></h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" checked />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-four">
+                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                  <div>
+                    <h5 class="d-flex align-items-center mb-0">SATURDAY</h5>
+                  </div>
+                  <div class="adding-row ms-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div>
+                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch ms-4 ps-0">
+                    <input class="form-check-input" type="checkbox" role="switch" id="" />
+                  </div>
+                </div>
+
+                <div class="w-100 table-card-body-collapse table-card-body">
+                  <div class="main-table-upadted w-100 mt-2 py-2">
+                    <div class="d-flex align-items-center">
+                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                      <div class="pe-2">
+                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                      </div>
+                      <div>
+                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                      </div>
+                      <div class="ps-4">
+                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                      </div>
+                      <div class="form-check form-switch compact">
+                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="extr-card">
+              <div class="d-flex">
+                <div class="new-head-ico">
+                  <i class="bi bi-plus-circle-dotted"></i>
+                </div>
+                <div class="w-100">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="ps-3">
+                      <h5 class="fw-bold">Add Leaves/ Block Dates</h5>
+                      <span class="badge bg-info">Days Active</span>
+                    </div>
+                    <a href="#" class="btn btn-brand">
+                      <i class="bi bi-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </section>
           
         </div>

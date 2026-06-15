@@ -17,6 +17,14 @@
 
 <body>
 
+  <div id="preloader" class="preloader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
   <div class="inner-page-section profile">
 
     <aside id="sidebar" class="sidebar">
@@ -39,28 +47,34 @@
       </button>
 
       <button class="nav-btn mt-2" onclick="showSection('consultant',this)">
-        <i class="bi bi-people me-2"></i> Find Consultant
+        <i class="bi bi-people me-2"></i> Consultant
       </button>
 
       <button class="nav-btn mt-2" onclick="showSection('selfRegistration',this)">
-        <i class="bi bi-file-bar-graph me-2"></i> Registration
+        <i class="bi bi-file-bar-graph me-2"></i> Self Registration
       </button>
 
-      <div class="sub-menu">
-        <button class="nav-btn" onclick="showSection('sentLinkTracking',this)">Sent Link Tracking</button>
-      </div>
-
-      <button class="nav-btn mt-2" onclick="showSection('refer',this)">
-        <i class="bi bi-person-gear"></i> Refer
+      <button class="nav-btn mt-2" onclick="showSection('sentLinkTracking',this)">
+        <i class="bi bi-file-check me-2"></i> Sent Link Tracking
       </button>
 
-      <div class="sub-menu">
-        <button class="nav-btn" onclick="showSection('referIn',this)">Refer-In</button>
+      <button class="nav-btn mt-2" onclick="toggleReferMenu()">
+        <i class="bi bi-building-add me-2"></i> Refer
+      </button>
+
+      <div class="sub-menu" id="refer_sub">
+        <button class="nav-btn" onclick="showSection('referIn',this)">
+          <i class="bi bi-person-plus me-2"></i> Refer-In
+        </button>
+
+        <button class="nav-btn" onclick="showSection('referOut',this)">
+          <i class="bi bi-person-dash me-2"></i> Refer-Out
+        </button>
       </div>
 
-      <div class="sub-menu">
-        <button class="nav-btn" onclick="showSection('referOut',this)">Refer-Out</button>
-      </div>
+      <button class="nav-btn" onclick="showSection('clinic',this)">
+        <i class="bi bi-clock-history me-2"></i> Clinic & Schedule
+      </button>
     </aside>
 
     <main class="main w-100">
@@ -81,7 +95,9 @@
                 
                   <div class="col-sm-2 col-6">
                     <div class="profile-img-block">
-                      <img src="assets/images/dummy-doctor.jpg" alt="doctor-img" />
+                      <span class="d-block" data-bs-toggle="modal" data-bs-target="#profile_pic_shwn">
+                        <img src="assets/images/dummy-doctor.jpg" alt="doctor-img" />
+                      </span>
                       <div class="profile-pic-change" data-bs-toggle="modal" data-bs-target="#profile_pic_chng">
                         <i class="bi bi-camera-fill"></i>
                       </div>
@@ -225,15 +241,32 @@
   </div>
 
   <!--------------------- MODAL SECTION ------------------------>
+  <div class="modal fade" id="profile_pic_shwn" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-body py-0 px-0">
+          <div class="profile-lightbox">
+            <img src="assets/images/dummy-doctor.jpg" alt="doctor-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------- MODAL SECTION ------------------------>
+
+  <!--------------------- MODAL SECTION ------------------------>
   <div class="modal fade" id="profile_pic_chng" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
-        <div class="modal-body py-0">
+        <div class="modal-body py-1">
           <div class="modal-normal-instrustion">
-            <a href="#">View Profile Pictue</a>
+            <a href="#">Click Photo</a>
           </div>
           <div class="modal-normal-instrustion">
-            <a href="#">Change Profile Pictue</a>
+            <a href="#">Choose Image from Gallery</a>
+          </div>
+          <div class="modal-normal-instrustion">
+            <a href="#" data-bs-dismiss="modal">Cancel</a>
           </div>
         </div>
       </div>
