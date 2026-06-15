@@ -66,7 +66,7 @@ img {
     width:430px;
     background: #ffffffbf;
     border:1px solid var(--border);
-    border-radius:20px;
+    border-radius:10px;
     padding:34px;
     backdrop-filter: blur(20px);
 }
@@ -322,8 +322,8 @@ table{
 }
 
 .badge-soft.profile-badge-top img {
-    height: 35px;
-    width: 35px;
+    height: 38px;
+    width: 38px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #f3f3f3;
@@ -647,7 +647,7 @@ button.btn.dropdown-toggle {
     display: flex;
     align-items: center;
     /* border-bottom: 1px solid #eee; */
-    padding: 8px 0;
+    padding: px 0;
 }
 
 .profile-img-info:last-child {
@@ -676,7 +676,7 @@ button.btn.dropdown-toggle {
 }
 
 .profile-img-info input {
-    font-size: 14px;
+    font-size: 13px;
     color: #0b122ec7;
     margin-bottom: 0;
     font-weight: 400;
@@ -1011,12 +1011,12 @@ table thead th .sec-card-decor {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 12px 10px;
+    padding: 8px 10px;
     position: relative;
     z-index: 1;
     margin: 12px 0;
-    border: 1px solid #ebebeb;
-    border-radius: 10px;
+    border: 0 solid #ebebeb;
+    border-bottom-width: 1px;
 }
 
 .floting-sl {
@@ -1120,24 +1120,39 @@ table thead th .sec-card-decor {
     justify-content: space-between;
 }
 
-.table-cta .btn-re-brand {
-    font-size: 12px;
-    padding: 5px 10px;
-}
-
-.table-cta .btn-brand {
-    font-size: 12px;
-    padding: 5px 8px;
-}
-
 .btn-re-brand {
-    background: linear-gradient(325deg, #8dd8ff8a, #fff);
     color: #0b122eeb;
     border: none;
     padding: 8px 15px;
     font-size: 13px;
     border-radius: 5px;
     font-weight: 500;
+}
+
+.btn-re-brand.type-one {
+    background: linear-gradient(325deg, #3ccb8326, #fff);
+    border: 1px solid #3ccb835c;
+}
+
+.btn-re-brand.type-two {
+    background: linear-gradient(325deg, #d3d3d35e, #fff);
+    border: 1px solid #d3d3d38c;
+}
+
+.btn-re-brand.type-three {
+    background: linear-gradient(325deg, #8dd8ff5e, #fff);
+    border: 1px solid #8dd8ff8c;
+}
+
+.btn-re-brand.type-four {
+    background: linear-gradient(325deg, #ffe68d26, #fff);
+    border: 1px solid #ffe68da3;
+}
+
+.table-cta .btn-re-brand {
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 3px;
 }
 
 .btn-checkin {
@@ -1230,6 +1245,10 @@ table thead th .sec-card-decor {
     color: #0b122e;
     font-weight: bold;
     opacity: 1;
+}
+
+.modal#profile_pic_shwn button.btn-close {
+    top: -35px;
 }
 
 .modal-normal-instrustion {
@@ -1764,11 +1783,11 @@ h5.usable-small-label {
     height: auto;
     width: 100%;
     max-width: 100%;
-    padding: 6px 12px 8px;
+    padding: 8px 12px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .sub-heading-card.schedule-card.day-type-one {
@@ -1818,8 +1837,9 @@ h5.usable-small-label {
 
 .sub-heading-card.schedule-card h5 {
     color: #0b122e;
-    font-size: 11px;
+    font-size: 12px;
     margin: 0 0 7px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -1909,7 +1929,7 @@ h5.usable-small-label {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-6px);
-  transition: all 0.35s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .sub-menu#send_tracking_sub.show,
