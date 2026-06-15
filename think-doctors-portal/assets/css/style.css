@@ -207,7 +207,8 @@ a.bottom-island-pill.active {
     height: 100%;
     width: 100%;
     background: #fffffff7;
-    border-radius: 30px 30px 0 0;
+    /* border-radius: 30px 30px 0 0; */
+    border-radius: 0;
     box-shadow: 0 18px 45px rgba(15, 23, 42, .07);
     border-bottom: 1px solid var(--border);
     position: relative;
@@ -281,7 +282,7 @@ a.bottom-island-pill.active {
     border:1px solid var(--border);
     border-radius:16px;
     padding:15px 5px;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 table{
@@ -541,7 +542,7 @@ button.btn.dropdown-toggle {
 .mobile-table-head-new {
     height: auto;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -605,10 +606,11 @@ button.btn.dropdown-toggle {
 .profile-img-block {
     height: 150px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     box-shadow: 0 4px 20px rgba(16,32,51,.06);
+    cursor: pointer;
     position: relative;
     z-index: 1;
 }
@@ -617,7 +619,7 @@ button.btn.dropdown-toggle {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: end;
@@ -630,6 +632,13 @@ button.btn.dropdown-toggle {
 .profile-pic-change i {
     font-size: 18px;
     color: #fff;
+}
+
+.profile-lightbox {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .profile-img-info {
@@ -896,9 +905,7 @@ button.btn.dropdown-toggle {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    padding: 8px 15px;
-    border: 0 solid #b3d8a8;
-    border-left-width: 2px;
+    padding: 0 15px;
     margin-bottom: 0;
     line-height: 1;
 }
@@ -1023,7 +1030,7 @@ table thead th .sec-card-decor {
 }
 
 .sub-heading-card h5 {
-    font-size: 15px;
+    font-size: 14px;
     color: #0b122e;
     font-weight: 600;
     white-space: nowrap;
@@ -1037,7 +1044,7 @@ table thead th .sec-card-decor {
 }
 
 .sub-heading-card h6 {
-    font-size: 13px;
+    font-size: 12px;
     color: #4E71FF;
     padding-right: 6px;
     margin-bottom: 0;
@@ -1115,7 +1122,7 @@ table thead th .sec-card-decor {
 
 .table-cta .btn-re-brand {
     font-size: 12px;
-    padding: 5px 12px;
+    padding: 5px 10px;
 }
 
 .table-cta .btn-brand {
@@ -1229,18 +1236,28 @@ table thead th .sec-card-decor {
     height: auto;
     width: 100%;
     border-bottom: 1px solid #eee;
-    padding: 10px 0;
+    padding: 4px 0;
 }
 
-.modal-normal-instrustion a  {
+.modal-normal-instrustion:last-child {
+    border: none;
+}
+
+.modal-normal-instrustion a {
     color: #0b122e;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     text-decoration: none;
+}
+
+.modal-normal-instrustion:last-child a {
+    color: #ff0b0b;
+    font-weight: 600;
 }
 
 .modal-normal-instrustion a i {
     color: #211C84;
+    font-size: 14px;
 }
 
 .modal-backdrop {
@@ -1256,6 +1273,16 @@ table thead th .sec-card-decor {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal#profile_info_toggler {
+    left: unset;
+    right: 0;
+    width: 60%;
+}
+
+.modal#profile_info_toggler .modal-dialog.modal-md {
+    margin-top: 60px;
 }
 
 @media (min-width: 576px) {
@@ -1306,10 +1333,6 @@ table thead th .sec-card-decor {
 
 /*-------------------------------------- SWITCH ----------------------------------------*/
 
-.form-switch {
-    padding-left: 20px;
-}
-
 .form-check-input {
     height: 20px;
     border: 1px solid #4e71ff61;
@@ -1324,23 +1347,23 @@ table thead th .sec-card-decor {
 }
 
 .badge.bg-info {
-    background: #38b1c921 !important;
-    color: #211C84;
+    background: #38b1c917 !important;
+    color: #1492ac;
 }
 
 .badge.bg-success {
-    background: #19875417 !important;
-    color: #211C84;
+    background: #19875415 !important;
+    color: #0a7c47;
 }
 
 .badge.bg-danger {
-    background: #dc354618  !important;
-    color: #211C84;
+    background: #dc35460e  !important;
+    color: #db1226;
 }
 
 .badge.bg-warning {
-    background: #ffc10723 !important;
-    color: #211C84;
+    background: #ffc10711 !important;
+    color: #c59400;
 }
 
 .icon-input {
@@ -1390,7 +1413,7 @@ table thead th .sec-card-decor {
 
 table tbody tr td {
     border-width: 0 1px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .doctor-card h5 {
@@ -1701,6 +1724,203 @@ h5.usable-small-label {
 
 /*-------------------------------------- DAHSBOARD ----------------------------------------*/
 
+
+.new-head-ico {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: #4e71ff1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-head-ico i {
+    font-size: 22px;
+    color: #211C84;
+}
+
+.summary-bordered {
+    padding: 0 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.summary-bordered::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 70%;
+    width: 0;
+    border: 1px dotted #cccccc7a;
+}
+
+.summary-bordered:nth-child(3)::after {
+    border: none;
+}
+
+.sub-heading-card.schedule-card {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 6px 12px 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.sub-heading-card.schedule-card.day-type-one {
+    background-image: url('../images/monday-bar-bg.png');
+    border-left: 2px solid #4e71ff1f;
+}
+
+.sub-heading-card.schedule-card.day-type-one .main-table-upadted {
+    background: #4e71ff0e;
+}
+
+.sub-heading-card.schedule-card.day-type-two {
+    background-image: url('../images/tesday-bar-bg.png');
+    border-left: 2px solid #0b8f7927;
+}
+
+.sub-heading-card.schedule-card.day-type-two .main-table-upadted {
+    background: #0b8f790d;
+}
+
+.sub-heading-card.schedule-card.day-type-three {
+    background-image: url('../images/wednesday-bar-bg.png');
+    border-left: 2px solid #8f0b6e27;
+}
+
+.sub-heading-card.schedule-card.day-type-three .main-table-upadted {
+    background: #8f0b6e0a;
+}
+
+.sub-heading-card.schedule-card.day-type-four {
+    background-image: url('../images/thursday-bar-bg.png');
+    border-left: 2px solid #8f7b0b27;
+}
+
+.sub-heading-card.schedule-card.day-type-four .main-table-upadted {
+    background: #8f7b0b0a;
+}
+
+.sub-heading-card.schedule-card.day-type-five {
+    background-image: url('../images/friday-bar-bg.png');
+    border-left: 2px solid #0b8b8f27;
+}
+
+.sub-heading-card.schedule-card.day-type-five .main-table-upadted {
+    background: #0b8b8f10;
+}
+
+.sub-heading-card.schedule-card h5 {
+    color: #0b122e;
+    font-size: 11px;
+    margin: 0 0 7px;
+    text-transform: uppercase;
+}
+
+.sub-heading-card.schedule-card .btn-brand {
+    padding: 1px 5px;
+}
+
+.sub-heading-card.schedule-card h6 {
+    color: #211C84;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.sub-heading-card.schedule-card .main-table-upadted {
+    border-top: 1px solid #eee;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.adding-row a {
+    display: block;
+    font-size: 12px;
+    color: #0b122e;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.adding-row a::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    background: #b3d8a8;
+    z-index: 2;
+}
+
+.adding-row .btn-re-brand {
+    padding: 3px 10px;
+}
+
+.btn-checkin.correct.float {
+    padding: 1px 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: unset;
+    font-size: 9px;
+    color: #211C84;
+}
+
+.form-switch.compact {
+    padding-left: 25px;
+    padding-top: 6px;
+}
+
+.form-switch.compact .form-check-input {
+    width: 20px;
+    height: 12px;
+}
+
+.extr-card {
+    background: linear-gradient(to top, #f5f5f5, transparent);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    backdrop-filter: blur(20px);
+}
+
+.extr-card h5 {
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #0b122e;
+}
+
+.login-card .small.text-muted {
+    font-size: 12px;
+}
+
+/*-------------------------------------- SUBMENU ----------------------------------------*/
+
+.sub-menu#send_tracking_sub,
+.sub-menu#refer_sub {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: all 0.35s ease;
+}
+
+.sub-menu#send_tracking_sub.show,
+.sub-menu#refer_sub.show {
+  max-height: 120px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*-------------------------------------- SUBMENU ----------------------------------------*/
+
 @media screen and (min-width: 576px) and (max-width: 1920px) {
     .topbar {
         padding: 10px 40px;
@@ -1757,9 +1977,6 @@ h5.usable-small-label {
     .sub-heading-card {
         max-width: 98%;
     }
-    .main-overlay {
-        border-radius: 0;
-    }
     .profile-pic-change i {
         font-size: 22px;
     }
@@ -1768,7 +1985,10 @@ h5.usable-small-label {
         padding: 20px 10px;
     }
     .modal-normal-instrustion {
-        padding: 12px 0;
+        padding: 5px 0;
+    }
+    .modal#profile_info_toggler {
+        width: 30%;
     }
 }
 @media(max-width: 992px) {
@@ -1811,7 +2031,7 @@ h5.usable-small-label {
     input.form-control.otp-input.text-center {
         height: 45px;
         border-width: 0;
-        border-bottom: 2px solid #b3d8a8;
+        border-bottom: 2px solid #0b8f785e;
         border-radius: 0 !important;
     }
     .topbar {
@@ -1846,7 +2066,7 @@ h5.usable-small-label {
         width: 360px;
     }
     .form-label {
-        margin-bottom: 5px;
+        margin-bottom: 2px;
         font-size: 13px;
     }
     .dropdown.form-select .dropdown-item {
@@ -1872,10 +2092,10 @@ h5.usable-small-label {
         padding: 10px 18px;
     }
     .head-portion h5 i {
-        font-size: 18px;
+        font-size: 17px;
     }
     .head-portion h5 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .btn-brand {
         padding: 9px 8px;
