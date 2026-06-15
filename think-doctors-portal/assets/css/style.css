@@ -337,7 +337,7 @@ table{
 
 .doctor-card{
     border:1px solid var(--border);
-    border-radius:18px;
+    border-radius:10px;
     background:#ffffff70;
     padding:10px;
     box-shadow:0 8px 22px rgba(16,32,51,.05);
@@ -412,7 +412,7 @@ button.btn.btn-brand:hover {
 }
 
 input.form-control.otp-input.text-center {
-    height: 60px;
+    height: 50px;
     background: none;
 }
 
@@ -542,7 +542,7 @@ button.btn.dropdown-toggle {
 .mobile-table-head-new {
     height: auto;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
 }
@@ -927,10 +927,10 @@ button.btn.dropdown-toggle {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 12px 20px;
+    padding: 10px 20px;
     height: auto;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border-bottom: 1px solid #ffffffcf;
     position: relative;
     z-index: 1;
@@ -983,7 +983,7 @@ table thead th .sec-card-decor {
 }
 
 .head-portion h5 {
-    font-size: 18px;
+    font-size: 17px;
     color: #211C84;
 }
 
@@ -1236,7 +1236,7 @@ table thead th .sec-card-decor {
     height: auto;
     width: 100%;
     border-bottom: 1px solid #eee;
-    padding: 4px 0;
+    padding: 3px 0;
 }
 
 .modal-normal-instrustion:last-child {
@@ -1562,7 +1562,7 @@ a.call-notifier:hover {
 .earnings-card{
     width:100%;
     background:linear-gradient(135deg,#4E71FF 0%,#24B1B1 100%);
-    border-radius:20px;
+    border-radius:10px;
     color:#fff;
     border: 1px solid var(--border);
     padding: 18px;
@@ -1962,7 +1962,7 @@ h5.usable-small-label {
         padding: 20px 0;
     }
     .mobile-table-head-new h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .table thead th,
     .table tbody tr td {
@@ -1990,6 +1990,12 @@ h5.usable-small-label {
     .modal#profile_info_toggler {
         width: 30%;
     }
+    .btn-checkin.correct.float {
+        padding: 2px 5px;
+        top: 22px;
+        right: 10px;
+        font-size: 10px;
+    }
 }
 @media(max-width: 992px) {
     .mobile-table-head-new h3 {
@@ -2003,7 +2009,7 @@ h5.usable-small-label {
 
 @media(max-width: 768px) {
     .mobile-table-head-new h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .up-btn {
         margin: 15px 0;
