@@ -651,7 +651,7 @@ button.btn.dropdown-toggle {
     display: flex;
     align-items: center;
     /* border-bottom: 1px solid #eee; */
-    padding: px 0;
+    padding: 5px 0;
 }
 
 .profile-img-info:last-child {
