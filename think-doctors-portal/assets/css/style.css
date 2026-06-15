@@ -370,7 +370,11 @@ table{
     backdrop-filter: blur(20px);
     border: 1px solid var(--border);
     border-radius:10px;
-    padding:16px;
+    padding:8px;
+}
+
+.prescription-card h6 {
+    font-size: 14px;
 }
 
 .prescription-card small.text-muted {
@@ -542,7 +546,7 @@ button.btn.dropdown-toggle {
 .mobile-table-head-new {
     height: auto;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     display: flex;
     align-items: center;
 }
@@ -1011,7 +1015,7 @@ table thead th .sec-card-decor {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 8px 10px;
+    padding: 3px 10px;
     position: relative;
     z-index: 1;
     margin: 12px 0;
@@ -2082,7 +2086,7 @@ h5.usable-small-label {
         padding: 18px 0;
     }
     .inner-page-section .content {
-        padding: 20px 10px 80px;
+        padding: 15px 10px 80px;
     }
     .time-slot-card {
         padding: 2px 8px;
