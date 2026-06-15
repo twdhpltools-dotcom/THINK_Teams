@@ -286,7 +286,8 @@ a.bottom-island-pill.active {
 }
 
 table{
-    white-space:nowrap;
+    white-space: nowrap;
+    margin-bottom: 0 !important;
 }
 
 .table thead th{
@@ -1308,6 +1309,13 @@ table thead th .sec-card-decor {
     margin-top: 60px;
 }
 
+.modal#prescriptionModal button.btn-close {
+    top: 15px;
+    left: unset;
+    right: 5px;
+    background: none;
+}
+
 @media (min-width: 576px) {
     .modal#booking_invoice_shower_modal .modal-dialog {
         max-width: 1100px;
@@ -1749,8 +1757,8 @@ h5.usable-small-label {
 
 
 .new-head-ico {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
     background: #4e71ff1a;
     display: flex;
@@ -1759,7 +1767,7 @@ h5.usable-small-label {
 }
 
 .new-head-ico i {
-    font-size: 22px;
+    font-size: 20px;
     color: #211C84;
 }
 
@@ -1894,21 +1902,76 @@ h5.usable-small-label {
 }
 
 .extr-card {
-    background: linear-gradient(to top, #f5f5f5, transparent);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 12px;
-    backdrop-filter: blur(20px);
+    padding: 5px 10px;
 }
 
 .extr-card h5 {
     font-size: 14px;
     margin-bottom: 2px;
     color: #0b122e;
+    font-weight: 500;
 }
 
 .login-card .small.text-muted {
     font-size: 12px;
+}
+
+.share-card {
+    height: auto;
+    width: 100%;
+}
+
+.share-card h5 {
+    color: #4E71FF;
+    font-size: 16px;
+    margin: 0 0 7px;
+}
+
+.share-card h6 {
+    font-size: 13px;
+    color: #0b122e;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.share-card h6::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    background: #b3d8a8;
+    z-index: 2;
+}
+
+.share-card-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 8px 0;
+    border-top: 1px solid #e6e6e69e;
+}
+
+.share-ico img {
+    height: auto;
+    width: 100%;
+    max-width: 50px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: #4e71ff0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border: 1px solid #4e71ff1a;
+}
+
+.share-ico p {
+    color: #0b122e;
+    font-size: 12px;
+    margin: 8px 0 0;
 }
 
 /*-------------------------------------- SUBMENU ----------------------------------------*/
