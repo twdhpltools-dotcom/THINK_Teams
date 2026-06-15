@@ -1792,6 +1792,7 @@ h5.usable-small-label {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 3px;
+    border: none;
 }
 
 .sub-heading-card.schedule-card.day-type-one {
@@ -1799,17 +1800,9 @@ h5.usable-small-label {
     border-left: 2px solid #4e71ff1f;
 }
 
-.sub-heading-card.schedule-card.day-type-one .main-table-upadted {
-    background: #4e71ff0e;
-}
-
 .sub-heading-card.schedule-card.day-type-two {
     background-image: url('../images/tesday-bar-bg.png');
     border-left: 2px solid #0b8f7927;
-}
-
-.sub-heading-card.schedule-card.day-type-two .main-table-upadted {
-    background: #0b8f790d;
 }
 
 .sub-heading-card.schedule-card.day-type-three {
@@ -1817,26 +1810,14 @@ h5.usable-small-label {
     border-left: 2px solid #8f0b6e27;
 }
 
-.sub-heading-card.schedule-card.day-type-three .main-table-upadted {
-    background: #8f0b6e0a;
-}
-
 .sub-heading-card.schedule-card.day-type-four {
     background-image: url('../images/thursday-bar-bg.png');
     border-left: 2px solid #8f7b0b27;
 }
 
-.sub-heading-card.schedule-card.day-type-four .main-table-upadted {
-    background: #8f7b0b0a;
-}
-
 .sub-heading-card.schedule-card.day-type-five {
     background-image: url('../images/friday-bar-bg.png');
     border-left: 2px solid #0b8b8f27;
-}
-
-.sub-heading-card.schedule-card.day-type-five .main-table-upadted {
-    background: #0b8b8f10;
 }
 
 .sub-heading-card.schedule-card h5 {
@@ -1848,7 +1829,10 @@ h5.usable-small-label {
 }
 
 .sub-heading-card.schedule-card .btn-brand {
-    padding: 1px 5px;
+    background: linear-gradient(325deg, #8dd8ff5e, #fff);
+    border: 1px solid #8dd8ff8c;
+    padding: 0 3px;
+    color: #211C84;
 }
 
 .sub-heading-card.schedule-card h6 {
@@ -1858,8 +1842,9 @@ h5.usable-small-label {
 }
 
 .sub-heading-card.schedule-card .main-table-upadted {
+    background: #e8e8e81a;
     border-top: 1px solid #eee;
-    padding: 10px 12px;
+    padding: 8px 8px;
     border-radius: 5px;
 }
 
@@ -1888,13 +1873,14 @@ h5.usable-small-label {
 }
 
 .btn-checkin.correct.float {
-    padding: 1px 4px;
+    padding: 0;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 24px;
+    right: 8px;
     width: unset;
-    font-size: 9px;
+    font-size: 10px;
     color: #211C84;
+    background: none;
 }
 
 .form-switch.compact {
