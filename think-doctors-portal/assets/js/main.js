@@ -225,6 +225,52 @@ function toggleReferMenu() {
 }
 /*-------------------------------------- SUBMENU-SHOW ----------------------------------------*/
 
+/*-------------------------------------- DRAGGABLE ----------------------------------------*/
+const el = document.getElementById("callBox");
+
+let offsetX = 0;
+let offsetY = 0;
+let dragging = false;
+
+el.addEventListener("mousedown", startDrag);
+el.addEventListener("touchstart", startDrag, { passive: false });
+
+function startDrag(e){
+  e.preventDefault();
+  dragging = true;
+
+  const point = e.touches ? e.touches[0] : e;
+  const rect = el.getBoundingClientRect();
+
+  offsetX = point.clientX - rect.left;
+  offsetY = point.clientY - rect.top;
+
+  document.addEventListener("mousemove", drag);
+  document.addEventListener("touchmove", drag, { passive: false });
+  document.addEventListener("mouseup", stopDrag);
+  document.addEventListener("touchend", stopDrag);
+}
+
+function drag(e){
+  if (!dragging) return;
+  e.preventDefault();
+
+  const point = e.touches ? e.touches[0] : e;
+  el.style.left = (point.clientX - offsetX) + "px";
+  el.style.top = (point.clientY - offsetY) + "px";
+  el.style.right = "auto";
+  el.style.bottom = "auto";
+}
+
+function stopDrag(){
+  dragging = false;
+  document.removeEventListener("mousemove", drag);
+  document.removeEventListener("touchmove", drag);
+  document.removeEventListener("mouseup", stopDrag);
+  document.removeEventListener("touchend", stopDrag);
+}
+/*--------------------------------------DRAGGABLE ----------------------------------------*/
+
 function getOTP() {
   return Array.from(otpInputs).map(input => input.value).join('');
 }
