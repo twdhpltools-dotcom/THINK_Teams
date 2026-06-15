@@ -215,6 +215,16 @@ document.addEventListener("click", function (e) {
 });
 /*-------------------------------------- CARD-SHOW ----------------------------------------*/
 
+/*-------------------------------------- SUBMENU-SHOW ----------------------------------------*/
+function toggleSentTrackingMenu() {
+  document.getElementById("send_tracking_sub").classList.toggle("show");
+}
+
+function toggleReferMenu() {
+  document.getElementById("refer_sub").classList.toggle("show");
+}
+/*-------------------------------------- SUBMENU-SHOW ----------------------------------------*/
+
 function getOTP() {
   return Array.from(otpInputs).map(input => input.value).join('');
 }
