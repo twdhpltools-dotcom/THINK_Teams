@@ -1185,8 +1185,8 @@ table thead th .sec-card-decor {
 }
 
 .table-cta .btn-re-brand {
-    font-size: 12px;
-    padding: 5px 8px;
+    font-size: 11px;
+    padding: 2px 6px;
     border-radius: 3px;
 }
 
@@ -1195,8 +1195,8 @@ table thead th .sec-card-decor {
     color: #fff;
     font-weight: 500;
     border-radius: 50px;
-    padding: 6px 10px;
-    font-size: 13px;
+    padding: 3px 6px;
+    font-size: 12px;
     box-shadow: 0 18px 45px rgba(15, 23, 42, .07);
     transition: all 0.3s ease-in-out;
     border: 1px solid #eee;
