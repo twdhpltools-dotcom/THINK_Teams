@@ -1596,9 +1596,10 @@ a.call-notifier {
     padding: 8px 15px 8px 4px;
     background: #ffffff70;
     backdrop-filter: blur(20px);
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 500;
     color: #211C84;
-    margin-bottom: 0;
+    white-space: nowrap;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
 }
