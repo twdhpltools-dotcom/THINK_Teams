@@ -458,7 +458,7 @@
                   </div>
 
                   <div class="col-sm-6 col-6">
-                    <div class="earning-mini-box">
+                    <div class="earning-mini-box" style="border: none;">
                       <h6 class="usable-medium-label">Total Earnings</h6>
                       <h3 class="usable-large-label">₹18,400</h3>
                       <h5 class="usable-small-label"><i class="fa-solid fa-arrow-up"></i> 5.4%</h5>
@@ -716,7 +716,7 @@
               <h3>Shibpur Branch</h3>
             </div>
 
-            <div class="px-3 my-4">
+            <div class="ps-3 my-4">
 
               <div class="sub-heading-card ms-3">
                 <div class="d-flex align-items-start justify-content-between flex-wrap w-100 table-card-header">
@@ -774,7 +774,7 @@
               <h3>Branch Elgin Road</h3>
             </div>
 
-            <div class="px-3 my-4">
+            <div class="ps-3 my-4">
 
               <div class="sub-heading-card ms-3 mb-0">
                 <div class="d-flex align-items-start justify-content-between flex-wrap w-100 table-card-header">
@@ -815,7 +815,7 @@
               <h3>Shibpur Branch</h3>
             </div>
 
-            <div class="px-3 my-4">
+            <div class="ps-3 my-4">
 
               <div class="sub-heading-card ms-3">
                 <div class="d-flex align-items-start justify-content-between flex-wrap w-100 table-card-header mb-1">
@@ -893,7 +893,7 @@
               <h3>Branch Elgin Road</h3>
             </div>
 
-            <div class="px-3 my-4">
+            <div class="ps-3 my-4">
 
               <div class="sub-heading-card ms-3 mb-0">
                 <div class="d-flex align-items-start justify-content-between flex-wrap w-100 table-card-header">
@@ -1684,10 +1684,21 @@
               </div>
             </div>
 
-            <div class="text-end mb-3">
-              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#add_new_patient_modal">
+            <div class="mb-2">
+              <div class="extr-card">
+                <div class="d-flex align-items-center justify-content-end">
+                  <div class="new-head-ico-regular">
+                    <i class="bi bi-plus-circle-dotted"></i>
+                  </div>
+                  <div class="ps-2">
+                    <h5 class="mb-0">Add Patient</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#add_new_patient_modal">
                 <i class="bi bi-plus-circle-dotted me-2"></i> Add New Patient
-              </button>
+              </button> -->
             </div>
 
             <div class="table-responsive">
@@ -1954,267 +1965,263 @@
 
             </div>
 
-            <div class="section-card">
-
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-one">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">SUNDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
-                      <!-- <div>
-                        <button class="btn-re-brand"><i class="bi bi-copy"></i></button>
-                      </div> -->
-                    </div>
-                  </div>
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-one">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">SUNDAY</h5>
                 </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
                     </div>
+                    <!-- <div>
+                      <button class="btn-re-brand"><i class="bi bi-copy"></i></button>
+                    </div> -->
                   </div>
                 </div>
               </div>
 
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-two">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">MONDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-success me-2"><i class="bi bi-check2-circle"></i> ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
                     </div>
-                  </div>
-                </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-5">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-three">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">TUESDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-four">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">WEDNESDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-five">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">THURSDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-success me-2"><i class="bi bi-check2-circle"></i> ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-three">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">FRIDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-success me-2"><i class="bi bi-check2-circle"></i> ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-four">
-                <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
-                  <div>
-                    <h5 class="mb-0">SATURDAY</h5>
-                  </div>
-                  <div class="adding-row ms-auto">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
-                      <div>
-                        <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-100 table-card-body-collapse table-card-body">
-                  <div class="main-table-upadted w-100 mt-2 py-2">
-                    <div class="d-flex align-items-center">
-                      <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
-                      <div class="pe-2">
-                        <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
-                      </div>
-                      <div>
-                        <h6><i class="bi bi-currency-rupee"></i> 221</h6>
-                      </div>
-                      <div class="ps-2">
-                        <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
-                      </div>
-                      <div class="form-check form-switch compact">
-                        <input class="form-check-input" type="checkbox" role="switch" id="" checked>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
-            <div class="extr-card">
-              <div class="d-flex">
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-two">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">MONDAY</h5>
+                </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-success me-2"><i class="bi bi-check2-circle"></i> ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                    </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-5">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-three">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">TUESDAY</h5>
+                </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                    </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-5">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-four">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">WEDNESDAY</h5>
+                </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                    </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-5">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-five">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">THURSDAY</h5>
+                </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-success me-2"><i class="bi bi-check2-circle"></i> ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                    </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-5">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-three">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">FRIDAY</h5>
+                </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-success me-2"><i class="bi bi-check2-circle"></i> ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                    </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-5">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-heading-card schedule-card mt-0 mb-2 day-type-four">
+              <div class="d-flex align-items-center justify-content-between w-100 table-card-header">
+                <div>
+                  <h5 class="mb-0">SATURDAY</h5>
+                </div>
+                <div class="adding-row ms-auto">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <span class="badge bg-danger me-2"><i class="bi bi-x-circle"></i> IN-ACTIVE</span>
+                    <div>
+                      <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 table-card-body-collapse table-card-body">
+                <div class="main-table-upadted w-100 mt-2 py-2">
+                  <div class="d-flex align-items-center">
+                    <button class="btn-checkin correct float"><i class="bi bi-pencil"></i></button>
+                    <div class="pe-2">
+                      <h6><i class="bi bi-clock"></i> 10:00AM - 07:00PM</h6>
+                    </div>
+                    <div>
+                      <h6><i class="bi bi-currency-rupee"></i> 221</h6>
+                    </div>
+                    <div class="ps-2">
+                      <button class="btn-checkin wrong p-0 background-none"><i class="bi bi-trash3"></i></button>
+                    </div>
+                    <div class="form-check form-switch compact">
+                      <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="extr-card mt-3">
+              <div class="d-flex align-items-center">
                 <div class="new-head-ico">
                   <i class="bi bi-calendar-x"></i>
                 </div>
