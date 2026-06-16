@@ -33,6 +33,10 @@ img {
     object-fit: cover;
 }
 
+hr {
+    margin: 0.8rem 0;
+}
+
 .login-screen{
     height:100vh;
     background-image: url('../images/bl-bg.jpg');
@@ -116,7 +120,7 @@ img {
 }
 
 .sidebar{
-    width:250px;
+    width:220px;
     background:linear-gradient(135deg,#eaf6ffa1,#f4fffb91);
     backdrop-filter: blur(20px);
     border-right:1px solid var(--border);
@@ -350,7 +354,7 @@ table{
 .doctor-card-wrap .doctor-card{
     border-radius:0;
     background:none;
-    padding:0 5px 12px;
+    padding:0 0 12px;
     box-shadow:none;
     border: 0 solid #e7e7e7ba;
     border-bottom-width: 1px;
@@ -445,7 +449,8 @@ input.form-control.otp-input.text-center {
     border: none;
     font-weight: 400;
     color: #f00;
-    font-size: 13px;
+    font-size: 12px;
+    margin-top: -12px;
 }
 
 .file-icon {
@@ -1567,13 +1572,6 @@ table tbody tr td {
     font-weight: 600;
 }
 
-.doc-float-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 2;
-}
-
 .invoice-img-main {
     height: auto;
     width: 100%;
@@ -1616,28 +1614,29 @@ a.call-notifier:hover {
     right: 0;
 }
 
+.doc-float-btn {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    z-index: 2;
+}
+
 .doc-float-btn .btn-brand {
-    padding: 6px 10px;
+    padding: 4px 10px;
     border-radius: 50px;
+    font-size: 12px;
 }
 
 /*-------------------------------------- DAHSBOARD ----------------------------------------*/
 
 .icon-soft{
     position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    background: #0b8f790f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 8px;
+    right: 8px;
 }
 
 .icon-soft i{
-    font-size: 15px;
+    font-size: 16px;
     color: #0b8f78;
 }
 
@@ -1774,12 +1773,19 @@ h5.usable-small-label {
     overflow:visible;
 }
 
-.earning-mini-box{
+/* .earning-mini-box{
     background:rgba(255,255,255,.13);
     border:1px solid rgba(255,255,255,.18);
     border-radius:10px;
     padding:12px;
     backdrop-filter:blur(12px);
+    cursor: pointer;
+} */
+
+.earning-mini-box{
+    border:0 solid rgba(255,255,255,.18);
+    padding:0 10px;
+    border-right-width: 1px;
     cursor: pointer;
 }
 
@@ -1832,16 +1838,17 @@ h5.usable-small-label {
 
 
 .new-head-ico {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
     background: #4e71ff1a;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.new-head-ico i {
+.new-head-ico i,
+.new-head-ico-regular i {
     font-size: 20px;
     color: #211C84;
 }
@@ -1978,7 +1985,7 @@ h5.usable-small-label {
 }
 
 .extr-card {
-    padding: 5px 10px;
+    padding: 0 5px;
 }
 
 .extr-card h5 {
@@ -2075,6 +2082,8 @@ h5.usable-small-label {
 }
 
 /*-------------------------------------- SUBMENU ----------------------------------------*/
+
+/*-------------------------------------- MEDIA ----------------------------------------*/
 
 @media screen and (min-width: 576px) and (max-width: 1920px) {
     .topbar {
@@ -2274,4 +2283,5 @@ h5.usable-small-label {
         width: 320px;
     }
 }
-/* ----------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------------- */
+
+/*-------------------------------------- MEDIA ----------------------------------------*/
