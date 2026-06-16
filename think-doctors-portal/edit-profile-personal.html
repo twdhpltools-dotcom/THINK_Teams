@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctor Profile | ThinkLab Doctor Portal</title>
+  <title>Edit Doctor Profile | ThinkLab Doctor Portal</title>
 
   <!----------------- CSS FOR BOOTSTRAP FILES START ------------------------>
   <link rel="stylesheet" href="assets/css/bootstrap-min.css">
@@ -85,15 +85,9 @@
           <div class="content pt-0 px-0">
             <section class="portal-section">
               <div class="row align-items-center gx-4">
-                <!-- <div class="col-lg-12 col-md-12 col-12">
-                  <div class="profile-main-img-info">
-                    <h2>Dr. Priya Saha</h2>
-                    <h6>MBBS</h6>
-                  </div>
-                </div> -->
                 <div class="profile-top-decor">
 
-                  <div class="sec-card-back-btn" onclick="window.location.href='index.html'">
+                  <div class="sec-card-back-btn" data-bs-toggle="modal" data-bs-target="#edit_profile_confirmation">
                     <img src="assets/images/back.png" alt="back icon">
                   </div>
                 
@@ -114,59 +108,61 @@
                 </div>
               </div>
 
-              <!-- <div class="mobile-table-head-new">
-                <h3>Edit Profile</h3>
-              </div> -->
               <div class="row gx-3">
                 <div class="col-sm-12 col-12">
 
-                  <div class="mobile-table-head-new theme-two mb-2">
+                  <div class="mobile-table-head-new theme-two mb-1">
                     <span class="decor-head-circle-outer me-2">
                       <span class="decor-head-circle-inner"></span>
                     </span>
-                    <h3>Account Settings</h3>
+                    <h3>Personal Information</h3>
                   </div>
 
-                  <div class="row mb-3">
+                  <div class="row mb-4">
                     <div class="col-sm-12 col-12">
-                      <div class="doctor-card menu-card profile mb-2">
-                        <div class="me-2">
-                          <h3>Personal Information</h3>
-                          <p>Manage confirmed clinic and polyclinic bookings in one place.</p>
+                      <div class="doctor-card menu-card profile flex-wrap">
+                        <div class="w-100 mb-1">
+                          <label class="form-label">Name</label>
+                          <input id="" type="text" class="form-control" value="Dr. Priya Saha" placeholder="Enter your name">
                         </div>
-                        <a href="edit-profile-personal.html" class="btn btn-brand">
-                          <i class="bi bi-chevron-right"></i>
-                        </a>
+                        <div class="w-100 mb-1">
+                          <label class="form-label">Mobile Number</label>
+                          <input id="" type="tel" class="form-control" value="+91 XXXXXXXX87" placeholder="Enter your mobile number">
+                        </div>
+                        <div class="w-100 mb-1">
+                          <label class="form-label">Address</label>
+                          <input id="" type="text" class="form-control" value="91, ABC Street, India" placeholder="Enter your full address">
+                        </div>
+                        <div class="w-100">
+                          <label class="form-label">Email</label>
+                          <input id="" type="email" class="form-control" value="@example00@gmail.com" placeholder="Enter your email">
+                        </div>
                       </div>
                     </div>
 
-                    <div class="col-sm-12 col-12">
-                      <div class="doctor-card menu-card profile mb-2">
-                        <div class="me-2">
-                          <h3>Professional Experiences</h3>
-                          <p>Manage confirmed clinic and polyclinic bookings in one place.</p>
-                        </div>
-                        <a href="edit-profile-professional.html" class="btn btn-brand">
-                          <i class="bi bi-chevron-right"></i>
-                        </a>
-                      </div>
-                    </div>
                   </div>
 
-                  <div class="mobile-table-head-new theme-one mb-2">
+                  <div class="mobile-table-head-new theme-one mb-1">
                     <span class="decor-head-circle-outer me-2">
                       <span class="decor-head-circle-inner"></span>
                     </span>
-                    <h3>Help Center</h3>
+                    <h3>Portal Shower</h3>
                   </div>
 
                   <div class="row">
                     <div class="col-sm-12 col-12">
-                      <div class="doctor-card menu-card profile mb-2">
-                        <div>
-                          <a href="index.html" style="color: #ff0b0b;" data-bs-toggle="modal" data-bs-target="#logout_confirmation">
-                            <i class="bi bi-box-arrow-left me-1"></i> Log Out
-                          </a>
+                      <div class="doctor-card menu-card profile flex-wrap">
+                        <div class="d-flex align-items-center w-100 mb-2">
+                          <label class="form-label mb-0">Show Number on Portal</label>
+                          <div class="form-check form-switch ms-auto">
+                            <input class="form-check-input" type="checkbox" role="switch" id="">
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center w-100">
+                          <label class="form-label mb-0">Show Fees on Portal</label>
+                          <div class="form-check form-switch ms-auto">
+                            <input class="form-check-input" type="checkbox" role="switch" id="">
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -197,6 +193,32 @@
     </main>
 
   </div>
+
+  <!--------------------- MODAL SECTION ------------------------>
+  <div class="modal fade" id="edit_profile_confirmation" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style="background:#eef7ff;">
+          <div>
+            <h5 class="modal-title fw-bold">Confirmation</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-body py-2">
+          <h6 class="confirmation-short my-3 text-center">Are you sure want to back on the Profile ?</h6>
+          <div class="filter-box row gx-1 p-0 my-2">
+            <div class="col-sm-12 col-6">
+              <button class="btn-re-brand type-four" onclick="window.location.href='profile.html'"> <i class="bi bi-check-circle me-1"></i> Save</button>
+            </div>
+            <div class="col-sm-12 col-6 text-end">
+              <button class="btn-re-brand type-two" data-bs-dismiss="modal"><i class="bi bi-x-circle me-1"></i> Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------- MODAL SECTION ------------------------>
 
   <!--------------------- MODAL SECTION ------------------------>
   <div class="modal fade" id="profile_pic_shwn" tabindex="-1">
@@ -232,49 +254,6 @@
     </div>
   </div>
   <!--------------------- MODAL SECTION ------------------------>
-
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="logout_confirmation" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Confirmation</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
-        </div>
-        <div class="modal-body py-2">
-          <h6 class="confirmation-short my-3 text-center">Are you sure want to Logout ?</h6>
-          <div class="filter-box row gx-1 p-0 my-2">
-            <div class="col-sm-12 col-6">
-              <button class="btn-re-brand type-two" onclick="window.location.href='index.html'"> <i class="bi bi-check-circle me-1"></i> Yes, Logout</button>
-            </div>
-            <div class="col-sm-12 col-6 text-end">
-              <button class="btn-re-brand type-four" data-bs-dismiss="modal"><i class="bi bi-x-circle me-1"></i> No, Cancel</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--------------------- MODAL SECTION ------------------------>
-
-  <script>
-  //   function loginPortal() {
-  //   const contact = document.getElementById("doctorContact").value.trim();
-  //   const otp = document.getElementById("doctorOtp").value.trim();
-
-  //   if (contact !== "00" || otp !== "123456") {
-  //     document.getElementById("loginError").classList.remove("d-none");
-  //     return;
-  //   }
-
-  //   document.getElementById("loginError").classList.add("d-none");
-  //   document.getElementById("loginScreen").style.display = "none";
-  //   document.getElementById("loginScreenNew").style.display = "block";
-  //   document.getElementById("dashboard").style.display = "none";
-  // }
-  </script>
 
   <!----------------------------------- JS FOR BOOTSTRAP FILES START ------------------------------------------------->
   <script src="assets/js/bootstrap-bundle-min.js" type="text/javascript"></script>
