@@ -560,7 +560,7 @@ button.btn.dropdown-toggle {
 .mobile-table-head-new {
     height: auto;
     width: 100%;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -1014,7 +1014,7 @@ table thead th .sec-card-decor {
 }
 
 .head-portion h5 {
-    font-size: 17px;
+    font-size: 16px;
     color: #211C84;
 }
 
@@ -1348,10 +1348,6 @@ table thead th .sec-card-decor {
 
 .modal .btn-brand {
     padding: 9px 15px;
-}
-
-.modal-dialog {
-    margin: 0.5rem 1rem;
 }
 
 .confirmation-short {
@@ -2253,13 +2249,13 @@ h5.usable-small-label {
         margin-bottom: 0;
     }
     .head-portion {
-        padding: 10px 18px;
+        padding: 10px 12px;
     }
     .head-portion h5 i {
-        font-size: 17px;
+        font-size: 15px;
     }
     .head-portion h5 {
-        font-size: 15px;
+        font-size: 14px;
     }
     .btn-brand {
         padding: 9px 8px;
