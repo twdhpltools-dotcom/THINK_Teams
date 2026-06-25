@@ -35,7 +35,7 @@ a {
 label {
     color: var(--dark-primary);
     font-size: 85%;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 input:focus,
@@ -46,6 +46,7 @@ textarea:focus {
 
 button {
     cursor: pointer;
+    outline: none;
 }
 
 img {

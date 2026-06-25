@@ -1,0 +1,660 @@
+<section id="Transaction" class="portal-section d-none">
+          <div class="section-card">
+            <h5 class="fw-bold mb-5">Points MIS Report</h5>
+
+            <div class="filter-box row g-3 align-items-end">
+              <div class="col-md-4">
+                <label class="form-label">Search Patient</label>
+                <input id="patientSearch" type="tel" class="form-control" placeholder="Search your patient by their name ...">
+              </div>
+
+              <div class="col-md-3">
+                <button class="btn btn-brand me-2" onclick="filterByDateRange('consultancyTable','consultFromDate','consultToDate')">
+                  Search
+                </button>
+                <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#financial_transaction_modal"><i class="bi bi-code-square"></i></button>
+              </div>
+            </div>
+
+            <!-- <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+              <strong>Doctor Name: Dr. Abhimanyu</strong>
+              <strong>Points Period: Selected Date Range</strong>
+            </div> -->
+
+            <div class="mobile-table-head-new">
+              <h3>Shibpur Branch</h3>
+            </div>
+
+            <div class="table-responsive">
+              <table id="pointsTable" class="table table-bordered align-middle">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Branch</th>
+                    <th>INV No</th>
+                    <th>Patient Name</th>
+                    <th>Referrer</th>
+                    <th>Referrer Amount</th>
+                    <th>Amount</th>
+                    <th>Discount</th>
+                    <th>Points Amt</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr data-date="2026-05-01" data-branch="HO">
+                    <td>01-05-2026</td>
+                    <td>HO</td>
+                    <td>INV1025</td>
+                    <td>Rahul Das</td>
+                    <td>Mr. Suman Roy</td>
+                    <td>₹150</td>
+                    <td>₹2,500</td>
+                    <td>₹200</td>
+                    <td>₹500</td>
+                  </tr>
+                  <tr data-date="2026-05-02" data-branch="Branch Elgin Road">
+                    <td>02-05-2026</td>
+                    <td>Branch Elgin Road</td>
+                    <td>INV1029</td>
+                    <td>Priya Saha</td>
+                    <td>Mrs. Anita Das</td>
+                    <td>₹120</td>
+                    <td>₹1,900</td>
+                    <td>₹100</td>
+                    <td>₹350</td>
+                  </tr>
+                  <tr data-date="2026-05-04" data-branch="Shibpur Branch">
+                    <td>04-05-2026</td>
+                    <td>Shibpur Branch</td>
+                    <td>INV1038</td>
+                    <td>Amit Ghosh</td>
+                    <td>Mr. Pradip Sen</td>
+                    <td>₹200</td>
+                    <td>₹3,200</td>
+                    <td>₹300</td>
+                    <td>₹650</td>
+                  </tr>
+                  <tr data-date="2026-05-07" data-branch="New Branch 2">
+                    <td>07-05-2026</td>
+                    <td>New Branch 2</td>
+                    <td>INV1052</td>
+                    <td>Moumita Sen</td>
+                    <td>Direct</td>
+                    <td>₹0</td>
+                    <td>₹2,800</td>
+                    <td>₹250</td>
+                    <td>₹600</td>
+                  </tr>
+                  <tr data-date="2026-05-10" data-branch="HO">
+                    <td>10-05-2026</td>
+                    <td>HO</td>
+                    <td>INV1067</td>
+                    <td>Sourav Roy</td>
+                    <td>Dr. Kunal Mitra</td>
+                    <td>₹250</td>
+                    <td>₹4,000</td>
+                    <td>₹400</td>
+                    <td>₹850</td>
+                  </tr>
+                  <tr data-date="2026-05-12" data-branch="Branch Elgin Road">
+                    <td>12-05-2026</td>
+                    <td>Branch Elgin Road</td>
+                    <td>INV1081</td>
+                    <td>Rina Paul</td>
+                    <td>Ms. Riya Paul</td>
+                    <td>₹100</td>
+                    <td>₹2,200</td>
+                    <td>₹150</td>
+                    <td>₹480</td>
+                  </tr>
+                  <tr data-date="2026-05-14" data-branch="Shibpur Branch">
+                    <td>14-05-2026</td>
+                    <td>Shibpur Branch</td>
+                    <td>INV1094</td>
+                    <td>Biswajit Pal</td>
+                    <td>Direct</td>
+                    <td>₹0</td>
+                    <td>₹1,650</td>
+                    <td>₹50</td>
+                    <td>₹300</td>
+                  </tr>
+                  <tr data-date="2026-05-16" data-branch="New Branch 2">
+                    <td>16-05-2026</td>
+                    <td>New Branch 2</td>
+                    <td>INV1102</td>
+                    <td>Tanushree Dey</td>
+                    <td>Mr. Akash Dey</td>
+                    <td>₹180</td>
+                    <td>₹2,950</td>
+                    <td>₹200</td>
+                    <td>₹570</td>
+                  </tr>
+
+                  <tr class="fw-bold table-light total-row">
+                    <td colspan="5">Total</td>
+                    <td id="pointsRefTotal">₹1,100</td>
+                    <td id="pointsAmountTotal">₹23,400</td>
+                    <td id="pointsDiscountTotal">₹1,700</td>
+                    <td id="pointsTotal">₹4,300</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h5 class="fw-bold mt-2 mb-5">Financial Transaction FT</h5>
+
+            <div class="filter-box row g-3 align-items-end">
+              <div class="col-md-4">
+                <label class="form-label">Search Patient</label>
+                <input id="patientSearch" type="tel" class="form-control" placeholder="Search your patient by their name ...">
+              </div>
+
+              <div class="col-md-3">
+                <button class="btn btn-brand me-2" onclick="filterByDateRange('consultancyTable','consultFromDate','consultToDate')">
+                  Search
+                </button>
+                <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#financial_transaction_modal"><i class="bi bi-code-square"></i></button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table id="consultancyTable" class="table table-bordered align-middle">
+                <thead>
+                  <tr>
+                    <th>SL No</th>
+                    <th>Patient Name</th>
+                    <th>Schedule</th>
+                    <th>Payment</th>
+                    <th>Clinic Charge</th>
+                    <th>Due</th>
+                    <th>Consultation</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr data-date="2026-05-01">
+                    <td>1</td>
+                    <td>Suman Das</td>
+                    <td>01-05-2026, 10:30 AM</td>
+                    <td>₹800</td>
+                    <td>₹500</td>
+                    <td>₹0</td>
+                    <td>₹300</td>
+                  </tr>
+                  <tr data-date="2026-05-03">
+                    <td>2</td>
+                    <td>Ankita Roy</td>
+                    <td>03-05-2026, 11:30 AM</td>
+                    <td>₹700</td>
+                    <td>₹450</td>
+                    <td>₹100</td>
+                    <td>₹250</td>
+                  </tr>
+                  <tr data-date="2026-05-06">
+                    <td>3</td>
+                    <td>Debjit Sen</td>
+                    <td>06-05-2026, 12:00 PM</td>
+                    <td>₹900</td>
+                    <td>₹600</td>
+                    <td>₹0</td>
+                    <td>₹300</td>
+                  </tr>
+                  <tr data-date="2026-05-09">
+                    <td>4</td>
+                    <td>Moumita Pal</td>
+                    <td>09-05-2026, 01:15 PM</td>
+                    <td>₹800</td>
+                    <td>₹500</td>
+                    <td>₹0</td>
+                    <td>₹300</td>
+                  </tr>
+                  <tr data-date="2026-05-12">
+                    <td>5</td>
+                    <td>Ritwik Ghosh</td>
+                    <td>12-05-2026, 02:30 PM</td>
+                    <td>₹1000</td>
+                    <td>₹650</td>
+                    <td>₹100</td>
+                    <td>₹350</td>
+                  </tr>
+
+                  <tr class="fw-bold table-light total-row"><td colspan="3">Total Payment</td><td>₹4,200</td><td colspan="3"></td></tr>
+                  <tr class="fw-bold table-light total-row"><td colspan="4">Total Clinic Charge</td><td>₹2,700</td><td colspan="2"></td></tr>
+                  <tr class="fw-bold table-light total-row"><td colspan="6">Total Consultation Fees</td><td>₹1,500</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- <div class="table-responsive">
+              <table id="pointsTable" class="table table-bordered align-middle">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Branch</th>
+                    <th>INV No</th>
+                    <th>Patient Name</th>
+                    <th>Referrer</th>
+                    <th>Referrer Amount</th>
+                    <th>Amount</th>
+                    <th>Discount</th>
+                    <th>Points Amt</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr data-date="2026-05-01" data-branch="HO">
+                    <td>01-05-2026</td>
+                    <td>HO</td>
+                    <td>INV1025</td>
+                    <td>Rahul Das</td>
+                    <td>Mr. Suman Roy</td>
+                    <td>₹150</td>
+                    <td>₹2,500</td>
+                    <td>₹200</td>
+                    <td>₹500</td>
+                  </tr>
+                  <tr data-date="2026-05-02" data-branch="Branch Elgin Road">
+                    <td>02-05-2026</td>
+                    <td>Branch Elgin Road</td>
+                    <td>INV1029</td>
+                    <td>Priya Saha</td>
+                    <td>Mrs. Anita Das</td>
+                    <td>₹120</td>
+                    <td>₹1,900</td>
+                    <td>₹100</td>
+                    <td>₹350</td>
+                  </tr>
+                  <tr data-date="2026-05-04" data-branch="Shibpur Branch">
+                    <td>04-05-2026</td>
+                    <td>Shibpur Branch</td>
+                    <td>INV1038</td>
+                    <td>Amit Ghosh</td>
+                    <td>Mr. Pradip Sen</td>
+                    <td>₹200</td>
+                    <td>₹3,200</td>
+                    <td>₹300</td>
+                    <td>₹650</td>
+                  </tr>
+                  <tr data-date="2026-05-07" data-branch="New Branch 2">
+                    <td>07-05-2026</td>
+                    <td>New Branch 2</td>
+                    <td>INV1052</td>
+                    <td>Moumita Sen</td>
+                    <td>Direct</td>
+                    <td>₹0</td>
+                    <td>₹2,800</td>
+                    <td>₹250</td>
+                    <td>₹600</td>
+                  </tr>
+                  <tr data-date="2026-05-10" data-branch="HO">
+                    <td>10-05-2026</td>
+                    <td>HO</td>
+                    <td>INV1067</td>
+                    <td>Sourav Roy</td>
+                    <td>Dr. Kunal Mitra</td>
+                    <td>₹250</td>
+                    <td>₹4,000</td>
+                    <td>₹400</td>
+                    <td>₹850</td>
+                  </tr>
+                  <tr data-date="2026-05-12" data-branch="Branch Elgin Road">
+                    <td>12-05-2026</td>
+                    <td>Branch Elgin Road</td>
+                    <td>INV1081</td>
+                    <td>Rina Paul</td>
+                    <td>Ms. Riya Paul</td>
+                    <td>₹100</td>
+                    <td>₹2,200</td>
+                    <td>₹150</td>
+                    <td>₹480</td>
+                  </tr>
+                  <tr data-date="2026-05-14" data-branch="Shibpur Branch">
+                    <td>14-05-2026</td>
+                    <td>Shibpur Branch</td>
+                    <td>INV1094</td>
+                    <td>Biswajit Pal</td>
+                    <td>Direct</td>
+                    <td>₹0</td>
+                    <td>₹1,650</td>
+                    <td>₹50</td>
+                    <td>₹300</td>
+                  </tr>
+                  <tr data-date="2026-05-16" data-branch="New Branch 2">
+                    <td>16-05-2026</td>
+                    <td>New Branch 2</td>
+                    <td>INV1102</td>
+                    <td>Tanushree Dey</td>
+                    <td>Mr. Akash Dey</td>
+                    <td>₹180</td>
+                    <td>₹2,950</td>
+                    <td>₹200</td>
+                    <td>₹570</td>
+                  </tr>
+
+                  <tr class="fw-bold table-light total-row">
+                    <td colspan="5">Total</td>
+                    <td id="pointsRefTotal">₹1,100</td>
+                    <td id="pointsAmountTotal">₹23,400</td>
+                    <td id="pointsDiscountTotal">₹1,700</td>
+                    <td id="pointsTotal">₹4,300</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> -->
+          </div>
+        </section>
+
+        <section id="Consultant" class="portal-section d-none">
+          <div class="section-card">
+            <h5 class="fw-bold mb-5">Other Doctors</h5>
+
+            <div class="filter-box row g-3 align-items-end">
+              <div class="col-md-2">
+                <label class="form-label">Department</label>
+                <select id="departmentFilter" class="form-select" onchange="filterDoctorsByDepartment()">
+                  <option value="">All Departments</option>
+                  <option value="Medicine">Medicine</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Orthopaedics">Orthopaedics</option>
+                  <option value="Gynaecology">Gynaecology</option>
+                </select>
+              </div>
+
+              <div class="col-md-2">
+                <label class="form-label">Location</label>
+                <select id="bookingBranch" class="form-select">
+                  <option value="HO">HO</option>
+                  <option value="Branch Elgin Road">Branch Elgin Road</option>
+                  <option value="Shibpur Branch">Shibpur Branch</option>
+                  <option value="New Branch 2">New Branch 2</option>
+                </select>
+              </div>
+
+              <div class="col-md-2">
+                <label class="form-label">Search Doctor</label>
+                <input id="doctorSearch" class="form-control" placeholder="Search doctor" onkeyup="filterDoctorsByDepartment()">
+              </div>
+
+              <div class="col-md-2">
+                <button class="btn btn-brand w-100" onclick="filterByDateRange('consultancyTable','consultFromDate','consultToDate')">
+                  Search
+                </button>
+              </div>
+            </div>
+
+            <div class="row g-3">
+
+              <div class="col-md-6 col-xl-4 doctor-card-wrap" data-department="Medicine" data-availability="Available" data-name="Dr. Ranjit Halder">
+                <div class="doctor-card">
+                  <span class="badge bg-info mb-2">New Branch 2</span>
+                  <h5 class="fw-bold">Dr. Ranjit Halder</h5>
+                  <p class="mb-1">MBBS, MD</p>
+                  <p class="mb-1"><strong>Department:</strong> Medicine</p>
+                  <p class="mb-1"><strong>Contact:</strong> +91 XXXXXXXX87</p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0"><strong>Fee:</strong> ₹ XXXX</p>
+                    <a href="#" class="btn btn-brand">
+                      Refer
+                    </a>
+                  </div>
+                  <!-- <span class="badge bg-success">Available</span> -->
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xl-4 doctor-card-wrap" data-department="Cardiology" data-availability="Few Slots Left" data-name="Dr. Amit Kumar Das">
+                <div class="doctor-card">
+                  <span class="badge bg-info mb-2">Branch Shibpur</span>
+                  <h5 class="fw-bold">Dr. Amit Kumar Das</h5>
+                  <p class="mb-1">MBBS, DNB</p>
+                  <p class="mb-1"><strong>Department:</strong> Cardiology</p>
+                  <p class="mb-1"><strong>Contact:</strong> +91 XXXXXXXXX60</p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0"><strong>Fee:</strong> ₹ XXXX</p>
+                    <a href="#" class="btn btn-brand">
+                      Refer
+                    </a>
+                  </div>
+                  <!-- <span class="badge bg-warning text-dark">Few Slots Left</span> -->
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xl-4 doctor-card-wrap" data-department="Neurology" data-availability="Available" data-name="Dr. Partha Sen">
+                <div class="doctor-card">
+                  <span class="badge bg-info mb-2">HO</span>
+                  <h5 class="fw-bold">Dr. Partha Sen</h5>
+                  <p class="mb-1">MBBS, DM Neurology</p>
+                  <p class="mb-1"><strong>Department:</strong> Neurology</p>
+                  <p class="mb-1"><strong>Contact:</strong> 8012345678</p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0"><strong>Fee:</strong> ₹1200</p>
+                    <a href="#" class="btn btn-brand">
+                      Refer
+                    </a>
+                  </div>
+                  <!-- <span class="badge bg-success">Available</span> -->
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xl-4 doctor-card-wrap" data-department="Orthopaedics" data-availability="Unavailable" data-name="Dr. Souvik Roy">
+                <div class="doctor-card">
+                  <span class="badge bg-info mb-2">Branch Elgin Road</span>
+                  <h5 class="fw-bold">Dr. Souvik Roy</h5>
+                  <p class="mb-1">MBBS, MS Ortho</p>
+                  <p class="mb-1"><strong>Department:</strong> Orthopaedics</p>
+                  <p class="mb-1"><strong>Contact:</strong> 9123456780</p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0"><strong>Fee:</strong> ₹ XXXX</p>
+                    <a href="#" class="btn btn-brand">
+                      Refer
+                    </a>
+                  </div>
+                  <!-- <span class="badge bg-danger">Unavailable</span> -->
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xl-4 doctor-card-wrap" data-department="Gynaecology" data-availability="Available" data-name="Dr. Ananya Mukherjee">
+                <div class="doctor-card">
+                  <span class="badge bg-info mb-2">HO</span>
+                  <h5 class="fw-bold">Dr. Ananya Mukherjee</h5>
+                  <p class="mb-1">MBBS, MS Gynae</p>
+                  <p class="mb-1"><strong>Department:</strong> Gynaecology</p>
+                  <p class="mb-1"><strong>Contact:</strong> +91 XXXXXXXXX44</p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0"><strong>Fee:</strong> ₹950</p>
+                    <a href="#" class="btn btn-brand">
+                      Refer
+                    </a>
+                  </div>
+                  <!-- <span class="badge bg-success">Available</span> -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="SelfRegistration" class="portal-section d-none">
+          <div class="section-card">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-5">
+              <h5 class="fw-bold">Search Your Patient</h5>
+              <button class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#add_patient_manually_modal">
+                <i class="bi bi-plus-circle-dotted me-2"></i> Add New Patient
+              </button>
+            </div>
+
+            <div class="filter-box row g-3">
+              <div class="col-md-2">
+                <label class="form-label">Date</label>
+                <select id="regDate" class="form-select">
+                  <option value="0" selected="">Today</option>
+                  <option value="1">Last 7 days</option>
+                  <option value="2">This Month</option>
+                  <option value="3">Last Month</option>
+                  <option value="4">Custom Date Range</option>
+                </select>
+              </div>
+
+              <div class="col-md-2">
+                <label class="form-label">Search by</label>
+                <select id="searchBy" class="form-select">
+                  <option value="">Select</option>
+                  <option value="pat">Patient Name</option>
+                  <option value="con">Contact Number</option>
+                  <option value="abh">ABHA Id</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">Search Patient</label>
+                <input id="patientSearch" type="text" class="form-control" placeholder="Search your patient by their name ...">
+              </div>
+
+              <div class="col-md-2 d-flex align-items-end">
+                <button class="btn btn-brand w-100" onclick="">
+                  Search
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+              <strong>Doctor Name: Dr. Abhimanyu</strong>
+            </div>
+
+            <div class="table-responsive">
+              <table id="patientListTable" class="table table-bordered align-middle">
+                <thead>
+                  <tr>
+                    <th>Patient Name</th>
+                    <th>Mobile No</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Appointment Date</th>
+                    <th>Time Slot</th>
+                    <th>Symptoms</th>
+                    <th>Patient Registration File</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Test Sumanto</td>
+                    <td>1234567890</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>13-05-2026</td>
+                    <td>10:35 - 14:27</td>
+                    <td>Problem with Skin</td>
+                    <td>
+                      <div class="file-icon">
+                        <a href="#" id="" class="d-block" onclick="downloadPDF()">
+                          <img src="assets/images/pdf.png" alt="file image" />
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Test Swapna</td>
+                    <td>0987654321</td>
+                    <td>Female</td>
+                    <td>21</td>
+                    <td>14-05-2026</td>
+                    <td>12:18 - 17:45</td>
+                    <td>Problem with Skin</td>
+                    <td>
+                      <div class="file-icon">
+                        <a href="#" id="" class="d-block" onclick="downloadPDF()">
+                          <img src="assets/images/pdf.png" alt="file image" />
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- <tr class="fw-bold table-light total-row">
+                    <td colspan="5">Total</td>
+                    <td id="pointsRefTotal">₹1,100</td>
+                    <td id="pointsAmountTotal">₹23,400</td>
+                    <td id="pointsDiscountTotal">₹1,700</td>
+                    <td id="pointsTotal">₹4,300</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="SentLinkTracking" class="portal-section d-none">
+          <div class="section-card">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-5">
+              <h5 class="fw-bold">Registered Patients List</h5>
+            </div>
+
+            <div class="filter-box row g-3">
+              <div class="col-md-2">
+                <label class="form-label">Status</label>
+                <select id="appointmentStatus" class="form-select">
+                  <option value="0">Select</option>
+                  <option value="Completed">Completed</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+              </div>
+              
+              <div class="col-md-2">
+                <label class="form-label">Search by</label>
+                <select id="searchBy" class="form-select">
+                  <option value="">Select</option>
+                  <option value="con">Contact Number</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">Search Contact</label>
+                <input id="patientSearch" type="tel" class="form-control" placeholder="Search your patient by their contact number ...">
+              </div>
+
+              <div class="col-md-2 d-flex align-items-end">
+                <button class="btn btn-brand w-100" onclick="">
+                  Search
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+              <strong>Doctor Name: Dr. Abhimanyu</strong>
+            </div>
+
+            <div class="table-responsive">
+              <table id="regPatientListTable" class="table table-bordered align-middle">
+                <thead>
+                  <tr>
+                    <th width="80">#</th>
+                    <th>Date</th>
+                    <th>Mobile No</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td width="80">01</td>
+                    <td>13-05-2026</td>
+                    <td>1234567890</td>
+                    <td>
+                      <span class="badge bg-warning text-dark">Pending</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="80">02</td>
+                    <td>14-05-2026</td>
+                    <td>0987654321</td>
+                    <td>
+                      <span class="badge bg-success">Completed</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
