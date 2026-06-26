@@ -13,8 +13,10 @@
     --light:#ffffff;
     --dark:#000;
     --primary:#0B28A8;
-    --secondary:#E4F1FF;
     --dark-primary:#0b122e;
+    --secondary:#E4F1FF;
+    --success:#009812;
+    --failure:#B80000;
 }
 
 html {
@@ -38,6 +40,15 @@ label {
     margin-bottom: 5px;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #0b122e93;
+}
+
+select {
+
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -47,6 +58,7 @@ textarea:focus {
 button {
     cursor: pointer;
     outline: none;
+    white-space: nowrap;
 }
 
 img {
@@ -56,7 +68,13 @@ img {
 }
 
 hr {
-    margin: 10px 0;
+    margin: 8px 0;
+}
+
+.tab-btn.active {
+    background: var(--primary);
+    font-weight: 500;
+    color: var(--light);
 }
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
@@ -103,3 +121,22 @@ hr {
     transition: opacity 0.6s ease-in-out;
 }
 /* ----------------------------------------- CSS FOR FLASH-SCREEN-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR PG-SCROLL-BAR START ---------------------------------------------- */
+/* ::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark);
+} */
+/* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */
