@@ -1,4 +1,9 @@
 /*------------------------------------------- JS FOR MAIN START ------------------------------------------*/
+/*-------------------------------------- PRE-LOADER ----------------------------------------*/
+window.addEventListener("load", function () {
+  document.getElementById("PreLoader").classList.add("hide");
+});
+/*-------------------------------------- PRE-LOADER ----------------------------------------*/
 /*-------------------------------------- LOG-IN SETUP ----------------------------------------*/
 function LogOtp() {
   const mobile = document.getElementById("LogMobile");
@@ -34,78 +39,6 @@ function getOTP() {
 }
 /*-------------------------------------- OTP-INPUT ----------------------------------------*/
 
-/*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
-function openBookingSetupTLModal() {
-  const modal = document.getElementById("BookingSetupTLModal");
-  const box = document.getElementById("BookingSetupTLModalBox");
-
-  modal.classList.remove("hidden");
-  modal.classList.add("flex");
-
-  setTimeout(() => {
-    box.classList.remove("opacity-0", "scale-95");
-    box.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeCustomModal() {
-  const modal = document.getElementById("BookingSetupTLModal");
-  const box = document.getElementById("BookingSetupTLModalBox");
-
-  box.classList.add("opacity-0", "scale-95");
-  box.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("BookingSetupTLModal").addEventListener("click", function(e) {
-  if (e.target.id === "BookingSetupTLModal") {
-    closeCustomModal();
-  }
-});
-/*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
-
-/*-------------------------------------- CUSTOM-SELECT ----------------------------------------*/
-// const doctorBtn = document.getElementById("DoctorProfileSelect");
-// const doctorDropdown = document.getElementById("DoctorDropdown");
-// const doctorChevron = document.getElementById("DoctorChevron");
-
-// doctorBtn.addEventListener("click", function (e) {
-
-//     e.stopPropagation();
-
-//     doctorDropdown.classList.toggle("hidden");
-
-//     doctorChevron.classList.toggle("rotate-180");
-// });
-
-// document.addEventListener("click", function (e) {
-
-//     if (
-//         !doctorBtn.contains(e.target) &&
-//         !doctorDropdown.contains(e.target)
-//     ) {
-//         doctorDropdown.classList.add("hidden");
-//         doctorChevron.classList.remove("rotate-180");
-//     }
-// });
-/*-------------------------------------- CUSTOM-SELECT ----------------------------------------*/
-
-/*-------------------------------------- MENU-TOGGLE ----------------------------------------*/
-function openMenuToggle() {
-  const sidebar = document.getElementById("sidebar");
-
-  sidebar.classList.toggle("translate-y-full");
-  sidebar.classList.toggle("opacity-0");
-
-  sidebar.classList.toggle("translate-y-0");
-  sidebar.classList.toggle("opacity-100");
-}
-/*-------------------------------------- MENU-TOGGLE ----------------------------------------*/
-
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 function toggleSubMenu(btn) {
   const subMenu = btn.nextElementSibling;
@@ -130,9 +63,18 @@ function bookingDetailsShow() {
 }
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
-/*-------------------------------------- PRE-LOADER ----------------------------------------*/
-window.addEventListener("load", function () {
-  document.getElementById("PreLoader").classList.add("hide");
-});
-/*-------------------------------------- PRE-LOADER ----------------------------------------*/
+/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
+function openTab(btn){
+    document.querySelectorAll(".tab-content").forEach(content=>{
+        content.classList.add("hidden");
+    });
+
+    document.querySelectorAll(".tab-btn").forEach(button=>{
+        button.classList.remove("active");
+    });
+
+    document.getElementById(btn.dataset.tab).classList.remove("hidden");
+    btn.classList.add("active");
+}
+/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
