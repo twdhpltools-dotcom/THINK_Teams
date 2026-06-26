@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="ThinkLab Doctor Portal Application | A Trusted Doctor Management Software of India" />
-  <meta name="description" content="ThinkLab Doctor Portal Application | A Trusted Doctor Management Software of India" />
-  <meta name="keywords" content="Doctor Portal, Doctor Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
+  <title>ThinkLab Doctor Portal | Secure Doctor Management Application</title>
+
+  <meta name="title" content="ThinkLab Doctor Portal | Secure Doctor Management Application" />
+  <meta name="description" content="ThinkLab Doctor Portal is a secure web application for doctors to manage appointments, patients, reports, schedules, referrals, and clinical workflows efficiently." />
+  <meta name="keywords" content="ThinkLab Doctor Portal, Doctor Portal, Doctor Management Software, Healthcare Software India, Clinic Management Software, Medical Portal, Patient Management System, Diagnostic Software, ThinkLab" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
-  <title>ThinkLab Doctor Portal Application | A Trusted Doctor Management Software of India</title>
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://doctor.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Doctor Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!------------------ CSS FOR MAIN FILES START ---------------------->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -30,11 +42,11 @@
   </div>
   <!----------------------------------- PRE-LOADER ------------------------------------------------->
 
-  <!----------------------------------- DASHBOARD SECTION ------------------------------------------------->
-  <section id="mainDashboard" class="h-auto w-full">
+  <!----------------------------------- BOOKING SECTION ------------------------------------------------->
+  <section class="h-auto w-full">
 
-    <!----- MENU-BAR ------->
-    <aside id="sidebar" class="h-auto w-full fixed bottom-0 z-100 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
         <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
@@ -120,15 +132,15 @@
         Chinic & Charges
       </button>
     </aside>
-    <!----- MENU-BAR ------->
+    <!----- SIDEBAR-MENU ------->
 
     <!----- BOTTOM-ISLAND ------->
-    <div class="fixed bottom-0 h-auto w-full py-4 bg-[var(--light)] flex items-center justify-center gap-x-30 shadow-[0_-10px_25px_0_#00000010] z-101">
+    <div class="fixed bottom-0 h-auto w-full py-3 bg-[var(--light)] flex items-center justify-center gap-x-20 shadow-[0_-10px_25px_0_#00000010] z-102">
       <a href="index.html">
         <i class="bi bi-house-door text-[180%] text-[var(--primary)]/50"></i>
       </a>
-      <a href="javascript:void(0)" class="mt-[-30px] flex items-center justify-center h-18 w-18 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openMenuToggle()">
-        <i class="bi bi-list text-[200%] text-[var(--light)]"></i>
+      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
+        <i class="bi bi-list text-[180%] text-[var(--light)]"></i>
       </a>
       <a href="profile.html">
         <i class="bi bi-person text-[180%] text-[var(--primary)]/50"></i>
@@ -154,14 +166,14 @@
       <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
 
         <!----- CONTENT-HEADING ------->
-        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-2 px-5">
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
           <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
             <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
               <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
             </div>
             Booking <span class="text-[70%] font-medium pl-1">[For Think Lab Users]</span>
           </h5>
-          <div class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 flex items-center justify-center" onclick="openBookingSetupTLModal()">
+          <div class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 flex items-center justify-center" onclick="openBookingSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
           </div>
         </div>
@@ -205,10 +217,10 @@
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
-                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#3CA248]/80 bg-[#7AEF88]/5 flex items-center justify-center">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#3CA248]/80 bg-[#7AEF88]/5 flex items-center justify-center"  onclick="openBookingConfModal()">
                   <i class="bi bi-repeat text-[90%] text-[#3CA248]"></i>
                 </button>
-                <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openBookingInvShowerModal()">
                   <i class="bi bi-arrow-right-short text-[150%] text-[var(--dark)]/90 rotate-[-45deg]"></i>
                 </button>
               </div>
@@ -223,10 +235,10 @@
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
-                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/5 flex items-center justify-center">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/5 flex items-center justify-center" onclick="openBookingPrescriptionMenuToggle()">
                   <i class="bi bi-file-check text-[90%] text-[#1560AC]"></i>
                 </button>
-                <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openBookingInvShowerModal()">
                   <i class="bi bi-arrow-right-short text-[150%] text-[var(--dark)]/90 rotate-[-45deg]"></i>
                 </button>
               </div>
@@ -273,7 +285,7 @@
                   <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 23</p>
                 </div>
               </div>
-              <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+              <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openBookingInvShowerModal()">
                 <i class="bi bi-arrow-right-short text-[150%] text-[var(--dark)]/90 rotate-[-45deg]"></i>
               </button>
             </div>
@@ -285,14 +297,14 @@
         <hr class="border-[var(--dark)]/10" />
 
         <!----- CONTENT-HEADING ------->
-        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-2 px-5">
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
           <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
             <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
               <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
             </div>
             Booking <span class="text-[70%] font-medium pl-1">[For Individual Users]</span>
           </h5>
-          <div class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 flex items-center justify-center" onclick="openBookingSetupIVModal()">
+          <div class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 flex items-center justify-center" onclick="openBookingSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
           </div>
         </div>
@@ -327,7 +339,7 @@
 
           <div class="h-auto w-full">
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none" onclick="bookingDetailsShow()">
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShow()">
               <div class="flex items-start">
                 <i class="bi bi-check-circle text-[#3CA248]/80 text-[120%] me-3"></i>
                 <div>
@@ -335,26 +347,26 @@
                   <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 39</p>
                 </div>
               </div>
-              <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center">
+              <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center" onclick="openBookingCancelConfModal()">
                 <i class="bi bi-x-circle text-[90%] text-[#FF0000]"></i>
               </button>
             </div>
 
             <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-4 px-4 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
               <div class="flex items-center">
-                <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1" onclick="openBookingRScheduleModal()">
                   <i class="bi bi-calendar-plus text-[80%] text-[var(--dark)]/90"></i>
                 </button>
                 <p class="text-[var(--dark)]/80 text-[80%]">Re-Schedule</p>
               </div>
               <div class="flex items-center">
-                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center me-1">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center me-1" onclick="openBookingPaymentModal()">
                   <i class="bi bi-wallet2 text-[80%] text-[#1560AC]/90"></i>
                 </button>
                 <p class="text-[var(--dark)]/80 text-[80%]">Payment</p>
               </div>
               <div class="flex items-center">
-                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center me-1">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center me-1" onclick="openBookingRefundModal()">
                   <i class="bi bi-repeat-1 text-[80%] text-[#FF0000]/90"></i>
                 </button>
                 <p class="text-[var(--dark)]/80 text-[80%]">Refund</p>
@@ -370,10 +382,10 @@
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
-                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/5 flex items-center justify-center">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/5 flex items-center justify-center" onclick="openBookingPrescriptionMenuToggle()">
                   <i class="bi bi-file-check text-[90%] text-[#1560AC]"></i>
                 </button>
-                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center" onclick="openBookingCancelConfModal()">
                   <i class="bi bi-x-circle text-[90%] text-[#FF0000]"></i>
                 </button>
               </div>
@@ -420,8 +432,8 @@
                   <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 23</p>
                 </div>
               </div>
-              <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
-                <i class="bi bi-eye text-[100%] text-[var(--dark)]/60"></i>
+              <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openBookingInvShowerModal()">
+                <i class="bi bi-arrow-right-short text-[150%] text-[var(--dark)]/90 rotate-[-45deg]"></i>
               </button>
             </div>
 
@@ -434,15 +446,257 @@
 
     </main>
 
+    <!----- BOOKING-RE-SCHEDULE-MENU ------->
+    <aside id="BookingRScheduleSideBar" class="h-auto w-full fixed bottom-0 z-100 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pt-4 pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_-5px_20px_0_#0000000a] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="h-auto w-full text-center border-b border-solid border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Monday
+        </h5>
+      </div>
+
+      <div class="h-45 overflow-y-auto py-2 mb-8">
+        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+          10:00 am  to  14:00 pm
+        </button>
+
+        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+          14:00 am  to  15:00 pm
+        </button>
+
+        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+          15:00 am  to  16:00 pm
+        </button>
+
+        <button class="text-left py-4 px-8 h-auto w-full text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+          16:00 am  to  17:00 pm
+        </button>
+      </div>
+
+      <div class="h-auto w-full text-center">
+        <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openBookingRScheduleMenuToggle()">
+          Submit
+        </button>       
+      </div>
+    </aside>
+    <!----- BOOKING-RE-SCHEDULE-MENU ------->
+
+    <!----- BOOKING-PRESCRIPTION-MENU ------->
+    <aside id="BookingPrescriptionSideBar" class="h-auto w-full fixed bottom-0 z-100 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pt-4 pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_-5px_20px_0_#0000000a] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="h-auto w-full text-center border-b border-solid border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Online Prescription
+        </h5>
+      </div>
+
+      <div class="h-140 w-full overflow-y-auto">
+        <div class="py-5 px-8 bg-[var(--secondary)]/10 border-b border-solid border-[var(--dark-primary)]/10">
+          
+          <div class="flex items-center justify-between">
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Invoice</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">ABHA Id</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Patient</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Age / Gender</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Contact</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Queue</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Doctor</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Branch</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+            <div class="h-auto px-5 w-25">
+              <small class="text-[var(--dark)] text-[85%] mb-1">Schedule</small>
+              <div class="text-[var(--dark-primary)]/80 text-[95%]">-</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-5 px-8 bg-[var(--light)] border-b border-solid border-[var(--dark-primary)]/10">
+
+          <div class="flex items-center justify-center gap-x-2 mb-4">
+            <div class="h-auto w-45">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="BP" />
+            </div>
+            <div class="h-auto w-45">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Pulse" />
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-x-2">
+            <div class="h-auto w-45">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Weight" />
+            </div>
+            <div class="h-auto w-45">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="SpO2" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-5 px-8 bg-[var(--secondary)]/10 border-b border-solid border-[var(--dark-primary)]/10">
+
+          <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70 text-center mb-5">
+            Quick Medical Notes
+          </h5>
+
+          <div class="h-auto w-full min-w-[200px] flex items-center gap-x-3 overflow-x-auto mb-4">
+            <button class="tab-btn rounded-sm px-4 py-1 text-[80%] text-[var(--dark)] font-normal bg-[var(--light)] border border-solid border-[#00000020] outline-none" data-tab="QMedicalTabContentOne" onclick="openTab(this)">
+              Fever
+            </button>
+            <button class="tab-btn active rounded-sm px-4 py-1 text-[80%] text-[var(--dark)] font-normal bg-[var(--light)] border border-solid border-[#00000020] outline-none" data-tab="QMedicalTabContentTwo" onclick="openTab(this)">
+              Cough
+            </button>
+            <button class="tab-btn rounded-sm px-4 py-1 text-[80%] text-[var(--dark)] font-normal bg-[var(--light)] border border-solid border-[#00000020] outline-none" data-tab="QMedicalTabContentThree" onclick="openTab(this)">
+              Weakness
+            </button>
+            <button class="tab-btn rounded-sm px-4 py-1 text-[80%] text-[var(--dark)] font-normal bg-[var(--light)] border border-solid border-[#00000020] outline-none" data-tab="QMedicalTabContentFour" onclick="openTab(this)">
+              Chest Pain
+            </button>
+            <button class="tab-btn rounded-sm px-4 py-1 text-[80%] text-[var(--dark)] font-normal bg-[var(--light)] border border-solid border-[#00000020] outline-none" data-tab="QMedicalTabContentFive" onclick="openTab(this)">
+              Follow-up Visit
+            </button>
+          </div>
+
+          <div class="tab-content h-auto w-full hidden" id="QMedicalTabContentOne">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Pulse" />
+          </div>
+
+          <div class="tab-content h-auto w-full" id="QMedicalTabContentTwo">
+            <textarea rows="3" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Chief complaints / history"></textarea>
+          </div>
+
+          <div class="tab-content h-auto w-full hidden" id="QMedicalTabContentThree">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Pulse" />
+          </div>
+
+          <div class="tab-content h-auto w-full hidden" id="QMedicalTabContentFour">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Pulse" />
+          </div>
+
+          <div class="tab-content h-auto w-full hidden" id="QMedicalTabContentFive">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Pulse" />
+          </div>
+
+        </div>
+
+        <div class="py-4 px-8 bg-[var(--light)] border-b border-solid border-[var(--dark-primary)]/10">
+
+          <div class="h-auto w-full mb-1">
+            <textarea rows="3" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Enter diagnosis"></textarea>
+          </div>
+
+          <div class="h-auto w-full">
+            <textarea rows="3" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Rest, diet, lifestyle, precautions"></textarea>
+          </div>
+
+        </div>
+
+        <div class="py-5 px-8 bg-[var(--secondary)]/10 border-b border-solid border-[var(--dark-primary)]/10">
+
+          <div class="h-auto w-full">
+            <div class="flex items-center justify-center gap-x-2 mb-4">
+              <div class="h-auto w-45">
+                <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Medicine name" />
+              </div>
+              <div class="h-auto w-45">
+                <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Enter Duration" />
+              </div>
+            </div>
+            
+            <div class="flex items-center justify-center gap-x-2 mb-4">
+              <div class="h-auto w-45">
+                <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                  <option>Select Time</option>
+                  <option>10:00 am  to  14:00 pm</option>
+                  <option>14:00 pm  to  17:00 pm</option>
+                  <option>Other timings</option>
+                </select>
+              </div>
+              <div class="h-auto w-45">
+                <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                  <option>Select Dose</option>
+                  <option>Dose A</option>
+                  <option>Dose B</option>
+                  <option>Others</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-x-2 mb-4">
+              <div class="h-auto w-full">
+                <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Instruction" />
+              </div>
+            </div>
+
+            <hr class="border-[var(--dark)]/10" />
+
+            <div class="mt-3">
+              <a href="javascript:void(0)" class="mx-auto flex items-center justify-center h-10 w-10 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]">
+                <i class="bi bi-plus text-[150%] text-[var(--light)]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-4 px-8 bg-[var(--light)]">
+
+          <div class="flex items-center justify-center gap-x-2 mb-4">
+            <div class="h-auto w-45">
+              <label class="inline-block font-medium">Suggested Tests</label>
+              <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="CBC, CRP, ECG, Lipid Profile etc." />
+            </div>
+            <div class="h-auto w-45">
+              <label class="inline-block font-medium">Next Follow-up</label>
+              <input type="date" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="h-auto w-full text-center">
+        <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openBookingRScheduleMenuToggle()">
+          Save
+        </button>       
+      </div>
+    </aside>
+    <!----- BOOKING-PRESCRIPTION-MENU ------->
+
   </section>
 
-  <!----- MODAL ------->
-  <div id="BookingSetupTLModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
-    <div id="BookingSetupTLModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+  <!----- BOOKING-SETUP MODAL ------->
+  <div id="BookingSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingSetupModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
 
       <!----- MODAL-HEADER ------->
       <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
-        <h5 class="text-[110%] font-semibold text-[var(--dark-primary)]/70">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
           Search Bookings
         </h5>
       </div>
@@ -450,9 +704,9 @@
 
       <!----- MODAL-BODY ------->
       <div class="h-auto w-full text-center py-6 px-4">
-        <div class="flex items-center justify-between gap-x-2 mb-4">
+        <div class="flex items-center justify-center gap-x-2 mb-4">
           <div class="h-auto w-45">
-            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
               <option>Location</option>
               <option>HO</option>
               <option>Branch Elgin Road</option>
@@ -461,7 +715,7 @@
             </select>
           </div>
           <div class="h-auto w-45">
-            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
               <option>Type</option>
               <option>Booking</option>
               <option>Appointment</option>
@@ -471,7 +725,7 @@
         </div>
         <div class="flex items-center justify-between gap-x-2 mb-6">
           <div class="h-auto w-full">
-            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
               <option>Date</option>
               <option>This Month</option>
               <option>Last Month</option>
@@ -480,7 +734,7 @@
           </div>
         </div>
         <div class="h-auto w-full text-center">
-          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_20px_20px_0_#0b28a824] min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='login-otp.html'">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
             Search
           </button>       
         </div>
@@ -489,196 +743,205 @@
 
     </div>
   </div>
-  <!----- MODAL ------->
+  <!----- BOOKING-SETUP MODAL ------->
 
-  <!----- MODAL ------->
-  <div class="modal fade" id="BookingSetupTLModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Send Patient Registration Link</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-4">
-              <label class="form-label">Mobile</label>
-              <select id="patiendMobNumberCode" class="form-select">
-                <option value="0">+91</option>
-                <option value="1">+01</option>
-                <option value="2">+77</option>
-                <option value="3">+00</option>
-                <option value="4">+123</option>
-              </select>
-            </div>
-            <div class="col-md-8">
-              <label class="form-label">&nbsp;</label>
-              <input id="patiendMobNumber" type="number" class="form-control" placeholder="Enter Mobile Number">
-            </div>
-            <div class="col-md-12">
-              <label class="form-label">Patient Email</label>
-              <input type="email" id="patiendEmail" class="form-control" placeholder="Enter patient email address" />
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand" data-bs-dismiss="modal" onclick="showSection('sentLinkTracking',this)">
-              Send
-            </button>
-          </div>
+  <!----- BOOKING-CONFIRMATION MODAL ------->
+  <div id="BookingConfModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingConfModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-12 px-4">
+        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-7">Do you want Booking Confirmed ?</h6>
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Yes
+          </button>
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--dark)]/80 font-medium bg-[var(--secondary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='index.html'">
+            No
+          </button>
         </div>
       </div>
+      <!----- MODAL-BODY ------->
+
     </div>
   </div>
-  <!----- MODAL ------->
+  <!----- BOOKING-CONFIRMATION MODAL ------->
 
-  <!----- MODAL ------->
-  <div class="modal fade" id="PrescriptionModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable">
-      <div class="modal-content" style="border-radius:20px;overflow:hidden;">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Online Prescription</h5>
-            <small class="text-muted">Patient details are auto fetched from booking check-in.</small>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+  <!----- BOOKING-CANCEL-CONFIRMATION MODAL ------->
+  <div id="BookingCancelConfModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingCancelConfModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
 
-        <div class="modal-body">
-          <div class="prescription-card mb-3">
-            <div class="row g-3">
-              <div class="col-md-3">
-                <small class="text-muted">Invoice</small>
-                <div class="fw-bold" id="rxInvoice">-</div>
-              </div>
-              <div class="col-md-3">
-                <small class="text-muted">ABHA Id</small>
-                <div class="fw-bold" id="rxAbhaId">-</div>
-              </div>
-              <div class="col-md-4">
-                <small class="text-muted">Patient</small>
-                <div class="fw-bold" id="rxPatient">-</div>
-              </div>
-              <div class="col-md-2">
-                <small class="text-muted">Age / Gender</small>
-                <div class="fw-bold" id="rxAgeGender">-</div>
-              </div>
-              <div class="col-md-3">
-                <small class="text-muted">Contact</small>
-                <div class="fw-bold" id="rxContact">-</div>
-              </div>
-              <div class="col-md-3">
-                <small class="text-muted">Queue</small>
-                <div class="fw-bold" id="rxQueue">-</div>
-              </div>
-              <div class="col-md-3">
-                <small class="text-muted">Doctor</small>
-                <div class="fw-bold" id="rxDoctor">-</div>
-              </div>
-              <div class="col-md-3">
-                <small class="text-muted">Branch</small>
-                <div class="fw-bold" id="rxBranch">-</div>
-              </div>
-              <div class="col-md-6">
-                <small class="text-muted">Schedule</small>
-                <div class="fw-bold" id="rxSchedule">-</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row g-3">
-            <div class="col-lg-4">
-              <div class="prescription-card h-100">
-                <h6 class="fw-bold mb-3">Vitals</h6>
-                <div class="row g-2">
-                  <div class="col-6"><input class="form-control" placeholder="BP"></div>
-                  <div class="col-6"><input class="form-control" placeholder="Pulse"></div>
-                  <div class="col-6"><input class="form-control" placeholder="Weight"></div>
-                  <div class="col-6"><input class="form-control" placeholder="SpO2"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div class="prescription-card h-100">
-                <h6 class="fw-bold mb-3">Quick Medical Notes</h6>
-                <span class="rx-chip">Fever</span>
-                <span class="rx-chip">Cough</span>
-                <span class="rx-chip">Weakness</span>
-                <span class="rx-chip">Chest Pain</span>
-                <span class="rx-chip">Follow-up Visit</span>
-                <textarea class="form-control mt-2" rows="3" placeholder="Chief complaints / history"></textarea>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <label class="form-label fw-semibold">Diagnosis</label>
-              <textarea class="form-control" rows="3" placeholder="Enter diagnosis"></textarea>
-            </div>
-
-            <div class="col-lg-6">
-              <label class="form-label fw-semibold">Advice</label>
-              <textarea class="form-control" rows="3" placeholder="Rest, diet, lifestyle, precautions"></textarea>
-            </div>
-
-            <div class="col-12">
-              <label class="form-label fw-semibold">Medicines</label>
-              <div class="table-responsive">
-                <table class="table table-bordered align-middle mb-0">
-                  <thead>
-                    <tr>
-                      <th>Medicine</th>
-                      <th>Dose</th>
-                      <th>Timing</th>
-                      <th>Duration</th>
-                      <th>Instruction</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><input class="form-control" placeholder="Medicine name"></td>
-                      <td><input class="form-control" placeholder="1-0-1"></td>
-                      <td><input class="form-control" placeholder="After food"></td>
-                      <td><input class="form-control" placeholder="5 days"></td>
-                      <td><input class="form-control" placeholder="Notes"></td>
-                    </tr>
-                    <tr>
-                      <td><input class="form-control" placeholder="Medicine name"></td>
-                      <td><input class="form-control" placeholder="0-1-0"></td>
-                      <td><input class="form-control" placeholder="Before food"></td>
-                      <td><input class="form-control" placeholder="7 days"></td>
-                      <td><input class="form-control" placeholder="Notes"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="table-row-adding">
-                <button type="button" class="btn btn-brand"><i class="bi bi-plus"></i></button>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <label class="form-label fw-semibold">Suggested Tests</label>
-              <input class="form-control" placeholder="CBC, CRP, ECG, Lipid Profile etc.">
-            </div>
-
-            <div class="col-lg-6">
-              <label class="form-label fw-semibold">Next Follow-up</label>
-              <input type="date" class="form-control">
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-brand">Save</button>
-          <button type="button" class="btn btn-brand"><i class="bi bi-printer"></i></button>
-          <button type="button" class="btn btn-brand" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#pres_share_modal"><i class="bi bi-share"></i></button>
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-12 px-4">
+        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-7">Do you want to Cancel this Booking ?</h6>
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--failure)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Yes
+          </button>
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--dark)]/80 font-medium bg-[var(--secondary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='index.html'">
+            No
+          </button>
         </div>
       </div>
+      <!----- MODAL-BODY ------->
+
     </div>
   </div>
-  <!----- MODAL ------->
+  <!----- BOOKING-CANCEL-CONFIRMATION MODAL ------->
+
+  <!----- BOOKING-RE-SCHEDULE MODAL ------->
+  <div id="BookingRScheduleModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingRScheduleModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Re - Schedule
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-100">
+            <input type="date" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Re-Schedule" />
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openBookingRScheduleMenuToggle()">
+            Next
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- BOOKING-RE-SCHEDULE MODAL ------->
+
+  <!----- BOOKING-PAYMENT MODAL ------->
+  <div id="BookingPaymentModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingPaymentModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Payment
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center pt-2 pb-6 px-4">
+        <div class="flex items-center justify-between mb-5">
+          <div class="text-left">
+            <p class="text-[var(--dark)] text-[85%]">Name</p>
+            <h4 class="text-[var(--dark)]/60 text-[90%] font-bold">Sumanto Chatterjee</h4>
+          </div>
+          <div class="text-left">
+            <p class="text-[var(--dark)] text-[85%]">Due</p>
+            <h4 class="text-[var(--dark)]/60 text-[90%] font-bold">Rs. 775.00</h4>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-45">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Due Amount" />
+          </div>
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Cash</option>
+              <option>Add Netbanking</option>
+              <option>Credit/Debit Card</option>
+              <option>UPI</option>
+              <option>Others</option>
+            </select>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--success)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Payment
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- BOOKING-PAYMENT MODAL ------->
+
+  <!----- BOOKING-REFUND MODAL ------->
+  <div id="BookingRefundModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingRefundModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Refund Payment
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center pt-2 pb-6 px-4">
+        <div class="flex items-center justify-between mb-5">
+          <div class="text-left">
+            <p class="text-[var(--dark)] text-[85%]">Name</p>
+            <h4 class="text-[var(--dark)]/60 text-[90%] font-bold">Sumanto Chatterjee</h4>
+          </div>
+          <div class="text-left">
+            <p class="text-[var(--dark)] text-[85%]">Paid Amount</p>
+            <h4 class="text-[var(--dark)]/60 text-[90%] font-bold">Rs. 2640.00</h4>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-45">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Refund Amount" />
+          </div>
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Cash</option>
+              <option>Add Netbanking</option>
+              <option>Credit/Debit Card</option>
+              <option>UPI</option>
+              <option>Others</option>
+            </select>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--failure)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Refund
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- BOOKING-REFUND MODAL ------->
+
+  <!----- BOOKING-INVOICE-SHOWER MODAL ------->
+  <div id="BookingInvShowerModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="BookingInvShowerModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center pt-2 pb-6 px-4">
+        <div class="h-auto w-full">
+          <img src="assets/images/reqired-invoice.png" alt="invoice image" />
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- BOOKING-INVOICE-SHOWER MODAL ------->
+
+
+
+
+
+
+
 
   <!----- MODAL ------->
   <div class="modal fade" id="AddPatientManuallyModal" tabindex="-1">
@@ -748,66 +1011,6 @@
   <!----- MODAL ------->
 
   <!----- MODAL ------->
-  <div class="modal fade" id="PresShareModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Share Prescription Details</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box g-3">
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person One</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Two</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Three</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Four</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Five</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Six</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Seven</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Eight</label>
-              <input id="" type="checkbox">
-            </div>
-            <div class="check-list-part">
-              <label class="form-label mb-0">Share Person Nine</label>
-              <input id="" type="checkbox">
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand" onclick="">
-              Share
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!----- MODAL ------->
-
-  <!----- MODAL ------->
   <div class="modal fade" id="FinancialTransactionModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
@@ -863,11 +1066,19 @@
     </div>
   </div>
   <!----- MODAL ------->
-  <!----------------------------------- DASHBOARD SECTION ------------------------------------------------->
+  <!----------------------------------- BOOKING SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
   <script src="assets/js/tailwind.js" type="text/javascript"></script>
   <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
 
   <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
   <script src="assets/js/main.js" type="text/javascript"></script>
