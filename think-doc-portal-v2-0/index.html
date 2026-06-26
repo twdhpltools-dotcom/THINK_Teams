@@ -51,86 +51,89 @@
         <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
 
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='dashboard.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-window-sidebar text-[90%]"></i>
-        </div>
-        Dashboard
-      </button>
+      <div class="h-90 overflow-y-auto">
 
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='index.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-calendar2-check text-[90%]"></i>
-        </div>
-        Booking
-      </button>
-
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='prescription.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-bookmark text-[90%]"></i>
-        </div>
-        Saved Prescription
-      </button>
-
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" data-bs-toggle="modal" data-bs-target="#FinancialTransactionModal">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-cash-coin text-[90%]"></i>
-        </div>
-        Financial Transaction
-      </button>
-
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='consultant.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-person-workspace text-[90%]"></i>
-        </div>
-        Consultant
-      </button>
-
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-file-earmark-text text-[90%]"></i>
-        </div>
-        Registration
-      </button>
-
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='r-patients.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-person-check text-[90%]"></i>
-        </div>
-        Registered Patients
-      </button>
-
-      <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-link-45deg text-[90%]"></i>
-        </div>
-        Refer
-      </button>
-
-      <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
-
-        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-in.html'">
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='dashboard.html'">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-            <i class="bi bi-box-arrow-up-left text-[90%]"></i>
+            <i class="bi bi-window-sidebar text-[90%]"></i>
           </div>
-          Refer-In
+          Dashboard
         </button>
 
-        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-out.html'">
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='index.html'">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-            <i class="bi bi-box-arrow-up-right text-[90%]"></i>
+            <i class="bi bi-calendar2-check text-[90%]"></i>
           </div>
-          Refer-Out
+          Booking
         </button>
 
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='prescription.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-bookmark text-[90%]"></i>
+          </div>
+          Saved Prescription
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" data-bs-toggle="modal" data-bs-target="#FinancialTransactionModal">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-cash-coin text-[90%]"></i>
+          </div>
+          Financial Transaction
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='consultant.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-workspace text-[90%]"></i>
+          </div>
+          Consultant
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-file-earmark-text text-[90%]"></i>
+          </div>
+          Registration
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='r-patients.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-check text-[90%]"></i>
+          </div>
+          Registered Patients
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-link-45deg text-[90%]"></i>
+          </div>
+          Refer
+        </button>
+
+        <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-in.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-left text-[90%]"></i>
+            </div>
+            Refer-In
+          </button>
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-out.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-right text-[90%]"></i>
+            </div>
+            Refer-Out
+          </button>
+        </div>
+
+        <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar3 text-[90%]"></i>
+          </div>
+          Chinic & Charges
+        </button>
       </div>
 
-      <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
-        <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-          <i class="bi bi-calendar3 text-[90%]"></i>
-        </div>
-        Chinic & Charges
-      </button>
     </aside>
     <!----- SIDEBAR-MENU ------->
 
@@ -455,19 +458,19 @@
       </div>
 
       <div class="h-45 overflow-y-auto py-2 mb-8">
-        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
           10:00 am  to  14:00 pm
         </button>
 
-        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
           14:00 am  to  15:00 pm
         </button>
 
-        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+        <button class="text-left py-4 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
           15:00 am  to  16:00 pm
         </button>
 
-        <button class="text-left py-4 px-8 h-auto w-full text-[var(--dark)]/40 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+        <button class="text-left py-4 px-8 h-auto w-full text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
           16:00 am  to  17:00 pm
         </button>
       </div>
@@ -488,7 +491,7 @@
         </h5>
       </div>
 
-      <div class="h-140 w-full overflow-y-auto">
+      <div class="h-100 w-full overflow-y-auto">
         <div class="py-5 px-8 bg-[var(--secondary)]/10 border-b border-solid border-[var(--dark-primary)]/10">
           
           <div class="flex items-center justify-between">
@@ -944,7 +947,7 @@
 
 
   <!----- MODAL ------->
-  <div class="modal fade" id="AddPatientManuallyModal" tabindex="-1">
+  <!-- <div class="modal fade" id="AddPatientManuallyModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header" style="background:#eef7ff;">
@@ -965,11 +968,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!----- MODAL ------->
 
   <!----- MODAL ------->
-  <div class="modal fade" id="SendRegistrationLinkModal" tabindex="-1">
+  <!-- <div class="modal fade" id="SendRegistrationLinkModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header" style="background:#eef7ff;">
@@ -1007,11 +1010,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!----- MODAL ------->
 
   <!----- MODAL ------->
-  <div class="modal fade" id="FinancialTransactionModal" tabindex="-1">
+  <!-- <div class="modal fade" id="FinancialTransactionModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header" style="background:#eef7ff;">
@@ -1064,7 +1067,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!----- MODAL ------->
   <!----------------------------------- BOOKING SECTION ------------------------------------------------->
 
