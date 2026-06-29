@@ -95,11 +95,11 @@
           Registration
         </button>
 
-        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='r-patients.html'">
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='s-link-tracking.html'">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
             <i class="bi bi-person-check text-[90%]"></i>
           </div>
-          Registered Patients
+          Sent Link Tracking
         </button>
 
         <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
@@ -150,6 +150,12 @@
       </a>
     </div>
     <!----- BOTTOM-ISLAND ------->
+
+    <!----- FLOAT-CALL ------->
+    <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
+      <i class="bi bi-telephone-outbound"></i>
+    </button>
+    <!----- FLOAT-CALL ------->
     
     <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
 
@@ -176,9 +182,9 @@
             </div>
             Booking <span class="text-[70%] font-medium pl-1">[For Think Lab Users]</span>
           </h5>
-          <div class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 flex items-center justify-center" onclick="openBookingSetupModal()">
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openBookingSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
-          </div>
+          </button>
         </div>
         <!----- CONTENT-HEADING ------->
 
@@ -186,7 +192,7 @@
           <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
         </div>
 
-        <div class="h-auto w-full py-5 px-4">
+        <div class="h-auto w-full py-5 px-5">
 
           <div class="flex items-center justify-center gap-x-3 py-3">
             <div class="h-auto w-40 rounded-md border border-solid border-[#7AEF88]/80 bg-[#7AEF88]/10 py-1 px-2">
@@ -255,7 +261,7 @@
           <h3 class="text-[100%] text-[var(--primary)] font-semibold">Branch Elgin Road</h3>
         </div>
 
-        <div class="h-auto w-full py-5 px-4">
+        <div class="h-auto w-full py-5 px-5">
 
           <div class="flex items-center justify-center gap-x-3 py-3">
             <div class="h-auto w-40 rounded-md border border-solid border-[#7AEF88]/80 bg-[#7AEF88]/10 py-1 px-2">
@@ -307,9 +313,9 @@
             </div>
             Booking <span class="text-[70%] font-medium pl-1">[For Individual Users]</span>
           </h5>
-          <div class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 flex items-center justify-center" onclick="openBookingSetupModal()">
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openBookingSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
-          </div>
+          </button>
         </div>
         <!----- CONTENT-HEADING ------->
 
@@ -317,7 +323,7 @@
           <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
         </div>
 
-        <div class="h-auto w-full py-5 px-4">
+        <div class="h-auto w-full py-5 px-5">
 
           <div class="flex items-center justify-center gap-x-3 py-3">
             <div class="h-auto w-40 rounded-md border border-solid border-[#7AEF88]/80 bg-[#7AEF88]/10 py-1 px-2">
@@ -355,7 +361,7 @@
               </button>
             </div>
 
-            <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-4 px-4 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+            <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
               <div class="flex items-center">
                 <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1" onclick="openBookingRScheduleModal()">
                   <i class="bi bi-calendar-plus text-[80%] text-[var(--dark)]/90"></i>
@@ -402,7 +408,7 @@
           <h3 class="text-[100%] text-[var(--primary)] font-semibold">Branch Elgin Road</h3>
         </div>
 
-        <div class="h-auto w-full py-5 px-4">
+        <div class="h-auto w-full pt-5 px-5 pb-25">
 
           <div class="flex items-center justify-center gap-x-3 py-3">
             <div class="h-auto w-40 rounded-md border border-solid border-[#7AEF88]/80 bg-[#7AEF88]/10 py-1 px-2">
@@ -476,7 +482,7 @@
       </div>
 
       <div class="h-auto w-full text-center">
-        <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openBookingRScheduleMenuToggle()">
+        <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
           Submit
         </button>       
       </div>
@@ -684,7 +690,7 @@
       </div>
 
       <div class="h-auto w-full text-center">
-        <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openBookingRScheduleMenuToggle()">
+        <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
           Save
         </button>       
       </div>
@@ -939,79 +945,39 @@
   </div>
   <!----- BOOKING-INVOICE-SHOWER MODAL ------->
 
+  <!----- FLOAT-CALL MODAL ------->
+  <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
 
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Call Now
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
 
-
-
-
-
-
-  <!----- MODAL ------->
-  <!-- <div class="modal fade" id="AddPatientManuallyModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Add New Patient</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="d-flex align-items-center justify-content-center flex-wrap">
-            <button class="btn btn-brand me-3" onclick="window.location.href='manual-form.html'">
-              Add Patient Manually
-            </button>
-            <button class="btn btn-brand" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#send_registration_link_modal">
-              Send Registration Link
-            </button>
-          </div>
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-5">+91 8777749654</h6>
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-telephone absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Call
+          </button>
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-whatsapp absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Whatsapp
+          </button>
         </div>
       </div>
-    </div>
-  </div> -->
-  <!----- MODAL ------->
+      <!----- MODAL-BODY ------->
 
-  <!----- MODAL ------->
-  <!-- <div class="modal fade" id="SendRegistrationLinkModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Send Patient Registration Link</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-4">
-              <label class="form-label">Mobile</label>
-              <select id="patiendMobNumberCode" class="form-select">
-                <option value="0">+91</option>
-                <option value="1">+01</option>
-                <option value="2">+77</option>
-                <option value="3">+00</option>
-                <option value="4">+123</option>
-              </select>
-            </div>
-            <div class="col-md-8">
-              <label class="form-label">&nbsp;</label>
-              <input id="patiendMobNumber" type="number" class="form-control" placeholder="Enter Mobile Number">
-            </div>
-            <div class="col-md-12">
-              <label class="form-label">Patient Email</label>
-              <input type="email" id="patiendEmail" class="form-control" placeholder="Enter patient email address" />
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand" data-bs-dismiss="modal" onclick="showSection('sentLinkTracking',this)">
-              Send
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div> -->
-  <!----- MODAL ------->
+  </div>
+  <!----- FLOAT-CALL MODAL ------->
+
+
 
   <!----- MODAL ------->
   <!-- <div class="modal fade" id="FinancialTransactionModal" tabindex="-1">

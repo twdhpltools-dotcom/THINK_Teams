@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic & Schedule | ThinkLab Doctor Portal | Secure Doctor Management Application</title>
+
+  <meta name="title" content="Clinic & Schedule | ThinkLab Doctor Portal | Secure Doctor Management Application" />
+  <meta name="description" content="ThinkLab Doctor Portal is a secure web application for doctors to manage appointments, patients, reports, schedules, referrals, and clinical workflows efficiently." />
+  <meta name="keywords" content="ThinkLab Doctor Portal, Doctor Portal, Doctor Management Software, Healthcare Software India, Clinic Management Software, Medical Portal, Patient Management System, Diagnostic Software, ThinkLab" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://doctor.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Doctor Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- CLINIC-SCEDULE SECTION ------------------------------------------------->
+  <section class="h-auto w-full">
+
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
+        <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
+      </div>
+
+      <div class="h-90 overflow-y-auto">
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='dashboard.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-window-sidebar text-[90%]"></i>
+          </div>
+          Dashboard
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='index.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar2-check text-[90%]"></i>
+          </div>
+          Booking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='prescription.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-bookmark text-[90%]"></i>
+          </div>
+          Saved Prescription
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" data-bs-toggle="modal" data-bs-target="#FinancialTransactionModal">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-cash-coin text-[90%]"></i>
+          </div>
+          Financial Transaction
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='consultant.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-workspace text-[90%]"></i>
+          </div>
+          Consultant
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-file-earmark-text text-[90%]"></i>
+          </div>
+          Registration
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='s-link-tracking.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-check text-[90%]"></i>
+          </div>
+          Sent Link Tracking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-link-45deg text-[90%]"></i>
+          </div>
+          Refer
+        </button>
+
+        <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-in.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-left text-[90%]"></i>
+            </div>
+            Refer-In
+          </button>
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-out.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-right text-[90%]"></i>
+            </div>
+            Refer-Out
+          </button>
+        </div>
+
+        <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar3 text-[90%]"></i>
+          </div>
+          Chinic & Charges
+        </button>
+      </div>
+
+    </aside>
+    <!----- SIDEBAR-MENU ------->
+
+    <!----- BOTTOM-ISLAND ------->
+    <div class="fixed bottom-0 h-auto w-full py-3 bg-[var(--light)] flex items-center justify-center gap-x-20 shadow-[0_-10px_25px_0_#00000010] z-102">
+      <a href="index.html">
+        <i class="bi bi-house-door text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
+        <i class="bi bi-list text-[180%] text-[var(--light)]"></i>
+      </a>
+      <a href="profile.html">
+        <i class="bi bi-person text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+    </div>
+    <!----- BOTTOM-ISLAND ------->
+
+    <!----- FLOAT-CALL ------->
+    <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
+      <i class="bi bi-telephone-outbound"></i>
+    </button>
+    <!----- FLOAT-CALL ------->
+    
+    <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
+
+      <!----- TOP-BAR ------->
+      <div class="h-auto py-4 px-6 w-full flex items-center justify-between">
+        <h5 class="text-[145%] text-[var(--light)] font-medium">Welcome!</h5>
+        <span class="h-12 w-12 border-3 border-solid border-[var(--secondary)]/50 rounded-[50%] overflow-hidden">
+          <a href="profile.html">
+            <img class="me-1" src="assets/images/dummy-doctor.jpg" alt="soctor profile image" />
+            Dr. Abhimanyu
+          </a>
+        </span>
+      </div>
+      <!----- TOP-BAR ------->
+
+      <!----- PAGE-CONTENT ------->
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
+
+        <!----- CONTENT-HEADING ------->
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 pl-5 pr-10">
+          <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
+            <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-2">
+              <i class="bi bi-calendar3 text-[80%] text-[var(--primary)]/90"></i>
+            </div>
+            Clinic & Schdule
+          </h5>
+          <span class="relative z-1 w-35 rounded-[100px] border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-4 pr-9 text-center text-[75%] text-[var(--dark)] font-medium">
+            Block Dates
+            <div class="block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap">
+              <p class="text-[80%] text-[#3CA248]">Days Active</p>
+            </div>
+            <div class="absolute top-[-2px] right-[-30px] z-2 h-12 w-12 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+              <i class="bi bi-calendar-x text-[140%] text-[var(--primary)]/90"></i>
+            </div>
+          </span>
+        </div>
+        <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full py-5 px-5 text-center bg-[var(--light)] border-b border-solid border-[#00000010]">
+          <div class="h-auto w-full">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Location</option>
+              <option>HO</option>
+              <option>Shibpur Branch</option>
+              <option>Branch Elgin Road</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="h-auto w-full px-5 pb-25">
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schSunDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Sunday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#FF0000] bg-[#FFA4A4]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#FF0000]">In-Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchSunDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schMonDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Monday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#3CA248]">Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchMonDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schTueDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Tuesday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#FF0000] bg-[#FFA4A4]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#FF0000]">In-Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchTueDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schWedDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Wednesday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#3CA248]">Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchWedDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schThuDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Thursday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#FF0000] bg-[#FFA4A4]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#FF0000]">In-Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchThuDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schFriDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Friday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#3CA248]">Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchFriDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full">
+
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="schSatDetailsShow()">
+              <h4 class="text-[90%] text-[var(--dark)]/70 font-medium">Saturday</h4>
+              <div class="flex items-center">
+                <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
+                  <p class="text-[75%] text-[#3CA248]">Active</p>
+                </div>
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                  <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="SchSatDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-between gap-x-2 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden transition-all duration-300 ease-in-out py-0 max-h-0 opacity-0">
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center">
+                <i class="bi bi-trash text-[80%] text-[#FF0000]/90"></i>
+              </button>
+              <p class="text-[70%] text-[var(--primary)] font-medium">10:00 AM - 07:00 PM</p>
+              <p class="text-[70%] text-[var(--primary)] font-medium">₹ 221.00</p>
+              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center">
+                <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
+              </button>
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
+              </button>
+              <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                <input type="checkbox" class="peer sr-only" checked>
+                <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+        
+      </div>
+      <!----- PAGE-CONTENT ------->
+
+    </main>
+
+  </section>
+
+  <!----- FLOAT-CALL MODAL ------->
+  <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+    <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Call Now
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-5">+91 8777749654</h6>
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-telephone absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Call
+          </button>
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-whatsapp absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Whatsapp
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- FLOAT-CALL MODAL ------->
+  <!----------------------------------- CLINIC-SCEDULE SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MOAL FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
