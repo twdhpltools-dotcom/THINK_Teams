@@ -46,9 +46,8 @@ textarea::placeholder {
 }
 
 select {
-
+    
 }
-
 input:focus,
 select:focus,
 textarea:focus {
