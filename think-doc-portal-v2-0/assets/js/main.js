@@ -61,6 +61,90 @@ function bookingDetailsShow() {
   optionBox.classList.toggle("max-h-[80px]");
   optionBox.classList.toggle("opacity-100");
 }
+
+function schSunDetailsShow() {
+  const schsunoptionBox = document.getElementById("SchSunDetailsOption");
+
+  schsunoptionBox.classList.toggle("py-0");
+  schsunoptionBox.classList.toggle("max-h-0");
+  schsunoptionBox.classList.toggle("opacity-0");
+
+  schsunoptionBox.classList.toggle("py-4");
+  schsunoptionBox.classList.toggle("max-h-[80px]");
+  schsunoptionBox.classList.toggle("opacity-100");
+}
+
+function schMonDetailsShow() {
+  const schmonoptionBox = document.getElementById("SchMonDetailsOption");
+
+  schmonoptionBox.classList.toggle("py-0");
+  schmonoptionBox.classList.toggle("max-h-0");
+  schmonoptionBox.classList.toggle("opacity-0");
+
+  schmonoptionBox.classList.toggle("py-4");
+  schmonoptionBox.classList.toggle("max-h-[80px]");
+  schmonoptionBox.classList.toggle("opacity-100");
+}
+
+function schTueDetailsShow() {
+  const schtueoptionBox = document.getElementById("SchTueDetailsOption");
+
+  schtueoptionBox.classList.toggle("py-0");
+  schtueoptionBox.classList.toggle("max-h-0");
+  schtueoptionBox.classList.toggle("opacity-0");
+
+  schtueoptionBox.classList.toggle("py-4");
+  schtueoptionBox.classList.toggle("max-h-[80px]");
+  schtueoptionBox.classList.toggle("opacity-100");
+}
+
+function schWedDetailsShow() {
+  const schwedoptionBox = document.getElementById("SchWedDetailsOption");
+
+  schwedoptionBox.classList.toggle("py-0");
+  schwedoptionBox.classList.toggle("max-h-0");
+  schwedoptionBox.classList.toggle("opacity-0");
+
+  schwedoptionBox.classList.toggle("py-4");
+  schwedoptionBox.classList.toggle("max-h-[80px]");
+  schwedoptionBox.classList.toggle("opacity-100");
+}
+
+function schThuDetailsShow() {
+  const schthuoptionBox = document.getElementById("SchThuDetailsOption");
+
+  schthuoptionBox.classList.toggle("py-0");
+  schthuoptionBox.classList.toggle("max-h-0");
+  schthuoptionBox.classList.toggle("opacity-0");
+
+  schthuoptionBox.classList.toggle("py-4");
+  schthuoptionBox.classList.toggle("max-h-[80px]");
+  schthuoptionBox.classList.toggle("opacity-100");
+}
+
+function schFriDetailsShow() {
+  const schfrioptionBox = document.getElementById("SchFriDetailsOption");
+
+  schfrioptionBox.classList.toggle("py-0");
+  schfrioptionBox.classList.toggle("max-h-0");
+  schfrioptionBox.classList.toggle("opacity-0");
+
+  schfrioptionBox.classList.toggle("py-4");
+  schfrioptionBox.classList.toggle("max-h-[80px]");
+  schfrioptionBox.classList.toggle("opacity-100");
+}
+
+function schSatDetailsShow() {
+  const schsatoptionBox = document.getElementById("SchSatDetailsOption");
+
+  schsatoptionBox.classList.toggle("py-0");
+  schsatoptionBox.classList.toggle("max-h-0");
+  schsatoptionBox.classList.toggle("opacity-0");
+
+  schsatoptionBox.classList.toggle("py-4");
+  schsatoptionBox.classList.toggle("max-h-[80px]");
+  schsatoptionBox.classList.toggle("opacity-100");
+}
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
@@ -77,4 +161,20 @@ function openTab(btn){
     btn.classList.add("active");
 }
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
+
+/*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
+document.getElementById("PrescriptionUpload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (file) {
+    console.log(file.name);
+  }
+});
+
+document.getElementById("FileUpload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (file) {
+    console.log(file.name);
+  }
+});
+/*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
