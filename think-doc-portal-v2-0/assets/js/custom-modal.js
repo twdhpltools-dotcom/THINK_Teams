@@ -237,6 +237,40 @@ document.getElementById("BookingInvShowerModal").addEventListener("click", funct
 });
 /*-------------------------------------- BOOKING-INVOICE-SHOWER ----------------------------------------*/
 
+/*-------------------------------------- TRANSACTION-SETUP ----------------------------------------*/
+function openTransactionSetupModal() {
+  const TransactionSetupModal = document.getElementById("TransactionSetupModal");
+  const TransactionSetupModalBox = document.getElementById("TransactionSetupModalBox");
+
+  TransactionSetupModal.classList.remove("hidden");
+  TransactionSetupModal.classList.add("flex");
+
+  setTimeout(() => {
+    TransactionSetupModalBox.classList.remove("opacity-0", "scale-95");
+    TransactionSetupModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeTransactionSetupModal() {
+  const TransactionSetupModal = document.getElementById("TransactionSetupModal");
+  const TransactionSetupModalBox = document.getElementById("TransactionSetupModalBox");
+
+  TransactionSetupModalBox.classList.add("opacity-0", "scale-95");
+  TransactionSetupModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    TransactionSetupModal.classList.add("hidden");
+    TransactionSetupModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("TransactionSetupModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeTransactionSetupModal();
+  }
+});
+/*-------------------------------------- TRANSACTION-SETUP ----------------------------------------*/
+
 /*-------------------------------------- CONSULTANT-SETUP ----------------------------------------*/
 function openConsultantSetupModal() {
   const ConsultantSetupModal = document.getElementById("ConsultantSetupModal");
@@ -339,108 +373,6 @@ document.getElementById("RPatientSetupModal").addEventListener("click", function
 });
 /*-------------------------------------- REGISTERED-PATIENT-SETUP ----------------------------------------*/
 
-/*-------------------------------------- REGISTERED-PATIENT-CONFIRMATION ----------------------------------------*/
-function openRPatientConfModal() {
-  const RPatientConfModal = document.getElementById("RPatientConfModal");
-  const RPatientConfModalBox = document.getElementById("RPatientConfModalBox");
-
-  RPatientConfModal.classList.remove("hidden");
-  RPatientConfModal.classList.add("flex");
-
-  setTimeout(() => {
-    RPatientConfModalBox.classList.remove("opacity-0", "scale-95");
-    RPatientConfModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeRPatientConfModal() {
-  const RPatientConfModal = document.getElementById("RPatientConfModal");
-  const RPatientConfModalBox = document.getElementById("RPatientConfModalBox");
-
-  RPatientConfModalBox.classList.add("opacity-0", "scale-95");
-  RPatientConfModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    RPatientConfModal.classList.add("hidden");
-    RPatientConfModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("RPatientConfModal").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closeRPatientConfModal();
-  }
-});
-/*-------------------------------------- REGISTERED-PATIENT-CONFIRMATION ----------------------------------------*/
-
-/*-------------------------------------- REGISTERED-PATIENT-RE-SCHEDULE ----------------------------------------*/
-function openRPatientRScheduleModal() {
-  const RPatientRScheduleModal = document.getElementById("RPatientRScheduleModal");
-  const RPatientRScheduleModalBox = document.getElementById("RPatientRScheduleModalBox");
-
-  RPatientRScheduleModal.classList.remove("hidden");
-  RPatientRScheduleModal.classList.add("flex");
-
-  setTimeout(() => {
-    RPatientRScheduleModalBox.classList.remove("opacity-0", "scale-95");
-    RPatientRScheduleModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeRPatientRScheduleModal() {
-  const RPatientRScheduleModal = document.getElementById("RPatientRScheduleModal");
-  const RPatientRScheduleModalBox = document.getElementById("RPatientRScheduleModalBox");
-
-  RPatientRScheduleModalBox.classList.add("opacity-0", "scale-95");
-  RPatientRScheduleModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    RPatientRScheduleModal.classList.add("hidden");
-    RPatientRScheduleModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("RPatientRScheduleModal").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closeRPatientRScheduleModal();
-  }
-});
-/*-------------------------------------- REGISTERED-PATIENT-RE-SCHEDULE ----------------------------------------*/
-
-/*-------------------------------------- BOOKING-PAYMENT ----------------------------------------*/
-function openRPatientPaymentModal() {
-  const RPatientPaymentModal = document.getElementById("RPatientPaymentModal");
-  const RPatientPaymentModalBox = document.getElementById("RPatientPaymentModalBox");
-
-  RPatientPaymentModal.classList.remove("hidden");
-  RPatientPaymentModal.classList.add("flex");
-
-  setTimeout(() => {
-    RPatientPaymentModalBox.classList.remove("opacity-0", "scale-95");
-    RPatientPaymentModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeBookingPaymentModal() {
-  const RPatientPaymentModal = document.getElementById("RPatientPaymentModal");
-  const RPatientPaymentModalBox = document.getElementById("RPatientPaymentModalBox");
-
-  RPatientPaymentModalBox.classList.add("opacity-0", "scale-95");
-  RPatientPaymentModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    RPatientPaymentModal.classList.add("hidden");
-    RPatientPaymentModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("RPatientPaymentModal").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closeRPatientPaymentModal();
-  }
-});
-/*-------------------------------------- BOOKING-PAYMENT ----------------------------------------*/
-
 /*-------------------------------------- REFER-IN-SETUP ----------------------------------------*/
 function openReferInSetupModal() {
   const ReferInSetupModal = document.getElementById("ReferInSetupModal");
@@ -457,7 +389,7 @@ function openReferInSetupModal() {
 
 function closeReferInSetupModal() {
   const ReferInSetupModal = document.getElementById("ReferInSetupModal");
-  const ReferInSetupModalBox = document.getElementById("RReferInSetupModalBox");
+  const ReferInSetupModalBox = document.getElementById("ReferInSetupModalBox");
 
   ReferInSetupModalBox.classList.add("opacity-0", "scale-95");
   ReferInSetupModalBox.classList.remove("opacity-100", "scale-100");
@@ -468,7 +400,7 @@ function closeReferInSetupModal() {
   }, 300);
 }
 
-document.getElementById("ReferInSetupModal").addEventListener("click", function(e) {
+document.getElementById("ReferInSetupModal").addEventListener("click", function (e) {
   if (e.target === this) {
     closeReferInSetupModal();
   }
@@ -491,7 +423,7 @@ function openReferOutSetupModal() {
 
 function closeReferOutSetupModal() {
   const ReferOutSetupModal = document.getElementById("ReferOutSetupModal");
-  const ReferOutSetupModalBox = document.getElementById("RReferOutSetupModalBox");
+  const ReferOutSetupModalBox = document.getElementById("ReferOutSetupModalBox");
 
   ReferOutSetupModalBox.classList.add("opacity-0", "scale-95");
   ReferOutSetupModalBox.classList.remove("opacity-100", "scale-100");
@@ -502,7 +434,7 @@ function closeReferOutSetupModal() {
   }, 300);
 }
 
-document.getElementById("ReferOutSetupModal").addEventListener("click", function(e) {
+document.getElementById("ReferOutSetupModal").addEventListener("click", function (e) {
   if (e.target === this) {
     closeReferOutSetupModal();
   }
@@ -525,7 +457,7 @@ function openFloatCallModal() {
 
 function closeFloatCallModal() {
   const FloatCallModal = document.getElementById("FloatCallModal");
-  const FloatCallModalBox = document.getElementById("RFloatCallModalBox");
+  const FloatCallModalBox = document.getElementById("FloatCallModalBox");
 
   FloatCallModalBox.classList.add("opacity-0", "scale-95");
   FloatCallModalBox.classList.remove("opacity-100", "scale-100");
@@ -536,7 +468,7 @@ function closeFloatCallModal() {
   }, 300);
 }
 
-document.getElementById("FloatCallModal").addEventListener("click", function(e) {
+document.getElementById("FloatCallModal").addEventListener("click", function (e) {
   if (e.target === this) {
     closeFloatCallModal();
   }
