@@ -163,13 +163,6 @@ function openTab(btn){
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-document.getElementById("PrescriptionUpload").addEventListener("change", function () {
-  const file = this.files[0];
-  if (file) {
-    console.log(file.name);
-  }
-});
-
 document.getElementById("FileUpload").addEventListener("change", function () {
   const file = this.files[0];
   if (file) {
