@@ -74,7 +74,7 @@
           Saved Prescription
         </button>
 
-        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" data-bs-toggle="modal" data-bs-target="#FinancialTransactionModal">
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="openTransactionSetupModal()">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
             <i class="bi bi-cash-coin text-[90%]"></i>
           </div>
@@ -308,6 +308,11 @@
 
   <!----- REFER-OUT-SETUP MODAL ------->
   <div id="ReferOutSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeReferOutSetupModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
     <div id="ReferOutSetupModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
 
       <!----- MODAL-HEADER ------->
@@ -370,6 +375,11 @@
 
   <!----- FLOAT-CALL MODAL ------->
   <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeFloatCallModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
     <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
 
       <!----- MODAL-HEADER ------->
@@ -399,6 +409,71 @@
     </div>
   </div>
   <!----- FLOAT-CALL MODAL ------->
+
+  <!----- TRANSACTION-SETUP MODAL ------->
+  <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTransactionSetupModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TransactionSetupModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Search Bookings
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-4">
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Location</option>
+              <option>HO</option>
+              <option>Branch Elgin Road</option>
+              <option>Shibpur Branch</option>
+              <option>New Branch 2</option>
+            </select>
+          </div>
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Date</option>
+              <option>Today</option>
+              <option>This Month</option>
+              <option>Last Month</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-45 flex items-center">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[10px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" />
+            <span class="text-[85%] text-[var(--dark)]/60 font-normal ms-2 whitespace-nowrap">
+              Points Table
+            </span>
+          </div>
+          <div class="h-auto w-45 flex items-center">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[10px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" />
+            <span class="text-[85%] text-[var(--dark)]/60 font-normal ms-2 whitespace-nowrap">
+              Consultancy Charge
+            </span>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='transaction.html'">
+            Search
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TRANSACTION-SETUP MODAL ------->
   <!----------------------------------- REFER-IN SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Transaction | ThinkLab Doctor Portal | Secure Doctor Management Application</title>
+
+  <meta name="title" content="Financial Transaction | ThinkLab Doctor Portal | Secure Doctor Management Application" />
+  <meta name="description" content="ThinkLab Doctor Portal is a secure web application for doctors to manage appointments, patients, reports, schedules, referrals, and clinical workflows efficiently." />
+  <meta name="keywords" content="ThinkLab Doctor Portal, Doctor Portal, Doctor Management Software, Healthcare Software India, Clinic Management Software, Medical Portal, Patient Management System, Diagnostic Software, ThinkLab" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://doctor.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Doctor Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- TRANSACTION SECTION ------------------------------------------------->
+  <section class="h-auto w-full">
+
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
+        <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
+      </div>
+
+      <div class="h-90 overflow-y-auto">
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='dashboard.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-window-sidebar text-[90%]"></i>
+          </div>
+          Dashboard
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='index.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar2-check text-[90%]"></i>
+          </div>
+          Booking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='prescription.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-bookmark text-[90%]"></i>
+          </div>
+          Saved Prescription
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="openTransactionSetupModal()">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-cash-coin text-[90%]"></i>
+          </div>
+          Financial Transaction
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='consultant.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-workspace text-[90%]"></i>
+          </div>
+          Consultant
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-file-earmark-text text-[90%]"></i>
+          </div>
+          Registration
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='s-link-tracking.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-check text-[90%]"></i>
+          </div>
+          Sent Link Tracking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-link-45deg text-[90%]"></i>
+          </div>
+          Refer
+        </button>
+
+        <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-in.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-left text-[90%]"></i>
+            </div>
+            Refer-In
+          </button>
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-out.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-right text-[90%]"></i>
+            </div>
+            Refer-Out
+          </button>
+        </div>
+
+        <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar3 text-[90%]"></i>
+          </div>
+          Chinic & Charges
+        </button>
+      </div>
+
+    </aside>
+    <!----- SIDEBAR-MENU ------->
+
+    <!----- BOTTOM-ISLAND ------->
+    <div class="fixed bottom-0 h-auto w-full py-3 bg-[var(--light)] flex items-center justify-center gap-x-20 shadow-[0_-10px_25px_0_#00000010] z-102">
+      <a href="index.html">
+        <i class="bi bi-house-door text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
+        <i class="bi bi-list text-[180%] text-[var(--light)]"></i>
+      </a>
+      <a href="profile.html">
+        <i class="bi bi-person text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+    </div>
+    <!----- BOTTOM-ISLAND ------->
+
+    <!----- FLOAT-CALL ------->
+    <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
+      <i class="bi bi-telephone-outbound"></i>
+    </button>
+    <!----- FLOAT-CALL ------->
+    
+    <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
+
+      <!----- TOP-BAR ------->
+      <div class="h-auto py-4 px-6 w-full flex items-center justify-between">
+        <h5 class="text-[145%] text-[var(--light)] font-medium">Welcome!</h5>
+        <span class="h-12 w-12 border-3 border-solid border-[var(--secondary)]/50 rounded-[50%] overflow-hidden">
+          <a href="profile.html">
+            <img class="me-1" src="assets/images/dummy-doctor.jpg" alt="soctor profile image" />
+            Dr. Abhimanyu
+          </a>
+        </span>
+      </div>
+      <!----- TOP-BAR ------->
+
+      <!----- PAGE-CONTENT ------->
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
+
+        <!----- CONTENT-HEADING ------->
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
+          <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
+            <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
+              <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
+            </div>
+            <div>
+              Financial Transaction <br /> <span class="text-[70%] font-medium">[For ThinkLab Users]</span>
+            </div>
+          </h5>
+        </div>
+        <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full flex items-end justify-between py-3 px-5 bg-[var(--secondary)]/20">
+          <div class="h-auto w-75 me-2 relative z-1">
+            <i class="bi bi-search absolute bottom-2 right-5 z-2 text-[120%] text-[var(--dark)]"></i>
+            <label class="inline-block font-medium">Search Patient</label>
+            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search patient by name ...">
+          </div>
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openTransactionSetupModal()">
+            <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
+          </button>
+        </div>
+
+        <div class="h-auto w-full py-5 text-center bg-[var(--secondary)]/50">
+          <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
+        </div>
+
+        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-8">
+          <div class="h-auto w-full overflow-x-auto">
+            <table class="h-auto w-100 bg-[var(--light)] whitespace-nowrap text-left">
+              <thead>
+                <tr class="bg-[var(--light)]">
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">INV No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Patient Name</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <hr class="border-[var(--dark)]/10" />
+
+        <!----- CONTENT-HEADING ------->
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
+          <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
+            <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
+              <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
+            </div>
+            <div>
+              Financial Transaction <br /> <span class="text-[70%] font-medium">[For Individual Users]</span>
+            </div>
+          </h5>
+        </div>
+        <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full flex items-end justify-between py-3 px-5 bg-[var(--secondary)]/20">
+          <div class="h-auto w-75 me-2 relative z-1">
+            <i class="bi bi-search absolute bottom-2 right-5 z-2 text-[120%] text-[var(--dark)]"></i>
+            <label class="inline-block font-medium">Search Patient</label>
+            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search patient by name ...">
+          </div>
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openTransactionSetupModal()">
+            <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
+          </button>
+        </div>
+
+        <div class="h-auto w-full py-5 text-center bg-[var(--secondary)]/50">
+          <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
+        </div>
+
+        <div class="h-auto w-full bg-[var(--secondary)]/50 pb-25">
+          <div class="h-auto w-full overflow-x-auto">
+            <table class="h-auto w-100 bg-[var(--light)] whitespace-nowrap text-left">
+              <thead>
+                <tr class="bg-[var(--light)]">
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">INV No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Patient Name</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+      <!----- PAGE-CONTENT ------->
+
+    </main>
+
+  </section>
+
+  <!----- FLOAT-CALL MODAL ------->
+  <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeFloatCallModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Call Now
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-5">+91 8777749654</h6>
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-telephone absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Call
+          </button>
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-whatsapp absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Whatsapp
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- FLOAT-CALL MODAL ------->
+
+  <!----- TRANSACTION-SETUP MODAL ------->
+  <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTransactionSetupModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TransactionSetupModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300" >
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Search Bookings
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-4">
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Location</option>
+              <option>HO</option>
+              <option>Branch Elgin Road</option>
+              <option>Shibpur Branch</option>
+              <option>New Branch 2</option>
+            </select>
+          </div>
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Date</option>
+              <option>Today</option>
+              <option>This Month</option>
+              <option>Last Month</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-45 flex items-center">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[10px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" />
+            <span class="text-[85%] text-[var(--dark)]/60 font-normal ms-2 whitespace-nowrap">
+              Points Table
+            </span>
+          </div>
+          <div class="h-auto w-45 flex items-center">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[10px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" />
+            <span class="text-[85%] text-[var(--dark)]/60 font-normal ms-2 whitespace-nowrap">
+              Consultancy Charge
+            </span>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='transaction.html'">
+            Search
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TRANSACTION-SETUP MODAL ------->
+  <!----------------------------------- TRANSACTION SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
