@@ -45,9 +45,6 @@ textarea::placeholder {
     color: #0b122e93;
 }
 
-select {
-    
-}
 input:focus,
 select:focus,
 textarea:focus {
@@ -139,3 +136,15 @@ hr {
     background: var(--dark);
 } */
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR PG-MODAL START ---------------------------------------------- */
+.pg-modal {
+  width: min(520px, calc(100vw - 2rem));
+  position: relative;
+  z-index: 1;
+}
+
+.pg-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* ----------------------------------------- CSS FOR PG-MODAL COMPLETE ---------------------------------------------- */
