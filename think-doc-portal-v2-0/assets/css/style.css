@@ -72,6 +72,12 @@ hr {
     font-weight: 500;
     color: var(--light);
 }
+
+.content {
+    margin-top: 80px;
+    position: relative;
+    z-index: 2;
+}
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PRE-LOADER START ---------------------------------------------- */
