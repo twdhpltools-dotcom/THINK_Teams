@@ -161,7 +161,7 @@
     <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full flex items-center justify-between">
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-[#2C91F8] z-1">
         <h5 class="text-[145%] text-[var(--light)] font-medium">Welcome!</h5>
         <span class="h-12 w-12 border-3 border-solid border-[var(--secondary)]/50 rounded-[50%] overflow-hidden">
           <a href="profile.html">
@@ -365,7 +365,7 @@
           <div class="flex items-center justify-center gap-x-2 mb-4">
             <div class="h-auto w-30">
               <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
-                <option>Select Title</option>
+                <option>Title</option>
                 <option>Title A</option>
                 <option>Title B</option>
                 <option>Title C</option>
@@ -391,7 +391,7 @@
           <div class="flex items-center justify-center gap-x-2 mb-4">
             <div class="h-auto w-45">
               <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
-                <option>Select Gender</option>
+                <option>Gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Others</option>
@@ -408,7 +408,7 @@
             </div>
             <div class="h-auto w-45">
               <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
-                <option>Select Time</option>
+                <option>Time</option>
                 <option>10:00 am  to  14:00 pm</option>
                 <option>17:00 pm  to  19:00 pm</option>
                 <option>19:00 pm  to  22:00 pm</option>
@@ -421,13 +421,10 @@
           </div>
 
           <div class="flex items-center justify-between">
-            <div>
-              <input type="file" id="PrescriptionUpload" hidden />
-              <button class="h-auto rounded-sm px-4 py-2 text-[85%] text-[var(--dark)]/80 font-medium bg-[#eee] border-none outline-none min-[576px]:text-[90%]" onclick="document.getElementById('PrescriptionUpload').click()">
-                Attach Prescription
-              </button>
+            <div class="rounded-sm px-4 py-2 text-[85%] text-[var(--dark)]/80 font-medium bg-[#eee] whitespace-nowrap min-[576px]:text-[90%]" onclick="document.getElementById('PrescriptionUpload').click()">
+              Attach Prescription
             </div>
-            <div>
+            <div class="ms-2">
               <input type="file" id="FileUpload" hidden />
               <button class="h-auto rounded-sm px-4 py-2 text-[85%] text-[var(--light)] font-medium bg-[#2C91F8] border-none outline-none min-[576px]:text-[90%]" onclick="document.getElementById('FileUpload').click()">
                 <i class="bi bi-camera me-2"></i> Choose File
