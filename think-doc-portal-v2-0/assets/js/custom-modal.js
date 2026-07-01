@@ -441,6 +441,74 @@ document.getElementById("ReferOutSetupModal").addEventListener("click", function
 });
 /*-------------------------------------- REFER-OUT-SETUP ----------------------------------------*/
 
+/*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
+function openEditProfileModal() {
+  const EditProfileModal = document.getElementById("EditProfileModal");
+  const EditProfileModalBox = document.getElementById("EditProfileModalBox");
+
+  EditProfileModal.classList.remove("hidden");
+  EditProfileModal.classList.add("flex");
+
+  setTimeout(() => {
+    EditProfileModalBox.classList.remove("opacity-0", "scale-95");
+    EditProfileModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeEditProfileModal() {
+  const EditProfileModal = document.getElementById("EditProfileModal");
+  const EditProfileModalBox = document.getElementById("EditProfileModalBox");
+
+  EditProfileModalBox.classList.add("opacity-0", "scale-95");
+  EditProfileModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    EditProfileModal.classList.add("hidden");
+    EditProfileModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("EditProfileModal").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeEditProfileModal();
+  }
+});
+/*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
+
+/*-------------------------------------- SHOW-PROFILE ----------------------------------------*/
+function openShowProfileModal() {
+  const ShowProfileModal = document.getElementById("ShowProfileModal");
+  const ShowProfileModalBox = document.getElementById("ShowProfileModalBox");
+
+  ShowProfileModal.classList.remove("hidden");
+  ShowProfileModal.classList.add("flex");
+
+  setTimeout(() => {
+    ShowProfileModalBox.classList.remove("opacity-0", "scale-95");
+    ShowProfileModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeShowProfileModal() {
+  const ShowProfileModal = document.getElementById("ShowProfileModal");
+  const ShowProfileModalBox = document.getElementById("ShowProfileModalBox");
+
+  ShowProfileModalBox.classList.add("opacity-0", "scale-95");
+  ShowProfileModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ShowProfileModal.classList.add("hidden");
+    ShowProfileModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ShowProfileModal").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeShowProfileModal();
+  }
+});
+/*-------------------------------------- SHOW-PROFILE ----------------------------------------*/
+
 /*-------------------------------------- FLOAT-CALL ----------------------------------------*/
 function openFloatCallModal() {
   const FloatCallModal = document.getElementById("FloatCallModal");

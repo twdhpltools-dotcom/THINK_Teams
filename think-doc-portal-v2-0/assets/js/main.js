@@ -170,4 +170,31 @@ document.getElementById("FileUpload").addEventListener("change", function () {
   }
 });
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
+
+/*-------------------------------------- ACCORDIAN ----------------------------------------*/
+function toggleAccordion(head){
+  const body = head.nextElementSibling;
+  const icon = head.querySelector(".pg-accordion-icon");
+
+  body.classList.toggle("max-h-0");
+  body.classList.toggle("py-0");
+  body.classList.toggle("max-h-[500px]");
+  body.classList.toggle("py-4");
+
+  icon.classList.toggle("rotate-180");
+}
+/*-------------------------------------- ACCORDIAN ----------------------------------------*/
+
+/*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
+function openUserCamera(input){
+  if(input.files.length > 0){
+
+      const file = input.files[0];
+
+      console.log(file);
+      console.log(file.name);
+
+  }
+}
+/*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
