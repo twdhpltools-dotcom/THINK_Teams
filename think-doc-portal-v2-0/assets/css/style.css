@@ -34,6 +34,17 @@ a {
     text-decoration: none;
 }
 
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
 label {
     color: var(--dark-primary);
     font-size: 85%;
@@ -124,6 +135,16 @@ hr {
 }
 /* ----------------------------------------- CSS FOR FLASH-SCREEN-PAGE COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- CSS FOR ACCORDIAN START ---------------------------------------------- */
+.pg-accordion-body {
+    transition:.35s ease;
+}
+
+.pg-accordion-icon {
+    transition:.35s ease;
+}
+/* ----------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR START ---------------------------------------------- */
 /* ::-webkit-scrollbar {
     width: 4px;
@@ -142,15 +163,3 @@ hr {
     background: var(--dark);
 } */
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */
-
-/* ----------------------------------------- CSS FOR PG-MODAL START ---------------------------------------------- */
-.pg-modal {
-  width: min(520px, calc(100vw - 2rem));
-  position: relative;
-  z-index: 1;
-}
-
-.pg-modal::backdrop {
-  background: rgba(0, 0, 0, 0.5);
-}
-/* ----------------------------------------- CSS FOR PG-MODAL COMPLETE ---------------------------------------------- */
