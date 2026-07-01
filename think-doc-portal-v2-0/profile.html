@@ -3,218 +3,433 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctor Profile | ThinkLab Doctor Portal</title>
+  <title>Doctor Profile | ThinkLab Doctor Portal | Secure Doctor Management Application</title>
 
-  <!----------------- CSS FOR BOOTSTRAP FILES START ------------------------>
-  <link rel="stylesheet" href="assets/css/bootstrap-min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
-  <!----------------- CSS FOR BOOTSTRAP FILES COMPLETE ------------------------>
+  <meta name="title" content="Doctor Profile | ThinkLab Doctor Portal | Secure Doctor Management Application" />
+  <meta name="description" content="ThinkLab Doctor Portal is a secure web application for doctors to manage appointments, patients, reports, schedules, referrals, and clinical workflows efficiently." />
+  <meta name="keywords" content="ThinkLab Doctor Portal, Doctor Portal, Doctor Management Software, Healthcare Software India, Clinic Management Software, Medical Portal, Patient Management System, Diagnostic Software, ThinkLab" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://doctor.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Doctor Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!------------------ CSS FOR MAIN FILES START ---------------------->
   <link rel="stylesheet" href="assets/css/style.css">
   <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
 </head>
 
 <body>
 
-  <section class="inner-page">
-    <div class="inner-page-section w-100">
-      <div class="topbar d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center gap-2">
-          <button class="btn btn-outline-primary mobile-toggle" onclick="toggleSidebar()">
-            <i class="bi bi-list"></i>
-          </button>
-          <h5 class="mb-0 fw-bold">ThinkLab Doctor Portal</h5>
-        </div>
-        <span class="badge-soft profile-badge-top">
-          <a href="profile.html">
-            <img class="me-1" src="assets/images/dummy-doctor.jpg" alt="soctor profile image" />
-            Dr. Abhimanyu
-          </a>
-        </span>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- PROFILE SECTION ------------------------------------------------->
+  <section class="h-auto w-full">
+
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
+        <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
 
-      <div class="container">
-        <div class="content">
-          <section class="portal-section">
-            <div class="section-card">
-              <div class="row g-3">
-                <div class="col-md-12">
-                  <div class="doctor-card">
-                    <div class="row g-3">
-                      <div class="col-lg-4 col-md-12">
-                        <div class="profile-img-block">
-                          <img src="assets/images/dummy-doctor.jpg" alt="doctor-img" />
-                        </div>
-                      </div>
-                      <div class="col-lg-8 col-md-12">
-                        <h4 class="fw-bold mt-4 mb-5" style="color: #0b8f78;"><i class="bi bi-person-gear"></i> Doctor Profile Management</h4>
-                        <div class="row g-4">
-                          <div class="col-md-6">
-                            <div class="profile-block">
-                              <p class="mb-2">Doctor's Full Name:</p>
-                              <h5 class="fw-bold">Dr. Ranjit Halder</h5>
-                              <a href="#" class="edit-ico" data-bs-toggle="modal" data-bs-target="#profile_name_edit_modal"><i class="bi bi-pencil"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="profile-block">
-                              <p class="mb-2">Contact No:</p>
-                              <h5 class="fw-bold">9876543210</h5>
-                              <a href="#" class="edit-ico" data-bs-toggle="modal" data-bs-target="#profile_mob_edit_modal"><i class="bi bi-pencil"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="profile-block">
-                              <p class="mb-2">Address:</p>
-                              <h5 class="fw-bold">21/1, Shibpur, Howrah 712 134</h5>
-                              <a href="#" class="edit-ico" data-bs-toggle="modal" data-bs-target="#profile_add_edit_modal"><i class="bi bi-pencil"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <label class="form-label fw-bold">Show Number on Portal ?</label>
-                            <div class="form-check mb-2">
-                              <input class="form-check-input" type="checkbox" id="agreeYes" value="yes">
-                              <label class="form-check-label" for="agreeYes">Yes</label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="agreeNo" value="no">
-                              <label class="form-check-label" for="agreeNo">No</label>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <label class="form-label fw-bold">Show Fees on Portal ?</label>
-                            <div class="form-check mb-2">
-                              <input class="form-check-input" type="checkbox" id="agreeYes" value="yes">
-                              <label class="form-check-label" for="agreeYes">Yes</label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="agreeNo" value="no">
-                              <label class="form-check-label" for="agreeNo">No</label>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <button class="btn btn-brand w-100 mt-2">
-                              Update
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <div class="h-90 overflow-y-auto">
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='dashboard.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-window-sidebar text-[90%]"></i>
+          </div>
+          Dashboard
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='index.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar2-check text-[90%]"></i>
+          </div>
+          Booking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='prescription.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-bookmark text-[90%]"></i>
+          </div>
+          Saved Prescription
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="openTransactionSetupModal()">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-cash-coin text-[90%]"></i>
+          </div>
+          Financial Transaction
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='consultant.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-workspace text-[90%]"></i>
+          </div>
+          Consultant
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-file-earmark-text text-[90%]"></i>
+          </div>
+          Registration
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='s-link-tracking.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-check text-[90%]"></i>
+          </div>
+          Sent Link Tracking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-link-45deg text-[90%]"></i>
+          </div>
+          Refer
+        </button>
+
+        <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-in.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-left text-[90%]"></i>
+            </div>
+            Refer-In
+          </button>
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-out.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-right text-[90%]"></i>
+            </div>
+            Refer-Out
+          </button>
+
+        </div>
+
+        <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar3 text-[90%]"></i>
+          </div>
+          Chinic & Charges
+        </button>
+
+      </div>
+    </aside>
+    <!----- SIDEBAR-MENU ------->
+
+    <!----- BOTTOM-ISLAND ------->
+    <div class="fixed bottom-0 h-auto w-full py-3 bg-[var(--light)] flex items-center justify-center gap-x-20 shadow-[0_-10px_25px_0_#00000010] z-102">
+      <a href="index.html">
+        <i class="bi bi-house-door text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
+        <i class="bi bi-list text-[180%] text-[var(--light)]"></i>
+      </a>
+      <a href="profile.html">
+        <i class="bi bi-person text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+    </div>
+    <!----- BOTTOM-ISLAND ------->
+
+    <!----- FLOAT-CALL ------->
+    <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
+      <i class="bi bi-telephone-outbound"></i>
+    </button>
+    <!----- FLOAT-CALL ------->
+    
+    <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
+
+      <!----- TOP-BAR ------->
+      <div class="h-[100px] py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-[#2C91F8] z-1"></div>
+      <!----- TOP-BAR ------->
+
+      <!----- PAGE-CONTENT ------->
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
+
+        <!----- CONTENT-HEADING ------->
+        <div class="h-auto w-full text-center pb-10">
+          <div class="mt-[-40px] mx-auto h-22 w-22 border-3 border-solid border-[var(--light)] rounded-[100px] mb-1 relative z-1">
+            <img src="assets/images/dummy-doctor.jpg" alt="User Image" class="!h-[100%] w-20 rounded-[100px]">
+            <button class="absolute bottom-[-5px] right-[-5px] h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center z-2" onclick="openEditProfileModal()">
+              <i class="bi bi-camera text-[100%] text-[var(--dark)]/90"></i>
+            </button>
+          </div>
+          <h5 class="font-semibold text-[100%] text-[var(--dark)]/80">Dr. Amit Kumar Das</h5>
+        </div>
+        <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full pb-25">
+
+          <div class="h-auto w-full">
+
+            <div class="pg-accordion h-auto w-full py-4 px-5 border-t border-b border-solid border-[var(--dark-primary)]/10">
+              <div class="pg-accordion-head flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
+                <h5 class="text-[100%] text-[var(--primary)]/90 font-medium">Personal Information</h5>
+                <button class="h-8 w-8 bg-[var(--secondary)]/80 rounded-[50%] flex items-center justify-center z-2">
+                  <i class="pg-accordion-icon bi bi-chevron-up text-[70%] text-[var(--dark)] transition-all duration-300"></i>
+                </button>
+              </div>
+
+              <div class="pg-accordion-content max-h-[500px] py-4 overflow-hidden transition-all duration-300">
+                <div class="h-auto w-full mb-3">
+                  <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Name" />
+                </div>
+                <div class="h-auto w-full flex items-center gap-x-2 mb-3">
+                  <div class="h-auto w-60">
+                    <input type="tel" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Mobile Number" />
+                  </div>
+                  <div class="h-auto w-40 flex items-center">
+                    <p class="font-normal text-[var(--dark)] text-[75%] pe-3">Show on Portal</p>
+                    <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                      <input type="checkbox" class="peer sr-only" checked="" />
+                      <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                      <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="h-auto w-full mb-3">
+                  <input type="email" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Email ID" />
+                </div>
+                <div class="h-auto w-full">
+                  <textarea rows="4" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Address"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="pg-accordion h-auto w-full py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10">
+              <div class="pg-accordion-head flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
+                <h5 class="text-[100%] text-[var(--primary)]/90 font-medium">Professional Experience</h5>
+                <button class="h-8 w-8 bg-[var(--secondary)]/80 rounded-[50%] flex items-center justify-center z-2">
+                  <i class="pg-accordion-icon bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
+                </button>
+              </div>
+
+              <div class="pg-accordion-content max-h-0 py-0 overflow-hidden transition-all duration-300">
+                <div class="h-auto w-full mb-3">
+                  <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Qualification" />
+                </div>
+                <div class="h-auto w-full mb-3">
+                  <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Department" />
+                </div>
+                <div class="h-auto w-full mb-3">
+                  <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Experiences" />
+                </div>
+                <div class="h-auto w-full flex items-center gap-x-2">
+                  <div class="h-auto w-60">
+                    <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Fees" />
+                  </div>
+                  <div class="h-auto w-40 flex items-center">
+                    <p class="font-normal text-[var(--dark)] text-[75%] pe-3">Show on Portal</p>
+                    <label class="relative inline-flex cursor-pointer items-center !mb-0">
+                      <input type="checkbox" class="peer sr-only" checked="" />
+                      <div class="h-3 w-5 rounded-full bg-gray-300 transition-all duration-300 peer-checked:bg-[#2C91F8]"></div>
+                      <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+
+            <div class="pg-accordion h-auto w-full py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10">
+              <div class="pg-accordion-head flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
+                <h5 class="text-[100%] text-[var(--primary)]/90 font-medium">Additional information</h5>
+                <button class="h-8 w-8 bg-[var(--secondary)]/80 rounded-[50%] flex items-center justify-center z-2">
+                  <i class="pg-accordion-icon bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
+                </button>
+              </div>
+
+              <div class="pg-accordion-content max-h-0 py-0 overflow-hidden transition-all duration-300">
+                <div class="h-auto w-full flex items-center gap-x-2 mb-3">
+                  <div class="h-auto w-45">
+                    <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/60 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]">
+                      <option>Language</option>
+                      <option>English</option>
+                      <option>Hindi</option>
+                      <option>Bengali</option>
+                    </select>
+                  </div>
+                  <div class="h-auto w-45 flex items-center">
+                    <input type="number" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Reg. Number" />
+                  </div>
+                </div>
+                <div class="h-auto w-full mb-3">
+                  <textarea rows="4" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Detailed Qualification"></textarea>
+                </div>
+                <div class="h-auto w-full mb-3">
+                  <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Department" />
+                </div>
+                <div class="h-auto w-full mb-3">
+                  <input type="Experience in Details" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Experience in Details" />
+                </div>
+                <div class="h-auto w-full">
+                  <div class="h-[120px] w-full bg-[var(--light)] border-1 border-dashed border-[#d1d1d1] rounded-[5px] flex flex-col items-center justify-center text-center">
+                    <div class="mb-2">
+                      <input type="file" id="FileUpload" hidden />
+                      <button class="h-11 w-11 bg-[var(--secondary)]/70 rounded-[50%] flex items-center justify-center z-2" onclick="document.getElementById('FileUpload').click()">
+                        <i class="bi bi-cloud-upload text-[150%] text-[var(--primary)]/70"></i>
+                      </button>
+                    </div>
+                    <p class="text-[80%] text-[var(--dark-primary)]/70 font-medium">Upload Branding</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-auto w-full py-4 px-5">
+              <h4 class="text-[100%] text-[#2C91F8] font-medium mb-3">Help Center</h4>
+              <div class="flex items-center">
+                <button class="h-9 w-9 bg-[#FFA4A4]/10 rounded-[50%] flex items-center justify-center" onclick="window.location.href='login-mobile.html'">
+                  <i class="bi bi-box-arrow-left text-[100%] text-[#FF0000]"></i>
+                </button>
+                <p class="text-[#FF0000] text-[85%] font-medium ms-2">Log Out</p>
+              </div>
+            </div>
+
+            <div class="h-auto w-full text-center mt-5">
+              <button class="rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+                Update Now
+              </button>
+            </div>
+
+          </div>
+
         </div>
+        
       </div>
-    </div>
+      <!----- PAGE-CONTENT ------->
+
+    </main>
+
   </section>
 
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="profile_name_edit_modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Edit The Profile</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-12">
-              <label class="form-label">Doctor's Full Name:</label>
-              <input id="doctorFName" type="text" class="form-control" placeholder="" value="Dr. Ranjit Halder">
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand w-100" data-bs-dismiss="modal">
-              Update <i class="bi bi-pencil px-1"></i>
-            </button>
-          </div>
+  <!----- FLOAT-CALL MODAL ------->
+  <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeFloatCallModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Call Now
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-5">+91 8777749654</h6>
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-telephone absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Call
+          </button>
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
+            <i class="bi bi-whatsapp absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Whatsapp
+          </button>
         </div>
       </div>
+      <!----- MODAL-BODY ------->
+
     </div>
   </div>
-  <!--------------------- MODAL SECTION ------------------------>
+  <!----- FLOAT-CALL MODAL ------->
 
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="profile_mob_edit_modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Edit The Profile</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-12">
-              <label class="form-label">Contact No:</label>
-              <input id="doctorMobile" type="number" class="form-control" placeholder="" value="9876543210">
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand w-100" data-bs-dismiss="modal">
-              Update <i class="bi bi-pencil px-1"></i>
-            </button>
-          </div>
-        </div>
+  <!----- EDIT-PROFILE MODAL ------->
+  <div id="EditProfileModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeEditProfileModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="EditProfileModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-2 px-4">
+
+        <ul class="h-auto w-full">   
+          <li class="h-auto w-full py-2 border-b border-solid border-[var(--dark-primary)]/10 text-[90%] text-[var(--dark-primary)]/80 last:border-none" onclick="openShowProfileModal()">
+            View Profile Image
+          </li>
+          <li class="h-auto w-full py-2 border-b border-solid border-[var(--dark-primary)]/10 text-[90%] text-[var(--dark-primary)]/80 last:border-none" onclick="document.getElementById('UserCameraInput').click()">
+            <input type="file" id="UserCameraInput" accept="image/*" capture="user" hidden onchange="openUserCamera(this)">
+            Click Image
+          </li>
+          <li class="h-auto w-full py-2 border-b border-solid border-[var(--dark-primary)]/10 text-[90%] text-[var(--dark-primary)]/80 last:border-none">
+            Choose Image from Gallery
+          </li>
+          <li class="h-auto w-full py-2 border-b border-solid border-[var(--dark-primary)]/10 text-[90%] text-[var(--failure)]/80 font-medium last:border-none">
+            Remove Profile Image
+          </li>
+          
+        </ul>
       </div>
+      <!----- MODAL-BODY ------->
+
     </div>
   </div>
-  <!--------------------- MODAL SECTION ------------------------>
+  <!----- EDIT-PROFILE MODAL ------->
 
-  <!--------------------- MODAL SECTION ------------------------>
-  <div class="modal fade" id="profile_add_edit_modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-header" style="background:#eef7ff;">
-          <div>
-            <h5 class="modal-title fw-bold">Edit The Profile</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!----- SHOW-PROFILE MODAL ------->
+  <div id="ShowProfileModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeShowProfileModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ShowProfileModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center p-1">
+
+        <div class="h-[300px] w-full overflow-hidden rounded-md">   
+          <img src="assets/images/dummy-doctor.jpg" alt="User Image">
         </div>
-        <div class="modal-body py-3">
-          <div class="filter-box row mt-2 g-3">
-            <div class="col-md-12">
-              <label class="form-label">Doctor's Full Name:</label>
-              <textarea id="doctorAdd" rows="4" class="form-control" placeholder="" value="">21/1, Shibpur, Howrah 712 134</textarea>
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-brand w-100" data-bs-dismiss="modal">
-              Update <i class="bi bi-pencil px-1"></i>
-            </button>
-          </div>
-        </div>
+
       </div>
+      <!----- MODAL-BODY ------->
+
     </div>
   </div>
-  <!--------------------- MODAL SECTION ------------------------>
+  <!----- SHOW-PROFILE MODAL ------->
+  <!----------------------------------- PROFILE SECTION ------------------------------------------------->
 
-  <script>
-  //   function loginPortal() {
-  //   const contact = document.getElementById("doctorContact").value.trim();
-  //   const otp = document.getElementById("doctorOtp").value.trim();
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
 
-  //   if (contact !== "00" || otp !== "123456") {
-  //     document.getElementById("loginError").classList.remove("d-none");
-  //     return;
-  //   }
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
 
-  //   document.getElementById("loginError").classList.add("d-none");
-  //   document.getElementById("loginScreen").style.display = "none";
-  //   document.getElementById("loginScreenNew").style.display = "block";
-  //   document.getElementById("dashboard").style.display = "none";
-  // }
-  </script>
-
-  <!----------------------------------- JS FOR BOOTSTRAP FILES START ------------------------------------------------->
-  <script src="assets/js/bootstrap-bundle-min.js" type="text/javascript"></script>
-  <!------------------------------------- JS FOR BOOTSTRAP FILES COMPLETED ------------------------------------------->
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
 
   <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
   <script src="assets/js/main.js" type="text/javascript"></script>
