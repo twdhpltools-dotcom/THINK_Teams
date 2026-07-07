@@ -146,7 +146,7 @@ hr {
 /* ----------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR START ---------------------------------------------- */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 4px;
 }
 
@@ -161,5 +161,5 @@ hr {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--dark);
-} */
+}
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */
