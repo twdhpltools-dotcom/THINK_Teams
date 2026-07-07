@@ -39,6 +39,22 @@ function getOTP() {
 }
 /*-------------------------------------- OTP-INPUT ----------------------------------------*/
 
+/*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+  const telInputs = document.querySelectorAll('input[type="tel"]');
+
+  telInputs.forEach(function (input) {
+    input.addEventListener("input", function () {
+      this.value = this.value.replace(/\D/g, "");
+
+      if (this.value.length > 10) {
+        this.value = this.value.slice(0, 10);
+      }
+    });
+  });
+});
+/*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
+
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 function toggleSubMenu(btn) {
   const subMenu = btn.nextElementSibling;
@@ -52,6 +68,18 @@ function toggleSubMenu(btn) {
 
 function bookingDetailsShow() {
   const optionBox = document.getElementById("BookingDetailsOption");
+
+  optionBox.classList.toggle("py-0");
+  optionBox.classList.toggle("max-h-0");
+  optionBox.classList.toggle("opacity-0");
+
+  optionBox.classList.toggle("py-4");
+  optionBox.classList.toggle("max-h-[80px]");
+  optionBox.classList.toggle("opacity-100");
+}
+
+function bookingDetailsShowTwo() {
+  const optionBox = document.getElementById("BookingDetailsOptionTwo");
 
   optionBox.classList.toggle("py-0");
   optionBox.classList.toggle("max-h-0");

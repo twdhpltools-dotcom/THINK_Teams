@@ -203,6 +203,40 @@ document.getElementById("BookingRefundModal").addEventListener("click", function
 });
 /*-------------------------------------- BOOKING-REFUND ----------------------------------------*/
 
+/*-------------------------------------- BOOKING-DISCOUNT ----------------------------------------*/
+function openBookingDiscountModal() {
+  const BookingDiscountModal = document.getElementById("BookingDiscountModal");
+  const BookingDiscountModalBox = document.getElementById("BookingDiscountModalBox");
+
+  BookingDiscountModal.classList.remove("hidden");
+  BookingDiscountModal.classList.add("flex");
+
+  setTimeout(() => {
+    BookingDiscountModalBox.classList.remove("opacity-0", "scale-95");
+    BookingDiscountModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeBookingDiscountModal() {
+  const BookingDiscountModal = document.getElementById("BookingDiscountModal");
+  const BookingDiscountModalBox = document.getElementById("BookingDiscountModalBox");
+
+  BookingDiscountModalBox.classList.add("opacity-0", "scale-95");
+  BookingDiscountModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    BookingDiscountModal.classList.add("hidden");
+    BookingDiscountModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("BookingDiscountModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeBookingDiscountModal();
+  }
+});
+/*-------------------------------------- BOOKING-DISCOUNT ----------------------------------------*/
+
 /*-------------------------------------- BOOKING-INVOICE-SHOWER ----------------------------------------*/
 function openBookingInvShowerModal() {
   const BookingInvShowerModal = document.getElementById("BookingInvShowerModal");
@@ -542,4 +576,38 @@ document.getElementById("FloatCallModal").addEventListener("click", function (e)
   }
 });
 /*-------------------------------------- FLOAT-CALL ----------------------------------------*/
+
+/*-------------------------------------- LOGOUT-CONFIRMATION ----------------------------------------*/
+function openLogOutConfModal() {
+  const LogOutConfModal = document.getElementById("LogOutConfModal");
+  const LogOutConfModalBox = document.getElementById("LogOutConfModalBox");
+
+  LogOutConfModal.classList.remove("hidden");
+  LogOutConfModal.classList.add("flex");
+
+  setTimeout(() => {
+    LogOutConfModalBox.classList.remove("opacity-0", "scale-95");
+    LogOutConfModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeLogOutConfModal() {
+  const LogOutConfModal = document.getElementById("LogOutConfModal");
+  const LogOutConfModalBox = document.getElementById("LogOutConfModalBox");
+
+  LogOutConfModalBox.classList.add("opacity-0", "scale-95");
+  LogOutConfModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    LogOutConfModal.classList.add("hidden");
+    LogOutConfModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("LogOutConfModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeLogOutConfModal();
+  }
+});
+/*-------------------------------------- LOGOUT-CONFIRMATION ----------------------------------------*/
 /*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
