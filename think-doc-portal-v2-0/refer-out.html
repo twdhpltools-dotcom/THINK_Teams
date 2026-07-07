@@ -71,7 +71,7 @@
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
             <i class="bi bi-bookmark text-[90%]"></i>
           </div>
-          Saved Prescription
+          Prescription
         </button>
 
         <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="openTransactionSetupModal()">
@@ -151,12 +151,6 @@
       </a>
     </div>
     <!----- BOTTOM-ISLAND ------->
-
-    <!----- FLOAT-CALL ------->
-    <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
-      <i class="bi bi-telephone-outbound"></i>
-    </button>
-    <!----- FLOAT-CALL ------->
     
     <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
 
@@ -452,7 +446,7 @@
         <div class="flex items-center justify-center gap-x-2 mb-6">
           <div class="h-auto w-45">
             <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
-              <option>Brach</option>
+              <option>Location</option>
               <option>New Branch 2</option>
               <option>Branch Elgin Road</option>
               <option>Shibpur Branch</option>
@@ -478,43 +472,6 @@
     </div>
   </div>
   <!----- REFER-OUT-SETUP MODAL ------->
-
-  <!----- FLOAT-CALL MODAL ------->
-  <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
-
-    <!----- MODAL-CLOSER ------->
-    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeFloatCallModal()"></span>
-    <!----- MODAL-CLOSER ------->
-
-    <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
-
-      <!----- MODAL-HEADER ------->
-      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
-        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
-          Call Now
-        </h5>
-      </div>
-      <!----- MODAL-HEADER ------->
-
-      <!----- MODAL-BODY ------->
-      <div class="h-auto w-full text-center py-6 px-4">
-        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-5">+91 8777749654</h6>
-        <div class="flex items-center justify-center gap-x-3">
-          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
-            <i class="bi bi-telephone absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
-            Call
-          </button>
-          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
-            <i class="bi bi-whatsapp absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
-            Whatsapp
-          </button>
-        </div>
-      </div>
-      <!----- MODAL-BODY ------->
-
-    </div>
-  </div>
-  <!----- FLOAT-CALL MODAL ------->
 
   <!----- TRANSACTION-SETUP MODAL ------->
   <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">

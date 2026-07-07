@@ -71,7 +71,7 @@
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
             <i class="bi bi-bookmark text-[90%]"></i>
           </div>
-          Saved Prescription
+          Prescription
         </button>
 
         <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="openTransactionSetupModal()">
@@ -150,12 +150,6 @@
       </a>
     </div>
     <!----- BOTTOM-ISLAND ------->
-
-    <!----- FLOAT-CALL ------->
-    <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
-      <i class="bi bi-telephone-outbound"></i>
-    </button>
-    <!----- FLOAT-CALL ------->
     
     <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
 
@@ -356,9 +350,14 @@
                   <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 39</p>
                 </div>
               </div>
-              <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center" onclick="openBookingCancelConfModal()">
-                <i class="bi bi-x-circle text-[90%] text-[#FF0000]"></i>
-              </button>
+              <div class="flex items-center gap-x-2">
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#3CA248]/80 bg-[#7AEF88]/5 flex items-center justify-center"  onclick="openBookingConfModal()">
+                  <i class="bi bi-repeat text-[90%] text-[#3CA248]"></i>
+                </button>
+                <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center" onclick="openBookingCancelConfModal()">
+                  <i class="bi bi-x-circle text-[90%] text-[#FF0000]"></i>
+                </button>
+              </div>
             </div>
 
             <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
@@ -382,7 +381,7 @@
               </div>
             </div>
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
+            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShowTwo()">
               <div class="flex items-start">
                 <i class="bi bi-calendar2-check text-[#1560AC]/80 text-[120%] me-3"></i>
                 <div>
@@ -397,6 +396,33 @@
                 <button class="h-9 w-9 rounded-[50%] border border-solid border-[#FFA4A4]/80 bg-[#FFA4A4]/5 flex items-center justify-center" onclick="openBookingCancelConfModal()">
                   <i class="bi bi-x-circle text-[90%] text-[#FF0000]"></i>
                 </button>
+              </div>
+            </div>
+
+            <div id="BookingDetailsOptionTwo" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+              <div class="flex items-center">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1" onclick="openBookingRScheduleModal()">
+                  <i class="bi bi-calendar-plus text-[80%] text-[var(--dark)]/90"></i>
+                </button>
+                <p class="text-[var(--dark)]/80 text-[80%] whitespace-nowrap">Re-Schedule</p>
+              </div>
+              <div class="flex items-center">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center me-1" onclick="openBookingPaymentModal()">
+                  <i class="bi bi-wallet2 text-[80%] text-[#1560AC]/90"></i>
+                </button>
+                <p class="text-[var(--dark)]/80 text-[80%]">Payment</p>
+              </div>
+              <div class="flex items-center">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] bg-[#7AEF88]/10 flex items-center justify-center me-1" onclick="openBookingDiscountModal()">
+                  <i class="bi bi-percent text-[80%] text-[#3CA248]/90"></i>
+                </button>
+                <p class="text-[var(--dark)]/80 text-[80%]">Discount</p>
+              </div>
+              <div class="flex items-center">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center me-1" onclick="openBookingRefundModal()">
+                  <i class="bi bi-repeat-1 text-[80%] text-[#FF0000]/90"></i>
+                </button>
+                <p class="text-[var(--dark)]/80 text-[80%]">Refund</p>
               </div>
             </div>
 
@@ -880,7 +906,7 @@
         </div>
         <div class="flex items-center justify-center gap-x-2 mb-4">
           <div class="h-auto w-45">
-            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Due Amount" />
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Amount" />
           </div>
           <div class="h-auto w-45">
             <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
@@ -939,7 +965,7 @@
         </div>
         <div class="flex items-center justify-center gap-x-2 mb-6">
           <div class="h-auto w-45">
-            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Refund Amount" />
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Amount" />
           </div>
           <div class="h-auto w-45">
             <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
@@ -963,6 +989,52 @@
   </div>
   <!----- BOOKING-REFUND MODAL ------->
 
+  <!----- BOOKING-DISCOUNT MODAL ------->
+  <div id="BookingDiscountModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeBookingDiscountModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="BookingDiscountModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Discount
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center pt-2 pb-6 px-4">
+        <div class="flex items-center justify-between mb-5">
+          <div class="text-left">
+            <p class="text-[var(--dark)] text-[85%]">Name</p>
+            <h4 class="text-[var(--dark)]/60 text-[90%] font-bold">Sumanto Chatterjee</h4>
+          </div>
+          <div class="text-left">
+            <p class="text-[var(--dark)] text-[85%]">Due</p>
+            <h4 class="text-[var(--dark)]/60 text-[90%] font-bold">Rs. 775.00</h4>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-4">
+          <div class="h-auto w-100">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Amount" />
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--success)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Save
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- BOOKING-DISCOUNT MODAL ------->
+
   <!----- BOOKING-INVOICE-SHOWER MODAL ------->
   <div id="BookingInvShowerModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
 
@@ -983,43 +1055,6 @@
     </div>
   </div>
   <!----- BOOKING-INVOICE-SHOWER MODAL ------->
-
-  <!----- FLOAT-CALL MODAL ------->
-  <div id="FloatCallModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
-
-    <!----- MODAL-CLOSER ------->
-    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeFloatCallModal()"></span>
-    <!----- MODAL-CLOSER ------->
-
-    <div id="FloatCallModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
-
-      <!----- MODAL-HEADER ------->
-      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
-        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
-          Call Now
-        </h5>
-      </div>
-      <!----- MODAL-HEADER ------->
-
-      <!----- MODAL-BODY ------->
-      <div class="h-auto w-full text-center py-6 px-4">
-        <h6 class="text-[var(--dark)]/60 text-[95%] font-semibold mb-5">+91 8777749654</h6>
-        <div class="flex items-center justify-center gap-x-3">
-          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
-            <i class="bi bi-telephone absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
-            Call
-          </button>
-          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[100%] text-[var(--dark)]/70 font-semibold bg-[#4CAF50]/5 border-2 border-solid border-[#4CAF50]/10">
-            <i class="bi bi-whatsapp absolute left-1 z-2 h-9 w-9 rounded-[50%] bg-[#4CAF50] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
-            Whatsapp
-          </button>
-        </div>
-      </div>
-      <!----- MODAL-BODY ------->
-
-    </div>
-  </div>
-  <!----- FLOAT-CALL MODAL ------->
 
   <!----- TRANSACTION-SETUP MODAL ------->
   <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
