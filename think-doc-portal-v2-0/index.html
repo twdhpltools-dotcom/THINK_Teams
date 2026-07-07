@@ -357,7 +357,7 @@
               </div>
             </div>
 
-            <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+            <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-x-auto overflow-y-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
               <div class="flex items-center">
                 <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1" onclick="openBookingRScheduleModal()">
                   <i class="bi bi-calendar-plus text-[80%] text-[var(--dark)]/90"></i>
@@ -369,6 +369,12 @@
                   <i class="bi bi-wallet2 text-[80%] text-[#1560AC]/90"></i>
                 </button>
                 <p class="text-[var(--dark)]/80 text-[80%]">Payment</p>
+              </div>
+              <div class="flex items-center">
+                <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] bg-[#7AEF88]/10 flex items-center justify-center me-1" onclick="openBookingDiscountModal()">
+                  <i class="bi bi-percent text-[80%] text-[#3CA248]/90"></i>
+                </button>
+                <p class="text-[var(--dark)]/80 text-[80%]">Discount</p>
               </div>
               <div class="flex items-center">
                 <button class="h-7 w-7 rounded-[50%] border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 flex items-center justify-center me-1" onclick="openBookingRefundModal()">
@@ -396,7 +402,7 @@
               </div>
             </div>
 
-            <div id="BookingDetailsOptionTwo" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+            <div id="BookingDetailsOptionTwo" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-x-auto overflow-y-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
               <div class="flex items-center">
                 <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1" onclick="openBookingRScheduleModal()">
                   <i class="bi bi-calendar-plus text-[80%] text-[var(--dark)]/90"></i>
