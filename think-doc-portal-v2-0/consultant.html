@@ -46,7 +46,7 @@
   <section class="h-auto w-full">
 
     <!----- SIDEBAR-MENU ------->
-    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
         <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
@@ -167,7 +167,7 @@
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
-      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[15px] rounded-tr-[15px]">
 
         <!----- CONTENT-HEADING ------->
         <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
@@ -177,6 +177,9 @@
             </div>
             Consultant
           </h5>
+          <button class="h-auto rounded-sm px-3 py-1 text-[75%] text-[var(--light)] font-medium bg-[var(--primary)] border-none flex items-center justify-center" onclick="openConsultantAddModal()">
+            <i class="bi bi-plus-circle text-[120%] me-1"></i> Add Clinic
+          </button>
           <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openConsultantSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
           </button>
@@ -193,15 +196,15 @@
 
             <div class="h-auto w-full">
               <div class="h-auto w-full bg-[var(--secondary)]/20 py-4 pl-5 pr-10">
-                <div class="flex items-start justify-between">
-                  <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
+                <div class="flex items-start justify-end">
+                  <!-- <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
                     <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
-                  </div>
+                  </div> -->
                   <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
-                    <div class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </div>
+                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -238,15 +241,12 @@
 
             <div class="h-auto w-full">
               <div class="h-auto w-full bg-[var(--secondary)]/20 py-4 pl-5 pr-10">
-                <div class="flex items-start justify-between">
-                  <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
-                    <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
-                  </div>
+                <div class="flex items-start justify-end">
                   <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
-                    <div class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </div>
+                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -291,15 +291,12 @@
 
             <div class="h-auto w-full">
               <div class="h-auto w-full bg-[var(--secondary)]/20 py-4 pl-5 pr-10">
-                <div class="flex items-start justify-between">
-                  <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
-                    <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
-                  </div>
+                <div class="flex items-start justify-end">
                   <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
-                    <div class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </div>
+                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -336,15 +333,12 @@
 
             <div class="h-auto w-full">
               <div class="h-auto w-full bg-[var(--secondary)]/20 py-4 pl-5 pr-10">
-                <div class="flex items-start justify-between">
-                  <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
-                    <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
-                  </div>
+                <div class="flex items-start justify-end">
                   <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
-                    <div class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </div>
+                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -389,15 +383,12 @@
 
             <div class="h-auto w-full">
               <div class="h-auto w-full bg-[var(--secondary)]/20 py-4 pl-5 pr-10">
-                <div class="flex items-start justify-between">
-                  <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
-                    <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
-                  </div>
+                <div class="flex items-start justify-end">
                   <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
-                    <div class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </div>
+                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -434,15 +425,12 @@
 
             <div class="h-auto w-full">
               <div class="h-auto w-full bg-[var(--secondary)]/20 py-4 pl-5 pr-10">
-                <div class="flex items-start justify-between">
-                  <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
-                    <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
-                  </div>
+                <div class="flex items-start justify-end">
                   <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
-                    <div class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </div>
+                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -542,6 +530,108 @@
     </div>
   </div>
   <!----- CONSULTANT-SETUP MODAL ------->
+
+  
+  <!----- CONSULTANT-ADD MODAL ------->
+  <div id="ConsultantAddModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeConsultantAddModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ConsultantAddModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Add Clinic
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-45">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Name" />
+          </div>
+          <div class="h-auto w-45">
+            <select type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Loaction</option>
+              <option>Shibpur, Howrah</option>
+              <option>Garifa, Naihati</option>
+              <option>Patrapara, Madhyamgram</option>
+              <option>Champadali, Barasat</option>
+            </select>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Search
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- CONSULTANT-ADD MODAL ------->
+
+  <!----- CONSULTANT-REFER MODAL ------->
+  <div id="ConsultantReferModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeConsultantReferModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ConsultantReferModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Locations
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> CCL Diagnostic</h4>
+            <p class="text-[var(--dark)]/80 text-[85%]">Kultali, Baruipur</p>
+          </div>
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> Thinklab Pvt. Ltd.</h4>
+            <p class="text-[var(--dark)]/80 text-[80%]">Shibpur, Howrah</p>
+          </div>
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> XYZ Polyclinic</h4>
+            <p class="text-[var(--dark)]/80 text-[80%]">Patrapara, Madhyamgram</p>
+          </div>
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> PVT Diagnostic</h4>
+            <p class="text-[var(--dark)]/80 text-[80%]">Champadali, Barasat</p>
+          </div>
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> ZKW Diagnostic</h4>
+            <p class="text-[var(--dark)]/80 text-[80%]">Garifa, Baruipur</p>
+          </div>
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> Bactro Polyclinic</h4>
+            <p class="text-[var(--dark)]/80 text-[80%]">Court Road, Bangaon</p>
+          </div>
+          <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+            <h4 class="text-[var(--primary)]/70 text-[90%] font-bold"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> Thinklab Pvt. Ltd.</h4>
+            <p class="text-[var(--dark)]/80 text-[80%]">Park St., Kolkata</p>
+          </div>
+
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- CONSULTANT-REFER MODAL ------->
   
   <!----- TRANSACTION-SETUP MODAL ------->
   <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">

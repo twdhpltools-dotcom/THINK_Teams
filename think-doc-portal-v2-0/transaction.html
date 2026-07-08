@@ -46,7 +46,7 @@
   <section class="h-auto w-full">
 
     <!----- SIDEBAR-MENU ------->
-    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
         <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
@@ -166,7 +166,7 @@
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
-      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[15px] rounded-tr-[15px]">
 
         <!----- CONTENT-HEADING ------->
         <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
@@ -175,7 +175,7 @@
               <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
             </div>
             <div>
-              Financial Transaction <br /> <span class="text-[70%] font-medium">[For ThinkLab Users]</span>
+              Financial Transaction (Points) <br /> <span class="text-[70%] font-medium">[For ThinkLab Users]</span>
             </div>
           </h5>
         </div>
@@ -184,8 +184,7 @@
         <div class="h-auto w-full flex items-end justify-between py-3 px-5 bg-[var(--secondary)]/20">
           <div class="h-auto w-75 me-2 relative z-1">
             <i class="bi bi-search absolute bottom-2 right-5 z-2 text-[120%] text-[var(--dark)]"></i>
-            <label class="inline-block font-medium">Search Patient</label>
-            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search patient by name ...">
+            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search ...">
           </div>
           <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openTransactionSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
@@ -196,83 +195,218 @@
           <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
         </div>
 
-        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-8">
+        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-3">
           <div class="h-auto w-full overflow-x-auto">
             <table class="h-auto w-full bg-[var(--light)] whitespace-nowrap text-left">
               <thead>
                 <tr class="bg-[var(--light)]">
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Date</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">INV No</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Patient Name</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Amount</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Note</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)] w-40">Sl No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Invoice number</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Paid</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Point</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="h-auto w-full pt-5 pb-2 px-5 cursor-pointer" onclick="transactionDetailsTableOne()">
+          <h3 class="text-[100%] text-[var(--primary)]/60 font-semibold">
+            <i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i>
+            Detailed View:
+          </h3>
+        </div>
+
+        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-5 overflow-auto transition-all duration-300 ease-in-out my-0 max-h-[0] opacity-0" id="TransactionDetailsTableOne">
+          <div class="h-auto w-full overflow-x-auto">
+            <table class="h-auto w-full bg-[var(--light)] whitespace-nowrap text-left">
+              <thead>
+                <tr class="bg-[var(--light)]">
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)] w-40">Sl No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Invoice number</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Patient name</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Test</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Paid</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Discount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Due</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Referrer</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Point </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Glucose</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Ms. Anita Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">0.5</td>
                 </tr>
               </tbody>
             </table>
@@ -288,7 +422,7 @@
               <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
             </div>
             <div>
-              Financial Transaction <br /> <span class="text-[70%] font-medium">[For Individual Users]</span>
+              Financial Transaction (Counsultancy) <br /> <span class="text-[70%] font-medium">[For ThinkLab Users]</span>
             </div>
           </h5>
         </div>
@@ -297,8 +431,7 @@
         <div class="h-auto w-full flex items-end justify-between py-3 px-5 bg-[var(--secondary)]/20">
           <div class="h-auto w-75 me-2 relative z-1">
             <i class="bi bi-search absolute bottom-2 right-5 z-2 text-[120%] text-[var(--dark)]"></i>
-            <label class="inline-block font-medium">Search Patient</label>
-            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search patient by name ...">
+            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search ...">
           </div>
           <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openTransactionSetupModal()">
             <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
@@ -309,89 +442,455 @@
           <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
         </div>
 
-        <div class="h-auto w-full bg-[var(--secondary)]/50 pb-25">
+        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-3">
           <div class="h-auto w-full overflow-x-auto">
             <table class="h-auto w-full bg-[var(--light)] whitespace-nowrap text-left">
               <thead>
                 <tr class="bg-[var(--light)]">
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Date</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">INV No</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Patient Name</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Amount</th>
-                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[90%] font-medium text-[var(--dark)]">Referrer Note</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)] w-40">Sl No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Invoice number</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Type</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Paid</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Charge</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">01-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1025</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Rahul Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Suman Roy</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹150</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Good Quality Services!</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">02-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1029</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Priya Saha</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mrs. Anita Das</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹120</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Great</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[#f7fcff]/80">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">04-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1038</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Amit Ghosh</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Mr. Pradip Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹200</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">N/A</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
                 <tr class="bg-[var(--secondary)]/50">
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">07-05-2026</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">INV1052</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Moumita Sen</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Direct</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">₹0</td>
-                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[85%] text-[var(--dark)]">Nice</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹270</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-        
+
+        <div class="h-auto w-full pt-5 pb-2 px-5 cursor-pointer" onclick="transactionDetailsTableTwo()">
+          <h3 class="text-[100%] text-[var(--primary)]/60 font-semibold">
+            <i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i>
+            Detailed View:
+          </h3>
+        </div>
+
+        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-5 overflow-auto transition-all duration-300 ease-in-out my-0 max-h-[0] opacity-0" id="TransactionDetailsTableTwo">
+          <div class="h-auto w-full overflow-x-auto">
+            <table class="h-auto w-full bg-[var(--light)] whitespace-nowrap text-left">
+              <thead>
+                <tr class="bg-[var(--light)]">
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)] w-40">Sl No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Invoice number</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Type</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Paid</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Discount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Due</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <hr class="border-[var(--dark)]/10" />
+
+        <!----- CONTENT-HEADING ------->
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
+          <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
+            <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
+              <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
+            </div>
+            <div>
+              Financial Transaction (Consultancy) <br /> <span class="text-[70%] font-medium">[For Individual Users]</span>
+            </div>
+          </h5>
+        </div>
+        <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full flex items-end justify-between py-3 px-5 bg-[var(--secondary)]/20">
+          <div class="h-auto w-75 me-2 relative z-1">
+            <i class="bi bi-search absolute bottom-2 right-5 z-2 text-[120%] text-[var(--dark)]"></i>
+            <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Search ...">
+          </div>
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openTransactionSetupModal()">
+            <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
+          </button>
+        </div>
+
+        <div class="h-auto w-full py-5 text-center bg-[var(--secondary)]/50">
+          <h3 class="text-[100%] text-[var(--primary)] font-semibold">Shibpur Branch</h3>
+        </div>
+
+        <div class="h-auto w-full bg-[var(--secondary)]/50 mb-3">
+          <div class="h-auto w-full overflow-x-auto">
+            <table class="h-auto w-full bg-[var(--light)] whitespace-nowrap text-left">
+              <thead>
+                <tr class="bg-[var(--light)]">
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)] w-40">Sl No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Invoice number</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Type</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Paid</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="h-auto w-full pt-5 pb-2 px-5 cursor-pointer" onclick="transactionDetailsTableThree()">
+          <h3 class="text-[100%] text-[var(--primary)]/60 font-semibold">
+            <i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i>
+            Detailed View:
+          </h3>
+        </div>
+
+        <div class="h-auto w-full bg-[var(--secondary)]/50 pb-25 overflow-auto transition-all duration-300 ease-in-out my-0 max-h-[0] opacity-0" id="TransactionDetailsTableThree">
+          <div class="h-auto w-full overflow-x-auto">
+            <table class="h-auto w-full bg-[var(--light)] whitespace-nowrap text-left">
+              <thead>
+                <tr class="bg-[var(--light)]">
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)] w-40">Sl No</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Date</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Invoice number</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Patient name <br/>
+                    <span class="text[50%] text-[var(--failure)]/70 font-[500]">(Rescheduled Date)</span>
+                  </th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Type</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Amount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Paid</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Discount</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Due</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Refund</th>
+                  <th class="border-r border-solid border-[var(--dark-primary)]/10 py-3 px-4 text-[80%] font-medium text-[var(--dark)]">Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[#f7fcff]/80">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+                <tr class="bg-[var(--secondary)]/50">
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)] w-40">01</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">01-05-2026</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">INV1025</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Rahul Das</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Refer</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹750</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹150</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹220</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹70</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">₹100</td>
+                  <td class="border-r border-solid border-[var(--dark-primary)]/10 py-2 px-4 text-[75%] text-[var(--dark)]">Good Service!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
       <!----- PAGE-CONTENT ------->
 

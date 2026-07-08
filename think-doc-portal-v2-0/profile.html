@@ -46,7 +46,7 @@
   <section class="h-auto w-full">
 
     <!----- SIDEBAR-MENU ------->
-    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[40px] rounded-tr-[40px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
         <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
@@ -151,12 +151,6 @@
       </a>
     </div>
     <!----- BOTTOM-ISLAND ------->
-
-    <!----- FLOAT-CALL ------->
-    <!-- <button class="fixed bottom-30 right-[-25px] z-100 text-left h-auto py-2 pl-4 pr-10 bg-[#4CAF50] border-2 border-solid border-[var(--light)] shadow-[0_0_10px_0_#0000000a] rounded-[50px] text-[var(--light)] text-[100%]" onclick="openFloatCallModal()">
-      <i class="bi bi-telephone-outbound"></i>
-    </button> -->
-    <!----- FLOAT-CALL ------->
     
     <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
 
@@ -165,7 +159,7 @@
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
-      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[30px] rounded-tr-[30px]">
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[15px] rounded-tr-[15px]">
 
         <!----- CONTENT-HEADING ------->
         <div class="h-auto w-full text-center pb-10">
@@ -262,12 +256,7 @@
               <div class="pg-accordion-content max-h-0 py-0 overflow-hidden transition-all duration-300">
                 <div class="h-auto w-full flex items-center gap-x-2 mb-3">
                   <div class="h-auto w-45">
-                    <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/60 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]">
-                      <option>Language</option>
-                      <option>English</option>
-                      <option>Hindi</option>
-                      <option>Bengali</option>
-                    </select>
+                    <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/60 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Language" />
                   </div>
                   <div class="h-auto w-45 flex items-center">
                     <input type="number" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Reg. Number" />
@@ -275,9 +264,6 @@
                 </div>
                 <div class="h-auto w-full mb-3">
                   <textarea rows="4" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Detailed Qualification"></textarea>
-                </div>
-                <div class="h-auto w-full mb-3">
-                  <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Department" />
                 </div>
                 <div class="h-auto w-full mb-3">
                   <input type="Experience in Details" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Experience in Details" />
@@ -297,7 +283,7 @@
             </div>
 
             <div class="h-auto w-full py-4 px-5">
-              <h4 class="text-[100%] text-[#2C91F8] font-medium mb-3">Help Center</h4>
+              <h4 class="text-[100%] text-[#2C91F8] font-medium mb-3" onclick="openFloatCallModal()">Help Center</h4>
               <div class="flex items-center">
                 <button class="h-9 w-9 bg-[#FFA4A4]/10 rounded-[50%] flex items-center justify-center" onclick="openLogOutConfModal()">
                   <i class="bi bi-box-arrow-left text-[100%] text-[#FF0000]"></i>
