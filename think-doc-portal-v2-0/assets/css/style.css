@@ -147,7 +147,7 @@ hr {
 
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -156,7 +156,7 @@ hr {
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary);
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
