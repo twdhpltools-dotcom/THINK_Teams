@@ -339,6 +339,74 @@ document.getElementById("ConsultantSetupModal").addEventListener("click", functi
 });
 /*-------------------------------------- CONSULTANT-SETUP ----------------------------------------*/
 
+/*-------------------------------------- CONSULTANT-ADD ----------------------------------------*/
+function openConsultantAddModal() {
+  const ConsultantAddModal = document.getElementById("ConsultantAddModal");
+  const ConsultantAddModalBox = document.getElementById("ConsultantAddModalBox");
+
+  ConsultantAddModal.classList.remove("hidden");
+  ConsultantAddModal.classList.add("flex");
+
+  setTimeout(() => {
+    ConsultantAddModalBox.classList.remove("opacity-0", "scale-95");
+    ConsultantAddModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeConsultantAddModal() {
+  const ConsultantAddModal = document.getElementById("ConsultantAddModal");
+  const ConsultantAddModalBox = document.getElementById("ConsultantAddModalBox");
+
+  ConsultantAddModalBox.classList.add("opacity-0", "scale-95");
+  ConsultantAddModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ConsultantAddModal.classList.add("hidden");
+    ConsultantAddModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ConsultantAddModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeConsultantAddModal();
+  }
+});
+/*-------------------------------------- CONSULTANT-ADD ----------------------------------------*/
+
+/*-------------------------------------- CONSULTANT-REFER ----------------------------------------*/
+function openConsultantReferModal() {
+  const ConsultantReferModal = document.getElementById("ConsultantReferModal");
+  const ConsultantReferModalBox = document.getElementById("ConsultantReferModalBox");
+
+  ConsultantReferModal.classList.remove("hidden");
+  ConsultantReferModal.classList.add("flex");
+
+  setTimeout(() => {
+    ConsultantReferModalBox.classList.remove("opacity-0", "scale-95");
+    ConsultantReferModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeConsultantReferModal() {
+  const ConsultantReferModal = document.getElementById("ConsultantReferModal");
+  const ConsultantReferModalBox = document.getElementById("ConsultantReferModalBox");
+
+  ConsultantReferModalBox.classList.add("opacity-0", "scale-95");
+  ConsultantReferModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ConsultantReferModal.classList.add("hidden");
+    ConsultantReferModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ConsultantReferModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeConsultantReferModal();
+  }
+});
+/*-------------------------------------- CONSULTANT-REFER ----------------------------------------*/
+
 /*-------------------------------------- REGISTRATION-SETUP ----------------------------------------*/
 function openRegSetupModal() {
   const RegSetupModal = document.getElementById("RegSetupModal");

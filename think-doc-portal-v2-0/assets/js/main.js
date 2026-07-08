@@ -173,6 +173,42 @@ function schSatDetailsShow() {
   schsatoptionBox.classList.toggle("max-h-[80px]");
   schsatoptionBox.classList.toggle("opacity-100");
 }
+
+function transactionDetailsTableOne() {
+  const optionBox = document.getElementById("TransactionDetailsTableOne");
+
+  optionBox.classList.toggle("my-0");
+  optionBox.classList.toggle("max-h-0");
+  optionBox.classList.toggle("opacity-0");
+
+  optionBox.classList.toggle("my-4");
+  optionBox.classList.toggle("max-h-[350px]");
+  optionBox.classList.toggle("opacity-100");
+}
+
+function transactionDetailsTableTwo() {
+  const optionBox = document.getElementById("TransactionDetailsTableTwo");
+
+  optionBox.classList.toggle("my-0");
+  optionBox.classList.toggle("max-h-0");
+  optionBox.classList.toggle("opacity-0");
+
+  optionBox.classList.toggle("my-4");
+  optionBox.classList.toggle("max-h-[350px]");
+  optionBox.classList.toggle("opacity-100");
+}
+
+function transactionDetailsTableThree() {
+  const optionBox = document.getElementById("TransactionDetailsTableThree");
+
+  optionBox.classList.toggle("my-0");
+  optionBox.classList.toggle("max-h-0");
+  optionBox.classList.toggle("opacity-0");
+
+  optionBox.classList.toggle("my-4");
+  optionBox.classList.toggle("max-h-[350px]");
+  optionBox.classList.toggle("opacity-100");
+}
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
