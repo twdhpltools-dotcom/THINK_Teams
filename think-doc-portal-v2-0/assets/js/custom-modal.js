@@ -407,6 +407,40 @@ document.getElementById("RegSetupModal").addEventListener("click", function(e) {
 });
 /*-------------------------------------- REGISTRATION-SETUP ----------------------------------------*/
 
+/*-------------------------------------- REGISTRATION-APPOINTMENT ----------------------------------------*/
+function openRegAppointmentModal() {
+  const RegAppointmentModal = document.getElementById("RegAppointmentModal");
+  const RegAppointmentModalBox = document.getElementById("RegAppointmentModalBox");
+
+  RegAppointmentModal.classList.remove("hidden");
+  RegAppointmentModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegAppointmentModalBox.classList.remove("opacity-0", "scale-95");
+    RegAppointmentModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegAppointmentModal() {
+  const RegAppointmentModal = document.getElementById("RegAppointmentModal");
+  const RegAppointmentModalBox = document.getElementById("RegAppointmentModalBox");
+
+  RegAppointmentModalBox.classList.add("opacity-0", "scale-95");
+  RegAppointmentModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegAppointmentModal.classList.add("hidden");
+    RegAppointmentModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegAppointmentModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegAppointmentModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-APPOINTMENT ----------------------------------------*/
+
 /*-------------------------------------- REGISTERED-PATIENT-SETUP ----------------------------------------*/
 function openRPatientSetupModal() {
   const RPatientSetupModal = document.getElementById("RPatientSetupModal");
@@ -509,6 +543,40 @@ document.getElementById("ReferOutSetupModal").addEventListener("click", function
 });
 /*-------------------------------------- REFER-OUT-SETUP ----------------------------------------*/
 
+/*-------------------------------------- CLINIC-BLOCK ----------------------------------------*/
+function openClinicBlockModal() {
+  const ClinicBlockModal = document.getElementById("ClinicBlockModal");
+  const ClinicBlockModalBox = document.getElementById("ClinicBlockModalBox");
+
+  ClinicBlockModal.classList.remove("hidden");
+  ClinicBlockModal.classList.add("flex");
+
+  setTimeout(() => {
+    ClinicBlockModalBox.classList.remove("opacity-0", "scale-95");
+    ClinicBlockModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeClinicBlockModal() {
+  const ClinicBlockModal = document.getElementById("ClinicBlockModal");
+  const ClinicBlockModalBox = document.getElementById("ClinicBlockModalBox");
+
+  ClinicBlockModalBox.classList.add("opacity-0", "scale-95");
+  ClinicBlockModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ClinicBlockModal.classList.add("hidden");
+    ClinicBlockModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ClinicBlockModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeClinicBlockModal();
+  }
+});
+/*-------------------------------------- CLINIC-BLOCK ----------------------------------------*/
+
 /*-------------------------------------- CLINIC-ADD ----------------------------------------*/
 function openClinicAddModal() {
   const ClinicAddModal = document.getElementById("ClinicAddModal");
@@ -542,6 +610,40 @@ document.getElementById("ClinicAddModal").addEventListener("click", function(e) 
   }
 });
 /*-------------------------------------- CLINIC-ADD ----------------------------------------*/
+
+/*-------------------------------------- CLINIC-CANCEL-CONFIRMATION ----------------------------------------*/
+function openSchCancelConfModal() {
+  const SchCancelConfModal = document.getElementById("SchCancelConfModal");
+  const SchCancelConfModalBox = document.getElementById("SchCancelConfModalBox");
+
+  SchCancelConfModal.classList.remove("hidden");
+  SchCancelConfModal.classList.add("flex");
+
+  setTimeout(() => {
+    SchCancelConfModalBox.classList.remove("opacity-0", "scale-95");
+    SchCancelConfModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeSchCancelConfModal() {
+  const SchCancelConfModal = document.getElementById("SchCancelConfModal");
+  const SchCancelConfModalBox = document.getElementById("SchCancelConfModalBox");
+
+  SchCancelConfModalBox.classList.add("opacity-0", "scale-95");
+  SchCancelConfModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    SchCancelConfModal.classList.add("hidden");
+    SchCancelConfModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("SchCancelConfModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeSchCancelConfModal();
+  }
+});
+/*-------------------------------------- CLINIC-CANCEL-CONFIRMATION ----------------------------------------*/
 
 /*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
 function openEditProfileModal() {
