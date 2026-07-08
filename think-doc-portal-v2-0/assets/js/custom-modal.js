@@ -339,40 +339,6 @@ document.getElementById("ConsultantSetupModal").addEventListener("click", functi
 });
 /*-------------------------------------- CONSULTANT-SETUP ----------------------------------------*/
 
-/*-------------------------------------- CONSULTANT-ADD ----------------------------------------*/
-function openConsultantAddModal() {
-  const ConsultantAddModal = document.getElementById("ConsultantAddModal");
-  const ConsultantAddModalBox = document.getElementById("ConsultantAddModalBox");
-
-  ConsultantAddModal.classList.remove("hidden");
-  ConsultantAddModal.classList.add("flex");
-
-  setTimeout(() => {
-    ConsultantAddModalBox.classList.remove("opacity-0", "scale-95");
-    ConsultantAddModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeConsultantAddModal() {
-  const ConsultantAddModal = document.getElementById("ConsultantAddModal");
-  const ConsultantAddModalBox = document.getElementById("ConsultantAddModalBox");
-
-  ConsultantAddModalBox.classList.add("opacity-0", "scale-95");
-  ConsultantAddModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    ConsultantAddModal.classList.add("hidden");
-    ConsultantAddModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("ConsultantAddModal").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closeConsultantAddModal();
-  }
-});
-/*-------------------------------------- CONSULTANT-ADD ----------------------------------------*/
-
 /*-------------------------------------- CONSULTANT-REFER ----------------------------------------*/
 function openConsultantReferModal() {
   const ConsultantReferModal = document.getElementById("ConsultantReferModal");
@@ -542,6 +508,40 @@ document.getElementById("ReferOutSetupModal").addEventListener("click", function
   }
 });
 /*-------------------------------------- REFER-OUT-SETUP ----------------------------------------*/
+
+/*-------------------------------------- CLINIC-ADD ----------------------------------------*/
+function openClinicAddModal() {
+  const ClinicAddModal = document.getElementById("ClinicAddModal");
+  const ClinicAddModalBox = document.getElementById("ClinicAddModalBox");
+
+  ClinicAddModal.classList.remove("hidden");
+  ClinicAddModal.classList.add("flex");
+
+  setTimeout(() => {
+    ClinicAddModalBox.classList.remove("opacity-0", "scale-95");
+    ClinicAddModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeClinicAddModal() {
+  const ClinicAddModal = document.getElementById("ClinicAddModal");
+  const ClinicAddModalBox = document.getElementById("ClinicAddModalBox");
+
+  ClinicAddModalBox.classList.add("opacity-0", "scale-95");
+  ClinicAddModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ClinicAddModal.classList.add("hidden");
+    ClinicAddModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ClinicAddModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeClinicAddModal();
+  }
+});
+/*-------------------------------------- CLINIC-ADD ----------------------------------------*/
 
 /*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
 function openEditProfileModal() {
