@@ -1,0 +1,656 @@
+/*--------------------------------------------- CSS FOR INCLUDING FOR FONTS START ---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*--------------------------------------------- CSS FOR INCLUDING FOR FONTS COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PRE-DEFINED START ---------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------- CSS FOR HTML-TO-PDF START ---------------------------------------*/
+@page {
+    size: A4;
+    margin: 0;
+}
+
+main.pg {
+    width: 794px;
+    min-height: 1123px;
+    margin: 0 auto;
+}
+
+.pdf-pg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+/*--------------------------------------------- CSS FOR HTML-TO-PDF COMPLETE ---------------------------------------*/
+
+:root{
+    --font: "Poppins", sans-serif;
+    --light:#ffffff;
+    --dark:#000;
+    --high:#ee2d2b;
+    --neutral:#009458;
+    --low:#5a7fc0;
+    --average:#fd7e14;
+    --extra-dark:#15274d;
+    --line-height: 1.5; 
+    --font-weight: normal;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--light);
+    color: var(--dark-primary);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+hr {
+    margin: 8px 0;
+}
+
+section.pg-section {
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.pg-container {
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.pg-head {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.pg-head-decor {
+    position: absolute;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.pg-head-decor.left {
+    left: 0;
+    align-items: start;
+}
+
+.pg-head-decor.right {
+    right: 0;
+    align-items: end;
+}
+
+.pg-head-decor span {
+    display: block;
+    border-radius: 50px;
+    background: var(--neutral);
+    opacity: 0.9;
+}
+
+.pg-head-decor span:first-child {
+    height: 4px;
+    width: 150px;
+    margin-bottom: 8px;
+}
+
+.pg-head-decor span:last-child {
+    height: 2px;
+    width: 80px;
+}
+
+.pg-head h1 {
+    font-size: 180%;
+    font-weight: 500;
+    color: var(--extra-dark);
+    opacity: 0.9;
+    margin-bottom: 2px;
+}
+
+.pg-head h6 {
+    font-size: 120%;
+    font-weight: 300;
+    color: var(--extra-dark);
+    opacity: 0.8;
+}
+
+.pg-content {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+span.header-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    background: var(--low);
+    color: var(--light);
+    font-size: 90%;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+span.header-chip i {
+    padding-right: 2px;
+    font-size: 100%;
+}
+/*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR TOP-HEADER START ---------------------------------------*/
+.top-header {
+    height: auto;
+    width: 100%;
+    margin: 100px 0 10px;
+}
+
+.top-header-box {
+    height: auto;
+    width: 100%;
+    border: 1px solid #00000020;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.top-header-content {
+    height: auto;
+    width: 100%;
+}
+
+.header-patient-info {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: start;
+}
+
+.header-patient-info:last-child {
+    margin-bottom: 0;
+}
+
+.header-patient-info h6 {
+    font-size: 85%;
+    color: var(--low);
+    width: 100%;
+    max-width: 130px;
+}
+
+.header-patient-info p {
+    font-size: 75%;
+    font-weight: 400;
+    color: var(--extra-dark);
+}
+
+.header-patient-info p b {
+    font-weight: 600;
+}
+/*--------------------------------------------- CSS FOR TOP-HEADER COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR BOTTOM-FOOTER START ---------------------------------------*/
+.bottom-footer {
+    height: auto;
+    width: 100%;
+    margin: 20px 0 0;
+    text-align: right;
+    border-bottom: 8px solid var(--low);
+}
+
+span.pg-no {
+    display: inline-block;
+    font-size: 65%;
+    font-weight: 400;
+    color: var(--extra-dark);
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.bottom-footer-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.bottom-footer-content p {
+    font-size: 75%;
+    font-weight: 400;
+    color: var(--extra-dark);
+    opacity: 0.8;
+    padding-right: 5px;
+}
+
+.bottom-footer-brand-img {
+    height: auto;
+    width: 100%;
+    max-width: 16%;
+}
+/*--------------------------------------------- CSS FOR BOTTOM-FOOTER COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PG-3 START ---------------------------------------*/
+.test-parameter {
+    height: auto;
+    width: 100%;
+    padding: 18px 0;
+    border-bottom: 1px solid transparent;
+}
+
+.test-parameter {
+    border-bottom-color: #00000020;
+}
+
+.test-parameter-head {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.test-parameter-img {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000020;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.test-parameter-head h5 {
+    font-size: 160%;
+    font-weight: 500;
+    color: var(--extra-dark);
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.test-parameter-head p {
+    font-size: 90%;
+    color: var(--extra-dark);
+    opacity: 0.7;
+}
+
+.test-parameter-box {
+    height: auto;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.test-parameter-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(0, -50%);
+    height: 75%;
+    width: 1px;
+    background: #15274d21;
+}
+
+.test-parameter-box h4 {
+    font-size: 130%;
+    font-weight: 400;
+    color: var(--low);
+    opacity: 0.9;
+}
+
+.test-parameter-box em {
+    font-size: 75%;
+    color: var(--extra-dark);
+    opacity: 0.7;
+}
+
+.test-parameter-range {
+    margin: 18px 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.test-parameter-range h3 {
+    font-size: 130%;
+    font-weight: 600;
+    color: var(--extra-dark);
+    opacity: 0.6;
+}
+
+.test-parameter-range span {
+    font-size: 70%;
+    color: var(--extra-dark);
+    opacity: 0.7;
+}
+
+.test-parameter-box p {
+    font-size: 80%;
+    color: var(--extra-dark);
+    opacity: 0.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/*--------------------------------------------- CSS FOR RANGE-BAR START ---------------------------------------*/
+.mini-bar {
+    height: auto;
+    width: 100%;
+    height: 7px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.mini-fill-bg {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.mini-fill {
+    height: 100%;
+}
+
+.mini-marker {
+    position: absolute;
+    top: -10px;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid transparent;
+    z-index: 2;
+}
+
+/*------------------------- NORMAL RANGE-BAR -------------------------*/
+.mini-bar.normal {
+    border-color: #0094593a;
+}
+
+.mini-bar.normal .mini-fill-bg {
+    background: #0094591f;
+}
+
+.mini-bar.normal .mini-fill {
+    background: #009459ad;
+}
+
+.mini-bar.normal .mini-marker {
+    border-top-color: #009459dc;
+}
+/*------------------------- NORMAL RANGE-BAR -------------------------*/
+
+/*------------------------- LOW RANGE-BAR -------------------------*/
+.mini-bar.low {
+    border-color: #5a7fc033;
+}
+
+.mini-bar.low .mini-fill-bg {
+    background: #5a7fc018;
+}
+
+.mini-bar.low .mini-fill {
+    background: #5a7fc0c2;
+}
+
+.mini-bar.low .mini-marker {
+    border-top-color: #5a7fc0da;
+}
+/*------------------------- LOW RANGE-BAR -------------------------*/
+
+/*------------------------- HIGH RANGE-BAR -------------------------*/
+.mini-bar.high {
+    border-color: #ee2e2b34;
+}
+
+.mini-bar.high .mini-fill-bg {
+    background: #ee2e2b18;
+}
+
+.mini-bar.high .mini-fill {
+    background: #ee2e2bc5;
+}
+
+.mini-bar.high .mini-marker {
+    border-top-color: #ee2e2bd8;
+}
+/*------------------------- HIGH RANGE-BAR -------------------------*/
+
+/*------------------------- BORDER RANGE-BAR -------------------------*/
+.mini-bar.border {
+    border-color: #fd7d143f;
+}
+
+.mini-bar.border .mini-fill-bg {
+    background: #fd7d1417;
+}
+
+.mini-bar.border .mini-fill {
+    background: #fd7d14c0;
+}
+
+.mini-bar.border .mini-marker {
+    border-top-color: #fd7d14da;
+}
+/*------------------------- BORDER RANGE-BAR -------------------------*/
+/*--------------------------------------------- CSS FOR RANGE-BAR COMPLETE ---------------------------------------*/
+/*--------------------------------------------- CSS FOR PG-3 COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PG-6 START ---------------------------------------*/
+.lifestyle {
+    height: auto;
+    width: 100%;
+}
+
+.lifestyle-heading {
+    padding: 18px 0;
+}
+
+.lifestyle-heading h5 {
+    font-size: 120%;
+    font-weight: 500;
+    color: var(--extra-dark);
+    opacity: 0.6;
+}
+
+.lifestyle-box {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.lifestyle-box:last-child {
+    margin-bottom: 0;
+}
+
+.lifestyle-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/sugg-abs-lft.jpg');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.lifestyle-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/sugg-abs-rght.jpg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.lifestyle-box.odd::before {
+    left: unset;
+    right: 0;
+    background-image: url('../images/sugg-abs-rght.jpg');
+    background-position: right;
+    transform: scaleX(-1);
+}
+
+.lifestyle-box.odd::after {
+    right: unset;
+    left: 0;
+    background-image: url('../images/sugg-abs-lft.jpg');
+    background-position: left;
+    transform: scaleX(-1);
+}
+
+.lifestyle-box-markup {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.lifestyle-box-markup-img {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000020;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto 10px;
+}
+
+.lifestyle-box-markup h4 {
+    font-size: 170%;
+    font-weight: 600;
+    color: var(--neutral);
+    opacity: 0.9;
+    margin-bottom: 8px;
+}
+
+.lifestyle-box-markup h6 {
+    font-size: 110%;
+    font-weight: 500;
+    color: var(--extra-dark);
+    opacity: 0.7;
+}
+
+.lifestyle-box-content {
+    height: auto;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.lifestyle-box-content h4 {
+    font-size: 150%;
+    color: var(--neutral);
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+.lifestyle-box-content ul li {
+    font-size: 85%;
+    font-weight: 400;
+    color: var(--extra-dark);
+    padding: 10px 0 10px 25px;
+    border-bottom: 1px solid #00000020;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+.lifestyle-box-content ul li:last-child {
+    border: none;
+}
+
+.lifestyle-box-content ul li::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-image: url('../images/E.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.lifestyle-box-img {
+    height: auto;
+    width: 100%;
+}
+/*--------------------------------------------- CSS FOR PG-6 COMPLETE ---------------------------------------*/
