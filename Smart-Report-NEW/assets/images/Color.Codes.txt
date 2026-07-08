@@ -1,0 +1,10 @@
+#009458 (Green) [NORMAL]
+
+#5a7fc0 (Light Blue) [LOW]
+
+#15274d (Dark Blue)
+
+#ee2d2b (Red) [HIGH]
+
+#ee2d2b (Orange) [BORDER-LINE]
+
