@@ -181,7 +181,7 @@
             <div class="block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap">
               <p class="text-[80%] text-[#3CA248]">Days Active</p>
             </div>
-            <button class="absolute top-[-2px] right-[-30px] z-2 h-12 w-12 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3">
+            <button class="absolute top-[-2px] right-[-30px] z-2 h-12 w-12 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openClinicBlockModal()">
               <i class="bi bi-calendar-x text-[140%] text-[var(--primary)]/90"></i>
             </button>
           </span>
@@ -457,6 +457,47 @@
     </main>
 
   </section>
+
+  <!----- CLINIC-BLOCK MODAL ------->
+  <div id="ClinicBlockModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeClinicBlockModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ClinicBlockModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Block Dates
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-4">
+          <div class="h-auto w-100">
+            <input type="date" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Re-Schedule" />
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-100">
+            <textarea rows="3" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Note (Optional)"></textarea>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openBookingRScheduleMenuToggle()">
+            Next
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- CLINIC-BLOCK MODAL ------->
 
   <!----- CLINIC-ADD MODAL ------->
   <div id="ClinicAddModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
