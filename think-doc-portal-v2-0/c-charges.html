@@ -151,11 +151,11 @@
     </div>
     <!----- BOTTOM-ISLAND ------->
     
-    <main class="h-auto w-full bg-linear-to-t from-[var(--primary)] to-[#2C91F8]">
+    <main class="h-auto w-full bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-[#2C91F8] z-1">
-        <h5 class="text-[145%] text-[var(--light)] font-medium">Welcome!</h5>
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20 z-1">
+        <h5 class="text-[145%] text-[var(--dark-primary)]/80 font-medium">Welcome!</h5>
         <span class="h-12 w-12 border-3 border-solid border-[var(--secondary)]/50 rounded-[50%] overflow-hidden">
           <a href="profile.html">
             <img class="me-1" src="assets/images/dummy-doctor.jpg" alt="soctor profile image" />
@@ -174,7 +174,7 @@
             <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-2">
               <i class="bi bi-calendar3 text-[80%] text-[var(--primary)]/90"></i>
             </div>
-            Clinic & Schdule
+            Clinic & Schedule
           </h5>
           <span class="relative z-1 w-35 rounded-[100px] border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-4 pr-9 text-center text-[75%] text-[var(--dark)] font-medium">
             Block Dates
@@ -188,7 +188,10 @@
         </div>
         <!----- CONTENT-HEADING ------->
 
-        <div class="h-auto w-full py-5 px-5 text-center bg-[var(--light)] border-b border-solid border-[#00000010]">
+        <div class="h-auto w-full py-4 px-5 text-center bg-[var(--light)] border-b border-solid border-[#00000010]">
+          <button class="h-auto rounded-md px-3 py-1 mx-auto mb-4 text-[85%] text-[var(--light)] font-medium bg-[var(--primary)] border-none flex items-center justify-center z-100" onclick="openClinicAddModal()">
+            <i class="bi bi-plus-circle text-[140%] me-2"></i> Add Clinic
+          </button>
           <div class="h-auto w-full">
             <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
               <option>Location</option>
@@ -454,6 +457,47 @@
     </main>
 
   </section>
+
+  <!----- CLINIC-ADD MODAL ------->
+  <div id="ClinicAddModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeClinicAddModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ClinicAddModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Add Clinic
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-4">
+          <div class="h-auto w-100">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Name" />
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-100">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Location" />
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Search
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- CLINIC-ADD MODAL ------->
 
   <!----- TRANSACTION-SETUP MODAL ------->
   <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
