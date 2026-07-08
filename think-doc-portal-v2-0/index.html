@@ -359,6 +359,20 @@
 
             <div id="BookingDetailsOption" class="h-auto w-full bg-[var(--secondary)]/50 flex items-center justify-center gap-x-3 px-3 border-b border-solid border-[var(--dark-primary)]/10 last:border-none overflow-x-auto overflow-y-hidden py-0 max-h-0 opacity-0 transition-all duration-300 ease-in-out">
               <div class="flex items-center">
+                <div class="inline-block rounded-xs border border-solid border-[#00000020] bg-[--light] px-2 text-center whitespace-nowrap me-1" onclick="openBookingRScheduleModal()">
+                  <p class="text-[75%] text-[--dark]/60">Re-Schedule</p>
+                </div>
+                <div class="inline-block rounded-xs border border-solid border-[#89BCFF] bg-[#89BCFF]/10 px-2 text-center whitespace-nowrap me-1" onclick="openBookingPaymentModal()">
+                  <p class="text-[75%] text-[#1560AC]">Payment</p>
+                </div>
+                <div class="inline-block rounded-xs border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap me-1" onclick="openBookingDiscountModal()">
+                  <p class="text-[75%] text-[#3CA248]">Discount</p>
+                </div>
+                <div class="inline-block rounded-xs border border-solid border-[#FFA4A4] bg-[#FFA4A4]/10 px-2 text-center whitespace-nowrap" onclick="openBookingRefundModal()">
+                  <p class="text-[75%] text-[#FF0000]">Refund</p>
+                </div>
+              </div>
+              <!-- <div class="flex items-center">
                 <button class="h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center me-1" onclick="openBookingRScheduleModal()">
                   <i class="bi bi-calendar-plus text-[80%] text-[var(--dark)]/90"></i>
                 </button>
@@ -381,7 +395,7 @@
                   <i class="bi bi-repeat-1 text-[80%] text-[#FF0000]/90"></i>
                 </button>
                 <p class="text-[var(--dark)]/80 text-[80%]">Refund</p>
-              </div>
+              </div> -->
             </div>
 
             <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShowTwo()">
