@@ -441,6 +441,74 @@ document.getElementById("RegAppointmentModal").addEventListener("click", functio
 });
 /*-------------------------------------- REGISTRATION-APPOINTMENT ----------------------------------------*/
 
+/*-------------------------------------- REGISTRATION-VERIFY-MOBILE ----------------------------------------*/
+function openRegVerifyMobileModal() {
+  const RegVerifyMobileModal = document.getElementById("RegVerifyMobileModal");
+  const RegVerifyMobileModalBox = document.getElementById("RegVerifyMobileModalBox");
+
+  RegVerifyMobileModal.classList.remove("hidden");
+  RegVerifyMobileModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegVerifyMobileModalBox.classList.remove("opacity-0", "scale-95");
+    RegVerifyMobileModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegVerifyMobileModal() {
+  const RegVerifyMobileModal = document.getElementById("RegVerifyMobileModal");
+  const RegVerifyMobileModalBox = document.getElementById("RegVerifyMobileModalBox");
+
+  RegVerifyMobileModalBox.classList.add("opacity-0", "scale-95");
+  RegVerifyMobileModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegVerifyMobileModal.classList.add("hidden");
+    RegVerifyMobileModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegVerifyMobileModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegVerifyMobileModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-VERIFY-MOBILE ----------------------------------------*/
+
+/*-------------------------------------- REGISTRATION-VERIFY-OTP ----------------------------------------*/
+function openRegVerifyOtpModal() {
+  const RegVerifyOtpModal = document.getElementById("RegVerifyOtpModal");
+  const RegVerifyOtpModalBox = document.getElementById("RegVerifyOtpModalBox");
+
+  RegVerifyOtpModal.classList.remove("hidden");
+  RegVerifyOtpModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegVerifyOtpModalBox.classList.remove("opacity-0", "scale-95");
+    RegVerifyOtpModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegVerifyOtpModal() {
+  const RegVerifyOtpModal = document.getElementById("RegVerifyOtpModal");
+  const RegVerifyOtpModalBox = document.getElementById("RegVerifyOtpModalBox");
+
+  RegVerifyOtpModalBox.classList.add("opacity-0", "scale-95");
+  RegVerifyOtpModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegVerifyOtpModal.classList.add("hidden");
+    RegVerifyOtpModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegVerifyOtpModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegVerifyOtpModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-VERIFY-OTP ----------------------------------------*/
+
 /*-------------------------------------- REGISTERED-PATIENT-SETUP ----------------------------------------*/
 function openRPatientSetupModal() {
   const RPatientSetupModal = document.getElementById("RPatientSetupModal");

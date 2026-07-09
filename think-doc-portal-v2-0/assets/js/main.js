@@ -212,7 +212,7 @@ function transactionDetailsTableThree() {
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
-function openTab(btn){
+function openTab(btn) {
     document.querySelectorAll(".tab-content").forEach(content=>{
         content.classList.add("hidden");
     });
@@ -236,7 +236,7 @@ document.getElementById("FileUpload").addEventListener("change", function () {
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 
 /*-------------------------------------- ACCORDIAN ----------------------------------------*/
-function toggleAccordion(head){
+function toggleAccordion(head) {
   const body = head.nextElementSibling;
   const icon = head.querySelector(".pg-accordion-icon");
 
@@ -250,14 +250,12 @@ function toggleAccordion(head){
 /*-------------------------------------- ACCORDIAN ----------------------------------------*/
 
 /*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
-function openUserCamera(input){
+function openUserCamera(input) {
   if(input.files.length > 0){
+    const file = input.files[0];
 
-      const file = input.files[0];
-
-      console.log(file);
-      console.log(file.name);
-
+    console.log(file);
+    console.log(file.name);
   }
 }
 /*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
