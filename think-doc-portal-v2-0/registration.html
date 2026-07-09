@@ -190,7 +190,7 @@
 
         <div class="h-auto w-full pb-25 relative z-1">
 
-          <button class="fixed bottom-20 left-[50%] -translate-x-1/2 -translate-y-1/2 h-auto rounded-md px-3 py-1 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none flex items-center justify-center z-100 min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openAddPatientMenuToggle()">
+          <button class="fixed bottom-20 left-[50%] -translate-x-1/2 -translate-y-1/2 h-auto rounded-md px-3 py-1 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none flex items-center justify-center z-100 min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openRegVerifyMobileModal()">
             <i class="bi bi-plus-circle text-[170%] me-2"></i> Add Patient
           </button>
 
@@ -222,7 +222,7 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap me-2" onclick="openRegAppointmentModal()">
+                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer me-2" onclick="openRegAppointmentModal()">
                   <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
                 </div>
               </div>
@@ -254,7 +254,7 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap me-2" onclick="openRegAppointmentModal()">
+                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer me-2" onclick="openRegAppointmentModal()">
                   <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
                 </div>
               </div>
@@ -286,7 +286,7 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap me-2" onclick="openRegAppointmentModal()">
+                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer me-2" onclick="openRegAppointmentModal()">
                   <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
                 </div>
               </div>
@@ -318,7 +318,7 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap me-2" onclick="openRegAppointmentModal()">
+                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer me-2" onclick="openRegAppointmentModal()">
                   <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
                 </div>
               </div>
@@ -350,7 +350,7 @@
                   </div>
                   <p class="text-[85%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap me-2" onclick="openRegAppointmentModal()">
+                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer me-2" onclick="openRegAppointmentModal()">
                   <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
                 </div>
               </div>
@@ -366,7 +366,7 @@
     </main>
 
     <!----- ADD-PATIENT-MENU ------->
-    <aside id="AddPatientSideBar" class="h-auto w-full fixed bottom-0 z-100 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pt-4 pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_-5px_20px_0_#0000000a] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+    <aside id="AddPatientSideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pt-4 pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_-5px_20px_0_#0000000a] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="h-auto w-full text-center border-b border-solid border-[var(--dark-primary)]/10 py-4">
         <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
           Add Patient
@@ -396,10 +396,6 @@
 
           <div class="h-auto w-full mb-4">
             <input type="email" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Mail Id" />
-          </div>
-
-          <div class="h-auto w-full mb-4">
-            <input type="tel" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Mobile No" />
           </div>
 
           <div class="flex items-center justify-center gap-x-2 mb-4">
@@ -432,6 +428,11 @@
 
           <div class="h-auto w-full mb-2">
             <textarea rows="3" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/70 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="E.g. Symptoms"></textarea>
+          </div>
+
+          <div class="h-auto w-full flex items-center mb-4">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[2px]" />
+            <label class="inline-block !mb-0 ms-2">Follow Up</label>
           </div>
 
           <div class="flex items-center justify-between">
@@ -565,6 +566,83 @@
     </div>
   </div>
   <!----- REGISTRATION-APPOINTMENT MODAL ------->
+
+  <!----- REGISTRATION-VERIFY-MOBILE MODAL ------->
+  <div id="RegVerifyMobileModal" class="fixed inset-0 bg-black/40 z-[99] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeRegVerifyMobileModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="RegVerifyMobileModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Vefification
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-between gap-x-2 mb-6">
+          <div class="h-auto w-full">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Verify your Mobile Number" />
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openRegVerifyOtpModal()">
+            Submit
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- REGISTRATION-VERIFY-MOBILE MODAL ------->   
+  
+  <!----- REGISTRATION-VERIFY-OTP MODAL ------->
+  <div id="RegVerifyOtpModal" class="fixed inset-0 bg-black/40 z-[100] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeRegVerifyOtpModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="RegVerifyOtpModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Vefify your OPT
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-between gap-x-2 mb-6">
+          <div class="h-auto w-full">
+            <div class="flex items-center justify-center gap-x-4">
+              <input type="tel" class="h-15 w-15 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[100px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+              <input type="tel" class="h-15 w-15 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[100px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+              <input type="tel" class="h-15 w-15 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[100px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+              <input type="tel" class="h-15 w-15 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[100px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+            </div>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="openAddPatientMenuToggle()">
+            Verify
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- REGISTRATION-VERIFY-OTP MODAL ------->   
 
   <!----- TRANSACTION-SETUP MODAL ------->
   <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
