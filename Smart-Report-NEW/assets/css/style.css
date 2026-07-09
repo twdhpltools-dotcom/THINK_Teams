@@ -169,7 +169,7 @@ section.pg-section {
     opacity: 0.8;
 }
 
-.pg-content {
+.content {
     height: auto;
     width: 100%;
     position: relative;
@@ -499,6 +499,125 @@ span.pg-no {
 /*------------------------- BORDER RANGE-BAR -------------------------*/
 /*--------------------------------------------- CSS FOR RANGE-BAR COMPLETE ---------------------------------------*/
 /*--------------------------------------------- CSS FOR PG-3 COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PG-5 START ---------------------------------------*/
+.do-dont {
+    height: auto;
+    width: 100%;
+    margin-top: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.do-dont::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/DCV.jpg');
+    background-position: right;
+    background-size: 85%;
+    background-repeat: no-repeat;
+}
+
+.do-dont-box {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.do-dont-box-indicator {
+    position: absolute;
+    bottom: 20%;
+    height: auto;
+    width: 100%;
+    max-width: 30px;
+}
+
+.do-dont-box.dos .do-dont-box-indicator {
+    left: 5%;
+}
+
+.do-dont-box.donts .do-dont-box-indicator {
+    right: 5%;
+}
+
+.do-dont-box-img {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #fff;
+    outline: 1px solid #00000020;
+    border-radius: 50%;
+}
+
+.do-dont-box.dos .do-dont-box-img {
+    background: linear-gradient(to top, #0094591e, transparent);
+}
+
+.do-dont-box.donts .do-dont-box-img {
+    background: linear-gradient(to top, #ee2e2b17, transparent);
+}
+
+em.do-dont-box-big-no {
+    padding: 0 20px 0 25px;
+    font-size: 550%;
+    font-weight: 600;
+    color: var(--neutral);
+    opacity: 0.10;
+}
+
+.do-dont-box.dos em.do-dont-box-big-no {
+    color: var(--neutral);
+}
+
+.do-dont-box.donts em.do-dont-box-big-no {
+    color: var(--high);
+}
+
+.do-dont-box-content {
+    height: auto;
+    width: 100%;
+    max-width: 45%;
+}
+
+.do-dont-box.dos .do-dont-box-content {
+    text-align: right;
+}
+
+.do-dont-box.donts .do-dont-box-content {
+    text-align: left;
+}
+
+.do-dont-box-content h4 {
+    font-size: 120%;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+.do-dont-box.dos .do-dont-box-content h4 {
+    color: var(--neutral);
+}
+
+.do-dont-box.donts .do-dont-box-content h4 {
+    color: var(--high);
+}
+
+.do-dont-box-content p {
+    font-size: 80%;
+    font-weight: 400;
+    color: var(--extra-dark);
+    opacity: 0.8;
+}
+/*--------------------------------------------- CSS FOR PG-5 COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PG-6 START ---------------------------------------*/
 .lifestyle {
