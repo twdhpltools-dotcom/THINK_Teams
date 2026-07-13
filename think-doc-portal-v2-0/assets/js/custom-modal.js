@@ -373,6 +373,74 @@ document.getElementById("ConsultantReferModal").addEventListener("click", functi
 });
 /*-------------------------------------- CONSULTANT-REFER ----------------------------------------*/
 
+/*-------------------------------------- CENTRE-SETUP ----------------------------------------*/
+function openCentreSetupModal() {
+  const CentreSetupModal = document.getElementById("CentreSetupModal");
+  const CentreSetupModalBox = document.getElementById("CentreSetupModalBox");
+
+  CentreSetupModal.classList.remove("hidden");
+  CentreSetupModal.classList.add("flex");
+
+  setTimeout(() => {
+    CentreSetupModalBox.classList.remove("opacity-0", "scale-95");
+    CentreSetupModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeCentreSetupModal() {
+  const CentreSetupModal = document.getElementById("CentreSetupModal");
+  const CentreSetupModalBox = document.getElementById("CentreSetupModalBox");
+
+  CentreSetupModalBox.classList.add("opacity-0", "scale-95");
+  CentreSetupModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    CentreSetupModal.classList.add("hidden");
+    CentreSetupModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("CentreSetupModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeCentreSetupModal();
+  }
+});
+/*-------------------------------------- CENTRE-SETUP ----------------------------------------*/
+
+/*-------------------------------------- CENTRE-ADD ----------------------------------------*/
+function openCentreAddModal() {
+  const CentreAddModal = document.getElementById("CentreAddModal");
+  const CentreAddModalBox = document.getElementById("CentreAddModalBox");
+
+  CentreAddModal.classList.remove("hidden");
+  CentreAddModal.classList.add("flex");
+
+  setTimeout(() => {
+    CentreAddModalBox.classList.remove("opacity-0", "scale-95");
+    CentreAddModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeCentreAddModal() {
+  const CentreAddModal = document.getElementById("CentreAddModal");
+  const CentreAddModalBox = document.getElementById("CentreAddModalBox");
+
+  CentreAddModalBox.classList.add("opacity-0", "scale-95");
+  CentreAddModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    CentreAddModal.classList.add("hidden");
+    CentreAddModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("CentreAddModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeCentreAddModal();
+  }
+});
+/*-------------------------------------- CENTRE-ADD ----------------------------------------*/
+
 /*-------------------------------------- REGISTRATION-SETUP ----------------------------------------*/
 function openRegSetupModal() {
   const RegSetupModal = document.getElementById("RegSetupModal");
@@ -406,6 +474,40 @@ document.getElementById("RegSetupModal").addEventListener("click", function(e) {
   }
 });
 /*-------------------------------------- REGISTRATION-SETUP ----------------------------------------*/
+
+/*-------------------------------------- REGISTRATION-REFER ----------------------------------------*/
+function openRegReferModal() {
+  const RegReferModal = document.getElementById("RegReferModal");
+  const RegReferModalBox = document.getElementById("RegReferModalBox");
+
+  RegReferModal.classList.remove("hidden");
+  RegReferModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegReferModalBox.classList.remove("opacity-0", "scale-95");
+    RegReferModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegReferModal() {
+  const RegReferModal = document.getElementById("RegReferModal");
+  const RegReferModalBox = document.getElementById("RegReferModalBox");
+
+  RegReferModalBox.classList.add("opacity-0", "scale-95");
+  RegReferModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegReferModal.classList.add("hidden");
+    RegReferModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegReferModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegReferModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-REFER ----------------------------------------*/
 
 /*-------------------------------------- REGISTRATION-APPOINTMENT ----------------------------------------*/
 function openRegAppointmentModal() {
@@ -644,6 +746,40 @@ document.getElementById("ReferOutSetupModal").addEventListener("click", function
   }
 });
 /*-------------------------------------- REFER-OUT-SETUP ----------------------------------------*/
+
+/*-------------------------------------- REFER-DIAGNOSTICS-SETUP ----------------------------------------*/
+function openReferDiagnosticsSetupModal() {
+  const ReferDiagnosticsSetupModal = document.getElementById("ReferDiagnosticsSetupModal");
+  const ReferDiagnosticsSetupModalBox = document.getElementById("ReferDiagnosticsSetupModalBox");
+
+  ReferDiagnosticsSetupModal.classList.remove("hidden");
+  ReferDiagnosticsSetupModal.classList.add("flex");
+
+  setTimeout(() => {
+    ReferDiagnosticsSetupModalBox.classList.remove("opacity-0", "scale-95");
+    ReferDiagnosticsSetupModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeReferDiagnosticsSetupModal() {
+  const ReferDiagnosticsSetupModal = document.getElementById("ReferDiagnosticsSetupModal");
+  const ReferDiagnosticsSetupModalBox = document.getElementById("ReferDiagnosticsSetupModalBox");
+
+  ReferDiagnosticsSetupModalBox.classList.add("opacity-0", "scale-95");
+  ReferDiagnosticsSetupModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ReferDiagnosticsSetupModal.classList.add("hidden");
+    ReferDiagnosticsSetupModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ReferDiagnosticsSetupModal").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeReferDiagnosticsSetupModal();
+  }
+});
+/*-------------------------------------- REFER-DIAGNOSTICS-SETUP ----------------------------------------*/
 
 /*-------------------------------------- CLINIC-BLOCK ----------------------------------------*/
 function openClinicBlockModal() {
