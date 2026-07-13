@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sent Link Tracking | ThinkLab Doctor Portal | Secure Doctor Management Application</title>
+
+  <meta name="title" content="Sent Link Tracking | ThinkLab Doctor Portal | Secure Doctor Management Application" />
+  <meta name="description" content="ThinkLab Doctor Portal is a secure web application for doctors to manage appointments, patients, reports, schedules, referrals, and clinical workflows efficiently." />
+  <meta name="keywords" content="ThinkLab Doctor Portal, Doctor Portal, Doctor Management Software, Healthcare Software India, Clinic Management Software, Medical Portal, Patient Management System, Diagnostic Software, ThinkLab" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://doctor.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Doctor Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--secondary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- REGISTERED-PATIENT SECTION ------------------------------------------------->
+  <section class="h-auto w-full">
+
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
+        <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
+      </div>
+
+      <div class="h-90 overflow-y-auto">
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='dashboard.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-window-sidebar text-[90%]"></i>
+          </div>
+          Dashboard
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='index.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar2-check text-[90%]"></i>
+          </div>
+          Booking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='prescription.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-bookmark text-[90%]"></i>
+          </div>
+          Prescription
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="openTransactionSetupModal()">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-cash-coin text-[90%]"></i>
+          </div>
+          Financial Transaction
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='consultant.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-workspace text-[90%]"></i>
+          </div>
+          Consultant
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-file-earmark-text text-[90%]"></i>
+          </div>
+          Registration
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='s-link-tracking.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-person-check text-[90%]"></i>
+          </div>
+          Sent Link Tracking
+        </button>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="toggleSubMenu(this)">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-link-45deg text-[90%]"></i>
+          </div>
+          Refer
+        </button>
+
+        <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-in.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-left text-[90%]"></i>
+            </div>
+            Refer-In
+          </button>
+
+          <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-out.html'">
+            <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-up-right text-[90%]"></i>
+            </div>
+            Refer-Out
+          </button>
+
+        </div>
+
+        <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-calendar3 text-[90%]"></i>
+          </div>
+          Chinic & Charges
+        </button>
+
+      </div>
+    </aside>
+    <!----- SIDEBAR-MENU ------->
+
+    <!----- BOTTOM-ISLAND ------->
+    <div class="fixed bottom-0 h-auto w-full py-3 bg-[var(--light)] flex items-center justify-center gap-x-20 shadow-[0_-10px_25px_0_#00000010] z-102">
+      <a href="index.html">
+        <i class="bi bi-house-door text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
+        <i class="bi bi-list text-[180%] text-[var(--light)]"></i>
+      </a>
+      <a href="profile.html">
+        <i class="bi bi-person text-[180%] text-[var(--primary)]/50"></i>
+      </a>
+    </div>
+    <!----- BOTTOM-ISLAND ------->
+    
+    <main class="h-auto w-full bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20">
+
+      <!----- TOP-BAR ------->
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20 z-1">
+        <h5 class="text-[145%] text-[var(--dark-primary)]/80 font-medium">Welcome!</h5>
+        <span class="h-12 w-12 border-3 border-solid border-[var(--secondary)]/50 rounded-[50%] overflow-hidden">
+          <a href="profile.html">
+            <img class="me-1" src="assets/images/dummy-doctor.jpg" alt="soctor profile image" />
+            Dr. Abhimanyu
+          </a>
+        </span>
+      </div>
+      <!----- TOP-BAR ------->
+
+      <!----- PAGE-CONTENT ------->
+      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[15px] rounded-tr-[15px]">
+
+        <!----- CONTENT-HEADING ------->
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
+          <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center min-[576px]:text-[120%]">
+            <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
+              <i class="bi bi-window-sidebar text-[80%] text-[var(--primary)]/90"></i>
+            </div>
+            <div>
+              Dashboard
+              <span class="block text-[var(--dark)]/50 font-normal text-[70%]">48 patients across 3 clinics today</span>
+            </div>
+          </h5>
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openRPatientSetupModal()">
+            <img src="assets/images/cal.png" alt="calender icon" class="scale-35" />
+          </button>
+        </div>
+        <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full pb-25">
+
+          <div class="h-auto w-full flex gap-x-3 px-5 pt-8">
+            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <p class="text-[var(--dark-primary)]/60 text-[80%]">Patients</p>
+              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">17</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[80%] text-[#3CA248]"><i class="bi bi-caret-up-fill"></i> 8 vs yesterday</span>
+            </div>
+            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <p class="text-[var(--dark-primary)]/60 text-[80%]">Revenue</p>
+              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">₹ 38.5K</h3>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex gap-x-3 px-5 pt-4 pb-2">
+            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <p class="text-[var(--dark-primary)]/60 text-[80%]">Tomorrow</p>
+              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">39</h3>
+            </div>
+            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <p class="text-[var(--dark-primary)]/60 text-[80%]">Growth</p>
+              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">18%</h3>
+            </div>
+          </div>
+
+          <div class="h-auto px-5 py-4">
+            <h5 class="text-[var(--dark-primary)]/70 font-semibold text-[115%] mb-5">Business Overview</h5>
+            <div class="h-auto w-full flex flex-wrap px-5 py-2 bg-linear-to-r from-[#2C91F8] to-[var(--primary)]/90 relative z-1">
+              <div class="absolute right-8 top-5 z-2 h-auto w-full max-w-[80px] opacity-[0.8]">
+                <img src="assets/images/growth.png" alt="overview graphic" />
+              </div>
+              <div class="h-auto w-full px-5 py-3 border-b border-solid border-[var(--light)]/30">
+                <p class="text-[var(--light)]/90 text-[80%]">Total Earnings</p>
+                <h3 class="text-[var(--light)] font-semibold text-[160%]">₹ 18,400</h3>
+                <span class="inline-block text-[80%] text-[var(--light)]/80">5.4% vs yesterday</span>
+              </div>
+              <div class="h-auto px-5 py-3 border-r border-solid border-[var(--light)]/30">
+                <p class="text-[var(--light)]/90 text-[70%]">Total Earnings</p>
+                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 18,400</h3>
+                <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap">5.4%</span>
+              </div>
+              <div class="h-auto px-5 py-3">
+                <p class="text-[var(--light)]/90 text-[70%]">Total Earnings</p>
+                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 18,400</h3>
+                <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap">5.4%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto px-5 py-4">
+            <h5 class="text-[var(--dark-primary)]/70 font-semibold text-[115%] mb-2">Clinic Performance</h5>
+            <div class="h-auto w-full flex items-center justify-between px-5 py-3 border-b border-solid border-[#00000010]">
+              <h3 class="text-[var(--dark)]/60 font-medium text-[95%]">Park Street</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[85%] text-[#3CA248] font-medium">32</span>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between px-5 py-3 border-b border-solid border-[#00000010]">
+              <h3 class="text-[var(--dark)]/60 font-medium text-[95%]">Salt Lake</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[85%] text-[#3CA248] font-medium">18</span>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between px-5 py-3 border-b border-solid border-[#00000010]">
+              <h3 class="text-[var(--dark)]/60 font-medium text-[95%]">New Town</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[85%] text-[#3CA248] font-medium">26</span>
+            </div>
+          </div>
+
+          <div class="h-auto px-5 py-4">
+            <h5 class="text-[var(--dark-primary)]/70 font-semibold text-[115%] mb-2">Tomorrow's Schedule</h5>
+            <div class="h-auto w-full flex items-center justify-between px-5 py-3 border-b border-solid border-[#00000010]">
+              <h3 class="text-[var(--dark)]/60 font-medium text-[95%]">09:00 Park Street</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[85%] text-[#3CA248] font-medium">12</span>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between px-5 py-3 border-b border-solid border-[#00000010]">
+              <h3 class="text-[var(--dark)]/60 font-medium text-[95%]">12:30 Salt Lake</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[85%] text-[#3CA248] font-medium">18</span>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between px-5 py-3 border-b border-solid border-[#00000010]">
+              <h3 class="text-[var(--dark)]/60 font-medium text-[95%]">04:00 New Town</h3>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[85%] text-[#3CA248] font-medium">15</span>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <!----- PAGE-CONTENT ------->
+
+    </main>
+
+  </section>
+
+  <!----- TRANSACTION-SETUP MODAL ------->
+  <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTransactionSetupModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TransactionSetupModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Search Bookings
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-4">
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Location</option>
+              <option>HO</option>
+              <option>Branch Elgin Road</option>
+              <option>Shibpur Branch</option>
+              <option>New Branch 2</option>
+            </select>
+          </div>
+          <div class="h-auto w-45">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Date</option>
+              <option>Today</option>
+              <option>This Month</option>
+              <option>Last Month</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-45 flex items-center">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[10px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" />
+            <span class="text-[85%] text-[var(--dark)]/60 font-normal ms-2 whitespace-nowrap">
+              Points Table
+            </span>
+          </div>
+          <div class="h-auto w-45 flex items-center">
+            <input type="checkbox" class="bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[10px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" />
+            <span class="text-[85%] text-[var(--dark)]/60 font-normal ms-2 whitespace-nowrap">
+              Consultancy Charge
+            </span>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='transaction.html'">
+            Search
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TRANSACTION-SETUP MODAL ------->
+  <!----------------------------------- REGISTERED-PATIENT SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
