@@ -713,6 +713,40 @@ document.getElementById("ClinicAddModal").addEventListener("click", function(e) 
 });
 /*-------------------------------------- CLINIC-ADD ----------------------------------------*/
 
+/*-------------------------------------- CLINIC-EDIT ----------------------------------------*/
+function openClinicEditModal() {
+  const ClinicEditModal = document.getElementById("ClinicEditModal");
+  const ClinicEditModalBox = document.getElementById("ClinicEditModalBox");
+
+  ClinicEditModal.classList.remove("hidden");
+  ClinicEditModal.classList.add("flex");
+
+  setTimeout(() => {
+    ClinicEditModalBox.classList.remove("opacity-0", "scale-95");
+    ClinicEditModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeClinicEditModal() {
+  const ClinicEditModal = document.getElementById("ClinicEditModal");
+  const ClinicEditModalBox = document.getElementById("ClinicEditModalBox");
+
+  ClinicEditModalBox.classList.add("opacity-0", "scale-95");
+  ClinicEditModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ClinicEditModal.classList.add("hidden");
+    ClinicEditModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ClinicEditModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeClinicEditModal();
+  }
+});
+/*-------------------------------------- CLINIC-EDIT ----------------------------------------*/
+
 /*-------------------------------------- CLINIC-CANCEL-CONFIRMATION ----------------------------------------*/
 function openSchCancelConfModal() {
   const SchCancelConfModal = document.getElementById("SchCancelConfModal");
