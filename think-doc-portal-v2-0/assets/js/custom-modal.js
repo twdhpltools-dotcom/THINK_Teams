@@ -543,6 +543,40 @@ document.getElementById("RPatientSetupModal").addEventListener("click", function
 });
 /*-------------------------------------- REGISTERED-PATIENT-SETUP ----------------------------------------*/
 
+/*-------------------------------------- WP-SUCCESS ----------------------------------------*/
+function openWpSuccessModal() {
+  const WpSuccessModal = document.getElementById("WpSuccessModal");
+  const WpSuccessModalBox = document.getElementById("WpSuccessModalBox");
+
+  WpSuccessModal.classList.remove("hidden");
+  WpSuccessModal.classList.add("flex");
+
+  setTimeout(() => {
+    WpSuccessModalBox.classList.remove("opacity-0", "scale-95");
+    WpSuccessModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeWpSuccessModal() {
+  const WpSuccessModal = document.getElementById("WpSuccessModal");
+  const WpSuccessModalBox = document.getElementById("WpSuccessModalBox");
+
+  WpSuccessModalBox.classList.add("opacity-0", "scale-95");
+  WpSuccessModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    WpSuccessModal.classList.add("hidden");
+    WpSuccessModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("WpSuccessModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeWpSuccessModal();
+  }
+});
+/*-------------------------------------- WP-SUCCESS ----------------------------------------*/
+
 /*-------------------------------------- REFER-IN-SETUP ----------------------------------------*/
 function openReferInSetupModal() {
   const ReferInSetupModal = document.getElementById("ReferInSetupModal");
