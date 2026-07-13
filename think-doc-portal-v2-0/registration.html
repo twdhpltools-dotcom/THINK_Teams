@@ -87,6 +87,13 @@
           </div>
           Consultant
         </button>
+        
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='centre.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-building text-[90%]"></i>
+          </div>
+          Centre
+        </button>
 
         <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='registration.html'">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
@@ -124,17 +131,23 @@
             </div>
             Refer-Out
           </button>
-
         </div>
+
+        <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-diagnostics.html'">
+          <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
+            <i class="bi bi-gear-wide-connected text-[90%]"></i>
+          </div>
+          Refer to Centre
+        </button>
 
         <button class="text-left py-3 px-8 h-auto w-full text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='c-charges.html'">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
             <i class="bi bi-calendar3 text-[90%]"></i>
           </div>
-          Chinic & Charges
+          Clinic & Charges
         </button>
-
       </div>
+
     </aside>
     <!----- SIDEBAR-MENU ------->
 
@@ -196,10 +209,15 @@
 
           <div class="h-auto w-full">
 
-            <div class="h-auto w-full bg-[var(--secondary)]/20 py-5 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+            <div class="relative z-1 h-auto w-full bg-[var(--secondary)]/20 py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <div class="flex items-start justify-end">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                  Refer
+                </span>
+              </div>
               <h5 class="text-[95%] text-[var(--dark)]/60 font-bold">Mr. Ranjit Chatterjee</h5>
-              <p class="text-[90%] text[var(--dark)]">24 / Male</p>
-              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2 relative z-1">
+              <p class="text-[90%] text[var(--dark)]">24 Years, Male</p>
+              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2">
                 <div class="w-full flex items-center">
                   <i class="bi bi-phone text-[120%] text-[var(--primary)]/90 pe-1"></i>
                   <p class="text-[85%] text[var(--dark)]">+91 891 062 4658</p>
@@ -214,16 +232,21 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
-                  <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
-                </div>
+              </div>
+              <div class="absolute right-5 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
+                <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
               </div>
             </div>
 
-            <div class="h-auto w-full py-5 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+            <div class="relative z-1 h-auto w-full py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <div class="flex items-start justify-end">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                  Refer
+                </span>
+              </div>
               <h5 class="text-[95%] text-[var(--dark)]/60 font-bold">Mr. Ranjit Chatterjee</h5>
-              <p class="text-[90%] text[var(--dark)]">24 / Male</p>
-              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2 relative z-1">
+              <p class="text-[90%] text[var(--dark)]">24 Years, Male</p>
+              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2">
                 <div class="w-full flex items-center">
                   <i class="bi bi-phone text-[120%] text-[var(--primary)]/90 pe-1"></i>
                   <p class="text-[85%] text[var(--dark)]">+91 891 062 4658</p>
@@ -238,16 +261,21 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
-                  <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
-                </div>
+              </div>
+              <div class="absolute right-5 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
+                <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
               </div>
             </div>
 
-            <div class="h-auto w-full bg-[var(--secondary)]/20 py-5 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+            <div class="relative z-1 h-auto w-full bg-[var(--secondary)]/20 py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <div class="flex items-start justify-end">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                  Refer
+                </span>
+              </div>
               <h5 class="text-[95%] text-[var(--dark)]/60 font-bold">Mr. Ranjit Chatterjee</h5>
-              <p class="text-[90%] text[var(--dark)]">24 / Male</p>
-              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2 relative z-1">
+              <p class="text-[90%] text[var(--dark)]">24 Years, Male</p>
+              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2">
                 <div class="w-full flex items-center">
                   <i class="bi bi-phone text-[120%] text-[var(--primary)]/90 pe-1"></i>
                   <p class="text-[85%] text[var(--dark)]">+91 891 062 4658</p>
@@ -262,16 +290,21 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
-                  <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
-                </div>
+              </div>
+              <div class="absolute right-5 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
+                <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
               </div>
             </div>
 
-            <div class="h-auto w-full py-5 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+            <div class="relative z-1 h-auto w-full py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <div class="flex items-start justify-end">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                  Refer
+                </span>
+              </div>
               <h5 class="text-[95%] text-[var(--dark)]/60 font-bold">Mr. Ranjit Chatterjee</h5>
-              <p class="text-[90%] text[var(--dark)]">24 / Male</p>
-              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2 relative z-1">
+              <p class="text-[90%] text[var(--dark)]">24 Years, Male</p>
+              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2">
                 <div class="w-full flex items-center">
                   <i class="bi bi-phone text-[120%] text-[var(--primary)]/90 pe-1"></i>
                   <p class="text-[85%] text[var(--dark)]">+91 891 062 4658</p>
@@ -286,16 +319,21 @@
                   </div>
                   <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
-                  <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
-                </div>
+              </div>
+              <div class="absolute right-5 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
+                <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
               </div>
             </div>
 
-            <div class="h-auto w-full bg-[var(--secondary)]/20 py-5 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+            <div class="relative z-1 h-auto w-full bg-[var(--secondary)]/20 py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <div class="flex items-start justify-end">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                  Refer
+                </span>
+              </div>
               <h5 class="text-[95%] text-[var(--dark)]/60 font-bold">Mr. Ranjit Chatterjee</h5>
-              <p class="text-[90%] text[var(--dark)]">24 / Male</p>
-              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2 relative z-1">
+              <p class="text-[90%] text[var(--dark)]">24 Years, Male</p>
+              <div class="h-auto w-full flex items-center flex-wrap gap-x-5 gap-y-1 pt-2">
                 <div class="w-full flex items-center">
                   <i class="bi bi-phone text-[120%] text-[var(--primary)]/90 pe-1"></i>
                   <p class="text-[85%] text[var(--dark)]">+91 891 062 4658</p>
@@ -308,11 +346,11 @@
                   <div class="max-w-6 me-2 ml-[-3px]">
                     <img src="assets/images/pdf.png" alt="pdf icon">
                   </div>
-                  <p class="text-[85%] text[var(--dark)]">Medical File</p>
+                  <p class="text-[90%] text[var(--dark)]">Medical File</p>
                 </div>
-                <div class="absolute right-0 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
-                  <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
-                </div>
+              </div>
+              <div class="absolute right-5 bottom-5 inline-block rounded-sm border border-solid border-[#89BCFF] bg-[#89BCFF]/10 py-1 px-3 text-center whitespace-nowrap cursor-pointer" onclick="openRegAppointmentModal()">
+                <p class="text-[75%] text-[#1560AC]">Make Appointment</p>
               </div>
             </div>
 
@@ -479,7 +517,43 @@
   </div>
   <!----- REGISTRATION-SETUP MODAL ------->
 
-    <!----- REGISTRATION-APPOINTMENT MODAL ------->
+  <!----- REGISTRATION-REFER MODAL ------->
+  <div id="RegReferModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeRegReferModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="RegReferModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Refer
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-3">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[90%] text-[var(--dark)]/70 font-semibold bg-[#009bff]/5 border-1 border-solid border-[#009bff]/10">
+            <i class="bi bi-building absolute left-0 z-2 h-9 w-9 rounded-[50%] bg-[#0b77bc] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Centre
+          </button>
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[90%] text-[var(--dark)]/70 font-semibold bg-[#ffa700]/5 border-1 border-solid border-[#ffa700]/10">
+            <i class="bi bi-person-workspace absolute left-0 z-2 h-9 w-9 rounded-[50%] bg-[#bc900b] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
+            Consultant
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- REGISTRATION-REFER MODAL ------->
+
+  <!----- REGISTRATION-APPOINTMENT MODAL ------->
   <div id="RegAppointmentModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
 
     <!----- MODAL-CLOSER ------->
