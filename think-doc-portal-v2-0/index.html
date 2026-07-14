@@ -169,7 +169,10 @@
 
       <!----- TOP-BAR ------->
       <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20 z-1">
-        <h5 class="text-[145%] text-[var(--dark-primary)]/80 font-medium">Welcome!</h5>
+        <div>
+          <h5 class="text-[135%] text-[var(--dark-primary)]/80 font-medium">Good Morning!</h5>
+          <span class="block text-[85%] text-[var(--dark-primary)]/60 font-medium mt-[-2px]">Dr. Amit Kumar Das</span>
+        </div>
         <span class="h-12 w-12 border-3 border-solid border-[var(--secondary)]/50 rounded-[50%] overflow-hidden">
           <a href="profile.html">
             <img class="me-1" src="assets/images/dummy-doctor.jpg" alt="soctor profile image" />
@@ -225,12 +228,12 @@
 
           <div class="h-auto w-full">
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
+            <div class="h-auto w-full flex items-end justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
               <div class="flex items-start">
                 <i class="bi bi-check-circle text-[#3CA248]/80 text-[120%] me-3"></i>
                 <div>
-                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Priya Saha</h4>
-                  <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 39</p>
+                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Priya Saha <span class="pl-1 text-[75%] text-[var(--dark)]/60 font-medium">F / 39y</span></h4>
+                  <p class="text-[75%] text-[#1560AC]/80 font-medium">Jan 23, 26 <span class="ms-1 text-[var(--success)]/80">10:30 AM</span></p>
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
@@ -240,12 +243,13 @@
               </div>
             </div>
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
+            <div class="h-auto w-full flex items-end justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
               <div class="flex items-start">
                 <i class="bi bi-calendar2-check text-[#1560AC]/80 text-[120%] me-3"></i>
                 <div>
-                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Nadini Chatterjee </h4>
-                  <p class="text-[75%] text-[var(--dark)]/60 font-medium"><span class="me-2 text-[var(--primary)]">Q-02</span>Female - 35</p>
+                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Nadini Chatterjee <span class="pl-1 text-[75%] text-[var(--dark)]/60 font-medium">F / 39y</span></h4>
+                  <p class="text-[75%] text-[#1560AC]/80 font-medium mb-2">Jan 23, 26 <span class="ms-1 text-[var(--success)]/80">10:30 AM</span></p>
+                  <p class="text-[70%] text-[var(--dark)]/60 font-medium"><span class="me-1 text-[var(--primary)]">Q-02</span> (INV - 01)</p>
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
@@ -291,12 +295,12 @@
 
           <div class="h-auto w-full">
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
+            <div class="h-auto w-full flex items-end justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none">
               <div class="flex items-start">
                 <i class="bi bi-x-circle text-[#FF0000]/80 text-[120%] me-3"></i>
                 <div>
-                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Swapna Roy</h4>
-                  <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 23</p>
+                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Swapna Roy <span class="pl-1 text-[75%] text-[var(--dark)]/60 font-medium">F / 39y</span></h4>
+                  <p class="text-[75%] text-[#1560AC]/80 font-medium">Jan 23, 26 <span class="ms-1 text-[var(--success)]/80">10:30 AM</span></p>
                 </div>
               </div>
               <button class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openBookingInvShowerModal()">
@@ -353,12 +357,12 @@
 
           <div class="h-auto w-full">
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShow()">
+            <div class="h-auto w-full flex items-end justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShow()">
               <div class="flex items-start">
                 <i class="bi bi-check-circle text-[#3CA248]/80 text-[120%] me-3"></i>
                 <div>
-                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Priya Saha</h4>
-                  <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 39</p>
+                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Priya Saha <span class="pl-1 text-[75%] text-[var(--dark)]/60 font-medium">F / 39y</span></h4>
+                  <p class="text-[75%] text-[#1560AC]/80 font-medium">Jan 23, 26 <span class="ms-1 text-[var(--success)]/80">10:30 AM</span></p>
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
@@ -415,12 +419,13 @@
               </div> -->
             </div>
 
-            <div class="h-auto w-full flex items-center justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShowTwo()">
+            <div class="h-auto w-full flex items-end justify-between py-3 border-b border-solid border-[var(--dark-primary)]/10 border-b last:pb-0 last:border-none cursor-pointer" onclick="bookingDetailsShowTwo()">
               <div class="flex items-start">
                 <i class="bi bi-calendar2-check text-[#1560AC]/80 text-[120%] me-3"></i>
                 <div>
-                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Nadini Chatterjee </h4>
-                  <p class="text-[75%] text-[var(--dark)]/60 font-medium"><span class="me-2 text-[var(--primary)]">Q-02</span>Female - 35</p>
+                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Nadini Chatterjee <span class="pl-1 text-[75%] text-[var(--dark)]/60 font-medium">F / 39y</span></h4>
+                  <p class="text-[75%] text-[#1560AC]/80 font-medium mb-2">Jan 23, 26 <span class="ms-1 text-[var(--success)]/80">10:30 AM</span></p>
+                  <p class="text-[70%] text-[var(--dark)]/60 font-medium"><span class="me-1 text-[var(--primary)]">Q-02</span> (INV - 01)</p>
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
@@ -500,8 +505,8 @@
               <div class="flex items-start">
                 <i class="bi bi-x-circle text-[#FF0000]/80 text-[120%] me-3"></i>
                 <div>
-                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Swapna Roy</h4>
-                  <p class="text-[75%] text-[var(--dark)]/60 font-medium">Female - 23</p>
+                  <h4 class="text-[95%] text-[var(--dark)]/70 font-medium">Swapna Roy <span class="pl-1 text-[75%] text-[var(--dark)]/60 font-medium">F / 39y</span></h4>
+                  <p class="text-[75%] text-[#1560AC]/80 font-medium mb-2">Jan 23, 26 <span class="ms-1 text-[var(--success)]/80">10:30 AM</span></p>
                 </div>
               </div>
               <div class="flex items-center gap-x-2">
