@@ -46,7 +46,7 @@
   <section class="h-auto w-full">
 
     <!----- SIDEBAR-MENU ------->
-    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+    <aside id="SideBar" class="h-auto w-full fixed bottom-0 z-101 bg-[var(--light)] rounded-tl-[15px] rounded-tr-[15px] pb-25 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">  
       <div class="mt-[-40px] mx-auto h-auto w-40 mb-3">
         <img src="assets/images/thinklab-logo-sidebar.png" alt="brand logo">
       </div>
@@ -113,7 +113,7 @@
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
             <i class="bi bi-link-45deg text-[90%]"></i>
           </div>
-          Refer
+          Refer to Consultant
         </button>
 
         <div class="sub-menu pb-2 px-5 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
@@ -135,7 +135,7 @@
 
         <button class="text-left py-3 px-8 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--primary)] font-medium text-[90%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[100%]" onclick="window.location.href='refer-diagnostics.html'">
           <div class="h-8 w-8 rounded-2xl border border-solid border-[var(--primary)]/20 bg-[var(--secondary)]/20 flex items-center justify-center me-3">
-            <i class="bi bi-gear-wide-connected text-[90%]"></i>
+            <i class="bi bi-building-gear text-[90%]"></i>
           </div>
           Refer to Centre
         </button>
@@ -193,7 +193,7 @@
               <span class="block text-[var(--dark)]/50 font-normal text-[70%]">48 patients across 3 clinics today</span>
             </div>
           </h5>
-          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openRPatientSetupModal()">
+          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openDashboardSetupModal()">
             <img src="assets/images/cal.png" alt="calender icon" class="scale-35" />
           </button>
         </div>
@@ -202,25 +202,37 @@
         <div class="h-auto w-full pb-25">
 
           <div class="h-auto w-full flex gap-x-3 px-5 pt-8">
-            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
-              <p class="text-[var(--dark-primary)]/60 text-[80%]">Patients</p>
-              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">17</h3>
-              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap text-[80%] text-[#3CA248]"><i class="bi bi-caret-up-fill"></i> 8 vs yesterday</span>
+            <div class="h-30 w-40 relative z-1 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
+                <i class="bi bi-person-plus text-[85%] text-[#3CA248]"></i>
+              </button>
+              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">17</h3>
+              <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Patients</p>
+              <span class="inline-block rounded-xs border border-solid border-[#7AEF88]/50 bg-[#7AEF88]/10 px-1 text-center whitespace-nowrap text-[75%] text-[#3CA248]"><i class="bi bi-caret-up-fill"></i> 8 vs yesterday</span>
             </div>
-            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
-              <p class="text-[var(--dark-primary)]/60 text-[80%]">Revenue</p>
-              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">₹ 38.5K</h3>
+            <div class="h-30 w-40 relative z-1 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
+                <i class="bi bi-currency-rupee text-[85%] text-[#3CA248]"></i>
+              </button>
+              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">₹ 38.5K</h3>
+              <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Revenue</p>
             </div>
           </div>
 
           <div class="h-auto w-full flex gap-x-3 px-5 pt-4 pb-2">
-            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
-              <p class="text-[var(--dark-primary)]/60 text-[80%]">Tomorrow</p>
-              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">39</h3>
+            <div class="h-30 w-40 relative z-1 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
+                <i class="bi bi-calendar-event text-[85%] text-[#3CA248]"></i>
+              </button>
+              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">39</h3>
+              <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Tomorrow</p>
             </div>
-            <div class="h-27 w-40 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
-              <p class="text-[var(--dark-primary)]/60 text-[80%]">Growth</p>
-              <h3 class="text-[var(--primary)]/90 font-bold text-[160%]">18%</h3>
+            <div class="h-30 w-40 relative z-1 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
+              <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
+                <i class="bi bi-graph-up-arrow text-[85%] text-[#3CA248]"></i>
+              </button>
+              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">18%</h3>
+              <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Growth</p>
             </div>
           </div>
 
@@ -232,18 +244,18 @@
               </div>
               <div class="h-auto w-full px-5 py-3 border-b border-solid border-[var(--light)]/30">
                 <p class="text-[var(--light)]/90 text-[80%]">Total Earnings</p>
-                <h3 class="text-[var(--light)] font-semibold text-[160%]">₹ 18,400</h3>
-                <span class="inline-block text-[80%] text-[var(--light)]/80">5.4% vs yesterday</span>
+                <h3 class="text-[var(--light)] font-semibold text-[160%]">₹ 19,930</h3>
+                <span class="inline-block text-[80%] text-[var(--light)]/80"><i class="bi bi-caret-up-fill"></i> 2.5% vs yesterday</span>
               </div>
               <div class="h-auto px-5 py-3 border-r border-solid border-[var(--light)]/30">
-                <p class="text-[var(--light)]/90 text-[70%]">Total Earnings</p>
-                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 18,400</h3>
-                <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap">5.4%</span>
+                <p class="text-[var(--light)]/90 text-[70%]">This Month</p>
+                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 8,220</h3>
+                <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap"><i class="bi bi-caret-down-fill"></i> 5.4%</span>
               </div>
               <div class="h-auto px-5 py-3">
-                <p class="text-[var(--light)]/90 text-[70%]">Total Earnings</p>
-                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 18,400</h3>
-                <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap">5.4%</span>
+                <p class="text-[var(--light)]/90 text-[70%]">Last Month</p>
+                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 11,710</h3>
+                <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap"><i class="bi bi-caret-up-fill"></i> 6.9%</span>
               </div>
             </div>
           </div>
@@ -288,6 +300,48 @@
     </main>
 
   </section>
+
+  <!----- DASHBOARD-SETUP MODAL ------->
+  <div id="DashboardSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeDashboardSetupModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="DashboardSetupModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Select Date
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-6"> 
+          <div class="h-auto w-100">
+            <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <option>Date</option>
+              <option>Today</option>
+              <option>This Month</option>
+              <option>Last Month</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='transaction.html'">
+            Search
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- DASHBOARD-SETUP MODAL ------->
 
   <!----- TRANSACTION-SETUP MODAL ------->
   <div id="TransactionSetupModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
