@@ -90,30 +90,6 @@ function bookingDetailsShowTwo() {
   optionBox.classList.toggle("opacity-100");
 }
 
-function regCentreDetailsShow() {
-  const optionBox = document.getElementById("regCentreDetailsOption");
-
-  optionBox.classList.toggle("my-0");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("my-5");
-  optionBox.classList.toggle("max-h-[300px]");
-  optionBox.classList.toggle("opacity-100");
-}
-
-function regConsultantDetailsShow() {
-  const optionBox = document.getElementById("regConsultantDetailsOption");
-
-  optionBox.classList.toggle("my");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("my-5");
-  optionBox.classList.toggle("max-h-[300px]");
-  optionBox.classList.toggle("opacity-100");
-}
-
 function schSunDetailsShow() {
   const schsunoptionBox = document.getElementById("SchSunDetailsOption");
 

@@ -1,4 +1,38 @@
 /*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
+/*-------------------------------------- DASHBOARD-SETUP ----------------------------------------*/
+function openDashboardSetupModal() {
+  const DashboardSetupModal = document.getElementById("DashboardSetupModal");
+  const DashboardSetupModalBox = document.getElementById("DashboardSetupModalBox");
+
+  DashboardSetupModal.classList.remove("hidden");
+  DashboardSetupModal.classList.add("flex");
+
+  setTimeout(() => {
+    DashboardSetupModalBox.classList.remove("opacity-0", "scale-95");
+    DashboardSetupModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeDashboardSetupModal() {
+  const DashboardSetupModal = document.getElementById("DashboardSetupModal");
+  const DashboardSetupModalBox = document.getElementById("DashboardSetupModalBox");
+
+  DashboardSetupModalBox.classList.add("opacity-0", "scale-95");
+  DashboardSetupModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    DashboardSetupModal.classList.add("hidden");
+    DashboardSetupModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("DashboardSetupModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeDashboardSetupModal();
+  }
+});
+/*-------------------------------------- DASHBOARD-SETUP ----------------------------------------*/
+
 /*-------------------------------------- BOOKING-SETUP ----------------------------------------*/
 function openBookingSetupModal() {
   const BookingSetupModal = document.getElementById("BookingSetupModal");
