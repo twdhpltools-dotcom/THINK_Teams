@@ -211,7 +211,7 @@
 
             <div class="relative z-1 h-auto w-full bg-[var(--secondary)]/20 py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
               <div class="flex items-start justify-end">
-                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                   Refer
                 </span>
               </div>
@@ -240,7 +240,7 @@
 
             <div class="relative z-1 h-auto w-full py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
               <div class="flex items-start justify-end">
-                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                   Refer
                 </span>
               </div>
@@ -269,7 +269,7 @@
 
             <div class="relative z-1 h-auto w-full bg-[var(--secondary)]/20 py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
               <div class="flex items-start justify-end">
-                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                   Refer
                 </span>
               </div>
@@ -298,7 +298,7 @@
 
             <div class="relative z-1 h-auto w-full py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
               <div class="flex items-start justify-end">
-                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                   Refer
                 </span>
               </div>
@@ -327,7 +327,7 @@
 
             <div class="relative z-1 h-auto w-full bg-[var(--secondary)]/20 py-5 pl-5 pr-10 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
               <div class="flex items-start justify-end">
-                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)]" onclick="openRegReferModal()">
+                <span class="absolute right-5 top-5 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                   Refer
                 </span>
               </div>
@@ -537,16 +537,68 @@
       <!----- MODAL-BODY ------->
       <div class="h-auto w-full text-center py-6 px-4">
         <div class="h-auto w-full mb-5">
-          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[90%] text-[var(--dark)]/70 font-semibold bg-[#009bff]/5 border-1 border-solid border-[#009bff]/10">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[90%] text-[var(--dark)]/70 font-semibold bg-[#009bff]/5 border-1 border-solid border-[#009bff]/10" onclick="regCentreDetailsShow()">
             <i class="bi bi-building absolute left-0 z-2 h-9 w-9 rounded-[50%] bg-[#0b77bc] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
             Centre
           </button>
+
+          <div id="regCentreDetailsOption" class="h-auto w-full max-h-[0] my-0 overflow-x-hidden overflow-y-auto transition-all duration-300 ease-in-out">
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> CCL Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[85%]">Kultali, Baruipur</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> Thinklab Pvt. Ltd.</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Shibpur, Howrah</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> XYZ Polyclinic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Patrapara, Madhyamgram</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> PVT Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Champadali, Barasat</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> ZKW Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Garifa, Baruipur</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> Bactro Polyclinic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Court Road, Bangaon</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[var(--primary)]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[var(--primary)]/80"></i> Thinklab Pvt. Ltd.</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Park St., Kolkata</p>
+            </div>
+          </div>
+
         </div>
         <div class="h-auto w-full">
-          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[90%] text-[var(--dark)]/70 font-semibold bg-[#ffa700]/5 border-1 border-solid border-[#ffa700]/10">
+          <button class="relative z-1 flex items-center rounded-[100px] px-12 pr-8 py-2 text-[90%] text-[var(--dark)]/70 font-semibold bg-[#ffa700]/5 border-1 border-solid border-[#ffa700]/10" onclick="regConsultantDetailsShow()">
             <i class="bi bi-person-workspace absolute left-0 z-2 h-9 w-9 rounded-[50%] bg-[#bc900b] flex items-center justify-center me-2 text-[100%] text-[var(--light)]"></i>
             Consultant
           </button>
+
+          <div id="regConsultantDetailsOption" class="h-auto w-full max-h-[0] my-0 overflow-x-hidden overflow-y-auto transition-all duration-300 ease-in-out">
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[#bc900b]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[#bc900b]/80"></i> CCL Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[85%]">Kultali, Baruipur</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[#bc900b]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[#bc900b]/80"></i> CCL Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Shibpur, Howrah</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[#bc900b]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[#bc900b]/80"></i> CCL Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Patrapara, Madhyamgram</p>
+            </div>
+            <div class="text-left border-b border-solid border-[#00000010] py-3 first:pt-0 last:border-none last:pb-0">
+              <h4 class="text-[#bc900b]/70 text-[90%] font-[600]"><i class="bi bi-caret-right-fill text-[80%] text-[#bc900b]/80"></i> CCL Diagnostic</h4>
+              <p class="text-[var(--dark)]/80 text-[80%]">Champadali, Barasat</p>
+            </div>
+          </div>
+
         </div>
       </div>
       <!----- MODAL-BODY ------->
