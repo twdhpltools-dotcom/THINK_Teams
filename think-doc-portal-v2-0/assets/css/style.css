@@ -145,6 +145,19 @@ hr {
 }
 /* ----------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- CSS FOR DASHBAORD-PG START ---------------------------------------------- */
+.dash-decor-para::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    height: 3px;
+    width: 40px;
+    border-radius: 50px;
+    background: #009812a8;
+}
+/* ----------------------------------------- CSS FOR DASHBAORD-PG START ---------------------------------------------- */
+
 /* ----------------------------------------- CSS FOR PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
     width: 3px;
