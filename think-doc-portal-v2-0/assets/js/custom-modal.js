@@ -543,6 +543,108 @@ document.getElementById("RegReferModal").addEventListener("click", function(e) {
 });
 /*-------------------------------------- REGISTRATION-REFER ----------------------------------------*/
 
+/*-------------------------------------- REGISTRATION-REFER-CENTRE ----------------------------------------*/
+function openRegReferCentreModal() {
+  const RegReferCentreModal = document.getElementById("RegReferCentreModal");
+  const RegReferCentreModalBox = document.getElementById("RegReferCentreModalBox");
+
+  RegReferCentreModal.classList.remove("hidden");
+  RegReferCentreModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegReferCentreModalBox.classList.remove("opacity-0", "scale-95");
+    RegReferCentreModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegReferCentreModal() {
+  const RegReferCentreModal = document.getElementById("RegReferCentreModal");
+  const RegReferCentreModalBox = document.getElementById("RegReferCentreModalBox");
+
+  RegReferCentreModalBox.classList.add("opacity-0", "scale-95");
+  RegReferCentreModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegReferCentreModal.classList.add("hidden");
+    RegReferCentreModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegReferCentreModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegReferCentreModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-REFER-CENTRE ----------------------------------------*/
+
+/*-------------------------------------- REGISTRATION-REFER-CONSULTANT-SETUP ----------------------------------------*/
+function openRegReferConsultantSetupModal() {
+  const RegReferConsultantSetupModal = document.getElementById("RegReferConsultantSetupModal");
+  const RegReferConsultantSetupModalBox = document.getElementById("RegReferConsultantSetupModalBox");
+
+  RegReferConsultantSetupModal.classList.remove("hidden");
+  RegReferConsultantSetupModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegReferConsultantSetupModalBox.classList.remove("opacity-0", "scale-95");
+    RegReferConsultantSetupModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegReferConsultantSetupModal() {
+  const RegReferConsultantSetupModal = document.getElementById("RegReferConsultantSetupModal");
+  const RegReferConsultantSetupModalBox = document.getElementById("RegReferConsultantSetupModalBox");
+
+  RegReferConsultantSetupModalBox.classList.add("opacity-0", "scale-95");
+  RegReferConsultantSetupModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegReferConsultantSetupModal.classList.add("hidden");
+    RegReferConsultantSetupModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegReferConsultantSetupModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegReferConsultantSetupModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-REFER-CONSULTANT-SETUP ----------------------------------------*/
+
+/*-------------------------------------- REGISTRATION-REFER-CONSULTANT ----------------------------------------*/
+function openRegReferConsultantModal() {
+  const RegReferConsultantModal = document.getElementById("RegReferConsultantModal");
+  const RegReferConsultantModalBox = document.getElementById("RegReferConsultantModalBox");
+
+  RegReferConsultantModal.classList.remove("hidden");
+  RegReferConsultantModal.classList.add("flex");
+
+  setTimeout(() => {
+    RegReferConsultantModalBox.classList.remove("opacity-0", "scale-95");
+    RegReferConsultantModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeRegReferConsultantModal() {
+  const RegReferConsultantModal = document.getElementById("RegReferConsultantModal");
+  const RegReferConsultantModalBox = document.getElementById("RegReferConsultantModalBox");
+
+  RegReferConsultantModalBox.classList.add("opacity-0", "scale-95");
+  RegReferConsultantModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    RegReferConsultantModal.classList.add("hidden");
+    RegReferConsultantModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("RegReferConsultantModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeRegReferConsultantModal();
+  }
+});
+/*-------------------------------------- REGISTRATION-REFER-CONSULTANT ----------------------------------------*/
+
 /*-------------------------------------- REGISTRATION-APPOINTMENT ----------------------------------------*/
 function openRegAppointmentModal() {
   const RegAppointmentModal = document.getElementById("RegAppointmentModal");
