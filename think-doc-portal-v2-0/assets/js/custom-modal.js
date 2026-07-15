@@ -985,39 +985,73 @@ document.getElementById("ClinicAddModal").addEventListener("click", function(e) 
 });
 /*-------------------------------------- CLINIC-ADD ----------------------------------------*/
 
-/*-------------------------------------- CLINIC-EDIT ----------------------------------------*/
-function openClinicEditModal() {
-  const ClinicEditModal = document.getElementById("ClinicEditModal");
-  const ClinicEditModalBox = document.getElementById("ClinicEditModalBox");
+/*-------------------------------------- SCHEDULE-ADD ----------------------------------------*/
+function openScheduleAddModal() {
+  const ScheduleAddModal = document.getElementById("ScheduleAddModal");
+  const ScheduleAddModalBox = document.getElementById("ScheduleAddModalBox");
 
-  ClinicEditModal.classList.remove("hidden");
-  ClinicEditModal.classList.add("flex");
+  ScheduleAddModal.classList.remove("hidden");
+  ScheduleAddModal.classList.add("flex");
 
   setTimeout(() => {
-    ClinicEditModalBox.classList.remove("opacity-0", "scale-95");
-    ClinicEditModalBox.classList.add("opacity-100", "scale-100");
+    ScheduleAddModalBox.classList.remove("opacity-0", "scale-95");
+    ScheduleAddModalBox.classList.add("opacity-100", "scale-100");
   }, 10);
 }
 
-function closeClinicEditModal() {
-  const ClinicEditModal = document.getElementById("ClinicEditModal");
-  const ClinicEditModalBox = document.getElementById("ClinicEditModalBox");
+function closeScheduleAddModal() {
+  const ScheduleAddModal = document.getElementById("ScheduleAddModal");
+  const ScheduleAddModalBox = document.getElementById("ScheduleAddModalBox");
 
-  ClinicEditModalBox.classList.add("opacity-0", "scale-95");
-  ClinicEditModalBox.classList.remove("opacity-100", "scale-100");
+  ScheduleAddModalBox.classList.add("opacity-0", "scale-95");
+  ScheduleAddModalBox.classList.remove("opacity-100", "scale-100");
 
   setTimeout(() => {
-    ClinicEditModal.classList.add("hidden");
-    ClinicEditModal.classList.remove("flex");
+    ScheduleAddModal.classList.add("hidden");
+    ScheduleAddModal.classList.remove("flex");
   }, 300);
 }
 
-document.getElementById("ClinicEditModal").addEventListener("click", function(e) {
+document.getElementById("ScheduleAddModal").addEventListener("click", function(e) {
   if (e.target === this) {
-    closeClinicEditModal();
+    closeScheduleAddModal();
   }
 });
-/*-------------------------------------- CLINIC-EDIT ----------------------------------------*/
+/*-------------------------------------- SCHEDULE-ADD ----------------------------------------*/
+
+/*-------------------------------------- SCHEDULE-EDIT ----------------------------------------*/
+function openScheduleEditModal() {
+  const ScheduleEditModal = document.getElementById("ScheduleEditModal");
+  const ScheduleEditModalBox = document.getElementById("ScheduleEditModalBox");
+
+  ScheduleEditModal.classList.remove("hidden");
+  ScheduleEditModal.classList.add("flex");
+
+  setTimeout(() => {
+    ScheduleEditModalBox.classList.remove("opacity-0", "scale-95");
+    ScheduleEditModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeScheduleEditModal() {
+  const ScheduleEditModal = document.getElementById("ScheduleEditModal");
+  const ScheduleEditModalBox = document.getElementById("ScheduleEditModalBox");
+
+  ScheduleEditModalBox.classList.add("opacity-0", "scale-95");
+  ScheduleEditModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    ScheduleEditModal.classList.add("hidden");
+    ScheduleEditModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("ScheduleEditModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeScheduleEditModal();
+  }
+});
+/*-------------------------------------- SCHEDULE-EDIT ----------------------------------------*/
 
 /*-------------------------------------- CLINIC-CANCEL-CONFIRMATION ----------------------------------------*/
 function openSchCancelConfModal() {
