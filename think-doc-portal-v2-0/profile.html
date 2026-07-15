@@ -194,11 +194,11 @@
               <div class="pg-accordion-head flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
                 <h5 class="text-[100%] text-[var(--primary)]/90 font-medium">Personal Information</h5>
                 <button class="h-8 w-8 bg-[var(--secondary)]/80 rounded-[50%] flex items-center justify-center z-2">
-                  <i class="pg-accordion-icon bi bi-chevron-up text-[70%] text-[var(--dark)] transition-all duration-300"></i>
+                  <i class="pg-accordion-icon bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
                 </button>
               </div>
 
-              <div class="pg-accordion-content max-h-[500px] py-4 overflow-hidden transition-all duration-300">
+              <div class="pg-accordion-content max-h-0 py-0 overflow-hidden transition-all duration-300">
                 <div class="h-auto w-full mb-3">
                   <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Name">
                 </div>
@@ -242,7 +242,7 @@
                 <div class="h-auto w-full mb-3">
                   <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Experiences">
                 </div>
-                <div class="h-auto w-full flex items-center gap-x-2">
+                <div class="h-auto w-full flex items-center gap-x-2 mb-3">
                   <div class="h-auto w-60">
                     <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Fees">
                   </div>
@@ -254,6 +254,9 @@
                       <div class="absolute left-0 h-4 w-4 rounded-full bg-white shadow-md transition-all duration-300 peer-checked:translate-x-3"></div>
                     </label>
                   </div>
+                </div>
+                <div class="h-auto w-full flex items-center">
+                  <input type="number" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Reg. Number">
                 </div>
               </div>
             </div>
@@ -268,16 +271,13 @@
 
               <div class="pg-accordion-content max-h-0 py-0 overflow-hidden transition-all duration-300">
                 <div class="h-auto w-full flex items-center gap-x-2 mb-3">
-                  <div class="h-auto w-45">
+                  <div class="h-auto w-full">
                     <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/60 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]">
                       <option>Language</option>
                       <option>English</option>
                       <option>Hindi</option>
                       <option>Bengali</option>
                     </select>
-                  </div>
-                  <div class="h-auto w-45 flex items-center">
-                    <input type="number" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[80%] text-[var(--dark-primary)]/70 font-medium hover:border-[var(--primary)] min-[576px]:text-[90%]" placeholder="Reg. Number">
                   </div>
                 </div>
                 <div class="h-auto w-full mb-3">
