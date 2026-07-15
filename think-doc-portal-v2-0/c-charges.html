@@ -156,7 +156,7 @@
       <a href="index.html">
         <i class="bi bi-house-door text-[180%] text-[var(--primary)]/50"></i>
       </a>
-      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-[var(--primary)] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
+      <a href="javascript:void(0)" class="mt-[-40px] flex items-center justify-center h-16 w-16 bg-linear-to-l from-[var(--primary)] to-[#0179f6] border-2 border-solid border-[var(--light)] rounded-[100px]" onclick="openSideBarMenuToggle()">
         <i class="bi bi-list text-[180%] text-[var(--light)]"></i>
       </a>
       <a href="profile.html">
@@ -206,8 +206,8 @@
         <!----- CONTENT-HEADING ------->
 
         <div class="h-auto w-full py-4 px-5 text-center bg-[var(--light)] border-b border-solid border-[#00000010]">
-          <button class="h-auto rounded-md px-3 py-1 mb-4 text-[85%] text-[var(--light)] font-medium bg-[var(--primary)] border-none flex items-center justify-center z-100" onclick="openClinicAddModal()">
-            <i class="bi bi-plus-circle text-[140%] me-2"></i> Add Clinic
+          <button class="relative z-1 h-auto rounded-md pl-12 pr-3 py-1 mb-4 text-[90%] text-[var(--dark-primary)]/80 font-medium bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20 border border-solid border-[var(--primary)]/20 flex items-center justify-center z-100" onclick="openClinicAddModal()">
+            <i class="bi bi-plus-circle absolute left-0 z-2 px-2 py-1 rounded-md bg-linear-to-l from-[var(--primary)] to-[#0179f6] text-[125%] text-[var(--light)] me-2"></i> Add Clinic
           </button>
           <div class="h-auto w-full">
             <select class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
@@ -233,7 +233,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#FF0000] bg-[#FFA4A4]/10 px-2 text-center">
                   <p class="text-[75%] text-[#FF0000]">In-Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -248,7 +248,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center"  onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -268,7 +268,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
                   <p class="text-[75%] text-[#3CA248]">Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -283,7 +283,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center" onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -303,7 +303,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#FF0000] bg-[#FFA4A4]/10 px-2 text-center">
                   <p class="text-[75%] text-[#FF0000]">In-Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -318,7 +318,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center" onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -338,7 +338,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
                   <p class="text-[75%] text-[#3CA248]">Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -353,7 +353,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center" onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -373,7 +373,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#FF0000] bg-[#FFA4A4]/10 px-2 text-center">
                   <p class="text-[75%] text-[#FF0000]">In-Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -388,7 +388,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center" onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -408,7 +408,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
                   <p class="text-[75%] text-[#3CA248]">Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -423,7 +423,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center" onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -443,7 +443,7 @@
                 <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
                   <p class="text-[75%] text-[#3CA248]">Active</p>
                 </div>
-                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3">
+                <button class="h-8 w-8 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center ms-3" onclick="openScheduleAddModal()">
                   <i class="bi bi-plus-lg text-[110%] text-[var(--dark-primary)]"></i>
                 </button>
               </div>
@@ -458,7 +458,7 @@
               <button class="h-7 w-7 rounded-[50%] border border-solid border-[#89BCFF] bg-[#89BCFF]/10 flex items-center justify-center" onclick="openSchCancelConfModal()">
                 <i class="bi bi-clock text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openClinicEditModal()">
+              <button class="h-6 w-6 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center" onclick="openScheduleEditModal()">
                 <i class="bi bi-pencil text-[70%] text-[var(--dark)]/90"></i>
               </button>
               <label class="relative inline-flex cursor-pointer items-center !mb-0">
@@ -561,14 +561,70 @@
   </div>
   <!----- CLINIC-ADD MODAL ------->
 
-  <!----- CLINIC-EDIT MODAL ------->
-  <div id="ClinicEditModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+  <!----- SCHEDULE-ADD MODAL ------->
+  <div id="ScheduleAddModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
 
     <!----- MODAL-CLOSER ------->
-    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeClinicEditModal()"></span>
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeScheduleAddModal()"></span>
     <!----- MODAL-CLOSER ------->
 
-    <div id="ClinicEditModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+    <div id="ScheduleAddModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Add Schedule
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-6 px-4">
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-full">
+            <div class="flex items-center mb-2">
+              <input type="number" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Start Time"/>
+              <span class="mx-2">-</span>
+              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                <option>AM</option>
+                <option>PM</option>
+              </select>
+            </div>
+            <div class="flex items-center">
+              <input type="number" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="End Time"/>
+              <span class="mx-2">-</span>
+              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                <option>AM</option>
+                <option>PM</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-100">
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Fees" value="" />
+          </div>
+        </div>
+        <div class="h-auto w-full text-center">
+          <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
+            Update
+          </button>       
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- SCHEDULE-ADD MODAL ------->
+
+  <!----- SCHEDULE-EDIT MODAL ------->
+  <div id="ScheduleEditModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeScheduleEditModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ScheduleEditModalBox" class="h-auto w-full max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
 
       <!----- MODAL-HEADER ------->
       <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
@@ -580,23 +636,24 @@
 
       <!----- MODAL-BODY ------->
       <div class="h-auto w-full text-center py-6 px-4">
-        <div class="flex items-center justify-center gap-x-2 mb-8">
-          <div class="h-40 w-full overflow-y-auto">
-            <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
-              10:00 am  to  14:00 pm
-            </button>
-
-            <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
-              14:00 am  to  15:00 pm
-            </button>
-
-            <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
-              15:00 am  to  16:00 pm
-            </button>
-
-            <button class="text-left py-3 px-5 h-auto w-full text-[var(--dark)]/50 font-normal text-[85%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
-              16:00 am  to  17:00 pm
-            </button>
+        <div class="flex items-center justify-center gap-x-2 mb-6">
+          <div class="h-auto w-full">
+            <div class="flex items-center mb-2">
+              <input type="text" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Start Time" value="10:00" />
+              <span class="mx-2">-</span>
+              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                <option selected>AM</option>
+                <option>PM</option>
+              </select>
+            </div>
+            <div class="flex items-center">
+              <input type="text" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="End Time" value="07:00"/>
+              <span class="mx-2">-</span>
+              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                <option>AM</option>
+                <option selected>PM</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="flex items-center justify-center gap-x-2 mb-6">
@@ -614,7 +671,7 @@
 
     </div>
   </div>
-  <!----- CLINIC-EDIT MODAL ------->
+  <!----- SCHEDULE-EDIT MODAL ------->
   
   <!----- CLINIC-CANCEL-CONFIRMATION MODAL ------->
   <div id="SchCancelConfModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
