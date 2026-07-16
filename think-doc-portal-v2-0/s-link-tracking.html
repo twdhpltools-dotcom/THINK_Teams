@@ -168,7 +168,7 @@
     <main class="h-auto w-full bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20 z-1">
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[var(--light)] to-[#daecff] z-100">
         <div>
           <h5 class="text-[135%] text-[var(--dark-primary)]/80 font-medium">Good Morning!</h5>
           <span class="block text-[85%] text-[var(--dark-primary)]/60 font-medium mt-[-2px]">Dr. Amit Kumar Das</span>
@@ -203,208 +203,136 @@
 
           <div class="h-auto w-full">
 
-            <div class="h-auto w-full flex items-center gap-x-3 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">01</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-medium">01</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
                 <i class="bi bi-clock-history text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <!-- <div class="inline-block rounded-sm border border-solid border-[#1560AC] bg-[#89BCFF]/10 px-2 text-center">
-                <p class="text-[75%] text-[#1560AC]">Pending</p>
-              </div> -->
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
                 <i class="bi bi-whatsapp text-[80%] text-[#3CA248]/90"></i>
               </button>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">02</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-medium">02</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
-              <!-- <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
-                <p class="text-[75%] text-[#3CA248]">Completed</p>
-              </div> -->
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
                 <i class="bi bi-check2-square text-[80%] text-[#3CA248]/90"></i>
               </button>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">03</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-[500]">03</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
               <div class="inline-block rounded-sm border border-solid border-[#1560AC] bg-[#89BCFF]/10 px-2 text-center">
                 <p class="text-[75%] text-[#1560AC]">Pending</p>
               </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
                 <i class="bi bi-whatsapp text-[80%] text-[#3CA248]/90"></i>
               </button>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">04</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-[500]">04</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
               <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
                 <p class="text-[75%] text-[#3CA248]">Completed</p>
               </div>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">01</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-medium">01</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
                 <i class="bi bi-clock-history text-[80%] text-[#1560AC]/90"></i>
               </button>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
                 <i class="bi bi-whatsapp text-[80%] text-[#3CA248]/90"></i>
               </button>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">02</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-medium">02</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
                 <i class="bi bi-check2-square text-[80%] text-[#3CA248]/90"></i>
               </button>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">01</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-[500]">03</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
-                <i class="bi bi-clock-history text-[80%] text-[#1560AC]/90"></i>
-              </button>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
+              <div class="inline-block rounded-sm border border-solid border-[#1560AC] bg-[#89BCFF]/10 px-2 text-center">
+                <p class="text-[75%] text-[#1560AC]">Pending</p>
+              </div>
+              <button class="h-7 w-7 shrink-0 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
                 <i class="bi bi-whatsapp text-[80%] text-[#3CA248]/90"></i>
               </button>
             </div>
 
-            <div class="h-auto w-full flex items-center gap-x-3 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">02</h5>
+            <div class="h-auto w-full flex items-center gap-x-2 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
+              <h5 class="text-[85%] text-[var(--dark)]/60 font-[500]">04</h5>
               <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
+                <i class="bi bi-calendar-event text-[90%] text-[var(--primary)]/90 pe-2"></i>
                 <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
               </div>
               <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
+                <i class="bi bi-phone text-[90%] text-[var(--primary)]/90 pe-1"></i>
+                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 8910624658</p>
               </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
-                <i class="bi bi-check2-square text-[80%] text-[#3CA248]/90"></i>
-              </button>
-            </div>
-
-            <div class="h-auto w-full flex items-center gap-x-3 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">01</h5>
-              <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
+              <div class="inline-block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center">
+                <p class="text-[75%] text-[#3CA248]">Completed</p>
               </div>
-              <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
-              </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
-                <i class="bi bi-clock-history text-[80%] text-[#1560AC]/90"></i>
-              </button>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
-                <i class="bi bi-whatsapp text-[80%] text-[#3CA248]/90"></i>
-              </button>
-            </div>
-
-            <div class="h-auto w-full flex items-center gap-x-3 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">02</h5>
-              <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
-              </div>
-              <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
-              </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
-                <i class="bi bi-check2-square text-[80%] text-[#3CA248]/90"></i>
-              </button>
-            </div>
-
-            <div class="h-auto w-full flex items-center gap-x-3 bg-[var(--secondary)]/20 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">01</h5>
-              <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
-              </div>
-              <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
-              </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#1560AC] flex items-center justify-center">
-                <i class="bi bi-clock-history text-[80%] text-[#1560AC]/90"></i>
-              </button>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#3CA248] flex items-center justify-center" onclick="openWpSuccessModal()">
-                <i class="bi bi-whatsapp text-[80%] text-[#3CA248]/90"></i>
-              </button>
-            </div>
-
-            <div class="h-auto w-full flex items-center gap-x-3 py-4 px-5 border-b border-solid border-[var(--dark-primary)]/10 last:border-none">
-              <h5 class="text-[95%] text-[var(--dark)]/60 font-semibold">02</h5>
-              <div class="flex items-center">
-                <i class="bi bi-calendar-event text-[100%] text-[var(--primary)]/90 pe-2"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">13-05-26</p>
-              </div>
-              <div class="flex items-center">
-                <i class="bi bi-phone text-[100%] text-[var(--primary)]/90 pe-1"></i>
-                <p class="text-[80%] text[var(--dark)] whitespace-nowrap">+91 891 062 4658</p>
-              </div>
-              <button class="h-7 w-7 rounded-[50%] border border-solid border-[#7AEF88] flex items-center justify-center">
-                <i class="bi bi-check2-square text-[80%] text-[#3CA248]/90"></i>
-              </button>
             </div>
 
           </div>

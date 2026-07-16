@@ -168,7 +168,7 @@
     <main class="h-auto w-full bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[#EFF2FF]/40 to-[#2C91F8]/20 z-1">
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between bg-linear-to-l from-[var(--light)] to-[#daecff] z-100">
         <div>
           <h5 class="text-[135%] text-[var(--dark-primary)]/80 font-medium">Good Morning!</h5>
           <span class="block text-[85%] text-[var(--dark-primary)]/60 font-medium mt-[-2px]">Dr. Amit Kumar Das</span>
@@ -238,7 +238,7 @@
                   </div>
                   <div>
                     <h3 class="text-[#20B757] font-semibold text-[125%] leading-none whitespace-nowrap">
-                      ₹ 38.5K
+                      <span class="rupee-symbol">₹</span> 38.5K
                     </h3>
 
                     <p class="mt-1 text-[var(--dark-primary)]/75 text-[72%] font-medium">
@@ -350,7 +350,7 @@
                   </div>
                   <div>
                     <h3 class="text-[#20B757] font-semibold text-[135%] leading-none whitespace-nowrap">
-                      ₹ 38.5K
+                      <span class="rupee-symbol">₹</span> 38.5K
                     </h3>
 
                     <p class="mt-1 text-[var(--dark-primary)]/80 text-[75%] font-medium">
@@ -440,25 +440,8 @@
               <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
                 <i class="bi bi-currency-rupee text-[85%] text-[#3CA248]"></i>
               </button>
-              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">₹ 38.5K</h3>
+              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]"><span class="rupee-symbol">₹</span> 38.5K</h3>
               <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Revenue</p>
-            </div>
-          </div> -->
-
-          <!-- <div class="h-auto w-full flex gap-x-3 px-5 pt-4 pb-2">
-            <div class="h-30 w-40 relative z-1 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
-              <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
-                <i class="bi bi-calendar-event text-[85%] text-[#3CA248]"></i>
-              </button>
-              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">39</h3>
-              <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Tomorrow</p>
-            </div>
-            <div class="h-30 w-40 relative z-1 px-3 py-3 rounded-md bg-linear-to-b from-[var(--light)] to-[#fafafa] border border-solid border-[#00000010]">
-              <button class="absolute top-3 right-3 h-7 w-7 rounded-[50%] bg-[#7AEF88]/10 flex items-center justify-center">
-                <i class="bi bi-graph-up-arrow text-[85%] text-[#3CA248]"></i>
-              </button>
-              <h3 class="text-[var(--primary)]/90 font-semibold text-[150%]">18%</h3>
-              <p class="dash-decor-para relative z-1 text-[var(--dark-primary)]/80 text-[80%] pb-4">Growth</p>
             </div>
           </div> -->
 
@@ -481,7 +464,7 @@
                     Total Earnings
                   </p>
                   <h2 class="mt-1 text-[180%] font-semibold leading-none text-[#1473FF]">
-                    ₹ 19,930
+                    <span class="rupee-symbol">₹</span> 19,930
                   </h2>
                   <span class="mt-3 inline-flex items-center gap-x-1 text-[70%] font-medium text-[var(--dark-primary)]/90">
                     <i class="bi bi-arrow-up-right text-[var(--success)]"></i>
@@ -541,7 +524,7 @@
                   </div>
 
                   <h4 class="mt-1 text-[100%] font-medium text-[#2C91F8]/80 whitespace-nowrap">
-                    ₹ 12,450
+                    <span class="rupee-symbol">₹</span> 12,450
                   </h4>
                   <span class="mt-1 inline-flex items-center gap-x-1 text-[60%] font-medium text-[var(--dark-primary)]/90">
                     <i class="bi bi-arrow-up-right text-[var(--success)]"></i>
@@ -567,7 +550,7 @@
                   </div>
 
                   <h4 class="mt-1 text-[100%] font-medium text-[var(--success)]/80 whitespace-nowrap">
-                    ₹ 4,780
+                    <span class="rupee-symbol">₹</span> 4,780
                   </h4>
                   <span class="mt-1 inline-flex items-center gap-x-1 text-[60%] font-medium text-[var(--dark-primary)]/90">
                     <i class="bi bi-arrow-up-right text-[var(--success)]"></i>
@@ -593,7 +576,7 @@
                   </div>
 
                   <h4 class="mt-1 text-[100%] font-medium text-[var(--primary)]/80 whitespace-nowrap">
-                    ₹ 2,700
+                    <span class="rupee-symbol">₹</span> 2,700
                   </h4>
                   <span class="mt-1 inline-flex items-center gap-x-1 text-[60%] font-medium text-[var(--dark-primary)]/90">
                     <i class="bi bi-arrow-up-right text-[var(--success)]"></i>
@@ -625,17 +608,17 @@
               </div>
               <div class="h-auto w-full px-5 py-3 border-b border-solid border-[var(--light)]/30">
                 <p class="text-[var(--light)]/90 text-[80%]">Total Earnings</p>
-                <h3 class="text-[var(--light)] font-semibold text-[160%]">₹ 19,930</h3>
+                <h3 class="text-[var(--light)] font-semibold text-[160%]"><span class="rupee-symbol">₹</span> 19,930</h3>
                 <span class="inline-block text-[80%] text-[var(--light)]/80"><i class="bi bi-caret-up-fill"></i> 2.5% vs yesterday</span>
               </div>
               <div class="h-auto px-5 py-3 border-r border-solid border-[var(--light)]/30">
                 <p class="text-[var(--light)]/90 text-[70%]">This Month</p>
-                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 8,220</h3>
+                <h3 class="text-[var(--light)] font-semibold text-[140%]"><span class="rupee-symbol">₹</span> 8,220</h3>
                 <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap"><i class="bi bi-caret-down-fill"></i> 5.4%</span>
               </div>
               <div class="h-auto px-5 py-3">
                 <p class="text-[var(--light)]/90 text-[70%]">Last Month</p>
-                <h3 class="text-[var(--light)] font-semibold text-[140%]">₹ 11,710</h3>
+                <h3 class="text-[var(--light)] font-semibold text-[140%]"><span class="rupee-symbol">₹</span> 11,710</h3>
                 <span class="inline-block text-[70%] text-[var(--light)]/80 whitespace-nowrap"><i class="bi bi-caret-up-fill"></i> 6.9%</span>
               </div>
             </div>
