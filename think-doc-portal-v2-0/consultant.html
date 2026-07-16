@@ -208,17 +208,20 @@
             </article>
 
             <div class="h-auto w-full">
-              <div class="h-auto w-full bg-[var(--secondary)]/20 py-3 pl-5 pr-10">
+              <div class="relative z-1 h-auto w-full py-3 pl-5 pr-10">
                 <div class="flex items-start justify-end">
                   <!-- <div class="inline-block rounded-md border border-solid border-[#7AEF88] bg-[#7AEF88]/10 px-2 text-center">
                     <p class="text-[75%] text-[#3CA248]">New Branch 2</p>
                   </div> -->
-                  <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
+                  <span class="absolute right-5 bottom-3 z-2 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
+                    Refer
+                  </span>
+                  <!-- <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
                     Refer
                     <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
                       <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
                     </button>
-                  </span>
+                  </span> -->
                 </div>
                 <div class="flex items-start pt-2">
                   <div class="h-12 w-12 rounded-md overflow-hidden">
@@ -230,7 +233,7 @@
                   </div>
                 </div>
               </div>
-              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-3 pl-5 pr-5">
+              <div class="h-auto w-full bg-[var(--secondary)]/20 flex items-center justify-between py-2 pl-5 pr-5">
                 <div class="flex items-start">
                   <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
                     <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
@@ -253,13 +256,10 @@
             </div>
 
             <div class="h-auto w-full">
-              <div class="h-auto w-full bg-[var(--secondary)]/20 py-3 pl-5 pr-10">
+              <div class="relative z-1 h-auto w-full bg-[var(--light)] py-3 pl-5 pr-10">
                 <div class="flex items-start justify-end">
-                  <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
+                  <span class="absolute right-5 bottom-3 z-2 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                     Refer
-                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
-                      <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -272,99 +272,7 @@
                   </div>
                 </div>
               </div>
-              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-3 pl-5 pr-5">
-                <div class="flex items-start">
-                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
-                    <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
-                  </div>
-                  <div class="ms-2">
-                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Contact:</h5>
-                    <p class="text-[85%] text[var(--dark)]">+91 XXXXXXXX87</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
-                    <i class="bi bi-currency-rupee text-[100%] text-[var(--primary)]/90"></i>
-                  </div>
-                  <div class="ms-2">
-                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Fees:</h5>
-                    <p class="text-[85%] text[var(--dark)]"><span class="rupee-symbol">₹</span> XXXX</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="relative z-1">
-
-            <article class="sticky top-0 left-0 w-full border-b border-solid border-[#d1d1d19e]/40 py-2 px-20 bg-[var(--light)] text-center font-bold text-[95%] text-[var(--dark)]/70 rounded-bl-2xl rounded-br-2xl z-3">
-              Gynocology
-            </article>
-
-            <div class="h-auto w-full">
-              <div class="h-auto w-full bg-[var(--failure)]/2 py-3 pl-5 pr-10">
-                <div class="flex items-start justify-end">
-                  <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
-                    Refer
-                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
-                      <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </button>
-                  </span>
-                </div>
-                <div class="flex items-start pt-2">
-                  <div class="h-12 w-12 rounded-md overflow-hidden">
-                    <img src="assets/images/dummy-doctor.jpg" alt="doctor image" />
-                  </div>
-                  <div class="ms-3">
-                    <h5 class="text-[95%] text-[var(--primary)] font-semibold">Dr. Ranjit Bhattacharya</h5>
-                    <p class="text-[80%] text[var(--dark)]">MBBS, MD</p>
-                  </div>
-                </div>
-              </div>
-              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-3 pl-5 pr-5">
-                <div class="flex items-start">
-                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
-                    <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
-                  </div>
-                  <div class="ms-2">
-                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Contact:</h5>
-                    <p class="text-[85%] text[var(--dark)]">+91 XXXXXXXX87</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
-                    <i class="bi bi-currency-rupee text-[100%] text-[var(--primary)]/90"></i>
-                  </div>
-                  <div class="ms-2">
-                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Fees:</h5>
-                    <p class="text-[85%] text[var(--dark)]"><span class="rupee-symbol">₹</span> XXXX</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="h-auto w-full">
-              <div class="h-auto w-full bg-[var(--failure)]/2 py-3 pl-5 pr-10">
-                <div class="flex items-start justify-end">
-                  <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
-                    Refer
-                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
-                      <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </button>
-                  </span>
-                </div>
-                <div class="flex items-start pt-2">
-                  <div class="h-12 w-12 rounded-md overflow-hidden">
-                    <img src="assets/images/dummy-doctor.jpg" alt="doctor image" />
-                  </div>
-                  <div class="ms-3">
-                    <h5 class="text-[95%] text-[var(--primary)] font-semibold">Dr. Ranjit Bhattacharya</h5>
-                    <p class="text-[80%] text[var(--dark)]">MBBS, MD</p>
-                  </div>
-                </div>
-              </div>
-              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-3 pl-5 pr-5">
+              <div class="h-auto w-full bg-[var(--secondary)]/20 flex items-center justify-between py-2 pl-5 pr-5">
                 <div class="flex items-start">
                   <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
                     <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
@@ -391,17 +299,14 @@
           <div class="relative z-1">
 
             <article class="sticky top-0 left-0 w-full border-b border-solid border-[#d1d1d19e]/40 py-2 px-20 bg-[var(--light)] text-center font-bold text-[95%] text-[var(--dark)]/70 rounded-bl-2xl rounded-br-2xl z-3">
-              ENT
+              Medicine
             </article>
 
             <div class="h-auto w-full">
-              <div class="h-auto w-full bg-[var(--secondary)]/20 py-3 pl-5 pr-10">
+              <div class="relative z-1 h-auto w-full bg-[var(--failure)]/2 py-3 pl-5 pr-10">
                 <div class="flex items-start justify-end">
-                  <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
+                  <span class="absolute right-5 bottom-3 z-2 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                     Refer
-                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
-                      <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -414,7 +319,7 @@
                   </div>
                 </div>
               </div>
-              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-3 pl-5 pr-5">
+              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-2 pl-5 pr-5">
                 <div class="flex items-start">
                   <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
                     <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
@@ -437,13 +342,10 @@
             </div>
 
             <div class="h-auto w-full">
-              <div class="h-auto w-full bg-[var(--secondary)]/20 py-3 pl-5 pr-10">
+              <div class="relative z-1 h-auto w-full bg-[var(--failure)]/2 py-3 pl-5 pr-10">
                 <div class="flex items-start justify-end">
-                  <span class="relative z-1 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-2 pr-5 text-center text-[75%] text-[var(--dark)]">
+                  <span class="absolute right-5 bottom-3 z-2 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
                     Refer
-                    <button class="absolute top-[-4px] right-[-30px] z-2 h-9 w-9 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openConsultantReferModal()">
-                      <i class="bi bi-link-45deg text-[140%] text-[var(--primary)]/90"></i>
-                    </button>
                   </span>
                 </div>
                 <div class="flex items-start pt-2">
@@ -456,7 +358,93 @@
                   </div>
                 </div>
               </div>
-              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-3 pl-5 pr-5">
+              <div class="h-auto w-full bg-[var(--light)] flex items-center justify-between py-2 pl-5 pr-5">
+                <div class="flex items-start">
+                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                    <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
+                  </div>
+                  <div class="ms-2">
+                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Contact:</h5>
+                    <p class="text-[85%] text[var(--dark)]">+91 XXXXXXXX87</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                    <i class="bi bi-currency-rupee text-[100%] text-[var(--primary)]/90"></i>
+                  </div>
+                  <div class="ms-2">
+                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Fees:</h5>
+                    <p class="text-[85%] text[var(--dark)]"><span class="rupee-symbol">₹</span> XXXX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="relative z-1">
+
+            <article class="sticky top-0 left-0 w-full border-b border-solid border-[#d1d1d19e]/40 py-2 px-20 bg-[var(--light)] text-center font-bold text-[95%] text-[var(--dark)]/70 rounded-bl-2xl rounded-br-2xl z-3">
+              Medicine
+            </article>
+
+            <div class="h-auto w-full">
+              <div class="relative z-1 h-auto w-full py-3 pl-5 pr-10">
+                <div class="flex items-start justify-end">
+                  <span class="absolute right-5 bottom-3 z-2 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
+                    Refer
+                  </span>
+                </div>
+                <div class="flex items-start pt-2">
+                  <div class="h-12 w-12 rounded-md overflow-hidden">
+                    <img src="assets/images/dummy-doctor.jpg" alt="doctor image" />
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="text-[95%] text-[var(--primary)] font-semibold">Dr. Ranjit Bhattacharya</h5>
+                    <p class="text-[80%] text[var(--dark)]">MBBS, MD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="h-auto w-full bg-[var(--secondary)]/20 flex items-center justify-between py-2 pl-5 pr-5">
+                <div class="flex items-start">
+                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                    <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
+                  </div>
+                  <div class="ms-2">
+                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Contact:</h5>
+                    <p class="text-[85%] text[var(--dark)]">+91 XXXXXXXX87</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
+                    <i class="bi bi-currency-rupee text-[100%] text-[var(--primary)]/90"></i>
+                  </div>
+                  <div class="ms-2">
+                    <h5 class="text-[75%] text-[var(--primary)] font-semibold">Fees:</h5>
+                    <p class="text-[85%] text[var(--dark)]"><span class="rupee-symbol">₹</span> XXXX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-auto w-full">
+              <div class="relative z-1 h-auto w-full bg-[var(--light)] py-3 pl-5 pr-10">
+                <div class="flex items-start justify-end">
+                  <span class="absolute right-5 bottom-3 z-2 rounded-2xl border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 px-4 text-center text-[80%] text-[var(--dark)] cursor-pointer" onclick="openRegReferModal()">
+                    Refer
+                  </span>
+                </div>
+                <div class="flex items-start pt-2">
+                  <div class="h-12 w-12 rounded-md overflow-hidden">
+                    <img src="assets/images/dummy-doctor.jpg" alt="doctor image" />
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="text-[95%] text-[var(--primary)] font-semibold">Dr. Ranjit Bhattacharya</h5>
+                    <p class="text-[80%] text[var(--dark)]">MBBS, MD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="h-auto w-full bg-[var(--secondary)]/20 flex items-center justify-between py-2 pl-5 pr-5">
                 <div class="flex items-start">
                   <div class="h-9 w-9 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center">
                     <i class="bi bi-telephone-plus text-[100%] text-[var(--primary)]/90"></i>
