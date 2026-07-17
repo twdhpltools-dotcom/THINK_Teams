@@ -186,20 +186,20 @@
       <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[15px] rounded-tr-[15px]">
 
         <!----- CONTENT-HEADING ------->
-        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 pl-5 pr-10">
+        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 pl-5 pr-9">
           <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
             <div class="h-10 w-10 shrink-0 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-2">
               <i class="bi bi-calendar3 text-[80%] text-[var(--primary)]/90"></i>
             </div>
             Clinic & Schedule
           </h5>
-          <span class="relative z-1 rounded-[100px] border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-5 pr-9 text-center text-[75%] text-[var(--dark)] font-medium">
+          <span class="relative z-1 rounded-[100px] border border-solid border-[var(--primary)]/30 bg-[var(--light)] py-1 pl-5 pr-8 text-center text-[75%] text-[var(--dark)] font-medium">
             Block Dates
             <div class="block rounded-sm border border-solid border-[#3CA248] bg-[#7AEF88]/10 px-2 text-center whitespace-nowrap">
               <p class="text-[80%] text-[#3CA248]">Days Active</p>
             </div>
-            <button class="absolute top-[-2px] right-[-30px] z-2 h-12 w-12 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-3" onclick="openClinicBlockModal()">
-              <i class="bi bi-calendar-x text-[140%] text-[var(--primary)]/90"></i>
+            <button class="absolute top-0 right-[-25px] z-2 h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)] flex items-center justify-center me-2" onclick="openClinicBlockModal()">
+              <i class="bi bi-calendar-x text-[120%] text-[var(--primary)]/90"></i>
             </button>
           </span>
         </div>
@@ -580,20 +580,28 @@
 
       <!----- MODAL-BODY ------->
       <div class="h-auto w-full text-center py-6 px-4">
-        <div class="flex items-center justify-center gap-x-2 mb-6">
-          <div class="h-auto w-full">
-            <div class="flex items-center mb-2">
-              <input type="number" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Start Time"/>
+        <div class="flex items-center justify-center flex-wrap gap-x-2 mb-5">
+          <div class="h-auto w-full mb-4">
+            <label class="inline-block font-medium">Select Start Time</label>
+            <div class="flex items-center justify-center">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-3 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" onclick="openTimeHrModal()" />
               <span class="mx-2">-</span>
-              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" onclick="openTimeMnModal()" />
+              <span class="mx-2">-</span>
+              <select class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]">
                 <option>AM</option>
                 <option>PM</option>
               </select>
             </div>
-            <div class="flex items-center">
-              <input type="number" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="End Time"/>
+          </div>
+          <div class="h-auto w-full">
+            <label class="inline-block font-medium">Select End Time</label>
+            <div class="flex items-center justify-center">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-3 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" onclick="openTimeHrModal()" />
               <span class="mx-2">-</span>
-              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" onclick="openTimeMnModal()" />
+              <span class="mx-2">-</span>
+              <select class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]">
                 <option>AM</option>
                 <option>PM</option>
               </select>
@@ -601,13 +609,14 @@
           </div>
         </div>
         <div class="flex items-center justify-center gap-x-2 mb-6">
-          <div class="h-auto w-100">
+          <div class="h-auto w-full text-left">
+            <label class="inline-block font-medium">Set Fees</label>
             <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Fees" value="" />
           </div>
         </div>
         <div class="h-auto w-full text-center">
           <button class="h-auto rounded-md px-8 py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none min-[576px]:w-45 min-[576px]:text-[95%]">
-            Update
+            Add
           </button>       
         </div>
       </div>
@@ -636,20 +645,28 @@
 
       <!----- MODAL-BODY ------->
       <div class="h-auto w-full text-center py-6 px-4">
-        <div class="flex items-center justify-center gap-x-2 mb-6">
-          <div class="h-auto w-full">
-            <div class="flex items-center mb-2">
-              <input type="text" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Start Time" value="10:00" />
+        <div class="flex items-center justify-center flex-wrap gap-x-2 mb-5">
+          <div class="h-auto w-full mb-4">
+            <label class="inline-block font-medium">Select Start Time</label>
+            <div class="flex items-center justify-center">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-3 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" value="03" onclick="openTimeHrModal()" />
               <span class="mx-2">-</span>
-              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
-                <option selected>AM</option>
-                <option>PM</option>
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" value="45" onclick="openTimeMnModal()" />
+              <span class="mx-2">-</span>
+              <select class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]">
+                <option>AM</option>
+                <option selected>PM</option>
               </select>
             </div>
-            <div class="flex items-center">
-              <input type="text" class="h-auto w-45 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="End Time" value="07:00"/>
+          </div>
+          <div class="h-auto w-full">
+            <label class="inline-block font-medium">Select End Time</label>
+            <div class="flex items-center justify-center">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-3 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" value="06" onclick="openTimeHrModal()" />
               <span class="mx-2">-</span>
-              <select class="h-auto w-25 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]">
+              <input type="number" class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]" value="30" onclick="openTimeMnModal()" />
+              <span class="mx-2">-</span>
+              <select class="h-12 w-15 bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)] min-[576px]:text-[100%]">
                 <option>AM</option>
                 <option selected>PM</option>
               </select>
@@ -657,8 +674,9 @@
           </div>
         </div>
         <div class="flex items-center justify-center gap-x-2 mb-6">
-          <div class="h-auto w-100">
-            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Fees" value="₹ 221.00" />
+          <div class="h-auto w-full text-left">
+            <label class="inline-block font-medium">Set Fees</label>
+            <input type="text" class="h-auto w-full bg-[var(--light)] border-1 border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-4 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal hover:border-[var(--primary)] min-[576px]:text-[100%]" placeholder="Fees" value="" />
           </div>
         </div>
         <div class="h-auto w-full text-center">
@@ -672,6 +690,124 @@
     </div>
   </div>
   <!----- SCHEDULE-EDIT MODAL ------->
+
+  <!----- TIME-HOUR MODAL ------->
+  <div id="TimeHrModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTimeHrModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TimeHrModalBox" class="h-auto w-60 max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-3">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Select Hours
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-4 px-4">
+        <div class="h-10 overflow-y-auto">
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            01
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            02
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            03
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            04
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            05
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            06
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            07
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            08
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            09
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            10
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            11
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            12
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TIME-HOUR MODAL ------->
+
+    <!----- TIME-HOUR MODAL ------->
+  <div id="TimeMnModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTimeMnModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TimeMnModalBox" class="h-auto w-60 max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-3">
+        <h5 class="text-[100%] font-semibold text-[var(--dark-primary)]/70">
+          Select Minutes
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-4 px-4">
+        <div class="h-10 overflow-y-auto">
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            00
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            15
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            30
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            45
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TIME-HOUR MODAL ------->
   
   <!----- CLINIC-CANCEL-CONFIRMATION MODAL ------->
   <div id="SchCancelConfModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
