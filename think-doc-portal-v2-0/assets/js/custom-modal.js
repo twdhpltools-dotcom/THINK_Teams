@@ -1087,6 +1087,74 @@ document.getElementById("SchCancelConfModal").addEventListener("click", function
 });
 /*-------------------------------------- CLINIC-CANCEL-CONFIRMATION ----------------------------------------*/
 
+/*-------------------------------------- TIME-HOUR ----------------------------------------*/
+function openTimeHrModal() {
+  const TimeHrModal = document.getElementById("TimeHrModal");
+  const TimeHrModalBox = document.getElementById("TimeHrModalBox");
+
+  TimeHrModal.classList.remove("hidden");
+  TimeHrModal.classList.add("flex");
+
+  setTimeout(() => {
+    TimeHrModalBox.classList.remove("opacity-0", "scale-95");
+    TimeHrModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeTimeHrModal() {
+  const TimeHrModal = document.getElementById("TimeHrModal");
+  const TimeHrModalBox = document.getElementById("TimeHrModalBox");
+
+  TimeHrModalBox.classList.add("opacity-0", "scale-95");
+  TimeHrModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    TimeHrModal.classList.add("hidden");
+    TimeHrModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("TimeHrModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeTimeHrModal();
+  }
+});
+/*-------------------------------------- TIME-HOUR ----------------------------------------*/
+
+/*-------------------------------------- TIME-MINUTE ----------------------------------------*/
+function openTimeMnModal() {
+  const TimeMnModal = document.getElementById("TimeMnModal");
+  const TimeMnModalBox = document.getElementById("TimeMnModalBox");
+
+  TimeMnModal.classList.remove("hidden");
+  TimeMnModal.classList.add("flex");
+
+  setTimeout(() => {
+    TimeMnModalBox.classList.remove("opacity-0", "scale-95");
+    TimeMnModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeTimeMnModal() {
+  const TimeMnModal = document.getElementById("TimeMnModal");
+  const TimeMnModalBox = document.getElementById("TimeMnModalBox");
+
+  TimeMnModalBox.classList.add("opacity-0", "scale-95");
+  TimeMnModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    TimeMnModal.classList.add("hidden");
+    TimeMnModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("TimeMnModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeTimeMnModal();
+  }
+});
+/*-------------------------------------- TIME-MINUTE ----------------------------------------*/
+
 /*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
 function openEditProfileModal() {
   const EditProfileModal = document.getElementById("EditProfileModal");
