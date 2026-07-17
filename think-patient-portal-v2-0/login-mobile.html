@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Log-in | ThinkLab Doctor Portal Application | A Trusted Doctor Management Software of India</title>
+  <title>Log-in | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India</title>
 
-  <meta name="title" content="ThinkLab Doctor Portal Application | A Trusted Doctor Management Software of India" />
-  <meta name="description" content="Log-in | ThinkLab Doctor Portal Application | A Trusted Doctor Management Software of India" />
-  <meta name="keywords" content="Doctor Portal, Doctor Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
+  <meta name="title" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="description" content="Loading... | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
 
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
 
-  <link rel="canonical" href="https://doctor.thinklab.in/" />
+  <link rel="canonical" href="https://patient.thinklab.in/" />
 
   <meta name="theme-color" content="#0B28A8" />
-  <meta name="application-name" content="ThinkLab Doctor Portal" />
+  <meta name="application-name" content="ThinkLab Patient Portal" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
@@ -24,41 +24,72 @@
   <!------------------ CSS FOR MAIN FILES START ---------------------->
   <link rel="stylesheet" href="assets/css/style.css">
   <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
 </head>
 
 <body>
 
   <!----------------------------------- LOG-IN SECTION ------------------------------------------------->
-  <div class="h-screen w-full bg-[var(--light)]">
+  <div class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
 
     <!----- MOBILE-NUMBER-VERFICATION ------->
     <div class="size-full flex flex-col items-center justify-center fixed top-0 left-0">
 
-      <div class="h-auto w-35 mb-5">
-        <img src="assets/images/p-logo.png" alt="brand logo">
+      <div class="h-auto w-25 mb-5">
+        <img src="assets/images/p-logo.png" alt="brand logo" />
       </div>
 
-      <div class="h-auto w-70 mb-10">
-        <img src="assets/images/login-vector.png" alt="Login Vector">
+      <div class="h-auto w-70 mb-9">
+        <img src="assets/images/login-vector.png" alt="Login Vector" />
       </div>
 
       <div class="h-auto w-full px-8">
-        <h5 class="text-[130%] font-medium text-[var(--dark-primary)]/90 min-[576px]:text-[150%] mb-1">Sign In</h5>
-        <p class="text-[75%] text-[var(--dark-primary)]/60 mb-8 min-[576px]:text-[85%]">Enter your mobile number to sign in securely.</p>
+        <h5 class="text-[130%] font-medium text-[var(--dark-primary)] min-[576px]:text-[150%] mb-1">Sign In</h5>
+        <p class="text-[75%] text-[var(--dark-primary)]/90 mb-6 min-[576px]:text-[85%]">Enter your mobile number to sign in securely.</p>
 
-        <div class="h-auto w-full mb-8">
+        <div class="h-auto w-full mb-5">
           <label class="inline-block font-medium">Phone Number</label>
-          <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)] font-medium hover:border-[var(--primary)] min-[576px]:text-[95%]" placeholder="Enter mobile number" />
+          <div class="h-auto w-full flex items-center overflow-hidden rounded-[5px] border border-solid border-[#d1d1d19e] bg-[var(--light)] hover:border-[var(--primary)]">
+             <div class="relative flex items-center border-r border-solid border-[#d1d1d19e] px-3 py-3 z-1">
+              <div class="w-[25px] me-1">
+                <img src="assets/images/India-map.png" alt="Country">
+              </div>
+              <select class="bg-transparent text-[90%] font-medium text-[var(--dark-primary)] outline-none cursor-pointer !shadow-none">
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+                <option value="+61">+61</option>
+                <option value="+971">+971</option>
+              </select>
+              <i class="bi bi-person-fill pointer-events-none absolute right-3 text-[65%] text-[var(--dark-primary)]/60 z-2"></i>
+            </div>
+            <input type="tel" class="h-auto w-full bg-[var(--light)] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Enter mobile number" />
+          </div>
         </div>
 
         <div class="h-auto w-full text-center">
-          <button class="h-auto w-40 rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-linear-to-l from-[var(--primary)] to-[#0179f6] border-none outline-none shadow-[0_20px_20px_0_#0b28a824] min-[576px]:w-45 min-[576px]:text-[95%]" onclick="window.location.href='login-otp.html'">
-            Submit
+          <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='login-otp.html'">
+            Continue
           </button>       
         </div>
-        <!-- <h6 class="text-[80%] text-[var(--dark-primary)] text-center mt-6 min-[576px]:text-[90%]">
-          <strong>Demo Login:</strong> Contact Number <strong>00</strong>
-        </h6> -->
+
+        <div class="h-auto w-full border border-solid border-[#00000010] relative z-1 mt-8 mb-7">
+          <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-7 w-7 bg-[var(--light)] flex items-center justify-center text-[80%] text-[var(--dark-primary)]/90 rounded-2xl z-2">
+            OR
+          </span>
+        </div>
+
+        <div class="h-auto w-full text-center">
+          <button class="h-auto w-full flex items-center justify-center rounded-md py-2 text-[85%] text-[var(--dark-primary)] font-medium bg-[var(--light)] border-2 border-solid border-[#d1d1d19e]/60 outline-none">
+            <span class="h-8 w-8 bg-[var(--primary)]/5 rounded-[50%] flex items-center justify-center text-[80%] me-2">
+              <i class="bi bi-envelope-fill text-[140%] text-[#00ADF6]"></i>
+            </span>
+            Continue with Email 
+          </button>       
+        </div>
       </div>
 
     </div>
