@@ -4,17 +4,6 @@ window.addEventListener("load", function () {
   document.getElementById("PreLoader").classList.add("hide");
 });
 /*-------------------------------------- PRE-LOADER ----------------------------------------*/
-/*-------------------------------------- LOG-IN SETUP ----------------------------------------*/
-function LogOtp() {
-  const mobile = document.getElementById("LogMobile");
-  const otp = document.getElementById("LogOtp");
-
-  mobile.classList.remove("active");
-  mobile.classList.add("slide-left");
-
-  otp.classList.add("active");
-}
-/*-------------------------------------- LOG-IN SETUP ----------------------------------------*/
 
 /*-------------------------------------- OTP-INPUT ----------------------------------------*/
 const otpInputs = document.querySelectorAll('.otp-input');
@@ -55,6 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 
+/*-------------------------------------- PG-BACK-FUCNTIONALITY ----------------------------------------*/
+document.querySelectorAll(".go-back-btn").forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.history.back();
+  });
+});
+/*-------------------------------------- PG-BACK-FUCNTIONALITY ----------------------------------------*/
+
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 function toggleSubMenu(btn) {
   const subMenu = btn.nextElementSibling;
@@ -64,150 +62,6 @@ function toggleSubMenu(btn) {
 
   subMenu.classList.toggle("max-h-[180px]");
   subMenu.classList.toggle("opacity-100");
-}
-
-function bookingDetailsShow() {
-  const optionBox = document.getElementById("BookingDetailsOption");
-
-  optionBox.classList.toggle("py-0");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("py-4");
-  optionBox.classList.toggle("max-h-[80px]");
-  optionBox.classList.toggle("opacity-100");
-}
-
-function bookingDetailsShowTwo() {
-  const optionBox = document.getElementById("BookingDetailsOptionTwo");
-
-  optionBox.classList.toggle("py-0");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("py-4");
-  optionBox.classList.toggle("max-h-[80px]");
-  optionBox.classList.toggle("opacity-100");
-}
-
-function schSunDetailsShow() {
-  const schsunoptionBox = document.getElementById("SchSunDetailsOption");
-
-  schsunoptionBox.classList.toggle("py-0");
-  schsunoptionBox.classList.toggle("max-h-0");
-  schsunoptionBox.classList.toggle("opacity-0");
-
-  schsunoptionBox.classList.toggle("py-4");
-  schsunoptionBox.classList.toggle("max-h-[80px]");
-  schsunoptionBox.classList.toggle("opacity-100");
-}
-
-function schMonDetailsShow() {
-  const schmonoptionBox = document.getElementById("SchMonDetailsOption");
-
-  schmonoptionBox.classList.toggle("py-0");
-  schmonoptionBox.classList.toggle("max-h-0");
-  schmonoptionBox.classList.toggle("opacity-0");
-
-  schmonoptionBox.classList.toggle("py-4");
-  schmonoptionBox.classList.toggle("max-h-[80px]");
-  schmonoptionBox.classList.toggle("opacity-100");
-}
-
-function schTueDetailsShow() {
-  const schtueoptionBox = document.getElementById("SchTueDetailsOption");
-
-  schtueoptionBox.classList.toggle("py-0");
-  schtueoptionBox.classList.toggle("max-h-0");
-  schtueoptionBox.classList.toggle("opacity-0");
-
-  schtueoptionBox.classList.toggle("py-4");
-  schtueoptionBox.classList.toggle("max-h-[80px]");
-  schtueoptionBox.classList.toggle("opacity-100");
-}
-
-function schWedDetailsShow() {
-  const schwedoptionBox = document.getElementById("SchWedDetailsOption");
-
-  schwedoptionBox.classList.toggle("py-0");
-  schwedoptionBox.classList.toggle("max-h-0");
-  schwedoptionBox.classList.toggle("opacity-0");
-
-  schwedoptionBox.classList.toggle("py-4");
-  schwedoptionBox.classList.toggle("max-h-[80px]");
-  schwedoptionBox.classList.toggle("opacity-100");
-}
-
-function schThuDetailsShow() {
-  const schthuoptionBox = document.getElementById("SchThuDetailsOption");
-
-  schthuoptionBox.classList.toggle("py-0");
-  schthuoptionBox.classList.toggle("max-h-0");
-  schthuoptionBox.classList.toggle("opacity-0");
-
-  schthuoptionBox.classList.toggle("py-4");
-  schthuoptionBox.classList.toggle("max-h-[80px]");
-  schthuoptionBox.classList.toggle("opacity-100");
-}
-
-function schFriDetailsShow() {
-  const schfrioptionBox = document.getElementById("SchFriDetailsOption");
-
-  schfrioptionBox.classList.toggle("py-0");
-  schfrioptionBox.classList.toggle("max-h-0");
-  schfrioptionBox.classList.toggle("opacity-0");
-
-  schfrioptionBox.classList.toggle("py-4");
-  schfrioptionBox.classList.toggle("max-h-[80px]");
-  schfrioptionBox.classList.toggle("opacity-100");
-}
-
-function schSatDetailsShow() {
-  const schsatoptionBox = document.getElementById("SchSatDetailsOption");
-
-  schsatoptionBox.classList.toggle("py-0");
-  schsatoptionBox.classList.toggle("max-h-0");
-  schsatoptionBox.classList.toggle("opacity-0");
-
-  schsatoptionBox.classList.toggle("py-4");
-  schsatoptionBox.classList.toggle("max-h-[80px]");
-  schsatoptionBox.classList.toggle("opacity-100");
-}
-
-function transactionDetailsTableOne() {
-  const optionBox = document.getElementById("TransactionDetailsTableOne");
-
-  optionBox.classList.toggle("my-0");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("my-4");
-  optionBox.classList.toggle("max-h-[350px]");
-  optionBox.classList.toggle("opacity-100");
-}
-
-function transactionDetailsTableTwo() {
-  const optionBox = document.getElementById("TransactionDetailsTableTwo");
-
-  optionBox.classList.toggle("my-0");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("my-4");
-  optionBox.classList.toggle("max-h-[350px]");
-  optionBox.classList.toggle("opacity-100");
-}
-
-function transactionDetailsTableThree() {
-  const optionBox = document.getElementById("TransactionDetailsTableThree");
-
-  optionBox.classList.toggle("my-0");
-  optionBox.classList.toggle("max-h-0");
-  optionBox.classList.toggle("opacity-0");
-
-  optionBox.classList.toggle("my-4");
-  optionBox.classList.toggle("max-h-[350px]");
-  optionBox.classList.toggle("opacity-100");
 }
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
