@@ -168,28 +168,71 @@
     <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 flex items-center justify-between z-100">
-        <h5 class="text-[135%] text-[var(--dark-primary)]/80 font-medium">Good Morning!</h5>
-        <span class="block text-[85%] text-[var(--dark-primary)]/60 font-medium mt-[-2px]">Hello, Puja</span>
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[var(--light)] flex items-center gap-x-2 z-100">
+        <button class="border-none flex items-center justify-center">
+          <i class="bi bi-list text-[var(--dark)]/50 text-[150%]"></i>
+        </button>
+        <P class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</P>
       </div>
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
-      <div class="content h-auto w-full bg-[var(--light)] py-1 rounded-tl-[15px] rounded-tr-[15px]">
+      <div class="content h-auto w-full">
 
         <!----- CONTENT-HEADING ------->
-        <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] py-3 px-5">
-          <h5 class="text-[var(--dark)]/70 font-semibold text-[110%] flex items-center hover:bg-[var(--secondary)] min-[576px]:text-[120%]">
-            <div class="h-10 w-10 rounded-[50%] border border-solid border-[var(--primary)]/30 bg-[var(--secondary)]/30 flex items-center justify-center me-3">
-              <i class="bi bi-calendar2-check text-[80%] text-[var(--primary)]/90"></i>
-            </div>
-            Booking <span class="text-[70%] font-medium pl-1">[For Think Lab Users]</span>
-          </h5>
-          <button class="h-11 w-11 rounded-[50%] bg-[var(--secondary)]/30 border-none flex items-center justify-center" onclick="openBookingSetupModal()">
-            <img src="assets/images/filter.png" alt="filter icon" class="scale-35" />
-          </button>
+        <div class="h-auto w-full py-4 px-7">
+          <div class="h-18 w-18 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center mb-2">
+            <i class="bi bi-calendar3 text-[220%] text-[var(--primary)]/80"></i>
+          </div>
+          <h5 class="pl-3 text-[var(--dark-primary)]/90 font-medium text-[140%] flex items-center">Booking</h5>
         </div>
         <!----- CONTENT-HEADING ------->
+
+        <div class="h-auto w-full px-7">
+        
+          <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-3 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0">
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
+                <i class="bi bi-calendar3 text-[120%] text-[var(--primary)]/80"></i>
+              </div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[95%] flex items-center hover:bg-[var(--secondary)]">Lab Visit</h5>
+            </div>
+            <label class="inline-flex cursor-pointer items-center !mb-0">
+              <input type="radio" name="gender" class="peer sr-only" />
+                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
+                </div>
+            </label>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-3 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0">
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
+                <i class="bi bi-calendar3 text-[120%] text-[var(--primary)]/80"></i>
+              </div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[95%] flex items-center hover:bg-[var(--secondary)]">Home Collection</h5>
+            </div>
+            <label class="inline-flex cursor-pointer items-center !mb-0">
+              <input type="radio" name="gender" class="peer sr-only" />
+                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
+                </div>
+            </label>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-3 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0">
+            <div class="flex items-center">
+              <div class="h-12 w-12 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
+                <i class="bi bi-calendar3 text-[120%] text-[var(--primary)]/80"></i>
+              </div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[95%] flex items-center hover:bg-[var(--secondary)]">Doctor Consultation</h5>
+            </div>
+            <label class="inline-flex cursor-pointer items-center !mb-0">
+              <input type="radio" name="gender" class="peer sr-only" />
+                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
+                </div>
+            </label>
+          </div>
+        
+        </div>
         
       </div>
       <!----- PAGE-CONTENT ------->
