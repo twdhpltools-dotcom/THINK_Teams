@@ -28,6 +28,7 @@ body{
     font-family: var(--font);
     background: var(--light);
     color: var(--dark-primary);
+
 }
 
 a {
@@ -86,13 +87,28 @@ hr {
 }
 
 .content {
-    margin-top: 80px;
+    margin-top: 70px;
     position: relative;
     z-index: 2;
 }
 
 .rupee-symbol {
     font-family: "Rosario", sans-serif;
+}
+
+.chip {
+    color: var(--dark);
+    opacity: 0.3;
+}
+
+.chip.active {
+    opacity: 0.8;
+}
+
+.chip.selected {
+    color: var(--light);
+    background: var(--primary);
+    opacity: 1;
 }
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
@@ -127,6 +143,36 @@ hr {
 }
 /* ----------------------------------------- CSS FOR PRE-LOADER COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- CSS FOR FEATURED-SECTION START ---------------------------------------------- */
+.feature-section.active,
+.feature-section:hover {
+    background: var(--primary);
+}
+
+.feature-section.active h5,
+.feature-section:hover h5 {
+    color: var(--light);
+}
+
+.feature-section.active .feature-section-img,
+.feature-section:hover .feature-section-img {
+    background: #ffffffef;
+}
+/* ----------------------------------------- CSS FOR FEATURED-SECTION START ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR DATE-CHIPS-SECTION START ---------------------------------------------- */
+
+.date-chip.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--light);
+}
+
+.date-chip:hover {
+    border-color: var(--primary);
+}
+/* ----------------------------------------- CSS FOR DATE-CHIPS-SECTION START ---------------------------------------------- */
+
 /* ----------------------------------------- CSS FOR ACCORDIAN START ---------------------------------------------- */
 .pg-accordion-body {
     transition:.35s ease;
@@ -143,7 +189,7 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: transparent;  
 }
 
 ::-webkit-scrollbar-thumb {
