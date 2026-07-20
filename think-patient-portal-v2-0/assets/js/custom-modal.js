@@ -1,37 +1,71 @@
 /*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
-/*-------------------------------------- DASHBOARD-SETUP ----------------------------------------*/
-function openDashboardSetupModal() {
-  const DashboardSetupModal = document.getElementById("DashboardSetupModal");
-  const DashboardSetupModalBox = document.getElementById("DashboardSetupModalBox");
+/*-------------------------------------- TIME-HOUR ----------------------------------------*/
+function openTimeHrModal() {
+  const TimeHrModal = document.getElementById("TimeHrModal");
+  const TimeHrModalBox = document.getElementById("TimeHrModalBox");
 
-  DashboardSetupModal.classList.remove("hidden");
-  DashboardSetupModal.classList.add("flex");
+  TimeHrModal.classList.remove("hidden");
+  TimeHrModal.classList.add("flex");
 
   setTimeout(() => {
-    DashboardSetupModalBox.classList.remove("opacity-0", "scale-95");
-    DashboardSetupModalBox.classList.add("opacity-100", "scale-100");
+    TimeHrModalBox.classList.remove("opacity-0", "scale-95");
+    TimeHrModalBox.classList.add("opacity-100", "scale-100");
   }, 10);
 }
 
-function closeDashboardSetupModal() {
-  const DashboardSetupModal = document.getElementById("DashboardSetupModal");
-  const DashboardSetupModalBox = document.getElementById("DashboardSetupModalBox");
+function closeTimeHrModal() {
+  const TimeHrModal = document.getElementById("TimeHrModal");
+  const TimeHrModalBox = document.getElementById("TimeHrModalBox");
 
-  DashboardSetupModalBox.classList.add("opacity-0", "scale-95");
-  DashboardSetupModalBox.classList.remove("opacity-100", "scale-100");
+  TimeHrModalBox.classList.add("opacity-0", "scale-95");
+  TimeHrModalBox.classList.remove("opacity-100", "scale-100");
 
   setTimeout(() => {
-    DashboardSetupModal.classList.add("hidden");
-    DashboardSetupModal.classList.remove("flex");
+    TimeHrModal.classList.add("hidden");
+    TimeHrModal.classList.remove("flex");
   }, 300);
 }
 
-document.getElementById("DashboardSetupModal").addEventListener("click", function(e) {
+document.getElementById("TimeHrModal").addEventListener("click", function(e) {
   if (e.target === this) {
-    closeDashboardSetupModal();
+    closeTimeHrModal();
   }
 });
-/*-------------------------------------- DASHBOARD-SETUP ----------------------------------------*/
+/*-------------------------------------- TIME-HOUR ----------------------------------------*/
+
+/*-------------------------------------- TIME-MINUTE ----------------------------------------*/
+function openTimeMnModal() {
+  const TimeMnModal = document.getElementById("TimeMnModal");
+  const TimeMnModalBox = document.getElementById("TimeMnModalBox");
+
+  TimeMnModal.classList.remove("hidden");
+  TimeMnModal.classList.add("flex");
+
+  setTimeout(() => {
+    TimeMnModalBox.classList.remove("opacity-0", "scale-95");
+    TimeMnModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeTimeMnModal() {
+  const TimeMnModal = document.getElementById("TimeMnModal");
+  const TimeMnModalBox = document.getElementById("TimeMnModalBox");
+
+  TimeMnModalBox.classList.add("opacity-0", "scale-95");
+  TimeMnModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    TimeMnModal.classList.add("hidden");
+    TimeMnModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("TimeMnModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeTimeMnModal();
+  }
+});
+/*-------------------------------------- TIME-MINUTE ----------------------------------------*/
 
 /*-------------------------------------- SHOW-PROFILE ----------------------------------------*/
 function openShowProfileModal() {
