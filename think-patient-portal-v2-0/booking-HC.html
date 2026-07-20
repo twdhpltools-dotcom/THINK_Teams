@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booking | ThinkLab Patient Portal | Secure Patient Management Application</title>
+  <title>Home Collection | ThinkLab Patient Portal | Secure Patient Management Application</title>
 
-  <meta name="title" content="Booking | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="title" content="Home Collection | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="description" content="Loading... | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
@@ -201,7 +201,7 @@
 
       <!----- TOP-BAR ------->
       <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[var(--light)] flex items-center gap-x-2 z-100">
-        <button class="border-none flex items-center justify-center" onclick="openSideBarMenuToggle()">
+        <button class="border-none flex items-center justify-center" onclick="openSideBarMenu()">
           <i class="bi bi-list text-[var(--dark)]/50 text-[150%]"></i>
         </button>
         <P class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</P>
@@ -214,54 +214,58 @@
         <!----- CONTENT-HEADING ------->
         <div class="h-auto w-full pt-4 pb-3 px-7">
           <div class="h-18 w-18 p-4 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center mb-2">
-            <img src="assets/images/calendar.png" alt="featured icon" />
+            <img src="assets/images/home.png" alt="featured icon" />
           </div>
-          <h5 class="text-[var(--dark-primary)]/90 font-medium text-[140%] flex items-center">Booking</h5>
+          <h5 class="text-[var(--dark-primary)]/90 font-medium text-[140%] flex items-center">Home Collection</h5>
         </div>
         <!----- CONTENT-HEADING ------->
 
         <div class="h-auto w-full px-7">
         
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-2 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0" onclick="window.location.href='booking-LV.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-12 w-12 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
-                <img src="assets/images/microscope.png" alt="featured icon" />
-              </div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[90%] flex items-center hover:bg-[var(--secondary)]">Lab Visit</h5>
+          <div class="h-auto w-full flex items-center py-2 mb-3 cursor-pointer">
+            <div class="h-10 w-10 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center me-2">
+              <i class="bi bi-crosshair text-[140%] text-[var(--primary)]"></i>
             </div>
-            <label class="inline-flex cursor-pointer items-center !mb-0">
-              <input type="radio" class="peer sr-only" />
-                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
-                </div>
-            </label>
+            <p class="text-[100%] font-medium text-[var(--primary)]">Use my current location <span class="block text-[var(--dark)]/40 font-normal text-[80%]">Allow access to location</span></p>
           </div>
 
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-2 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0" onclick="window.location.href='booking-HC.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-12 w-12 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
-                <img src="assets/images/home.png" alt="featured icon" />
-              </div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[90%] flex items-center hover:bg-[var(--secondary)]">Home Collection</h5>
+          <div class="h-auto w-full">
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <textarea rows="2" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Address"></textarea>
             </div>
-            <label class="inline-flex cursor-pointer items-center !mb-0">
-              <input type="radio" class="peer sr-only" />
-                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
-                </div>
-            </label>
-          </div>
-
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-2 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0" onclick="window.location.href='booking-DC.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-12 w-12 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
-              <img src="assets/images/doctor.png" alt="featured icon" />
-              </div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[90%] flex items-center hover:bg-[var(--secondary)]">Doctor Consultation</h5>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Landmark" />
             </div>
-            <label class="inline-flex cursor-pointer items-center !mb-0">
-              <input type="radio" class="peer sr-only" />
-                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number" />
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Prescribing Doctor" />
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Search by Test Name" />
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Any Disease" />
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
+              <input type="date" class="h-auto w-38 bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Select Date" />
+              <input type="text" class="h-auto w-38 bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Select Time" onclick="openBookingHCTimeMenu()" />
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="file" id="FileUpload" hidden="">
+              <button class="h-auto w-full border border-dashed border-[#00000020] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium" onclick="document.getElementById('FileUpload').click()">
+                <div class="h-11 w-11 mx-auto mb-1 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+                  <i class="bi bi-cloud-upload text-[180%] text-[var(--primary)]"></i>
                 </div>
-            </label>
+                Prescription upload
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mt-5 mb-2 last:mb-0">
+              <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='login-otp.html'">
+                Confirm
+              </button>
+            </div>
           </div>
         
         </div>
@@ -271,7 +275,154 @@
 
     </main>
 
+    <!----- BOOKING-HC-TIME-MENU ------->
+    <div id="BookingHCTimeMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
+    <aside id="BookingHCTimeMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pt-3 pb-25 px-6 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <button class="h-6 w-6 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeBookingHCTimeMenu()">
+        <i class="bi bi-x-lg text-[80%] text-[var(--dark)]/90"></i>
+      </button>
+
+      <div class="h-auto w-full py-5 text-center">
+        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Select Time</h4>
+      </div>
+
+      <div class="h-40 w-full">
+        <div class="h-auto w-full text-center">
+          <label class="inline-block font-medium text-[var(--dark)]/80">Time</label>
+          <div class="flex items-center justify-center">
+            <input type="number" class="h-12 w-15 bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" onclick="openTimeHrModal()">
+            <span class="mx-2">-</span>
+            <input type="number" class="h-12 w-15 bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)]" onclick="openTimeMnModal()">
+            <span class="mx-2">-</span>
+            <select class="h-12 w-15 bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-3 py-2 text-[90%] text-[var(--dark-primary)]/60 font-normal text-center hover:border-[var(--primary)]">
+              <option>AM</option>
+              <option>PM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!----- BOOKING-HC-TIME-MENU ------->
+
   </section>
+
+  <!----- TIME-HOUR MODAL ------->
+  <div id="TimeHrModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTimeHrModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TimeHrModalBox" class="h-auto w-60 max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[95%] font-semibold text-[var(--dark)]/60">
+          Select Hours
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-4 px-4">
+        <div class="h-10 overflow-y-auto">
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            01
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            02
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            03
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            04
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            05
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            06
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            07
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            08
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            09
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            10
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            11
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            12
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TIME-HOUR MODAL ------->
+
+  <!----- TIME-MINUTE MODAL ------->
+  <div id="TimeMnModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeTimeMnModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="TimeMnModalBox" class="h-auto w-60 max-w-[420px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 py-4">
+        <h5 class="text-[95%] font-semibold text-[var(--dark)]/60">
+          Select Minutes
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center py-4 px-4">
+        <div class="h-10 overflow-y-auto">
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            00
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            15
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            30
+          </button>
+
+          <button class="text-left py-3 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/50 font-normal text-[100%] flex items-center hover:bg-[var(--secondary)] hover:text-[var(--dark)] min-[576px]:text-[95%]">
+            45
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- TIME-MINUTE MODAL ------->
   <!----------------------------------- BOOKING-SELECTION SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->

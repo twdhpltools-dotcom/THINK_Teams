@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booking | ThinkLab Patient Portal | Secure Patient Management Application</title>
+  <title>Doctor Consultation | ThinkLab Patient Portal | Secure Patient Management Application</title>
 
-  <meta name="title" content="Booking | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="title" content="Doctor Consultation | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="description" content="Loading... | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
@@ -201,7 +201,7 @@
 
       <!----- TOP-BAR ------->
       <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[var(--light)] flex items-center gap-x-2 z-100">
-        <button class="border-none flex items-center justify-center" onclick="openSideBarMenuToggle()">
+        <button class="border-none flex items-center justify-center" onclick="openSideBarMenu()">
           <i class="bi bi-list text-[var(--dark)]/50 text-[150%]"></i>
         </button>
         <P class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</P>
@@ -214,54 +214,112 @@
         <!----- CONTENT-HEADING ------->
         <div class="h-auto w-full pt-4 pb-3 px-7">
           <div class="h-18 w-18 p-4 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center mb-2">
-            <img src="assets/images/calendar.png" alt="featured icon" />
+            <img src="assets/images/doctor.png" alt="featured icon" />
           </div>
-          <h5 class="text-[var(--dark-primary)]/90 font-medium text-[140%] flex items-center">Booking</h5>
+          <h5 class="text-[var(--dark-primary)]/90 font-medium text-[140%] flex items-center">Doctor Consultation</h5>
         </div>
         <!----- CONTENT-HEADING ------->
 
         <div class="h-auto w-full px-7">
-        
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-2 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0" onclick="window.location.href='booking-LV.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-12 w-12 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
-                <img src="assets/images/microscope.png" alt="featured icon" />
-              </div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[90%] flex items-center hover:bg-[var(--secondary)]">Lab Visit</h5>
-            </div>
-            <label class="inline-flex cursor-pointer items-center !mb-0">
-              <input type="radio" class="peer sr-only" />
-                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
-                </div>
-            </label>
-          </div>
 
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-2 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0" onclick="window.location.href='booking-HC.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-12 w-12 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
-                <img src="assets/images/home.png" alt="featured icon" />
-              </div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[90%] flex items-center hover:bg-[var(--secondary)]">Home Collection</h5>
+          <div class="h-auto w-full">
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number" />
             </div>
-            <label class="inline-flex cursor-pointer items-center !mb-0">
-              <input type="radio" class="peer sr-only" />
-                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
-                </div>
-            </label>
-          </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Reason for Doctor Visit" />
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <select class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]">
+                <option>Select Department</option>
+                <option>General Medicine</option>
+                <option>Rheumatology</option>
+                <option>Gynocology</option>
+                <option>ENT</option>
+                <option>Others</option>
+              </select>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
+              <select class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]">
+                <option>Doctors Name</option>
+                <option>Dr. Priya Saha</option>
+                <option>Dr. Amit Kumar Das</option>
+                <option>Dr. Ranjit Bhattacherjee</option>
+                <option>Dr. Swapna Roy</option>
+              </select>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
+              <h6 class="text-[var(--dark)]/60 font-semibold text-[90%]">Slots</h6>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
+              <div class="w-full overflow-x-auto scrollbar-hide">
+                <div class="inline-flex gap-2 min-w-max py-1">
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out active">
+                      <span class="text-[70%] font-medium block">Mon</span>
+                      <span class="text-[115%] font-semibold block">16</span>
+                  </div>
 
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/10 rounded-xl py-2 px-4 mb-3 cursor-pointer transition-all duration-300 ease-in-out last:mb-0" onclick="window.location.href='booking-DC.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-12 w-12 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/10 flex items-center justify-center me-3">
-              <img src="assets/images/doctor.png" alt="featured icon" />
-              </div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[90%] flex items-center hover:bg-[var(--secondary)]">Doctor Consultation</h5>
-            </div>
-            <label class="inline-flex cursor-pointer items-center !mb-0">
-              <input type="radio" class="peer sr-only" />
-                <div class="h-5 w-5 rounded-full border border-[#E91E63] bg-white transition-all duration-300 peer-checked:border-[4px] peer-checked:border-[#E91E63]">
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
+                      <span class="text-[70%] font-medium block">Tue</span>
+                      <span class="text-[115%] font-semibold block">17</span>
+                  </div>
+
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
+                      <span class="text-[70%] font-medium block">Wed</span>
+                      <span class="text-[115%] font-semibold block">18</span>
+                  </div>
+
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out active">
+                      <span class="text-[70%] font-medium block">Thu</span>
+                      <span class="text-[115%] font-semibold block">19</span>
+                  </div>
+
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
+                      <span class="text-[70%] font-medium block">Fri</span>
+                      <span class="text-[115%] font-semibold block">20</span>
+                  </div>
+
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
+                      <span class="text-[70%] font-medium block">Sat</span>
+                      <span class="text-[115%] font-semibold block">21</span>
+                  </div>
+
+                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
+                      <span class="text-[70%] font-medium block">Sun</span>
+                      <span class="text-[115%] font-semibold block">22</span>
+                  </div>
                 </div>
-            </label>
+              </div>
+            </div>
+            <hr class="border-[#00000020] !my-3" />
+            <div class="h-auto w-full flex items-center flex-wrap gap-x-1 gap-y-1 mb-8 last:mb-0">
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer active">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer selected">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer active">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer active">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer selected">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer selected">08:00 AM</span>
+              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="file" id="FileUpload" hidden="">
+              <button class="h-auto w-full border border-dashed border-[#00000020] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium" onclick="document.getElementById('FileUpload').click()">
+                <div class="h-11 w-11 mx-auto mb-1 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+                  <i class="bi bi-cloud-upload text-[180%] text-[var(--primary)]"></i>
+                </div>
+                Prescription upload
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mt-5 mb-2 last:mb-0">
+              <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='login-otp.html'">
+                Confirm
+              </button>
+            </div>
           </div>
         
         </div>
