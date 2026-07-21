@@ -186,16 +186,16 @@
 
     <!----- BOTTOM-ISLAND ------->
     <div class="fixed bottom-0 h-auto w-full py-4 bg-[var(--light)] flex items-center justify-center gap-x-20 rounded-tl-[20px] rounded-tr-[20px] shadow-[0_-10px_25px_0_#00000010] z-101">
-      <a href="dashboard.html" class="text-center text-[75%] font-medium text-[var(--dark-primary)]/90">
-        <i class="bi bi-house-door block text-[170%] text-[var(--dark-primary)]/90 mb-[-5px]"></i>
+      <a href="dashboard.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 active">
+        <i class="bi bi-house-door block text-[170%] mb-[-5px]"></i>
         Home
       </a>
-      <a href="index.html" class="text-center text-[75%] font-medium text-[var(--primary)]/90">
-        <i class="bi bi-calendar-check block text-[170%] text-[var(--primary)]/90 mb-[-5px]"></i>
+      <a href="index.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90">
+        <i class="bi bi-calendar-check block text-[170%] mb-[-5px]"></i>
         Booking
       </a>
-      <a href="profile.html" class="text-center text-[75%] font-medium text-[var(--dark-primary]/90">
-        <i class="bi bi-person block text-[170%] text-[var(--dark-primary)]/90 mb-[-5px]"></i>
+      <a href="profile.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary])/90">
+        <i class="bi bi-person block text-[170%] mb-[-5px]"></i>
         Profile
       </a>
     </div>
@@ -224,6 +224,7 @@
 
           <div class="h-auto w-full flex items-center justify-between">
             <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Find Your Doctors</h6>
+            <a href="doctor-dept-lists.html" class="text-[80%] text-[var(--dark)]/60 font-medium">See All <i class="bi bi-chevron-right"></i></a>
           </div>
 
           <div class="h-auto w-full py-3">
@@ -307,7 +308,7 @@
 
           <div class="h-auto w-full flex items-center justify-between">
             <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Recommend Test</h6>
-            <a href="test-lists-html" class="text-[80%] text-[var(--dark)]/60 font-medium">See All <i class="bi bi-chevron-right"></i></a>
+            <a href="test-lists.html" class="text-[80%] text-[var(--dark)]/60 font-medium">See All <i class="bi bi-chevron-right"></i></a>
           </div>
 
           <div class="h-auto w-full py-3">
@@ -319,7 +320,7 @@
                     <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
                   </div>
                   <div class="h-auto w-full text-center">
-                    <h6 class="text-[85%] font-bold text-[var(--dark)]/70">CBC</h6>
+                    <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
                     <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
@@ -333,7 +334,7 @@
                     <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
                   </div>
                   <div class="h-auto w-full text-center">
-                    <h6 class="text-[85%] font-bold text-[var(--dark)]/70">CBC</h6>
+                    <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
                     <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
@@ -347,7 +348,60 @@
                     <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
                   </div>
                   <div class="h-auto w-full text-center">
-                    <h6 class="text-[85%] font-bold text-[var(--dark)]/70">CBC</h6>
+                    <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
+                    <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
+                    <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
+                    <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between mt-4">
+            <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Recommend Profile Package</h6>
+            <a href="package-lists.html" class="text-[80%] text-[var(--dark)]/60 font-medium">See All <i class="bi bi-chevron-right"></i></a>
+          </div>
+
+          <div class="h-auto w-full py-3">
+
+            <div class="owl-carousel owl-theme" id="DashboardPackCarousel">
+              <div class="item">
+                <div class="h-auto w-full">
+                  <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
+                    <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+                  </div>
+                  <div class="h-auto w-full text-center">
+                    <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
+                    <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
+                    <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
+                    <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="h-auto w-full">
+                  <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
+                    <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+                  </div>
+                  <div class="h-auto w-full text-center">
+                    <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
+                    <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
+                    <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
+                    <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="h-auto w-full">
+                  <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
+                    <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+                  </div>
+                  <div class="h-auto w-full text-center">
+                    <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
                     <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
@@ -378,8 +432,8 @@
               <i class="pg-accordion-icon ms-2 bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
             </div>
 
-            <div class="pg-accordion-content max-h-0 py-0 overflow-hidden transition-all duration-300">
-              <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] pb-1 mb-2 last:pb-0 last:border-none last:mb-0">
+            <div class="pg-accordion-content max-h-0 pt-0 overflow-hidden transition-all duration-300">
+              <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] pb-1 mb-2">
                 <div>
                   <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
                   <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
@@ -388,7 +442,7 @@
                   <i class="bi bi-trash3-fill text-[#ff2222]"></i>
                 </button>
               </div>
-              <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] pb-1 mb-2 last:pb-0 last:border-none last:mb-0">
+              <div class="h-auto w-full flex items-center justify-between mb-2">
                 <div>
                   <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
                   <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
@@ -397,7 +451,11 @@
                   <i class="bi bi-trash3-fill text-[#ff2222]"></i>
                 </button>
               </div>
-
+              <div class="text-center">
+                <button class="rounded-sm border border-[var(--primary)] px-4 py-1 text-[12px] font-semibold text-[var(--primary)] transition-all duration-200">
+                  <i class="bi bi-plus-circle"></i> Add More
+                </button>
+              </div>
             </div>
           </div>
 
