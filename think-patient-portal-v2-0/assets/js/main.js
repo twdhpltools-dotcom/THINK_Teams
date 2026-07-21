@@ -70,15 +70,25 @@ $(document).ready(function(){
   var owl = $('#DashboardDocCarousel');
   
   owl.owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: false,
-      autoplayTimeout: 1500,
-      autoplaySpeed: 1500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      items: 3
+    margin: 10,
+    loop: true,
+    autoplay: false,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      768: {
+        items: 6,
+      },
+      1024: {
+        items: 9,
+      }
+    }
   });
 });
 
@@ -89,28 +99,38 @@ $(document).ready(function () {
   indicator.css("width", (100 / totalSlides) + "%");
 
   carousel.owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 4000,
-      autoplaySpeed: 2500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      rtl: true,
-      items: 1
+    margin: 10,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 2500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1024: {
+        items: 4,
+      }
+    }
   });
 
   carousel.on("changed.owl.carousel", function (event) {
     let currentIndex =
-        event.item.index - event.relatedTarget._clones.length / 2;
+      event.item.index - event.relatedTarget._clones.length / 2;
 
     currentIndex =
-        ((currentIndex % totalSlides) + totalSlides) % totalSlides;
+      ((currentIndex % totalSlides) + totalSlides) % totalSlides;
 
     indicator.css(
-        "transform",
-        "translateX(" + (currentIndex * 100) + "%)"
+      "transform",
+      "translateX(" + (currentIndex * 100) + "%)"
     );
   });
 });
@@ -119,16 +139,26 @@ $(document).ready(function(){
   var owl = $('#DashboardTestCarousel');
   
   owl.owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: false,
-      autoplayTimeout: 1500,
-      autoplaySpeed: 1500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      stagePadding: 20,
-      items: 2
+    margin: 10,
+    loop: true,
+    autoplay: false,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    stagePadding: 20,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      768: {
+        items: 4,
+      },
+      1024: {
+        items: 6,
+      }
+    }
   });
 });
 
@@ -136,16 +166,26 @@ $(document).ready(function(){
   var owl = $('#DashboardPackCarousel');
   
   owl.owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: false,
-      autoplayTimeout: 1500,
-      autoplaySpeed: 1500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      stagePadding: 20,
-      items: 2
+    margin: 10,
+    loop: true,
+    autoplay: false,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    stagePadding: 20,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      768: {
+        items: 4,
+      },
+      1024: {
+        items: 6,
+      }
+    }
   });
 });
 /* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
