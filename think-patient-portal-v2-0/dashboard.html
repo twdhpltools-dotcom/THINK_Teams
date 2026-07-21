@@ -6,7 +6,7 @@
   <title>Welcome to ThinkLab Patient Portal | Secure Patient Management Application</title>
 
   <meta name="title" content="Welcome to ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
-  <meta name="description" content="Loading... | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
 
@@ -204,11 +204,17 @@
     <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[var(--light)] flex items-center gap-x-2 z-100">
-        <button class="border-none flex items-center justify-center" onclick="openSideBarMenuToggle()">
-          <i class="bi bi-list text-[var(--dark)]/50 text-[150%]"></i>
-        </button>
-        <P class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</P>
+      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
+        <div class="flex items-center gap-x-2">
+          <button class="border-none flex items-center justify-center" onclick="openSideBarMenu()">
+            <i class="bi bi-list text-[var(--dark)]/50 text-[150%]"></i>
+          </button>
+          <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+        </div>
+        <div class="relative z-1 h-11 w-11 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+          <img src="assets/images/bell.png" alt="notf icon">
+          <span class="absolute top-[-10px] right-[-10px] z-2 py-1 px-2 rounded-2xl bg-[var(--primary)] text-center text-[75%] font-semibold text-[var(--light)]">11</span>
+        </div>
       </div>
       <!----- TOP-BAR ------->
 
@@ -235,7 +241,7 @@
                   <div class="h-16 w-16 p-4 rounded-[50%] bg-[var(--light)] flex items-center justify-center mx-auto mb-2">
                     <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
                   </div>
-                  <p class="text-[80%] font-semibold text-[var(--dark)]/60">Neurology</p>
+                  <p class="text-[80%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
                 </div>
               </div>
 
@@ -244,7 +250,7 @@
                   <div class="h-16 w-16 p-4 rounded-[50%] bg-[var(--light)] flex items-center justify-center mx-auto mb-2">
                     <img class="opacity-70" src="assets/images/heart.png" alt="Organ icon">
                   </div>
-                  <p class="text-[80%] font-semibold text-[var(--dark)]/60">Cardiology</p>
+                  <p class="text-[80%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Cardiology</p>
                 </div>
               </div>
 
@@ -253,7 +259,7 @@
                   <div class="h-16 w-16 p-4 rounded-[50%] bg-[var(--light)] flex items-center justify-center mx-auto mb-2">
                     <img class="opacity-70" src="assets/images/bone-pain.png" alt="Organ icon">
                   </div>
-                  <p class="text-[80%] font-semibold text-[var(--dark)]/60">Orthometric</p>
+                  <p class="text-[80%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Orthometric</p>
                 </div>
               </div>
 
@@ -262,7 +268,7 @@
                   <div class="h-16 w-16 p-4 rounded-[50%] bg-[var(--light)] flex items-center justify-center mx-auto mb-2">
                     <img class="opacity-70" src="assets/images/kidneys.png" alt="Organ icon">
                   </div>
-                  <p class="text-[80%] font-semibold text-[var(--dark)]/60">Pulmonology</p>
+                  <p class="text-[80%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Pulmonology</p>
                 </div>
               </div>
 
@@ -271,7 +277,7 @@
                   <div class="h-16 w-16 p-4 rounded-[50%] bg-[var(--light)] flex items-center justify-center mx-auto mb-2">
                     <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
                   </div>
-                  <p class="text-[80%] font-semibold text-[var(--dark)]/60">Neurology</p>
+                  <p class="text-[80%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
                 </div>
               </div>
             </div>
@@ -323,7 +329,7 @@
                     <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                    <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                    <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
                   </div>
                 </div>
               </div>
@@ -337,7 +343,7 @@
                     <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                    <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                    <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
                   </div>
                 </div>
               </div>
@@ -376,7 +382,7 @@
                     <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                    <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                    <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
                   </div>
                 </div>
               </div>
@@ -390,7 +396,7 @@
                     <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                     <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                     <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                    <button data-test-name="CBC" class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                    <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
                   </div>
                 </div>
               </div>
@@ -459,7 +465,7 @@
             </div>
           </div>
 
-          <button id="GoToCartBtn" class="absolute right-5 top-4 rounded-sm border border-[var(--primary)] px-4 py-1 text-[12px] font-semibold text-[var(--primary)] transition-all duration-200">
+          <button id="GoToCartBtn" class="absolute right-5 top-4 rounded-sm border border-[var(--primary)] px-4 py-1 text-[12px] font-semibold text-[var(--primary)] transition-all duration-200" onclick="window.location.href='cart.html'">
             Go To Cart
           </button>
 
