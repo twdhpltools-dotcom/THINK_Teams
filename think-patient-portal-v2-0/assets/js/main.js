@@ -72,7 +72,7 @@ $(document).ready(function(){
   owl.owlCarousel({
       margin: 10,
       loop: true,
-      autoplay: true,
+      autoplay: false,
       autoplayTimeout: 1500,
       autoplaySpeed: 1500,
       nav: false,
@@ -83,36 +83,36 @@ $(document).ready(function(){
 });
 
 $(document).ready(function () {
-    const carousel = $("#DashboardBanCarousel");
-    const indicator = $("#DashboardBanIndicator");
-    const totalSlides = carousel.find(".item").length;
-    indicator.css("width", (100 / totalSlides) + "%");
+  const carousel = $("#DashboardBanCarousel");
+  const indicator = $("#DashboardBanIndicator");
+  const totalSlides = carousel.find(".item").length;
+  indicator.css("width", (100 / totalSlides) + "%");
 
-    carousel.owlCarousel({
-        margin: 10,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 2500,
-        autoplaySpeed: 2500,
-        nav: false,
-        dots: false,
-        autoplayHoverPause: true,
-        rtl: true,
-        items: 1
-    });
+  carousel.owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplaySpeed: 2500,
+      nav: false,
+      dots: false,
+      autoplayHoverPause: true,
+      rtl: true,
+      items: 1
+  });
 
-    carousel.on("changed.owl.carousel", function (event) {
-      let currentIndex =
-          event.item.index - event.relatedTarget._clones.length / 2;
+  carousel.on("changed.owl.carousel", function (event) {
+    let currentIndex =
+        event.item.index - event.relatedTarget._clones.length / 2;
 
-      currentIndex =
-          ((currentIndex % totalSlides) + totalSlides) % totalSlides;
+    currentIndex =
+        ((currentIndex % totalSlides) + totalSlides) % totalSlides;
 
-      indicator.css(
-          "transform",
-          "translateX(" + (currentIndex * 100) + "%)"
-      );
-    });
+    indicator.css(
+        "transform",
+        "translateX(" + (currentIndex * 100) + "%)"
+    );
+  });
 });
 
 $(document).ready(function(){
@@ -121,7 +121,24 @@ $(document).ready(function(){
   owl.owlCarousel({
       margin: 10,
       loop: true,
-      autoplay: true,
+      autoplay: false,
+      autoplayTimeout: 1500,
+      autoplaySpeed: 1500,
+      nav: false,
+      dots: false,
+      autoplayHoverPause: true,
+      stagePadding: 20,
+      items: 2
+  });
+});
+
+$(document).ready(function(){
+  var owl = $('#DashboardPackCarousel');
+  
+  owl.owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: false,
       autoplayTimeout: 1500,
       autoplaySpeed: 1500,
       nav: false,
@@ -139,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const toast = document.getElementById("cartToast");
   const goToCartButton = document.getElementById("goToCartButton");
   let toastTimer;
-  const TOAST_DURATION = 90000;
+  const TOAST_DURATION = 6000;
 
   function showCartToast() {
     clearTimeout(toastTimer);
@@ -185,6 +202,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- TOAST ----------------------------------------*/
 
+/*-------------------------------------- ACCORDIAN ----------------------------------------*/
+function toggleAccordion(head) {
+  const body = head.nextElementSibling;
+  const icon = head.querySelector(".pg-accordion-icon");
+
+  body.classList.toggle("max-h-0");
+  body.classList.toggle("pt-0");
+  body.classList.toggle("max-h-[500px]");
+  body.classList.toggle("pt-4");
+
+  icon.classList.toggle("rotate-180");
+}
+/*-------------------------------------- ACCORDIAN ----------------------------------------*/
+
+/*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
+document.getElementById("FileUpload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (file) {
+    console.log(file.name);
+  }
+});
+/*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
+
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 function openTab(btn) {
     document.querySelectorAll(".tab-content").forEach(content=>{
@@ -199,29 +239,6 @@ function openTab(btn) {
     btn.classList.add("active");
 }
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
-
-/*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-document.getElementById("FileUpload").addEventListener("change", function () {
-  const file = this.files[0];
-  if (file) {
-    console.log(file.name);
-  }
-});
-/*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-
-/*-------------------------------------- ACCORDIAN ----------------------------------------*/
-function toggleAccordion(head) {
-  const body = head.nextElementSibling;
-  const icon = head.querySelector(".pg-accordion-icon");
-
-  body.classList.toggle("max-h-0");
-  body.classList.toggle("py-0");
-  body.classList.toggle("max-h-[500px]");
-  body.classList.toggle("py-4");
-
-  icon.classList.toggle("rotate-180");
-}
-/*-------------------------------------- ACCORDIAN ----------------------------------------*/
 
 /*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
 function openUserCamera(input) {
