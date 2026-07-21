@@ -21,13 +21,13 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!------------------ CSS FOR MAIN FILES START ---------------------->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
-
   <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
   <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
 </head>
 
 <body>
@@ -46,9 +46,9 @@
   <section class="page h-auto w-full">
 
     <!----- SIDEBAR-MENU ------->
-    <aside id="SideBarMenu" class="h-full w-full fixed bottom-0 z-102 bg-[var(--light)] pt-3 pb-25 px-6 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">  
+    <aside id="SideBarMenu" class="h-full w-full fixed bottom-0 z-102 bg-[var(--light)] pt-3 pb-25 px-6 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="h-auto py-3 w-full bg-[var(--light)] flex items-center">
-        <i class="bi bi-arrow-left text-[140%] text-[var(--dark)]/70 me-3" onclick="closeSideBarMenu()"></i>
+        <i class="bi bi-arrow-left text-[140%] text-[var(--dark)]/70 cursor-pointer me-3" onclick="closeSideBarMenu()"></i>
         <p class="block text-[85%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
       </div>
 
