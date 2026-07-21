@@ -65,6 +65,126 @@ function toggleSubMenu(btn) {
 }
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
+/* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) START ---------------------------------------------- */
+$(document).ready(function(){
+  var owl = $('#DashboardDocCarousel');
+  
+  owl.owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 1500,
+      autoplaySpeed: 1500,
+      nav: false,
+      dots: false,
+      autoplayHoverPause: true,
+      items: 3
+  });
+});
+
+$(document).ready(function () {
+    const carousel = $("#DashboardBanCarousel");
+    const indicator = $("#DashboardBanIndicator");
+    const totalSlides = carousel.find(".item").length;
+    indicator.css("width", (100 / totalSlides) + "%");
+
+    carousel.owlCarousel({
+        margin: 10,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplaySpeed: 2500,
+        nav: false,
+        dots: false,
+        autoplayHoverPause: true,
+        rtl: true,
+        items: 1
+    });
+
+    carousel.on("changed.owl.carousel", function (event) {
+      let currentIndex =
+          event.item.index - event.relatedTarget._clones.length / 2;
+
+      currentIndex =
+          ((currentIndex % totalSlides) + totalSlides) % totalSlides;
+
+      indicator.css(
+          "transform",
+          "translateX(" + (currentIndex * 100) + "%)"
+      );
+    });
+});
+
+$(document).ready(function(){
+  var owl = $('#DashboardTestCarousel');
+  
+  owl.owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 1500,
+      autoplaySpeed: 1500,
+      nav: false,
+      dots: false,
+      autoplayHoverPause: true,
+      stagePadding: 20,
+      items: 2
+  });
+});
+/* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
+
+/*-------------------------------------- TOAST ----------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toast = document.getElementById("cartToast");
+  const goToCartButton = document.getElementById("goToCartButton");
+  let toastTimer;
+  const TOAST_DURATION = 90000;
+
+  function showCartToast() {
+    clearTimeout(toastTimer);
+
+    toast.classList.remove(
+        "translate-y-[160%]",
+        "opacity-0"
+    );
+
+    toast.classList.add(
+        "translate-y-0",
+        "opacity-100"
+    );
+
+    toastTimer = setTimeout(function () {
+        hideCartToast();
+    }, TOAST_DURATION);
+  }
+
+  function hideCartToast() {
+    toast.classList.remove(
+      "translate-y-0",
+      "opacity-100"
+    );
+
+    toast.classList.add(
+      "translate-y-[160%]",
+      "opacity-0"
+    );
+  }
+
+  document.querySelectorAll(".cart-btn").forEach(function (button) {
+    button.addEventListener("click", function () {
+      showCartToast();
+      button.classList.add("added");
+      button.innerHTML = '<i class="bi bi-trash"></i> Remove';
+    });
+  });
+
+  goToCartButton.addEventListener("click", function () {
+    window.location.href = "cart.html";
+  });
+});
+/*-------------------------------------- TOAST ----------------------------------------*/
+
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 function openTab(btn) {
     document.querySelectorAll(".tab-content").forEach(content=>{
