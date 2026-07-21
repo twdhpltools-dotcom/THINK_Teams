@@ -15,35 +15,35 @@ function closeSideBarMenu() {
 }
 /*-------------------------------------- SIDEBAR-MENU ----------------------------------------*/
 
-/*-------------------------------------- BOOKING-HC-TIME-MENU ----------------------------------------*/
-function openBookingHCTimeMenu() { 
-    const BookingHCTimeMenu = document.getElementById("BookingHCTimeMenu"); 
-    const BookingHCTimeMenuOverlay = document.getElementById("BookingHCTimeMenuOverlay"); 
+/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+function openBookingTimeMenu() { 
+    const BookingTimeMenu = document.getElementById("BookingTimeMenu"); 
+    const BookingTimeMenuOverlay = document.getElementById("BookingTimeMenuOverlay"); 
  
-    BookingHCTimeMenu.classList.toggle("translate-y-full"); 
-    BookingHCTimeMenu.classList.toggle("opacity-0"); 
-    BookingHCTimeMenu.classList.toggle("translate-y-0"); 
-    BookingHCTimeMenu.classList.toggle("opacity-100"); 
+    BookingTimeMenu.classList.toggle("translate-y-full"); 
+    BookingTimeMenu.classList.toggle("opacity-0"); 
+    BookingTimeMenu.classList.toggle("translate-y-0"); 
+    BookingTimeMenu.classList.toggle("opacity-100"); 
  
-    BookingHCTimeMenuOverlay.classList.toggle("opacity-0"); 
-    BookingHCTimeMenuOverlay.classList.toggle("invisible"); 
+    BookingTimeMenuOverlay.classList.toggle("opacity-0"); 
+    BookingTimeMenuOverlay.classList.toggle("invisible"); 
 }
 
-function closeBookingHCTimeMenu() {
-    const BookingHCTimeMenu = document.getElementById("BookingHCTimeMenu");
-    const BookingHCTimeMenuOverlay = document.getElementById("BookingHCTimeMenuOverlay");
+function closeBookingTimeMenu() {
+    const BookingTimeMenu = document.getElementById("BookingTimeMenu");
+    const BookingTimeMenuOverlay = document.getElementById("BookingTimeMenuOverlay");
 
-    BookingHCTimeMenu.classList.add("translate-y-full", "opacity-0");
-    BookingHCTimeMenu.classList.remove("translate-y-0", "opacity-100");
+    BookingTimeMenu.classList.add("translate-y-full", "opacity-0");
+    BookingTimeMenu.classList.remove("translate-y-0", "opacity-100");
 
-    BookingHCTimeMenuOverlay.classList.add("opacity-0", "invisible");
-    BookingHCTimeMenuOverlay.classList.remove("opacity-100");
+    BookingTimeMenuOverlay.classList.add("opacity-0", "invisible");
+    BookingTimeMenuOverlay.classList.remove("opacity-100");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("BookingHCTimeMenuOverlay").addEventListener("click", function () {
-        closeBookingHCTimeMenu();
+    document.getElementById("BookingTimeMenuOverlay").addEventListener("click", function () {
+        closeBookingTimeMenu();
     });
 });
-/*-------------------------------------- BOOKING-HC-TIME-MENU ----------------------------------------*/
+/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
 /*------------------------------------------- JS FOR CUSTOM-MENU COMPLETE ------------------------------------------*/
