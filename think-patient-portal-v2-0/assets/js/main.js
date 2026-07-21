@@ -152,28 +152,20 @@ $(document).ready(function(){
 
 /*-------------------------------------- TOAST ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
-
   const toast = document.getElementById("cartToast");
+  const toastBox = toast.querySelector(".pointer-events-auto");
   const goToCartButton = document.getElementById("goToCartButton");
-  let toastTimer;
-  const TOAST_DURATION = 6000;
 
   function showCartToast() {
-    clearTimeout(toastTimer);
-
     toast.classList.remove(
-        "translate-y-[160%]",
-        "opacity-0"
+      "translate-y-[160%]",
+      "opacity-0"
     );
 
     toast.classList.add(
-        "translate-y-0",
-        "opacity-100"
+      "translate-y-0",
+      "opacity-100"
     );
-
-    toastTimer = setTimeout(function () {
-        hideCartToast();
-    }, TOAST_DURATION);
   }
 
   function hideCartToast() {
@@ -189,16 +181,43 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   document.querySelectorAll(".cart-btn").forEach(function (button) {
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
+      event.stopPropagation();
       showCartToast();
+
       button.classList.add("added");
       button.innerHTML = '<i class="bi bi-trash"></i> Remove';
     });
   });
 
-  goToCartButton.addEventListener("click", function () {
-    window.location.href = "cart.html";
-  });
+  document.addEventListener(
+    "pointerdown",
+    function (event) {
+      const toastIsOpen =
+        toast.classList.contains("translate-y-0");
+
+      if (!toastIsOpen) {
+        return;
+      }
+
+      const clickedInsideToast =
+        toastBox && toastBox.contains(event.target);
+
+      const clickedCartButton =
+        event.target.closest(".cart-btn");
+
+      if (!clickedInsideToast && !clickedCartButton) {
+        hideCartToast();
+      }
+    },
+    true
+  );
+
+  if (goToCartButton) {
+    goToCartButton.addEventListener("click", function () {
+      window.location.href = "cart.html";
+    });
+  }
 });
 /*-------------------------------------- TOAST ----------------------------------------*/
 
