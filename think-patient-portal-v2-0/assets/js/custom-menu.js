@@ -46,4 +46,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 /*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+
+/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+function openHomeCollectionStatusMenu() { 
+    const HomeCollectionStatusMenu = document.getElementById("HomeCollectionStatusMenu"); 
+    const HomeCollectionStatusMenuOverlay = document.getElementById("HomeCollectionStatusMenuOverlay"); 
+ 
+    HomeCollectionStatusMenu.classList.toggle("translate-y-full"); 
+    HomeCollectionStatusMenu.classList.toggle("opacity-0"); 
+    HomeCollectionStatusMenu.classList.toggle("translate-y-0"); 
+    HomeCollectionStatusMenu.classList.toggle("opacity-100"); 
+ 
+    HomeCollectionStatusMenuOverlay.classList.toggle("opacity-0"); 
+    HomeCollectionStatusMenuOverlay.classList.toggle("invisible"); 
+}
+
+function closeHomeCollectionStatusMenu() {
+    const HomeCollectionStatusMenu = document.getElementById("HomeCollectionStatusMenu");
+    const HomeCollectionStatuseMenuOverlay = document.getElementById("HomeCollectionStatusMenuOverlay");
+
+    HomeCollectionStatusMenu.classList.add("translate-y-full", "opacity-0");
+    HomeCollectionStatusMenu.classList.remove("translate-y-0", "opacity-100");
+
+    HomeCollectionStatusMenuOverlay.classList.add("opacity-0", "invisible");
+    HomeCollectionStatusMenuOverlay.classList.remove("opacity-100");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("HomeCollectionStatusMenuOverlay").addEventListener("click", function () {
+        closeHomeCollectionStatusMenu();
+    });
+});
+/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
 /*------------------------------------------- JS FOR CUSTOM-MENU COMPLETE ------------------------------------------*/

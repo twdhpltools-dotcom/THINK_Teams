@@ -286,16 +286,16 @@ document.getElementById("FileUpload").addEventListener("change", function () {
 
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 function openTab(btn) {
-    document.querySelectorAll(".tab-content").forEach(content=>{
-        content.classList.add("hidden");
-    });
+  document.querySelectorAll(".tab-content").forEach(content=>{
+      content.classList.add("hidden");
+  });
 
-    document.querySelectorAll(".tab-btn").forEach(button=>{
-        button.classList.remove("active");
-    });
+  document.querySelectorAll(".tab-btn").forEach(button=>{
+      button.classList.remove("active");
+  });
 
-    document.getElementById(btn.dataset.tab).classList.remove("hidden");
-    btn.classList.add("active");
+  document.getElementById(btn.dataset.tab).classList.remove("hidden");
+  btn.classList.add("active");
 }
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 
