@@ -204,7 +204,7 @@
     <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
+      <div class="h-auto py-4 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
         <div class="flex items-center gap-x-2">
           <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
           <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
@@ -219,111 +219,123 @@
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-7">
+        <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-5 pb-6 relative z-1">
+          <div class="h-auto w-full py-5 relative z-1">
             <i class="bi bi-search absolute bottom-[38%] right-[5%] z-2 text-[100%] text-[var(--dark)]"></i>
             <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]" placeholder="Search By Doctors, Departments ...">
           </div>
 
           <div class="h-auto w-full flex items-center justify-between">
-            <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Recommend Profile Package</h6>
+            <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Popular Health Packages</h6>
           </div>
 
-          <div class="h-auto w-full flex items-center justify-center flex-wrap gap-x-8 gap-y-5 py-3">
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+          <div class="h-auto w-full grid grid-cols-3 place-items-center gap-x-4 gap-y-5 py-3">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
 
-            <div class="h-auto w-30">
-              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-2">
-                <img class="opacity-60 !w-8 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
               </div>
               <div class="h-auto w-full text-center">
                 <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
                 <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
                 <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                <button class="cart-btn h-auto w-full mt-3 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Add</button>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
+              </div>
+            </div>
+
+            <div class="h-auto w-full">
+              <div class="h-auto py-5 rounded-md bg-[var(--light)] border border-solid border-[#00000010] flex items-center justify-center mx-auto mb-1">
+                <img class="opacity-60 !w-5 mx-auto" src="assets/images/flask.png" alt="Lab Test icon">
+              </div>
+              <div class="h-auto w-full text-center">
+                <h6 class="text-[85%] font-bold text-[var(--dark)]/60">CBC</h6>
+                <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">51 Parameters</p>
+                <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
+                <button class="cart-btn h-auto w-full mt-2 px-2 py-1 rounded-sm bg-[var(--light)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[75%] text-[var(--primary)]"><i class="bi bi-plus-circle"></i> Book Now</button>
               </div>
             </div>
           </div>
@@ -338,7 +350,7 @@
   <!----- CART TOAST ------->
   <div id="cartToast" class="pointer-events-none fixed inset-x-0 bottom-[90px] z-[103] flex translate-y-[160%] justify-center px-4 opacity-0 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]">
     <div class="pointer-events-auto w-full max-w-[420px] overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_15px_45px_rgba(15,23,42,.18)]">
-      <div class="h-auto w-full relative z-1 px-6 py-5">
+      <div class="h-auto w-full relative z-1 px-5 py-4">
 
           <div class="pg-accordion h-auto w-full">
             <div class="pg-accordion-head flex items-start cursor-pointer" onclick="toggleAccordion(this)">
@@ -373,8 +385,8 @@
             </div>
           </div>
 
-          <button id="GoToCartBtn" class="absolute right-5 top-4 rounded-sm border border-[var(--primary)] px-4 py-1 text-[12px] font-semibold text-[var(--primary)] transition-all duration-200" onclick="window.location.href='cart.html'">
-            Go To Cart
+          <button id="GoToCartBtn" class="absolute right-5 top-3 rounded-sm border border-[var(--primary)] px-4 py-1 text-[12px] font-semibold text-[var(--primary)] transition-all duration-200" onclick="window.location.href='cart.html'">
+            Review Selected Tests
           </button>
 
       </div>

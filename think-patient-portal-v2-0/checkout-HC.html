@@ -204,7 +204,7 @@
     <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
+      <div class="h-auto py-4 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
         <div class="flex items-center gap-x-2">
           <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
           <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
@@ -219,10 +219,10 @@
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-7">
+        <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-4 pb-5 text-center">
-            <h6 class="text-[var(--dark)]/60 font-semibold text-[100%]">Checkout For Home Collection</h6>
+          <div class="h-auto w-full py-4 text-center">
+            <h6 class="text-[var(--dark)]/60 font-semibold text-[100%]">Complete Your Home Collection Booking</h6>
           </div>
 
           <div class="h-auto w-full">
@@ -241,7 +241,7 @@
             <h6 class="text-[var(--dark)]/60 font-semibold text-[85%]">Coupon</h6>
           </div>
 
-          <div class="h-auto w-full pb-6">
+          <div class="h-auto w-full">
             <button class="flex h-auto w-full items-center justify-between rounded-[50px] border border-solid border-[var(--primary)]/20 bg-white px-1 py-1 shadow-sm transition-all duration-200 mb-4">
               <div class="flex items-center gap-3">
                 <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
@@ -257,7 +257,7 @@
               <i class="bi bi-chevron-right text-[75%] text-[var(--dark)]"></i>
             </button>
 
-            <button class="h-auto w-full flex items-center justify-center rounded-md py-3 text-[80%] text-[var(--primary)]/80 font-semibold bg-[var(--light)] border-2 border-dashed border-[var(--primary)]/40 outline-none">
+            <button class="h-auto w-full flex items-center justify-center rounded-md py-2 text-[80%] text-[var(--primary)]/80 font-semibold bg-[var(--light)] border-2 border-dashed border-[var(--primary)]/40 outline-none">
               <i class="bi bi-plus-circle text-[140%] me-2"></i> Add New Test
             </button>
           </div>
@@ -270,27 +270,31 @@
           </div>
 
           <div class="h-40 w-full overflow-y-auto">
-            <div class="h-auto w-full flex items-center justify-between bg-[#FBFBFB] border-b border-solid border-[#00000010] py-4 px-7">
-              <p class="text-[80%] font-medium text-[var(--dark)]/70">Payment Amount</p>
+            <div class="h-auto w-full flex items-center justify-between bg-[#FBFBFB] border-b border-solid border-[#00000010] py-4 px-5">
+              <p class="text-[80%] font-medium text-[var(--dark)]/70">Payment Summary</p>
               <em class="text-[90%] font-semibold text-[var(--dark-primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2500.00</em>
             </div>
-            <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] border-b border-solid border-[#00000010] py-4 px-7">
-              <p class="text-[80%] font-medium text-[var(--dark)]/70">Collection  Charge</p>
-              <em class="text-[90%] font-semibold text-[var(--dark-primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 50.00</em>
+            <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] border-b border-solid border-[#00000010] py-4 px-5">
+              <p class="text-[80%] font-medium text-[var(--dark)]/70">Subtotal</p>
+              <em class="text-[90%] font-semibold text-[var(--dark-primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
             </div>
-            <div class="h-auto w-full flex items-center justify-between bg-[#FBFBFB] border-b border-solid border-[#00000010] py-4 px-7">
-              <p class="text-[80%] font-medium text-[var(--dark)]/70">Discount</p>
-              <em class="text-[90%] font-semibold text-[var(--dark-primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 25.00</em>
+            <div class="h-auto w-full flex items-center justify-between bg-[#FBFBFB] border-b border-solid border-[#00000010] py-4 px-5">
+              <p class="text-[80%] font-medium text-[var(--dark)]/70">Collection Fee</p>
+              <em class="text-[90%] font-semibold text-[var(--dark-primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 00.00</em>
             </div>
-            <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] py-4 px-7">
-              <p class="text-[95%] font-semibold text-[var(--dark)]/70">Total Amount</p>
-              <em class="text-[90%] font-semibold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2575.00</em>
+            <div class="h-auto w-full flex items-center justify-between bg-[#FBFBFB] border-b border-solid border-[#00000010] py-4 px-5">
+              <p class="text-[80%] font-medium text-[var(--dark)]/70">Savings</p>
+              <em class="text-[90%] font-semibold text-[var(--dark-primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 500.00</em>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between bg-[var(--light)] py-4 px-5">
+              <p class="text-[95%] font-semibold text-[var(--dark)]/70">Total Payable</p>
+              <em class="text-[90%] font-semibold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 1500.00</em>
             </div>
           </div>
 
           <div class="h-auto w-full px-7 mt-3">
-            <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='cart-choose.html'">
-              Continue
+            <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]">
+              Proceed to Payment
             </button>
           </div>
         </div>

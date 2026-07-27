@@ -204,7 +204,7 @@
     <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-4 px-6 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
+      <div class="h-auto py-4 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 z-100">
         <div class="flex items-center gap-x-2">
           <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
           <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
@@ -219,10 +219,10 @@
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-7">
+        <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-4 pb-5 text-center">
-            <h6 class="text-[var(--dark)]/60 font-semibold text-[100%]">Doctor List</h6>
+          <div class="h-auto w-full py-4 text-center">
+            <h6 class="text-[var(--dark)]/60 font-semibold text-[100%]">Meet Our Doctors</h6>
           </div>
 
           <div class="h-auto w-full">
@@ -232,30 +232,30 @@
             </div>
           </div>
         
-          <div class="h-auto w-full py-5">
-            <div class="h-auto w-full px-3 py-4 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
+          <div class="h-auto w-full py-3">
+            <div class="h-auto w-full px-3 py-3 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
               <div class="flex items-start gap-x-3 pb-3">
-                <div class="h-17 w-17 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
+                <div class="h-16 w-16 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
                   <img src="assets/images/dummy-doctor.jpg" alt="Doctor image" class="!h-full" />
                 </div>
                 <div>
-                  <h3 class="text-[100%] font-bold text-[var(--dark-primary)]/90">Dr. Rahul Mukherjee</h3>
-                  <p class="text-[85%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Consultant Neurologist</p>
+                  <h3 class="text-[90%] font-bold text-[var(--dark-primary)]/90">Dr. Rahul Mukherjee</h3>
+                  <p class="text-[80%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Consultant Neurologist</p>
                   <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic">
                     <span class="rupee-symbol">₹</span> 2000.00
                   </em>
                 </div>
               </div>
 
-              <div class="flex items-center gap-x-2">
-                <div class="flex items-start">
-                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
+              <div class="grid grid-cols-2 gap-x-3">
+                <div class="flex items-center">
+                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
                   <p class="text-[75%] text-[var(--dark)]/70">
-                    MBBS, MD(Neurology), DM(Neurology)
+                    MBBS, MD(Neurology), DM (Neurology)
                   </p>
                 </div>
                 <div class="flex items-center">
-                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
+                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
                   <p class="text-[75%] text-[var(--dark)]/70 whitespace-nowrap">
                     12 Years +
                   </p>
@@ -264,127 +264,41 @@
 
               <hr class="h-auto w-full border-[#00000020] !my-2" />
 
-              <div class="flex items-center justify-center gap-x-3 scale-[0.85]">
-                <button class="flex items-center rounded-md border border-[#1359B8] outline-none bg-[#EEF5FF] py-2 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200" onclick="window.location.href='doctor-details.html'">
+              <div class="flex items-center justify-between gap-x-3">
+                <button class="flex items-center rounded-sm border border-[#1359B8] outline-none bg-[#EEF5FF] py-1 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-details.html'">
                     <i class="bi bi-info-circle text-[120%] me-2"></i>
                     <span>View Details</span>
                 </button>
-                <button class="flex items-center rounded-md border border-[#44B84D] outline-none bg-[#F3FFF4] py-2 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200" onclick="window.location.href='doctor-appointment.html'">
+                <button class="flex items-center rounded-sm border border-[#44B84D] outline-none bg-[#F3FFF4] py-1 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-appointment.html'">
                   <i class="bi bi-calendar3 text-[120%] me-2"></i>
                   <span>Make An Appointment</span>
                 </button>
               </div>
             </div>
 
-            <div class="h-auto w-full px-3 py-4 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
+            <div class="h-auto w-full px-3 py-3 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
               <div class="flex items-start gap-x-3 pb-3">
-                <div class="h-17 w-17 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
+                <div class="h-16 w-16 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
                   <img src="assets/images/dummy-doctor-2.png" alt="Doctor image" class="!h-full" />
                 </div>
                 <div>
-                  <h3 class="text-[100%] font-bold text-[var(--dark-primary)]/90">Dr. Anjali Patel</h3>
-                  <p class="text-[85%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Neurologist</p>
+                  <h3 class="text-[90%] font-bold text-[var(--dark-primary)]/90">Dr. Rahul Mukherjee</h3>
+                  <p class="text-[80%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Consultant Neurologist</p>
                   <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic">
-                    <span class="rupee-symbol">₹</span> 3000.00
+                    <span class="rupee-symbol">₹</span> 2000.00
                   </em>
                 </div>
               </div>
 
-              <div class="flex items-center gap-x-2">
-                <div class="flex items-start">
-                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
+              <div class="grid grid-cols-2 gap-x-3">
+                <div class="flex items-center">
+                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
                   <p class="text-[75%] text-[var(--dark)]/70">
-                    MBBS, MD(Neurology), DM(Neurology)
+                    MBBS, MD(Neurology), DM (Neurology)
                   </p>
                 </div>
                 <div class="flex items-center">
-                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
-                  <p class="text-[75%] text-[var(--dark)]/70 whitespace-nowrap">
-                    10 Years +
-                  </p>
-                </div>
-              </div>
-
-              <hr class="h-auto w-full border-[#00000020] !my-2" />
-
-              <div class="flex items-center justify-center gap-x-3 scale-[0.85]">
-                <button class="flex items-center rounded-md border border-[#1359B8] outline-none bg-[#EEF5FF] py-2 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200" onclick="window.location.href='doctor-details.html'">
-                    <i class="bi bi-info-circle text-[120%] me-2"></i>
-                    <span>View Details</span>
-                </button>
-                <button class="flex items-center rounded-md border border-[#44B84D] outline-none bg-[#F3FFF4] py-2 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200" onclick="window.location.href='doctor-appointment.html'">
-                  <i class="bi bi-calendar3 text-[120%] me-2"></i>
-                  <span>Make An Appointment</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="h-auto w-full px-3 py-4 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
-              <div class="flex items-start gap-x-3 pb-3">
-                <div class="h-17 w-17 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
-                  <img src="assets/images/dummy-doctor-3.png" alt="Doctor image" class="!h-full" />
-                </div>
-                <div>
-                  <h3 class="text-[100%] font-bold text-[var(--dark-primary)]/90">Dr.Vivek Mehta</h3>
-                  <p class="text-[85%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Gynocologist</p>
-                  <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic">
-                    <span class="rupee-symbol">₹</span> 3500.00
-                  </em>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-x-2">
-                <div class="flex items-start">
-                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
-                  <p class="text-[75%] text-[var(--dark)]/70">
-                    MBBS, MD(Neurology), DM(Neurology)
-                  </p>
-                </div>
-                <div class="flex items-center">
-                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
-                  <p class="text-[75%] text-[var(--dark)]/70 whitespace-nowrap">
-                    18 Years
-                  </p>
-                </div>
-              </div>
-
-              <hr class="h-auto w-full border-[#00000020] !my-2" />
-
-              <div class="flex items-center justify-center gap-x-3 scale-[0.85]">
-                <button class="flex items-center rounded-md border border-[#1359B8] outline-none bg-[#EEF5FF] py-2 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200" onclick="window.location.href='doctor-details.html'">
-                    <i class="bi bi-info-circle text-[120%] me-2"></i>
-                    <span>View Details</span>
-                </button>
-                <button class="flex items-center rounded-md border border-[#44B84D] outline-none bg-[#F3FFF4] py-2 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200" onclick="window.location.href='doctor-appointment.html'">
-                  <i class="bi bi-calendar3 text-[120%] me-2"></i>
-                  <span>Make An Appointment</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="h-auto w-full px-3 py-4 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
-              <div class="flex items-start gap-x-3 pb-3">
-                <div class="h-17 w-17 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
-                  <img src="assets/images/dummy-doctor-4.png" alt="Doctor image" class="!h-full" />
-                </div>
-                <div>
-                  <h3 class="text-[100%] font-bold text-[var(--dark-primary)]/90">Dr. Rahul Mukherjee</h3>
-                  <p class="text-[85%] font-medium text-[var(--primary)]/90 whitespace-nowrap">ENT</p>
-                  <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic">
-                    <span class="rupee-symbol">₹</span> 1500.00
-                  </em>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-x-2">
-                <div class="flex items-start">
-                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
-                  <p class="text-[75%] text-[var(--dark)]/70">
-                    MBBS, MD(Neurology), DM(Neurology)
-                  </p>
-                </div>
-                <div class="flex items-center">
-                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[140%] me-2"></i>
+                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
                   <p class="text-[75%] text-[var(--dark)]/70 whitespace-nowrap">
                     12 Years +
                   </p>
@@ -393,12 +307,98 @@
 
               <hr class="h-auto w-full border-[#00000020] !my-2" />
 
-              <div class="flex items-center justify-center gap-x-3 scale-[0.85]">
-                <button class="flex items-center rounded-md border border-[#1359B8] outline-none bg-[#EEF5FF] py-2 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200" onclick="window.location.href='doctor-details.html'">
+              <div class="flex items-center justify-between gap-x-3">
+                <button class="flex items-center rounded-sm border border-[#1359B8] outline-none bg-[#EEF5FF] py-1 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-details.html'">
                     <i class="bi bi-info-circle text-[120%] me-2"></i>
                     <span>View Details</span>
                 </button>
-                <button class="flex items-center rounded-md border border-[#44B84D] outline-none bg-[#F3FFF4] py-2 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200" onclick="window.location.href='doctor-appointment.html'">
+                <button class="flex items-center rounded-sm border border-[#44B84D] outline-none bg-[#F3FFF4] py-1 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-appointment.html'">
+                  <i class="bi bi-calendar3 text-[120%] me-2"></i>
+                  <span>Make An Appointment</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="h-auto w-full px-3 py-3 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
+              <div class="flex items-start gap-x-3 pb-3">
+                <div class="h-16 w-16 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
+                  <img src="assets/images/dummy-doctor-3.png" alt="Doctor image" class="!h-full" />
+                </div>
+                <div>
+                  <h3 class="text-[90%] font-bold text-[var(--dark-primary)]/90">Dr. Rahul Mukherjee</h3>
+                  <p class="text-[80%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Consultant Neurologist</p>
+                  <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic">
+                    <span class="rupee-symbol">₹</span> 2000.00
+                  </em>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-x-3">
+                <div class="flex items-center">
+                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
+                  <p class="text-[75%] text-[var(--dark)]/70">
+                    MBBS, MD(Neurology), DM (Neurology)
+                  </p>
+                </div>
+                <div class="flex items-center">
+                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
+                  <p class="text-[75%] text-[var(--dark)]/70 whitespace-nowrap">
+                    12 Years +
+                  </p>
+                </div>
+              </div>
+
+              <hr class="h-auto w-full border-[#00000020] !my-2" />
+
+              <div class="flex items-center justify-between gap-x-3">
+                <button class="flex items-center rounded-sm border border-[#1359B8] outline-none bg-[#EEF5FF] py-1 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-details.html'">
+                    <i class="bi bi-info-circle text-[120%] me-2"></i>
+                    <span>View Details</span>
+                </button>
+                <button class="flex items-center rounded-sm border border-[#44B84D] outline-none bg-[#F3FFF4] py-1 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-appointment.html'">
+                  <i class="bi bi-calendar3 text-[120%] me-2"></i>
+                  <span>Make An Appointment</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="h-auto w-full px-3 py-3 overflow-hidden rounded-xl border border-[#00000010] bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-3 last:mb-0">
+              <div class="flex items-start gap-x-3 pb-3">
+                <div class="h-16 w-16 shrink-0 overflow-hidden rounded-md bg-[#E8F7F5]">
+                  <img src="assets/images/dummy-doctor-4.png" alt="Doctor image" class="!h-full" />
+                </div>
+                <div>
+                  <h3 class="text-[90%] font-bold text-[var(--dark-primary)]/90">Dr. Rahul Mukherjee</h3>
+                  <p class="text-[80%] font-medium text-[var(--primary)]/90 whitespace-nowrap">Consultant Neurologist</p>
+                  <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic">
+                    <span class="rupee-symbol">₹</span> 2000.00
+                  </em>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-x-3">
+                <div class="flex items-center">
+                  <i class="bi bi-mortarboard-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
+                  <p class="text-[75%] text-[var(--dark)]/70">
+                    MBBS, MD(Neurology), DM (Neurology)
+                  </p>
+                </div>
+                <div class="flex items-center">
+                  <i class="bi bi-briefcase-fill text-[var(--primary)]/50 text-[120%] me-2"></i>
+                  <p class="text-[75%] text-[var(--dark)]/70 whitespace-nowrap">
+                    12 Years +
+                  </p>
+                </div>
+              </div>
+
+              <hr class="h-auto w-full border-[#00000020] !my-2" />
+
+              <div class="flex items-center justify-between gap-x-3">
+                <button class="flex items-center rounded-sm border border-[#1359B8] outline-none bg-[#EEF5FF] py-1 px-3 text-[80%] font-semibold text-[#1359B8] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-details.html'">
+                    <i class="bi bi-info-circle text-[120%] me-2"></i>
+                    <span>View Details</span>
+                </button>
+                <button class="flex items-center rounded-sm border border-[#44B84D] outline-none bg-[#F3FFF4] py-1 px-3 text-[80%] font-semibold text-[#44B84D] transition-all duration-200 max-[350px]:px-2 max-[350px]:text-[75%]" onclick="window.location.href='doctor-appointment.html'">
                   <i class="bi bi-calendar3 text-[120%] me-2"></i>
                   <span>Make An Appointment</span>
                 </button>
