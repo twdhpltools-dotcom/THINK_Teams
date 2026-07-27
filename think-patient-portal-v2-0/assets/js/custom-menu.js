@@ -15,7 +15,7 @@ function closeSideBarMenu() {
 }
 /*-------------------------------------- SIDEBAR-MENU ----------------------------------------*/
 
-/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+/*-------------------------------------- BOOKING-TIME-MENU ----------------------------------------*/
 function openBookingTimeMenu() { 
     const BookingTimeMenu = document.getElementById("BookingTimeMenu"); 
     const BookingTimeMenuOverlay = document.getElementById("BookingTimeMenuOverlay"); 
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         closeBookingTimeMenu();
     });
 });
-/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+/*-------------------------------------- BOOKING-TIME-MENU ----------------------------------------*/
 
-/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+/*-------------------------------------- HOME-COLLECTION-STATUS-MENU ----------------------------------------*/
 function openHomeCollectionStatusMenu() { 
     const HomeCollectionStatusMenu = document.getElementById("HomeCollectionStatusMenu"); 
     const HomeCollectionStatusMenuOverlay = document.getElementById("HomeCollectionStatusMenuOverlay"); 
@@ -77,5 +77,37 @@ document.addEventListener("DOMContentLoaded", function () {
         closeHomeCollectionStatusMenu();
     });
 });
-/*-------------------------------------- BOOKING--TIME-MENU ----------------------------------------*/
+/*-------------------------------------- HOME-COLLECTION-STATUS-MENU ----------------------------------------*/
+
+/*-------------------------------------- HISTORY-SORT-MENU ----------------------------------------*/
+function openHistorySortMenu() { 
+    const HistorySortMenu = document.getElementById("HistorySortMenu"); 
+    const HistorySortMenuOverlay = document.getElementById("HistorySortMenuOverlay"); 
+ 
+    HistorySortMenu.classList.toggle("translate-y-full"); 
+    HistorySortMenu.classList.toggle("opacity-0"); 
+    HistorySortMenu.classList.toggle("translate-y-0"); 
+    HistorySortMenu.classList.toggle("opacity-100"); 
+ 
+    HistorySortMenuOverlay.classList.toggle("opacity-0"); 
+    HistorySortMenuOverlay.classList.toggle("invisible"); 
+}
+
+function closeHistorySortMenu() {
+    const HistorySortMenu = document.getElementById("HistorySortMenu");
+    const HHistorySortMenuOverlay = document.getElementById("HistorySortMenuOverlay");
+
+    HistorySortMenu.classList.add("translate-y-full", "opacity-0");
+    HistorySortMenu.classList.remove("translate-y-0", "opacity-100");
+
+    HistorySortMenuOverlay.classList.add("opacity-0", "invisible");
+    HistorySortMenuOverlay.classList.remove("opacity-100");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("HistorySortMenuOverlay").addEventListener("click", function () {
+        closeHistorySortMenu();
+    });
+});
+/*-------------------------------------- HISTORY-SORT-MENU ----------------------------------------*/
 /*------------------------------------------- JS FOR CUSTOM-MENU COMPLETE ------------------------------------------*/
