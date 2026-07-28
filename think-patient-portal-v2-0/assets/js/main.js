@@ -139,7 +139,7 @@ $(document).ready(function(){
   var owl = $('#DashboardTestCarousel');
   
   owl.owlCarousel({
-    margin: 20,
+    margin: 10,
     loop: true,
     autoplay: false,
     autoplayTimeout: 1500,
@@ -147,16 +147,16 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 30,
+    stagePadding: 20,
     responsive: {
       0: {
-        items: 2,
+        items: 3,
       },
       768: {
-        items: 4,
+        items: 9,
       },
       1024: {
-        items: 6,
+        items: 12,
       }
     }
   });
@@ -166,7 +166,7 @@ $(document).ready(function(){
   var owl = $('#DashboardPackCarousel');
   
   owl.owlCarousel({
-    margin: 20,
+    margin: 10,
     loop: true,
     autoplay: false,
     autoplayTimeout: 1500,
@@ -174,16 +174,16 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 30,
+    stagePadding: 20,
     responsive: {
       0: {
-        items: 2,
+        items: 3,
       },
       768: {
-        items: 4,
+        items: 9,
       },
       1024: {
-        items: 6,
+        items: 12,
       }
     }
   });
