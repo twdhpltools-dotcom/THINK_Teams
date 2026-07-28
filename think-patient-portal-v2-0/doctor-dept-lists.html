@@ -84,9 +84,9 @@
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5">
+        <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
 
-          <div class="h-auto w-full py-4 relative z-1">
+          <div class="h-auto w-full pt-5 pb-3 relative z-1">
             <i class="bi bi-search absolute bottom-[38%] right-[5%] z-2 text-[100%] text-[var(--dark)]"></i>
             <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]" placeholder="Search By Doctors, Departments ...">
           </div>
@@ -95,7 +95,11 @@
             <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Find a Doctor</h6>
           </div>
 
-          <div class="h-auto w-full grid grid-cols-3 place-items-center gap-y-2 py-3">
+        </div>
+
+        <div class="h-auto w-full px-5">
+
+          <div class="h-auto w-full grid grid-cols-3 place-items-center gap-y-2 pt-26 pb-3">
             <div class="h-auto w-full text-center">
               <button class="h-15 w-15 p-3 rounded-[50%] bg-[var(--light)] flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
                 <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
