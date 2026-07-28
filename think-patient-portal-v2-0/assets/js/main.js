@@ -147,7 +147,7 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 20,
+    stagePadding: 15,
     responsive: {
       0: {
         items: 3,
@@ -174,7 +174,7 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 20,
+    stagePadding: 15,
     responsive: {
       0: {
         items: 3,
