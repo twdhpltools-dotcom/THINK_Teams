@@ -90,7 +90,7 @@ button.tab-btn.active .tab-indicator {
 }
 
 .content {
-    margin-top: 50px;
+    margin-top: 45px;
     position: relative;
     z-index: 2;
 }
