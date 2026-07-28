@@ -67,6 +67,142 @@ document.getElementById("TimeMnModal").addEventListener("click", function(e) {
 });
 /*-------------------------------------- TIME-MINUTE ----------------------------------------*/
 
+/*-------------------------------------- DOC-CONST-RE-SCHEDULE ----------------------------------------*/
+function openDocConstRscheduleModal() {
+  const DocConstRscheduleModal = document.getElementById("DocConstRscheduleModal");
+  const DocConstRscheduleModalBox = document.getElementById("DocConstRscheduleModalBox");
+
+  DocConstRscheduleModal.classList.remove("hidden");
+  DocConstRscheduleModal.classList.add("flex");
+
+  setTimeout(() => {
+    DocConstRscheduleModalBox.classList.remove("opacity-0", "scale-95");
+    DocConstRscheduleModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeDocConstRscheduleModal() {
+  const DocConstRscheduleModal = document.getElementById("DocConstRscheduleModal");
+  const DocConstRscheduleModalBox = document.getElementById("DocConstRscheduleModalBox");
+
+  DocConstRscheduleModalBox.classList.add("opacity-0", "scale-95");
+  DocConstRscheduleModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    DocConstRscheduleModal.classList.add("hidden");
+    DocConstRscheduleModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("DocConstRscheduleModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeDocConstRscheduleModal();
+  }
+});
+/*-------------------------------------- DOC-CONST-RE-SCHEDULE ----------------------------------------*/
+
+/*-------------------------------------- DOC-CONST-CANCEL ----------------------------------------*/
+function openDocConstCancelModal() {
+  const DocConstCancelModal = document.getElementById("DocConstCancelModal");
+  const DocConstCancelModalBox = document.getElementById("DocConstCancelModalBox");
+
+  DocConstCancelModal.classList.remove("hidden");
+  DocConstCancelModal.classList.add("flex");
+
+  setTimeout(() => {
+    DocConstCancelModalBox.classList.remove("opacity-0", "scale-95");
+    DocConstCancelModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeDocConstCancelModal() {
+  const DocConstCancelModal = document.getElementById("DocConstCancelModal");
+  const DocConstCancelModalBox = document.getElementById("DocConstCancelModalBox");
+
+  DocConstCancelModalBox.classList.add("opacity-0", "scale-95");
+  DocConstCancelModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    DocConstCancelModal.classList.add("hidden");
+    DocConstCancelModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("DocConstCancelModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeDocConstCancelModal();
+  }
+});
+/*-------------------------------------- DOC-CONST-CANCEL ----------------------------------------*/
+
+/*-------------------------------------- DOC-CONST-RE-BOOK ----------------------------------------*/
+function openDocConstRBookModal() {
+  const DocConstRBookModal = document.getElementById("DocConstRBookModal");
+  const DocConstRBookModalBox = document.getElementById("DocConstRBookModalBox");
+
+  DocConstRBookModal.classList.remove("hidden");
+  DocConstRBookModal.classList.add("flex");
+
+  setTimeout(() => {
+    DocConstRBookModalBox.classList.remove("opacity-0", "scale-95");
+    DocConstRBookModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeDocConstRBookModal() {
+  const DocConstRBookModal = document.getElementById("DocConstRBookModal");
+  const DocConstRBookModalBox = document.getElementById("DocConstRBookModalBox");
+
+  DocConstRBookModalBox.classList.add("opacity-0", "scale-95");
+  DocConstRBookModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    DocConstRBookModal.classList.add("hidden");
+    DocConstRBookModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("DocConstRBookModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeDocConstRBookModal();
+  }
+});
+/*-------------------------------------- DOC-CONST-RE-BOOK ----------------------------------------*/
+
+/*-------------------------------------- DOC-CONST-DATE-PICKER ----------------------------------------*/
+function openDocConstDPickerModal() {
+  const DocConstDPickerModal = document.getElementById("DocConstDPickerModal");
+  const DocConstDPickerModalBox = document.getElementById("DocConstDPickerModalBox");
+
+  DocConstDPickerModal.classList.remove("hidden");
+  DocConstDPickerModal.classList.add("flex");
+
+  setTimeout(() => {
+    DocConstDPickerModalBox.classList.remove("opacity-0", "scale-95");
+    DocConstDPickerModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeDocConstDPickerModal() {
+  const DocConstDPickerModal = document.getElementById("DocConstDPickerModal");
+  const DocConstDPickerModalBox = document.getElementById("DocConstDPickerModalBox");
+
+  DocConstDPickerModalBox.classList.add("opacity-0", "scale-95");
+  DocConstDPickerModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    DocConstDPickerModal.classList.add("hidden");
+    DocConstDPickerModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("DocConstDPickerModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeDocConstDPickerModal();
+  }
+});
+/*-------------------------------------- DOC-CONST-DATE-PICKER ----------------------------------------*/
+
 /*-------------------------------------- SHOW-PROFILE ----------------------------------------*/
 function openShowProfileModal() {
   const ShowProfileModal = document.getElementById("ShowProfileModal");
