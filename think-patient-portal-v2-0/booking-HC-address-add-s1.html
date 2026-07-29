@@ -212,12 +212,12 @@
         <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
 
           <!----- CONTENT-HEADING ------->
-          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] px-3 py-2 mt-3 rounded-xl">
-            <div class="h-12 w-12 p-3 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 px-3 py-2 mt-3 rounded-xl">
+            <div class="h-10 w-10 p-2 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
               <img src="assets/images/home.png" alt="featured icon" />
             </div>
             <div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[110%]">Book Home Collection</h5>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Book Home Collection</h5>
               <p class="text-[var(--dark-primary)]/80 text-[70%]">We'll Collect your Sample from the Selected Address</p>
             </div>
           </div>
@@ -252,8 +252,8 @@
             </div>
           </div>
 
-          <div class="h-auto w-full flex items-center justify-between py-2">
-            <h6 class="text-[var(--dark)]/50 font-semibold text-[95%]">SAVED ADDRESS</h6>
+          <div class="h-auto w-full flex items-center justify-between pt-3 pb-2">
+            <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">SAVED ADDRESS</h6>
           </div>
 
           <div class="h-auto w-full">
@@ -272,7 +272,7 @@
                 <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
                   <i class="bi bi-pencil text-[80%]"></i>
                 </button>
-                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
+                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200" onclick="openBookingHCAddCancelModal()">
                   <i class="bi bi-trash3 text-[80%]"></i>
                 </button>
               </div>
@@ -293,15 +293,15 @@
                 <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
                   <i class="bi bi-pencil text-[80%]"></i>
                 </button>
-                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
+                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200" onclick="openBookingHCAddCancelModal()">
                   <i class="bi bi-trash3 text-[80%]"></i>
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="h-auto w-full flex items-center justify-between py-2">
-            <h6 class="text-[var(--dark)]/50 font-semibold text-[95%]">SEARCH BY LOCATIONS</h6>
+          <div class="h-auto w-full flex items-center justify-between pt-3 pb-2">
+            <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">SEARCH BY LOCATIONS</h6>
           </div>
 
           <div class="h-auto w-full">
@@ -356,49 +356,10 @@
                 <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, Ep Block, Sector V, Bidhannagar, Kolkata</p>
               </div>
             </div>
-
-            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
-              <div class="flex shrink-0 flex-col items-center">
-                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
-                </div>
-                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Bengal Intelligent Park</h3>
-                <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, EP Block, Sector V, Bidhannagar, Kolkata</p>
-              </div>
-            </div>
-
-            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
-              <div class="flex shrink-0 flex-col items-center">
-                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
-                </div>
-                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">70 m</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Pantaloons Building</h3>
-                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
-              </div>
-            </div>
-
-            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
-              <div class="flex shrink-0 flex-col items-center">
-                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
-                </div>
-                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
-              </div>
-              <div class="min-w-0 flex-1">
-                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Infinity Think Tank</h3>
-                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
-              </div>
-            </div>
           </div>
 
-          <div class="h-auto w-full flex items-center justify-between py-2">
-            <h6 class="text-[var(--dark)]/50 font-semibold text-[95%]">RECENT LOCATIONS</h6>
+          <div class="h-auto w-full flex items-center justify-between pt-3 pb-2">
+            <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">RECENT LOCATIONS</h6>
           </div>
 
           <div class="h-auto w-full">
@@ -424,6 +385,43 @@
     </main>
 
   </section>
+
+  <!----- BOOKING-HC-ADDRESS-CANCEL MODAL ------->
+  <div id="BookingHCAddCancelModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeBookingHCAddCancelModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="BookingHCAddCancelModalBox" class="h-auto w-80 max-w-[580px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center pt-9 pb-4 px-4">
+        <h5 class="text-[90%] font-medium text-[var(--dark)]/60">
+          Are You Sure Want to Delete this Saved Address?
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center pb-9 px-4">
+        <div class="h-auto w-full flex items-center justify-center gap-x-3">
+          <button class="w-20 flex items-center justify-center rounded-sm border border-[var(--success)]/50 outline-none bg-[var(--success)]/5 py-1 text-[80%] font-semibold text-[var(--success)] transition-all duration-200" onclick="window.location.href='#'">
+            <i class="bi bi-check-circle text-[120%] me-1"></i>
+            <span>Yes</span>
+          </button>
+
+          <button class="w-20 flex items-center justify-center rounded-sm border border-[var(--failure)]/30 outline-none bg-[var(--failure)]/5 py-1 text-[80%] font-semibold text-[var(--failure)] transition-all duration-200" onclick="window.location.href='booking-HC-address-add-s1.html'">
+            <i class="bi bi-x-circle text-[120%] me-1"></i>
+            <span>No</span>
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- BOOKING-HC-ADDRESS-CANCEL MODAL ------->
   <!----------------------------------- BOOKING-SELECTION SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->

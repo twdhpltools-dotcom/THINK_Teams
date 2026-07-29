@@ -212,13 +212,12 @@
         <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
 
           <!----- CONTENT-HEADING ------->
-          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] px-3 py-2 mt-3 rounded-xl">
-            <div class="h-12 w-12 p-3 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 px-3 py-2 mt-3 rounded-xl">
+            <div class="h-10 w-10 p-2 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
               <img src="assets/images/home.png" alt="featured icon" />
             </div>
             <div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[110%]">Book Your Home Collection</h5>
-              <p class="text-[var(--dark-primary)]/80 text-[70%]">We'll Collect your Sample from the Selected Address</p>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Book Your Home Collection</h5>
             </div>
           </div>
           <!----- CONTENT-HEADING ------->
@@ -250,7 +249,7 @@
                     </span>
                   </div>
                 </div>
-                <button class="flex shrink-0 items-center gap-x-1 self-end pb-1 text-[65%] font-medium text-[var(--primary)]/90">
+                <button class="flex shrink-0 items-center gap-x-1 self-end pb-1 text-[65%] font-medium text-[var(--primary)]/90" onclick="window.location.href='booking-HC-address-add-s1.html'">
                   <span>Change</span>
                   <i class="bi bi-chevron-right text-[90%]"></i>
                 </button>
@@ -261,26 +260,26 @@
 
           <div class="h-auto w-full">
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <textarea rows="2" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Address"></textarea>
+              <textarea rows="2" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Address*"></textarea>
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Nearby Landmark" />
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Nearby Landmark*" />
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Mobile Number (Optional)" />
+              <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Mobile Number" />
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Prescribed Doctor" />
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Prescribed Doctor*" />
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Search Tests" />
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Search Tests*" />
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Medical Condition (Optional) (e.g., Thyroid, Fever)" />
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Medical Condition (e.g., Thyroid, Fever)" />
             </div>
             <div class="h-auto w-full grid grid-cols-2 gap-x-2 mb-3 last:mb-0">
-              <input type="date" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Preferred Visit Date" />
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Preferred Time" onclick="openBookingTimeMenu()" />
+              <input type="date" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Preferred Visit Date*" />
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Preferred Time*" onclick="openBookingTimeMenu()" />
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
               <input type="file" id="FileUpload" hidden="">
