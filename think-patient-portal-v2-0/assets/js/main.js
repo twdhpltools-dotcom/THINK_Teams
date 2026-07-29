@@ -139,7 +139,7 @@ $(document).ready(function(){
   var owl = $('#DashboardTestCarousel');
   
   owl.owlCarousel({
-    margin: 10,
+    margin: 5,
     loop: true,
     autoplay: false,
     autoplayTimeout: 1500,

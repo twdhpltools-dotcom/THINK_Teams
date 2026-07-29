@@ -1,4 +1,38 @@
 /*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
+/*-------------------------------------- BOOKING-HC-ADDRESS-CANCEL ----------------------------------------*/
+function openBookingHCAddCancelModal() {
+  const BookingHCAddCancelModal = document.getElementById("BookingHCAddCancelModal");
+  const BookingHCAddCancelModalBox = document.getElementById("BookingHCAddCancelModalBox");
+
+  BookingHCAddCancelModal.classList.remove("hidden");
+  BookingHCAddCancelModal.classList.add("flex");
+
+  setTimeout(() => {
+    BookingHCAddCancelModalBox.classList.remove("opacity-0", "scale-95");
+    BookingHCAddCancelModalBox.classList.add("opacity-100", "scale-100");
+  }, 10);
+}
+
+function closeBookingHCAddCancelModal() {
+  const BookingHCAddCancelModal = document.getElementById("BookingHCAddCancelModal");
+  const BookingHCAddCancelModalBox = document.getElementById("BookingHCAddCancelModalBox");
+
+  BookingHCAddCancelModalBox.classList.add("opacity-0", "scale-95");
+  BookingHCAddCancelModalBox.classList.remove("opacity-100", "scale-100");
+
+  setTimeout(() => {
+    BookingHCAddCancelModal.classList.add("hidden");
+    BookingHCAddCancelModal.classList.remove("flex");
+  }, 300);
+}
+
+document.getElementById("BookingHCAddCancelModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeBookingHCAddCancelModal();
+  }
+});
+/*-------------------------------------- BOOKING-HC-ADDRESS-CANCEL ----------------------------------------*/
+
 /*-------------------------------------- TIME-HOUR ----------------------------------------*/
 function openTimeHrModal() {
   const TimeHrModal = document.getElementById("TimeHrModal");
@@ -236,72 +270,4 @@ document.getElementById("ShowProfileModal").addEventListener("click", function (
   }
 });
 /*-------------------------------------- SHOW-PROFILE ----------------------------------------*/
-
-/*-------------------------------------- FLOAT-CALL ----------------------------------------*/
-function openFloatCallModal() {
-  const FloatCallModal = document.getElementById("FloatCallModal");
-  const FloatCallModalBox = document.getElementById("FloatCallModalBox");
-
-  FloatCallModal.classList.remove("hidden");
-  FloatCallModal.classList.add("flex");
-
-  setTimeout(() => {
-    FloatCallModalBox.classList.remove("opacity-0", "scale-95");
-    FloatCallModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeFloatCallModal() {
-  const FloatCallModal = document.getElementById("FloatCallModal");
-  const FloatCallModalBox = document.getElementById("FloatCallModalBox");
-
-  FloatCallModalBox.classList.add("opacity-0", "scale-95");
-  FloatCallModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    FloatCallModal.classList.add("hidden");
-    FloatCallModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("FloatCallModal").addEventListener("click", function (e) {
-  if (e.target === this) {
-    closeFloatCallModal();
-  }
-});
-/*-------------------------------------- FLOAT-CALL ----------------------------------------*/
-
-/*-------------------------------------- LOGOUT-CONFIRMATION ----------------------------------------*/
-function openLogOutConfModal() {
-  const LogOutConfModal = document.getElementById("LogOutConfModal");
-  const LogOutConfModalBox = document.getElementById("LogOutConfModalBox");
-
-  LogOutConfModal.classList.remove("hidden");
-  LogOutConfModal.classList.add("flex");
-
-  setTimeout(() => {
-    LogOutConfModalBox.classList.remove("opacity-0", "scale-95");
-    LogOutConfModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeLogOutConfModal() {
-  const LogOutConfModal = document.getElementById("LogOutConfModal");
-  const LogOutConfModalBox = document.getElementById("LogOutConfModalBox");
-
-  LogOutConfModalBox.classList.add("opacity-0", "scale-95");
-  LogOutConfModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    LogOutConfModal.classList.add("hidden");
-    LogOutConfModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("LogOutConfModal").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closeLogOutConfModal();
-  }
-});
-/*-------------------------------------- LOGOUT-CONFIRMATION ----------------------------------------*/
 /*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
