@@ -212,10 +212,13 @@
         <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
 
           <!----- CONTENT-HEADING ------->
-          <div class="h-auto w-full flex items-center justify-between py-2">
-            <h5 class="text-[var(--dark-primary)]/90 font-medium text-[130%] flex items-center">Book Home Collection</h5>
+          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] px-3 py-2 mt-3 rounded-xl">
             <div class="h-12 w-12 p-3 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
               <img src="assets/images/home.png" alt="featured icon" />
+            </div>
+            <div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[110%]">Book Your Home Collection</h5>
+              <p class="text-[var(--dark-primary)]/80 text-[70%]">We'll Collect your Sample from the Selected Address</p>
             </div>
           </div>
           <!----- CONTENT-HEADING ------->
@@ -224,13 +227,36 @@
 
         <div class="h-auto w-full px-5">
         
-          <div class="h-auto w-full flex items-center pb-2 mb-1 cursor-pointer pt-15">
-            <div class="h-10 w-10 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center me-2">
-              <i class="bi bi-crosshair text-[140%] text-[var(--primary)]"></i>
+          <div class="h-auto w-full flex items-center pb-2 mb-1 cursor-pointer pt-25">
+            <div class="h-auto w-full rounded-md border border-[#00000010] bg-[var(--light)] p-3">
+              <div class="flex items-start gap-2">
+                <i class="bi bi-geo-alt text-[130%] text-[var(--primary)]/80"></i>
+                <div>
+                  <h3 class="text-[85%] font-semibold leading-tight text-[var(--dark)]/60">Collection Address</h3>
+                  <p class="text-[70%] font-normal leading-tight text-[var(--primary)]/80">Where should we collect your sample?</p>
+                </div>
+              </div>
+              <div class="mt-2 flex items-start gap-x-3 rounded-xl border border-[#eeeeee] px-3 py-2">
+                <div class="flex h-13 w-13 shrink-0 items-center justify-center rounded-md bg-[var(--primary)]/5">
+                  <i class="bi bi-geo-alt-fill text-[160%] text-[var(--primary)]/80"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <h4 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/70">SDF Building</h4>
+                  <p class="truncate text-[70%] font-normal text-[var(--dark)]/50">GP Block, Sector V, Salt Lake City</p>
+                  <div class="mt-1">
+                    <span class="inline-flex items-center gap-1 rounded-sm border border-[#00000010] bg-[var(--light)] px-2 py-1 text-[70%] font-medium text-[var(--dark)]/60">
+                      <i class="bi bi-house-door text-[100%]"></i>
+                      Home
+                    </span>
+                  </div>
+                </div>
+                <button class="flex shrink-0 items-center gap-x-1 self-end pb-1 text-[65%] font-medium text-[var(--primary)]/90">
+                  <span>Change</span>
+                  <i class="bi bi-chevron-right text-[90%]"></i>
+                </button>
+              </div>
+
             </div>
-            <p class="text-[90%] font-medium text-[var(--primary)]">Use Current Location
-              <span class="block text-[var(--dark)]/40 font-normal text-[90%]">Allow access to location</span>
-            </p>
           </div>
 
           <div class="h-auto w-full">

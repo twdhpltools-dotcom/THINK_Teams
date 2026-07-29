@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctor Consultation | ThinkLab Patient Portal | Secure Patient Management Application</title>
+  <title>Home Collection | ThinkLab Patient Portal | Secure Patient Management Application</title>
 
-  <meta name="title" content="Doctor Consultation | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="title" content="Home Collection | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
@@ -214,119 +214,205 @@
           <!----- CONTENT-HEADING ------->
           <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] px-3 py-2 mt-3 rounded-xl">
             <div class="h-12 w-12 p-3 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
-              <img src="assets/images/doctor.png" alt="featured icon" />
+              <img src="assets/images/home.png" alt="featured icon" />
             </div>
             <div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[110%]">Book Your Consultation</h5>
-              <p class="text-[var(--dark-primary)]/80 text-[70%]">Book your Consultation now & Proceed to the next</p>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[110%]">Book Home Collection</h5>
+              <p class="text-[var(--dark-primary)]/80 text-[70%]">We'll Collect your Sample from the Selected Address</p>
             </div>
+          </div>
+          <div class="h-auto w-full py-2 relative z-1">
+            <i class="bi bi-search absolute bottom-[25%] right-[5%] z-2 text-[100%] text-[var(--dark)]"></i>
+            <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]" placeholder="Search By Doctors, Departments ...">
           </div>
           <!----- CONTENT-HEADING ------->
 
         </div>
 
         <div class="h-auto w-full px-5">
-
-          <div class="h-auto w-full pt-24">
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number" />
+        
+          <div class="h-auto w-full pt-37">
+            <div class="h-auto w-full cursor-pointer flex items-center px-4 py-2 bg-[var(--light)] transition-colors duration-200 mb-2 cursor-pointer active:bg-black/[0.02] last:mb-0">
+              <div class="h-9 w-9 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center me-2">
+                <i class="bi bi-crosshair text-[120%] text-[var(--primary)]"></i>
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="text-[85%] font-medium leading-tight text-[var(--primary)]">Use my current location</p>
+                <span class="mt-1 block truncate text-[75%] font-normal leading-tight text-[var(--dark)]/45">SDF Building, GP Block, Sector V, Salt Lake City</span>
+              </div>
+              <i class="bi bi-chevron-right ms-3 shrink-0 text-[90%] text-[var(--dark)]/70"></i>
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Reason for Consultation (e.g., Fever, Headache)" />
+
+            <div class="h-auto w-full cursor-pointer flex items-center px-4 py-2 bg-[var(--light)] transition-colors duration-200 mb-2 cursor-pointer active:bg-black/[0.02] last:mb-0" onclick="window.location.href='booking-HC-address-add-s2.html'">
+              <div class="h-9 w-9 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center me-2">
+                <i class="bi bi-plus-lg text-[120%] text-[var(--primary)]"></i>
+              </div>
+              <p class="flex-1 text-[85%] font-medium text-[var(--primary)]">Add Address</p>
+              <i class="bi bi-chevron-right ms-3 shrink-0 text-[90%] text-[var(--dark)]/70"></i>
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <select class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]">
-                <option>Choose a Specialty</option>
-                <option>General Medicine</option>
-                <option>Rheumatology</option>
-                <option>Gynocology</option>
-                <option>ENT</option>
-                <option>Others</option>
-              </select>
-            </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
-              <select class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]">
-                <option>Select Doctor</option>
-                <option>Dr. Priya Saha</option>
-                <option>Dr. Amit Kumar Das</option>
-                <option>Dr. Ranjit Bhattacherjee</option>
-                <option>Dr. Swapna Roy</option>
-              </select>
-            </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
-              <h6 class="text-[var(--dark)]/60 font-semibold text-[90%]">Available Time Slots</h6>
-            </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
-              <div class="w-full overflow-x-auto scrollbar-hide">
-                <div class="inline-flex gap-2 min-w-max py-1">
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out active">
-                    <span class="text-[70%] font-medium block">Mon</span>
-                    <span class="text-[115%] font-semibold block">16</span>
-                  </div>
+          </div>
 
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
-                    <span class="text-[70%] font-medium block">Tue</span>
-                    <span class="text-[115%] font-semibold block">17</span>
-                  </div>
+          <div class="h-auto w-full flex items-center justify-between py-2">
+            <h6 class="text-[var(--dark)]/50 font-semibold text-[95%]">SAVED ADDRESS</h6>
+          </div>
 
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
-                    <span class="text-[70%] font-medium block">Wed</span>
-                    <span class="text-[115%] font-semibold block">18</span>
-                  </div>
-
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out active">
-                    <span class="text-[70%] font-medium block">Thu</span>
-                    <span class="text-[115%] font-semibold block">19</span>
-                  </div>
-
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
-                    <span class="text-[70%] font-medium block">Fri</span>
-                    <span class="text-[115%] font-semibold block">20</span>
-                  </div>
-
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
-                    <span class="text-[70%] font-medium block">Sat</span>
-                    <span class="text-[115%] font-semibold block">21</span>
-                  </div>
-
-                  <div class="date-chip h-auto w-[55px] py-3 flex flex-col items-center justify-center shrink-0 bg-[#f7f7f7] border border-solid border-[#00000020] text-[var(--dark)]/50 cursor-pointer rounded-[6px] transition-all duration-250 ease-in-out">
-                    <span class="text-[70%] font-medium block">Sun</span>
-                    <span class="text-[115%] font-semibold block">22</span>
-                  </div>
+          <div class="h-auto w-full">
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
                 </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Bengal Intelligent Park</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, EP Block, Sector V, Bidhannagar, Kolkata</p>
+              </div>
+              <div class="flex shrink-0 items-center gap-2">
+                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
+                  <i class="bi bi-pencil text-[80%]"></i>
+                </button>
+                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
+                  <i class="bi bi-trash3 text-[80%]"></i>
+                </button>
               </div>
             </div>
-            <hr class="border-[#00000020] !my-4" />
-            <div class="h-auto w-full grid grid-cols-4 gap-x-1 gap-y-1 mb-6 last:mb-0">
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer active">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer selected">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer active">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer active">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer selected">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer selected">08:00 AM</span>
-              <span class="chip px-2 py-1 rounded-sm bg-[#f7f7f7] text-center border border-solid border-[var(--dark-primary)]/20 font-medium text-[75%] cursor-pointer">08:00 AM</span>
-            </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="file" id="FileUpload" hidden="">
-              <button class="h-auto w-full flex items-center justify-center gap-x-2 border border-dashed border-[#00000020] outline-none rounded-[5px] py-2 text-left" onclick="document.getElementById('FileUpload').click()">
-                <div class="h-10 w-10 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
-                  <i class="bi bi-cloud-upload text-[160%] text-[var(--primary)]"></i>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
                 </div>
-                <div class="">                  
-                  <h6 class="text-[80%] text-[var(--dark-primary)]/90 font-semibold">Upload Prescription (Optional)</h6>
-                  <p class="text-[70%] text-[var(--dark)]/50">JPG, PNG or PDF <span class="text-[100%]"><i class="bi bi-dot"></i> Max 5 MB</span></p>
-                </div>
-              </button>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">70 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Pantaloons Building</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
+              </div>
+              <div class="flex shrink-0 items-center gap-2">
+                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
+                  <i class="bi bi-pencil text-[80%]"></i>
+                </button>
+                <button class="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)] transition-all duration-200">
+                  <i class="bi bi-trash3 text-[80%]"></i>
+                </button>
+              </div>
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mt-5 mb-2 last:mb-0">
-              <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='dashboard.html'">
-                Confirm Booking
-              </button>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between py-2">
+            <h6 class="text-[var(--dark)]/50 font-semibold text-[95%]">SEARCH BY LOCATIONS</h6>
+          </div>
+
+          <div class="h-auto w-full">
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Bengal Intelligent Park</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, EP Block, Sector V, Bidhannagar, Kolkata</p>
+              </div>
+            </div>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">70 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Pantaloons Building</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
+              </div>
+            </div>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Infinity Think Tank</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
+              </div>
+            </div>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">70 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Bengal Intelligent Park</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, Ep Block, Sector V, Bidhannagar, Kolkata</p>
+              </div>
+            </div>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Bengal Intelligent Park</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, EP Block, Sector V, Bidhannagar, Kolkata</p>
+              </div>
+            </div>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">70 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Pantaloons Building</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
+              </div>
+            </div>
+
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Infinity Think Tank</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">GP Bock, Sector V, Salt Lake City</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between py-2">
+            <h6 class="text-[var(--dark)]/50 font-semibold text-[95%]">RECENT LOCATIONS</h6>
+          </div>
+
+          <div class="h-auto w-full">
+            <div class="flex w-full items-start gap-3 border-b border-[#00000010] bg-[var(--light)] px-4 pt-3 pb-2 last:border-none">
+              <div class="flex shrink-0 flex-col items-center">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10">
+                  <i class="bi bi-geo-alt text-[100%] text-[var(--primary)]"></i>
+                </div>
+                <span class="mt-1 text-[60%] font-normal text-[var(--dark)]/50">95 m</span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="truncate text-[85%] font-medium leading-tight text-[var(--dark)]/80">Bengal Intelligent Park</h3>
+                <p class="text-[70%] font-normal text-[var(--dark)]/45">Street Number 18, EP Block, Sector V, Bidhannagar, Kolkata</p>
+              </div>
             </div>
           </div>
         
