@@ -269,7 +269,7 @@ function toggleAccordion(head) {
   body.classList.toggle("max-h-0");
   body.classList.toggle("pt-0");
   body.classList.toggle("max-h-[500px]");
-  body.classList.toggle("pt-4");
+  body.classList.toggle("pt-3");
 
   icon.classList.toggle("rotate-180");
 }
