@@ -24,7 +24,7 @@ html {
     overflow-x: hidden;
 }
 
-body{
+body {
     font-family: var(--font);
     background: var(--light);
     color: var(--dark-primary);
@@ -46,6 +46,12 @@ ol li {
     list-style: none;
 }
 
+img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
 label {
     color: var(--dark-primary);
     font-size: 85%;
@@ -61,19 +67,14 @@ textarea::placeholder {
 input:focus,
 select:focus,
 textarea:focus {
-    box-shadow: 0 0 4px 1px #d52e8a33;
+    box-shadow: 0 0 4px 0 #d52e8a75;
+    border: 1px solid #d52e8a94;
 }
 
 button {
     cursor: pointer;
     outline: none;
     white-space: nowrap;
-}
-
-img {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
 }
 
 hr {
@@ -181,11 +182,11 @@ button.tab-btn.active .tab-indicator {
 
 /* ----------------------------------------- CSS FOR ACCORDIAN START ---------------------------------------------- */
 .pg-accordion-body {
-    transition:.35s ease;
+    transition: 0.35s ease-in-out;
 }
 
 .pg-accordion-icon {
-    transition:.35s ease;
+    transition: 0.35s ease-in-out;
 }
 /* ----------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------------- */
 
