@@ -94,15 +94,40 @@
 
         <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-13">
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <textarea rows="2" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Address"></textarea>
+          <div class="h-auto w-full flex items-center pb-2 mb-1 cursor-pointer pt-13">
+            <div class="h-auto w-full rounded-md border border-[#00000010] bg-[var(--light)] p-3">
+              <div class="h-auto w-full">
+                <h3 class="text-[90%] font-semibold leading-tight text-[var(--dark)]/60">Collection Address</h3>
+              </div>
+              <div class="mt-2 flex items-start gap-x-3 rounded-xl border border-[#eeeeee] px-3 py-2">
+                <div class="flex h-13 w-13 shrink-0 items-center justify-center rounded-md bg-[var(--primary)]/5">
+                  <i class="bi bi-geo-alt-fill text-[160%] text-[var(--primary)]/80"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                  <h4 class="truncate text-[90%] font-medium leading-tight text-[var(--dark)]/70">SDF Building</h4>
+                  <p class="truncate text-[70%] font-normal text-[var(--dark)]/50">GP Block, Sector V, Salt Lake City</p>
+                  <div class="mt-1">
+                    <span class="inline-flex items-center gap-1 rounded-sm border border-[#00000010] bg-[var(--light)] px-2 py-1 text-[70%] font-medium text-[var(--dark)]/60">
+                      <i class="bi bi-house-door text-[100%]"></i>
+                      Home
+                    </span>
+                  </div>
+                </div>
+                <button class="flex shrink-0 items-center gap-x-1 self-end pb-1 text-[75%] font-medium text-[var(--primary)]/90" onclick="window.location.href='booking-HC-address-add-s1.html'">
+                  <span>Change</span>
+                  <i class="bi bi-chevron-right text-[90%]"></i>
+                </button>
+              </div>
+
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Landmark">
-            </div>
+          </div>
+
+          <div class="h-auto w-full">
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
               <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number">
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Prescribed Doctor*" />
             </div>
           </div>
 
@@ -133,10 +158,67 @@
         
         </div>
 
-        <div class="h-auto w-full bg-linear-to-b from-[var(--light)] to-[#fefefe] rounded-tl-[20px] rounded-tr-[20px] mt-8 py-4 z-100">
+        <div class="h-auto w-full bg-linear-to-b from-[var(--light)] to-[#fefefe] rounded-tl-[20px] rounded-tr-[20px] mt-6 py-4 z-100">
           <div class="h-auto w-full flex items-center gap-x-2 px-5 pb-3">
             <i class="bi bi-credit-card text-[110%] text-[var(--primary)]"></i>
             <h4 class="text-[var(--dark-primary)]/90 font-semibold text-[95%]">Payment Summary</h4>
+          </div>
+
+          <div class="h-auto w-[92%] rounded-md border border-[#00000010] bg-[var(--light)] mx-auto px-5 py-3 mb-3">
+            <div class="h-auto w-full">
+              <h3 class="text-[90%] font-semibold leading-tight text-[var(--dark)]/60 mb-2">Added Tests</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-x-2 gap-y-2">
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">Glucose</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">CBC</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">Lipid Profile</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">Glucose</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">CBC</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">Calcium</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+              <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-xl border border-dashed border-[var(--primary)]/50 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">
+                <div class="h-auto w-[80%]">
+                  <h6 class="text-[80%] font-semibold text-[var(--dark)]/50">Lipid Profile</h6>
+                  <p class="text-[70%] font-semibold text-[var(--primary)]/80">₹250</p>
+                </div>
+                <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+              </span>
+            </div>
           </div>
 
           <div class="h-auto w-[92%] rounded-md bg-[#F8FAFC] mx-auto px-5 py-3">

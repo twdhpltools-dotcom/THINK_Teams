@@ -234,21 +234,42 @@
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
               <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Prescribed Doctor*" />
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Search Tests*" />
+            <div class="relative h-auto w-full mb-3 z-2 last:mb-0">
+              <input id="BookingTestSearchInput" type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Search Tests*" />
+              <div id="BookingTestSuggestions" class="absolute left-0 right-0 top-[calc(100%+2px)] hidden max-h-[280px] overflow-y-auto rounded-md border border-[#0000000d] bg-[var(--light)] shadow-[0_14px_35px_rgba(15,23,42,0.14)] z-100"></div>
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
               <div class="flex items-center flex-wrap gap-x-2 gap-y-2">
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Glucose</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">CBC</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Lipid Profile</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Glucose</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">CBC</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Calcium</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Glucose</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">CBC</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Lipid Profile</span>
-                <span class="px-4 py-1 rounded-2xl border border-dashed border-[var(--primary)]/70 text-[70%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Calcium</span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Glucose
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">CBC
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Lipid Profile
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Glucose
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">CBC
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Calcium
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Glucose
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Lipid Profile
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">CBC
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
+                <span class="relative z-1 pl-4 pr-7 py-1 flex items-center justify-between rounded-2xl border border-dashed border-[var(--primary)]/70 text-[75%] font-semibold text-[var(--primary)]/70 active:bg-[var(--primary)] active:text-[var(--light)] transition-all duration-300 ease-in-out">Calcium
+                  <button class="absolute top-1 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x-circle text-[120%] text-[var(--failure)]/80"></i></button>
+                </span>
               </div>
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
@@ -447,6 +468,10 @@
   <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
   <script src="assets/js/custom-menu.js" type="text/javascript"></script>
   <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-SUGGESTION FILES START -------------------------------------------->
+  <script src="assets/js/custom-suggestion.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-SUGGESTION FILES COMPLETE ---------------------------------------->
 
   <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
   <script src="assets/js/main.js" type="text/javascript"></script>

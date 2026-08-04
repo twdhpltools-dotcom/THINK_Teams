@@ -221,42 +221,42 @@
     <div class="pointer-events-auto w-full max-w-[420px] overflow-hidden rounded-xl border border-[var(--dark)]/10 bg-[var(--light)] shadow-[0_15px_45px_rgba(15,23,42,.18)]">
       <div class="h-auto w-full relative z-1 px-5 py-4">
 
-          <div class="pg-accordion h-auto w-full">
-            <div class="pg-accordion-head flex items-start cursor-pointer" onclick="toggleAccordion(this)">
-              <h5 class="text-[90%] text-[var(--dark)]/60 font-bold">2 Test</h5>
-              <i class="pg-accordion-icon ms-2 bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
-            </div>
-
-            <div class="pg-accordion-content max-h-0 pt-0 overflow-hidden transition-all duration-300">
-              <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] pb-1 mb-2">
-                <div>
-                  <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
-                  <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                </div>
-                <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/10 outline-none flex items-center justify-center">
-                  <i class="bi bi-trash3-fill text-[#ff2222]"></i>
-                </button>
-              </div>
-              <div class="h-auto w-full flex items-center justify-between mb-2">
-                <div>
-                  <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
-                  <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
-                </div>
-                <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/10 outline-none flex items-center justify-center">
-                  <i class="bi bi-trash3-fill text-[#ff2222]"></i>
-                </button>
-              </div>
-              <div class="text-center">
-                <button class="rounded-sm border border-[var(--primary)] px-4 py-1 text-[12px] font-semibold text-[var(--primary)] transition-all duration-200">
-                  <i class="bi bi-plus-circle"></i> Add More
-                </button>
-              </div>
-            </div>
+        <div class="pg-accordion h-auto w-full">
+          <div class="pg-accordion-head flex items-start cursor-pointer" onclick="toggleAccordion(this)">
+            <h5 class="text-[90%] text-[var(--dark)]/60 font-bold">2 Test</h5>
+            <i class="pg-accordion-icon ms-2 bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
           </div>
 
-          <button id="GoToCartBtn" class="absolute right-5 top-3 rounded-sm border border-[var(--primary)] px-6 py-[4px] text-[12px] font-semibold text-[var(--primary)] transition-all duration-200" onclick="window.location.href='cart.html'">
-            Review Selected Tests
-          </button>
+          <div class="pg-accordion-content max-h-0 pt-0 overflow-hidden transition-all duration-300">
+            <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] pb-1 mb-2">
+              <div>
+                <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
+                <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
+              </div>
+              <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/10 outline-none flex items-center justify-center">
+                <i class="bi bi-trash3-fill text-[#ff2222]"></i>
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between mb-2">
+              <div>
+                <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
+                <em class="text-[85%] font-bold text-[var(--primary)]/90 not-italic"><span class="rupee-symbol">₹</span> 2000.00</em>
+              </div>
+              <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/10 outline-none flex items-center justify-center">
+                <i class="bi bi-trash3-fill text-[#ff2222]"></i>
+              </button>
+            </div>
+            <div class="text-center">
+              <button class="rounded-sm border border-[var(--primary)] px-4 py-[5px] text-[85%] font-semibold text-[var(--primary)] transition-all duration-200">
+                <i class="bi bi-plus-circle"></i> Add More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button id="GoToCartBtn" class="absolute right-5 top-2 rounded-sm border border-[var(--primary)] px-5 py-[6px] text-[85%] font-semibold text-[var(--primary)] transition-all duration-200" onclick="window.location.href='cart.html'">
+          Review Selected Tests
+        </button>
 
       </div>
     </div>

@@ -234,7 +234,7 @@
               <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number">
             </div>
             <div class="h-auto w-full flex items-center gap-x-1 mb-4 last:mb-0">
-              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Reason for Doctor Visit">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Reason for Doctor Visit*">
             </div>
             <div class="h-auto w-full flex items-center justify-between mb-3 last:mb-0">
               <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">Schedule</h6>
@@ -286,7 +286,7 @@
               <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">Today Availability</h6>
               <span class="text-[80%] font-medium text-[var(--dark)]/60">4 Slots</span>
             </div>
-            <div class="grid h-auto w-full grid-cols-4 gap-x-3 gap-y-2 last:mb-0">
+            <div class="grid h-auto w-full grid-cols-4 gap-x-3 gap-y-2 mb-6 last:mb-0">
               <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200">
                 04:00 PM
               </button>
@@ -309,7 +309,19 @@
                 08:00 AM
               </button>
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mt-8 mb-2 last:mb-0">
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="file" id="FileUpload" hidden="">
+              <button class="h-auto w-full flex items-center justify-center gap-x-2 border border-dashed border-[#00000020] outline-none rounded-[5px] py-2 text-left" onclick="document.getElementById('FileUpload').click()">
+                <div class="h-10 w-10 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+                  <i class="bi bi-cloud-upload text-[160%] text-[var(--primary)]"></i>
+                </div>
+                <div class="">                  
+                  <h6 class="text-[80%] text-[var(--dark-primary)]/90 font-semibold">Upload Prescription (Optional)</h6>
+                  <p class="text-[70%] text-[var(--dark)]/50">JPG, PNG or PDF <span class="text-[100%]"><i class="bi bi-dot"></i> Max 5 MB</span></p>
+                </div>
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mt-5 mb-2 last:mb-0">
               <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='doctor-lists.html'">
                 Confirm
               </button>
