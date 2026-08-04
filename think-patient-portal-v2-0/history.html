@@ -86,23 +86,32 @@
 
         <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
 
-          <div class="h-auto w-full pt-5 flex items-center justify-between">
-            <h6 class="text-[var(--dark)]/60 font-semibold text-[100%] text-end">Visit History</h6>
-            <div class="flex items-center gap-x-2">
-              <button class="rounded-sm border border-[var(--dark)]/10 px-3 py-1 text-[12px] font-semibold text-[var(--dark)]/50 transition-all duration-200" onclick="window.location.href='cart.html'">
-                Export
-              </button>
-              <button class="h-9 w-9 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--primary)]/20 outline-none" onclick="openHistorySortMenu()">
-                <img class="opacity-80" src="assets/images/filter.png" alt="filter icon">
-              </button>
+          <!----- CONTENT-HEADING ------->
+          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 px-3 py-2 mt-4 rounded-xl">
+            <div class="h-10 w-10 p-2 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+              <img src="assets/images/search.png" alt="featured icon" />
             </div>
+            <div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Visit History</h5>
+              <p class="text-[var(--dark-primary)]/80 text-[70%]">Past Visits at a glance</p>
+            </div>
+          </div>
+          <!----- CONTENT-HEADING ------->
+
+          <div class="h-auto w-full pt-2 flex items-center justify-between">
+            <button class="rounded-sm border border-[var(--dark)]/10 px-3 py-1 text-[12px] font-semibold text-[var(--dark)]/50 transition-all duration-200">
+              Export
+            </button>
+            <button class="h-9 w-9 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--primary)]/20 outline-none" onclick="openHistorySortMenu()">
+              <img class="opacity-80" src="assets/images/filter.png" alt="filter icon">
+            </button>
           </div>
 
         </div>
 
         <div class="h-auto w-full px-5">
           
-          <div class="h-auto w-full pt-16 pb-4">
+          <div class="h-auto w-full pt-32 pb-4">
             <div class="h-auto w-full flex items-start justify-between px-5 py-3 rounded-xl bg-[var(--light)] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
               <div class="pe-2">
                 <h6 class="text-[75%] font-semibold text-[var(--dark)]/70 mb-[4px]">Lab Visit</h6>

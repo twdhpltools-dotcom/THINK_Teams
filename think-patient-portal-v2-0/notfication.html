@@ -86,23 +86,32 @@
         
         <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
 
-          <div class="h-auto w-full pt-5 flex items-center justify-between">
-            <h6 class="text-[var(--dark)]/60 font-semibold text-[100%] text-end">Notification</h6>
-            <div class="flex items-center gap-x-1">
-              <button class="rounded-sm bg-[var(--primary)]/60 px-2 py-1 text-[12px] font-semibold text-[var(--light)] transition-all duration-200">
-                All
-              </button>
-              <button class="ms-1 text-[80%] font-medium text-[var(--primary)]">
-                <i class="bi bi-check2-all text-[120%]"></i> Mark as All Read
-              </button>
+          <!----- CONTENT-HEADING ------->
+          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 px-3 py-2 mt-4 rounded-xl">
+            <div class="h-10 w-10 p-2 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+              <img src="assets/images/ringing.png" alt="featured icon" />
             </div>
+            <div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Notification</h5>
+              <p class="text-[var(--dark-primary)]/80 text-[70%]">Never Miss your Important Updates</p>
+            </div>
+          </div>
+          <!----- CONTENT-HEADING ------->
+
+          <div class="h-auto w-full pt-2 flex items-center justify-between">
+            <button class="rounded-sm bg-[var(--primary)]/60 px-2 py-1 text-[12px] font-semibold text-[var(--light)] transition-all duration-200">
+              All
+            </button>
+            <button class="ms-1 text-[80%] font-medium text-[var(--primary)]">
+              <i class="bi bi-check2-all text-[120%]"></i> Mark as All Read
+            </button>
           </div>
 
         </div>
 
         <div class="h-auto w-full">
           
-          <div class="h-auto w-full pt-15 pb-4">
+          <div class="h-auto w-full pt-30 pb-4">
             <div class="notf-box h-auto w-full px-5 py-2 bg-[var(--light)] border-b border-solid border-[#00000020] active last:border-none">
               <h6 class="text-[85%] font-medium text-[var(--dark)]/70 mb-[2px]">Booking Requested</h6>
               <p class="text-[80%] font-semibold text-[var(--dark)]/70">Today, 10:30 AM</p>
