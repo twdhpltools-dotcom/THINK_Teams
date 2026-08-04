@@ -235,29 +235,149 @@
           <div class="bg-[var(--light)] px-5 pb-10 pt-1">
             <form class="space-y-2">
 
-              <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-                <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Name*">
+              <div class="flex h-auto w-full flex-col gap-y-2">
+                <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-4 py-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-person text-[120%] text-[var(--primary)]"></i>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-[70%] text-[var(--dark-primary)]">Name</p>
+                    <h5 class="truncate text-[80%] font-medium text-[var(--primary)]">Puja Das</h5>
+                  </div>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-4 py-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-calendar3 text-[120%] text-[var(--primary)]"></i>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-[70%] text-[var(--dark-primary)]">Age</p>
+                    <h5 class="text-[80%] font-medium text-[var(--primary)]">28 Years</h5>
+                  </div>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-4 py-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-telephone text-[120%] text-[var(--primary)]"></i>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-[70%] text-[var(--dark-primary)]">Mobile Number</p>
+                    <h5 class="text-[80%] font-medium text-[var(--primary)]">+91 98765 43210</h5>
+                  </div>
+                </div>
+
+                <div class="flex h-auto w-full items-start gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-4 py-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-geo-alt text-[120%] text-[var(--primary)]"></i>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-[70%] text-[var(--dark-primary)]">Address</p>
+                    <h5 class="text-[80%] font-medium text-[var(--primary)]">
+                      221B, Park Street,<br />
+                      Kolkata, West Bengal – 700016
+                    </h5>
+                  </div>
+                </div>
+
+                <div class="grid h-auto w-full grid-cols-2 gap-x-3">
+                  <div class="flex h-auto items-center gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-3 py-2">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                      <i class="bi bi-chevron-bar-expand text-[120%] text-[var(--primary)]"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[70%] text-[var(--dark-primary)]">Height</p>
+                      <h5 class="text-[80%] font-medium text-[var(--primary)]">165 cm</h5>
+                    </div>
+                  </div>
+
+                  <div class="flex h-auto items-center gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-3 py-2">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                      <i class="bi bi-speedometer2 text-[120%] text-[var(--primary)]"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[70%] text-[var(--dark-primary)]">Weight</p>
+                      <h5 class="text-[80%] font-medium text-[var(--primary)]">58 kg</h5>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] border border-solid border-[#0000000a] bg-[var(--light)] px-4 py-2">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-heart-pulse text-[120%] text-[var(--primary)]"></i>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-[70%] text-[var(--dark-primary)]">Blood Pressure</p>
+                    <h5 class="text-[80%] font-medium text-[var(--primary)]">120 / 80 mmHg</h5>
+                  </div>
+                </div>
               </div>
-              <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-                <input type="date" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Select Age*">
-              </div>
-              <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-                <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Mobile Number*">
-              </div>
-              <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-                <textarea rows="2" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Address*"></textarea>
-              </div>
-              <div class="h-auto w-full grid grid-cols-2 gap-x-2 mb-3 last:mb-0">
-                <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Hight*">
-                <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Weight*">
-              </div>
-              <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
-                <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Blood Pressure*">
-              </div>
-              <div class="h-auto w-full flex items-center gap-x-1 mt-5 mb-2 last:mb-0">
-                <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='dashboard.html'">
-                  Submit
-                </button>
+
+              <div class="mt-20 h-auto w-full overflow-hidden rounded-[12px] border border-solid border-[#0000000d] bg-[var(--light)]">
+                <div class="flex h-auto w-full items-center gap-x-3 border-b border-solid border-[#0000000d] px-4 py-2">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-person text-[110%] text-[var(--primary)]"></i>
+                  </div>
+                  <p class="flex-1 text-[75%] font-semibold text-[var(--dark-primary)]">Name</p>
+                  <h5 class="text-right text-[80%] font-medium text-[var(--dark-primary)]/80">Puja Das</h5>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 border-b border-solid border-[#0000000d] px-4 py-2">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-calendar3 text-[110%] text-[var(--primary)]"></i>
+                  </div>
+                  <p class="flex-1 text-[75%] font-semibold text-[var(--dark-primary)]">Age</p>
+                  <h5 class="text-right text-[80%] font-medium text-[var(--dark-primary)]/80">28 Years</h5>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 border-b border-solid border-[#0000000d] px-4 py-2">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-telephone text-[110%] text-[var(--primary)]"></i>
+                  </div>
+                  <p class="flex-1 text-[75%] font-semibold text-[var(--dark-primary)]">Mobile Number</p>
+                  <h5 class="text-right text-[80%] font-medium text-[var(--dark-primary)]/80">+91 98765 43210</h5>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 border-b border-solid border-[#0000000d] px-4 py-2">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-geo-alt text-[110%] text-[var(--primary)]"></i>
+                  </div>
+                  <p class="flex-1 text-[75%] font-semibold text-[var(--dark-primary)]">Address</p>
+                  <h5 class="text-right text-[80%] font-medium leading-[1.45] text-[var(--dark-primary)]/80">
+                    221B, Park Street<br />
+                    Kolkata, West Bengal – 700016
+                  </h5>
+                </div>
+
+                <div class="grid h-auto w-full grid-cols-2 border-b border-solid border-[#0000000d]">
+                  <div class="flex items-center gap-x-3 border-r border-solid border-[#0000000d] px-4 py-2">
+                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                      <i class="bi bi-chevron-bar-expand text-[110%] text-[var(--primary)]"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[75%] font-semibold text-[var(--dark-primary)]">Height</p>
+                      <h5 class="text-[80%] font-medium text-[var(--dark-primary)]/80">165 cm</h5>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-x-3 px-4 py-2">
+                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                      <i class="bi bi-speedometer2 text-[110%] text-[var(--primary)]"></i>
+                    </div>
+                    <div class="min-w-0">
+                      <p class="text-[75%] font-semibold text-[var(--dark-primary)]">Weight</p>
+                      <h5 class="text-[80%] font-medium text-[var(--dark-primary)]/80">58 kg</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex h-auto w-full items-center gap-x-3 px-4 py-2">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-heart-pulse text-[110%] text-[var(--primary)]"></i>
+                  </div>
+                  <p class="flex-1 text-[75%] font-semibold text-[var(--dark-primary)]">Blood Pressure</p>
+                  <h5 class="text-right text-[80%] font-medium text-[var(--dark-primary)]/80">120 / 80 mmHg</h5>
+                </div>
               </div>
 
             </form>
