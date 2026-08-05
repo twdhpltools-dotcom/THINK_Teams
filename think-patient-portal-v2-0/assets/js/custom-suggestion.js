@@ -20,7 +20,7 @@ BookingTestInput.addEventListener("input", function () {
 
   BookingTestBox.innerHTML = value && result.length
     ? result.map(test => `
-        <div class="flex items-center justify-between gap-x-3 py-2 px-4 border-b border-solid border-[var(--dark-primary)]/5 hover:bg-[var(--primary)]/5">
+        <div class="flex items-center justify-between gap-x-3 py-2 px-4 border-b border-solid border-[var(--dark-primary)]/5 cursor-pointer hover:bg-[var(--primary)]/3 active:bg-[var(--primary)]/5">
           <div class="min-w-0 flex-1">
             <h6 class="truncate text-[80%] font-semibold text-[var(--dark-primary)]/90">${test.name}</h6>
             <p class="mt-[2px] text-[70%] font-semibold text-[var(--primary)]/90">${test.price}</p>
