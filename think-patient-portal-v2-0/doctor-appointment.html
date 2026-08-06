@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Appointment | ThinkLab Patient Portal | Secure Patient Management Application</title>
+
+  <meta name="title" content="Doctor Appointment | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://patient.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Patient Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!----------------- CSS FOR OWL-CAROUSEL FILES START ------------------------>
+  <link rel="stylesheet" href="assets/css/owl-carousel.css">
+  <!----------------- CSS FOR OWL-CAROUSEL FILES COMPLETE ------------------------>
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- BOOKING-SELECTION SECTION ------------------------------------------------->
+  <section class="page h-auto w-full">
+
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBarMenu" class="h-full w-full fixed bottom-0 z-102 bg-[var(--light)] pt-3 pb-25 px-6 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <div class="h-auto py-3 w-full bg-[var(--light)] flex items-center">
+        <i class="bi bi-arrow-left text-[140%] text-[var(--dark)]/70 cursor-pointer me-3" onclick="closeSideBarMenu()"></i>
+        <p class="block text-[85%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+      </div>
+
+      <div class="h-auto w-full py-2 px-2 mb-3 rounded-md bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/menu-profile-bg.png');">
+        <div class="flex items-center gap-x-3">
+          <div class="h-11 w-11 rounded-md bg-[#ffe5f3] flex items-center justify-center">
+            <i class="bi bi-person-fill text-[180%] text-[var(--primary)]"></i>
+          </div>
+          <p class="block text-[80%] text-[var(--light)]">Hello, Puja</p>
+        </div>
+      </div>
+
+      <div class="h-auto w-full">
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='profile.html'">
+          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+            <i class="bi bi-person-fill text-[100%] text-[var(--primary)]"></i>
+          </div>
+          My Profile
+        </button>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
+          <div class="flex items-center">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-calendar-check-fill text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Booking
+          </div>
+          <i class="bi bi-chevron-down text-[70%] text-[var(--dark)]/90"></i>
+        </button>
+
+        <div class="sub-menu overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='lab-test.html'">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-flask-fill text-[100%] text-[var(--primary)]"></i>
+            </div>
+            My Tests
+          </button>
+
+          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='doctor-consultation.html'">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-person-circle text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Doctor Consultation
+          </button>
+        </div>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='report.html'">
+          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+            <i class="bi bi-file-earmark-text-fill text-[100%] text-[var(--primary)]"></i>
+          </div>
+          My Reports
+        </button>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='prescription.html'">
+          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+            <i class="bi bi-file-richtext-fill text-[100%] text-[var(--primary)]"></i>
+          </div>
+          My Prescription
+        </button>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='history.html'">
+          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+            <i class="bi bi-stopwatch-fill text-[100%] text-[var(--primary)]"></i>
+          </div>
+          Visit History
+        </button>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='health.html'">
+          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+            <i class="bi bi-clipboard-heart-fill text-[100%] text-[var(--primary)]"></i>
+          </div>
+          My Health
+        </button>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
+          <div class="flex items-center">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-telephone-outbound-fill text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Contact Us
+          </div>
+          <i class="bi bi-chevron-down text-[70%] text-[var(--dark)]/90"></i>
+        </button>
+
+        <div class="sub-menu overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='tel:18006302639'">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-phone text-[100%] text-[var(--primary)]"></i>
+            </div>
+            +91 18006302639
+          </button>
+        </div>
+
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
+          <div class="flex items-center">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-gear-fill text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Settings
+          </div>
+          <i class="bi bi-chevron-down text-[70%] text-[var(--dark)]/90"></i>
+        </button>
+
+        <div class="sub-menu overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='terms-condition.html'">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-file-medical-fill text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Terms of Use
+          </button>
+
+          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='privacy-policy.html'">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-shield-fill-check text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Privacy Policy
+          </button>
+
+          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='login-mobile.html'">
+            <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+              <i class="bi bi-box-arrow-left text-[100%] text-[var(--primary)]"></i>
+            </div>
+            Logout
+          </button>
+        </div>
+      </div>
+
+    </aside>
+    <!----- SIDEBAR-MENU ------->
+
+    <!----- BOTTOM-ISLAND ------->
+    <div class="fixed bottom-0 h-auto w-full py-4 bg-[var(--light)] flex items-center justify-center gap-x-20 rounded-tl-[20px] rounded-tr-[20px] shadow-[0_-10px_25px_0_#00000010] z-101">
+      <a href="dashboard.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 active">
+        <i class="bi bi-house-door block text-[170%] mb-[-5px]"></i>
+        Home
+      </a>
+      <a href="index.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90">
+        <i class="bi bi-calendar-check block text-[170%] mb-[-5px]"></i>
+        Booking
+      </a>
+      <a href="profile.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary])/90">
+        <i class="bi bi-person block text-[170%] mb-[-5px]"></i>
+        Profile
+      </a>
+    </div>
+    <!----- BOTTOM-ISLAND ------->
+    
+    <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
+
+      <!----- TOP-BAR ------->
+      <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 border-b border-solid border-[#00000010] z-100">
+        <div class="flex items-center gap-x-2">
+          <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
+          <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+        </div>
+        <button class="relative z-1 h-10 w-10 flex items-center justify-center p-3 rounded-[50%] bg-[var(--primary)]/5 outline-none" onclick="window.location.href='notfication.html'">
+          <img src="assets/images/bell.png" alt="notf icon">
+          <span class="absolute top-[-5px] right-[-10px] z-2 py-1 px-2 rounded-2xl bg-[var(--primary)] text-center text-[60%] font-semibold text-[var(--light)]">11</span>
+        </button>
+      </div>
+      <!----- TOP-BAR ------->
+
+      <!----- PAGE-CONTENT ------->
+      <div class="content h-auto w-full pb-25">
+
+        <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
+
+          <!----- CONTENT-HEADING ------->
+          <div class="h-auto w-full flex items-center gap-x-3 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 px-3 py-2 mt-4 rounded-xl">
+            <div class="h-10 w-10 p-2 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+              <img src="assets/images/doctor.png" alt="featured icon" />
+            </div>
+            <div>
+              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Book Your Consultation</h5>
+              <p class="text-[var(--dark-primary)]/80 text-[70%]">Schedule your consultation with ease</p>
+            </div>
+          </div>
+          <!----- CONTENT-HEADING ------->
+
+        </div>
+
+        <div class="h-auto w-full bg-linear-to-b from-[var(--light)] to-[#fefefe] rounded-tl-[20px] rounded-tr-[20px] pt-21 pb-6 px-5">
+
+          <div class="h-auto w-full">
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number">
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-4 last:mb-0">
+              <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Reason for Doctor Visit*">
+            </div>
+            <div class="h-auto w-full flex items-center justify-between mb-3 last:mb-0">
+              <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">Schedule</h6>
+              <div class="flex items-center gap-x-2">
+                <button class="h-6 w-6 flex items-center justify-center rounded-full outline-none border border-[#00000020] bg-[var(--light)] text-[var(--dark)]">
+                  <i class="bi bi-chevron-left text-[75%]"></i>
+                </button>
+                <span class="text-[75%] font-medium text-[var(--dark)]/60">June 2026</span>
+                <button class="h-6 w-6 flex items-center justify-center rounded-full outline-none border border-[#00000020] bg-[var(--light)] text-[var(--dark)]">
+                  <i class="bi bi-chevron-right text-[75%]"></i>
+                </button>
+              </div>
+            </div>
+            <div class="h-auto w-full mb-3 last:mb-0">
+              <div class="w-full overflow-x-auto scrollbar-hide">
+                <div class="inline-flex items-center min-w-max gap-x-3">
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Sun</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#f3f3f3] text-[110%] font-semibold text-[var(--dark-primary)]/70">15</span>
+                  </div>
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Mon</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#f3f3f3] text-[110%] font-semibold text-[var(--dark-primary)]/70">16</span>
+                  </div>
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Tue</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)] text-[110%] font-semibold text-[var(--light)]">17</span>
+                  </div>
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Wed</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#f3f3f3] text-[110%] font-semibold text-[var(--dark-primary)]/70">18</span>
+                  </div>
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Thu</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#f3f3f3] text-[110%] font-semibold text-[var(--dark-primary)]/70">19</span>
+                  </div>
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Fri</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#f3f3f3] text-[110%] font-semibold text-[var(--dark-primary)]/70">20</span>
+                  </div>
+                  <div class="date-chip flex shrink-0 cursor-pointer px-1 py-2 flex-col items-center justify-center rounded-full border border-[#00000010] bg-[var(--light)] text-[var(--dark)]/50 transition-all duration-300">
+                    <span class="mb-[2px] block text-[85%] font-normal text-[var(--dark)]/60">Sat</span>
+                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#f3f3f3] text-[110%] font-semibold text-[var(--dark-primary)]/70">21</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between mb-3 last:mb-0">
+              <h6 class="text-[var(--dark)]/50 font-semibold text-[90%]">Today Availability</h6>
+              <span class="text-[80%] font-medium text-[var(--dark)]/60">4 Slots</span>
+            </div>
+            <div class="grid h-auto w-full grid-cols-4 gap-x-3 gap-y-2 mb-6 last:mb-0">
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200">
+                04:00 PM
+              </button>
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200 selected">
+                06:00 PM
+              </button>
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200">
+                08:00 PM
+              </button>
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200">
+                10:00 PM
+              </button>
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200">
+                12:00 AM
+              </button>
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200">
+                06:00 AM
+              </button>
+              <button class="chip h-7 flex items-center justify-center rounded-full outline-none border border-[#00000050] px-10 text-center text-[75%] font-medium transition-all duration-200 selected">
+                08:00 AM
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
+              <input type="file" id="FileUpload" hidden="">
+              <button class="h-auto w-full flex items-center justify-center gap-x-2 border border-dashed border-[#00000020] outline-none rounded-[5px] py-2 text-left" onclick="document.getElementById('FileUpload').click()">
+                <div class="h-10 w-10 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center">
+                  <i class="bi bi-cloud-upload text-[160%] text-[var(--primary)]"></i>
+                </div>
+                <div class="">                  
+                  <h6 class="text-[80%] text-[var(--dark-primary)]/90 font-semibold">Upload Prescription (Optional)</h6>
+                  <p class="text-[70%] text-[var(--dark)]/50">JPG, PNG or PDF <span class="text-[100%]"><i class="bi bi-dot"></i> Max 5 MB</span></p>
+                </div>
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center gap-x-1 mt-5 mb-2 last:mb-0">
+              <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='payment.html'">
+                Confirm
+              </button>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <!----- PAGE-CONTENT ------->
+
+    </main>
+
+  </section>
+  <!----------------------------------- BOOKING-SELECTION SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/jQuery.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!----------------------------------- JS FOR OWL-CAROUSEL FILES START ------------------------------------------------->
+  <script src="assets/js/owl-carousel-min.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR OWL-CAROUSEL FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>

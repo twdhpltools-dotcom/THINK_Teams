@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log-in | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India</title>
+  
+  <meta name="title" content="Log-in | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://patient.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Patient Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- LOG-IN SECTION ------------------------------------------------->
+  <div class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)] relative z-1">
+
+    <button class="go-back-btn absolute top-7 left-7 h-11 w-11 rounded-[50%] bg-[var(--light)] border-none flex items-center justify-center z-2">
+      <img src="assets/images/back.png" alt="filter icon" class="scale-40">
+    </button>
+
+    <!----- MOBILE-OTP-(RESET)-VERFICATION ------->
+    <div class="size-full flex flex-col items-center justify-center">
+
+      <div class="h-auto w-25 mb-5">
+        <img src="assets/images/p-logo.png" alt="brand logo" />
+      </div>
+
+      <div class="h-auto w-70 mb-9">
+        <img src="assets/images/login-vector.png" alt="Login Vector" />
+      </div>
+
+      <div class="h-auto w-full px-8">
+        <h5 class="text-[130%] font-medium text-[var(--dark-primary)] min-[576px]:text-[150%]">Enter OTP</h5>
+        <p class="text-[75%] text-[var(--dark-primary)]/90 mb-5 min-[576px]:text-[85%]">Please enter the OTP sent to your mobile number.</p>
+
+        <div class="h-auto w-full mb-5">
+          <div class="flex items-center justify-center gap-x-4">
+            <input type="tel" class="h-12 w-13 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] py-3 text-[85%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+            <input type="tel" class="h-12 w-13 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] py-3 text-[85%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+            <input type="tel" class="h-12 w-13 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] py-3 text-[85%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+            <input type="tel" class="h-12 w-13 bg-[var(--light)] border border-solid border-[#d1d1d19e] outline-none rounded-[5px] py-3 text-[85%] text-[var(--dark-primary)] font-medium text-center min-[576px]:text-[95%] otp-input" placeholder="-" />
+          </div>
+        </div>
+
+        <a href="login-otp.html" class="block text-[80%] text-[#1951A6] font-semibold text-center !underline mb-5">
+          Resend OTP
+        </a>
+
+        <div class="h-auto w-full text-center">
+          <button class="h-auto w-full rounded-md py-3 text-[90%] text-[var(--light)] font-medium bg-[var(--primary)] border-none outline-none shadow-[0_10px_20px_0_#d52e8a33]" onclick="window.location.href='login-profile.html'">
+            Verify OTP
+          </button>       
+        </div>
+      </div>
+      <!----- MOBILE-OTP-VERFICATION ------->
+
+    </div>
+    <!----- MOBILE-OTP-(RESET)-VERFICATION ------->
+
+  </div>
+  <!----------------------------------- LOG-IN SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
