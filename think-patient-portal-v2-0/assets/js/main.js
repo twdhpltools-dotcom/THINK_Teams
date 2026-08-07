@@ -147,34 +147,7 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 15,
-    responsive: {
-      0: {
-        items: 3,
-      },
-      768: {
-        items: 9,
-      },
-      1024: {
-        items: 12,
-      }
-    }
-  });
-});
-
-$(document).ready(function(){
-  var owl = $('#DashboardPackCarousel');
-  
-  owl.owlCarousel({
-    margin: 10,
-    loop: true,
-    autoplay: false,
-    autoplayTimeout: 1500,
-    autoplaySpeed: 1500,
-    nav: false,
-    dots: false,
-    autoplayHoverPause: true,
-    stagePadding: 15,
+    stagePadding: 10,
     responsive: {
       0: {
         items: 3,
