@@ -139,7 +139,7 @@ $(document).ready(function(){
   var owl = $('#DashboardTestCarousel');
   
   owl.owlCarousel({
-    margin: 5,
+    margin: 10,
     loop: true,
     autoplay: false,
     autoplayTimeout: 1500,
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showCartToast();
 
       button.classList.add("added");
-      button.innerHTML = '<i class="bi bi-trash"></i> Remove';
+      button.innerHTML = 'Remove';
     });
   });
 
