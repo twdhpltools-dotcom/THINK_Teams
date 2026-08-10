@@ -147,7 +147,7 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 10,
+    stagePadding: 0,
     responsive: {
       0: {
         items: 3,
