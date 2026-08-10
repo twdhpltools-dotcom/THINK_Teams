@@ -150,13 +150,13 @@ $(document).ready(function(){
     stagePadding: 0,
     responsive: {
       0: {
-        items: 3,
+        items: 2,
       },
       768: {
-        items: 9,
+        items: 8,
       },
       1024: {
-        items: 12,
+        items: 10,
       }
     }
   });
