@@ -47,37 +47,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- BOOKING-TIME-MENU ----------------------------------------*/
 
-/*-------------------------------------- HOME-COLLECTION-STATUS-MENU ----------------------------------------*/
-function openHomeCollectionStatusMenu() { 
-    const HomeCollectionStatusMenu = document.getElementById("HomeCollectionStatusMenu"); 
-    const HomeCollectionStatusMenuOverlay = document.getElementById("HomeCollectionStatusMenuOverlay"); 
+/*-------------------------------------- HOME-COLLECTION-STATUS-YES-MENU ----------------------------------------*/
+function openHomeCollectionStatusYesMenu() { 
+    const HomeCollectionStatusYesMenu = document.getElementById("HomeCollectionStatusYesMenu"); 
+    const HomeCollectionStatusYesMenuOverlay = document.getElementById("HomeCollectionStatusYesMenuOverlay"); 
  
-    HomeCollectionStatusMenu.classList.toggle("translate-y-full"); 
-    HomeCollectionStatusMenu.classList.toggle("opacity-0"); 
-    HomeCollectionStatusMenu.classList.toggle("translate-y-0"); 
-    HomeCollectionStatusMenu.classList.toggle("opacity-100"); 
+    HomeCollectionStatusYesMenu.classList.toggle("translate-y-full"); 
+    HomeCollectionStatusYesMenu.classList.toggle("opacity-0"); 
+    HomeCollectionStatusYesMenu.classList.toggle("translate-y-0"); 
+    HomeCollectionStatusYesMenu.classList.toggle("opacity-100"); 
  
-    HomeCollectionStatusMenuOverlay.classList.toggle("opacity-0"); 
-    HomeCollectionStatusMenuOverlay.classList.toggle("invisible"); 
+    HomeCollectionStatusYesMenuOverlay.classList.toggle("opacity-0"); 
+    HomeCollectionStatusYesMenuOverlay.classList.toggle("invisible"); 
 }
 
-function closeHomeCollectionStatusMenu() {
-    const HomeCollectionStatusMenu = document.getElementById("HomeCollectionStatusMenu");
-    const HomeCollectionStatuseMenuOverlay = document.getElementById("HomeCollectionStatusMenuOverlay");
+function closeHomeCollectionStatusYesMenu() {
+    const HomeCollectionStatusYesMenu = document.getElementById("HomeCollectionStatusYesMenu");
+    const HomeCollectionStatusYesMenuOverlay = document.getElementById("HomeCollectionStatusYesMenuOverlay");
 
-    HomeCollectionStatusMenu.classList.add("translate-y-full", "opacity-0");
-    HomeCollectionStatusMenu.classList.remove("translate-y-0", "opacity-100");
+    HomeCollectionStatusYesMenu.classList.add("translate-y-full", "opacity-0");
+    HomeCollectionStatusYesMenu.classList.remove("translate-y-0", "opacity-100");
 
-    HomeCollectionStatusMenuOverlay.classList.add("opacity-0", "invisible");
-    HomeCollectionStatusMenuOverlay.classList.remove("opacity-100");
+    HomeCollectionStatusYesMenuOverlay.classList.add("opacity-0", "invisible");
+    HomeCollectionStatusYesMenuOverlay.classList.remove("opacity-100");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("HomeCollectionStatusMenuOverlay").addEventListener("click", function () {
-        closeHomeCollectionStatusMenu();
+    document.getElementById("HomeCollectionStatusYesMenuOverlay").addEventListener("click", function () {
+        closeHomeCollectionStatusYesMenu();
     });
 });
-/*-------------------------------------- HOME-COLLECTION-STATUS-MENU ----------------------------------------*/
+/*-------------------------------------- HOME-COLLECTION-STATUS-YES-MENU ----------------------------------------*/
+
+/*-------------------------------------- HOME-COLLECTION-STATUS-NO-MENU ----------------------------------------*/
+function openHomeCollectionStatusNoMenu() { 
+    const HomeCollectionStatusNoMenu = document.getElementById("HomeCollectionStatusNoMenu"); 
+    const HomeCollectionStatusNoMenuOverlay = document.getElementById("HomeCollectionStatusNoMenuOverlay"); 
+ 
+    HomeCollectionStatusNoMenu.classList.toggle("translate-y-full"); 
+    HomeCollectionStatusNoMenu.classList.toggle("opacity-0"); 
+    HomeCollectionStatusNoMenu.classList.toggle("translate-y-0"); 
+    HomeCollectionStatusNoMenu.classList.toggle("opacity-100"); 
+ 
+    HomeCollectionStatusNoMenuOverlay.classList.toggle("opacity-0"); 
+    HomeCollectionStatusNoMenuOverlay.classList.toggle("invisible"); 
+}
+
+function closeHomeCollectionStatusNoMenu() {
+    const HomeCollectionStatusNoMenu = document.getElementById("HomeCollectionStatusNoMenu");
+    const HomeCollectionStatusNoMenuOverlay = document.getElementById("HomeCollectionStatusNoMenuOverlay");
+
+    HomeCollectionStatusNoMenu.classList.add("translate-y-full", "opacity-0");
+    HomeCollectionStatusNoMenu.classList.remove("translate-y-0", "opacity-100");
+
+    HomeCollectionStatusNoMenuOverlay.classList.add("opacity-0", "invisible");
+    HomeCollectionStatusNoMenuOverlay.classList.remove("opacity-100");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("HomeCollectionStatusNoMenuOverlay").addEventListener("click", function () {
+        closeHomeCollectionStatusNoMenu();
+    });
+});
+/*-------------------------------------- HOME-COLLECTION-STATUS-NO-MENU ----------------------------------------*/
 
 /*-------------------------------------- HISTORY-SORT-MENU ----------------------------------------*/
 function openHistorySortMenu() { 
