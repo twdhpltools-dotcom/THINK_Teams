@@ -191,8 +191,8 @@ button.tab-btn.active .tab-indicator {
     height: 8px;
     width: 8px;
     border-radius: 50%;
-    background: #d52e8a4a;
-    box-shadow: 0 0 15px 0 #d52e8a70;
+    background: #d52e8a78;
+    box-shadow: 0 0 15px 0 #d52e8ab8;
     z-index: 2;
     display: none;
 }
