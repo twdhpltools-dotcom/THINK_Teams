@@ -238,6 +238,12 @@
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
                         </div>
+                        <div class="flex items-center mt-1">
+                          <div class="h-auto w-5 me-2">
+                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
+                          </div>
+                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusNoMenu()">Collection Status</em>
+                        </div>
                       </div>
                     </div>
                     <button class="h-8 w-8 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/20 outline-none" onclick="">
@@ -252,7 +258,6 @@
                       </div>
                       <div class="px-3">
                         <h6 class="text-[70%] font-semibold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
-                        <span class="block text-[70%] text-[var(--dark)]/50 font-medium mb-1">Collector not assigned yet</span>
                         <div class="flex items-center gap-x-2">
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
@@ -261,7 +266,7 @@
                           <div class="h-auto w-5 me-2">
                             <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
                           </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusMenu()">Collection Status</em>
+                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusYesMenu()">Collection Status</em>
                         </div>
                       </div>
                     </div>
@@ -277,7 +282,6 @@
                       </div>
                       <div class="px-3">
                         <h6 class="text-[70%] font-semibold text-[var(--dark)]/70">X-RAY OF LEG, USG OF KUB, CT 3D SCAN</h6>
-                        <span class="block text-[70%] text-[var(--dark)]/50 font-medium mb-1">Collector not assigned yet</span>
                         <div class="flex items-center gap-x-2">
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
@@ -286,7 +290,7 @@
                           <div class="h-auto w-5 me-2">
                             <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
                           </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusMenu()">Collection Status</em>
+                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusNoMenu()">Collection Status</em>
                         </div>
                       </div>
                     </div>
@@ -306,6 +310,12 @@
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
                         </div>
+                        <div class="flex items-center mt-1">
+                          <div class="h-auto w-5 me-2">
+                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
+                          </div>
+                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusYesMenu()">Collection Status</em>
+                        </div>
                       </div>
                     </div>
                     <button class="h-8 w-8 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/20 outline-none" onclick="">
@@ -323,6 +333,12 @@
                         <div class="flex items-center gap-x-2">
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
                           <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
+                        </div>
+                        <div class="flex items-center mt-1">
+                          <div class="h-auto w-5 me-2">
+                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
+                          </div>
+                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusNoMenu()">Collection Status</em>
                         </div>
                       </div>
                     </div>
@@ -342,10 +358,10 @@
 
     </main>
 
-    <!----- HOME-COLLECTION-STATUS-MENU ------->
-    <div id="HomeCollectionStatusMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
-    <aside id="HomeCollectionStatusMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-8 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
-      <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHomeCollectionStatusMenu()">
+    <!----- HOME-COLLECTION-STATUS-YES-MENU ------->
+    <div id="HomeCollectionStatusYesMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
+    <aside id="HomeCollectionStatusYesMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-8 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHomeCollectionStatusYesMenu()">
         <i class="bi bi-x-lg text-[70%] text-[var(--dark)]"></i>
       </button>
 
@@ -394,7 +410,7 @@
         <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
           <div class="flex items-center">
             <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
-              <i class="bi bi-flask-fill text-[80%] text-[var(--dark)]/40"></i>
+              <i class="bi bi-flask text-[80%] text-[var(--dark)]/40"></i>
             </div>
             <div class="ps-3">
               <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Sample Received by Lab</h6>
@@ -405,7 +421,7 @@
         <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
           <div class="flex items-center">
             <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
-              <i class="bi bi-file-text-fill text-[80%] text-[var(--dark)]/40"></i>
+              <i class="bi bi-file-earmark-text text-[80%] text-[var(--dark)]/40"></i>
             </div>
             <div class="ps-3">
               <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Report Ready</h6>
@@ -414,7 +430,80 @@
         </div>
       </div>
     </aside>
-    <!-----  HOME-COLLECTION-STATUS-MENU ------->
+    <!-----  HOME-COLLECTION-STATUS-YES-MENU ------->
+
+    <!----- HOME-COLLECTION-STATUS-NO-MENU ------->
+    <div id="HomeCollectionStatusNoMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
+    <aside id="HomeCollectionStatusNoMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-8 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHomeCollectionStatusNoMenu()">
+        <i class="bi bi-x-lg text-[70%] text-[var(--dark)]"></i>
+      </button>
+
+      <div class="h-auto w-full pt-4 pb-3 px-5 flex items-center gap-x-2">
+        <span class="h-9 w-9 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/20">
+          <img class="opacity-60" src="assets/images/delivery-truck.png" alt="collection truck icon">
+        </span>
+        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Collection Progress</h4>
+      </div>
+
+      <div class="h-auto w-full border-t border-solid border-[#00000010]">
+        <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
+          <div class="flex items-center">
+            <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
+              <i class="bi bi-clock-history text-[80%] text-[var(--dark)]/40"></i>
+            </div>
+            <div class="ps-3">
+              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Collector not Assigned yet</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
+          <div class="flex items-center">
+            <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
+              <i class="bi bi-sign-intersection-y text-[80%] text-[var(--dark)]/40"></i>
+            </div>
+            <div class="ps-3">
+              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Collector On the Way</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
+          <div class="flex items-center">
+            <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
+              <i class="bi bi-flask-florence text-[80%] text-[var(--dark)]/40"></i>
+            </div>
+            <div class="ps-3">
+              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Sample Collected</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
+          <div class="flex items-center">
+            <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
+              <i class="bi bi-flask text-[80%] text-[var(--dark)]/40"></i>
+            </div>
+            <div class="ps-3">
+              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Sample Received by Lab</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
+          <div class="flex items-center">
+            <div class="h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
+              <i class="bi bi-file-earmark-text text-[80%] text-[var(--dark)]/40"></i>
+            </div>
+            <div class="ps-3">
+              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Report Ready</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-----  HOME-COLLECTION-STATUS-NO-MENU ------->
 
   </section>
   <!----------------------------------- LAB-TEST SECTION ------------------------------------------------->
