@@ -182,8 +182,27 @@ button.tab-btn.active .tab-indicator {
 /* ----------------------------------------- CSS FOR CART-BTN-SECTION START ---------------------------------------------- */
 
 /* ----------------------------------------- CSS FOR NOTIFICATION-BOX-SECTION START ---------------------------------------------- */
+.notf-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #d52e8a4a;
+    box-shadow: 0 0 15px 0 #d52e8a70;
+    z-index: 2;
+    display: none;
+}
+
 .notf-box.active {
-    background: #d52e8a05;
+    background: #fff3f9cc;
+}
+
+.notf-box.active::after {
+    display: block;
 }
 /* ----------------------------------------- CSS FOR NOTIFICATION-BOX-SECTION COMPLETE ---------------------------------------------- */
 
