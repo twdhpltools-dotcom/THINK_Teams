@@ -110,6 +110,13 @@
           My Prescription
         </button>
 
+        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='EMR-prescription.html'">
+          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
+            <i class="bi bi-file-check text-[100%] text-[var(--primary)]"></i>
+          </div>
+          EMR
+        </button>
+
         <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='history.html'">
           <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
             <i class="bi bi-stopwatch text-[100%] text-[var(--primary)]"></i>
@@ -204,22 +211,9 @@
     </div>
     <!----- BOTTOM-ISLAND ------->
     
-    <main class="h-screen w-full bg-linear-to-b from-[#F4F2F2]/40 to-[var(--light)]">
+    <main class="h-auto w-full bg-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <!-- <div class="h-auto pt-2 pb-5 px-5 w-full fixed top-0 left-0 flex items-center justify-between gap-x-2 bg-linear-to-b from-[#00000050]/90 to-[transparent] z-100">
-        <div class="flex items-center gap-x-2">
-          <button class="border-none flex items-center justify-center" onclick="openSideBarMenu()">
-            <i class="bi bi-list text-[var(--light)] text-[150%]"></i>
-          </button>
-          <p class="block text-[75%] text-[var(--light)] font-medium mt-[-2px]">Hello, Puja</p>
-        </div>
-        <button class="relative z-1 h-10 w-10 flex items-center justify-center p-3 rounded-[50%] bg-[var(--dark)]/20 outline-none" onclick="window.location.href='notfication.html'">
-          <img src="assets/images/bell2.png" alt="notf icon">
-          <span class="absolute top-[-4px] right-[-10px] z-2 py-0 px-1.5 rounded-2xl bg-[var(--light)] flex items-center justify-center text-[85%] font-semibold text-[var(--primary)]">11</span>
-        </button>
-      </div> -->
-
       <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 border-b border-solid border-[#00000010] z-100">
         <div class="flex items-center gap-x-2">
           <button class="border-none flex items-center justify-center" onclick="openSideBarMenu()">
@@ -239,7 +233,7 @@
 
         <div class="h-auto w-full">
 
-          <div class="relative h-[190px] w-full overflow-hidden z-1">
+          <div class="relative h-[200px] w-full overflow-hidden z-1">
             <div class="absolute inset-0 size-full z-[2]">
               <img src="assets/images/top-profile-bg.png" alt="" class="!h-full" />
             </div>
@@ -257,51 +251,47 @@
 
               <div class="flex h-auto w-full flex-col gap-y-2">
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-person text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-person text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Name</p>
+                    <!-- <p class="text-[70%] text-[var(--dark-primary)]">Name</p> -->
                     <h5 class="truncate text-[80%] font-medium text-[var(--primary)]">Puja Das</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-calendar3 text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-calendar3 text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Age</p>
                     <h5 class="text-[80%] font-medium text-[var(--primary)]">28 Years</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-calendar3 text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-gender-ambiguous text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Gender</p>
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">28 Years</h5>
+                    <h5 class="text-[80%] font-medium text-[var(--primary)]">Female</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-telephone text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-telephone text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Mobile Number</p>
                     <h5 class="text-[80%] font-medium text-[var(--primary)]">+91 98765 43210</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-phone text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-phone text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Alternative Mobile Number</p>
                     <h5 class="text-[80%] font-medium text-[var(--primary)]">+91 99083 95630</h5>
                   </div>
                   <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
@@ -310,21 +300,19 @@
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-person-vcard text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-person-vcard text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">UH Id</p>
                     <h5 class="text-[80%] font-medium text-[var(--primary)]">59BhV9Uk2</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-start gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-geo-alt text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-geo-alt text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Address</p>
                     <h5 class="text-[80%] font-medium text-[var(--primary)]">
                       221B, Park Street,<br />
                       Kolkata, West Bengal – 700016
@@ -334,11 +322,10 @@
 
                 <div class="grid h-auto w-full grid-cols-2 gap-x-3">
                   <div class="flex h-auto items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                      <i class="bi bi-chevron-bar-expand text-[120%] text-[var(--primary)]"></i>
+                    <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                      <i class="bi bi-chevron-bar-expand text-[110%] text-[var(--primary)]"></i>
                     </div>
                     <div class="min-w-0">
-                      <p class="text-[70%] text-[var(--dark-primary)]">Height</p>
                       <h5 class="text-[80%] font-medium text-[var(--primary)]">165 cm</h5>
                     </div>
                     <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
@@ -347,11 +334,10 @@
                   </div>
 
                   <div class="flex h-auto items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                      <i class="bi bi-speedometer2 text-[120%] text-[var(--primary)]"></i>
+                    <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                      <i class="bi bi-speedometer2 text-[110%] text-[var(--primary)]"></i>
                     </div>
                     <div class="min-w-0">
-                      <p class="text-[70%] text-[var(--dark-primary)]">Weight</p>
                       <h5 class="text-[80%] font-medium text-[var(--primary)]">58 kg</h5>
                     </div>
                     <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
@@ -361,11 +347,10 @@
                 </div>
 
                 <div class="flex h-auto items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
-                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-heart-pulse text-[120%] text-[var(--primary)]"></i>
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
+                    <i class="bi bi-heart-pulse text-[110%] text-[var(--primary)]"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <p class="text-[70%] text-[var(--dark-primary)]">Blood Pressure</p>
                     <h5 class="text-[80%] font-medium text-[var(--primary)]">120 / 80 mmHg</h5>
                   </div>
                   <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
