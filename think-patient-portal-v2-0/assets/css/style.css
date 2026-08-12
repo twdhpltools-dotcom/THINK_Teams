@@ -127,6 +127,22 @@ button.tab-btn.active .tab-indicator {
     background: var(--primary);
     opacity: 1;
 }
+
+.decor-head img {
+    height: 60px;
+}
+
+.decor-head::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 50px;
+    background: linear-gradient(to left, #fff3f9, transparent);
+    z-index: 2;
+}
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PRE-LOADER START ---------------------------------------------- */
