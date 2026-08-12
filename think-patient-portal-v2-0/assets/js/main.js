@@ -283,3 +283,11 @@ function openUserCamera(input) {
 }
 /*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
+
+
+
+const input = document.getElementById("PrescribedDoctor");
+
+input.addEventListener("input", function () {
+  this.nextElementSibling.style.display = this.value ? "none" : "";
+});
