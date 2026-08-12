@@ -147,10 +147,10 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 0,
+    stagePadding: 40,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
       768: {
         items: 8,
