@@ -82,9 +82,20 @@ hr {
     margin: 8px 0;
 }
 
-button.tab-btn.active {
-    font-weight: 500;
-    color: var(--primary);
+button.tab-btn.all.active {
+    color: #282a3a;
+}
+
+button.tab-btn.upcoming.active {
+    color: #4678ff;
+}
+
+button.tab-btn.completed.active {
+    color: #059669;
+}
+
+button.tab-btn.cancel.active {
+    color: #dc2626;
 }
 
 button.tab-btn.active .tab-indicator {
