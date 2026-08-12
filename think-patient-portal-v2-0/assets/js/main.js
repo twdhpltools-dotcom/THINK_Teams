@@ -141,9 +141,9 @@ $(document).ready(function(){
   owl.owlCarousel({
     margin: 10,
     loop: true,
-    autoplay: false,
-    autoplayTimeout: 1500,
-    autoplaySpeed: 1500,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 2500,
     nav: false,
     dots: false,
     autoplayHoverPause: true,
@@ -153,10 +153,10 @@ $(document).ready(function(){
         items: 1,
       },
       768: {
-        items: 8,
+        items: 4,
       },
       1024: {
-        items: 10,
+        items: 7,
       }
     }
   });
@@ -283,11 +283,3 @@ function openUserCamera(input) {
 }
 /*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
-
-
-
-const input = document.getElementById("PrescribedDoctor");
-
-input.addEventListener("input", function () {
-  this.nextElementSibling.style.display = this.value ? "none" : "";
-});
