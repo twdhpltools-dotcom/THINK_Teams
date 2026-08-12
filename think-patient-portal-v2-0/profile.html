@@ -49,28 +49,24 @@
     <aside id="SideBarMenu" class="h-full w-full fixed bottom-0 z-102 bg-[var(--light)] pb-25 px-6 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <div class="h-auto py-3 w-full bg-[var(--light)] flex items-center">
         <i class="bi bi-arrow-left text-[140%] text-[var(--dark)]/70 cursor-pointer me-3" onclick="closeSideBarMenu()"></i>
-        <p class="block text-[85%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
       </div>
 
       <div class="h-auto w-full py-2 px-2 mb-3 rounded-md bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/menu-profile-bg.png');">
         <div class="flex items-center gap-x-3">
-          <div class="h-11 w-11 rounded-md bg-[#ffe5f3] flex items-center justify-center">
-            <i class="bi bi-person-fill text-[180%] text-[var(--primary)]"></i>
+          <div class="h-15 w-15 rounded-md bg-[#ffe5f3] flex items-center justify-center">
+            <i class="bi bi-person-fill text-[250%] text-[var(--dark-primary)]/50"></i>
           </div>
-          <p class="block text-[80%] text-[var(--light)]">Hello, Puja</p>
+          <div>
+            <h6 class="text-[85%] font-semibold text-[var(--light)]">Puja Saha</h6>
+            <p class="text-[80%] text-[var(--light)] pb-[2px]">UHID: 1234&nbsp;|&nbsp;33 Yrs &gt;&nbsp;Female</p>
+            <span class="block text-[75%] text-[var(--light)]"><i class="bi bi-phone text-[120%]"></i> +(91)8777 749 654</span>
+          </div>
         </div>
       </div>
 
       <div class="h-auto w-full">
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='profile.html'">
-          <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
-            <i class="bi bi-person text-[100%] text-[var(--primary)]"></i>
-          </div>
-          My Profile
-        </button>
-
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
           <div class="flex items-center">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-calendar-check text-[100%] text-[var(--primary)]"></i>
@@ -81,14 +77,14 @@
         </button>
 
         <div class="sub-menu overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='lab-test.html'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='lab-test.html'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-flask text-[100%] text-[var(--primary)]"></i>
             </div>
             My Tests
           </button>
 
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='doctor-consultation.html'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='doctor-consultation.html'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-person-circle text-[100%] text-[var(--primary)]"></i>
             </div>
@@ -96,42 +92,42 @@
           </button>
         </div>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='report.html'">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='report.html'">
           <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
             <i class="bi bi-file-earmark-text text-[100%] text-[var(--primary)]"></i>
           </div>
           My Reports
         </button>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='prescription.html'">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='prescription.html'">
           <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
             <i class="bi bi-file-richtext text-[100%] text-[var(--primary)]"></i>
           </div>
           My Prescription
         </button>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='EMR-prescription.html'">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='EMR-prescription.html'">
           <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
             <i class="bi bi-file-check text-[100%] text-[var(--primary)]"></i>
           </div>
           EMR
         </button>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='history.html'">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='history.html'">
           <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
             <i class="bi bi-stopwatch text-[100%] text-[var(--primary)]"></i>
           </div>
           Visit History
         </button>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='health.html'">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='health.html'">
           <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
             <i class="bi bi-clipboard-heart text-[100%] text-[var(--primary)]"></i>
           </div>
           My Health
         </button>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
           <div class="flex items-center">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-telephone-outbound text-[100%] text-[var(--primary)]"></i>
@@ -142,14 +138,14 @@
         </button>
 
         <div class="sub-menu overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='tel:18006302639'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='tel:18006302639'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-phone text-[100%] text-[var(--primary)]"></i>
             </div>
             +91 18006302639
           </button>
 
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='tel:18006302639'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='tel:18006302639'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-whatsapp text-[100%] text-[var(--primary)]"></i>
             </div>
@@ -157,7 +153,7 @@
           </button>
         </div>
 
-        <button class="text-left py-1 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
+        <button class="text-left py-2 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center justify-between hover:bg-[var(--primary)]/10" onclick="toggleSubMenu(this)">
           <div class="flex items-center">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-gear text-[100%] text-[var(--primary)]"></i>
@@ -168,21 +164,21 @@
         </button>
 
         <div class="sub-menu overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out">
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='terms-condition.html'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='terms-condition.html'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-file-medical text-[100%] text-[var(--primary)]"></i>
             </div>
             Terms of Use
           </button>
 
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='privacy-policy.html'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='privacy-policy.html'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-shield-check text-[100%] text-[var(--primary)]"></i>
             </div>
             Privacy Policy
           </button>
 
-          <button class="text-left py-1 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='login-mobile.html'">
+          <button class="text-left py-2 px-5 h-auto w-full border-b border-solid border-[var(--dark-primary)]/10 text-[var(--dark)]/80 text-[90%] flex items-center hover:bg-[var(--primary)]/10" onclick="window.location.href='login-mobile.html'">
             <div class="h-8 w-8 rounded-2xl bg-[var(--primary)]/5 flex items-center justify-center me-3">
               <i class="bi bi-box-arrow-left text-[100%] text-[var(--primary)]"></i>
             </div>
@@ -241,7 +237,12 @@
               <h2 class="text-[95%] font-semibold text-[var(--primary)]/90">Welcome Puja!</h2>
             </div>
             <div class="absolute left-1/2 top-14 z-20 h-32 w-32 -translate-x-1/2 overflow-hidden rounded-full border-3 border-[var(--light)] bg-[#f9f9f9] shadow-[0_10px_30px_#00000010]">
-              <img src="assets/images/profile-user.png" alt="User Profile image" class="!h-full" />
+              <div class="relative z-1">
+                <img src="assets/images/profile-user.png" alt="User Profile image" class="!h-full opacity-[0.5] grayscale" />
+                <button class="absolute bottom-[10px] right-[10px] h-7 w-7 rounded-[50%] border border-solid border-[var(--dark)]/10 bg-[var(--light)] flex items-center justify-center z-2">
+                  <i class="bi bi-camera text-[100%] text-[var(--dark)]/90"></i>
+                </button>
+              </div>
             </div>
             <div class="absolute bottom-[-40px] left-0 h-[120px] w-full rounded-tl-[90px] bg-[var(--light)] z-10"></div>
           </div>
@@ -252,47 +253,46 @@
               <div class="flex h-auto w-full flex-col gap-y-2">
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-person text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-person-check-fill text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <!-- <p class="text-[70%] text-[var(--dark-primary)]">Name</p> -->
-                    <h5 class="truncate text-[80%] font-medium text-[var(--primary)]">Puja Das</h5>
+                    <h5 class="text-[80%] font-medium text-[var(--dark)]/80">28 Years</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-calendar3 text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-gender-ambiguous text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">28 Years</h5>
+                    <h5 class="text-[80%] font-medium text-[var(--dark)]/80">Female</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-gender-ambiguous text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-droplet-half text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">Female</h5>
+                    <h5 class="truncate text-[80%] font-medium text-[var(--dark)]/80">O+</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-telephone text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-telephone-fill text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">+91 98765 43210</h5>
+                    <h5 class="text-[80%] font-medium text-[var(--dark)]/80">+91 98765 43210</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-phone text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-phone-fill text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">+91 99083 95630</h5>
+                    <h5 class="text-[80%] font-medium text-[var(--dark)]/80">+91 99083 95630</h5>
                   </div>
                   <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
                     <i class="bi bi-pencil text-[80%] text-[var(--primary)]/80"></i>
@@ -301,19 +301,19 @@
 
                 <div class="flex h-auto w-full items-center gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-person-vcard text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-person-vcard-fill text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">59BhV9Uk2</h5>
+                    <h5 class="text-[80%] font-medium text-[var(--dark)]/80">59BhV9Uk2</h5>
                   </div>
                 </div>
 
                 <div class="flex h-auto w-full items-start gap-x-3 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                   <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                    <i class="bi bi-geo-alt text-[110%] text-[var(--primary)]"></i>
+                    <i class="bi bi-geo-alt-fill text-[110%] text-[var(--dark-primary)]/50"></i>
                   </div>
                   <div class="min-w-0 flex-1">
-                    <h5 class="text-[80%] font-medium text-[var(--primary)]">
+                    <h5 class="text-[80%] font-medium text-[var(--dark)]/80">
                       221B, Park Street,<br />
                       Kolkata, West Bengal – 700016
                     </h5>
@@ -324,10 +324,10 @@
                   <div class="grid h-auto w-full grid-cols-2 gap-x-3">
                     <div class="flex h-auto items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                       <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                        <i class="bi bi-chevron-bar-expand text-[110%] text-[var(--primary)]"></i>
+                        <i class="bi bi-rulers text-[110%] text-[var(--dark-primary)]/50"></i>
                       </div>
                       <div class="min-w-0">
-                        <h5 class="text-[80%] font-medium text-[var(--primary)]">165 cm</h5>
+                        <h5 class="text-[80%] font-medium text-[var(--dark)]/80">165 cm</h5>
                       </div>
                       <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
                         <i class="bi bi-pencil text-[80%] text-[var(--primary)]/80"></i>
@@ -336,10 +336,10 @@
 
                     <div class="flex h-auto items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                       <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                        <i class="bi bi-speedometer2 text-[110%] text-[var(--primary)]"></i>
+                        <i class="bi bi-speedometer2 text-[110%] text-[var(--dark-primary)]/50"></i>
                       </div>
                       <div class="min-w-0">
-                        <h5 class="text-[80%] font-medium text-[var(--primary)]">58 kg</h5>
+                        <h5 class="text-[80%] font-medium text-[var(--dark)]/80">58 kg</h5>
                       </div>
                       <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
                         <i class="bi bi-pencil text-[80%] text-[var(--primary)]/80"></i>
@@ -349,10 +349,10 @@
 
                   <div class="mt-2 flex h-auto items-center gap-x-3 relative z-1 rounded-[12px] bg-[var(--primary)]/2 border border-solid border-[#00000010] bg-[var(--light)] px-3 py-2">
                     <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/5">
-                      <i class="bi bi-heart-pulse text-[110%] text-[var(--primary)]"></i>
+                      <i class="bi bi-heart-pulse-fill text-[110%] text-[var(--dark-primary)]/50"></i>
                     </div>
                     <div class="min-w-0 flex-1">
-                      <h5 class="text-[80%] font-medium text-[var(--primary)]">120 / 80 mmHg</h5>
+                      <h5 class="text-[80%] font-medium text-[var(--dark)]/80">120 / 80 mmHg</h5>
                     </div>
                     <button class="absolute top-1 right-2 bg-[var(--primary)]/2 border-none outline-none z-2">
                       <i class="bi bi-pencil text-[80%] text-[var(--primary)]/80"></i>
