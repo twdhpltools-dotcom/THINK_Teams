@@ -98,10 +98,7 @@
           </div>
           <!----- CONTENT-HEADING ------->
 
-          <div class="h-auto w-full pt-2 flex items-center justify-between">
-            <button class="rounded-sm border border-[var(--dark)]/10 px-3 py-1 text-[12px] font-semibold text-[var(--dark)]/50 transition-all duration-200">
-              Export
-            </button>
+          <div class="h-auto w-full pt-2 flex items-center justify-end">
             <button class="h-9 w-9 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--primary)]/20 outline-none" onclick="openHistorySortMenu()">
               <img class="opacity-80" src="assets/images/filter.png" alt="filter icon">
             </button>
@@ -187,12 +184,44 @@
     <!----- HISTORY-SORT-MENU ------->
     <div id="HistorySortMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
     <aside id="HistorySortMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-10 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
-      <div class="h-auto w-full pt-5 pb-3 text-center">
-        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Filter By</h4>
-      </div>
       <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHistorySortMenu()">
         <i class="bi bi-x-lg text-[70%] text-[var(--dark)]"></i>
       </button>
+
+      <div class="h-auto w-full pt-5 pb-3 px-5 text-center">
+        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Your Service List</h4>
+      </div>
+
+      <div class="h-auto w-full flex flex-col items-start gap-y-2 px-5">
+        <div class="h-auto rounded-md border border-solid border-[#0000000d] bg-[var(--light)] px-2 py-2">
+          <label class="h-auto w-full flex items-center gap-x-2 cursor-pointer !mb-0">
+            <input type="checkbox" class="h-4 w-4 shrink-0 accent-[var(--primary)]" checked />
+            <div class="h-auto flex-1">
+              <h6 class="text-[95%] text-[var(--dark-primary)]/90 font-semibold">All</h6>
+            </div>
+          </label>
+        </div>
+        <div class="h-auto rounded-md border border-solid border-[#0000000d] bg-[var(--light)] px-2 py-2">
+          <label class="h-auto w-full flex items-center gap-x-2 cursor-pointer !mb-0">
+            <input type="checkbox" class="h-4 w-4 shrink-0 accent-[var(--primary)]" />
+            <div class="h-auto flex-1">
+              <h6 class="text-[95%] text-[var(--dark-primary)]/90 font-semibold">My Test</h6>
+            </div>
+          </label>
+        </div>
+        <div class="h-auto rounded-md border border-solid border-[#0000000d] bg-[var(--light)] px-2 py-2">
+          <label class="h-auto w-full flex items-center gap-x-2 cursor-pointer !mb-0">
+            <input type="checkbox" class="h-4 w-4 shrink-0 accent-[var(--primary)]" />
+            <div class="h-auto flex-1">
+              <h6 class="text-[95%] text-[var(--dark-primary)]/90 font-semibold">Doctor Consultation</h6>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="h-auto w-full pt-4 pb-3 px-5 text-center">
+        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Filter By</h4>
+      </div>
 
       <div class="h-auto w-full py-2 px-5">
         <div class="h-auto w-full">
