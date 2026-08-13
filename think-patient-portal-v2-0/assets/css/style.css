@@ -112,6 +112,19 @@ button.tab-btn.active .tab-indicator {
     font-family: "Rosario", sans-serif;
 }
 
+.search-input {
+    position: relative;
+    z-index: 1;
+}
+
+.search-input-icon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 .chip {
     color: var(--dark);
     background: var(--light);
