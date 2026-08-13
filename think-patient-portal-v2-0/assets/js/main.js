@@ -70,7 +70,7 @@ $(document).ready(function(){
   var owl = $('#DashboardDocCarousel');
   
   owl.owlCarousel({
-    margin: 5,
+    margin: 8,
     loop: true,
     autoplay: false,
     autoplayTimeout: 1500,
@@ -78,15 +78,16 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     autoplayHoverPause: true,
+    stagePadding: 5,
     responsive: {
       0: {
-        items: 4,
+        items: 3,
       },
       768: {
-        items: 8,
+        items: 6,
       },
       1024: {
-        items: 12,
+        items: 9,
       }
     }
   });
