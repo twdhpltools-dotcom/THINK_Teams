@@ -127,7 +127,7 @@ function openHistorySortMenu() {
 
 function closeHistorySortMenu() {
     const HistorySortMenu = document.getElementById("HistorySortMenu");
-    const HHistorySortMenuOverlay = document.getElementById("HistorySortMenuOverlay");
+    const HistorySortMenuOverlay = document.getElementById("HistorySortMenuOverlay");
 
     HistorySortMenu.classList.add("translate-y-full", "opacity-0");
     HistorySortMenu.classList.remove("translate-y-0", "opacity-100");
