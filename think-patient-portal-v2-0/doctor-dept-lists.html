@@ -84,9 +84,9 @@
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[#fbfafa] z-100">
+        <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[var(--light)] z-100">
 
-          <div class="h-auto w-full pt-5 pb-3 relative z-1">
+          <div class="h-auto w-full pt-5 pb-2 relative z-1">
             <i class="bi bi-search absolute bottom-[38%] right-[5%] z-2 text-[100%] text-[var(--dark)]"></i>
             <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]" placeholder="Search By Doctors, Departments ...">
           </div>
@@ -100,74 +100,74 @@
         <div class="h-auto w-full px-5">
 
           <div class="h-auto w-full grid grid-cols-3 place-items-center gap-x-4 gap-y-3 pt-26 pb-3 min-[768px]:grid-cols-6 min-[992px]:grid-cols-9">
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/brain.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">Neurology</h6>
+              </div>
             </div>
 
-            <div class="h-auto w-20 text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/heart.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Cardiology</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/bone-pain.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">Rheumatology</h6>
+              </div>
             </div>
 
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/bone-pain.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Orthopedics</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/pregnant.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">Gynocology</h6>
+              </div>
             </div>
 
-            <div class="h-auto w-full text-center">
-              <button class="h-16 w-16 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/kidneys.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Pulmonology</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/ear.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">ENT</h6>
+              </div>
             </div>
 
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/brain.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">Neurology</h6>
+              </div>
             </div>
 
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/bone-pain.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">Rheumatology</h6>
+              </div>
             </div>
 
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/heart.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Cardiology</p>
-            </div>
-
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/bone-pain.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Orthopedics</p>
-            </div>
-
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/kidneys.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Pulmonology</p>
-            </div>
-
-            <div class="h-auto w-full text-center">
-              <button class="h-15 w-15 p-4 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-1" onclick="window.location.href='doctor-lists.html'">
-                <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
-              </button>
-              <p class="text-[75%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
+            <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+              <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+              <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                <img class="!w-9 opacity-90" src="assets/images/pregnant.png" alt="Doctor type icon" />
+              </div>
+              <div class="relative z-2">
+                <h6 class="max-w-[100px] text-[75%] font-semibold text-[var(--primary)]/80 leading-none truncate">Gynocology</h6>
+              </div>
             </div>
           </div>
         
