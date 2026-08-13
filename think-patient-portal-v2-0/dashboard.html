@@ -247,7 +247,7 @@
             <div class="h-auto w-full flex items-center justify-between pt-18">
               <div class="h-auto flex items-start gap-x-3">
                 <span class="h-5 w-[3px] rounded-full bg-[var(--primary)]/90 shrink-0"></span>
-                <h6 class="text-[var(--primary)]/80 font-semibold text-[90%]">Find a Doctor</h6>
+                <h6 class="text-[var(--dark-primary)]/80 font-semibold text-[90%]">Find a Doctor</h6>
               </div>
               <a href="doctor-dept-lists.html" class="flex items-center gap-x-2 text-[80%] text-[var(--dark)]/60 font-medium">View All<i class="bi bi-arrow-right inline-flex items-center justify-center px-1 py-1 bg-[var(--primary)]/80 rounded-2xl text-[var(--light)] text-[80%]"></i></a>
             </div>
@@ -256,47 +256,54 @@
 
               <div class="owl-carousel owl-theme" id="DashboardDocCarousel">
                 <div class="item">
-                  <div class="h-auto w-full text-center">
-                    <button class="h-13 w-13 p-3 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-2" onclick="window.location.href='doctor-lists.html'">
-                      <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
-                    </button>
-                    <p class="text-[70%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
+                  <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+                    <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+                    <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                      <img class="!w-9 opacity-90" src="assets/images/brain.png" alt="Doctor type icon" />
+                    </div>
+                    <div class="relative z-2">
+                      <h6 class="max-w-[100px] text-[80%] font-semibold text-[var(--primary)]/80 leading-none truncate">Neurology</h6>
+                      <p class="max-w-[100px] text-[60%] text-[var(--dark)]/55 mt-[2px] truncate">Spine Care</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="item">
-                  <div class="h-auto w-full text-center">
-                    <button class="h-13 w-13 p-3 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-2" onclick="window.location.href='doctor-lists.html'">
-                      <img class="opacity-70" src="assets/images/heart.png" alt="Organ icon">
-                    </button>
-                    <p class="text-[70%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Cardiology</p>
+                  <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+                    <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+                    <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                      <img class="!w-9 opacity-90" src="assets/images/bone-pain.png" alt="Doctor type icon" />
+                    </div>
+                    <div class="relative z-2">
+                      <h6 class="max-w-[100px] text-[80%] font-semibold text-[var(--primary)]/80 leading-none truncate">Rheumatology</h6>
+                      <p class="max-w-[100px] text-[60%] text-[var(--dark)]/55 mt-[2px] truncate">Ortho Care</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="item">
-                  <div class="h-auto w-full text-center">
-                    <button class="h-13 w-13 p-3 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-2" onclick="window.location.href='doctor-lists.html'">
-                      <img class="opacity-70" src="assets/images/bone-pain.png" alt="Organ icon">
-                    </button>
-                    <p class="text-[70%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Orthopedics</p>
+                  <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+                    <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+                    <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                      <img class="!w-9 opacity-90" src="assets/images/pregnant.png" alt="Doctor type icon" />
+                    </div>
+                    <div class="relative z-2">
+                      <h6 class="max-w-[100px] text-[80%] font-semibold text-[var(--primary)]/80 leading-none truncate">Gynocology</h6>
+                      <p class="max-w-[100px] text-[60%] text-[var(--dark)]/55 mt-[2px] truncate">Pregnancy Care</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="item">
-                  <div class="h-auto w-full text-center">
-                    <button class="h-13 w-13 p-3 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-2" onclick="window.location.href='doctor-lists.html'">
-                      <img class="opacity-70" src="assets/images/kidneys.png" alt="Organ icon">
-                    </button>
-                    <p class="text-[70%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Pulmonology</p>
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="h-auto w-full text-center">
-                    <button class="h-13 w-13 p-3 rounded-[50%] bg-[var(--primary)]/3 flex items-center justify-center outline-none mx-auto mb-2" onclick="window.location.href='doctor-lists.html'">
-                      <img class="opacity-70" src="assets/images/brain.png" alt="Organ icon">
-                    </button>
-                    <p class="text-[70%] font-semibold text-[var(--dark)]/60 whitespace-nowrap">Neurology</p>
+                  <div class="relative h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/20 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
+                    <div class="absolute bottom-0 left-0 h-[38%] w-full bg-[#FFF4FA] rounded-t-[55%] opacity-80"></div>
+                    <div class="relative z-2 h-14 w-14 p-3 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                      <img class="!w-9 opacity-90" src="assets/images/ear.png" alt="Doctor type icon" />
+                    </div>
+                    <div class="relative z-2">
+                      <h6 class="max-w-[100px] text-[80%] font-semibold text-[var(--primary)]/80 leading-none truncate">ENT</h6>
+                      <p class="max-w-[100px] text-[60%] text-[var(--dark)]/55 mt-[2px] truncate">Ear, Nose, & Throat Care</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -338,7 +345,7 @@
             <div class="h-auto w-full flex items-center justify-between">
               <div class="h-auto flex items-start gap-x-3">
                 <span class="h-5 w-[3px] rounded-full bg-[var(--primary)]/90 shrink-0"></span>
-                <h6 class="text-[var(--primary)]/80 font-semibold text-[90%]">Popular Tests</h6>
+                <h6 class="text-[var(--dark-primary)]/80 font-semibold text-[90%]">Popular Tests</h6>
               </div>
               <a href="test-lists.html" class="flex items-center gap-x-2 text-[80%] text-[var(--dark)]/60 font-medium">View All<i class="bi bi-arrow-right inline-flex items-center justify-center px-1 py-1 bg-[var(--primary)]/80 rounded-2xl text-[var(--light)] text-[80%]"></i></a>
             </div>
@@ -348,18 +355,18 @@
               <div class="owl-carousel owl-theme" id="DashboardTestCarousel">
                 <div class="item">
                   <div class="bg-[var(--light)] rounded-md border border-[var(--primary)]/15 overflow-hidden transition-all duration-300 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='test-details.html'">
-                    <div class="relative h-auto w-full flex items-center gap-x-3 px-3 py-[15px]">
-                      <div class="absolute top-[10px] right-[-27px] w-[92px] rotate-45 bg-[#1fae72] text-center">
-                        <span class="block py-[3px] text-[60%] font-semibold text-[var(--light)] tracking-[0.2px]">
+                    <div class="relative z-1 h-auto w-full flex items-center gap-x-3 px-3 py-[15px]">
+                      <div class="absolute top-[5px] right-[10px] z-2">
+                        <span class="block text-[80%] font-semibold text-[var(--success)] tracking-[0.2px]">
                           10% OFF
                         </span>
                       </div>
-                      <div class="h-12 w-12 p-2 rounded-[50%] bg-[#FFF1F7] flex items-center justify-center shrink-0 overflow-hidden">
-                        <img src="assets/images/test-img.png" alt="test image" />
+                      <div class="relative z-2 h-12 w-12 p-2 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                        <img class="!w-9 opacity-90" src="assets/images/test-img.png" alt="test image" />
                       </div>
                       <div class="flex-1 min-w-0">
-                        <h6 class="text-[90%] font-semibold text-[var(--primary)]/80 leading-none">CBC</h6>
-                        <p class="text-[70%] text-[var(--dark)]/55 mt-[2px]">51 Parameters Included</p>
+                        <h6 class="mt-2 max-w-[140px] text-[90%] font-semibold text-[var(--primary)]/80 leading-none truncate">CBC</h6>
+                        <p class="max-w-[140px] text-[70%] text-[var(--dark)]/55 mt-[2px] truncate">51 Parameters Included</p>
                         <div class="flex items-center gap-x-1 mt-1">
                           <p class="text-[70%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
                           <em class="block text-[95%] font-bold text-[#2f80ed] not-italic leading-none">
@@ -377,18 +384,18 @@
 
                 <div class="item">
                   <div class="bg-[var(--light)] rounded-md border border-[var(--primary)]/15 overflow-hidden transition-all duration-300 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='test-details.html'">
-                    <div class="relative h-auto w-full flex items-center gap-x-3 px-3 py-[15px]">
-                      <div class="absolute top-[10px] right-[-27px] w-[92px] rotate-45 bg-[#1fae72] text-center">
-                        <span class="block py-[3px] text-[60%] font-semibold text-[var(--light)] tracking-[0.2px]">
+                    <div class="relative z-1 h-auto w-full flex items-center gap-x-3 px-3 py-[15px]">
+                      <div class="absolute top-[5px] right-[10px] z-2">
+                        <span class="block text-[80%] font-semibold text-[var(--success)] tracking-[0.2px]">
                           10% OFF
                         </span>
                       </div>
-                      <div class="h-12 w-12 p-2 rounded-[50%] bg-[#FFF1F7] flex items-center justify-center shrink-0 overflow-hidden">
-                        <img src="assets/images/test-img.png" alt="test image" />
+                      <div class="relative z-2 h-12 w-12 p-2 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                        <img class="!w-9 opacity-90" src="assets/images/test-img.png" alt="test image" />
                       </div>
                       <div class="flex-1 min-w-0">
-                        <h6 class="text-[90%] font-semibold text-[var(--primary)]/80 leading-none">Glucose</h6>
-                        <p class="text-[70%] text-[var(--dark)]/55 mt-[2px]">51 Parameters Included</p>
+                        <h6 class="mt-2 max-w-[140px] text-[90%] font-semibold text-[var(--primary)]/80 leading-none truncate">Glucose</h6>
+                        <p class="max-w-[140px] text-[70%] text-[var(--dark)]/55 mt-[2px] truncate">51 Parameters Included</p>
                         <div class="flex items-center gap-x-1 mt-1">
                           <p class="text-[70%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
                           <em class="block text-[95%] font-bold text-[#2f80ed] not-italic leading-none">
@@ -406,18 +413,18 @@
 
                 <div class="item">
                   <div class="bg-[var(--light)] rounded-md border border-[var(--primary)]/15 overflow-hidden transition-all duration-300 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='test-details.html'">
-                    <div class="relative h-auto w-full flex items-center gap-x-3 px-3 py-[15px]">
-                      <div class="absolute top-[10px] right-[-27px] w-[92px] rotate-45 bg-[#1fae72] text-center">
-                        <span class="block py-[3px] text-[60%] font-semibold text-[var(--light)] tracking-[0.2px]">
+                    <div class="relative z-1 h-auto w-full flex items-center gap-x-3 px-3 py-[15px]">
+                      <div class="absolute top-[5px] right-[10px] z-2">
+                        <span class="block text-[80%] font-semibold text-[var(--success)] tracking-[0.2px]">
                           10% OFF
                         </span>
                       </div>
-                      <div class="h-12 w-12 p-2 rounded-[50%] bg-[#FFF1F7] flex items-center justify-center shrink-0 overflow-hidden">
-                        <img src="assets/images/test-img.png" alt="test image" />
+                      <div class="relative z-2 h-12 w-12 p-2 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-2 shadow-[0_5px_14px_#d52e8a12]">
+                        <img class="!w-9 opacity-90" src="assets/images/test-img.png" alt="test image" />
                       </div>
                       <div class="flex-1 min-w-0">
-                        <h6 class="text-[90%] font-semibold text-[var(--primary)]/80 leading-none">Lipid Profile</h6>
-                        <p class="text-[70%] text-[var(--dark)]/55 mt-[2px]">51 Parameters Included</p>
+                        <h6 class="mt-2 max-w-[140px] text-[90%] font-semibold text-[var(--primary)]/80 leading-none truncate">Lipid Profile</h6>
+                        <p class="max-w-[140px] text-[70%] text-[var(--dark)]/55 mt-[2px] truncate">51 Parameters Included</p>
                         <div class="flex items-center gap-x-1 mt-1">
                           <p class="text-[70%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
                           <em class="block text-[95%] font-bold text-[#2f80ed] not-italic leading-none">
@@ -443,7 +450,7 @@
             <div class="h-auto w-full flex items-center justify-between">
               <div class="h-auto flex items-start gap-x-3">
                 <span class="h-5 w-[3px] rounded-full bg-[var(--primary)]/90 shrink-0"></span>
-                <h6 class="text-[var(--primary)]/80 font-semibold text-[90%]">Popular Health Packages</h6>
+                <h6 class="text-[var(--dark-primary)]/80 font-semibold text-[90%]">Popular Health Packages</h6>
               </div>
               <a href="package-lists.html" class="flex items-center gap-x-2 text-[80%] text-[var(--dark)]/60 font-medium">View All<i class="bi bi-arrow-right inline-flex items-center justify-center px-1 py-1 bg-[var(--primary)]/80 rounded-2xl text-[var(--light)] text-[80%]"></i></a>
             </div>
@@ -451,79 +458,76 @@
             <div class="h-auto w-full py-2">
 
               <div class="h-auto w-full">
-                <div class="h-25 bg-[var(--primary)]/3 rounded-lg border border-[#00000010] px-3 py-2 flex items-center justify-between gap-x-2 mb-3 last:mb-0">
+                <div class="h-27 relative z-1 bg-[var(--primary)]/3 rounded-lg border border-[#00000010] px-3 py-2 flex items-center justify-between gap-x-2 mb-3 last:mb-0">
+                  <div class="absolute top-[5px] right-[10px] z-2">
+                    <span class="block text-[80%] font-semibold text-[var(--success)] tracking-[0.2px]">
+                      10% OFF
+                    </span>
+                  </div>
                   <img class="!w-12 shrink-0" src="assets/images/heart-orr-img.png" alt="Organ Image">
-                  <div class="flex items-center flex-1 min-w-0">
+                  <div class="flex items-center flex-1 min-w-0 pl-2">
                     <div>
-                      <h6 class="text-[85%] font-semibold text-[var(--dark)]/60 truncate mb-[1px]">Heart Package</h6>
-                      <div class="flex items-center gap-x-1 mt-2">
-                        <div class="flex items-center bg-[var(--light)] border border-[#00000010] rounded-2xl px-3 py-1">
-                          <img class="!w-4 me-1" src="assets/images/experiment.png" alt="test icon">
-                          <div class="leading-none">
-                            <p class="text-[75%] font-semibold text-[var(--dark)]/70">51</p>
-                            <p class="text-[65%] text-[var(--dark)]/60">Parameters</p>
-                          </div>
-                        </div>
-                        <div class="flex items-center bg-[var(--light)] border border-[#00000010] rounded-2xl px-2 py-1">
-                          <img class="!w-5" src="assets/images/rupee.png" alt="rupuee icon">
-                          <div class="leading-none">
-                            <p class="text-[80%] font-semibold text-[var(--dark)]/70">2000</p>
-                          </div>
-                        </div>
-                      </div>
+                      <h6 class="max-w-[140px] text-[95%] font-semibold text-[var(--primary)]/80 leading-none truncate">Heart Package</h6>
+                      <p class="max-w-[140px] text-[70%] text-[var(--dark)]/55 mt-[3px] truncate">51 Parameters Included</p>
                     </div>
                   </div>
-                  <button class="cart-btn h-auto mt-5 px-5 py-[3px] rounded-sm bg-[#fff3f9]/40 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--primary)]">Book</button>
-                </div>
-
-                <div class="h-25 bg-[#3f6eff]/3 rounded-lg border border-[#00000010] px-3 py-2 flex items-center justify-between gap-x-2 mb-3 last:mb-0">
-                  <img class="!w-18 shrink-0" src="assets/images/f-body-orr-img.png" alt="Organ Image">
-                  <div class="flex items-center flex-1 min-w-0">
-                    <div>
-                      <h6 class="text-[85%] font-semibold text-[var(--dark)]/60 truncate mb-[1px]">Full Body Package</h6>
-                      <div class="flex items-center gap-x-1 mt-2">
-                        <div class="flex items-center bg-[var(--light)] border border-[#00000010] rounded-2xl px-3 py-1">
-                          <img class="!w-4 me-1" src="assets/images/experiment.png" alt="test icon">
-                          <div class="leading-none">
-                            <p class="text-[75%] font-semibold text-[var(--dark)]/70">51</p>
-                            <p class="text-[65%] text-[var(--dark)]/60">Parameters</p>
-                          </div>
-                        </div>
-                        <div class="flex items-center bg-[var(--light)] border border-[#00000010] rounded-2xl px-2 py-1">
-                          <img class="!w-5" src="assets/images/rupee.png" alt="rupuee icon">
-                          <div class="leading-none">
-                            <p class="text-[80%] font-semibold text-[var(--dark)]/70">2000</p>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="text-right mt-4">
+                    <div class="flex items-center gap-x-1 mt-1">
+                      <p class="text-[80%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
+                      <em class="block text-[100%] font-bold text-[#2f80ed] not-italic leading-none">
+                        <span class="rupee-symbol">₹</span> 1800
+                      </em>
                     </div>
-                  </div>                  
-                  <button class="cart-btn h-auto mt-5 px-5 py-[3px] rounded-sm bg-[#fff3f9]/40 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--primary)]">Book</button>
+                    <button class="cart-btn h-auto mt-[5px] px-8 py-1 rounded-sm bg-[var(--primary)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">Book</button>
+                  </div>
                 </div>
 
-                <div class="h-25 bg-[#ffdf71]/3 rounded-lg border border-[#00000010] px-3 py-2 flex items-center justify-between gap-x-2 mb-3 last:mb-0">
+                <div class="h-27 relative z-1 bg-[#3f6eff]/3 rounded-lg border border-[#00000010] px-3 py-2 flex items-center justify-between gap-x-2 mb-3 last:mb-0">
+                  <div class="absolute top-[5px] right-[10px] z-2">
+                    <span class="block text-[80%] font-semibold text-[var(--success)] tracking-[0.2px]">
+                      10% OFF
+                    </span>
+                  </div>
+                  <img class="!w-12 shrink-0" src="assets/images/kidney-orr-img.png" alt="Organ Image">
+                  <div class="flex items-center flex-1 min-w-0 pl-2">
+                    <div>
+                      <h6 class="max-w-[140px] text-[95%] font-semibold text-[var(--primary)]/80 leading-none truncate">Kidney Package</h6>
+                      <p class="max-w-[140px] text-[70%] text-[var(--dark)]/55 mt-[3px] truncate">51 Parameters Included</p>
+                    </div>
+                  </div>
+                  <div class="text-right mt-4">
+                    <div class="flex items-center gap-x-1 mt-1">
+                      <p class="text-[80%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
+                      <em class="block text-[100%] font-bold text-[#2f80ed] not-italic leading-none">
+                        <span class="rupee-symbol">₹</span> 1800
+                      </em>
+                    </div>
+                    <button class="cart-btn h-auto mt-[5px] px-8 py-1 rounded-sm bg-[var(--primary)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">Book</button>
+                  </div>
+                </div>
+
+                <div class="h-27 relative z-1 bg-[#ffdf71]/3 rounded-lg border border-[#00000010] px-3 py-2 flex items-center justify-between gap-x-2 mb-3 last:mb-0">
+                  <div class="absolute top-[5px] right-[10px] z-2">
+                    <span class="block text-[80%] font-semibold text-[var(--success)] tracking-[0.2px]">
+                      10% OFF
+                    </span>
+                  </div>
                   <img class="!w-12 shrink-0" src="assets/images/ortho-orr-img.png" alt="Organ Image">
-                  <div class="flex items-center flex-1 min-w-0">
+                  <div class="flex items-center flex-1 min-w-0 pl-2">
                     <div>
-                      <h6 class="text-[85%] font-semibold text-[var(--dark)]/60 truncate mb-[1px]">Ortho Package</h6>
-                      <div class="flex items-center gap-x-1 mt-2">
-                        <div class="flex items-center bg-[var(--light)] border border-[#00000010] rounded-2xl px-3 py-1">
-                          <img class="!w-4 me-1" src="assets/images/experiment.png" alt="test icon">
-                          <div class="leading-none">
-                            <p class="text-[75%] font-semibold text-[var(--dark)]/70">51</p>
-                            <p class="text-[65%] text-[var(--dark)]/60">Parameters</p>
-                          </div>
-                        </div>
-                        <div class="flex items-center bg-[var(--light)] border border-[#00000010] rounded-2xl px-2 py-1">
-                          <img class="!w-5" src="assets/images/rupee.png" alt="rupuee icon">
-                          <div class="leading-none">
-                            <p class="text-[80%] font-semibold text-[var(--dark)]/70">2000</p>
-                          </div>
-                        </div>
-                      </div>
+                      <h6 class="max-w-[140px] text-[95%] font-semibold text-[var(--primary)]/80 leading-none truncate">Ortho Package</h6>
+                      <p class="max-w-[140px] text-[70%] text-[var(--dark)]/55 mt-[3px] truncate">51 Parameters Included</p>
                     </div>
                   </div>
-                  <button class="cart-btn h-auto mt-5 px-5 py-[3px] rounded-sm bg-[#fff3f9]/40 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--primary)]">Book</button>
+                  <div class="text-right mt-4">
+                    <div class="flex items-center gap-x-1 mt-1">
+                      <p class="text-[80%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
+                      <em class="block text-[100%] font-bold text-[#2f80ed] not-italic leading-none">
+                        <span class="rupee-symbol">₹</span> 1800
+                      </em>
+                    </div>
+                    <button class="cart-btn h-auto mt-[5px] px-8 py-1 rounded-sm bg-[var(--primary)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">Book</button>
+                  </div>
                 </div>
               </div>
 
