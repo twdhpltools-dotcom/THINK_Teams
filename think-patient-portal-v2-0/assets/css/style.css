@@ -83,7 +83,7 @@ hr {
 }
 
 button.tab-btn.all.active {
-    color: #282a3a;
+    color: var(--primary);
 }
 
 button.tab-btn.upcoming.active {
