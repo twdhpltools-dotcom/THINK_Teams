@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Bookings | ThinkLab Patient Portal | Secure Patient Management Application</title>
+
+  <meta name="title" content="Lab Bookings | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://patient.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Patient Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!----------------- CSS FOR OWL-CAROUSEL FILES START ------------------------>
+  <link rel="stylesheet" href="assets/css/owl-carousel.css">
+  <!----------------- CSS FOR OWL-CAROUSEL FILES COMPLETE ------------------------>
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+  <div id="PreLoader" class="pre-loader fixed top-0 left-0 size-full flex items-center justify-center bg-[var(--light)] z-100">
+    <div class="pg-loader flex gap-2 px-4 py-1 border border-solid border-[#e8e8e8] rounded-2xl bg-[#ffffffe6] drop-shadow-xl">
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+      <span class="h-2 w-2 rounded-2xl bg-[var(--primary)]"></span>
+    </div>
+  </div>
+  <!----------------------------------- PRE-LOADER ------------------------------------------------->
+
+  <!----------------------------------- REPORT SECTION ------------------------------------------------->
+  <section class="page h-auto w-full">
+
+    <!----- BOTTOM-ISLAND ------->
+    <div class="fixed bottom-0 h-auto w-full py-4 bg-[var(--light)] flex items-center justify-center gap-x-20 rounded-tl-[20px] rounded-tr-[20px] shadow-[0_-10px_25px_0_#00000010] z-101">
+      <a href="dashboard.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 active">
+        <i class="bi bi-house-door block text-[170%] mb-[-5px]"></i>
+        Home
+      </a>
+      <a href="index.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90">
+        <i class="bi bi-calendar-check block text-[170%] mb-[-5px]"></i>
+        Booking
+      </a>
+      <a href="profile.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary])/90">
+        <i class="bi bi-person block text-[170%] mb-[-5px]"></i>
+        Profile
+      </a>
+    </div>
+    <!----- BOTTOM-ISLAND ------->
+    
+    <main class="h-auto w-full bg-[var(--light)]">
+
+      <!----- TOP-BAR ------->
+      <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
+
+        <div class="flex items-center gap-x-2">
+          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+            <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
+          </button>
+          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
+            Lab Booking Summary
+          </h1>
+        </div>
+        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
+          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
+        </button>
+        
+      </div>
+      <!----- /TOP-BAR ------->
+
+      <!----- PAGE-CONTENT ------->
+      <div class="content h-auto w-full pb-25">
+
+        <div class="h-auto w-full px-5 fixed top-16 left-0 z-100">
+
+          <div class="h-auto w-full">
+            <div class="search-input relative h-auto w-full flex items-center">
+              <i class="bi bi-search absolute left-4 text-[110%] leading-none text-[#009CA6] z-1"></i>
+              <input type="text" class="h-auto w-full bg-[#FFFFFF] border border-solid border-[#DDE2EA] outline-none rounded-xl px-12 py-3 text-[85%] text-[var(--dark-primary)]/80 font-normal placeholder:text-[#686879] placeholder:font-normal focus:border-[#009CA6]/60" placeholder="Search by test name or invoice number">
+              <i class="bi bi-mic absolute right-5 text-[130%] leading-none text-[#009CA6] cursor-pointer z-1"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="h-auto w-full px-5">
+          
+          <div class="h-auto w-full pt-18 pb-4">
+            <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
+            </div>
+
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
+                </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 1,245.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Home Collection</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
+                </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 845.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
+            </div>
+
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
+                </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 1,245.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Home Collection</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
+                </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 845.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center gap-x-2">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#FFF3E8] border-none outline-none text-[#F36A0A] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Track</span>
+                </button>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <!----- PAGE-CONTENT ------->
+
+    </main>
+
+  </section>
+  <!----------------------------------- REPORT SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/jQuery.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
+  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!----------------------------------- JS FOR OWL-CAROUSEL FILES START ------------------------------------------------->
+  <script src="assets/js/owl-carousel-min.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR OWL-CAROUSEL FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
