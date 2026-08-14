@@ -151,7 +151,7 @@
                     <span class="rupee-symbol">₹</span> 1800
                   </em>
                 </div>
-                <button class="cart-btn h-auto py-[6px] px-10 rounded-sm bg-[var(--primary)] border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">Book</button>
+                <button class="cart-btn h-auto w-full py-[5px] rounded-sm bg-[var(--primary)]/90 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">Book</button>
               </div>
             </div>
           </div>
@@ -164,6 +164,62 @@
     </main>
 
   </section>
+
+    <!----- CART TOAST ------->
+  <div id="cartToast" class="pointer-events-none fixed inset-x-0 bottom-[90px] z-[103] flex translate-y-[160%] justify-center px-4 opacity-0 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]">
+    <div class="pointer-events-auto w-full max-w-[420px] overflow-hidden rounded-xl border border-[var(--dark)]/10 bg-[var(--light)] shadow-[0_15px_45px_rgba(15,23,42,.18)]">
+      <div class="h-auto w-full relative z-1 px-5 py-4">
+
+        <div class="pg-accordion h-auto w-full">
+          <div class="pg-accordion-head flex items-start cursor-pointer" onclick="toggleAccordion(this)">
+            <h5 class="text-[90%] text-[var(--dark)]/60 font-bold">2 Test</h5>
+            <i class="pg-accordion-icon ms-2 bi bi-chevron-up text-[70%] text-[var(--dark)] rotate-180 transition-all duration-300"></i>
+          </div>
+
+          <div class="pg-accordion-content max-h-0 pt-0 overflow-hidden transition-all duration-300">
+            <div class="h-auto w-full flex items-center justify-between border-b border-solid border-[#00000010] pb-1 mb-2">
+              <div>
+                <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">CBC</p>
+                <div class="flex items-center gap-x-1 mt-1">
+                  <p class="text-[70%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
+                  <em class="block text-[95%] font-bold text-[#2f80ed] not-italic leading-none">
+                    <span class="rupee-symbol">₹</span> 1900
+                  </em>
+                </div>
+              </div>
+              <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/5 outline-none flex items-center justify-center">
+                <i class="bi bi-trash3 text-[var(--failure)]"></i>
+              </button>
+            </div>
+            <div class="h-auto w-full flex items-center justify-between mb-2">
+              <div>
+                <p class="text-[80%] text-[var(--dark)]/80 mb-[1px]">Glucose</p>
+                <div class="flex items-center gap-x-1 mt-1">
+                  <em class="block text-[95%] font-bold text-[#2f80ed] not-italic leading-none">
+                    <span class="rupee-symbol">₹</span> 1600
+                  </em>
+                </div>
+              </div>
+              <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/5 outline-none flex items-center justify-center">
+                <i class="bi bi-trash3 text-[var(--failure)]"></i>
+              </button>
+            </div>
+            <div class="text-center">
+              <button class="h-auto mt-[5px] px-6 py-[5px] rounded-sm bg-[var(--primary)]/90 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">
+                <i class="bi bi-plus-circle"></i> Add More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button id="GoToCartBtn" class="absolute right-5 top-[9px] h-auto px-5 py-[5px] rounded-sm bg-[var(--primary)]/90 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]" onclick="window.location.href='cart.html'">
+          Review Selected Tests
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <!----- CART TOAST ------->
   <!----------------------------------- TEST-LIST SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
