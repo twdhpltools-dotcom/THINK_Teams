@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab Test List | ThinkLab Patient Portal | Secure Patient Management Application</title>
+  <title>Lab Bookings | ThinkLab Patient Portal | Secure Patient Management Application</title>
 
-  <meta name="title" content="Lab Test List | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="title" content="Lab Bookings | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
@@ -46,7 +46,7 @@
   </div>
   <!----------------------------------- PRE-LOADER ------------------------------------------------->
 
-  <!----------------------------------- LAB-TEST SECTION ------------------------------------------------->
+  <!----------------------------------- REPORT SECTION ------------------------------------------------->
   <section class="page h-auto w-full">
 
     <!----- BOTTOM-ISLAND ------->
@@ -69,304 +69,181 @@
     <main class="h-auto w-full bg-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 border-b border-solid border-[#00000010] z-100">
+      <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
+
         <div class="flex items-center gap-x-2">
-          <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
-          <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+            <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
+          </button>
+          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
+            Lab Booking Summary
+          </h1>
         </div>
-        <button class="relative z-1 h-10 w-10 flex items-center justify-center p-3 rounded-[50%] bg-[#F1F5F9] outline-none" onclick="window.location.href='notfication.html'">
-          <img src="assets/images/bell.png" alt="notf icon">
-          <span class="absolute top-[-5px] right-[-10px] z-2 py-1 px-2 rounded-2xl bg-[#64748B] text-center text-[60%] font-semibold text-[var(--light)]">11</span>
+        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
+          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
         </button>
+        
       </div>
-      <!----- TOP-BAR ------->
+      <!----- /TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5">
+        <div class="h-auto w-full px-5 fixed top-16 left-0 z-100">
 
-          <div class="h-auto w-full py-2 px-2 mt-17 mb-3 rounded-md bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/menu-profile-bg.png');">
-            <div class="flex items-center gap-x-3">
-              <div class="h-15 w-15 rounded-md bg-[#ffe5f3] flex items-center justify-center">
-                <i class="bi bi-person-fill text-[250%] text-[var(--primary)]"></i>
-              </div>
-              <div>
-                <h6 class="text-[85%] font-semibold text-[var(--light)]">Puja Saha</h6>
-                <p class="text-[80%] text-[var(--light)] pb-[2px]">UHID: 1234 | 33 Yrs > Female</p>
-                <span class="block text-[75%] text-[var(--light)]"><i class="bi bi-phone text-[120%]"></i> +(91)8777 749 654</span>
-              </div>
+          <div class="h-auto w-full">
+            <div class="search-input relative h-auto w-full flex items-center">
+              <i class="bi bi-search absolute left-4 text-[110%] leading-none text-[#009CA6] z-1"></i>
+              <input type="text" class="h-auto w-full bg-[#FFFFFF] border border-solid border-[#DDE2EA] outline-none rounded-xl px-12 py-3 text-[85%] text-[var(--dark-primary)]/80 font-normal placeholder:text-[#686879] placeholder:font-normal focus:border-[#009CA6]/60" placeholder="Search by test name or invoice number">
+              <i class="bi bi-mic absolute right-5 text-[130%] leading-none text-[#009CA6] cursor-pointer z-1"></i>
             </div>
           </div>
 
         </div>
 
-        <div class="h-auto w-full">
+        <div class="h-auto w-full px-5">
           
-          <div class="w-full border-y border-[#00000020] px-5">
-            <div class="grid grid-cols-2">
-              <button type="button" data-tab="LabVisit" class="tab-btn relative py-2 flex items-center justify-center gap-x-2 border-r border-[#00000020] outline-none text-[75%] font-medium text-[var(--dark)]/50 transition-all duration-200 active" onclick="openTab(this)">
-                <i class="bi bi-flask text-[120%]"></i>
-                <span>Lab Visit</span>
-                <span class="tab-indicator absolute bottom-0 left-1/2 h-[3px] w-[90%] -translate-x-1/2 rounded-t-full bg-[var(--primary)]/90 opacity-0 transition-all duration-300"></span>
-              </button>
-
-              <button type="button" data-tab="HomeCollection" class="tab-btn relative py-2 flex items-center justify-center gap-x-2  outline-none text-[75%] font-medium text-[var(--dark)]/50 transition-all duration-200" onclick="openTab(this)">
-                <i class="bi bi-measuring-cup text-[120%]"></i>
-                <span>Home Collection</span>
-                <span class="tab-indicator absolute bottom-0 left-1/2 h-[3px] w-[80%] -translate-x-1/2 rounded-t-full bg-[#E92B91] opacity-0 transition-all duration-300"></span>
-              </button>
+          <div class="h-auto w-full pt-18 pb-4">
+            <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
             </div>
-          </div>
 
-          <div class="h-auto w-full px-5">
-            <div id="LabVisit" class="tab-content">
-              <div class="py-2">
-                <div class="h-auto w-full flex items-center justify-between">
-                  <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">My Tests</h6>
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
                 </div>
-
-                <div class="h-auto w-full py-2">
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">X-RAY OF LEG, USG OF KUB, CT 3D SCAN</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">LFT, KFT, FBS</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">X-RAY OF LEG, USG OF KUB, CT 3D SCAN</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 1,245.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Home Collection</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
                 </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 845.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center gap-x-2">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#FFF3E8] border-none outline-none text-[#F36A0A] py-3 px-3" onclick="openHomeCollectionStatusYesMenu()">
+                  <span class="text-[85%] leading-none font-medium">Track</span>
+                </button>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
               </div>
             </div>
 
-            <div id="HomeCollection" class="tab-content hidden">
-              <div class="py-2">
-                <div class="h-auto w-full flex items-center justify-between">
-                  <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">My Tests</h6>
+            <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
+            </div>
+
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
                 </div>
-
-                <div class="h-auto w-full py-2">
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                        <div class="flex items-center mt-1">
-                          <div class="h-auto w-5 me-2">
-                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
-                          </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusNoMenu()">Collection Status</em>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                        <div class="flex items-center mt-1">
-                          <div class="h-auto w-5 me-2">
-                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
-                          </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusYesMenu()">Collection Status</em>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70">X-RAY OF LEG, USG OF KUB, CT 3D SCAN</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                        <div class="flex items-center mt-1">
-                          <div class="h-auto w-5 me-2">
-                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
-                          </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusNoMenu()">Collection Status</em>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-8 w-8 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                        <div class="flex items-center mt-1">
-                          <div class="h-auto w-5 me-2">
-                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
-                          </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusYesMenu()">Collection Status</em>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-8 w-8 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="h-auto w-full flex items-center justify-between px-3 py-3 rounded-xl border border-[#00000010] shadow-[0_20px_15px_0_#00000005] mb-2 last:mb-0">
-                    <div class="flex items-center">
-                      <div class="px-3">
-                        <h6 class="text-[70%] font-semibold text-[var(--dark)]/70 mb-1">LFT, KFT, FBS</h6>
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-calendar3 text-[var(--primary)]/60"></i> Jul 07, 2026</p>
-                          <p class="text-[70%] text-[var(--dark)]/80 mb-[1px]"><i class="bi bi-clock text-[var(--primary)]/60"></i> 02:40 PM</p>
-                        </div>
-                        <div class="flex items-center mt-1">
-                          <div class="h-auto w-5 me-2">
-                            <img src="assets/images/delivery-truck.png" alt="collection truck icon" class="opacity-60" />
-                          </div>
-                          <em class="not-italic font-semibold text-[var(--primary)] text-[75%] cursor-pointer" onclick="openHomeCollectionStatusNoMenu()">Collection Status</em>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex items-center gap-x-2">
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#fef3c7] flex items-center justify-center shrink-0 border-none outline-none" onclick="openDocConstRBookModal()">
-                        <img src="assets/images/refresh.png" alt="refresh icon" />
-                      </button>
-                      <button class="h-9 w-9 p-2 rounded-[50%] bg-[#d1fae5] flex items-center justify-center shrink-0 border-none outline-none">
-                        <img src="assets/images/download.png" alt="download icon" />
-                      </button>
-                    </div>
-                  </div>                  
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 1,245.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
+              </div>
+            </div>
+            
+            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-start justify-between gap-x-3">
+                <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                  <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
+                </button>
+              </div>
+              <div class="h-auto w-full mt-1">
+                <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Home Collection</span>
+              </div>
+              <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center">
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">07 Jul, 2025</span>
+                  <span class="mx-2 text-[70%] leading-none text-[var(--dark)]/90">•</span>
+                  <span class="text-[80%] leading-none font-medium text-[var(--dark)]/90">10:30 AM</span>
                 </div>
+                <p class="text-[85%] leading-none font-bold text-[var(--dark)]/80">₹ 845.00</p>
+              </div>
+              <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
+              <div class="h-auto w-full flex items-center gap-x-2">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Repeat</span>
+                </button>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#FFF3E8] border-none outline-none text-[#F36A0A] py-3 px-3" onclick="openHomeCollectionStatusNoMenu()">
+                  <span class="text-[85%] leading-none font-medium">Track</span>
+                </button>
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                  <span class="text-[85%] leading-none font-medium">Report Status</span>
+                </button>
               </div>
             </div>
           </div>
@@ -378,7 +255,7 @@
 
     </main>
 
-    <!----- HOME-COLLECTION-STATUS-YES-MENU ------->
+     <!----- HOME-COLLECTION-STATUS-YES-MENU ------->
     <div id="HomeCollectionStatusYesMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
     <aside id="HomeCollectionStatusYesMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-8 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
       <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHomeCollectionStatusYesMenu()">
@@ -490,44 +367,7 @@
     <!-----  HOME-COLLECTION-STATUS-NO-MENU ------->
 
   </section>
-
-    <!----- DOC-CONST-RE-BOOK MODAL ------->
-  <div id="DocConstRBookModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
-
-    <!----- MODAL-CLOSER ------->
-    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeDocConstRBookModal()"></span>
-    <!----- MODAL-CLOSER ------->
-
-    <div id="DocConstRBookModalBox" class="h-auto w-80 max-w-[580px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
-
-      <!----- MODAL-HEADER ------->
-      <div class="h-auto w-full text-center pt-9 pb-4 px-4">
-        <h5 class="text-[90%] font-medium text-[var(--dark)]/60">
-          Repeat This Test Booking?
-        </h5>
-      </div>
-      <!----- MODAL-HEADER ------->
-
-      <!----- MODAL-BODY ------->
-      <div class="h-auto w-full text-center pb-9 px-4">
-        <div class="h-auto w-full flex items-center justify-center gap-x-3">
-          <button class="w-20 flex items-center justify-center rounded-sm border border-[var(--success)]/50 outline-none bg-[var(--success)]/5 py-1 text-[80%] font-semibold text-[var(--success)] transition-all duration-200" onclick="window.location.href='booking-LV.html'">
-            <i class="bi bi-check-circle text-[120%] me-1"></i>
-            <span>Yes</span>
-          </button>
-
-          <button class="w-20 flex items-center justify-center rounded-sm border border-[var(--failure)]/30 outline-none bg-[var(--failure)]/5 py-1 text-[80%] font-semibold text-[var(--failure)] transition-all duration-200" onclick="window.location.href='doctor-consultation.html'">
-            <i class="bi bi-x-circle text-[120%] me-1"></i>
-            <span>No</span>
-          </button>
-        </div>
-      </div>
-      <!----- MODAL-BODY ------->
-
-    </div>
-  </div>
-  <!----- DOC-CONST-RE-BOOK MODAL ------->
-  <!----------------------------------- LAB-TEST SECTION ------------------------------------------------->
+  <!----------------------------------- REPORT SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
   <script src="assets/js/tailwind.js" type="text/javascript"></script>
