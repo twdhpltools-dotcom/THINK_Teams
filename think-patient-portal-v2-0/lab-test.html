@@ -111,10 +111,10 @@
               <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
             </div>
 
-            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+            <div class="relative z-1 h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-start justify-between gap-x-3">
                 <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
-                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]" onclick="openHomeCollectionRPDownloadMenu(this)">
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
@@ -122,6 +122,9 @@
                 <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
               </div>
               <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
+              <div class="h-auto w-full py-2 px-4 rounded-md bg-[#EAF8ED]/50 mt-3">
+                <p class="text-[80%] text-[#178B37]/80 font-medium">Booked by: Srabanti Banik, 86172XXXXX</p>
+              </div>
               <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
               <div class="h-auto w-full flex items-center justify-between gap-x-3">
                 <div class="flex items-center">
@@ -133,20 +136,41 @@
               </div>
               <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
               <div class="h-auto w-full flex items-center">
-                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#EFF4FB] border-none outline-none text-[#0E55E7] py-3 px-3">
-                  <span class="text-[85%] leading-none font-medium">Repeat</span>
-                </button>
-                <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
                 <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
+
+              <!----- TOGGLER-MENU ------->
+              <div class="home_collection_rp_download_menu hidden absolute top-8 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                </button>
+              </div>
+              <!----- TOGGLER-MENU ------->
             </div>
             
-            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+            <div class="relative z-1 h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-start justify-between gap-x-3">
                 <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
-                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]" onclick="openHomeCollectionRPDownloadMenu(this)">
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
@@ -175,21 +199,49 @@
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
+
+              <!----- TOGGLER-MENU ------->
+              <div class="home_collection_rp_download_menu hidden absolute top-8 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                </button>
+              </div>
+              <!----- TOGGLER-MENU ------->
             </div>
 
             <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
-              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Aug 18, 2025</p>
             </div>
 
-            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+            <div class="relative z-1 h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-start justify-between gap-x-3">
                 <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
-                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]" onclick="openHomeCollectionRPDownloadMenu(this)">
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
               <div class="h-auto w-full mt-1">
                 <span class="inline-flex items-center px-3 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              </div>
+              <div class="h-auto w-full py-2 px-4 rounded-md bg-[#EAF8ED]/50 mt-3">
+                <p class="text-[80%] text-[#178B37]/80 font-medium">Booked for Swapna Khatun, 98345XXXXX</p>
               </div>
               <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
               <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
@@ -211,12 +263,37 @@
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
+
+              <!----- TOGGLER-MENU ------->
+              <div class="home_collection_rp_download_menu hidden absolute top-8 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                </button>
+              </div>
+              <!----- TOGGLER-MENU ------->
             </div>
             
-            <div class="h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+            <div class="relative z-1 h-auto w-full px-4 pt-4 pb-3 rounded-[18px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-start justify-between gap-x-3">
                 <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
-                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]">
+                <button class="shrink-0 border-none outline-none bg-transparent mt-[-2px]" onclick="openHomeCollectionRPDownloadMenu(this)">
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
@@ -245,6 +322,31 @@
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
+
+              <!----- TOGGLER-MENU ------->
+              <div class="home_collection_rp_download_menu hidden absolute top-8 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
+                </button>
+
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                  <span class="flex items-center justify-center shrink-0">
+                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                  </span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                </button>
+              </div>
+              <!----- TOGGLER-MENU ------->
             </div>
           </div>
 
@@ -255,79 +357,84 @@
 
     </main>
 
-     <!----- HOME-COLLECTION-STATUS-YES-MENU ------->
+    <!----- HOME-COLLECTION-STATUS-YES-MENU ------->
     <div id="HomeCollectionStatusYesMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
-    <aside id="HomeCollectionStatusYesMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-8 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
-      <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHomeCollectionStatusYesMenu()">
-        <i class="bi bi-x-lg text-[70%] text-[var(--dark)]"></i>
+    <aside id="HomeCollectionStatusYesMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[#FFFFFF] pb-5 shadow-[0_-8px_35px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <button class="h-7 w-7 absolute top-4 right-5 rounded-[50%] border border-solid border-[#CBD0D8] flex items-center justify-center bg-[#FFFFFF]" onclick="closeHomeCollectionStatusYesMenu()">
+        <i class="bi bi-x text-[125%] leading-none text-[#626979]"></i>
       </button>
 
-      <div class="h-auto w-full pt-4 pb-3 px-5 flex items-center gap-x-2">
-        <span class="h-9 w-9 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/20">
-          <img class="opacity-60" src="assets/images/delivery-truck.png" alt="collection truck icon">
+      <div class="h-auto w-full px-5 py-3 flex items-center gap-x-3">
+        <span class="h-11 w-11 p-[9px] rounded-[50%] bg-[#EEF5FF] flex items-center justify-center shrink-0">
+          <img src="assets/images/delivery-truck.png" alt="collection truck icon">
         </span>
-        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Collection Progress</h4>
+        <h4 class="text-[95%] leading-none text-[var(--dark-primary)] font-bold">Collection Progress</h4>
       </div>
 
-      <div class="relative z-1 h-auto w-full border-t border-solid border-[#00000010]">
-        <div class="absolute left-[29px] top-10 z-[1]">
-          <span class="tracking-line"></span>
-        </div> 
-        <div class="relative z-1 h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
-          <div class="flex items-center">
-            <div class="h-5 w-5 rounded-[50%] bg-[var(--success)] flex items-center justify-center shrink-0">
-              <i class="bi bi-check2 text-[80%] text-[var(--light)]"></i>
+      <div class="h-auto w-full px-5">
+        <span class="block h-px w-full bg-[#E5E7EB] mb-2"></span>
+
+        <div class="h-auto w-full flex items-center justify-between py-3">
+          <div class="flex items-center gap-x-4">
+            <div class="h-6 w-6 rounded-[50%] bg-[#1FA83D] flex items-center justify-center shrink-0">
+              <i class="bi bi-check-lg text-[100%] leading-none text-[#FFFFFF]"></i>
             </div>
-            <div class="ps-3">
-              <h6 class="text-[80%] font-semibold text-[var(--dark)]/70 mb-[1px]">Collector Assigned</h6>
-              <p class="text-[65%] text-[var(--dark)]/80">Kaushik Das</p>
+            <div>
+              <h6 class="text-[85%] leading-none font-semibold text-[var(--dark)]/70">Collector Assigned</h6>
+              <p class="text-[75%] leading-none text-[var(--dark-primary)]/90 mt-1.5">Kaushik Das</p>
             </div>
           </div>
-          <button class="h-auto px-2 py-[3px] rounded-sm border border-solid border-[var(--success)]/40 outline-none font-medium text-[80%] text-[var(--success)]" onclick="window.location.href='tel:18006302639'"><i class="bi bi-telephone text-[100%]"></i> Call</button>
+          <button class="h-auto min-w-[88px] px-3 py-[8px] rounded-md border border-solid border-[#22A447] bg-[#FFFFFF] flex items-center justify-center gap-x-2 text-[#22A447]" onclick="window.location.href='tel:18006302639'">
+            <i class="bi bi-telephone text-[100%] leading-none"></i>
+            <span class="text-[80%] leading-none font-medium">Call</span>
+          </button>
         </div>
 
-        <div class="relative z-1 h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
-          <div class="flex items-center">
-            <div class="h-5 w-5 rounded-[50%] bg-[var(--success)] flex items-center justify-center shrink-0">
-              <i class="bi bi-check2 text-[80%] text-[var(--light)]"></i>
+        <span class="block h-px w-full bg-[#E5E7EB]"></span>
+
+        <div class="h-auto w-full flex items-center justify-between py-3">
+          <div class="flex items-center gap-x-4">
+            <div class="h-6 w-6 rounded-[50%] bg-[#1FA83D] flex items-center justify-center shrink-0">
+              <i class="bi bi-check-lg text-[100%] leading-none text-[#FFFFFF]"></i>
             </div>
-            <div class="ps-3">
-              <h6 class="text-[80%] font-semibold text-[var(--dark)]/70 mb-[1px]">Collector On the Way</h6>
-            </div>
+            <h6 class="text-[85%] leading-none font-semibold text-[var(--dark)]/70">Collector On the Way</h6>
           </div>
-          <button class="h-auto px-2 py-[3px] rounded-sm border border-solid border-[var(--primary)]/40 outline-none font-medium text-[80%] text-[var(--primary)]" onclick="window.location.href='track.html'">Track Collector</button>
+          <button class="h-auto px-3 py-[8px] rounded-md border border-solid border-[#7FA3FF] bg-[#F3F7FF] flex items-center justify-center gap-x-2 text-[#1D63D8]" onclick="window.location.href='track.html'">
+            <i class="bi bi-geo-alt text-[110%] leading-none"></i>
+            <span class="text-[80%] leading-none font-medium">Track Collector</span>
+          </button>
         </div>
 
-        <div class="relative z-1 h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
-          <div class="flex items-center">
-            <div class="h-7 w-7 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
-              <i class="bi bi-flask-florence text-[80%] text-[var(--dark)]/40"></i>
-            </div>
-            <div class="ps-3">
-              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Sample Collected</h6>
-            </div>
-          </div>
-        </div>
+        <span class="block h-px w-full bg-[#E5E7EB]"></span>
 
-        <div class="relative z-1 h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
-          <div class="flex items-center">
-            <div class="h-7 w-7 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
-              <i class="bi bi-flask text-[80%] text-[var(--dark)]/40"></i>
+        <div class="h-auto w-full flex items-center py-3">
+          <div class="flex items-center gap-x-4">
+            <div class="h-7 w-7 rounded-[50%] bg-[#FFFFFF] border border-solid border-[#BFC5D0] flex items-center justify-center shrink-0">
+              <i class="bi bi-flask-florence text-[87.5%] leading-none text-[#8F97A7]"></i>
             </div>
-            <div class="ps-3">
-              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Sample Received by Lab</h6>
-            </div>
+            <h6 class="text-[85%] leading-none font-semibold text-[var(--dark)]/70 opacity-[0.5]">Sample Collected</h6>
           </div>
         </div>
 
-        <div class="relative z-1 h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
-          <div class="flex items-center">
-            <div class="h-7 w-7 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
-              <i class="bi bi-file-earmark-text text-[80%] text-[var(--dark)]/40"></i>
+        <span class="block h-px w-full bg-[#E5E7EB]"></span>
+
+        <div class="h-auto w-full flex items-center py-3">
+          <div class="flex items-center gap-x-4">
+            <div class="h-7 w-7 rounded-[50%] bg-[#FFFFFF] border border-solid border-[#BFC5D0] flex items-center justify-center shrink-0">
+              <i class="bi bi-flask text-[87.5%] leading-none text-[#8F97A7]"></i>
             </div>
-            <div class="ps-3">
-              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Report Ready</h6>
+            <h6 class="text-[85%] leading-none font-semibold text-[var(--dark)]/70 opacity-[0.5]">Sample Received by Lab</h6>
+          </div>
+        </div>
+
+        <span class="block h-px w-full bg-[#E5E7EB]"></span>
+
+        <div class="h-auto w-full flex items-center py-3">
+          <div class="flex items-center gap-x-4">
+            <div class="h-7 w-7 rounded-[50%] bg-[#FFFFFF] border border-solid border-[#BFC5D0] flex items-center justify-center shrink-0">
+              <i class="bi bi-file-earmark-text text-[87.5%] leading-none text-[#8F97A7]"></i>
             </div>
+            <h6 class="text-[85%] leading-none font-semibold text-[var(--dark)]/70 opacity-[0.5]">Report Ready</h6>
           </div>
         </div>
       </div>
@@ -336,30 +443,27 @@
 
     <!----- HOME-COLLECTION-STATUS-NO-MENU ------->
     <div id="HomeCollectionStatusNoMenuOverlay" class="fixed inset-0 z-101 bg-[var(--dark)]/20 backdrop-blur-sm opacity-0 invisible transition-all duration-300"></div>
-    <aside id="HomeCollectionStatusNoMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[var(--light)] pb-8 bg-linear-to-t from-[#F0F8FF]/40 to-[var(--light)] shadow-[0_0_40px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
-      <button class="h-5 w-5 absolute top-5 right-5 rounded-[50%] border border-solid border-[var(--dark)]/90 flex items-center justify-center" onclick="closeHomeCollectionStatusNoMenu()">
-        <i class="bi bi-x-lg text-[70%] text-[var(--dark)]"></i>
+    <aside id="HomeCollectionStatusNoMenu" class="h-auto w-full fixed bottom-0 z-102 bg-[#FFFFFF] pb-5 shadow-[0_-8px_35px_0_#00000010] rounded-tl-[20px] rounded-tr-[20px] translate-y-full opacity-0 transition-all duration-300 ease-in-out">
+      <button class="h-7 w-7 absolute top-4 right-5 rounded-[50%] border border-solid border-[#CBD0D8] flex items-center justify-center bg-[#FFFFFF]" onclick="closeHomeCollectionStatusNoMenu()">
+        <i class="bi bi-x text-[125%] leading-none text-[#626979]"></i>
       </button>
 
-      <div class="h-auto w-full pt-4 pb-3 px-5 flex items-center gap-x-2">
-        <span class="h-9 w-9 p-2 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/20">
-          <img class="opacity-60" src="assets/images/delivery-truck.png" alt="collection truck icon">
+      <div class="h-auto w-full px-5 py-3 flex items-center gap-x-3">
+        <span class="h-11 w-11 p-[9px] rounded-[50%] bg-[#EEF5FF] flex items-center justify-center shrink-0">
+          <img src="assets/images/delivery-truck.png" alt="collection truck icon">
         </span>
-        <h4 class="text-[var(--dark)]/70 font-semibold text-[100%]">Collection Progress</h4>
+        <h4 class="text-[95%] leading-none text-[var(--dark-primary)] font-bold">Collection Progress</h4>
       </div>
 
-      <div class="relative z-1 h-auto w-full border-t border-solid border-[#00000010]">
-        <div class="absolute left-[29px] top-10 z-[1]">
-          <span class="tracking-line"></span>
-        </div>
-        <div class="relative z-1 h-auto w-full flex items-center justify-between px-5 py-3 last:mb-0">
-          <div class="flex items-center">
-            <div class="h-7 w-7 rounded-[50%] bg-[var(--light)] flex items-center justify-center shrink-0 border border-solid border-[var(--dark)]/40 ml-[-3px]">
-              <i class="bi bi-clock-history text-[80%] text-[var(--dark)]/40"></i>
+      <div class="h-auto w-full px-5">
+        <span class="block h-px w-full bg-[#E5E7EB] mb-2"></span>
+
+        <div class="h-auto w-full flex items-center py-3">
+          <div class="flex items-center gap-x-4">
+            <div class="h-7 w-7 rounded-[50%] bg-[#FFFFFF] border border-solid border-[#BFC5D0] flex items-center justify-center shrink-0">
+              <i class="bi bi-clock-history text-[87.5%] leading-none text-[#8F97A7]"></i>
             </div>
-            <div class="ps-3">
-              <h6 class="text-[80%] font-semibold text-[var(--dark)]/40 mb-[1px]">Collector not Assigned yet</h6>
-            </div>
+            <h6 class="text-[85%] leading-none font-semibold text-[var(--dark)]/70 opacity-[0.5]">No Collector Assigned yet</h6>
           </div>
         </div>
       </div>
