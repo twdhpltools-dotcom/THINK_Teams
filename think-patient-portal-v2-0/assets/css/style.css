@@ -1,6 +1,7 @@
 /*--------------------------------------------- CSS FOR INCLUDING FOR FONTS START ---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /*--------------------------------------------- CSS FOR INCLUDING FOR FONTS COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PRE-DEFINED START ---------------------------------------*/
@@ -9,7 +10,8 @@
 }
 
 :root {
-    --font: "Poppins", sans-serif;
+    /* --font: "Poppins", sans-serif; */
+    --font: "Inter", sans-serif;
     --line-height: 1.5; 
     --font-weight: normal;
     --light: #ffffff;
@@ -219,6 +221,38 @@ button.tab-btn.active .tab-indicator {
     opacity: 0.5;
 }
 /* ----------------------------------------- CSS FOR CART-BTN-SECTION START ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR TRACKING-LINE-SECTION START ---------------------------------------------- */
+span.tracking-line {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 2px;
+    background: #bfbfbf;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+aside#HomeCollectionStatusYesMenu span.tracking-line {
+    min-height: 190px;
+}
+
+aside#HomeCollectionStatusNoMenu span.tracking-line {
+    display: none;
+}
+
+span.tracking-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35%;
+    width: 100%;
+    background: var(--success);
+    z-index: 2;
+}
+/* ----------------------------------------- CSS FOR TRACKING-LINE-SECTION COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- CSS FOR NOTIFICATION-BOX-SECTION START ---------------------------------------------- */
 .notf-box::after {
