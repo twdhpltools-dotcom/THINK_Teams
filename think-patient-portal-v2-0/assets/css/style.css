@@ -96,7 +96,7 @@ button.tab-btn.completed.active {
     color: #059669;
 }
 
-button.tab-btn.cancel.active {
+button.tab-btn.cancelled.active {
     color: #dc2626;
 }
 
@@ -221,38 +221,6 @@ button.tab-btn.active .tab-indicator {
     opacity: 0.5;
 }
 /* ----------------------------------------- CSS FOR CART-BTN-SECTION START ---------------------------------------------- */
-
-/* ----------------------------------------- CSS FOR TRACKING-LINE-SECTION START ---------------------------------------------- */
-span.tracking-line {
-    display: block;
-    position: relative;
-    height: auto;
-    width: 2px;
-    background: #bfbfbf;
-    border-radius: 20px;
-    z-index: 1;
-    overflow: hidden;
-}
-
-aside#HomeCollectionStatusYesMenu span.tracking-line {
-    min-height: 190px;
-}
-
-aside#HomeCollectionStatusNoMenu span.tracking-line {
-    display: none;
-}
-
-span.tracking-line::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 35%;
-    width: 100%;
-    background: var(--success);
-    z-index: 2;
-}
-/* ----------------------------------------- CSS FOR TRACKING-LINE-SECTION COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- CSS FOR NOTIFICATION-BOX-SECTION START ---------------------------------------------- */
 .notf-box::after {
