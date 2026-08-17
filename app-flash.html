@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading... | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India</title>
+  
+  <meta name="title" content="Loading... | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <link rel="canonical" href="https://patient.thinklab.in/" />
+
+  <meta name="theme-color" content="#0B28A8" />
+  <meta name="application-name" content="ThinkLab Patient Portal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- APP-FLASH SECTION ------------------------------------------------->
+  <div class="h-screen w-full relaive z-1">
+
+    <div class="absolute top-0 left-0 size-full z-[-1]">
+      <img class="!h-full" src="assets/images/fl-bg.png" alt="flash background" />
+    </div>
+
+    <!----- FLASH-SCREEN ------->
+    <div class="h-[70vh] w-full flex flex-col items-center justify-center fixed top-0 left-0">
+
+      <div class="h-auto w-30 mb-[40px] relaive z-1">
+        <img src="assets/images/p-logo.png" alt="brand logo flash">
+      </div>
+
+      <div class="flex items-center justify-center fixed bottom-50 z-100">
+        <div class="w-9 h-9 border-3 border-[var(--primary)]/10 border-t-[var(--primary)]/90 rounded-full animate-spin"></div>
+      </div>
+
+    </div>
+    <!----- FLASH-SCREEN ------->
+
+  </div>
+  <!----------------------------------- APP-FLASH SECTION ------------------------------------------------->
+
+  <!----------------------------------- JS FOR FLASH-AUTO-LOAD START ------------------------------------------------->
+  <script type="text/javascript">
+    setTimeout(() => {
+      document.body.classList.add("flash-fade-out");
+
+      setTimeout(() => {
+        window.location.href = "login-mobile.html";
+      }, 600);
+    }, 3000);
+  </script>
+  <!----------------------------------- JS FOR FLASH-AUTO-LOAD COMPLETED ------------------------------------------------->
+
+  <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
+  <script src="assets/js/tailwind.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR TAILWIND FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
