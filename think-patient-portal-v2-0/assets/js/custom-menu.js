@@ -1,17 +1,15 @@
 /*------------------------------------------- JS FOR CUSTOM-MENU START ------------------------------------------*/
 /*-------------------------------------- SIDEBAR-MENU ----------------------------------------*/
-function openSideBarMenu() {
-    const SideBarMenu = document.getElementById("SideBarMenu");
-
-    SideBarMenu.classList.remove("translate-y-full", "opacity-0");
-    SideBarMenu.classList.add("translate-y-0", "opacity-100");
+function openSideBarMenu(){
+const SideBarMenu=document.getElementById("SideBarMenu");
+SideBarMenu.classList.remove("-translate-x-full","opacity-0");
+SideBarMenu.classList.add("translate-x-0","opacity-100");
 }
 
-function closeSideBarMenu() {
-    const SideBarMenu = document.getElementById("SideBarMenu");
-
-    SideBarMenu.classList.remove("translate-y-0", "opacity-100");
-    SideBarMenu.classList.add("translate-y-full", "opacity-0");
+function closeSideBarMenu(){
+const SideBarMenu=document.getElementById("SideBarMenu");
+SideBarMenu.classList.remove("translate-x-0","opacity-100");
+SideBarMenu.classList.add("-translate-x-full","opacity-0");
 }
 /*-------------------------------------- SIDEBAR-MENU ----------------------------------------*/
 
