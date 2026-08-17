@@ -140,15 +140,15 @@ $(document).ready(function(){
   var owl = $('#DashboardTestCarousel');
   
   owl.owlCarousel({
-    margin: 10,
-    loop: true,
-    autoplay: true,
+    margin: 20,
+    loop: false,
+    autoplay: false,
     autoplayTimeout: 4000,
     autoplaySpeed: 2500,
     nav: false,
     dots: false,
     autoplayHoverPause: true,
-    stagePadding: 40,
+    stagePadding: 0,
     responsive: {
       0: {
         items: 1,
