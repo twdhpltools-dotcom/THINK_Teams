@@ -273,6 +273,18 @@ function openTab(btn) {
 }
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 
+/*-------------------------------------- TOGGLER-MENU ----------------------------------------*/
+function openHomeCollectionRPDownloadMenu(btn){
+  const buttons = [...document.querySelectorAll('[onclick*="openHomeCollectionRPDownloadMenu"]')];
+  const menus = document.querySelectorAll('.home_collection_rp_download_menu');
+  const index = buttons.indexOf(btn);
+
+  if(index !== -1 && menus[index]){
+    menus[index].classList.toggle('hidden');
+  }
+}
+/*-------------------------------------- TOGGLER-MENU ----------------------------------------*/
+
 /*-------------------------------------- CAMERA-SHOWER ----------------------------------------*/
 function openUserCamera(input) {
   if(input.files.length > 0){
