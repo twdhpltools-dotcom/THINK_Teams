@@ -121,7 +121,13 @@
               <input id="BookingTestSearchInput" type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Search Tests*" />
               <div id="BookingTestSuggestions" class="absolute left-0 right-0 top-[calc(100%+2px)] hidden max-h-[280px] overflow-y-auto rounded-md border border-[#0000000d] bg-[var(--light)] shadow-[0_14px_35px_rgba(15,23,42,0.14)] z-100"></div>
             </div>
-            <div class="h-auto w-full flex items-center gap-x-1 mb-3 last:mb-0">
+            <div class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] rounded-md px-3 py-3 mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-center justify-between mb-3">
+                <div class="h-auto">
+                  <h6 class="text-[var(--dark-primary)] font-semibold text-[95%]">Selected Tests</h6>
+                </div>
+                <span class="flex items-center gap-x-2 text-[80%] text-[#0E55E7]/80 font-semibold">10 Selected</span>
+              </div>
               <div class="flex items-center flex-wrap gap-x-2 gap-y-2">
                 <span class="relative z-1 pl-4 pr-7 py-1.5 flex items-center justify-between rounded-2xl bg-[#EFF4FB]/80 text-[75%] font-semibold text-[#0E55E7]/80 transition-all duration-300 ease-in-out">Glucose
                   <button class="absolute top-0 right-2 bg-[var(--primary)]/2 z-2"><i class="bi bi-x text-[160%] text-[#0E55E7]/80"></i></button>
