@@ -69,40 +69,32 @@
     <main class="h-auto w-full bg-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 border-b border-solid border-[#00000010] z-100">
+      <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
+
         <div class="flex items-center gap-x-2">
-          <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
-          <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+            <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
+          </button>
+          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
+            Confirm Your Lab Visit
+          </h1>
         </div>
-        <button class="relative z-1 h-10 w-10 flex items-center justify-center p-3 rounded-[50%] bg-[#F1F5F9] outline-none" onclick="window.location.href='notfication.html'">
-          <img src="assets/images/bell.png" alt="notf icon">
-          <span class="absolute top-[-5px] right-[-10px] z-2 py-1 px-2 rounded-2xl bg-[#64748B] text-center text-[60%] font-semibold text-[var(--light)]">11</span>
+        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
+          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
         </button>
+        
       </div>
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5 fixed top-16 left-0 bg-[var(--light)] z-100">
-
-          <!----- CONTENT-HEADING ------->
-          <div class="h-auto w-full flex items-center gap-x-2 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 rounded-xl overflow-hidden">
-            <div class="decor-head relative z-1 h-full w-22">
-              <img src="assets/images/lab-visit-head.png" alt="featured icon" />
-            </div>
-            <div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Confirm Your Lab Visit</h5>
-              <p class="text-[var(--dark-primary)]/80 text-[70%]">Fill the Details & Proceed to Payment</p>
-            </div>
-          </div>
-          <!----- CONTENT-HEADING ------->
-
-        </div>
-
         <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-23">
+          <div class="h-auto w-full pt-5">
             <div class="h-auto w-full flex items-center gap-x-1 mb-2 last:mb-0">
               <input type="tel" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]]" placeholder="Alternate Contact Number">
             </div>

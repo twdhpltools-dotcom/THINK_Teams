@@ -65,39 +65,32 @@
     <main class="h-auto w-full bg-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center gap-x-3 border-b border-solid border-[#00000010] z-100">
-        <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer"></i>
-        <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+      <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
+
+        <div class="flex items-center gap-x-2">
+          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+            <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
+          </button>
+          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
+            Change Collection Address
+          </h1>
+        </div>
+        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
+          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
+        </button>
+        
       </div>
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5 fixed top-15 left-0 bg-[var(--light)] z-100">
-
-          <!----- CONTENT-HEADING ------->
-          <div class="h-auto w-full flex items-center gap-x-2 bg-[#fff3f9] border border-solid border-[var(--primary)]/40 rounded-xl overflow-hidden">
-            <div class="decor-head relative z-1 h-full w-22">
-              <img src="assets/images/home-collection-head.png" alt="featured icon" />
-            </div>
-            <div>
-              <h5 class="text-[var(--dark-primary)]/90 font-medium text-[100%]">Book Home Collection</h5>
-              <p class="text-[var(--dark-primary)]/80 text-[70%]">We'll Collect your Sample</p>
-            </div>
-          </div>
-
-          <div class="h-auto w-full py-2 relative z-1">
-            <i class="bi bi-search absolute bottom-[25%] right-[5%] z-2 text-[100%] text-[var(--dark)]"></i>
-            <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]" placeholder="Search By Doctors, Departments ...">
-          </div>
-          <!----- CONTENT-HEADING ------->
-
-        </div>
-
         <div class="h-auto w-full px-5">
         
-          <div class="h-auto w-full pt-35">
+          <div class="h-auto w-full pt-5">
             <div class="h-auto w-full cursor-pointer flex items-center px-4 py-2 bg-[var(--light)] transition-colors duration-200 mb-2 cursor-pointer active:bg-black/[0.02] last:mb-0" onclick="window.location.href='booking-HC.html'">
               <div class="h-9 w-9 rounded-[50%] bg-[var(--primary)]/5 flex items-center justify-center me-2">
                 <i class="bi bi-crosshair text-[120%] text-[var(--primary)]"></i>
