@@ -154,10 +154,10 @@ $(document).ready(function(){
         items: 1,
       },
       768: {
-        items: 4,
+        items: 2,
       },
       1024: {
-        items: 7,
+        items: 4,
       }
     }
   });

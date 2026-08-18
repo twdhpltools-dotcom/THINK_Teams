@@ -237,37 +237,37 @@ document.getElementById("DocConstDPickerModal").addEventListener("click", functi
 });
 /*-------------------------------------- DOC-CONST-DATE-PICKER ----------------------------------------*/
 
-/*-------------------------------------- EDIT-PROFILE-(HEIGHT) ----------------------------------------*/
-function openEditProfileHgtModal() {
-  const EditProfileHgtModal = document.getElementById("EditProfileHgtModal");
-  const EditProfileHgtModalBox = document.getElementById("EditProfileHgtModalBox");
+/*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
+function openEditProfileModal() {
+  const EditProfileModal = document.getElementById("EditProfileModal");
+  const EditProfileModalBox = document.getElementById("EditProfileModalBox");
 
-  EditProfileHgtModal.classList.remove("hidden");
-  EditProfileHgtModal.classList.add("flex");
+  EditProfileModal.classList.remove("hidden");
+  EditProfileModal.classList.add("flex");
 
   setTimeout(() => {
-    EditProfileHgtModalBox.classList.remove("opacity-0", "scale-95");
-    EditProfileHgtModalBox.classList.add("opacity-100", "scale-100");
+    EditProfileModalBox.classList.remove("opacity-0", "scale-95");
+    EditProfileModalBox.classList.add("opacity-100", "scale-100");
   }, 10);
 }
 
-function closeEditProfileHgtModal() {
-  const EditProfileHgtModal = document.getElementById("EditProfileHgtModal");
-  const EditProfileHgtModalBox = document.getElementById("EditProfileHgtModalBox");
+function closeEditProfileModal() {
+  const EditProfileModal = document.getElementById("EditProfileModal");
+  const EditProfileModalBox = document.getElementById("EditProfileModalBox");
 
-  EditProfileHgtModalBox.classList.add("opacity-0", "scale-95");
-  EditProfileHgtModalBox.classList.remove("opacity-100", "scale-100");
+  EditProfileModalBox.classList.add("opacity-0", "scale-95");
+  EditProfileModalBox.classList.remove("opacity-100", "scale-100");
 
   setTimeout(() => {
-    EditProfileHgtModal.classList.add("hidden");
-    EditProfileHgtModal.classList.remove("flex");
+    EditProfileModal.classList.add("hidden");
+    EditProfileModal.classList.remove("flex");
   }, 300);
 }
 
-document.getElementById("EditProfileHgtModal").addEventListener("click", function (e) {
+document.getElementById("EditProfileModal").addEventListener("click", function (e) {
   if (e.target === this) {
-    closeEditProfileHgtModal();
+    closeEditProfileModal();
   }
 });
-/*-------------------------------------- EDIT-PROFILE-(HEIGHT) ----------------------------------------*/
+/*-------------------------------------- EDIT-PROFILE ----------------------------------------*/
 /*-------------------------------------- CUSTOM-MODAL ----------------------------------------*/
