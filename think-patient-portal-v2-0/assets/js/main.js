@@ -70,8 +70,8 @@ $(document).ready(function(){
   var owl = $('#DashboardDocCarousel');
   
   owl.owlCarousel({
-    margin: 8,
-    loop: true,
+    margin: 10,
+    loop: false,
     autoplay: false,
     autoplayTimeout: 1500,
     autoplaySpeed: 1500,
