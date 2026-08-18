@@ -246,41 +246,74 @@
       <div class="content h-auto w-full pb-25">
 
         <!----- CONTENT-HEADING ------->
-        <div class="h-auto w-full flex items-center gap-x-2 pt-35 pb-3 px-5">
+        <div class="h-auto w-full flex items-center gap-x-2 pt-20 pb-3 px-5">
           <h5 class="text-[var(--dark-primary)]/90 font-medium text-[140%] flex items-center">Booking</h5>
         </div>
         <!----- CONTENT-HEADING ------->
 
         <div class="h-auto w-full px-5">
 
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/20 rounded-xl py-2 px-2 mb-2 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_6px_18px_0_#00000008] last:mb-0" onclick="window.location.href='booking-LV.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-14 w-14 flex items-center justify-center rounded-lg overflow-hidden shrink-0 me-3 bg-[#F5F6F8]">
+          <div class="feature-section relative z-1 h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/15 rounded-xl py-3 px-3 mb-3 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_6px_18px_0_#00000008] last:mb-0" onclick="window.location.href='booking-LV.html'">
+            <div class="flex items-center flex-1">
+              <div class="feature-section-img h-20 w-20 flex items-center justify-center rounded-lg overflow-hidden shrink-0 me-4 bg-[#F5F6F8]">
                 <img class="!size-full object-cover" src="assets/images/lab-visit-head.png" alt="Lab Visit image" />
               </div>
-              <h5 class="text-[var(--dark-primary)]/80 font-semibold text-[85%] flex items-center">Lab Visit</h5>
+              <div class="flex-1">
+                <div class="flex items-center gap-x-2 mb-2">
+                  <span class="h-8 w-8 rounded-[50%] bg-[#FFF0F5] flex items-center justify-center shrink-0">
+                    <i class="bi bi-flask text-[100%] leading-none text-[var(--primary)]/90"></i>
+                  </span>
+                  <h5 class="text-[100%] leading-none font-semibold text-[var(--dark)]/85 whitespace-nowrap">Lab Visit</h5>
+                </div>
+                <p class="text-[75%] font-normal leading-[1.35] text-[var(--dark-primary)]/70 mb-2">Visit our lab for accurate<br>and reliable testing</p>
+                <span class="inline-flex items-center px-2 py-[6px] rounded-sm bg-[#FFF0F5] text-[70%] leading-none font-medium text-[var(--primary)]">Fast • Accurate • Reliable</span>
+              </div>
             </div>
-            <i class="bi bi-chevron-right text-[100%] text-[var(--dark-primary)]/70"></i>
+            <button type="button" class="glass-os absolute h-8 w-8 rounded-[50%] flex items-center justify-center shrink-0 outline-none z-2" onclick="event.stopPropagation(); window.location.href='booking-LV.html'">
+              <i class="bi bi-arrow-right text-[105%] leading-none text-[var(--primary)]"></i>
+            </button>
           </div>
 
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/20 rounded-xl py-2 px-2 mb-2 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_6px_18px_0_#00000008] last:mb-0" onclick="window.location.href='booking-HC.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-14 w-14 flex items-center justify-center rounded-lg overflow-hidden shrink-0 me-3 bg-[#F5F6F8]">
+          <div class="feature-section relative z-1 h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[#F0DDD5] rounded-xl py-3 px-3 mb-3 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_6px_18px_0_#00000008] last:mb-0" onclick="window.location.href='booking-HC.html'">
+            <div class="flex items-center flex-1">
+              <div class="feature-section-img h-20 w-20 flex items-center justify-center rounded-lg overflow-hidden shrink-0 me-4 bg-[#F5F6F8]">
                 <img class="!size-full object-cover" src="assets/images/home-collection-head.png" alt="Home Collection image" />
               </div>
-              <h5 class="text-[var(--dark-primary)]/80 font-semibold text-[85%] flex items-center">Home Collection</h5>
+              <div class="flex-1">
+                <div class="flex items-center gap-x-2 mb-2">
+                  <span class="h-8 w-8 rounded-[50%] bg-[#FFF3E8] flex items-center justify-center shrink-0">
+                    <i class="bi bi-house-door text-[100%] leading-none text-[#F36A0A]/90"></i>
+                  </span>
+                  <h5 class="text-[100%] leading-none font-semibold text-[var(--dark)]/85 whitespace-nowrap">Home Collection</h5>
+                </div>
+                <p class="text-[75%] font-normal leading-[1.35] text-[var(--dark-primary)]/70 mb-2">Sample collection from<br>the comfort of your home</p>
+                <span class="inline-flex items-center px-2 py-[6px] rounded-sm bg-[#FFF3E8] text-[70%] leading-none font-medium text-[#F36A0A]">Safe • Convenient • Hygienic</span>
+              </div>
             </div>
-            <i class="bi bi-chevron-right text-[100%] text-[var(--dark-primary)]/70"></i>
+            <button type="button" class="glass-os absolute h-8 w-8 rounded-[50%] flex items-center justify-center shrink-0 outline-none z-2" onclick="event.stopPropagation(); window.location.href='booking-HC.html'">
+              <i class="bi bi-arrow-right text-[105%] leading-none text-[#F27649]"></i>
+            </button>
           </div>
 
-          <div class="feature-section h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[var(--primary)]/20 rounded-xl py-2 px-2 mb-2 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_6px_18px_0_#00000008] last:mb-0" onclick="window.location.href='booking-DC.html'">
-            <div class="flex items-center">
-              <div class="feature-section-img h-14 w-14 flex items-center justify-center rounded-lg overflow-hidden shrink-0 me-3 bg-[#F5F6F8]">
+          <div class="feature-section relative z-1 h-auto w-full flex items-center justify-between bg-[var(--light)] border border-solid border-[#E4DEFF] rounded-xl py-3 px-3 mb-3 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_6px_18px_0_#00000008] last:mb-0" onclick="window.location.href='booking-DC.html'">
+            <div class="flex items-center flex-1">
+              <div class="feature-section-img h-20 w-20 flex items-center justify-center rounded-lg overflow-hidden shrink-0 me-4 bg-[#F5F6F8]">
                 <img class="!size-full object-cover" src="assets/images/doc-consultation-head.png" alt="Doctor Consultation image" />
               </div>
-              <h5 class="text-[var(--dark-primary)]/80 font-semibold text-[85%] flex items-center">Doctor Consultation</h5>
+              <div class="flex-1">
+                <div class="flex items-center gap-x-2 mb-2">
+                  <span class="h-8 w-8 rounded-[50%] bg-[#EFF4FB] flex items-center justify-center shrink-0">
+                    <i class="bi bi-person-square text-[100%] leading-none text-[#0E55E7]/90"></i>
+                  </span>
+                  <h5 class="text-[100%] leading-none font-semibold text-[var(--dark)]/85 whitespace-nowrap">Doctor Consultation</h5>
+                </div>
+                <p class="text-[75%] font-normal leading-[1.35] text-[var(--dark-primary)]/70 mb-2">Connect with experienced<br>doctors online or in-person</p>
+                <span class="inline-flex items-center px-2 py-[6px] rounded-sm bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Expert Care • Trusted Advice</span>
+              </div>
             </div>
-            <i class="bi bi-chevron-right text-[100%] text-[var(--dark-primary)]/70"></i>
+            <button type="button" class="glass-os absolute h-8 w-8 rounded-[50%] flex items-center justify-center shrink-0 outline-none z-2" onclick="event.stopPropagation(); window.location.href='booking-DC.html'">
+              <i class="bi bi-arrow-right text-[105%] leading-none text-[#7157F5]"></i>
+            </button>
           </div>
           
         </div>
