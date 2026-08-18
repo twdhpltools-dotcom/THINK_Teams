@@ -229,17 +229,17 @@ button.tab-btn.active .tab-indicator {
     top: 50%;
     right: 5%;
     transform: translate(-50%, -50%);
-    height: 8px;
-    width: 8px;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
-    background: #d52e8ad9;
-    box-shadow: 0 0 15px 0 #d52e8ab8;
+    border: 2px solid #0e56e7c5;
+    box-shadow: 0 0 15px 0 #0e56e733;
     z-index: 2;
     display: none;
 }
 
 .notf-box.active {
-    background: #fff3f9cc;
+    background: #fff3f998;
 }
 
 .notf-box.active::after {
