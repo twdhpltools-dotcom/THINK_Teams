@@ -69,37 +69,44 @@
     <main class="h-auto w-full bg-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 border-b border-solid border-[#00000010] z-100">
+      <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
+
         <div class="flex items-center gap-x-2">
-          <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
-          <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+            <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
+          </button>
+          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
+            List of Doctors
+          </h1>
         </div>
-        <button class="relative z-1 h-10 w-10 flex items-center justify-center p-3 rounded-[50%] bg-[#F1F5F9] outline-none" onclick="window.location.href='notfication.html'">
-          <img src="assets/images/bell.png" alt="notf icon">
-          <span class="absolute top-[-5px] right-[-10px] z-2 py-1 px-2 rounded-2xl bg-[#64748B] text-center text-[60%] font-semibold text-[var(--light)]">11</span>
+        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
+          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
         </button>
+        
       </div>
       <!----- TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5 fixed top-12 left-0 bg-[var(--light)] z-100">
+        <div class="h-auto w-full px-5 fixed top-16 left-0 bg-[var(--light)] z-100">
 
-          <div class="search-input h-auto w-full pt-5 pb-2">
-            <i class="bi bi-search search-input-icon text-[100%] text-[var(--dark)]"></i>
-            <input type="text" class="h-auto w-full bg-[var(--light)] border border-solid border-[#00000010] outline-none rounded-[5px] px-5 py-3 text-[80%] text-[var(--dark-primary)]/90 font-medium hover:border-[var(--primary)]" placeholder="Search By Doctors, Departments ...">
-          </div>
-
-          <div class="h-auto w-full flex items-center justify-between">
-            <h6 class="text-[var(--dark)]/60 font-bold text-[95%]">Find a Doctor</h6>
+          <div class="h-auto w-full">
+            <div class="search-input relative h-auto w-full flex items-center">
+              <i class="bi bi-search absolute left-4 text-[110%] leading-none text-[#009CA6] z-1"></i>
+              <input type="text" class="h-auto w-full bg-[#FFFFFF] border border-solid border-[#DDE2EA] outline-none rounded-xl px-12 py-3 text-[85%] text-[var(--dark-primary)]/80 font-normal placeholder:text-[#686879] placeholder:font-normal focus:border-[#009CA6]/60" placeholder="Search By Doctors, Departments ...">
+              <i class="bi bi-mic absolute right-5 text-[130%] leading-none text-[#009CA6] cursor-pointer z-1"></i>
+            </div>
           </div>
 
         </div>
 
         <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full grid grid-cols-3 place-items-center gap-x-4 gap-y-3 pt-26 pb-3 min-[768px]:grid-cols-6 min-[992px]:grid-cols-9">
+          <div class="h-auto w-full grid grid-cols-3 place-items-center gap-x-4 gap-y-3 pt-19 pb-3 min-[768px]:grid-cols-6 min-[992px]:grid-cols-9">
             <div class="h-auto w-full text-center rounded-lg bg-[var(--light)] border border-solid border-[var(--primary)]/15 overflow-hidden px-3 py-2 shadow-[0_8px_22px_0_#00000008]" onclick="window.location.href='doctor-lists.html'">
               <div class="relative z-2 h-12 w-12 p-2 rounded-[50%] bg-[#FFF7FB] border border-solid border-[var(--primary)]/20 flex items-center justify-center outline-none mx-auto mb-[5px] shadow-[0_5px_14px_#d52e8a12]">
                 <img class="!w-9 opacity-90" src="assets/images/brain.png" alt="Doctor type icon" />
