@@ -165,7 +165,7 @@ $(document).ready(function(){
 /* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
 
 /*-------------------------------------- USER-DYNAMIC-AVATAR ----------------------------------------*/
-const avatarColors={
+const avatarColors = {
   A:['#D32F2F','#FDECEC'],B:['#C2185B','#FCEAF2'],C:['#7B1FA2','#F5EAF8'],D:['#512DA8','#EEEAF8'],
   E:['#303F9F','#EBEDF8'],F:['#1976D2','#EAF4FD'],G:['#0288D1','#E8F7FD'],H:['#0097A7','#E6F8FA'],
   I:['#00796B','#E5F5F2'],J:['#388E3C','#ECF7ED'],K:['#689F38','#F1F7E8'],L:['#AFB42B','#F8F9E9'],
@@ -194,8 +194,6 @@ document.addEventListener('DOMContentLoaded',setMemberAvatars);
 /*-------------------------------------- TOAST ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const toast = document.getElementById("cartToast");
-  const toastBox = toast.querySelector(".pointer-events-auto");
-  const goToCartButton = document.getElementById("goToCartButton");
 
   function showCartToast() {
     toast.classList.remove(
@@ -253,12 +251,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     true
   );
-
-  if (goToCartButton) {
-    goToCartButton.addEventListener("click", function () {
-      window.location.href = "cart.html";
-    });
-  }
 });
 /*-------------------------------------- TOAST ----------------------------------------*/
 
@@ -301,7 +293,7 @@ function openTab(btn) {
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 
 /*-------------------------------------- TOGGLER-MENU ----------------------------------------*/
-function openHomeCollectionRPDownloadMenu(btn){
+function openHomeCollectionRPDownloadMenu(btn) {
   const buttons = [...document.querySelectorAll('[onclick*="openHomeCollectionRPDownloadMenu"]')];
   const menus = document.querySelectorAll('.home_collection_rp_download_menu');
   const index = buttons.indexOf(btn);
