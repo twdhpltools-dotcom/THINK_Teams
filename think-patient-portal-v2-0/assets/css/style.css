@@ -195,102 +195,98 @@ button.tab-btn.active .tab-indicator {
 
 /* ----------------------------------------- CSS FOR GLASSMORPHISM-BTN-EFFECT START ---------------------------------------------- */
 .glass-os {
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -10%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 0;
-    cursor: pointer;
-    overflow: hidden;
+    --glass-bg: rgba(170, 170, 170, 0.082);
+    --glass-border: rgba(255,255,255,.72);
+    --glass-highlight: rgba(255,255,255,.92);
+    position: relative;
     isolation: isolate;
-    border: 1px solid rgba(255, 255, 255, 0.78);
-    border-radius: 50%;
-    color: var(--primary);
-    background:
-        linear-gradient(145deg,
-            rgba(255, 255, 255, 0.74),
-            rgba(255, 255, 255, 0.26) 45%,
-            rgba(255, 255, 255, 0.12));
-    -webkit-backdrop-filter: blur(18px) saturate(180%);
-    backdrop-filter: blur(18px) saturate(180%);
-    box-shadow:
-        inset 1px 1px 2px rgba(255, 255, 255, 0.95),
-        inset -1px -1px 2px rgba(255, 255, 255, 0.3),
-        0 8px 18px rgba(210, 76, 135, 0.14),
-        0 2px 5px rgba(0, 0, 0, 0.08);
-    transform: translate(-50%, -50%);
-    transition:
-        transform 180ms ease,
-        box-shadow 180ms ease,
-        background 180ms ease;
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    -webkit-backdrop-filter: blur(2px)
+        saturate(180%)
+        brightness(1.08)
+        contrast(1.03);
+    backdrop-filter: blur(2px)
+        saturate(180%)
+        brightness(1.08)
+        contrast(1.03);
+    box-shadow: 0 5px 5px rgba(15, 23, 42, 0.048),
+        0 2px 5px rgba(15, 23, 42, 0.027),
+        inset 0 1px 0 rgba(255,255,255,.95),
+        inset 0 -1px 0 rgba(255,255,255,.20);
+    transition: transform .18s cubic-bezier(.2,.8,.2,1),
+        box-shadow .18s ease,
+        background .18s ease;
 }
 
 .glass-os::before {
     content: '';
     position: absolute;
-    z-index: -1;
-    top: 2px;
-    left: 7px;
-    width: 20px;
-    height: 9px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.72);
-    filter: blur(3px);
-    opacity: 0.8;
-    transform: rotate(-25deg);
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
     pointer-events: none;
+    background: radial-gradient(
+        circle at 28% 18%,
+        rgba(255,255,255,.92) 0%,
+        rgba(255,255,255,.42) 16%,
+        rgba(255,255,255,.10) 35%,
+        transparent 58%
+        ),
+        linear-gradient(
+        145deg,
+        rgba(255,255,255,.38) 0%,
+        rgba(255,255,255,.08) 40%,
+        rgba(255,255,255,.02) 65%,
+        rgba(255,255,255,.22) 100%
+        );
+    mix-blend-mode:screen;
+    opacity:.70;
 }
 
 .glass-os::after {
-    content: "";
+    content: '';
     position: absolute;
-    inset: 0;
-    z-index: -2;
+    inset: 1px;
+    z-index: 1;
     border-radius: inherit;
-    background: radial-gradient(circle at 30% 25%,
-            rgba(255, 255, 255, 0.6),
-            transparent 42%);
     pointer-events: none;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255,.95),
+    inset -1px -1px 1px rgba(255,255,255,.16),
+    inset 0 0 7px rgba(255,255,255,.18);
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.18) 0%,
+      transparent 35%,
+      transparent 72%,
+      rgba(255,255,255,.06) 100%
+    );
 }
 
-.glass-os i {
+.glass-os > * {
     position: relative;
-    z-index: 1;
-    font-size: 17px;
-    line-height: 1;
-    color: var(--primary);
-    transition: transform 180ms ease;
+    z-index: 3;
 }
 
 .glass-os:hover {
-    background:
-        linear-gradient(145deg,
-            rgba(255, 255, 255, 0.88),
-            rgba(255, 255, 255, 0.38));
-    box-shadow:
-        inset 1px 1px 3px rgba(255, 255, 255, 1),
-        0 10px 22px rgba(210, 76, 135, 0.2),
-        0 3px 8px rgba(0, 0, 0, 0.1);
-    transform: translate(-50%, -50%) scale(1.06);
-}
-
-.glass-os:hover i {
-    transform: translateX(2px);
+    background: rgba(255,255,255,.22);
+    box-shadow: 0 10px 22px rgba(15,23,42,.14),
+    0 3px 7px rgba(15,23,42,.08),
+    inset 0 1px 0 rgba(255,255,255,1),
+    inset 0 -1px 0 rgba(255,255,255,.24);
 }
 
 .glass-os:active {
-    transform: translate(-50%, -50%) scale(0.94);
-    box-shadow:
-        inset 2px 2px 4px rgba(0, 0, 0, 0.08),
-        inset -1px -1px 2px rgba(255, 255, 255, 0.8);
+    transform: scale(.92);
+    background: rgba(255,255,255,.12);
+    box-shadow: 0 3px 8px rgba(15,23,42,.10),
+        inset 0 2px 5px rgba(15,23,42,.08),
+        inset 0 1px 0 rgba(255,255,255,.75);
 }
 
-.glass-os:focus-visible {
-    outline: 2px solid rgba(210, 76, 135, 0.45);
-    outline-offset: 3px;
+.glass-os:focus {
+    outline:none;
 }
 /* ----------------------------------------- CSS FOR GLASSMORPHISM-BTN-EFFECT-SECTION START ---------------------------------------------- */
 
