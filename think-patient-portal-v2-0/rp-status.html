@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notifications | ThinkLab Patient Portal | Secure Patient Management Application</title>
+  <title>Report Status | ThinkLab Patient Portal | Secure Patient Management Application</title>
 
-  <meta name="title" content="Notifications | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
+  <meta name="title" content="Report Status | ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="description" content="ThinkLab Patient Portal Application | A Trusted Patient Management Software of India" />
   <meta name="keywords" content="Patient Portal, Patient Management Software, Healthcare Software, Clinic Management, Patient Management, ThinkLab, Medical Software India" />
   <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
@@ -46,7 +46,7 @@
   </div>
   <!----------------------------------- PRE-LOADER ------------------------------------------------->
 
-  <!----------------------------------- NOTIFICATION SECTION ------------------------------------------------->
+  <!----------------------------------- REPORT SECTION ------------------------------------------------->
   <section class="page h-auto w-full">
 
     <!----- BOTTOM-ISLAND ------->
@@ -76,123 +76,130 @@
             <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
           </button>
           <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
-            Notifications
+            Report Status
           </h1>
         </div>
         <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
           <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
         </button>
         
       </div>
-      <!----- TOP-BAR ------->
+      <!----- /TOP-BAR ------->
 
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
-        
-        <div class="h-auto w-full px-5 fixed top-16 left-0 bg-[var(--light)] z-100">
 
-          <div class="h-auto w-full flex items-center justify-between">
-            <button class="rounded-sm bg-[#EFF4FB] px-2 py-1 text-[85%] font-semibold text-[#0E55E7] transition-all duration-200">
-              All
-            </button>
-            <button class="ms-1 text-[85%] font-semibold text-[#168477]/90">
-              Mark as All Read
-            </button>
+        <div class="h-auto w-full px-5 fixed top-16 left-0 z-100">
+
+          <div class="h-auto w-full">
+            <div class="search-input relative h-auto w-full flex items-center">
+              <i class="bi bi-search absolute left-4 text-[110%] leading-none text-[#009CA6] z-1"></i>
+              <input type="text" class="h-auto w-full bg-[#FFFFFF] border border-solid border-[#DDE2EA] outline-none rounded-xl px-12 py-3 text-[85%] text-[var(--dark-primary)]/80 font-normal placeholder:text-[#686879] placeholder:font-normal focus:border-[#009CA6]/60" placeholder="Search by reports, prescriptions ...">
+              <i class="bi bi-mic absolute right-5 text-[130%] leading-none text-[#009CA6] cursor-pointer z-1"></i>
+            </div>
           </div>
 
         </div>
 
-        <div class="h-auto w-full">
+        <div class="h-auto w-full px-5">
           
-          <div class="h-auto w-full pt-14 pb-4 px-5">
+          <div class="h-auto w-full pt-18 pb-4">
             <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
-              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Aug 19, 2025</p>
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
             </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 active last:mb-0">
+            
+            <div class="relative z-1 h-auto w-full px-4 py-4 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-center justify-between">
                 <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Booking Requested</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
+                  <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                  <div class="flex items-center gap-x-2 mt-1">
+                    <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Completed</span>
+                  </div>
                 </div>
+                <button class="h-auto flex items-center justify-center gap-x-2 rounded-md bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-6" onclick="openHomeCollectionRPDownloadMenu(this)">
+                  <span class="text-[85%] leading-none font-medium">Download</span>
+                </button>
+
+                <!----- TOGGLER-MENU ------->
+                <div class="home_collection_rp_download_menu hidden absolute top-12 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                    <span class="flex items-center justify-center shrink-0">
+                      <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                    </span>
+                    <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report</span>
+                  </button>
+
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                    <span class="flex items-center justify-center shrink-0">
+                      <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                    </span>
+                    <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report</span>
+                  </button>
+                </div>
+                <!----- TOGGLER-MENU ------->
               </div>
             </div>
 
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+            <div class="relative z-1 h-auto w-full px-4 py-4 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-center justify-between">
                 <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Booking Confirmed</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 active last:mb-0">
-              <div class="h-auto w-full flex items-center justify-between">
-                <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Report Ready</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 active last:mb-0">
-              <div class="h-auto w-full flex items-center justify-between">
-                <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Prescription Uploaded</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
-              <div class="h-auto w-full flex items-center justify-between">
-                <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Payment Received</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
+                  <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                  <div class="flex items-center gap-x-2 mt-1">
+                    <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#FFF3E8] text-[70%] leading-none font-medium text-[#F36A0A]">Pending</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
-              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Sep 28, 2025</p>
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
             </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 active last:mb-0">
+            
+            <div class="relative z-1 h-auto w-full px-4 py-4 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-center justify-between">
                 <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Due Reminder</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
+                  <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                  <div class="flex items-center gap-x-2 mt-1">
+                    <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Completed</span>
+                  </div>
                 </div>
+                <button class="h-auto flex items-center justify-center gap-x-2 rounded-md bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-6" onclick="openHomeCollectionRPDownloadMenu(this)">
+                  <span class="text-[85%] leading-none font-medium">Download</span>
+                </button>
+
+                <!----- TOGGLER-MENU ------->
+                <div class="home_collection_rp_download_menu hidden absolute top-12 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                    <span class="flex items-center justify-center shrink-0">
+                      <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                    </span>
+                    <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report</span>
+                  </button>
+
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                    <span class="flex items-center justify-center shrink-0">
+                      <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                    </span>
+                    <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report</span>
+                  </button>
+                </div>
+                <!----- TOGGLER-MENU ------->
               </div>
             </div>
 
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+            <div class="relative z-1 h-auto w-full px-4 py-4 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full flex items-center justify-between">
                 <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Report Ready</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
+                  <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                  <div class="flex items-center gap-x-2 mt-1">
+                    <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#FFF3E8] text-[70%] leading-none font-medium text-[#F36A0A]">Pending</span>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
-              <div class="h-auto w-full flex items-center justify-between">
-                <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Booking Requested</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="notf-box relative z-1 h-auto w-full px-4 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
-              <div class="h-auto w-full flex items-center justify-between">
-                <div>
-                  <h6 class="text-[90%] leading-[1.3] font-semibold text-[var(--dark)]/70">Booking Confirmed</h6>
-                  <span class="text-[75%] leading-none font-medium text-[var(--dark)]/60 whitespace-nowrap">11:45 AM</span>
-                </div>
-              </div>
-            </div>            
           </div>
 
         </div>
@@ -203,7 +210,7 @@
     </main>
 
   </section>
-  <!----------------------------------- NOTIFICATION SECTION ------------------------------------------------->
+  <!----------------------------------- REPORT SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
   <script src="assets/js/tailwind.js" type="text/javascript"></script>

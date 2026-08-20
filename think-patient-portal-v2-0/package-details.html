@@ -69,15 +69,23 @@
     <main class="h-auto w-full bg-[var(--light)]">
 
       <!----- TOP-BAR ------->
-      <div class="h-auto py-2 px-5 w-full fixed top-0 left-0 bg-[#fbfafa] flex items-center justify-between gap-x-2 border-b border-solid border-[#00000010] z-100">
+      <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
+
         <div class="flex items-center gap-x-2">
-          <i class="bi bi-arrow-left text-[140%] go-back-btn text-[var(--dark)]/70 cursor-pointer me-3"></i>
-          <p class="block text-[75%] text-[var(--dark)]/80 font-medium mt-[-2px]">Hello, Puja</p>
+          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+            <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
+          </button>
+          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
+            Package for Kidney
+          </h1>
         </div>
-        <button class="relative z-1 h-10 w-10 flex items-center justify-center p-3 rounded-[50%] bg-[#F1F5F9] outline-none" onclick="window.location.href='notfication.html'">
-          <img src="assets/images/bell.png" alt="notf icon">
-          <span class="absolute top-[-5px] right-[-10px] z-2 py-1 px-2 rounded-2xl bg-[#64748B] text-center text-[60%] font-semibold text-[var(--light)]">11</span>
+        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
+          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+            1
+          </span>
         </button>
+        
       </div>
       <!----- TOP-BAR ------->
 
@@ -86,68 +94,73 @@
 
         <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-5 pb-3">
-            <div class="h-auto w-full py-2 overflow-hidden">
-              <h4 class="text-[115%] font-semibold text-[var(--primary)]/80 leading-none">Package for Hearth</h4>
-              <div class="h-[2px] w-full border-t border-solid border-[#0000000d] mt-2"></div>
-            </div>
-
+          <div class="h-auto w-full pt-4 pb-3">
             <div class="h-auto w-full mt-1">
               <div class="grid grid-cols-2 gap-x-2 gap-y-2">
                 <div class="h-auto relative z-1 flex items-center justify-between px-3 py-3 rounded-md bg-[var(--light)] border border-solid border-[var(--primary)]/15">
-                  <div class="flex items-center gap-x-3">
+                  <div class="flex items-center gap-x-2">
+                    <span class="shrink-0">
+                      <i class="bi bi-fork-knife text-[130%] leading-none text-[#1D63D8]"></i>
+                    </span>
                     <div>
-                      <h6 class="text-[80%] font-medium text-[var(--dark-primary)]/80">Fasting Required</h6>
-                      <p class="text-[65%] text-[var(--dark)]/50 mt-[1px]">No fasting required</p>
+                      <h6 class="max-w-[100px] text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/75 truncate">Fasting Required</h6>
+                      <p class="max-w-[80px] text-[75%] text-[var(--dark)]/50 mt-[3px] truncate">No fasting required</p>
                     </div>
                   </div>
                 </div>
                 <div class="h-auto relative z-1 flex items-center justify-between px-3 py-3 rounded-md bg-[var(--light)] border border-solid border-[var(--primary)]/15">
-                  <div class="flex items-center gap-x-3">
+                  <div class="flex items-center gap-x-2">
+                    <span class="shrink-0">
+                      <i class="bi bi-droplet-half text-[130%] leading-none text-[#1D63D8]"></i>
+                    </span>
                     <div>
-                      <h6 class="text-[80%] font-medium text-[var(--dark-primary)]/80">Sample Type</h6>
-                      <p class="text-[65%] text-[var(--dark)]/50 mt-[1px]">Blood</p>
+                      <h6 class="max-w-[100px] text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/75 truncate">Sample Type</h6>
+                      <p class="max-w-[80px] text-[75%] text-[var(--dark)]/50 mt-[3px] truncate">Blood</p>
                     </div>
                   </div>
                 </div>
                 <div class="h-auto relative z-1 flex items-center justify-between px-3 py-3 rounded-md bg-[var(--light)] border border-solid border-[var(--primary)]/15">
-                  <div class="flex items-center gap-x-3">
+                  <div class="flex items-center gap-x-2">
+                    <span class="shrink-0">
+                      <i class="bi bi-clock-history text-[130%] leading-none text-[#1D63D8]"></i>
+                    </span>
                     <div>
-                      <h6 class="text-[80%] font-medium text-[var(--dark-primary)]/80">Report Time</h6>
-                      <p class="text-[65%] text-[var(--dark)]/50 mt-[1px]">6–8 Hours</p>
+                      <h6 class="max-w-[100px] text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/75 truncate">Report Time</h6>
+                      <p class="max-w-[80px] text-[75%] text-[var(--dark)]/50 mt-[3px] truncate">6–8 Hours</p>
                     </div>
                   </div>
                 </div>
                 <div class="h-auto relative z-1 flex items-center justify-between px-3 py-3 rounded-md bg-[var(--light)] border border-solid border-[var(--primary)]/15">
-                  <div class="h-auto w-full">
-                    <div class="flex items-center justify-between">
-                      <div>
-                        <h6 class="text-[80%] font-medium text-[var(--dark-primary)]/80">Includes</h6>
-                        <p class="text-[65%] text-[var(--dark)]/50 mt-[1px]">51 Parameters</p>
-                      </div>
-                      <button class="h-5 w-5 flex items-center justify-center rounded-2xl border-none outline-none bg-[var(--dark-primary)]/5 text-[70%] font-medium text-[var(--primary)] underline">
-                        <i class="bi bi-chevron-right text-[90%]"></i>
-                      </button>
+                  <div class="flex items-center gap-x-2">
+                    <span class="shrink-0">
+                      <i class="bi bi-flask text-[130%] leading-none text-[#1D63D8]"></i>
+                    </span>
+                    <div>
+                      <h6 class="max-w-[100px] text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/75 truncate">Includes</h6>
+                      <p class="max-w-[80px] text-[75%] text-[var(--dark)]/50 mt-[3px] truncate">51 Parameters</p>
                     </div>
                   </div>
+                  <button type="button" class="glass-os !absolute right-[5%] bottom-[30%] h-7 w-7 rounded-[50%] flex items-center justify-center shrink-0 outline-none z-2" onclick="openParamListModal()">
+                    <i class="bi bi-arrow-right text-[95%] leading-none text-[var(--dark-primary)]/80"></i>
+                  </button>
                 </div>
               </div>
             </div>
 
-            <div class="h-auto w-full rounded-xl bg-[var(--light)] border border-solid border-[#00000010] px-4 py-3 shadow-[0_8px_22px_#00000008] mt-2">
-              <h6 class="text-[85%] font-semibold text-[var(--dark-primary)]/80">About This Health Package</h6>
-              <p class="text-[70%]  text-[var(--dark)]/50 mt-2">CBC (Complete Blood Count) is a basic blood test that provides important information about your overall health. It helps in the detection of infections, anaemia, and other disorders.</p>
+            <div class="h-auto w-full rounded-xl bg-[var(--light)] border border-solid border-[#00000010] px-4 py-4 shadow-[0_8px_22px_#00000008] mt-3">
+              <h6 class="text-[95%] font-semibold text-[var(--dark)]/70">About This Health Package</h6>
+              <p class="text-[80%]  text-[var(--dark)]/50 mt-2">CBC (Complete Blood Count) is a basic blood test that provides important information about your overall health. It helps in the detection of infections, anaemia, and other disorders.</p>
               <button class="h-auto mt-3 border-none outline-none bg-transparent text-[75%] font-semibold text-[var(--primary)]">
                 Read More
                 <i class="bi bi-chevron-down ms-1 text-[100%]"></i>
               </button>
             </div>
 
-            <div class="fixed bottom-0 left-0 h-auto w-full px-5 py-2 rounded-2xl bg-[var(--light)] border border-solid border-[var(--primary)]/12 shadow-[0_8px_22px_0_#00000008]">
+            <div class="fixed bottom-0 left-0 h-auto w-full px-5 py-3 rounded-2xl bg-[var(--light)] border border-solid border-[var(--primary)]/12 shadow-[0_8px_22px_0_#00000008]">
               <div class="h-auto w-full flex items-center justify-between gap-x-3 pb-20">
                 <div class="h-auto w-full flex items-center gap-x-2">
                   <p class="text-[80%] text-[var(--dark)]/45 line-through italic">₹ 2000</p>
-                  <em class="block text-[120%] font-bold text-[#2f80ed] not-italic leading-none">
+                  <em class="block text-[140%] font-bold text-[#2f80ed] not-italic leading-none">
                     <span class="rupee-symbol">₹</span> 1800
                   </em>
                 </div>
@@ -165,7 +178,7 @@
 
   </section>
 
-    <!----- CART TOAST ------->
+  <!----- CART TOAST ------->
   <div id="cartToast" class="pointer-events-none fixed inset-x-0 bottom-[90px] z-[103] flex translate-y-[160%] justify-center px-4 opacity-0 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]">
     <div class="pointer-events-auto w-full max-w-[420px] overflow-hidden rounded-xl border border-[var(--dark)]/10 bg-[var(--light)] shadow-[0_15px_45px_rgba(15,23,42,.18)]">
       <div class="h-auto w-full relative z-1 px-5 py-4">
@@ -188,7 +201,7 @@
                 </div>
               </div>
               <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/5 outline-none flex items-center justify-center">
-                <i class="bi bi-trash3 text-[var(--failure)]"></i>
+                <i class="bi bi-trash3 text-[100%] leading-none text-[var(--primary)]/90"></i>
               </button>
             </div>
             <div class="h-auto w-full flex items-center justify-between mb-2">
@@ -201,7 +214,7 @@
                 </div>
               </div>
               <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/5 outline-none flex items-center justify-center">
-                <i class="bi bi-trash3 text-[var(--failure)]"></i>
+                <i class="bi bi-trash3 text-[100%] leading-none text-[var(--primary)]/90"></i>
               </button>
             </div>
             <div class="text-center">
@@ -220,6 +233,103 @@
     </div>
   </div>
   <!----- CART TOAST ------->
+
+  <!----- PARAMETER-LIST MODAL ------->
+  <div id="ParamListModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeParamListModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="ParamListModalBox" class="h-auto w-90 max-w-[620px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center border-b border-[var(--dark-primary)]/10 pt-5 pb-3 px-4">
+        <h5 class="text-[100%] font-semibold text-[var(--dark)]/70">List of Parameters</h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full pt-1 pb-4">
+        <div class="h-auto w-full">
+          <div class="h-auto w-full flex items-center justify-between gap-x-3 px-4 border-b border-solid border-[var(--dark-primary)]/10 py-2 last:pb-0 last:border-none">
+            <div class="flex items-center min-w-0 flex-1">
+              <span class="h-10 w-10 flex items-center justify-center rounded-md bg-[#EEF8F5] flex items-center shrink-0 me-3">
+                <i class="bi bi-droplet-half text-[120%] leading-none text-[var(--primary)]"></i>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/70 truncate">25-OH Vitamin D3</p>
+                <span class="block text-[70%] leading-[1.3] text-[var(--dark-primary)]/60 mt-1">Vitamin Profile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between gap-x-3 px-4 border-b border-solid border-[var(--dark-primary)]/10 py-2 last:pb-0 last:border-none">
+            <div class="flex items-center min-w-0 flex-1">
+              <span class="h-10 w-10 flex items-center justify-center rounded-md bg-[#EEF8F5] flex items-center shrink-0 me-3">
+                <i class="bi bi-activity text-[120%] leading-none text-[var(--primary)]"></i>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/70 truncate">ASO-Titre (Quantitative)</p>
+                <span class="block text-[70%] leading-[1.3] text-[var(--dark-primary)]/60 mt-1">Immunology</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between gap-x-3 px-4 border-b border-solid border-[var(--dark-primary)]/10 py-2 last:pb-0 last:border-none">
+            <div class="flex items-center min-w-0 flex-1">
+              <span class="h-10 w-10 flex items-center justify-center rounded-md bg-[#EEF8F5] flex items-center shrink-0 me-3">
+                <i class="bi bi-droplet-half text-[120%] leading-none text-[var(--primary)]"></i>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/70 truncate">25-OH Vitamin D3</p>
+                <span class="block text-[70%] leading-[1.3] text-[var(--dark-primary)]/60 mt-1">Vitamin Profile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between gap-x-3 px-4 border-b border-solid border-[var(--dark-primary)]/10 py-2 last:pb-0 last:border-none">
+            <div class="flex items-center min-w-0 flex-1">
+              <span class="h-10 w-10 flex items-center justify-center rounded-md bg-[#EEF8F5] flex items-center shrink-0 me-3">
+                <i class="bi bi-activity text-[120%] leading-none text-[var(--primary)]"></i>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/70 truncate">ASO-Titre (Quantitative)</p>
+                <span class="block text-[70%] leading-[1.3] text-[var(--dark-primary)]/60 mt-1">Immunology</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between gap-x-3 px-4 border-b border-solid border-[var(--dark-primary)]/10 py-2 last:pb-0 last:border-none">
+            <div class="flex items-center min-w-0 flex-1">
+              <span class="h-10 w-10 flex items-center justify-center rounded-md bg-[#EEF8F5] flex items-center shrink-0 me-3">
+                <i class="bi bi-droplet-half text-[120%] leading-none text-[var(--primary)]"></i>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/70 truncate">25-OH Vitamin D3</p>
+                <span class="block text-[70%] leading-[1.3] text-[var(--dark-primary)]/60 mt-1">Vitamin Profile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-auto w-full flex items-center justify-between gap-x-3 px-4 border-b border-solid border-[var(--dark-primary)]/10 py-2 last:pb-0 last:border-none">
+            <div class="flex items-center min-w-0 flex-1">
+              <span class="h-10 w-10 flex items-center justify-center rounded-md bg-[#EEF8F5] flex items-center shrink-0 me-3">
+                <i class="bi bi-activity text-[120%] leading-none text-[var(--primary)]"></i>
+              </span>
+              <div class="flex-1 min-w-0">
+                <p class="text-[85%] leading-[1.2] font-semibold text-[var(--dark)]/70 truncate">ASO-Titre (Quantitative)</p>
+                <span class="block text-[70%] leading-[1.3] text-[var(--dark-primary)]/60 mt-1">Immunology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- PARAMETER-LIST MODAL ------->
   <!----------------------------------- TEST-LIST SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->

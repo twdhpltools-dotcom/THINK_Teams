@@ -118,8 +118,20 @@
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
-              <div class="h-auto w-full mt-1">
-                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              <div class="h-auto w-full flex items-center gap-x-2 mt-1">
+                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7] whitespace-nowrap">Lab Visit</span>
+                <div class="h-auto w-full flex items-center gap-x-2">
+                  <div class="flex items-center gap-x-1">
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-half text-[75%] text-[#F59E0B]"></i>
+                  </div>
+                  <div class="flex items-center gap-x-3">
+                    <p class="text-[80%] leading-[1.2] font-semibold text-[var(--dark)]/70">4.8 Rating</p>
+                  </div>
+                </div>
               </div>
               <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
               <div class="h-auto w-full py-2 px-4 rounded-md bg-[#EAF8ED]/50 mt-3">
@@ -136,7 +148,7 @@
               </div>
               <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
               <div class="h-auto w-full flex items-center">
-                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3" onclick="window.location.href='rp-status.html'">
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
@@ -150,18 +162,11 @@
                   <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
                 </button>
 
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]" onclick="openDocConstCancelModal()">
                   <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                    <i class="bi bi-x-circle text-[120%] leading-none text-[var(--failure)]"></i>
                   </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
-                </button>
-
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
-                  <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
-                  </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--failure)]/90 whitespace-nowrap">Cancel Booking</span>
                 </button>
               </div>
               <!----- TOGGLER-MENU ------->
@@ -174,8 +179,20 @@
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
-              <div class="h-auto w-full mt-1">
-                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Home Collection</span>
+              <div class="h-auto w-full flex items-center gap-x-2 mt-1">
+                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37] whitespace-nowrap">Home Collection</span>
+                <div class="h-auto w-full flex items-center gap-x-2">
+                  <div class="flex items-center gap-x-1">
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-half text-[75%] text-[#F59E0B]"></i>
+                  </div>
+                  <div class="flex items-center gap-x-3">
+                    <p class="text-[80%] leading-[1.2] font-semibold text-[var(--dark)]/70">4.8 Rating</p>
+                  </div>
+                </div>
               </div>
               <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
               <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
@@ -195,7 +212,7 @@
                 <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#FFF3E8] border-none outline-none text-[#F36A0A] py-3 px-3" onclick="openHomeCollectionStatusYesMenu()">
                   <span class="text-[85%] leading-none font-medium">Track</span>
                 </button>
-                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3" onclick="window.location.href='rp-status.html'">
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
@@ -209,18 +226,11 @@
                   <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
                 </button>
 
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]" onclick="openDocConstCancelModal()">
                   <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                    <i class="bi bi-x-circle text-[120%] leading-none text-[var(--failure)]"></i>
                   </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
-                </button>
-
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
-                  <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
-                  </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--failure)]/90 whitespace-nowrap">Cancel Booking</span>
                 </button>
               </div>
               <!----- TOGGLER-MENU ------->
@@ -237,8 +247,20 @@
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
-              <div class="h-auto w-full mt-1">
-                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7]">Lab Visit</span>
+              <div class="h-auto w-full flex items-center gap-x-2 mt-1">
+                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EFF4FB] text-[70%] leading-none font-medium text-[#0E55E7] whitespace-nowrap">Lab Visit</span>
+                <div class="h-auto w-full flex items-center gap-x-2">
+                  <div class="flex items-center gap-x-1">
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-half text-[75%] text-[#F59E0B]"></i>
+                  </div>
+                  <div class="flex items-center gap-x-3">
+                    <p class="text-[80%] leading-[1.2] font-semibold text-[var(--dark)]/70">4.8 Rating</p>
+                  </div>
+                </div>
               </div>
               <div class="h-auto w-full py-2 px-4 rounded-md bg-[#EAF8ED]/50 mt-3">
                 <p class="text-[80%] text-[#178B37]/80 font-medium">Booked for Swapna Khatun, 98345XXXXX</p>
@@ -259,7 +281,7 @@
                   <span class="text-[85%] leading-none font-medium">Repeat</span>
                 </button>
                 <div class="h-[24px] w-px bg-[#D9DCE2] mx-3"></div>
-                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3" onclick="window.location.href='rp-status.html'">
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
@@ -273,18 +295,11 @@
                   <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
                 </button>
 
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]" onclick="openDocConstCancelModal()">
                   <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                    <i class="bi bi-x-circle text-[120%] leading-none text-[var(--failure)]"></i>
                   </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
-                </button>
-
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
-                  <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
-                  </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--failure)]/90 whitespace-nowrap">Cancel Booking</span>
                 </button>
               </div>
               <!----- TOGGLER-MENU ------->
@@ -297,8 +312,20 @@
                   <i class="bi bi-three-dots-vertical text-[120%] leading-none text-[var(--dark)]/70"></i>
                 </button>
               </div>
-              <div class="h-auto w-full mt-1">
-                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Home Collection</span>
+              <div class="h-auto w-full flex items-center gap-x-2 mt-1">
+                <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37] whitespace-nowrap">Home Collection</span>
+                <div class="h-auto w-full flex items-center gap-x-2">
+                  <div class="flex items-center gap-x-1">
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-fill text-[75%] text-[#F59E0B]"></i>
+                    <i class="bi bi-star-half text-[75%] text-[#F59E0B]"></i>
+                  </div>
+                  <div class="flex items-center gap-x-3">
+                    <p class="text-[80%] leading-[1.2] font-semibold text-[var(--dark)]/70">4.8 Rating</p>
+                  </div>
+                </div>
               </div>
               <p class="text-[80%] leading-none text-[var(--dark-primary/90)] font-normal mt-4">Invoice Number: UAT-INV-100</p>
               <span class="block h-px w-full bg-[var(--dark-primary)]/10 my-3"></span>
@@ -318,7 +345,7 @@
                 <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#FFF3E8] border-none outline-none text-[#F36A0A] py-3 px-3" onclick="openHomeCollectionStatusNoMenu()">
                   <span class="text-[85%] leading-none font-medium">Track</span>
                 </button>
-                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3">
+                <button class="h-auto flex-1 flex items-center justify-center gap-x-2 rounded-lg bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-3" onclick="window.location.href='rp-status.html'">
                   <span class="text-[85%] leading-none font-medium">Report Status</span>
                 </button>
               </div>
@@ -332,18 +359,11 @@
                   <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Invoice Download</span>
                 </button>
 
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]" onclick="openDocConstCancelModal()">
                   <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#078996]"></i>
+                    <i class="bi bi-x-circle text-[120%] leading-none text-[var(--failure)]"></i>
                   </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report Download</span>
-                </button>
-
-                <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
-                  <span class="flex items-center justify-center shrink-0">
-                    <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
-                  </span>
-                  <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report Download</span>
+                  <span class="text-[85%] leading-none font-medium text-[var(--failure)]/90 whitespace-nowrap">Cancel Booking</span>
                 </button>
               </div>
               <!----- TOGGLER-MENU ------->
@@ -471,6 +491,43 @@
     <!-----  HOME-COLLECTION-STATUS-NO-MENU ------->
 
   </section>
+
+    <!----- DOC-CONST-CANCEL MODAL ------->
+  <div id="DocConstCancelModal" class="fixed inset-0 bg-black/40 z-[9999] hidden items-center justify-center px-4">
+
+    <!----- MODAL-CLOSER ------->
+    <span class="absolute top-0 left-0 block z-[-1] h-[100%] w-full" onclick="closeDocConstCancelModal()"></span>
+    <!----- MODAL-CLOSER ------->
+
+    <div id="DocConstCancelModalBox" class="h-auto w-80 max-w-[580px] bg-[var(--light)] rounded-md opacity-0 scale-95 transition-all duration-300">
+
+      <!----- MODAL-HEADER ------->
+      <div class="h-auto w-full text-center pt-9 pb-4 px-4">
+        <h5 class="text-[90%] font-medium text-[var(--dark)]/60">
+          Cancel Your Booking?
+        </h5>
+      </div>
+      <!----- MODAL-HEADER ------->
+
+      <!----- MODAL-BODY ------->
+      <div class="h-auto w-full text-center pb-9 px-4">
+        <div class="h-auto w-full flex items-center justify-center gap-x-3">
+          <button class="w-20 flex items-center justify-center rounded-sm border border-[var(--success)]/50 outline-none bg-[var(--success)]/5 py-1 text-[80%] font-semibold text-[var(--success)] transition-all duration-200" onclick="window.location.href='#'">
+            <i class="bi bi-check-circle text-[120%] me-1"></i>
+            <span>Yes</span>
+          </button>
+
+          <button class="w-20 flex items-center justify-center rounded-sm border border-[var(--failure)]/30 outline-none bg-[var(--failure)]/5 py-1 text-[80%] font-semibold text-[var(--failure)] transition-all duration-200" onclick="window.location.href='lab-test.html'">
+            <i class="bi bi-x-circle text-[120%] me-1"></i>
+            <span>No</span>
+          </button>
+        </div>
+      </div>
+      <!----- MODAL-BODY ------->
+
+    </div>
+  </div>
+  <!----- DOC-CONST-CANCEL MODAL ------->
   <!----------------------------------- REPORT SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->

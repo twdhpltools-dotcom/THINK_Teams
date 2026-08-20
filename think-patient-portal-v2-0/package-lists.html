@@ -269,6 +269,8 @@
 
     </main>
 
+  </section>
+
   <!----- CART TOAST ------->
   <div id="cartToast" class="pointer-events-none fixed inset-x-0 bottom-[90px] z-[103] flex translate-y-[160%] justify-center px-4 opacity-0 transition-all duration-500 ease-[cubic-bezier(.22,1,.36,1)]">
     <div class="pointer-events-auto w-full max-w-[420px] overflow-hidden rounded-xl border border-[var(--dark)]/10 bg-[var(--light)] shadow-[0_15px_45px_rgba(15,23,42,.18)]">
@@ -292,7 +294,7 @@
                 </div>
               </div>
               <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/5 outline-none flex items-center justify-center">
-                <i class="bi bi-trash3 text-[var(--failure)]"></i>
+                <i class="bi bi-trash3 text-[100%] leading-none text-[var(--primary)]/90"></i>
               </button>
             </div>
             <div class="h-auto w-full flex items-center justify-between mb-2">
@@ -305,18 +307,18 @@
                 </div>
               </div>
               <button class="h-8 w-8 rounded-[50%] bg-[var(--primary)]/5 outline-none flex items-center justify-center">
-                <i class="bi bi-trash3 text-[var(--failure)]"></i>
+                <i class="bi bi-trash3 text-[100%] leading-none text-[var(--primary)]/90"></i>
               </button>
             </div>
             <div class="text-center">
-              <button class="rounded-sm border border-[var(--primary)] px-4 py-[5px] text-[85%] font-semibold text-[var(--primary)] transition-all duration-200">
+              <button class="h-auto mt-[5px] px-6 py-[5px] rounded-sm bg-[var(--primary)]/90 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]">
                 <i class="bi bi-plus-circle"></i> Add More
               </button>
             </div>
           </div>
         </div>
 
-        <button id="GoToCartBtn" class="absolute right-5 top-2 rounded-sm border border-[var(--primary)] px-5 py-[6px] text-[85%] font-semibold text-[var(--primary)] transition-all duration-200" onclick="window.location.href='cart.html'">
+        <button id="GoToCartBtn" class="absolute right-5 top-[9px] h-auto px-5 py-[5px] rounded-sm bg-[var(--primary)]/90 border border-solid border-[var(--primary)]/60 outline-none font-semibold text-[90%] text-[var(--light)]" onclick="window.location.href='cart.html'">
           Review Selected Tests
         </button>
 
@@ -324,7 +326,6 @@
     </div>
   </div>
   <!----- CART TOAST ------->
-  </section>
   <!----------------------------------- PACKAGE-LIST SECTION ------------------------------------------------->
 
   <!----------------------------------- JS FOR TAILWIND FILES START ------------------------------------------------->
