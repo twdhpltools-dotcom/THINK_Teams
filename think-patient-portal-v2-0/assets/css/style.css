@@ -195,7 +195,7 @@ button.tab-btn.active .tab-indicator {
 
 /* ----------------------------------------- CSS FOR GLASSMORPHISM-BTN-EFFECT START ---------------------------------------------- */
 .glass-os {
-    --glass-bg: rgba(170, 170, 170, 0.082);
+    --glass-bg: rgba(170, 170, 170, 0.144);
     --glass-border: rgba(255,255,255,.72);
     --glass-highlight: rgba(255,255,255,.92);
     position: relative;
@@ -365,4 +365,4 @@ button.tab-btn.active .tab-indicator {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-/* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */
+/* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */  
