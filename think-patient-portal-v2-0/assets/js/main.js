@@ -28,6 +28,21 @@ function getOTP() {
 }
 /*-------------------------------------- OTP-INPUT ----------------------------------------*/
 
+/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
+let timeLeft=30;
+const timer=document.getElementById("otpTimer");
+
+const countdown=setInterval(()=>{
+  timeLeft--;
+  timer.textContent=timeLeft;
+
+  if(timeLeft<=0){
+    clearInterval(countdown);
+    timer.parentElement.innerHTML="Resend OTP";
+  }
+},1000);
+/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
+
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const telInputs = document.querySelectorAll('input[type="tel"]');
