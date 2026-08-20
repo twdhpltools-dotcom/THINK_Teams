@@ -43,43 +43,6 @@ const countdown=setInterval(()=>{
 },1000);
 /*-------------------------------------- TIMER-COUNT ----------------------------------------*/
 
-/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
-const searchTexts=[
-  "Search by reports, prescriptions ...",
-  "Search by test name ...",
-  "Search by doctor name ...",
-  "Search by invoice number ..."
-];
-
-const searchInput=document.querySelector(".search-input input");
-let textIndex=0,charIndex=0,isDeleting=false;
-
-function animateSearchPlaceholder(){
-  const text=searchTexts[textIndex];
-
-  if(!isDeleting){
-    charIndex++;
-    searchInput.placeholder=text.slice(0,charIndex);
-
-    if(charIndex===text.length){
-      isDeleting=true;
-      return setTimeout(animateSearchPlaceholder,1400);
-    }
-  }else{
-    charIndex--;
-    searchInput.placeholder=text.slice(0,charIndex);
-
-    if(charIndex===0){
-      isDeleting=false;
-      textIndex=(textIndex+1)%searchTexts.length;
-    }
-  }
-  setTimeout(animateSearchPlaceholder,isDeleting?35:55);
-}
-
-animateSearchPlaceholder();
-/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
-
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const telInputs = document.querySelectorAll('input[type="tel"]');
@@ -242,6 +205,43 @@ function setMemberAvatars(){
 }
 document.addEventListener('DOMContentLoaded',setMemberAvatars);
 /*-------------------------------------- USER-DYNAMIC-AVATAR ----------------------------------------*/
+
+/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
+const searchTexts=[
+  "Search by reports, prescriptions ...",
+  "Search by test name ...",
+  "Search by doctor name ...",
+  "Search by invoice number ..."
+];
+
+const searchInput=document.querySelector(".search-input input");
+let textIndex=0,charIndex=0,isDeleting=false;
+
+function animateSearchPlaceholder(){
+  const text=searchTexts[textIndex];
+
+  if(!isDeleting){
+    charIndex++;
+    searchInput.placeholder=text.slice(0,charIndex);
+
+    if(charIndex===text.length){
+      isDeleting=true;
+      return setTimeout(animateSearchPlaceholder,1400);
+    }
+  }else{
+    charIndex--;
+    searchInput.placeholder=text.slice(0,charIndex);
+
+    if(charIndex===0){
+      isDeleting=false;
+      textIndex=(textIndex+1)%searchTexts.length;
+    }
+  }
+  setTimeout(animateSearchPlaceholder,isDeleting?35:55);
+}
+
+animateSearchPlaceholder();
+/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 
 /*-------------------------------------- TOAST ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
