@@ -195,10 +195,12 @@ button.tab-btn.active .tab-indicator {
 
 /* ----------------------------------------- CSS FOR GLASSMORPHISM-BTN-EFFECT START ---------------------------------------------- */
 .glass-os {
-    --glass-bg: rgba(170, 170, 170, 0.144);
+    --glass-bg: rgba(170, 170, 170, 0.089);
     --glass-border: rgba(255,255,255,.72);
     --glass-highlight: rgba(255,255,255,.92);
-    position: relative;
+    position: absolute;
+    top: 30%;
+    right: 10px;
     isolation: isolate;
     overflow: hidden;
     background: var(--glass-bg);
@@ -305,12 +307,11 @@ button.tab-btn.active .tab-indicator {
     gap: 0;
     padding: 6px;
     border-radius: 22px;
-    background: linear-gradient(
+    /* background: linear-gradient(
             180deg,
             rgba(255,255,255,.48),
             rgba(255,255,255,.27)
-        );
-
+        ); */
     border: 1px solid rgba(255,255,255,.66);
     -webkit-backdrop-filter: blur(22px)
         saturate(180%)
