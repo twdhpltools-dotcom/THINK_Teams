@@ -81,12 +81,20 @@
             My Wishlist
           </h1>
         </div>
-        <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='notfication.html'">
-          <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
-          <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
-            1
-          </span>
-        </button>
+        <div class="flex items-center">
+          <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='cart.html'">
+            <i class="bi bi-cart3 text-[125%] leading-none text-[#64748B]"></i>
+            <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+              1
+            </span>
+          </button>
+          <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="openNotificationMenu()">
+            <i class="bi bi-bell text-[125%] leading-none text-[#64748B]"></i>
+            <span class="absolute top-[-2px] right-[-1px] h-[18px] min-w-[18px] px-[5px] rounded-full bg-[#FF174D] flex items-center justify-center text-[75%] leading-none font-semibold text-[var(--light)]">
+              1
+            </span>
+          </button>
+        </div>
         
       </div>
       <!----- TOP-BAR ------->
