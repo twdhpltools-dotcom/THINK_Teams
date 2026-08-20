@@ -354,5 +354,15 @@ function openHomeCollectionRPDownloadMenu(btn) {
     menus[index].classList.toggle('hidden');
   }
 }
+
+function openNotfMenu(btn) {
+  const buttons = [...document.querySelectorAll('[onclick*="openNotfMenu"]')];
+  const menus = document.querySelectorAll('.notf_menu');
+  const index = buttons.indexOf(btn);
+
+  if(index !== -1 && menus[index]){
+    menus[index].classList.toggle('hidden');
+  }
+}
 /*-------------------------------------- TOGGLER-MENU ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
