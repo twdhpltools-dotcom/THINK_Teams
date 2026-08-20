@@ -243,66 +243,64 @@ function animateSearchPlaceholder(){
 animateSearchPlaceholder();
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 
+/*-------------------------------------- TIME-MOMENT-(INIT) ----------------------------------------*/
+document.querySelectorAll(".the-moment").forEach(function(el){
+  const date=moment(el.textContent.trim(),"MMM DD, YYYY");
+  el.textContent=date.fromNow();
+});
+/*-------------------------------------- TIME-MOMENT-(INIT) ----------------------------------------*/
+
 /*-------------------------------------- TOAST ----------------------------------------*/
-document.addEventListener("DOMContentLoaded", function () {
-  const toast = document.getElementById("cartToast");
+document.addEventListener("DOMContentLoaded",function(){
+  const cartIcon=document.querySelector(".bi-cart3");
+  const cartButton=cartIcon.closest("button");
+  const cartCount=cartButton.querySelector("span");
+  let count=parseInt(cartCount.textContent)||0;
 
-  function showCartToast() {
-    toast.classList.remove(
-      "translate-y-[160%]",
-      "opacity-0"
-    );
+  function animateCart(){
+    cartIcon.style.color="var(--primary)";
 
-    toast.classList.add(
-      "translate-y-0",
-      "opacity-100"
-    );
+    cartIcon.animate([
+      {transform:"scale(1) rotate(0deg)"},
+      {transform:"scale(1.35) rotate(-12deg)"},
+      {transform:"scale(.9) rotate(8deg)"},
+      {transform:"scale(1) rotate(0deg)"}
+    ],{duration:450,easing:"ease-out"});
+
+    cartCount.animate([
+      {transform:"scale(1)"},
+      {transform:"scale(1.5)"},
+      {transform:"scale(1)"}
+    ],{duration:350,easing:"ease-out"});
+
+    setTimeout(()=>cartIcon.style.color="",500);
   }
 
-  function hideCartToast() {
-    toast.classList.remove(
-      "translate-y-0",
-      "opacity-100"
-    );
-
-    toast.classList.add(
-      "translate-y-[160%]",
-      "opacity-0"
-    );
+  function updateCart(){
+    cartCount.textContent=count;
+    cartCount.classList.toggle("hidden",count===0);
+    animateCart();
   }
 
-  document.querySelectorAll(".cart-btn").forEach(function (button) {
-    button.addEventListener("click", function (event) {
+  document.querySelectorAll(".cart-btn").forEach(function(button){
+    button.addEventListener("click",function(event){
       event.stopPropagation();
-      showCartToast();
 
-      button.classList.add("added");
-      button.innerHTML = 'Remove';
+      if(button.classList.contains("added")){
+  button.classList.remove("added");
+  button.innerHTML='Add to Cart';
+  count=Math.max(0,count-1);
+}else{
+  button.classList.add("added");
+  button.innerHTML='<i class="bi bi-trash"></i>';
+  count++;
+}
+
+      updateCart();
     });
   });
 
-  document.addEventListener(
-    "pointerdown",
-    function (event) {
-      const toastIsOpen =
-        toast.classList.contains("translate-y-0");
-
-      if (!toastIsOpen) {
-        return;
-      }
-
-      const clickedInsideToast =
-        toastBox && toastBox.contains(event.target);
-
-      const clickedCartButton =
-        event.target.closest(".cart-btn");
-
-      if (!clickedInsideToast && !clickedCartButton) {
-        hideCartToast();
-      }
-    },
-    true
-  );
+  cartCount.classList.toggle("hidden",count===0);
 });
 /*-------------------------------------- TOAST ----------------------------------------*/
 
