@@ -50,16 +50,18 @@
   <section class="page h-auto w-full">
 
     <!----- BOTTOM-ISLAND ------->
-    <div class="fixed bottom-0 h-auto w-full py-4 bg-[var(--light)] flex items-center justify-center gap-x-20 rounded-tl-[20px] rounded-tr-[20px] shadow-[0_-10px_25px_0_#00000010] z-101">
-      <a href="dashboard.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 active">
+    <div class="bottom-glass-os fixed bottom-0 h-auto w-full bg-[var(--light)] flex items-center justify-center gap-x-20 rounded-tl-[20px] rounded-tr-[20px] shadow-[0_-10px_25px_0_#00000010] z-101">
+      <a href="dashboard.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 active py-4">
         <i class="bi bi-house-door block text-[170%] mb-[-5px]"></i>
         Home
       </a>
-      <a href="index.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90">
+
+      <a href="index.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 py-4">
         <i class="bi bi-calendar-check block text-[170%] mb-[-5px]"></i>
         Booking
       </a>
-      <a href="profile.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary])/90">
+
+      <a href="profile.html" class="nav-btn text-center text-[75%] font-medium text-[var(--dark-primary)]/90 py-4">
         <i class="bi bi-person block text-[170%] mb-[-5px]"></i>
         Profile
       </a>
@@ -124,7 +126,7 @@
                 </button>
 
                 <!----- TOGGLER-MENU ------->
-                <div class="home_collection_rp_download_menu hidden absolute top-12 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                <div class="home_collection_rp_download_menu hidden absolute top-[-10px] left-[50px] overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
                   <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
                     <span class="flex items-center justify-center shrink-0">
                       <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
@@ -132,7 +134,7 @@
                     <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report</span>
                   </button>
 
-                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none" onclick="window.location.href='sm-report.html'">
                     <span class="flex items-center justify-center shrink-0">
                       <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
                     </span>
@@ -171,7 +173,7 @@
                 </button>
 
                 <!----- TOGGLER-MENU ------->
-                <div class="home_collection_rp_download_menu hidden absolute top-12 right-4 overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                <div class="home_collection_rp_download_menu hidden absolute top-[-10px] left-[50px] overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
                   <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
                     <span class="flex items-center justify-center shrink-0">
                       <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
@@ -179,7 +181,54 @@
                     <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report</span>
                   </button>
 
-                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none">
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none" onclick="window.location.href='sm-report.html'">
+                    <span class="flex items-center justify-center shrink-0">
+                      <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
+                    </span>
+                    <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Smart Report</span>
+                  </button>
+                </div>
+                <!----- TOGGLER-MENU ------->
+              </div>
+            </div>
+
+            <div class="relative z-1 h-auto w-full px-4 py-4 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-center justify-between">
+                <div>
+                  <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">CBC, FBS, RBS, LFT, KFT, USG OF KUB</h6>
+                  <div class="flex items-center gap-x-2 mt-1">
+                    <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#FFF3E8] text-[70%] leading-none font-medium text-[#F36A0A]">Pending</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-auto w-full flex items-center justify-between pt-2 pb-2">
+              <p class="text-[80%] leading-none text-[var(--dark-primary)] font-medium">Jul 07, 2025</p>
+            </div>
+            
+            <div class="relative z-1 h-auto w-full px-4 py-4 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
+              <div class="h-auto w-full flex items-center justify-between">
+                <div>
+                  <h6 class="text-[85%] leading-[1.3] font-bold text-[var(--dark)]/70">LFT, KFT, FBS</h6>
+                  <div class="flex items-center gap-x-2 mt-1">
+                    <span class="inline-flex items-center px-2 py-[5px] rounded-[6px] bg-[#EAF8ED] text-[70%] leading-none font-medium text-[#178B37]">Completed</span>
+                  </div>
+                </div>
+                <button class="h-auto flex items-center justify-center gap-x-2 rounded-md bg-[#E7F6F7] border-none outline-none text-[#078996] py-3 px-6" onclick="openHomeCollectionRPDownloadMenu(this)">
+                  <span class="text-[85%] leading-none font-medium">Download</span>
+                </button>
+
+                <!----- TOGGLER-MENU ------->
+                <div class="home_collection_rp_download_menu hidden absolute top-[-10px] left-[50px] overflow-hidden rounded-xl bg-[var(--light)] border border-solid border-[#00000010] shadow-[0_5px_18px_0_#00000018] z-2">
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none border-b border-solid border-[#00000010]">
+                    <span class="flex items-center justify-center shrink-0">
+                      <i class="bi bi-file-earmark-arrow-down text-[120%] leading-none text-[#667085]"></i>
+                    </span>
+                    <span class="text-[85%] leading-none font-medium text-[var(--dark)]/70 whitespace-nowrap">Report</span>
+                  </button>
+
+                  <button class="h-auto w-full flex items-center gap-x-3 px-3 py-3 bg-[var(--light)] border-none outline-none" onclick="window.location.href='sm-report.html'">
                     <span class="flex items-center justify-center shrink-0">
                       <i class="bi bi-file-earmark-bar-graph text-[120%] leading-none text-[#B88918]"></i>
                     </span>
