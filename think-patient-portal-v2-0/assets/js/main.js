@@ -43,43 +43,6 @@ const countdown=setInterval(()=>{
 },1000);
 /*-------------------------------------- TIMER-COUNT ----------------------------------------*/
 
-/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
-const searchTexts=[
-  "Search by reports, prescriptions ...",
-  "Search by test name ...",
-  "Search by doctor name ...",
-  "Search by invoice number ..."
-];
-
-const searchInput=document.querySelector(".search-input input");
-let textIndex=0,charIndex=0,isDeleting=false;
-
-function animateSearchPlaceholder(){
-  const text=searchTexts[textIndex];
-
-  if(!isDeleting){
-    charIndex++;
-    searchInput.placeholder=text.slice(0,charIndex);
-
-    if(charIndex===text.length){
-      isDeleting=true;
-      return setTimeout(animateSearchPlaceholder,1400);
-    }
-  }else{
-    charIndex--;
-    searchInput.placeholder=text.slice(0,charIndex);
-
-    if(charIndex===0){
-      isDeleting=false;
-      textIndex=(textIndex+1)%searchTexts.length;
-    }
-  }
-  setTimeout(animateSearchPlaceholder,isDeleting?35:55);
-}
-
-animateSearchPlaceholder();
-/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
-
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const telInputs = document.querySelectorAll('input[type="tel"]');
@@ -243,68 +206,102 @@ function setMemberAvatars(){
 document.addEventListener('DOMContentLoaded',setMemberAvatars);
 /*-------------------------------------- USER-DYNAMIC-AVATAR ----------------------------------------*/
 
-/*-------------------------------------- TOAST ----------------------------------------*/
-document.addEventListener("DOMContentLoaded", function () {
-  const toast = document.getElementById("cartToast");
+/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
+const searchTexts=[
+  "Search by reports, prescriptions ...",
+  "Search by test name ...",
+  "Search by doctor name ...",
+  "Search by invoice number ..."
+];
 
-  function showCartToast() {
-    toast.classList.remove(
-      "translate-y-[160%]",
-      "opacity-0"
-    );
+const searchInput=document.querySelector(".search-input input");
+let textIndex=0,charIndex=0,isDeleting=false;
 
-    toast.classList.add(
-      "translate-y-0",
-      "opacity-100"
-    );
+function animateSearchPlaceholder(){
+  const text=searchTexts[textIndex];
+
+  if(!isDeleting){
+    charIndex++;
+    searchInput.placeholder=text.slice(0,charIndex);
+
+    if(charIndex===text.length){
+      isDeleting=true;
+      return setTimeout(animateSearchPlaceholder,1400);
+    }
+  }else{
+    charIndex--;
+    searchInput.placeholder=text.slice(0,charIndex);
+
+    if(charIndex===0){
+      isDeleting=false;
+      textIndex=(textIndex+1)%searchTexts.length;
+    }
+  }
+  setTimeout(animateSearchPlaceholder,isDeleting?35:55);
+}
+
+animateSearchPlaceholder();
+/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
+
+/*-------------------------------------- TIME-MOMENT-(INIT) ----------------------------------------*/
+document.querySelectorAll(".the-moment").forEach(function(el){
+  const date=moment(el.textContent.trim(),"MMM DD, YYYY");
+  el.textContent=date.fromNow();
+});
+/*-------------------------------------- TIME-MOMENT-(INIT) ----------------------------------------*/
+
+/*-------------------------------------- ADD-CART-TOAST ----------------------------------------*/
+document.addEventListener("DOMContentLoaded",function(){
+  const cartIcon=document.querySelector(".bi-cart3");
+  const cartButton=cartIcon.closest("button");
+  const cartCount=cartButton.querySelector("span");
+  let count=parseInt(cartCount.textContent)||0;
+
+  function animateCart(){
+    cartIcon.style.color="var(--primary)";
+
+    cartIcon.animate([
+      {transform:"scale(1) rotate(0deg)"},
+      {transform:"scale(1.35) rotate(-12deg)"},
+      {transform:"scale(.9) rotate(8deg)"},
+      {transform:"scale(1) rotate(0deg)"}
+    ],{duration:450,easing:"ease-out"});
+
+    cartCount.animate([
+      {transform:"scale(1)"},
+      {transform:"scale(1.5)"},
+      {transform:"scale(1)"}
+    ],{duration:350,easing:"ease-out"});
+
+    setTimeout(()=>cartIcon.style.color="",500);
   }
 
-  function hideCartToast() {
-    toast.classList.remove(
-      "translate-y-0",
-      "opacity-100"
-    );
-
-    toast.classList.add(
-      "translate-y-[160%]",
-      "opacity-0"
-    );
+  function updateCart(){
+    cartCount.textContent=count;
+    cartCount.classList.toggle("hidden",count===0);
+    animateCart();
   }
 
-  document.querySelectorAll(".cart-btn").forEach(function (button) {
-    button.addEventListener("click", function (event) {
+  document.querySelectorAll(".cart-btn").forEach(function(button){
+    button.addEventListener("click",function(event){
       event.stopPropagation();
-      showCartToast();
 
-      button.classList.add("added");
-      button.innerHTML = 'Remove';
+      if(button.classList.contains("added")){
+          button.classList.remove("added");
+          button.innerHTML='Add to Cart';
+          count=Math.max(0,count-1);
+        }else{
+          button.classList.add("added");
+          button.innerHTML='<i class="bi bi-trash"></i>';
+          count++;
+        }
+      updateCart();
     });
   });
 
-  document.addEventListener(
-    "pointerdown",
-    function (event) {
-      const toastIsOpen =
-        toast.classList.contains("translate-y-0");
-
-      if (!toastIsOpen) {
-        return;
-      }
-
-      const clickedInsideToast =
-        toastBox && toastBox.contains(event.target);
-
-      const clickedCartButton =
-        event.target.closest(".cart-btn");
-
-      if (!clickedInsideToast && !clickedCartButton) {
-        hideCartToast();
-      }
-    },
-    true
-  );
+  cartCount.classList.toggle("hidden",count===0);
 });
-/*-------------------------------------- TOAST ----------------------------------------*/
+/*-------------------------------------- ADD-CART-TOAST ----------------------------------------*/
 
 /*-------------------------------------- ACCORDIAN ----------------------------------------*/
 function toggleAccordion(head) {
@@ -317,6 +314,19 @@ function toggleAccordion(head) {
   body.classList.toggle("pt-3");
 
   icon.classList.toggle("rotate-180");
+}
+
+function toggleAccordionNw(headNw) {
+  const bodyNw = headNw.nextElementSibling;
+  const iconNw = headNw.querySelector(".pg-accordion-icon-Nw");
+
+  bodyNw.classList.toggle("max-h-0");
+  bodyNw.classList.toggle("pt-0");
+  bodyNw.classList.toggle("max-h-[500px]");
+  bodyNw.classList.toggle("pt-1");
+  bodyNw.classList.toggle("pb-2");
+
+  iconNw.classList.toggle("rotate-180");
 }
 /*-------------------------------------- ACCORDIAN ----------------------------------------*/
 
@@ -348,6 +358,16 @@ function openTab(btn) {
 function openHomeCollectionRPDownloadMenu(btn) {
   const buttons = [...document.querySelectorAll('[onclick*="openHomeCollectionRPDownloadMenu"]')];
   const menus = document.querySelectorAll('.home_collection_rp_download_menu');
+  const index = buttons.indexOf(btn);
+
+  if(index !== -1 && menus[index]){
+    menus[index].classList.toggle('hidden');
+  }
+}
+
+function openNotfMenu(btn) {
+  const buttons = [...document.querySelectorAll('[onclick*="openNotfMenu"]')];
+  const menus = document.querySelectorAll('.notf_menu');
   const index = buttons.indexOf(btn);
 
   if(index !== -1 && menus[index]){
