@@ -208,10 +208,12 @@ document.addEventListener('DOMContentLoaded',setMemberAvatars);
 
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 const searchTexts=[
+  "Search by doctors ...",
+  "Search by tests ...",
+  "Search by health packages ...",
   "Search by reports, prescriptions ...",
-  "Search by test name ...",
-  "Search by doctor name ...",
-  "Search by invoice number ..."
+  "Search by invoice number ...",
+  "Search helps & faq's ..."
 ];
 
 const searchInput=document.querySelector(".search-input input");
@@ -342,11 +344,11 @@ document.getElementById("FileUpload").addEventListener("change", function () {
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 function openTab(btn) {
   document.querySelectorAll(".tab-content").forEach(content=>{
-      content.classList.add("hidden");
+    content.classList.add("hidden");
   });
 
   document.querySelectorAll(".tab-btn").forEach(button=>{
-      button.classList.remove("active");
+    button.classList.remove("active");
   });
 
   document.getElementById(btn.dataset.tab).classList.remove("hidden");
