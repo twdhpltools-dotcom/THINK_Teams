@@ -391,7 +391,7 @@ button.tab-btn.active .tab-indicator {
 .bottom-glass-os .nav-btn {
     position: relative;
     z-index: 3;
-    padding: 8px 0;
+    padding: 7px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
