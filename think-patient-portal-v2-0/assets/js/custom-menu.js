@@ -1,31 +1,17 @@
 /*------------------------------------------- JS FOR CUSTOM-MENU START ------------------------------------------*/
 /*-------------------------------------- SIDEBAR-MENU ----------------------------------------*/
-function openSideBarMenu() {
-    const SideBarMenu = document.getElementById("SideBarMenu");
-    SideBarMenu.classList.remove("-translate-x-full","opacity-0");
-    SideBarMenu.classList.add("translate-x-0","opacity-100");
+function openSideBarMenu(){
+const SideBarMenu=document.getElementById("SideBarMenu");
+SideBarMenu.classList.remove("-translate-x-full","opacity-0");
+SideBarMenu.classList.add("translate-x-0","opacity-100");
 }
 
-function closeSideBarMenu() {
-    const SideBarMenu = document.getElementById("SideBarMenu");
-    SideBarMenu.classList.remove("translate-x-0","opacity-100");
-    SideBarMenu.classList.add("-translate-x-full","opacity-0");
+function closeSideBarMenu(){
+const SideBarMenu=document.getElementById("SideBarMenu");
+SideBarMenu.classList.remove("translate-x-0","opacity-100");
+SideBarMenu.classList.add("-translate-x-full","opacity-0");
 }
 /*-------------------------------------- SIDEBAR-MENU ----------------------------------------*/
-
-/*-------------------------------------- NOTIFICATION-MENU ----------------------------------------*/
-function openNotificationMenu() {
-    const NotificationMenu = document.getElementById("NotificationMenu");
-    NotificationMenu.classList.remove("translate-x-full","opacity-0");
-    NotificationMenu.classList.add("translate-x-0","opacity-100");
-}
-
-function closeNotificationMenu() {
-    const NotificationMenu = document.getElementById("NotificationMenu");
-    NotificationMenu.classList.remove("translate-x-0","opacity-100");
-    NotificationMenu.classList.add("translate-x-full","opacity-0");
-}
-/*-------------------------------------- NOTIFICATION-MENU ----------------------------------------*/
 
 /*-------------------------------------- BOOKING-TIME-MENU ----------------------------------------*/
 function openBookingTimeMenu() { 
@@ -123,38 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- HOME-COLLECTION-STATUS-NO-MENU ----------------------------------------*/
 
-/*-------------------------------------- DOCTOR-CONSULTATION-CANCEL-MENU ----------------------------------------*/
-function openDocConstCancelMenu() { 
-    const DocConstCancelMenu = document.getElementById("DocConstCancelMenu"); 
-    const DocConstCancelMenuOverlay = document.getElementById("DocConstCancelMenuOverlay"); 
- 
-    DocConstCancelMenu.classList.toggle("translate-y-full"); 
-    DocConstCancelMenu.classList.toggle("opacity-0"); 
-    DocConstCancelMenu.classList.toggle("translate-y-0"); 
-    DocConstCancelMenu.classList.toggle("opacity-100"); 
- 
-    DocConstCancelMenuOverlay.classList.toggle("opacity-0"); 
-    DocConstCancelMenuOverlay.classList.toggle("invisible"); 
-}
-
-function closeDocConstCancelMenu() {
-    const DocConstCancelMenu = document.getElementById("DocConstCancelMenu");
-    const DocConstCancelMenuOverlay = document.getElementById("DocConstCancelMenuOverlay");
-
-    DocConstCancelMenu.classList.add("translate-y-full", "opacity-0");
-    DocConstCancelMenu.classList.remove("translate-y-0", "opacity-100");
-
-    DocConstCancelMenuOverlay.classList.add("opacity-0", "invisible");
-    DocConstCancelMenuOverlay.classList.remove("opacity-100");
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("DocConstCancelMenuOverlay").addEventListener("click", function () {
-        closeDocConstCancelMenu();
-    });
-});
-/*-------------------------------------- DOCTOR-CONSULTATION-CANCEL-MENU ----------------------------------------*/
-
 /*-------------------------------------- HISTORY-SORT-MENU ----------------------------------------*/
 function openHistorySortMenu() { 
     const HistorySortMenu = document.getElementById("HistorySortMenu"); 
@@ -186,36 +140,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 /*-------------------------------------- HISTORY-SORT-MENU ----------------------------------------*/
-
-/*-------------------------------------- DELTA-MENU ----------------------------------------*/
-function openDeltaMenu() { 
-    const DeltaMenu = document.getElementById("DeltaMenu"); 
-    const DeltaMenuOverlay = document.getElementById("DeltaMenuOverlay"); 
- 
-    DeltaMenu.classList.toggle("translate-y-full"); 
-    DeltaMenu.classList.toggle("opacity-0"); 
-    DeltaMenu.classList.toggle("translate-y-0"); 
-    DeltaMenu.classList.toggle("opacity-100"); 
- 
-    DeltaMenuOverlay.classList.toggle("opacity-0"); 
-    DeltaMenuOverlay.classList.toggle("invisible"); 
-}
-
-function closeDeltaMenu() {
-    const DeltaMenu = document.getElementById("DeltaMenu");
-    const DeltaMenuOverlay = document.getElementById("DeltaMenuOverlay");
-
-    DeltaMenu.classList.add("translate-y-full", "opacity-0");
-    DeltaMenu.classList.remove("translate-y-0", "opacity-100");
-
-    DeltaMenuOverlay.classList.add("opacity-0", "invisible");
-    DeltaMenuOverlay.classList.remove("opacity-100");
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("DeltaMenuOverlay").addEventListener("click", function () {
-        closeDeltaMenu();
-    });
-});
-/*-------------------------------------- DELTA-MENU ----------------------------------------*/
 /*------------------------------------------- JS FOR CUSTOM-MENU COMPLETE ------------------------------------------*/
