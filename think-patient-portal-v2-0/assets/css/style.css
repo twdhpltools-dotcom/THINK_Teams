@@ -296,8 +296,8 @@ button.tab-btn.active .tab-indicator {
 .bottom-glass-os {
     --glass-position: 1;
     position: fixed;
-    left: 12px;
-    right: 12px;
+    left: 18px;
+    right: 18px;
     bottom: 10px;
     width: auto;
     isolation: isolate;
@@ -306,7 +306,7 @@ button.tab-btn.active .tab-indicator {
     grid-template-columns: repeat(3,1fr);
     gap: 0;
     padding: 6px;
-    border-radius: 22px;
+    border-radius: 15px;
     /* background: linear-gradient(
             180deg,
             rgba(255,255,255,.48),
@@ -332,7 +332,7 @@ button.tab-btn.active .tab-indicator {
     bottom: 5px;
     left: calc((100% / 3) * var(--glass-position) + 5px);
     width: calc((100% / 3) - 10px);
-    border-radius: 17px;
+    border-radius: 15px;
     z-index: 0;
     pointer-events: none;
     background: radial-gradient(
@@ -373,7 +373,7 @@ button.tab-btn.active .tab-indicator {
     bottom: 6px;
     left: calc((100% / 3) * var(--glass-position) + 6px);
     width: calc((100% / 3) - 12px);
-    border-radius: 16px;
+    border-radius: 15px;
     z-index: 1;
     pointer-events: none;
     background: linear-gradient(
@@ -391,12 +391,12 @@ button.tab-btn.active .tab-indicator {
 .bottom-glass-os .nav-btn {
     position: relative;
     z-index: 3;
-    padding: 7px 0;
+    padding: 6px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 16px;
+    border-radius: 15px;
     transition: color .25s ease,
         transform .22s cubic-bezier(.22,1,.36,1);
 }
@@ -506,4 +506,4 @@ button.tab-btn.active .tab-indicator {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-/* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */  
+/* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */
