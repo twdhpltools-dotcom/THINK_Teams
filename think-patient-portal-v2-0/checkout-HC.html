@@ -283,7 +283,39 @@
         
         </div>
 
-        <div class="h-auto w-full bg-linear-to-b from-[var(--light)] to-[#fefefe] rounded-tl-[20px] rounded-tr-[20px] mt-6 py-3 z-100">
+        <div class="h-auto w-full flex items-center gap-x-2 px-5 mt-5 mb-2">
+          <div class="relative z-1 h-auto w-full rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] overflow-hidden mb-3 last:mb-0">
+            <div class="relative h-auto w-full px-3 py-3 bg-linear-to-r from-[#EEF7FF] via-[#F7F2FF] to-[#FFF5FA]">
+              <div class="flex items-center justify-between gap-x-3">
+                <div class="flex items-center gap-x-3">
+                  <span class="h-10 w-10 rounded-[50%] bg-[#FFFFFF]/80 border border-solid border-[#FFFFFF] flex items-center justify-center shrink-0 shadow-[0_4px_12px_0_#00000008]">
+                    <i class="bi bi-cash-stack text-[120%] leading-none text-[#2F6FD6]/90"></i>
+                  </span>
+                  <div>
+                    <h6 class="text-[95%] leading-none font-semibold text-[var(--dark)]/70 mb-2">My Wallet Balance</h6>
+                    <p class="text-[70%] leading-none text-[var(--dark-primary)]/60">1 Health Coin = ₹1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-auto w-full px-3 py-3">
+              <div class="h-auto w-full flex items-center justify-between gap-x-3">
+                <div class="flex items-center gap-x-2">
+                  <span class="text-[80%] leading-none font-semibold text-[var(--dark)]/80">Total: 10</span>
+                  <span class="h-3 w-px bg-[var(--dark-primary)]/15"></span>
+                  <span class="text-[80%] leading-none text-[var(--dark-primary)]/55">Redeem: 10</span>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer !mb-0 shrink-0">
+                  <input type="checkbox" class="sr-only peer">
+                  <span class="relative h-5 w-9 rounded-full bg-[#D7DCE3] transition-all duration-300 peer-checked:bg-[var(--primary)] after:content-[''] after:absolute after:top-1/2 after:left-[2px] after:h-4 after:w-4 after:-translate-y-1/2 after:rounded-full after:bg-[#FFFFFF] after:shadow-[0_2px_6px_0_#00000018] after:transition-all after:duration-300 peer-checked:after:translate-x-4"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-auto w-full bg-linear-to-b from-[var(--light)] to-[#fefefe] rounded-tl-[20px] rounded-tr-[20px] py-3 z-100">
           <div class="h-auto w-full flex items-center gap-x-2 px-5 pb-3">
             <i class="bi bi-credit-card text-[110%] text-[var(--primary)]"></i>
             <h4 class="text-[var(--dark-primary)]/90 font-semibold text-[95%]">Payment Summary</h4>
