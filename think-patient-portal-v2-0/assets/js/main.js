@@ -250,7 +250,7 @@ document.querySelectorAll(".the-moment").forEach(function(el){
 });
 /*-------------------------------------- TIME-MOMENT-(INIT) ----------------------------------------*/
 
-/*-------------------------------------- TOAST ----------------------------------------*/
+/*-------------------------------------- ADD-CART-TOAST ----------------------------------------*/
 document.addEventListener("DOMContentLoaded",function(){
   const cartIcon=document.querySelector(".bi-cart3");
   const cartButton=cartIcon.closest("button");
@@ -287,22 +287,21 @@ document.addEventListener("DOMContentLoaded",function(){
       event.stopPropagation();
 
       if(button.classList.contains("added")){
-  button.classList.remove("added");
-  button.innerHTML='Add to Cart';
-  count=Math.max(0,count-1);
-}else{
-  button.classList.add("added");
-  button.innerHTML='<i class="bi bi-trash"></i>';
-  count++;
-}
-
+          button.classList.remove("added");
+          button.innerHTML='Add to Cart';
+          count=Math.max(0,count-1);
+        }else{
+          button.classList.add("added");
+          button.innerHTML='<i class="bi bi-trash"></i>';
+          count++;
+        }
       updateCart();
     });
   });
 
   cartCount.classList.toggle("hidden",count===0);
 });
-/*-------------------------------------- TOAST ----------------------------------------*/
+/*-------------------------------------- ADD-CART-TOAST ----------------------------------------*/
 
 /*-------------------------------------- ACCORDIAN ----------------------------------------*/
 function toggleAccordion(head) {
