@@ -480,6 +480,8 @@ ul.pg-listing li:last-child {
     font-size: 90%;
     color: var(--defaut-light-color);
     padding-left: 8px;
+    text-transform: capitalize;
+    white-space: nowrap;
 }
 
 span.pg-chip {

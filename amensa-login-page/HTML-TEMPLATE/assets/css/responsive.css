@@ -2163,6 +2163,7 @@
 
     .social a {
         font-size: 90%;
+        padding-left: 6px;
     }
 
     .hero-copy {
