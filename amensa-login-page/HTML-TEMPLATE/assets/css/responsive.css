@@ -2230,7 +2230,7 @@
     }
 
     .hero-benefits {
-        margin-top: 12px;
+        margin-top: 14px;
         justify-content: center;
     }
 
@@ -2264,6 +2264,10 @@
 
     .top-header::after {
         max-width: 62%;
+    }
+
+    .hero-color-line {
+        margin: 15px 0;
     }
 }
 
