@@ -1836,7 +1836,7 @@
     }
 
     .login-input i {
-        top: 12px;
+        top: 13px;
     }
 
     .nw-ico-clss {
@@ -2194,8 +2194,13 @@
     }
 
     .social i {
-        min-height: 25px;
-        max-width: 25px;
+        min-height: 22px;
+        max-width: 22px;
+        font-size: 88%;
+    }
+
+    .social a {
+        font-size: 90%;
     }
 
     .hero-copy {
@@ -2225,11 +2230,7 @@
     }
 
     .benefit-content h4 {
-        font-size: 100%;
-    }
-
-    .benefit-content p {
-        font-size: 90%;
+        font-size: 75%;
     }
 
     .login-form .basic-form-head {
@@ -2241,7 +2242,7 @@
     }
 
     .login-form {
-        margin: 20px 0;
+        margin: 35px 0;
         padding: 0 20px;
     }
 
@@ -2288,7 +2289,7 @@
     }
 
     .top-header::after {
-        max-width: 58%;
+        max-width: 62%;
     }
 }
 
