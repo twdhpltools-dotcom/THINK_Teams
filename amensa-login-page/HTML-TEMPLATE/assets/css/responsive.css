@@ -1,0 +1,2248 @@
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) START ------------------------------*/
+@media only screen and (max-width: 1920px) {
+    .mobile-toggler {
+        display: none;
+    }
+
+    .d-none-xl-device,
+    .d-none-sm-device {
+        display: block;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) START ------------------------------*/
+@media only screen and (max-width: 1599px) {
+    html {
+        font-size: 16px;
+    }
+
+    form .form-group {
+        margin-bottom: 15px;
+    }
+
+    form .form-group.special-ip {
+        padding: 20px 15px;
+    }
+
+    .login-form-body {
+        padding: 40px 60px;
+    }
+
+    .login-form {
+        max-width: 40%;
+    }
+
+    .pg-heading-txt h2 {
+        margin-bottom: 2px;
+    }
+
+    .login-form-switch {
+        top: -25%;
+        max-width: 40%;
+    }
+
+    .login-form-head {
+        padding: 15px 25px;
+    }
+
+    .diagram-img,
+    .diagram-img img {
+        min-height: 480px;
+    }
+
+    .nav-search {
+        padding: 15px 20px;
+    }
+
+    .pg-decor-chip {
+        padding: 18px 20px;
+    }
+
+    .sucess-box-text h4 {
+        font-size: 250%;
+    }
+
+    .branding-box {
+        padding: 20px 0;
+    }
+
+    .pg-section-spacing {
+        padding: 20px 0;
+    }
+
+    .pg-section-spacing.top-spacing {
+        padding: 20px 0 0;
+    }
+
+    .pg-section-spacing.bottom-spacing {
+        padding: 0 0 20px;
+    }
+
+    .common-section {
+        padding: 20px 0;
+    }
+
+    .support-card-img {
+        height: 250px;
+    }
+
+    .section-heading h2 {
+        margin: 25px 0;
+    }
+
+    .support-card-info p {
+        margin: 15px 0;
+    }
+
+    .indicator-card {
+        padding: 20px 22px;
+    }
+
+    .clients-map h3 {
+        font-size: 600%;
+        margin: 80px 0;
+    }
+
+    .designed-section-dark::before,
+    .designed-section-light::before {
+        min-height: 70px;
+        max-width: 70px;
+    }
+
+    .designed-section-dark::after,
+    .designed-section-light::after {
+        min-height: 120px;
+        max-width: 120px;
+    }
+
+    .benefits-innovate h5 {
+        margin-bottom: 30px;
+    }
+
+    .benefits-innovate-box {
+        min-height: 240px;
+        padding: 30px 20px;
+    }
+
+    .benefits-content-box {
+        padding: 35px 40px;
+    }
+
+    .contact-content-info-box .social {
+        margin-bottom: 22px;
+    }
+
+    .contact-content h3 {
+        margin: 20px 0;
+    }
+
+    .testimonials-card {
+        height: 550px;
+    }
+
+    .gmap-content iframe {
+        min-height: 650px;
+    }
+
+    .section-heading {
+        max-width: 70%;
+        padding: 20px 0 50px;
+    }
+
+    .copyright-footer-content {
+        margin-top: 50px;
+    }
+
+    .sub-menu {
+        min-width: 250px;
+        padding: 30px 25px;
+    }
+
+    .sub-menu.product-menu {
+        min-width: 850px;
+        padding: 30px 40px;
+    }
+
+    li.menu-product-links-box img {
+        max-width: 120px;
+    }
+
+    .thinkray-types-box-icon-img {
+        max-width: 60px;
+    }
+
+    .thinkray-benefits-innovate-content-box {
+        margin-bottom: 10px;
+    }
+
+    .thinkray-benefits-innovate-content {
+        margin-top: 30px;
+    }
+
+    .thinkray-success-img-box {
+        padding: 15px;
+    }
+
+    .thinkray-success-content-box {
+        padding: 50px 25px;
+    }
+
+    .thinkray-success-content-box h4 {
+        margin: 5px 0;
+    }
+
+    .thinkdigital-types-box-icon-img {
+        max-width: 60px;
+    }
+
+    .thinkdigital-types-box {
+        padding: 30px 35px;
+    }
+
+    .indicator-card.thinkdigital-themed {
+        padding: 22px 30px;
+        margin-bottom: 20px;
+    }
+
+    a.pg-video-btn {
+        min-height: 90px;
+        max-width: 90px;
+    }
+
+    .thinkdigital-systems-divider-part {
+        padding: 30px 0;
+    }
+
+    .hamburger-content h1 {
+        margin-bottom: 20px;
+    }
+
+    .event-gallery-box {
+        height: 280px;
+    }
+
+    .pricing-card-top,
+    .pricing-card-middle,
+    .pricing-card-bottom {
+        padding: 12px 0;
+    }
+
+    .product-comparison-content-body p {
+        margin: 20px 0;
+    }
+
+    .side-bar-mark-up ul.pg-listing {
+        margin-top: 25px;
+    }
+
+    .side-bar-mark-up {
+        margin-bottom: 30px;
+    }
+
+    .login-hero .hero-content .hero-feature-img {
+        max-width: 45%;
+    }
+
+    .login-pg-decor-chip {
+        margin-top: 10px;
+    }
+
+    .form-copyright {
+        margin-top: 20px;
+    }
+
+    .hero-trust-item {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .hero-trust-item {
+        gap: 8px;
+    }
+
+    .hero-trust-img {
+        padding-top: 30px;
+        max-width: 80%;
+    }
+
+    .benefit-item {
+        flex-wrap: wrap;
+    }
+
+    .hero-benefits {
+        gap: 15px;
+        margin-top: 14px;
+    }
+
+    .login-form .basic-form-head .logo {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    
+    .login-form .basic-form-head {
+        margin-bottom: 25px;
+    }
+
+    form .form-group h6 {
+        margin: 25px 0 0;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) START ------------------------------*/
+@media only screen and (max-width: 1299px) {
+    .hero-feature-img {
+        max-width: 70%;
+    }
+
+    .login-hero .login-hero-carousel .carousel-progress {
+        max-width: 50%;
+    }
+
+    .login-form-switch {
+        left: 0;
+        position: relative;
+        margin: 12px auto;
+        max-width: 70%;
+    }
+
+    .login-form-head {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        padding: 25px 22px;
+    }
+
+    ul.menu li {
+        padding-left: 15px;
+    }
+
+    .nav-search a {
+        width: 100%;
+    }
+
+    .nav-search {
+        padding: 12px 20px;
+    }
+
+    .hero-content h1 {
+        margin: 30px 0;
+    }
+
+    .diagram-img,
+    .diagram-img img {
+        min-height: 420px;
+    }
+
+    .diagram-img {
+        max-width: 100%;
+    }
+
+    .d-none-xl-device {
+        display: none !important;
+    }
+
+    .branding-box-heading-icon-img {
+        margin: 5px auto;
+    }
+
+    .branding-box {
+        padding: 10px 0;
+    }
+
+    .feature-types ul li.feature-types-box {
+        padding: 12px 25px;
+        margin-bottom: 18px;
+    }
+
+    .feature-card {
+        height: 400px;
+    }
+
+    .feature-card-info {
+        bottom: -42%;
+        padding: 20px 25px;
+    }
+
+    .feature-card-info p {
+        margin-bottom: 20px;
+    }
+
+    .feature-card-head {
+        padding: 12px 0;
+    }
+
+    .pg-section-spacing {
+        padding: 15px 0;
+    }
+
+    .pg-section-spacing.top-spacing {
+        padding: 15px 0 0;
+    }
+
+    .pg-section-spacing.bottom-spacing {
+        padding: 0 0 15px;
+    }
+
+    .common-section {
+        padding: 15px 0;
+    }
+
+    .section-heading {
+        padding: 20px 0 45px;
+    }
+
+    .support-card-img {
+        height: 220px;
+    }
+
+    h4.compact-decor-text::before {
+        transform: translate(20%, -50%);
+    }
+
+    h4.compact-decor-text::after {
+        transform: translate(-20%, -50%);
+    }
+
+    .clients-img {
+        min-height: 50px;
+    }
+
+    .clients-map h3 {
+        margin: 70px 0;
+    }
+
+    .form-changer-content .basic-form {
+        margin-top: 30px;
+    }
+
+    form .form-group {
+        margin-bottom: 12px;
+    }
+
+    a.pg-btn {
+        padding: 10px 65px 10px 30px;
+    }
+
+    .benefits-content-box {
+        padding: 25px 35px;
+    }
+
+    .benefits-content-box-listing {
+        margin: 30px 0;
+        padding: 22px 25px;
+    }
+
+    .benefits-innovate-box-icon-img {
+        max-width: 50px;
+        margin: 0 auto 15px;
+    }
+
+    .benefits-innovate-box {
+        min-height: 220px;
+        padding: 30px 15px;
+    }
+
+    .long-blog-gallery-card-info {
+        padding: 20px 20px;
+    }
+
+    .blog-gallery-card span.pg-chip {
+        margin: 20px 0;
+    }
+
+    .blog-gallery-card.long .blog-gallery-card-img {
+        height: 850px;
+    }
+
+    .basic-form {
+        padding: 40px 35px;
+    }
+
+    .contact-content-info-box .social {
+        margin-bottom: 20px;
+    }
+
+    .contact-content-img-box {
+        margin-top: 30px;
+    }
+
+    .testimonials-card {
+        height: 450px;
+    }
+
+    .testimonials-card-info {
+        max-width: 90%;
+        padding: 20px 25px;
+    }
+
+    .user-info-badge-img {
+        min-height: 70px;
+        max-width: 70px;
+    }
+
+    .user-info-badge-img img {
+        min-height: 70px;
+    }
+
+    .accordion-body {
+        padding: 25px 40px;
+    }
+
+    .gmap-content-info {
+        max-width: 320px;
+    }
+
+    .gmap-content iframe {
+        min-height: 550px;
+    }
+
+    .copyright-footer-content {
+        margin-top: 30px;
+    }
+
+    .main-footer-info .logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    ul.footer-menu li {
+        margin-bottom: 25px;
+    }
+
+    .branding-box-heading-icon-img {
+        max-width: 120px;
+    }
+
+    .top-header {
+        padding: 6px 0;
+    }
+
+    .sucess-box-icon-img {
+        max-width: 70px;
+    }
+
+    .sub-menu.product-menu {
+        min-width: 700px;
+    }
+
+    ul.menu-product-links {
+        gap: 15px;
+    }
+
+    ul.menu-product-links li.menu-product-links-box {
+        padding: 15px 22px;
+    }
+
+    .sub-menu-links h6 {
+        margin-bottom: 15px;
+    }
+
+    .thinkray-types-box {
+        padding: 25px 20px;
+    }
+
+    .thinkray-types-box-icon-img {
+        max-width: 50px;
+    }
+
+    .indicator-card.thinkray-themed {
+        padding: 10px 25px;
+    }
+
+    .thinkray-systems-small-img {
+        max-width: 220px;
+    }
+
+    .thinkray-floating-systems-content {
+        gap: 35px;
+    }
+
+    .thinkray-floating-systems-content.top {
+        top: 45%;
+    }
+
+    .thinkray-systems-content-box-icon {
+        min-height: 60px;
+        max-width: 60px;
+    }
+
+    .thinkdigital-types-box {
+        padding: 22px 30px;
+    }
+
+    .indicator-card.thinkdigital-themed {
+        padding: 18px 25px;
+        margin-bottom: 15px;
+    }
+
+    .digirel-content-box-listing {
+        margin: 25px 0;
+    }
+
+    .mini-cta-content {
+        padding: 0 20px 0;
+        margin: 40px 0;
+    }
+
+    a.pg-video-btn {
+        min-height: 80px;
+        max-width: 80px;
+    }
+
+    .case-study-card {
+        height: 360px;
+    }
+
+    .our-teams-slider {
+        padding: 50px 0;
+    }
+
+    .digirel-content-box-listing {
+        padding: 25px 30px;
+    }
+
+    .hamburger-content {
+        padding: 140px 0 50px;
+    }
+
+    .event-gallery-box {
+        height: 250px;
+    }
+
+    .pricing-card-content {
+        padding: 0 10px;
+    }
+
+    button.pg-submit-btn {
+        padding: 12px 0;
+    }
+
+    .product-comparison-side-bar {
+        padding: 30px 25px;
+    }
+
+    .side-bar-mark-up h5 {
+        margin-bottom: 12px;
+    }
+
+    .side-bar-mark-up {
+        margin-bottom: 25px;
+    }
+
+    .side-bar-cta {
+        padding: 15px 18px;
+    }
+
+    .product-comparison-content-heading {
+        margin-bottom: 30px;
+    }
+
+    .product-comparison-content-body p {
+        margin: 15px 0;
+    }
+
+    table thead tr th,
+    table tbody tr td {
+        padding: 12px 10px;
+    }
+
+    .login-hero .hero {
+        height: auto;
+    }
+
+    .login-hero-cta {
+        padding: 35px 0 0;
+    }
+
+    header.main-header.login-header {
+        position: relative;
+    }
+
+    header.main-header.login-header .top-header {
+        max-width: 100%;
+    }
+
+    .hero-trust-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: -40px;
+    }
+
+    .hero-trust-item {
+        gap: 5px;
+    }
+
+    .hero-trust-item {
+        min-height: auto;
+        gap: 5px;
+        padding: 8px 15px;
+    }
+
+    .hero-trust-item:nth-child(3)::after {
+        display: none;
+    }
+
+    .hero-trust-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero-trust-icon i {
+        font-size: 160%;
+    }
+
+    .hero-trust-icon i.fa.fa-user-md {
+        font-size: 190%;
+    }
+
+    .hero-trust-img {
+        padding-top: 18px;
+        max-width: 70%;
+    }
+
+    .hero-benefits {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .benefit-item {
+        flex: unset;
+        flex-wrap: nowrap;
+    }
+
+    .login-form .basic-form {
+        padding: 0 20px;
+    }
+
+    .login-card {
+        padding: 30px 35px 35px;
+    }
+
+    .login-hero .hero-content .hero-feature-img {
+        max-width: 55%;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) START ------------------------------*/
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+
+    .mobile-header {
+        height: 100vh;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ffffff90;
+        backdrop-filter: blur(20px);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all 0.4s ease;
+        overflow-y: auto;
+        z-index: 10;
+    }
+
+    .mobile-header.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .mobile-toggler {
+        display: flex;
+    }
+
+    .sub-menu {
+        position: relative;
+        top: 20px;
+        min-width: 100% !important;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+
+    .sub-menu.product-menu {
+        padding: 20px 20px;
+    }
+
+    .sub-menu-links {
+        margin: 12px 0;
+    }
+
+    .sub-menu-links h6 {
+        font-size: 110%;
+    }
+
+    li.menu-product-links-box p {
+        font-size: 50%;
+        margin: 15px 0;
+    }
+
+    li.menu-product-links-box a.pg-btn {
+        padding: 10px 60px 10px 20px;
+        font-size: 60%;
+    }
+
+    ul.menu-useful-links li {
+        font-size: 90% !important;
+        padding: 10px 20px;
+        margin-bottom: 0 !important;
+        border: none;
+    }
+
+    .bottom-header {
+        position: relative;
+    }
+
+    .bottom-header .logo {
+        max-width: 220px;
+    }
+
+    .nav-links {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    ul.menu {
+        margin-top: 40px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ul.menu li {
+        padding-left: 10px;
+        margin-bottom: 22px;
+        font-size: 140%;
+    }
+
+    .nav-search a span {
+        font-size: 120%;
+    }
+
+    .nav-search a span i {
+        display: none;
+    }
+
+    .nav-search {
+        margin-top: 20px;
+        padding: 15px 30px;
+    }
+
+    .nav-search input,
+    .nav-search select,
+    .nav-search textarea {
+        font-size: 110%;
+    }
+
+    .pg-heading-txt .heading-txt-icon {
+        min-height: 70px;
+        max-width: 70px;
+    }
+
+    .login-form-body {
+        padding: 20px 70px;
+    }
+
+    span.pg-chip {
+        padding: 5px 20px;
+    }
+
+    /* span.pg-chip::after {
+        left: 8%;
+        min-height: 25px;
+        max-width: 25px;
+    } */
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .login-hero-carousel {
+        height: 60vh;
+        max-width: 100%;
+        background-size: cover;
+    }
+
+    .hero-content,
+    .hero-img {
+        padding: 100px 0 0;
+    }
+
+    .diagram-img,
+    .diagram-img img {
+        min-height: 360px;
+    }
+
+    .diagram-img {
+        padding: 15px;
+    }
+
+    .pg-decor-chip {
+        padding: 12px 15px;
+    }
+
+    .hero-img .pg-decor-chip {
+        left: -30%;
+        bottom: -5%;
+    }
+
+    .hero-content .decor-para {
+        margin-bottom: 30px;
+    }
+
+    .decor-para {
+        padding: 15px 25px;
+    }
+
+    .hero-content h1 {
+        margin: 20px 0;
+    }
+
+    .branding-box-heading-icon-img {
+        margin: 2px auto;
+    }
+
+    .section-heading h2 {
+        margin: 20px 0;
+    }
+
+    .feature-card {
+        height: 350px;
+    }
+
+    .feature-card-info h3 {
+        font-size: 170%;
+        margin-bottom: 12px;
+    }
+
+    .feature-card-info-icon-img {
+        max-width: 60px;
+        margin-bottom: 12px;
+    }
+
+    .feature-card-info {
+        bottom: -45%;
+    }
+
+    .pg-section-spacing {
+        padding: 10px 0;
+    }
+
+    .pg-section-spacing.top-spacing {
+        padding: 10px 0 0;
+    }
+
+    .pg-section-spacing.bottom-spacing {
+        padding: 0 0 10px;
+    }
+
+    .common-section {
+        padding: 10px 0;
+    }
+
+    .section-heading {
+        max-width: 80%;
+        padding: 20px 0 40px;
+    }
+
+    .support-card-info {
+        padding-left: 18px;
+    }
+
+    ul.pg-listing li {
+        padding-left: 20px;
+    }
+
+    ul.pg-listing li::before {
+        padding: 0 3px;
+    }
+
+    .support-card-img {
+        height: 180px;
+    }
+
+    .owl-dot span {
+        height: 5px;
+        width: 10px;
+    }
+
+    .owl-dot.active span {
+        width: 30px;
+    }
+
+    .owl-dots {
+        margin: 25px 0 0;
+    }
+
+    .indicator-card {
+        padding: 15px 20px;
+        margin: 0 auto 20px;
+        max-width: 80%;
+    }
+
+    .indicator-card-icon {
+        padding-right: 20px;
+    }
+
+    .clients-map h3 {
+        margin: 50px 0;
+    }
+
+    h4.compact-decor-text::before {
+        transform: translate(-30%, -50%);
+    }
+
+    h4.compact-decor-text::after {
+        transform: translate(30%, -50%);
+    }
+
+    h4.compact-decor-text::before,
+    h4.compact-decor-text::after {
+        max-width: 40px;
+    }
+
+    .clients-img {
+        min-height: 40px;
+    }
+
+    .clients-content-box {
+        padding: 12px 25px;
+        margin-bottom: 25px;
+    }
+
+    .designed-section-dark::before,
+    .designed-section-light::before {
+        min-height: 50px;
+        max-width: 50px;
+    }
+
+    .designed-section-dark::after,
+    .designed-section-light::after {
+        min-height: 100px;
+        max-width: 100px;
+        right: 5%;
+    }
+
+    .benefits-innovate h5 {
+        margin-bottom: 20px;
+    }
+
+    .blog-gallery-card.long {
+        position: sticky;
+        top: 3%;
+        right: 0;
+        margin-bottom: 30px;
+        z-index: 2;
+    }
+
+    .blog-gallery-card.long .blog-gallery-card-img,
+    .blog-gallery-card .blog-gallery-card-img {
+        height: auto;
+    }
+
+    .contact .basic-form {
+        margin: 15px 0;
+    }
+
+    .contact-content-info-box {
+        height: auto;
+        width: 100%;
+        max-width: 70%;
+        padding: 22px 25px;
+        background: linear-gradient(to right, #ffffff20, transparent);
+        border-right-width: 0;
+        border-left: 3px solid #ffffff80;
+    }
+
+    .contact-content-info-box .social {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .contact-content-img-box {
+        padding: 15px;
+    }
+
+    .contact-content-img {
+        height: auto;
+    }
+
+    .contact-content-img-info {
+        padding: 35px 30px;
+    }
+
+    .d-none-sm-device {
+        display: none !important;
+    }
+
+    .testimonials-content {
+        padding: 20px 0 0;
+    }
+
+    .quote-icon {
+        max-width: 80px;
+    }
+
+    hr.pg-hr {
+        margin: 12px 0;
+    }
+
+    .user-info-badge {
+        flex-wrap: wrap;
+    }
+
+    .user-info-badge-img {
+        min-height: 50px;
+        max-width: 50px;
+        margin: 5px 15px;
+    }
+
+    .user-info-badge-img img {
+        min-height: 50px;
+    }
+
+    .testimonials-card-info {
+        padding: 20px 22px;
+    }
+
+    .testimonials-card-info p {
+        margin-bottom: 15px;
+    }
+
+    .faqs-content {
+        max-width: 90%;
+    }
+
+    .contact-content h3 {
+        margin: 18px 0;
+    }
+
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        padding: 18px 30px;
+    }
+
+    .accordion-body {
+        padding: 22px 30px;
+    }
+
+    .gmap-content-info {
+        right: 0;
+    }
+
+    .main-cta-content .section-heading h2 {
+        margin-bottom: 30px;
+    }
+
+    .main-footer-info h6 {
+        margin: 20px 0;
+    }
+
+    .main-footer-links {
+        margin-top: 30px;
+    }
+
+    .copyright-footer-content {
+        margin-top: 0;
+    }
+
+    .copyright-footer-content {
+        padding: 18px 30px;
+    }
+
+    .form-changer-img {
+        max-width: 100%;
+        margin: 25px auto 0;
+    }
+
+    .thinkray-success-content {
+        margin: 25px 0;
+    }
+
+    .indicator-card.thinkray-themed {
+        max-width: 100%;
+    }
+
+    .thinkray-reliable .reliable-img {
+        max-width: 70%;
+        margin: 20px auto 0;
+    }
+
+    .thinkray-systems-content-box-icon {
+        min-height: 40px;
+        max-width: 40px;
+    }
+
+    .thinkray-systems-content-box-icon i {
+        font-size: 140%;
+    }
+
+    .thinkray-floating-systems-content {
+        gap: 15px;
+    }
+
+    .thinkray-systems-small-img {
+        margin: 0 auto 120px;
+        max-width: 180px;
+    }
+
+    .thinkray-floating-systems-content.left,
+    .thinkray-floating-systems-content.right {
+        bottom: 0;
+    }
+
+    .thinkray-floating-systems-content.right {
+        bottom: 0;
+        right: -20%;
+    }
+
+    .hero-img.thinkray-themed .pg-decor-chip {
+        right: 30%;
+    }
+
+    .hero-img.thinkdigital-themed .pg-decor-chip {
+        bottom: 5%;
+        left: 30%;
+    }
+
+    .thinkdigital-types-box {
+        margin: 10px 0;
+    }
+
+    .thinkdigital-types-box-icon-img {
+        max-width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .indicator-card.thinkdigital-themed {
+        padding: 15px 20px;
+        max-width: 100%;
+    }
+
+    .about-img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    span.item-breaker-light,
+    span.item-breaker-dark {
+        min-height: 70px;
+    }
+
+    .case-study-card {
+        height: 380px;
+    }
+
+    .case-study-card-img-overlay {
+        padding: 20px 18px;
+    }
+
+    .case-study-card-info h4 {
+        margin: 10px 0;
+    }
+
+    .hamburger-content {
+        padding: 50px 0 40px;
+    }
+
+    .bottom-header.sticky {
+        padding: 60px 0 20px;
+    }
+
+    .bottom-header.sticky .nav-search {
+        box-shadow: 0 0 15px 0 #00000010;
+    }
+
+    .pricing-card-bottom ul.pg-listing.thinkray-themed li {
+        margin-bottom: 30px;
+    }
+
+    .pricing-method-box {
+        flex-wrap: wrap;
+    }
+
+    .pricing-method-box-text {
+        max-width: 100%;
+    }
+
+    .pricing-method-box-icon-img {
+        margin: 0 0 5px;
+    }
+
+    .contact-content {
+        padding: 30px 0;
+    }
+
+    .product-comparison-content-body p {
+        margin: 18px 0;
+    }
+
+    .product-comparison-content {
+        padding: 30px 10px;
+    }
+
+    .login-hero .hero-content {
+        padding: 40px 50px 20px;
+    }
+
+    .login-form {
+        border: none;
+    }
+
+    .login-form .basic-form {
+        height: auto;
+    }
+
+    .login-form .basic-form {
+        padding: 0 50px;
+    }
+
+    .hero-trust-strip {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .hero-trust-item {
+        padding: 6px 25px;
+    }
+
+    .hero-trust-img {
+        max-width: 100%;
+    }
+
+    .login-hero .hero {
+        flex-direction: column-reverse;
+    }
+
+    .login-form {
+        max-width: 100%;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) START ------------------------------*/
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .login-form {
+        max-width: 90%;
+    }
+
+    .hero-feature-img {
+        max-width: 100%;
+    }
+
+    .hero-content {
+        padding: 50px 0;
+    }
+
+    header.main-header .top-header-news .marquee {
+        margin: 2px 0;
+        max-width: 100%;
+    }
+
+    .login-form-switch {
+        flex-wrap: wrap;
+        margin: 10px auto;
+        max-width: 80%;
+        gap: 8px;
+    }
+
+    .pg-submit-btn.switch-btn {
+        height: auto;
+        width: 100%;
+        max-width: 48%;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content,
+    .hero-img {
+        padding: 40px 0 0;
+    }
+
+    .hero-img .pg-decor-chip {
+        left: 50%;
+        bottom: 80%;
+    }
+
+    .branding-box-carousel {
+        max-width: 80%;
+        margin: 15px auto;
+    }
+
+    .feature-types ul li.feature-types-box {
+        margin-bottom: 12px;
+    }
+
+    .section-heading {
+        max-width: 100%;
+        padding: 20px 0 35px;
+    }
+
+    .feature-types {
+        margin-bottom: 20px;
+    }
+
+    .support-card-img {
+        height: 200px;
+    }
+
+    ul.pg-listing li {
+        margin-bottom: 12px;
+    }
+
+    .indicator-card {
+        margin: 0 auto 18px;
+    }
+
+    .feature-card-info {
+        bottom: -40%;
+    }
+
+    .clients-map h3 {
+        margin: 40px 0;
+    }
+
+    .clients-content {
+        margin-top: 40px;
+    }
+
+    h4.compact-decor-text::before,
+    h4.compact-decor-text::after {
+        display: none;
+    }
+
+    .benefits-innovate-box {
+        min-height: auto;
+        padding: 60px 15px;
+    }
+
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        padding: 15px 25px;
+    }
+
+    .accordion-body {
+        padding: 18px 25px;
+    }
+
+    .branding-box-heading-icon-img {
+        max-width: 100px;
+    }
+
+    .main-footer-links h6 {
+        margin-bottom: 25px;
+    }
+
+    .copyright-footer-content-txt {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .copyright-footer-content-icon {
+        justify-content: center;
+    }
+
+    .main-footer-content {
+        padding: 50px 0;
+    }
+
+    .benefits-content-box-listing .pg-listing,
+    .digirel-content-box-listing .pg-listing {
+        margin-bottom: 20px;
+    }
+
+    .thinkray-hero-unque-decor {
+        bottom: 45%;
+        left: 10%;
+    }
+
+    .thinkray-hero-unque-decor-img {
+        max-width: 110px;
+    }
+
+    .thinkray-types-box {
+        margin-bottom: 10px;
+    }
+
+    .thinkray-benefits-innovate-content-box {
+        margin-bottom: 5px;
+    }
+
+    .thinkray-benefits-innovate-content {
+        margin-top: 20px;
+    }
+
+    .marquee-content span {
+        font-size: 180%;
+    }
+
+    .thinkray-success-content-box {
+        padding: 40px 25px;
+    }
+
+    .thinkray-reliable .reliable-img {
+        max-width: 80%;
+    }
+
+    .thinkray-systems-small-img {
+        padding: 5px;
+        max-width: 150px;
+    }
+
+    .thinkray-systems-big-img {
+        max-width: 45%;
+    }
+
+    .thinkray-floating-systems-content.left {
+        left: 15%;
+    }
+
+    .thinkray-floating-systems-content {
+        gap: 10px;
+    }
+
+    .branding-box-slider {
+        margin: 10px 0;
+    }
+
+    .thinkdigital-hero-unque-decor {
+        display: none;
+    }
+
+    .hero.thinkdigital-themed {
+        height: auto;
+    }
+
+    .thinkdigital-types-box {
+        margin: 5px 0;
+        padding: 20px 25px;
+    }
+
+    .thinkdigital-systems-big-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .thinkdigital-systems-divider-part {
+        padding: 0;
+    }
+
+    .thinkdigital-systems-divider {
+        max-width: 48%;
+    }
+
+    .indicator-card.thinkdigital-themed {
+        padding: 10px 15px;
+    }
+
+    .digirel-content-box-listing {
+        padding: 20px 25px;
+    }
+
+    .our-teams-slider {
+        padding: 20px 0;
+    }
+
+    .case-study-card {
+        height: 330px;
+    }
+
+    .hero-content.thinkdigital-themed {
+        text-align: left;
+        padding: 40px 0;
+    }
+
+    .owl-dots {
+        margin: 15px 0 0;
+    }
+
+    .hamburger-content {
+        padding: 40px 0 30px;
+    }
+
+    .hamburger-content h1 {
+        margin-bottom: 15px;
+    }
+
+    .pricing-card-top,
+    .pricing-card-middle,
+    .pricing-card-bottom {
+        padding: 8px 0;
+    }
+
+    .pricing-card-bottom ul.pg-listing li {
+        margin-bottom: 22px;
+    }
+
+    .pricing-card-bottom ul.pg-listing.thinkray-themed li {
+        margin-bottom: 25px;
+    }
+
+    .pricing-method-box {
+        padding: 22px 20px;
+    }
+
+    .pricing-content {
+        margin: 25px 0;
+    }
+
+    .top-header-news {
+        display: none;
+    }
+
+    .contact-content {
+        padding: 20px 0;
+    }
+
+    .product-comparison-content-heading {
+        margin-bottom: 25px;
+    }
+
+    .product-comparison-content-body p {
+        margin: 15px 0;
+    }
+
+    table thead tr th,
+    table tbody tr td {
+        padding: 10px 8px;
+    }
+
+    .owl-carousel.carousel-masker::before,
+    .owl-carousel.carousel-masker::after {
+        max-width: 80px;
+    }
+
+    .login-hero-cta {
+        padding: 30px 0 0;
+    }
+
+    .login-hero .hero-content {
+        padding: 20px 40px;
+    }
+
+    .login-pg-decor-chip {
+        margin-top: 0;
+    }
+
+    .login-hero .hero-content .hero-feature-img.centered-new {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .social i {
+        min-height: 30px;
+        max-width: 30px;
+    }
+
+    .hero-trust-strip {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -25px;
+        border-radius: 14px;
+    }
+
+    .hero-trust-item {
+        min-height: 90px;
+        padding: 15px 12px;
+    }
+
+    .hero-trust-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 120%;
+    }
+
+    .hero-trust-content h6 {
+        font-size: 12px;
+    }
+
+    .hero-trust-content p {
+        font-size: 10px;
+    }
+
+    .login-hero-carousel {
+        height: auto;
+    }
+
+    .hero-trust-strip {
+        position: relative;
+        bottom: 0;
+        margin-top: 12px;
+    }
+
+    .hero-trust-img {
+        max-width: 70%;
+        padding-top: 0;
+    }
+
+    .hero-trust-item {
+        min-height: auto;
+        padding: 10px 12px;
+    }
+
+    .hero-copy {
+        margin-top: 40px;
+    }
+
+    .hero-line {
+        margin: 12px 0;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) START ------------------------------*/
+@media only screen and (max-width: 576px) {
+    button.mobile-toggler {
+        max-width: 50px;
+    }
+
+    .sub-menu {
+        padding: 10px 12px;
+    }
+
+    .sub-menu.product-menu {
+        padding: 15px 18px;
+    }
+
+    ul.menu-product-links li.menu-product-links-box {
+        padding: 15px 18px;
+        max-width: 100%;
+    }
+
+    li.menu-product-links-box img {
+        max-width: 100px;
+    }
+
+    .bottom-header {
+        padding: 0 10px;
+    }
+
+    .bottom-header .logo {
+        max-width: 180px;
+    }
+
+    .nav-search {
+        padding: 12px 30px;
+    }
+
+    .login-form {
+        max-width: 100%;
+    }
+
+    .login-form-body {
+        padding: 20px 30px;
+    }
+
+    .login-form-body::after {
+        min-height: 110px;
+        max-width: 110px;
+    }
+
+    input[type="checkbox"] {
+        min-height: 15px;
+        max-width: 15px;
+        border-radius: 5px;
+        margin-right: 8px;
+    }
+
+    .login-form-head {
+        flex-wrap: wrap;
+    }
+
+    .login-form-head .pg-heading-txt {
+        max-width: 100%;
+    }
+
+    .login-form-head .logo {
+        max-width: 50%;
+        margin: 18px 0 5px;
+    }
+
+    .pg-heading-txt .heading-txt-icon {
+        min-height: 60px;
+        max-width: 60px;
+    }
+
+    form .form-group {
+        margin-bottom: 10px;
+    }
+
+    hr.pg-hr {
+        margin: 15px 0;
+    }
+
+    .hero-feature-img {
+        margin: 25px auto 0;
+    }
+
+    label {
+        margin-bottom: 6px;
+    }
+
+    form .form-group.special-ip {
+        padding: 15px 10px;
+    }
+
+    .cta-info-img {
+        max-width: 45%;
+    }
+
+    .login-hero .login-hero-carousel .carousel-progress {
+        height: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px 15px 10px 30px;
+    }
+
+    .login-input i {
+        top: 12px;
+    }
+
+    .nw-ico-clss {
+        left: 10px;
+    }
+
+    form .form-group h6 {
+        margin: 20px 0 0
+    }
+
+    .login-form-body .logo {
+        max-width: 40%;
+    }
+
+    .login-form-switch {
+        gap: 5px;
+    }
+
+    .login-form-switch {
+        flex-wrap: wrap;
+        margin: 10px auto;
+        max-width: 100%;
+    }
+
+    .diagram-img,
+    .diagram-img img {
+        min-height: 280px;
+    }
+
+    .designed-section-dark::before,
+    .designed-section-light::before {
+        min-height: 40px;
+        max-width: 40px;
+    }
+
+    .designed-section-dark::after,
+    .designed-section-light::after {
+        min-height: 60px;
+        max-width: 60px;
+    }
+
+    .indicator-card {
+        margin: 0 auto 10px;
+    }
+
+    .benefits-innovate-box {
+        margin-bottom: 10px;
+    }
+
+    .benefits-content-box {
+        padding: 15px 20px;
+    }
+
+    .basic-form-head {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .basic-form {
+        padding: 30px 30px;
+    }
+
+    .basic-form-head .logo {
+        margin-bottom: 8px;
+    }
+
+    .contact-content-info-box {
+        padding: 20px 18px;
+        max-width: 100%;
+    }
+
+    .contact-content-info-box .social i {
+        min-height: 40px;
+        max-width: 40px;
+    }
+
+    .contact-content-img-info {
+        margin-top: 10px;
+        padding: 25px 20px;
+        position: relative;
+        left: 0;
+        transform: translate(0);
+        max-width: 100%;
+    }
+
+    /* span.pg-chip::after {
+        min-height: 20px;
+        max-width: 20px;
+    } */
+    .testimonials-card {
+        height: 400px;
+    }
+
+    .faqs-content {
+        max-width: 100%;
+    }
+
+    .gmap-content iframe {
+        min-height: 400px;
+    }
+
+    .gmap-content-info {
+        position: relative;
+        transform: translate(0);
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .gmap-content {
+        padding: 0 15px;
+    }
+
+    .gmap-content-info-txt {
+        padding: 15px 10px;
+    }
+
+    .main-footer-links {
+        margin-top: 25px;
+    }
+
+    .main-footer-content {
+        padding: 40px 0;
+    }
+
+    .main-footer-info .logo {
+        max-width: 160px;
+    }
+
+    .copyright-footer-content {
+        padding: 15px 10px;
+    }
+
+    .support-card-info p {
+        margin: 12px 0;
+    }
+
+    .form-changer-img {
+        margin: 20px auto 0;
+    }
+
+    .benefits-content {
+        padding: 15px;
+    }
+
+    .benefits-content-box-listing {
+        margin: 25px 0;
+        padding: 20px 20px 10px;
+    }
+
+    .basic-form-head .logo {
+        max-width: 130px;
+    }
+
+    .gmap-content.section-masker::before {
+        display: none;
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+
+    .thinkray-reliable .reliable-img {
+        max-width: 100%;
+    }
+
+    .thinkray-hero-unque-decor {
+        bottom: 50%;
+    }
+
+    .thinkray-benefits-innovate-content-box h3 span {
+        padding-right: 18px;
+    }
+
+    .thinkray-success-content-box {
+        max-width: 100%;
+    }
+
+    .thinkray-success-content-box {
+        padding: 25px 25px;
+    }
+
+    .thinkray-success-content {
+        gap: 15px;
+    }
+
+    .thinkray-systems-small-img {
+        margin: 0 auto 35px;
+        max-width: 80%;
+    }
+
+    .thinkray-systems-big-img {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .thinkray-floating-systems-content {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .thinkray-floating-systems-content.left,
+    .thinkray-floating-systems-content.right,
+    .thinkray-systems-content-box.reverse {
+        flex-direction: row;
+    }
+
+    .thinkray-floating-systems-content.left,
+    .thinkray-floating-systems-content.top {
+        left: 0;
+        transform: translate(0);
+    }
+
+    .thinkray-floating-systems-content.right {
+        right: 0;
+        transform: translate(0);
+    }
+
+    .thinkray-systems-content-box.reverse {
+        text-align: left;
+    }
+
+    .thinkray-types-box {
+        padding: 20px 15px;
+    }
+
+    .thinkray-success-content-box-icon {
+        min-height: 60px;
+        max-width: 60px;
+    }
+
+    .contact-content-info-box .social {
+        margin-bottom: 15px;
+    }
+
+    .branding-box-slider {
+        margin: 5px 0;
+    }
+
+    .thinkdigital-systems-divider {
+        max-width: 100%;
+    }
+
+    .indicator-card.thinkdigital-themed {
+        margin-bottom: 12px;
+    }
+
+    .about-img {
+        max-width: 100%;
+    }
+
+    .mini-cta-content .pg-video-btn {
+        margin: 20px auto 0;
+    }
+
+    a.pg-video-btn {
+        min-height: 70px;
+        max-width: 70px;
+    }
+
+    .mini-cta-content {
+        padding: 0 20px 0;
+        margin: 30px 0;
+    }
+
+    .case-study-card {
+        height: 300px;
+    }
+
+    .thinkdigital-types-box h5 {
+        margin-bottom: 30px;
+    }
+
+    .our-teams-img-text {
+        padding: 15px 20px;
+    }
+
+    .bottom-header.sticky {
+        padding: 50px 10px 20px;
+    }
+
+    .pricing-card::before {
+        position: relative;
+        padding: 7px 0;
+        max-width: 40%;
+        top: 0;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .pricing-card,
+    .pricing-method-box {
+        height: auto;
+    }
+
+    .pricing-card-top,
+    .pricing-card-middle,
+    .pricing-card-bottom {
+        padding: 5px 0;
+    }
+
+    .pricing-card-top-icon-img {
+        max-width: 50px;
+    }
+
+    .contact-content-img-box {
+        margin-top: 20px;
+    }
+
+    .product-comparison-side-bar {
+        padding: 20px 20px;
+    }
+
+    .pg-decor-chip {
+        padding: 10px 12px;
+    }
+
+    .hero-img .pg-decor-chip {
+        left: 45%;
+    }
+
+    ul.footer-menu li {
+        margin-bottom: 22px;
+    }
+
+    .side-bar-mark-up ul.pg-listing {
+        margin-top: 20px;
+    }
+
+    .product-comparison-content-heading {
+        margin-bottom: 20px;
+    }
+
+    .login-hero .hero-content {
+        padding: 0 20px 20px;
+    }
+
+    .login-hero-cta {
+        padding: 20px 0 0;
+    }
+
+    .login-pg-decor-chip {
+        margin-bottom: 12px;
+    }
+
+    .login-pg-decor-chip .pg-decor-chip-img {
+        max-width: 35%;
+    }
+
+    .login-hero .hero-content .hero-feature-img.centered-new {
+        margin: 20px auto 0;
+        max-width: 100%;
+    }
+
+    .login-form {
+        margin: 0 auto;
+    }
+
+    .login-form .basic-form {
+        padding: 0;
+    }
+
+    .login-form .basic-form-head .logo {
+        max-width: 40%;
+    }
+
+    .social i {
+        min-height: 25px;
+        max-width: 25px;
+    }
+
+    .hero-copy {
+        margin-top: 20px;
+    }
+
+    .hero-trust-img {
+        max-width: 80%;
+        padding-top: 20px;
+    }
+
+    .hero-trust-icon img {
+        max-width: 40px;
+    }
+
+    .login-hero .hero {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .hero-text-content {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+
+    .login-card {
+        padding: 30px 35px 40px;
+    }
+
+    .benefit-content h4 {
+        font-size: 120%;
+    }
+
+    .benefit-content p {
+        font-size: 100%;
+    }
+
+    .login-form .basic-form-head {
+        margin-bottom: 22px;
+    }
+
+    .hero-feature-img {
+        display: none;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) START ------------------------------*/
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
