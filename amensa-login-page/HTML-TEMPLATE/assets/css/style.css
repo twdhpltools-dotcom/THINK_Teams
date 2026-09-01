@@ -52,9 +52,16 @@ h5,
 h6,
 p {
     margin: 0;
-    line-height: var(--defaut-line-height);
     font-weight: var(--defaut-font-weight);
-    font-family: var(--defaut-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--defaut-line-height);
 }
 
 p {
@@ -194,10 +201,10 @@ textarea {
     width: 100%;
     border: 1px solid #00000020;
     border-radius: 5px;
-    padding: 10px 15px 10px 40px;
+    padding: 10px 15px 10px 25px;
     backdrop-filter: blur(10px);
     color: var(--defaut-dark-color);
-    font-size: 95%;
+    font-size: 100%;
     margin: 0;
 }
 
@@ -302,16 +309,12 @@ button.pg-submit-btn {
     width: 100%;
     outline: none;
     text-align: center;
-    background: var(--defaut-dark-background);
+    background: var(--defaut-dark-thinklab-theme);
     border: 1px solid #ffffff80;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 15px 0;
     color: var(--defaut-light-color);
     font-weight: 600;
-}
-
-button.pg-submit-btn i {
-    margin-right: 5px;
 }
 
 hr.pg-hr {
@@ -319,8 +322,8 @@ hr.pg-hr {
     width: 100%;
     min-height: 1px;
     background: var(--defaut-dark-background);
-    opacity: 0.3;
-    margin: 25px 0;
+    opacity: 0.1;
+    margin: 20px 0;
 }
 
 hr.pg-hr.light {
@@ -334,6 +337,11 @@ hr.pg-hr.light {
 
 .logo a {
     display: block;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
 }
 
 .pg-section-spacing {
@@ -459,7 +467,6 @@ ul.pg-listing li:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     color: var(--defaut-light-color);
     border-radius: 50%;
     border: 1px solid var(--defaut-light-background);
@@ -469,22 +476,6 @@ ul.pg-listing li:last-child {
     font-size: 95%;
     color: var(--defaut-light-color);
     padding-left: 8px;
-}
-
-.social.address i {
-    border: none;
-    font-size: 140%;
-}
-
-.social.address p {
-    font-size: 90%;
-    color: var(--defaut-light-color);
-    padding-left: 8px;
-    text-transform: capitalize;
-    white-space: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none; 
 }
 
 span.pg-chip {
@@ -511,12 +502,35 @@ span.pg-chip.light {
 .basic-form {
     height: auto;
     width: 100%;
+    padding: 50px 45px;
+    background: var(--defaut-light-background);
+    border-radius: 20px;
+}
+
+.basic-form-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.basic-form-head h4 {
+    font-size: 200%;
+    margin-bottom: 2px;
+}
+
+.basic-form-head p {
+    font-size: 95%;
+}
+
+.basic-form-head .logo {
+    max-width: 180px;
 }
 
 .form-copyright {
     height: auto;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 35px;
     text-align: center;
 }
 
@@ -526,19 +540,15 @@ span.pg-chip.light {
 }
 
 .form-copyright p a {
-    font-size: 65%;
+    font-size: 70%;
     font-weight: 600;
     text-decoration: underline;
     opacity: 0.8;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .form-copyright a:first-child {
     padding-left: 0;
-}
-
-.nw-ico-clss {
-    left: 15px;
 }
 
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
@@ -547,7 +557,9 @@ span.pg-chip.light {
 header.main-header {
     height: auto;
     width: 100%;
+    position: fixed;
     z-index: 100;
+    ;
 }
 
 nav.nav {
@@ -557,7 +569,7 @@ nav.nav {
 
 .top-header {
     width: 100%;
-    padding: 8px 0;
+    padding: 6px 0;
     background: var(--defaut-light-thinklab-theme);
     color: var(--defaut-light-color);
     position: relative;
@@ -628,43 +640,24 @@ nav.nav {
 }
 
 .login-form {
-    position: absolute;
-    right: 80px;
-    top: 50%;
-    transform: translate(0, -50%);
     height: auto;
     width: 100%;
-    max-width: 450px;
+    max-width: 32%;
+    border-radius: 20px;
     z-index: 2;
 }
 
 .login-form .basic-form {
+    height: 100%;
+    padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.basic-form-head {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.login-form .basic-form-head h2 {
-    margin: 0 0 5px;
-    font-family: var(--defaut-font-family);
-    font-size: 160%;
-    font-weight: 700;
-    color: var(--defaut-dark-color);
-}
-
-.login-form .basic-form-head p {
-    margin: 0;
-    font-family: var(--defaut-font-family);
-    font-size: 80%;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--defaut-dark-color);
-    opacity: 0.8;
+.login-form .basic-form-head .logo {
+    max-width: 50%;
+    margin-bottom: 30px;
 }
 
 .login-card {
@@ -674,15 +667,14 @@ nav.nav {
     padding: 48px 42px 38px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 40px 0 rgb(20 48 82 / 16%);
-    border-radius: 15px;
+    box-shadow: 0 12px 40px rgba(20, 48, 82, .09);
 }
 
 .login-brand-line {
     position: absolute;
     left: 0;
     top: 26%;
-    width: 8px;
+    width: 6px;
     height: 48%;
     display: flex;
     flex-direction: column;
@@ -712,10 +704,54 @@ nav.nav {
     background: #df262c;
 }
 
-.login-hero-carousel {
-    height: calc(100vh - 52px);
+.login-form .basic-form-head {
     width: 100%;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-form .basic-form-head .logo {
+    width: 100%;
+    max-width: 58%;
+    margin: 0 auto 24px;
+}
+
+.login-form .basic-form-head .logo a {
+    display: block;
+}
+
+.login-form .basic-form-head .logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.login-form .basic-form-head h2 {
+    margin: 0 0 7px;
+    font-family: var(--defaut-font-family);
+    font-size: 120%;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #112d58;
+}
+
+.login-form .basic-form-head p {
+    margin: 0;
+    font-family: var(--defaut-font-family);
+    font-size: 70%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6a7481;
+}
+
+.login-hero-carousel {
+    height: 100vh;
+    width: 100%;
+    background-size: 85%;
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -726,6 +762,8 @@ nav.nav {
 .login-hero-carousel-overlay {
     height: 100%;
     width: 100%;
+    background: #ffffffc7;
+    backdrop-filter: blur(5px);
     position: relative;
     z-index: 1;
 }
@@ -737,28 +775,24 @@ nav.nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 4%;
+    padding: 0 6%;
     position: relative;
     z-index: 2;
 }
 
 .hero-feature-img {
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 0;
     height: auto;
     width: 100%;
-    max-width: 38%;
+    max-width: 200px;
+    margin-bottom: 28px;
 }
 
 .hero-text-content {
     width: 100%;
-    max-width: 45%;
-}
-
-.hero-text-content .logo {
-    max-width: 180px;
-    margin-bottom: 15px;
+    max-width: 70%;
 }
 
 .hero-text-content h1 {
@@ -770,8 +804,8 @@ nav.nav {
 }
 
 .hero-color-line {
-    width: 220px;
-    height: 6px;
+    width: 180px;
+    height: 5px;
     display: flex;
     align-items: center;
     margin: 18px 0;
@@ -814,34 +848,38 @@ nav.nav {
     opacity: 0.9;
 }
 
-.hero-text-content p span {
-    font-weight: 700;
-}
-
 .hero-benefits {
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 28px;
     margin-top: 34px;
 }
 
 .benefit-item {
-    text-align: center;
-    border-right: 1px solid #cccccced;
-    min-height: 140px;
-}
-
-.benefit-item:last-child {
-    border: none;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
 }
 
 .benefit-icon {
-    margin: 0 auto 10px;
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #e5edf7;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(26, 97, 161, .08);
 }
 
 .benefit-icon svg {
-    width: 25%;
-    height: auto;
+    width: 65%;
+    height: 65%;
     fill: none;
     stroke: #1a61a1;
     stroke-width: 1.8;
@@ -852,27 +890,20 @@ nav.nav {
 .benefit-content h4 {
     margin: 2px 0 5px;
     font-family: var(--defaut-font-family);
-    font-size: 95%;
+    font-size: 90%;
     font-weight: 700;
     color: var(--defaut-dark-color);
     opacity: 0.9;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .benefit-content p {
     margin: 0;
     font-family: var(--defaut-font-family);
-    font-size: 75%;
+    font-size: 70%;
     font-weight: 400;
     line-height: 1.45;
     color: VAR(--defaut-font-family);
     opacity: 0.7;
-    overflow:hidden;
-    display:-webkit-box;
-    -webkit-line-clamp:2;
-    -webkit-box-orient:vertical;
 }
 
 .login-input {
@@ -882,11 +913,79 @@ nav.nav {
 
 .login-input i {
     position: absolute;
-    top: 14px;
+    top: 15px;
     z-index: 2;
 }
 
 /*--------------------------------------------- CSS FOR LOGIN-HERO SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR MARQUEE START ---------------------------------------*/
+.marquee {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+}
+
+.marquee::before,
+.marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 30px;
+    z-index: 2;
+}
+
+.marquee::before {
+    left: 0;
+    background: linear-gradient(to right, var(--defaut-light-thinklab-theme), transparent);
+}
+
+.marquee::after {
+    right: 0;
+    background: linear-gradient(to left, var(--defaut-light-thinklab-theme), transparent);
+}
+
+header.main-header .top-header-news .marquee {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    animation: marqueeScroll 10s linear infinite;
+    gap: 25px;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+header.main-header .top-header-news .marquee-content span {
+    font-size: 95%;
+    font-weight: var(--defaut-font-weight);
+}
+
+header.main-header .top-header-news .marquee-content span em {
+    font-weight: 600;
+}
+
+/*--------------------------------------------- CSS FOR MARQUEE COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PASSWORD-ICON START ---------------------------------------*/
 .password-input {
