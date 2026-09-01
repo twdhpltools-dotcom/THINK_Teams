@@ -8,6 +8,14 @@
     .d-none-sm-device {
         display: block;
     }
+
+    .d-none-for-mob {
+        display: block;
+    }
+
+    .d-block-for-mob {
+        display: none;
+    }
 }
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) COMPLETE ------------------------------*/
@@ -28,10 +36,6 @@
 
     .login-form-body {
         padding: 40px 60px;
-    }
-
-    .login-form {
-        max-width: 40%;
     }
 
     .pg-heading-txt h2 {
@@ -695,24 +699,12 @@
         max-width: 70%;
     }
 
-    .benefit-item {
-        padding: 0 15px;
-    }
-
     .login-form .basic-form {
         padding: 0 20px;
     }
 
     .login-card {
         padding: 40px 40px 45px;
-    }
-
-    .login-hero .hero-content .hero-feature-img {
-        max-width: 52%;
-    }
-
-    .login-form .basic-form-head .logo {
-        max-width: 42%;
     }
 
     .login-form {
@@ -1329,6 +1321,10 @@
         top: 0;
         left: 0;
     }
+
+    .login-hero-carousel {
+        height: auto;
+    }
 }
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -1341,7 +1337,6 @@
 
     .login-form {
         height: auto;
-        max-width: 90%;
     }
 
     .hero-feature-img {
@@ -2198,10 +2193,6 @@
         padding: 0;
     }
 
-    .login-form .basic-form-head .logo {
-        max-width: 40%;
-    }
-
     .social i {
         min-height: 25px;
         max-width: 25px;
@@ -2230,7 +2221,7 @@
     }
 
     .login-card {
-        padding: 30px 35px 40px;
+        padding: 25px 30px 35px;
     }
 
     .benefit-content h4 {
@@ -2266,15 +2257,29 @@
     .hero-benefits {
         margin-top: 14px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .benefit-item {
-        padding: 0 25px;
         border: none;
     }
 
     .benefit-icon svg {
         width: 20%;
+    }
+
+    .d-none-for-mob {
+        display: none;
+    }
+
+    .d-block-for-mob {
+        display: block;
+    }
+
+    .logo.d-block-for-mob {
+        max-width: 125px;
+        margin: 0 auto;
+        padding-bottom: 10px;
     }
 }
 

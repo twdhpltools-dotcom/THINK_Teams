@@ -336,11 +336,6 @@ hr.pg-hr.light {
     display: block;
 }
 
-.hero {
-    height: 100vh;
-    width: 100%;
-}
-
 .pg-section-spacing {
     height: auto;
     width: 100%;
@@ -546,10 +541,7 @@ span.pg-chip.light {
 /*--------------------------------------------- CSS FOR HEADER START ---------------------------------------*/
 header.main-header {
     height: auto;
-    width: 98%;
-    position: fixed;
-    top: 15px;
-    left: 12px;
+    width: 100%;
     z-index: 100;
 }
 
@@ -637,7 +629,7 @@ nav.nav {
     transform: translate(0, -50%);
     height: auto;
     width: 100%;
-    max-width: 28%;
+    max-width: 450px;
     z-index: 2;
 }
 
@@ -653,11 +645,10 @@ nav.nav {
 }
 
 .login-form .basic-form-head h2 {
-    margin: 0 0 7px;
+    margin: 0 0 5px;
     font-family: var(--defaut-font-family);
-    font-size: 130%;
+    font-size: 150%;
     font-weight: 700;
-    line-height: 1.2;
     color: var(--defaut-dark-color);
 }
 
@@ -717,7 +708,7 @@ nav.nav {
 }
 
 .login-hero-carousel {
-    height: 100vh;
+    height: 94vh;
     width: 100%;
     background-size: cover;
     background-position: left;
@@ -831,7 +822,6 @@ nav.nav {
 
 .benefit-item {
     text-align: center;
-    padding: 0 20px;
     border-right: 1px solid #cccccced;
 }
 
