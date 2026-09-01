@@ -632,7 +632,7 @@ nav.nav {
 
 .login-form {
     position: absolute;
-    right: 70px;
+    right: 80px;
     top: 50%;
     transform: translate(0, -50%);
     height: auto;
