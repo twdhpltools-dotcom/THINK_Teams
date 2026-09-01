@@ -482,6 +482,9 @@ ul.pg-listing li:last-child {
     padding-left: 8px;
     text-transform: capitalize;
     white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
 }
 
 span.pg-chip {
@@ -825,6 +828,7 @@ nav.nav {
 .benefit-item {
     text-align: center;
     border-right: 1px solid #cccccced;
+    min-height: 140px;
 }
 
 .benefit-item:last-child {

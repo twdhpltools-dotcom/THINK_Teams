@@ -708,7 +708,11 @@
     }
 
     .login-form {
-        right: 30px;
+        right: 20px;
+    }
+
+    .benefit-item {
+        min-height: 130px;
     }
 
     .hero-text-content {
@@ -1720,6 +1724,10 @@
         z-index: 2;
         position: relative;
     }
+
+    .benefit-item {
+        min-height: 125px;
+    }
 }
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -2257,6 +2265,10 @@
 
     .hero-color-line {
         margin: 15px 0;
+    }
+
+    .benefit-item {
+        min-height: auto;
     }
 }
 
