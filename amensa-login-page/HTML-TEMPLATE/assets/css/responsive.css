@@ -2217,7 +2217,7 @@
     }
 
     .hero-text-content {
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     .login-card {
@@ -2256,16 +2256,17 @@
 
     .hero-benefits {
         margin-top: 14px;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
     .benefit-item {
         border: none;
+        width: 100%;
+        max-width: 35%;
     }
 
     .benefit-icon svg {
-        width: 20%;
+        width: 35%;
     }
 
     .d-none-for-mob {
@@ -2281,6 +2282,10 @@
         margin: 0 auto;
         padding-bottom: 10px;
     }
+
+    .social.address {
+        display: none;
+    }
 }
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
@@ -2289,6 +2294,10 @@
 @media only screen and (max-width: 375px) {
     html {
         font-size: 13px;
+    }
+
+    .logo.d-block-for-mob {
+        max-width: 115px;
     }
 }
 

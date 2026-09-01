@@ -647,7 +647,7 @@ nav.nav {
 .login-form .basic-form-head h2 {
     margin: 0 0 5px;
     font-family: var(--defaut-font-family);
-    font-size: 150%;
+    font-size: 160%;
     font-weight: 700;
     color: var(--defaut-dark-color);
 }
@@ -670,7 +670,7 @@ nav.nav {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 40px 0 rgb(20 48 82 / 16%);
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .login-brand-line {
