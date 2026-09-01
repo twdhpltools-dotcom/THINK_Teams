@@ -708,7 +708,7 @@ nav.nav {
 }
 
 .login-hero-carousel {
-    height: 94vh;
+    height: calc(100vh - 55px);
     width: 100%;
     background-size: cover;
     background-position: left;
