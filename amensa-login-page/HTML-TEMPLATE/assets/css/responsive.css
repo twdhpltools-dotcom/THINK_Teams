@@ -723,7 +723,10 @@
     }
 
     .login-hero .hero-content .hero-feature-img {
-        max-width: 55%;
+        max-width: 52%;
+    }
+    .login-form .basic-form-head .logo {
+        max-width: 42%;
     }
 }
 
