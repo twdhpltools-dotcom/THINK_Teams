@@ -1338,6 +1338,7 @@
     }
 
     .login-form {
+        height: auto;
         max-width: 90%;
     }
 
@@ -2178,10 +2179,6 @@
         max-width: 100%;
     }
 
-    .login-form {
-        margin: 0 auto;
-    }
-
     .login-form .basic-form {
         padding: 0;
     }
@@ -2223,11 +2220,11 @@
     }
 
     .benefit-content h4 {
-        font-size: 120%;
+        font-size: 100%;
     }
 
     .benefit-content p {
-        font-size: 100%;
+        font-size: 90%;
     }
 
     .login-form .basic-form-head {
