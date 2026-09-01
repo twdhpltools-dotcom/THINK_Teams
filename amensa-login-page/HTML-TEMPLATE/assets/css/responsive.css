@@ -2286,6 +2286,10 @@
     .social.address {
         display: none;
     }
+
+    .top-header::after {
+        max-width: 58%;
+    }
 }
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
