@@ -361,26 +361,22 @@ $conn->close();
                                     <div class="col-md-6 col-sm-6 col-6">
                                         <div class="social">
                                             <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <a href="mailto: info@bhplus.in">info@bhplus.in</a>
+                                            <a href="mailto: info@amensadiagnostics.com">info@amensadiagnostics.com</a>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-6">
                                         <div class="social">
                                             <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                            <a href="tel: 03326410305">03326410305</a>
+                                            <a href="tel: +91 7039394488">+91 7039394488</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5 col-sm-12 col-12">
-                            <div class="top-header-news">
-                                <div class="marquee">
-                                    <div class="marquee-content">
-                                        <span>A Unit of Bidya Health Plus Pvt Ltd</span>
-                                        <span>A Unit of Bidya Health Plus Pvt Ltd</span>
-                                    </div>
-                                </div>
+                            <div class="social address">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                <p>OCS, Bima Chhaya, Mahatma Phule Rd, opp. CHINTAMANI DESHMUKH GARDEN,</p>
                             </div>
                         </div>
                     </div>
@@ -393,13 +389,15 @@ $conn->close();
     <!----------------------------------------------- LOGIN-HERO SECTION START --------------------------------------------->
     <section class="login-hero">
         <div class="hero">
-            <div class="login-hero-carousel" style="background-image: url('assets/images/client-centre-bg.png');">
+            <div class="login-hero-carousel" style="background-image: url('assets/images/client-proper-bg.png');">
                 <div class="login-hero-carousel-overlay">
                     <div class="hero-content">
-                        <div class="hero-feature-img">
-                            <img class="img-fluid" src="assets/images/login-side-person.png" alt="">
-                        </div>
                         <div class="hero-text-content">
+                            <div class="logo d-none-for-mob">
+                                <a href="index.html">
+                                    <img class="img-fluid" src="assets/images/amensia-logo.png" alt="Amensa Diagnostics">
+                                </a>
+                            </div>
                             <h1>Manage diagnostics with confidence</h1>
                             <div class="hero-color-line">
                                 <span class="line-blue"></span>
@@ -408,9 +406,9 @@ $conn->close();
                                 <span class="line-red"></span>
                             </div>
                             <p>A comprehensive platform to streamline lab operations, improve accuracy, and deliver reliable results.</p>
-                            <hr class="pg-hr" />
+                            <!-- <hr class="pg-hr" /> -->
                             <div class="hero-benefits">
-                                <div class="benefit-item">
+                                <div class="benefit-item pe-1">
                                     <div class="benefit-icon">
                                         <svg viewBox="0 0 24 24" aria-hidden="true">
                                             <path d="M12 3l7 3v5c0 4.8-2.8 8.2-7 10-4.2-1.8-7-5.2-7-10V6l7-3z"></path>
@@ -422,7 +420,7 @@ $conn->close();
                                         <p>Your data is protected with industry-leading security.</p>
                                     </div>
                                 </div>
-                                <div class="benefit-item">
+                                <div class="benefit-item px-1">
                                     <div class="benefit-icon">
                                         <svg viewBox="0 0 24 24" aria-hidden="true">
                                             <circle cx="12" cy="12" r="8"></circle>
@@ -435,7 +433,7 @@ $conn->close();
                                         <p>Advanced tools ensure precision you can trust.</p>
                                     </div>
                                 </div>
-                                <div class="benefit-item">
+                                <div class="benefit-item ps-1">
                                     <div class="benefit-icon">
                                         <svg viewBox="0 0 24 24" aria-hidden="true">
                                             <path d="M13 2L5 14h6l-1 8 8-12h-6l1-8z"></path>
@@ -460,12 +458,14 @@ $conn->close();
                             <span class="brand-yellow"></span>
                             <span class="brand-red"></span>
                         </div>
+                        <div class="logo d-block-for-mob">
+                            <a href="index.html">
+                                <img class="img-fluid" src="assets/images/amensia-logo.png" alt="Amensa Diagnostics">
+                            </a>
+                        </div>
                         <div class="basic-form-head">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img class="img-fluid" src="assets/images/amensia-logo.png" alt="Amensa Diagnostics">
-                                </a>
-                            </div>
+                            <h2>Welcome back</h2>
+                            <p>Sign in to access your diagnostic dashboard</p>
                         </div>
                         <form method="" action="">
                             <div class="row">
@@ -489,21 +489,11 @@ $conn->close();
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-12">
-                                    <div class="form-group special-ip">
-                                        <label for="login_twtoken">T<i>W</i> Token:</label>
-                                        <div class="login-input">
-                                            <i class="fa fa-shield nw-ico-clss" aria-hidden="true"></i>
-                                            <input type="text" name="login_twtoken" id="login_twtoken" value="" placeholder="6 Digit Token" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-12">
-                                    <div class="form-group mb-0">
+                                    <div class="form-group mt-3 mb-0">
                                         <button type="submit" class="pg-submit-btn">
                                             <i class="fa fa-lock" aria-hidden="true"></i>
                                             <span>Secure Log-in</span>
                                         </button>
-                                        <h6>Didn’t have an account? <a href="tel:+91XXXXXXXXXX">Call to Sales</a></h6>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-12">
