@@ -80,7 +80,7 @@ function toggleSubMenu(btn) {
 }
 /*-------------------------------------- SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
-/* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) START ---------------------------------------------- */
+/* ----------------------------------------- OWL-CAROUSEL (INIT) START ---------------------------------------------- */
 $(document).ready(function(){
   var owl = $('#DashboardDocCarousel');
   
@@ -177,7 +177,7 @@ $(document).ready(function(){
     }
   });
 });
-/* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
+/* ----------------------------------------- OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
 
 /*-------------------------------------- USER-DYNAMIC-AVATAR ----------------------------------------*/
 const avatarColors = {
@@ -377,4 +377,33 @@ function openNotfMenu(btn) {
   }
 }
 /*-------------------------------------- TOGGLER-MENU ----------------------------------------*/
+
+/*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
+function toggleLocationMenu(e) {
+  e.stopPropagation();
+  const menu = document.getElementById("LocationSubMenu");
+
+  menu.classList.toggle("opacity-0");
+  menu.classList.toggle("translate-y-[-8px]");
+  menu.classList.toggle("pointer-events-none");
+
+  menu.classList.toggle("opacity-100");
+  menu.classList.toggle("translate-y-0");
+}
+
+document.addEventListener("click", function () {
+  const menu = document.getElementById("LocationSubMenu");
+
+  menu.classList.add(
+    "opacity-0",
+    "translate-y-[-8px]",
+    "pointer-events-none"
+  );
+
+  menu.classList.remove(
+    "opacity-100",
+    "translate-y-0"
+  );
+});
+/*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
