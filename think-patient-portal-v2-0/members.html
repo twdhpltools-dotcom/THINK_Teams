@@ -170,14 +170,19 @@
       <!----- TOP-BAR ------->
       <div class="h-auto w-full fixed top-0 left-0 z-[100] bg-[var(--light)] px-5 py-3 flex items-center justify-between">
 
-        <div class="flex items-center gap-x-2">
-          <button class="h-[32px] w-[32px] flex items-center justify-center bg-transparent outline-none border-none cursor-pointer go-back-btn">
+        <div class="flex items-center gap-x-3">
+          <button class="outline-none border-none cursor-pointer go-back-btn">
             <i class="bi bi-arrow-left text-[130%] leading-none text-[#202020]"></i>
           </button>
-          <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">
-            Members
-          </h1>
+          <div>
+            <h1 class="m-0 text-[110%] leading-none font-semibold tracking-[-0.4px] text-[var(--dark)]/70">Members</h1>
+            <button class="h-auto mt-1 flex items-center bg-transparent border-none outline-none text-left cursor-pointer" onclick="toggleLocationMenu(event)">
+              <p class="m-0 max-w-[190px] text-[80%] leading-none font-medium text-[var(--dark)]/50 truncate">Plot A7, Ratepara, Bangaon, West Bengal</p>
+              <i class="bi bi-chevron-down text-[90%] text-[var(--dark-primary)]/80 shrink-0"></i>
+            </button>
+          </div>
         </div>
+
         <div class="flex items-center">
           <button class="relative h-[40px] w-[40px] flex items-center justify-center bg-transparent border-none outline-none cursor-pointer" onclick="window.location.href='cart.html'">
             <i class="bi bi-cart3 text-[125%] leading-none text-[#64748B]"></i>
@@ -192,6 +197,40 @@
             </span>
           </button>
         </div>
+
+        <!----- ANIMATED-TOGGLER-MENU ------->
+        <div id="LocationSubMenu" class="absolute top-[90%] left-10 w-[270px] rounded-lg border border-[#00000010] bg-[var(--light)] px-3 py-2 shadow-[0_12px_30px_#00000012] opacity-0 translate-y-[-8px] pointer-events-none transition-all duration-300 ease-in-out z-[120]">
+          <button class="h-auto w-full text-left flex items-start gap-x-2 py-3 border-b border-solid border-[#00000010] transition-all duration-200 last:border-none hover:bg-[var(--primary)]/5">
+            <div class="h-9 w-9 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+              <i class="bi bi-building text-[110%] text-blue-500"></i>
+            </div>
+            <div class="min-w-0">
+              <h6 class="text-[85%] font-semibold text-[var(--dark-primary)]/90">Life Fertility Centre</h6>
+              <p class="text-[75%] text-[var(--dark)]/50 truncate">29/F, Block AC, Pandua, Malda</p>
+            </div>
+          </button>
+
+          <button class="h-auto w-full text-left flex items-start gap-x-2 py-3 border-b border-solid border-[#00000010] transition-all duration-200 last:border-none hover:bg-[var(--primary)]/5">
+            <div class="h-9 w-9 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+              <i class="bi bi-building text-[110%] text-blue-500"></i>
+            </div>
+            <div class="min-w-0">
+              <h6 class="text-[85%] font-semibold text-[var(--dark-primary)]/90">Bactro Clinical Laboratory</h6>
+              <p class="text-[75%] text-[var(--dark)]/50 truncate">Plot A7, Ratepara, Bangaon, West Bengal</p>
+            </div>
+          </button>
+
+          <button class="h-auto w-full text-left flex items-start gap-x-2 py-3 border-b border-solid border-[#00000010] transition-all duration-200 last:border-none hover:bg-[var(--primary)]/5">
+            <div class="h-9 w-9 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+              <i class="bi bi-building text-[110%] text-blue-500"></i>
+            </div>
+            <div class="min-w-0">
+              <h6 class="text-[85%] font-semibold text-[var(--dark-primary)]/90">CCL Diagnostic Laboratory</h6>
+              <p class="text-[75%] text-[var(--dark)]/50 truncate">7th Avenue, 2nd Floor, Park Circus, Kolkata - 700 046</p>
+            </div>
+          </button>
+        </div>
+        <!----- ANIMATED-TOGGLER-MENU ------->
         
       </div>
       <!----- TOP-BAR ------->
@@ -199,7 +238,7 @@
       <!----- PAGE-CONTENT ------->
       <div class="content h-auto w-full pb-25">
 
-        <div class="h-auto w-full px-5 fixed top-16 left-0 bg-[var(--light)] z-100">
+        <div class="h-auto w-full px-5 fixed top-17 left-0 bg-[var(--light)] z-100">
 
           <div class="h-auto w-full flex items-center justify-end">
             <button class="h-auto flex items-center justify-center gap-x-2 px-3 py-[5px] rounded-[7px] bg-[var(--primary)]/5 border border-solid border-[var(--primary)]/60 outline-none text-[85%] font-semibold text-[var(--primary)]/80" onclick="window.location.href='members-add.html'">
@@ -212,7 +251,7 @@
 
         <div class="h-auto w-full px-5">
 
-          <div class="h-auto w-full pt-15 pb-4">
+          <div class="h-auto w-full pt-16 pb-4">
             <div class="relative z-1 h-auto w-full px-3 py-3 rounded-[10px] bg-[#FFFFFF] border border-solid border-[#E5E7EB] shadow-[0_4px_12px_0_#00000008] mb-3 last:mb-0">
               <div class="h-auto w-full cursor-pointer flex items-center">
                 <span class="member-avatar h-11 w-11 rounded-[50%] flex items-center justify-center shrink-0 me-3" data-name="Puja Sarkar">
