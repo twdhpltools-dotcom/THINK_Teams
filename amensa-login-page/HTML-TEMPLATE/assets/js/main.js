@@ -18,20 +18,25 @@ function togglePassword() {
 const form = document.querySelector("form"),
   [user, pass] = form.querySelectorAll("input[required]"),
   error = form.querySelector(".login-error"),
-  errorBox = form.querySelector(".login-error-wrap");
+  errorBox = form.querySelector(".login-error-wrap"),
+  validUser = "admin",
+  validPass = "123456";
 
 form.noValidate = true;
 
 form.onsubmit = e => {
-  let msg = !user.value.trim() ? "Please enter User Name." :
-  !pass.value.trim() ? "Please enter Password." : "";
+  const invalid =
+      !user.value.trim() ||
+      !pass.value.trim() ||
+      user.value.trim() !== validUser ||
+      pass.value !== validPass;
 
-  error.innerText = msg;
-  errorBox.classList.toggle("show", !!msg);
+  error.innerText = invalid ? "⚠️ Incorrect Login." : "";
+  errorBox.classList.toggle("show", invalid);
 
-  if (msg) {
-    e.preventDefault();
-    (!user.value.trim() ? user : pass).focus();
+  if (invalid) {
+      e.preventDefault();
+      (!user.value.trim() ? user : !pass.value.trim() ? pass : user).focus();
   }
 };
 /* ----------------------------------------- JS FOR FORM-VALIDATION COMPLETE ---------------------------------------------- */

@@ -102,32 +102,6 @@ button:focus {
     outline: none;
 }
 
-iframe {
-    height: auto;
-    width: 100%;
-}
-
-table {
-    height: auto;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table thead tr th {
-    background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f2);
-    border: 2px solid #00000010;
-    padding: 15px 20px;
-    font-size: 95%;
-    font-weight: 700;
-    color: #707070;
-}
-
-table tbody tr td {
-    border: 2px solid #00000010;
-    padding: 15px 20px;
-    font-size: 85%;
-}
-
 form {
     height: auto;
     width: 100%;
@@ -210,7 +184,7 @@ textarea:hover {
 input:hover,
 select:focus,
 textarea:focus {
-    border-color: var(--defaut-dark-theme);
+    border-color: var(--defaut-light-thinklab-theme);
 }
 
 input[type="checkbox"] {
@@ -1000,10 +974,10 @@ header.main-header .top-header-news .marquee-content span em {
 
 p.login-error {
     color: var(--defaut-dark-thinklab-theme);
-    font-size: 82%;
+    font-size: 85%;
     font-weight: 600;
-    text-align: center;
-    padding: 8px 15px;
+    text-align: left;
+    padding: 12px 20px;
     background: linear-gradient(to right, #ffe9e1, transparent);
     background: #ffe9e182;
     border-left: 4px solid #ff4757;
