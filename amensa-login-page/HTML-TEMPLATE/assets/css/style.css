@@ -177,7 +177,7 @@ form .form-group.forget-password a {
 }
 
 label {
-    font-size: 90%;
+    font-size: 88%;
     margin-bottom: 6px;
     font-weight: 500;
 }
@@ -980,3 +980,32 @@ header.main-header .top-header-news .marquee-content span em {
 }
 
 /*--------------------------------------------- CSS FOR MARQUEE COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR FORM-VALIDATION START ---------------------------------------*/
+.login-error-wrap {
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: all 0.45s ease;
+}
+
+.login-error-wrap.show {
+    max-height: 80px;
+    margin-bottom: 15px !important;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p.login-error {
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 82%;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 15px;
+    border-left: 3px solid #df262c8c;
+    background: linear-gradient(to bottom, #df262c1a, transparent);
+}
+
+/*--------------------------------------------- CSS FOR FORM-VALIDATION COMPLETE ---------------------------------------*/

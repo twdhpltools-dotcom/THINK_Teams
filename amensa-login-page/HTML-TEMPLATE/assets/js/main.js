@@ -1,53 +1,9 @@
 /*------------------------------------------- JS FOR MAIN START ------------------------------------------*/
-
-/* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) START ---------------------------------------------- */
-$(document).ready(function(){
-  var owl = $('#login_hero_carousel');
-  var timeout = 4000;
-  
-  owl.owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: timeout,
-      autoplaySpeed: 800,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      onInitialized: startProgress,
-      onTranslate: resetProgress,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-  });
-
-  function startProgress() {
-    $('.progress-bar').css({ width: '100%', transition: `width ${timeout}ms linear` });
-  }
-
-  function resetProgress() {
-    $('.progress-bar').css({ width: 0, transition: 'none' });
-    setTimeout(startProgress, 50);
-  }
-});
-/* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
-
 /* ----------------------------------------- JS FOR PASSWORD-ICON START ---------------------------------------------- */
 function togglePassword() {
-  // const password = document.getElementById('login_pass');
   const password = document.querySelector('.default-pass');
   const eye = document.querySelector('.pass-eye-icon');
-  
+
   if (password.type === 'password') {
     password.type = 'text';
     eye.className = 'fa fa-eye-slash pass-eye-icon';
@@ -58,13 +14,25 @@ function togglePassword() {
 }
 /* ----------------------------------------- JS FOR PASSWORD-ICON COMPLETE ---------------------------------------------- */
 
-/* ----------------------------------------- JS FOR ANIMATE-ON-SCROLL (INIT) START ---------------------------------------------- */
-AOS.init({
-  offset: 100,
-  duration: 900,
-  easing: 'ease',
-  once: true
-});
-/* ----------------------------------------- JS FOR ANIMATE-ON-SCROLL (INIT) COMPLETE ---------------------------------------------- */
+/* ----------------------------------------- JS FOR FORM-VALIDATION START ---------------------------------------------- */
+const form = document.querySelector("form"),
+  [user, pass] = form.querySelectorAll("input[required]"),
+  error = form.querySelector(".login-error"),
+  errorBox = form.querySelector(".login-error-wrap");
 
+form.noValidate = true;
+
+form.onsubmit = e => {
+  let msg = !user.value.trim() ? "Please enter User Name." :
+  !pass.value.trim() ? "Please enter Password." : "";
+
+  error.innerText = msg;
+  errorBox.classList.toggle("show", !!msg);
+
+  if (msg) {
+    e.preventDefault();
+    (!user.value.trim() ? user : pass).focus();
+  }
+};
+/* ----------------------------------------- JS FOR FORM-VALIDATION COMPLETE ---------------------------------------------- */
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
