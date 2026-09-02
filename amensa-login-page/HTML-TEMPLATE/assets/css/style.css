@@ -1004,8 +1004,10 @@ p.login-error {
     font-weight: 600;
     text-align: center;
     padding: 8px 15px;
-    border-left: 3px solid #df262c8c;
-    background: linear-gradient(to bottom, #df262c1a, transparent);
+    background: linear-gradient(to right, #ffe9e1, transparent);
+    background: #ffe9e182;
+    border-left: 4px solid #ff4757;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------- CSS FOR FORM-VALIDATION COMPLETE ---------------------------------------*/
