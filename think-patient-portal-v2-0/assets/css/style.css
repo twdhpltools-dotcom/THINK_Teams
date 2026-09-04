@@ -298,6 +298,7 @@ button.tab-btn.active .tab-indicator {
     right: 18px;
     bottom: 10px;
     width: auto;
+    background: none;
     isolation: isolate;
     overflow: hidden;
     display: grid;
