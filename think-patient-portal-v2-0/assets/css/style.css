@@ -32,6 +32,16 @@ body {
 
 }
 
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: var(--line-height);
+} */
+
 a {
     text-decoration: none;
 }
@@ -159,6 +169,10 @@ button.tab-btn.active .tab-indicator {
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PRE-LOADER START ---------------------------------------------- */
+.pre-loader {
+    z-index: 10000;
+}
+
 .pg-loader span {
     animation: pgLoaderBounce 0.8s infinite ease-in-out;
 }
