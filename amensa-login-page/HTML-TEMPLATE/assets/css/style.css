@@ -487,30 +487,6 @@ span.pg-chip.light {
     width: 100%;
 }
 
-.form-copyright {
-    height: auto;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.form-copyright em {
-    font-style: var(--defaut-font-style);
-    font-size: 70%;
-}
-
-.form-copyright p a {
-    font-size: 65%;
-    font-weight: 600;
-    text-decoration: underline;
-    opacity: 0.8;
-    padding: 0 10px;
-}
-
-.form-copyright a:first-child {
-    padding-left: 0;
-}
-
 .nw-ico-clss {
     left: 15px;
 }
@@ -635,7 +611,7 @@ nav.nav {
     margin: 0;
     font-family: var(--defaut-font-family);
     font-size: 80%;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     color: var(--defaut-dark-color);
     opacity: 0.8;
@@ -861,6 +837,55 @@ nav.nav {
 }
 
 /*--------------------------------------------- CSS FOR LOGIN-HERO SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR MAIN-PAGE-FORM SECTION START ---------------------------------------*/
+.login-help-temp {
+    height: auto;
+    width: 100%;
+    margin: 5px 0 0;
+    padding: 10px 15px;
+    text-align: center;
+    background: var(--defaut-light-background);
+    box-shadow: inset 0 0 20px 0 #007cf833;
+    border-radius: 10px;
+}
+
+.login-help-temp p {
+    font-size: 85%;
+    font-weight: 500;
+    color: var(--defaut-dark-color);
+    opacity: 0.8;
+}
+
+.login-help-temp p span {
+    font-weight: 700;
+}
+
+.form-copyright {
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-copyright em {
+    font-style: var(--defaut-font-style);
+    font-size: 75%;
+}
+
+.form-copyright p a {
+    font-size: 65%;
+    font-weight: 600;
+    text-decoration: underline;
+    opacity: 0.8;
+    padding: 0 10px;
+}
+
+.form-copyright a:first-child {
+    padding-left: 0;
+}
+
+/*--------------------------------------------- CSS FOR MAIN-PAGE-FORM SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PASSWORD-ICON START ---------------------------------------*/
 .password-input {

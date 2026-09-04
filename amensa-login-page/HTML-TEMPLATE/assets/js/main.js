@@ -26,17 +26,17 @@ form.noValidate = true;
 
 form.onsubmit = e => {
   const invalid =
-      !user.value.trim() ||
-      !pass.value.trim() ||
-      user.value.trim() !== validUser ||
-      pass.value !== validPass;
+    !user.value.trim() ||
+    !pass.value.trim() ||
+    user.value.trim() !== validUser ||
+    pass.value !== validPass;
 
-  error.innerText = invalid ? "⚠️ Incorrect Login." : "";
+  error.innerText = invalid ? "⚠️ Incorrect Login Credesnsial." : "";
   errorBox.classList.toggle("show", invalid);
 
   if (invalid) {
-      e.preventDefault();
-      (!user.value.trim() ? user : !pass.value.trim() ? pass : user).focus();
+    e.preventDefault();
+    (!user.value.trim() ? user : !pass.value.trim() ? pass : user).focus();
   }
 };
 /* ----------------------------------------- JS FOR FORM-VALIDATION COMPLETE ---------------------------------------------- */
