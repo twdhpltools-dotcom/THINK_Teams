@@ -1,0 +1,786 @@
+/*--------------------------------------------- CSS FOR INCLUDING FOR FONTS START ---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+/*--------------------------------------------- CSS FOR INCLUDING FOR FONTS COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PRE-DEFINED START ---------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Inter", sans-serif;
+    --line-height: 1.5;
+    --font-weight: normal;
+    --light: #ffffff;
+    --dark: #222;
+    --primary: #9F0D7F;
+    --secondary: #FFEEC8;
+    --success: #2F9D69;
+    --neutral: #0D99FF;
+    --warning: #F9822D;
+    --failure: #FF6868;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--light);
+    color: var(--secondary);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: var(--line-height);
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+table {
+    border-collapse: collapse;
+    height: auto;
+    width: 100%;
+}
+
+table thead tr,
+table tbody tr {
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+}
+
+table thead tr th,
+table tbody tr td {
+    padding: 8px 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+table thead tr th {
+    background: #FAFAFA;
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 110%;
+}
+
+table tbody tr td {
+    background: var(--light);
+    color: var(--dark);
+    font-weight: 400;
+    font-size: 95%;
+}
+
+label {
+    color: var(--secondary);
+    font-size: 85%;
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #0b122e93;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #DDE2EA;
+    border-radius: 10px;
+    outline: none;
+    padding: 12px 25px;
+    font-size: 95%;
+    font-weight: 400;
+    color: rgba(32, 32, 32, 0.8);
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 4px 0 #d52e8a75;
+    border: 1px solid #d52e8a94;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    border-radius: 6px;
+    transition: 0.4s ease-in-out;
+}
+
+button.disbaled {
+    opacity: 0.6;
+}
+
+.content-table-btn-part button.completed-btn,
+.content-table-btn-part button.edit-btn,
+.content-table-btn-part button.print-btn,
+.content-table-btn-part button.warning-btn,
+.content-table-btn-part button.pending-btn,
+.content-table-btn-part button.request-btn,
+.content-table-btn-part button.submitted-btn {
+    padding: 7px 15px;
+    background: var(--success);
+    border: none;
+    color: var(--light);
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.content-table.case-list .content-table-btn-part button.completed-btn {
+    background: var(--success);
+}
+
+.content-table.case-list .content-table-btn-part button.edit-btn {
+    background: #0097C0;
+}
+
+.content-table.case-list .content-table-btn-part button.print-btn {
+    background: #003778;
+}
+
+.content-table.case-list .content-table-btn-part button.warning-btn {
+    background: var(--warning);
+}
+
+.content-table.case-list .content-table-btn-part button.pending-btn {
+    background: var(--neutral);
+}
+
+.content-table.case-list .content-table-btn-part button.request-btn {
+    background: var(--failure);
+}
+
+.content-table.case-list .content-table-btn-part button.submitted-btn {
+    background: #F2F2F2;
+    border: 1px solid #EBEBEB;
+    color: var(--dark);
+}
+
+hr {
+    margin: 8px 0;
+}
+
+main.main-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+}
+
+.rupee-symbol {
+    font-family: "Rosario", sans-serif;
+}
+
+section.page-section {
+    height: auto;
+    width: 100%;
+    max-width: calc(100% - 80px);
+    padding: 0 25px;
+    margin-top: 85px;
+    transition: all 0.3s ease;
+}
+
+section.page-section.expanded {
+  max-width: calc(100% - 80px);
+}
+
+.content-table {
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+    background: #ffffff20;
+    backdrop-filter: blur(20px);
+}
+
+.search-input {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.search-field::placeholder {
+    color: #686879;
+    font-weight: 400;
+}
+
+.search-field:focus {
+    border-color: rgba(0, 156, 166, 0.6);
+}
+
+.search-right-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 110%;
+    background: var(--primary);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: var(--light);
+    z-index: 2;
+}
+
+i.sub-down-icon {
+    padding-left: 35px;
+}
+
+.sidebar-menu.collapsed i.sub-down-icon {
+    padding-left: 0;
+}
+
+.mobile-menu-toggle {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #00000030;
+    border: 1px solid #dddddd8a;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle i {
+    color: var(--light);
+    font-size: 140%;
+}
+/*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
+
+/* ----------------------------------------- CSS FOR TOP-HEADER SECTION START ---------------------------------------------- */
+.top-header  {
+    height: auto;
+    width: 100%;
+    max-width: calc(100% - 300px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--primary);
+    color: var(--light);
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.top-header.expanded  {
+    max-width: calc(100% - 80px);
+}
+
+.top-header-user-name {
+    height: auto;
+    width: 100%;
+}
+
+.top-header-user-name h4 {
+    font-size: 110%;
+}
+
+.top-header-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.user-wallet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 15px;
+    border-radius: 10px;
+    background: #5b064952;
+    border: 1px solid #B45BA1;
+}
+
+.user-wallet img {
+    max-width: 30px;
+}
+
+.user-wallet p {
+    font-size: 90%;
+    color: #FFD2F5;
+}
+
+.user-wallet h6 {
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.user-supports {
+    display: flex;
+    align-items: center;
+}
+
+.user-call-supports {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-right: 1px solid #ffffff50;
+}
+
+span.call-supports-icon {
+    border-radius: 5px;
+    background: #ffffff20;
+    border: 1px solid #B45BA1;
+    margin-right: 10px;
+    padding: 5px 9px;
+}
+
+.user-call-supports h6 {
+    font-size: 90%;
+}
+
+.user-call-supports p {
+    font-size: 85%;
+    color: #FFD2F5;
+}
+
+.user-notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+    border-radius: 10px;
+    background: #5b064952;
+    border: 1px solid #B45BA1;
+    margin: 0 18px;
+    z-index: 1;
+}
+
+.user-notification::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 50%;
+    background: var(--failure);
+    height: 8px;
+    width: 8px;
+}
+
+.user-notification img {
+    max-width: 25px;
+}
+
+.user-profile {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile h6 {
+    font-size: 105%;
+    font-weight: 500;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-profile i {
+    padding-left: 4px;
+}
+/* ----------------------------------------- CSS FOR TOP-HEADER SECTION COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR ANIMATED-TOGGLER-MENU START ---------------------------------------------- */
+.profile-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 220px;
+    background: var(--light);
+    color: var(--dark);
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px) scale(0.98);
+    transform-origin: top right;
+    overflow: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    z-index: 101;
+}
+
+.profile-submenu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+}
+
+.profile-submenu a {
+    display: block;
+    font-size: 100%;
+    padding: 10px 15px;
+    color: var(--dark);
+}
+
+.profile-submenu a.log-anchor {
+    color: #CE0104;
+}
+
+span.profile-submenu-icon {
+    padding-right: 5px;
+}
+
+span.profile-submenu-icon img {
+    max-width: 20px;
+}
+
+.profile-submenu a:hover {
+    background: #f6f6f6;
+}
+/* ----------------------------------------- CSS FOR ANIMATED-TOGGLER-MENU COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR SIDEBAR-MENU SECTION START ---------------------------------------------- */
+.sidebar-menu {
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    background: var(--light);
+    padding: 25px 35px;
+    box-shadow: 5px 0 20px 0 #00000010;
+    position: relative;
+    z-index: 102;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu.collapsed {
+    width: 80px;
+    padding: 25px 15px;
+}
+
+.sidebar-menu-top {
+    height: auto;
+    width: 100%;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-menu.collapsed .sidebar-menu-top {
+  justify-content: center;
+}
+
+.sidebar-menu-top .logo {
+    max-width: 200px;
+    transition: all 0.4s ease;
+}
+
+.sidebar-menu.collapsed .logo {
+  display: none;
+}
+
+.sidebar-menu-toggle {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #F9F9F9;
+    border: 1px solid #DDDDDD;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.sidebar-menu-nav {
+    height: auto;
+    width: 100%;
+}
+
+.sidebar-menu-nav a {
+    display: block;
+    padding: 14px 18px;
+    color: #444;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.sidebar-menu.collapsed .sidebar-menu-nav a {
+    display: none;
+}
+
+span.sidebar-menu-nav-icon {
+    padding-right: 14px;
+}
+
+span.sidebar-menu-nav-icon i {
+    font-size: 95%;
+}
+
+.sidebar-menu.collapsed span.sidebar-menu-nav-icon i {
+    font-size: 110%;
+}
+
+.sidebar-menu-nav a p {
+    font-size: 105%;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.sidebar-menu-nav a:hover,
+.sidebar-menu-nav a.active {
+    background: #9f0d7f0d;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.sidebar-submenu {
+    padding-left: 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-5px);
+    transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-menu.collapsed .sidebar-submenu {
+    padding-left: 0;
+}
+
+.sidebar-submenu.open {
+    max-height: 180px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bi-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.bi-chevron-down.rotate {
+    transform: rotate(180deg);
+}
+/* ----------------------------------------- CSS FOR SIDEBAR-MENU SECTION COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR PENDING-LIST-PAGE START ---------------------------------------------- */
+.content-table.pending-list table thead tr th {
+    background: #FFEEC8;
+}
+
+.content-table.pending-list .content-table-text h5 {
+    font-size: 110%;
+}
+
+.content-table.pending-list .content-table-text p {
+    font-size: 80%;
+}
+
+.content-table.pending-list .content-table-text p span {
+    color: #0B63D1;
+    padding-left: 4px;
+}
+/* ----------------------------------------- CSS FOR PENDING-LIST-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR CASE-LIST-PAGE START ---------------------------------------------- */
+.content-formalities {
+    height: auto;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.content-table.case-list .content-table-text h5 {
+    font-size: 110%;
+}
+
+.content-table.case-list .content-table-text p {
+    font-size: 80%;
+}
+
+.content-table.case-list .content-table-text em {
+    font-size: 80%;
+    font-style: normal;
+    color: #0B63D1;
+}
+
+.content-table.case-list .content-table-text h6 {
+    font-size: 80%;
+    color: var(--primary);
+}
+
+.content-table.case-list .content-table-text a {
+    font-size: 80%;
+    text-decoration: underline;
+    color: #0B63D1;
+}
+
+.content-table.case-list .content-table-btn-part {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* ----------------------------------------- CSS FOR CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR PAGINATION START ---------------------------------------------- */
+.table-pagination {
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+}
+
+.pagination-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-label {
+    font-size: 100%;
+    font-weight: 500;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.pagination-select {
+    height: auto;
+    padding: 12px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    outline: none;
+    background: #FAFAFA;
+    color: #40445a;
+    font-size: 90%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pagination-select:focus {
+    border-color: #94a3b8;
+    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.12);
+}
+
+.pagination-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-info {
+    margin-right: 8px;
+    font-size: 100%;
+    font-weight: 500;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.pagination-btn {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #818ca1;
+    font-size: 85%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.25s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: #f4f6f8;
+    color: var(--dark);
+}
+
+.pagination-btn:disabled {
+    color: #e0e3e8;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+/* ----------------------------------------- CSS FOR PAGINATION COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR PG-SCROLL-BAR START ---------------------------------------------- */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* ----------------------------------------- CSS FOR PG-SCROLL-BAR COMPLETE ---------------------------------------------- */

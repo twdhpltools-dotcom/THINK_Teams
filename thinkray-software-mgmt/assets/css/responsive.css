@@ -1,0 +1,213 @@
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) START ------------------------------*/
+@media only screen and (max-width: 1920px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) START ------------------------------*/
+@media only screen and (max-width: 1599px) {
+    html {
+        font-size: 15px;
+    }
+    .user-call-supports {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .user-notification {
+        margin: 0 15px;
+    }
+    .sidebar-menu {
+        max-width: 280px;
+        padding: 25px 25px;
+    }
+    .top-header  {
+        max-width: calc(100% - 280px);
+    }
+}
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) START ------------------------------*/
+@media only screen and (max-width: 1299px) {
+    html {
+        font-size: 14px;
+    }
+    .sidebar-menu {
+        max-width: 250px;
+        padding: 20px 22px;
+    }
+    .top-header  {
+        max-width: calc(100% - 250px);
+    }
+    .user-notification {
+        margin: 0 10px;
+    }
+    .top-header-content {
+        justify-content: start;
+    }
+    .top-header-user-name {
+        margin-bottom: 7px;
+    }
+    section.page-section {
+        padding: 0 15px;
+        margin-top: 110px;
+    }
+    .sidebar-menu-nav a {
+        padding: 12px 18px;
+    }
+    .content-table {
+        padding: 12px;
+    }
+}   
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) START ------------------------------*/
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 13px;
+    }
+    .mobile-menu-toggle {
+        display: flex;
+        float: right;
+    }
+    .top-header-content {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+        background: var(--light);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px 0 #00000020;
+        color: var(--dark);
+        padding: 18px 0;
+        height: auto;
+        width: 100%;
+        max-width: 320px;
+        z-index: 102;
+    }
+    main.main-page {
+        height: auto;
+    }
+    section.page-section {
+        max-width: 100%;
+    }
+    .sidebar-menu {
+        max-width: 220px;
+        padding: 20px 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 102;
+    }
+    .sidebar-menu.collapsed {
+        width: 0;
+        padding: 0;
+    }
+    .sidebar-menu.collapsed .sidebar-menu-toggle {
+        position: fixed;
+        top: 10px;
+        left: 15px;
+        z-index: 102;
+    }
+    .top-header,
+    .top-header.expanded {
+        max-width: 100%;
+    }
+    .user-supports {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .user-notification {
+        position: fixed;
+        top: 9px;
+        right: 55px;
+        padding: 8px 8px;
+        border-radius: 6px;
+    }
+    .user-notification img {
+        max-width: 18px;
+    }
+    .user-profile h6 {
+        max-width: 170px;
+    }
+    .user-wallet {
+        background: #e4e4e452;
+        border: 1px solid #b45ba145;
+    }
+    .user-wallet p {
+        color: #333;
+    }
+    .sidebar-menu-nav a {
+        margin-bottom: 5px;
+    }
+    section.page-section {
+        margin-top: 70px;
+    }
+    .sidebar-menu {
+        max-width: 230px;
+        padding: 20px 15px;
+    }
+    .top-header-user-name {
+        margin-bottom: 0;
+    }
+    .top-header.expanded .top-header-user-name {
+        padding-left: 40px;
+    }
+    .profile-submenu a {
+        padding: 8px 15px;
+    }
+}
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) START ------------------------------*/
+@media only screen and (max-width: 768px) {
+    .sidebar-menu-nav a {
+        padding: 10px 15px;
+    }
+    .top-header-content {
+        max-width: 270px;
+        padding: 15px 0;
+    }
+    .sidebar-menu-top {
+        padding-bottom: 25px;
+    }
+    span.sidebar-menu-nav-icon {
+        padding-right: 10px;
+    }
+}
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) START ------------------------------*/
+@media only screen and (max-width: 576px) {
+    .table-pagination {
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px 20px 0;
+    }
+    .content-table-text {
+        min-width: 140px;
+    }
+    .top-header-content {
+        max-width: 250px;
+        padding: 12px 0;
+    }
+    .user-wallet {
+        padding: 4px 8px;
+        border-radius: 8px;
+    }
+}
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) START ------------------------------*/
+@media only screen and (max-width: 375px) {
+    .top-header-content {
+        max-width: 245px;
+        padding: 10px 0;
+    }
+}
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
