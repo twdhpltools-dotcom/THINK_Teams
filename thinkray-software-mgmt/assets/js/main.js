@@ -144,6 +144,7 @@ document.addEventListener("click", function () {
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
 
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+/*-------------------- SUB-MENU ----------------------*/
 function toggleSubMenu(btn) {
   const subMenu = btn.nextElementSibling;
 
@@ -154,6 +155,15 @@ function toggleSubMenu(btn) {
     chevron.classList.toggle("rotate");
   }
 }
+/*-------------------- SUB-MENU ----------------------*/
+
+/*-------------------- MOBILE-MENU ----------------------*/
+function openMobileMenu() {
+  const menu = document.getElementById("mobileMenuContent");
+
+  menu.classList.toggle("open");
+}
+/*-------------------- MOBILE-MENU ----------------------*/
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- PAGINATION ----------------------------------------*/
