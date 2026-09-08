@@ -98,6 +98,11 @@ table tbody tr td {
     font-size: 95%;
 }
 
+form {
+    height: auto;
+    width: 100%;
+}
+
 label {
     color: var(--secondary);
     font-size: 85%;
@@ -664,6 +669,450 @@ span.sidebar-menu-nav-icon i {
 }
 /* ----------------------------------------- CSS FOR SIDEBAR-MENU SECTION COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- CSS FOR LOGIN-PAGE START ---------------------------------------------- */
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: var(--light);
+}
+
+.login-visual {
+    height: auto;
+    width: 100%;
+    max-width: 55%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        90deg,
+        rgba(247, 251, 255, 0.98) 0%,
+        rgba(239, 248, 255, 0.93) 43%,
+        rgba(226, 241, 252, 0.55) 70%,
+        rgba(220, 239, 251, 0.28) 100%
+        ),
+        url("../images/login-lab-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.visual-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0.20),
+        rgba(255,255,255,0)
+        );
+    pointer-events: none;
+}
+
+.visual-content {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-logo {
+    height: auto;
+    width: 100%;
+    max-width: 240px;
+}
+
+.login-intro {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.login-intro h2 {
+    margin: 0;
+    font-size: 300%;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.login-intro h2 span {
+    color: var(--primary);
+}
+
+.intro-text {
+    font-size: 100%;
+    color: var(--dark);
+}
+
+.login-features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.login-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.feature-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 150%;
+}
+
+.feature-purple {
+    color: var(--primary);
+    background: rgba(159, 13, 127, 0.10);
+}
+
+.feature-blue {
+    color: var(--neutral);
+    background: rgba(13, 153, 255, 0.10);
+}
+
+.feature-green {
+    color: var(--success);
+    background: rgba(47, 157, 105, 0.10);
+}
+
+.login-feature-item h5 {
+    margin: 0;
+    font-size: 105%;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.login-feature-item p {
+    margin: 0;
+    font-size: 90%;
+    color: rgba(39, 47, 72, 0.72);
+}
+
+.login-trust {
+    position: absolute;
+    right: 45px;
+    bottom: 65px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trust-icon {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 150%;
+    color: var(--success);
+    background: rgba(47, 157, 105, 0.12);
+}
+
+.login-trust span,
+.login-trust strong {
+    display: block;
+}
+
+.login-trust span {
+    font-size: 95%;
+    color: rgba(39, 47, 72, 0.55);
+}
+
+.login-trust strong {
+    margin-top: 2px;
+    font-size: 80%;
+    color: var(--dark);
+}
+
+.login-company {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-company strong {
+    font-size: 62%;
+    font-weight: 700;
+}
+
+.login-company span {
+    padding-left: 12px;
+    border-left: 1px solid #C8CFD9;
+    font-size: 60%;
+    color: rgba(39, 47, 72, 0.58);
+}
+
+.login-section {
+    width: 44%;
+    min-height: 100vh;
+    padding: 45px 7% 25px;
+    background: radial-gradient(
+        circle at 100% 0%,
+        rgba(13, 153, 255, 0.07),
+        transparent 35%
+        ),
+        var(--light);
+}
+
+.login-section-inner {
+    width: 100%;
+    max-width: 480px;
+    min-height: calc(100vh - 70px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card {
+    width: 100%;
+    padding: 40px;
+    background: var(--light);
+    border: 1px solid rgba(39, 47, 72, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(39, 47, 72, 0.08);
+}
+
+.login-card-heading {
+    margin-bottom: 30px;
+}
+
+.login-card-heading h3 {
+    margin: 0;
+    font-size: 160%;
+    line-height: 1.15;
+    font-weight: 750;
+    color: #11182D;
+}
+
+.login-card-heading p {
+    margin-top: 7px;
+    font-size: 72%;
+    color: rgba(39, 47, 72, 0.55);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 67%;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group > i {
+    position: absolute;
+    left: 16px;
+    font-size: 95%;
+    color: rgba(39, 47, 72, 0.55);
+}
+
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 45px;
+    outline: none;
+    border: 1px solid #DCE2EA;
+    border-radius: 9px;
+    background: #FFFFFF;
+    font-size: 73%;
+    color: var(--dark);
+    transition: 0.25s ease;
+}
+
+.input-group input::placeholder {
+    color: #8991A3;
+}
+
+.input-group input:focus {
+    border-color: rgba(159, 13, 127, 0.60);
+    box-shadow: 0 0 0 3px rgba(159, 13, 127, 0.08);
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgba(39, 47, 72, 0.55);
+    cursor: pointer;
+}
+
+.login-options {
+    margin: 2px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.remember-option input {
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.remember-option span,
+.login-options a {
+    font-size: 65%;
+}
+
+.remember-option span {
+    color: var(--dark);
+}
+
+.login-options a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    height: 50px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: linear-gradient(
+        90deg,
+        #B10983,
+        var(--primary)
+        );
+    color: var(--light);
+    font-size: 76%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn i {
+    position: absolute;
+    right: 18px;
+    font-size: 100%;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(159, 13, 127, 0.22);
+}
+
+.login-btn:hover i {
+    transform: translateX(3px);
+}
+
+.login-divider {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-divider span {
+    height: 1px;
+    flex: 1;
+    background: #E4E7EC;
+}
+
+.login-divider p {
+    margin: 0;
+    font-size: 60%;
+    font-weight: 600;
+    color: #7D8492;
+}
+
+.qr-login-btn {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #DDE2EA;
+    outline: none;
+    border-radius: 8px;
+    background: var(--light);
+    color: var(--dark);
+    font-size: 70%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.qr-login-btn i {
+    color: var(--primary);
+    font-size: 110%;
+}
+
+.qr-login-btn:hover {
+    border-color: rgba(159, 13, 127, 0.35);
+    background: rgba(159, 13, 127, 0.025);
+}
+
+.contact-sales {
+    margin: 28px 0 0;
+    text-align: center;
+    font-size: 64%;
+    color: rgba(39, 47, 72, 0.55);
+}
+
+.contact-sales a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer {
+    margin-top: auto;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.login-footer a {
+    font-size: 60%;
+    text-decoration: none;
+    color: rgba(39, 47, 72, 0.55);
+}
+
+.login-footer span {
+    height: 12px;
+    width: 1px;
+    background: #CDD3DD;
+}
+/* ----------------------------------------- CSS FOR LOGIN-PAGE START ---------------------------------------------- */
+
 /* ----------------------------------------- CSS FOR PENDING-LIST-PAGE START ---------------------------------------------- */
 .content-table.pending-list table thead tr th {
     background: #FFEEC8;
@@ -1150,7 +1599,26 @@ span.sidebar-menu-nav-icon i {
 }
 /* ----------------------------------------- CSS FOR ONLINE-PAYMENT-PAGE COMPLETE ---------------------------------------------- */
 
-/* ----------------------------------------- CSS FOR SELF-DOCTOR-PAGE START ---------------------------------------------- */
+/* ----------------------------------------- CSS FOR SELF-DOCTOR-LIST-PAGE START ---------------------------------------------- */
+.content-table.self-doctor-list .content-table-text p.correct {
+    color: #0B894D;
+}
+
+.content-table.self-doctor-list .content-table-text p.non-correct {
+    color: #CE0104;
+}
+
+.content-table.self-doctor-list .content-table-text h6 {
+    font-size: 70%;
+}
+
+.content-table.self-doctor-list .content-table-text h6 a {
+    text-decoration: underline;
+    color: #0B63D1;
+}
+/* ----------------------------------------- CSS FOR SELF-DOCTOR-LIST-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR SELF-DOCTOR-PAGE-ADD START ---------------------------------------------- */
 .form-formalities-box {
     height: auto;
     width: 100%;
@@ -1165,7 +1633,7 @@ span.sidebar-menu-nav-icon i {
     font-size: 120%;
     margin: 10px 0 15px;
 }
-/* ----------------------------------------- CSS FOR SELF-DOCTOR-PAGE COMPLETE ---------------------------------------------- */
+/* ----------------------------------------- CSS FOR SELF-DOCTOR-PAGE-ADD COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- CSS FOR PAGINATION START ---------------------------------------------- */
 .table-pagination {
