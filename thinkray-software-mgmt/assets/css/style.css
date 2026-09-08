@@ -1,6 +1,5 @@
 /*--------------------------------------------- CSS FOR INCLUDING FOR FONTS START ---------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 /*--------------------------------------------- CSS FOR INCLUDING FOR FONTS COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PRE-DEFINED START ---------------------------------------*/
@@ -13,7 +12,7 @@
     --line-height: 1.5;
     --font-weight: normal;
     --light: #ffffff;
-    --dark: #222;
+    --dark: #272F48;
     --primary: #9F0D7F;
     --secondary: #FFEEC8;
     --success: #2F9D69;
@@ -82,12 +81,13 @@ table thead tr th,
 table tbody tr td {
     padding: 8px 15px;
     border-bottom: 1px solid #E5E5E5;
+    white-space: nowrap;
 }
 
 table thead tr th {
     background: #FAFAFA;
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 110%;
 }
 
@@ -145,6 +145,12 @@ button.disbaled {
     opacity: 0.6;
 }
 
+.content-table-btn-part {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .content-table-btn-part button.completed-btn,
 .content-table-btn-part button.edit-btn,
 .content-table-btn-part button.print-btn,
@@ -160,31 +166,31 @@ button.disbaled {
     font-size: 100%;
 }
 
-.content-table.case-list .content-table-btn-part button.completed-btn {
+.content-table-btn-part button.completed-btn {
     background: var(--success);
 }
 
-.content-table.case-list .content-table-btn-part button.edit-btn {
+.content-table-btn-part button.edit-btn {
     background: #0097C0;
 }
 
-.content-table.case-list .content-table-btn-part button.print-btn {
+.content-table-btn-part button.print-btn {
     background: #003778;
 }
 
-.content-table.case-list .content-table-btn-part button.warning-btn {
+.content-table-btn-part button.warning-btn {
     background: var(--warning);
 }
 
-.content-table.case-list .content-table-btn-part button.pending-btn {
+.content-table-btn-part button.pending-btn {
     background: var(--neutral);
 }
 
-.content-table.case-list .content-table-btn-part button.request-btn {
+.content-table-btn-part button.request-btn {
     background: var(--failure);
 }
 
-.content-table.case-list .content-table-btn-part button.submitted-btn {
+.content-table-btn-part button.submitted-btn {
     background: #F2F2F2;
     border: 1px solid #EBEBEB;
     color: var(--dark);
@@ -205,10 +211,6 @@ main.main-page {
     height: auto;
     width: 100%;
     max-width: 150px;
-}
-
-.rupee-symbol {
-    font-family: "Rosario", sans-serif;
 }
 
 section.page-section {
@@ -260,7 +262,7 @@ section.page-section.expanded {
     transform: translateY(-50%);
     font-size: 110%;
     background: var(--primary);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 5px 10px;
     color: var(--light);
     z-index: 2;
@@ -558,6 +560,10 @@ span.profile-submenu-icon img {
     display: none;
 }
 
+.sidebar-submenu a {
+    margin-bottom: 0;
+}
+
 span.sidebar-menu-nav-icon {
     padding-right: 14px;
 }
@@ -618,10 +624,18 @@ span.sidebar-menu-nav-icon i {
 
 .content-table.pending-list .content-table-text h5 {
     font-size: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .content-table.pending-list .content-table-text p {
-    font-size: 80%;
+    font-size: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .content-table.pending-list .content-table-text p span {
@@ -635,39 +649,173 @@ span.sidebar-menu-nav-icon i {
     height: auto;
     width: 100%;
     padding-bottom: 15px;
+    color: var(--dark);
 }
 
 .content-table.case-list .content-table-text h5 {
     font-size: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .content-table.case-list .content-table-text p {
-    font-size: 80%;
+    font-size: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .content-table.case-list .content-table-text em {
-    font-size: 80%;
+    font-size: 85%;
     font-style: normal;
     color: #0B63D1;
 }
 
 .content-table.case-list .content-table-text h6 {
-    font-size: 80%;
+    font-size: 85%;
     color: var(--primary);
 }
 
 .content-table.case-list .content-table-text a {
-    font-size: 80%;
+    font-size: 85%;
     text-decoration: underline;
     color: #0B63D1;
 }
+/* ----------------------------------------- CSS FOR CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
 
-.content-table.case-list .content-table-btn-part {
+/* ----------------------------------------- CSS FOR HISTORY-PAGE START ---------------------------------------------- */
+.content-table.history .content-table-text h6 {
+    font-size: 105%;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.content-table.history .content-table-text p {
+    font-size: 95%;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.content-table.history .content-table-text p i {
+    font-size: 170%;
+    padding: 0 10px;
+}
+
+.content-table.history .content-table-text span.non-approved {
+    color: #CE0104;
+}
+
+.content-table.history .content-table-text span.approved {
+    color: #0B894D;
+}
+
+.content-table.history .content-table-text em {
+    font-size: 90%;
+    font-style: normal;
+}
+/* ----------------------------------------- CSS FOR HISTORY-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR CHARGE-HISTORY-PAGE START ---------------------------------------------- */
+.content-formalities .content-table-btn-part button.print-btn {
+    padding: 11px 15px;
+    margin-left: 5px;
+}
+
+.content-table.c-history .content-table-text h6 {
+    font-size: 105%;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    margin-bottom: 4px;
+}
+
+.content-table.c-history .content-table-text p {
+    font-size: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+/* ----------------------------------------- CSS FOR CHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR RECHARGE-HISTORY-PAGE START ---------------------------------------------- */
+.payment-formalities-box {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 15px 22px;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 #00000020;
     display: flex;
     align-items: center;
-    gap: 5px;
+    z-index: 1;
 }
-/* ----------------------------------------- CSS FOR CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
+
+.payment-icon {
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0 16px 0 0;
+}
+
+.payment-icon.wallet {
+    background: #F5E7F2;
+}
+.payment-icon.rupee {
+    background: #E8ECFF;
+}
+
+.payment-icon i {
+    font-size: 170%;
+    color: var(--primary);
+}
+
+.payment-icon.wallet i {
+    color: var(--primary);
+}
+
+.payment-icon.rupee i {
+    color: #0928A8;
+}
+
+.payment-formalities-box h6 {
+    font-size: 95%;
+    font-weight: 500;
+}
+
+.payment-formalities-box h3 {
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.payment-formalities-box h3 span {
+    font-weight: 300;
+}
+
+.payment-formalities-box p.floating-paragraph {
+    position: absolute;
+    bottom: 22px;
+    right: 25px;
+    font-size: 90%;
+    font-weight: 500;
+    color: #0B894D;
+}
+/* ----------------------------------------- CSS FOR RECHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- CSS FOR PAGINATION START ---------------------------------------------- */
 .table-pagination {

@@ -74,6 +74,7 @@
         float: right;
     }
     .top-header-content {
+        display: none;
         position: absolute;
         right: 20px;
         top: 60px;
@@ -84,11 +85,17 @@
         border-radius: 10px;
         box-shadow: 0 5px 15px 0 #00000020;
         color: var(--dark);
-        padding: 18px 0;
+        padding: 15px 0;
         height: auto;
         width: 100%;
         max-width: 320px;
         z-index: 102;
+    }
+    .top-header-content.open {
+        display: block;
+    }
+    .user-call-supports p {
+        color: var(--primary);
     }
     main.main-page {
         height: auto;
@@ -118,9 +125,13 @@
     .top-header.expanded {
         max-width: 100%;
     }
+    section.page-section,
+    section.page-section.expanded {
+        max-width: 100%;
+    }
     .user-supports {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
     }
     .user-notification {
         position: fixed;
@@ -138,12 +149,13 @@
     .user-wallet {
         background: #e4e4e452;
         border: 1px solid #b45ba145;
+        margin: 0 auto 15px;
+        width: 100%;
+        max-width: 60%;
+        padding: 4px 0;
     }
     .user-wallet p {
         color: #333;
-    }
-    .sidebar-menu-nav a {
-        margin-bottom: 5px;
     }
     section.page-section {
         margin-top: 70px;
@@ -154,12 +166,13 @@
     }
     .top-header-user-name {
         margin-bottom: 0;
-    }
-    .top-header.expanded .top-header-user-name {
         padding-left: 40px;
     }
     .profile-submenu a {
         padding: 8px 15px;
+    }
+    .payment-formalities-box {
+        padding: 15px 18px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -179,6 +192,22 @@
     span.sidebar-menu-nav-icon {
         padding-right: 10px;
     }
+    input,
+    select,
+    textarea {
+        padding: 10px 15px;
+    }
+    .sidebar-menu-nav a p {
+        font-size: 110%;
+    }
+    .payment-formalities-box {
+        padding: 10px 15px;
+    }
+    .payment-formalities-box p.floating-paragraph {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -194,11 +223,27 @@
     }
     .top-header-content {
         max-width: 250px;
-        padding: 12px 0;
+        padding: 13px 0;
     }
     .user-wallet {
-        padding: 4px 8px;
+        padding: 2px 0;
         border-radius: 8px;
+        max-width: 80%;
+    }
+    .content-formalities {
+        padding-bottom: 12px;
+    }
+    .payment-formalities-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .payment-icon {
+        height: 42px;
+        width: 42px;
+        margin: 0 0 8px;
+    }
+    .payment-formalities-box h3 {
+        font-size: 180%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
@@ -207,7 +252,6 @@
 @media only screen and (max-width: 375px) {
     .top-header-content {
         max-width: 245px;
-        padding: 10px 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
