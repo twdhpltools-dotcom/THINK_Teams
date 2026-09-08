@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Charge History | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Self Doctor | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,7 +29,7 @@
 
 <body>
 
-  <!----------------------------------- CHARGE-HISTORY-PAGE ------------------------------------------------->
+  <!----------------------------------- SELF-DOCTOR-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
@@ -135,7 +135,7 @@
           </span>
           <p>Modify History</p>
         </a>
-        <a href="c-history.html" class="active">
+        <a href="c-history.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
           </span>
@@ -180,7 +180,7 @@
         </a>
 
         <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html">
+          <a href="self-doctor.html" class="active">
             <span class="sidebar-menu-nav-icon">
               <i class="bi bi-person-square"></i>
             </span>
@@ -199,176 +199,73 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
-            <div class="content-table-btn-part text-end">
-              <input type="date" name="" placeholder="">
-              <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="form-formalities-box">
+              <h5>Add Doctor</h5>
+              <div class="row gx-3 gy-3">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <input type="text" name="" value="" placeholder="Enter doctor name *">
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <input type="text" name="" value="" placeholder="Enter registration number *">
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <input type="tel" name="" value="" placeholder="Enter mobile number *">
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <input type="email" name="" value="" placeholder="Enter email address *">
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <input type="text" name="" value="" placeholder="Enter qualification *">
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <select name="">
+                    <option value="0" selected="">Select modality *</option>
+                    <option value="1">Others</option>
+                  </select>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <select name="">
+                    <option value="0">Select Status *</option>
+                    <option value="1" selected="">Active</option>
+                    <option value="1">In-Active</option>
+                  </select>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                  <input type="text" name="" value="" placeholder="Enter remarks (Optional)">
+                </div>
+              </div>
+              <div class="field-formalities-action-part upload py-2" onclick="document.getElementById('FileUpload').click()">
+                <div class="d-flex align-items-center">
+                  <span class="field-icon scaled">
+                    <img src="assets/images/upload-icon.png" alt="field icon" />
+                  </span>
+                  <div>
+                    <input type="file" id="FileUpload" hidden="">
+                    <h6>Upload Branding Page</h6>
+                    <p>Select only .JPG template file</p>
+                  </div>
+                </div>
+                <div class="content-table-btn-part">
+                  <button type="button" class="browse-btn"><i class="bi bi-folder2-open"></i> Browse File</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="content-table c-history">
-        <table>
-          <thead>
-            <tr>
-              <th>SL</th>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Patient Name</th>
-              <th>Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Monisha Lakra</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Nanibala Barman</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>PREMANANDA GOSWAMI</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>04</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Monisha Halder</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>05</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Angana Guja</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>06</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>AUGUSTIN JONES</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>07</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Debanjan Dhar</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>08</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Madhurima Acharya</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>09</td>
-              <td>10 August, 2026</td>
-              <td>10:35 AM</td>
-              <td>
-                <div class="content-table-text">
-                  <h6>Etwa Munda</h6>
-                  <p>KNEE AP/LAT VIEW</p>
-                </div>
-              </td>
-              <td>25</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="table-pagination">
-        <div class="pagination-left">
-          <span class="pagination-label">Items Per Page :</span>
-
-          <select id="itemsPerPage" class="pagination-select">
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </div>
-
-        <div class="pagination-right">
-          <span id="pageInfo" class="page-info">1 of 10</span>
-
-          <button class="pagination-btn" id="firstPageBtn" type="button">
-            <i class="bi bi-chevron-bar-left"></i>
-          </button>
-
-          <button class="pagination-btn" id="prevPageBtn" type="button">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <button class="pagination-btn" id="nextPageBtn" type="button">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-
-          <button class="pagination-btn" id="lastPageBtn" type="button">
-            <i class="bi bi-chevron-bar-right"></i>
-          </button>
         </div>
       </div>
     </section>
 
   </main>
-  <!----------------------------------- CHARGE-HISTORY-PAGE ------------------------------------------------->
+  <!----------------------------------- SELF-DOCTOR-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
