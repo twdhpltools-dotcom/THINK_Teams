@@ -549,11 +549,30 @@ span.profile-submenu-icon img {
 }
 
 .sidebar-menu-nav a {
+    position: relative;
     display: block;
     padding: 14px 18px;
     color: #444;
     border-radius: 10px;
     margin-bottom: 8px;
+    z-index: 1;
+}
+
+.sidebar-menu-nav a::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    max-width: 3px;
+    border-radius: 20px;
+    background: var(--primary);
+    transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 2;
 }
 
 .sidebar-menu.collapsed .sidebar-menu-nav a {
@@ -587,6 +606,13 @@ span.sidebar-menu-nav-icon i {
     background: #9f0d7f0d;
     color: var(--primary);
     font-weight: 600;
+}
+
+.sidebar-menu-nav a:hover::after,
+.sidebar-menu-nav a.active::after {
+    transform: scaleY(100%);
+    opacity: 1;
+    visibility: visible;
 }
 
 .sidebar-submenu {
