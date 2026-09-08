@@ -141,6 +141,10 @@ button {
     transition: 0.4s ease-in-out;
 }
 
+button i {
+    padding-right: 4px;
+}
+
 button.disbaled {
     opacity: 0.6;
 }
@@ -157,7 +161,8 @@ button.disbaled {
 .content-table-btn-part button.warning-btn,
 .content-table-btn-part button.pending-btn,
 .content-table-btn-part button.request-btn,
-.content-table-btn-part button.submitted-btn {
+.content-table-btn-part button.submitted-btn,
+.content-table-btn-part button.browse-btn {
     padding: 7px 15px;
     background: var(--success);
     border: none;
@@ -196,6 +201,10 @@ button.disbaled {
     color: var(--dark);
 }
 
+.content-table-btn-part button.browse-btn {
+    background: var(--primary);
+}
+
 hr {
     margin: 8px 0;
 }
@@ -224,6 +233,18 @@ section.page-section {
 
 section.page-section.expanded {
   max-width: calc(100% - 80px);
+}
+
+.page-section-heading {
+    height: auto;
+    width: 100%;
+    padding: 12px 0;
+    color: var(--dark);
+}
+
+.page-section-heading h1 {
+    font-weight: 700;
+    font-size: 125%;
 }
 
 .content-table {
@@ -678,6 +699,10 @@ span.sidebar-menu-nav-icon i {
     color: var(--dark);
 }
 
+.content-formalities.blank {
+    padding: 180px 70px;
+}
+
 .content-table.case-list .content-table-text h5 {
     font-size: 110%;
     white-space: nowrap;
@@ -762,7 +787,7 @@ span.sidebar-menu-nav-icon i {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 150px;
+    max-width: 200px;
     margin-bottom: 4px;
 }
 
@@ -771,7 +796,7 @@ span.sidebar-menu-nav-icon i {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 150px;
+    max-width: 200px;
 }
 /* ----------------------------------------- CSS FOR CHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
@@ -797,6 +822,7 @@ span.sidebar-menu-nav-icon i {
     justify-content: center;
     border-radius: 8px;
     margin: 0 16px 0 0;
+    flex-shrink: 0;
 }
 
 .payment-icon.wallet {
@@ -843,6 +869,304 @@ span.sidebar-menu-nav-icon i {
 }
 /* ----------------------------------------- CSS FOR RECHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- CSS FOR TEMPLATE-PAGE START ---------------------------------------------- */
+.content-table.template .content-table-text h6 {
+    font-size: 105%;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+/* ----------------------------------------- CSS FOR TEMPLATE-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR CONFIGURE-PAGE START ---------------------------------------------- */
+.field-formalities-box {
+    height: auto;
+    width: 100%;
+    padding: 12px 18px;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 #00000020;
+}
+
+.field-formalities-box h5 {
+    font-weight: 700;
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+.field-formalities-action-part {
+    height: auto;
+    width: 100%;
+    background: #F9F9F9;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.field-formalities-action-part.upload {
+    background: #FFFAFE;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 28px 18px;
+}
+
+.field-icon {
+    height: 45px;
+    width: 45px;
+    background: var(--light);
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 18px 0 0;
+    flex-shrink: 0;
+}
+
+.field-icon.new {
+    background: #EBF4FF;
+    border: none;
+    border-radius: 50px;
+}
+
+.field-icon.scaled {
+    height: 65px;
+    width: 65px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px 0 #00000010;
+}
+
+.field-icon img {
+    max-width: 25px;
+}
+
+.field-formalities-action-part h6 {
+    font-size: 100%;
+}
+
+.field-formalities-action-part p {
+    font-size: 75%;
+}
+
+.field-formalities-action-part button {
+    padding: 9px 20px !important;
+}
+/* ----------------------------------------- CSS FOR CONFIGURE-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR ONLINE-PAYMENT-PAGE START ---------------------------------------------- */
+.info-formalities-box {
+    height: 100%;
+    width: 100%;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 #00000020;
+    overflow: hidden;
+}
+
+.info-formalities-box-head {
+    height: auto;
+    width: 100%;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-formalities-box-head {
+    background: #E8ECFF;
+}
+
+.info-formalities-box-head.right {
+    background: #f6dcf14f;
+}
+
+.info-icon {
+    height: 55px;
+    width: 55px;
+    background: #cfd6f64f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 15px 0 0;
+    flex-shrink: 0;
+}
+
+.info-icon img {
+    max-width: 30px;
+}
+
+.info-icon.head-right {
+    background: #f6dcf16b;
+}
+
+.info-formalities-box-head h5 {
+    font-weight: 700;
+    font-size: 120%;
+}
+
+.info-formalities-box-head p {
+    font-size: 85%;
+}
+
+.info-formalities-box-body {
+    height: auto;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.info-formalities-part {
+    height: auto;
+    width: 100%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-bottom: 1px solid #00000020;
+}
+
+.info-formalities-part:last-child {
+    border: none;
+}
+
+.info-formalities-part .info-icon {
+    height: 45px;
+    width: 45px;
+}
+
+.info-formalities-part .info-icon img {
+    max-width: 22px;
+}
+
+.info-formalities-part h6 {
+    font-size: 95%;
+    color: #545D79;
+    font-weight: 500;
+}
+
+.info-formalities-part p {
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.info-formalities-box-cta {
+    height: auto;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto 25px;
+    padding: 14px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9fdfcd1;
+    border: 1px solid #CCF2E0;
+    border-radius: 10px;
+}
+
+.cta-icon {
+    height: 40px;
+    width: 40px;
+    background: #EEFDF9;
+    border: 1px solid #A4E2C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 12px 0 0;
+    flex-shrink: 0;
+}
+
+.cta-icon.bigger {
+    height: 80px;
+    width: 80px;
+    background: #DDF6E9;
+    border: none;
+}
+
+.cta-icon i {
+    font-size: 100%;
+    color: #0C844C;
+}
+
+.cta-icon.bigger i {
+    font-size: 250%;
+}
+
+.info-formalities-box-cta h5 {
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.info-formalities-box-cta p {
+    font-size: 90%;
+    font-weight: 600;
+    color: #545D79;
+}
+
+.pay-mobile-image {
+    height: auto;
+    width: 100%;
+    max-width: 60%;
+    margin: 10px auto;
+}
+
+.pay-reminder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  background: #f7fbff;
+  border: 1px solid #cfe2ff;
+  border-radius: 12px;
+}
+
+.pay-reminder-icon {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    border-radius: 50%;
+    color: #0969da;
+    font-size: 110%;
+}
+
+.pay-reminder p {
+    margin: 0;
+    color: #48536a;
+    font-size: 78%;
+    font-weight: 500;
+    line-height: 1.45;
+}
+/* ----------------------------------------- CSS FOR ONLINE-PAYMENT-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR SELF-DOCTOR-PAGE START ---------------------------------------------- */
+.form-formalities-box {
+    height: auto;
+    width: 100%;
+    padding: 12px 18px;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 #00000020;
+}
+
+.form-formalities-box h5 {
+    font-weight: 700;
+    font-size: 120%;
+    margin: 10px 0 15px;
+}
+/* ----------------------------------------- CSS FOR SELF-DOCTOR-PAGE COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- CSS FOR PAGINATION START ---------------------------------------------- */
 .table-pagination {
     height: auto;
@@ -852,7 +1176,7 @@ span.sidebar-menu-nav-icon i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #ffffff;
+    background: var(--light);
     border: 1px solid #e8e8e8;
     border-radius: 10px;
 }

@@ -27,6 +27,22 @@
     .top-header  {
         max-width: calc(100% - 280px);
     }
+    .pay-mobile-image {
+        max-width: 70%;
+    }
+    .pay-reminder {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .info-formalities-box-head {
+        padding: 15px 20px;
+    }
+    .info-formalities-box-cta {
+        padding: 10px 20px;
+    }
+    .info-formalities-box-body {
+        padding: 12px 20px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -60,6 +76,22 @@
     }
     .content-table {
         padding: 12px;
+    }
+    .pay-mobile-image {
+        max-width: 30%;
+        margin: 8px auto;
+    }
+    .info-formalities-box-head {
+        padding: 12px 18px;
+    }
+    .info-formalities-box-body {
+        padding: 10px 18px;
+    }
+    .info-formalities-box-cta {
+        padding: 8px 18px;
+    }
+    .content-formalities.blank {
+        padding: 150px 50px;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -174,6 +206,17 @@
     .payment-formalities-box {
         padding: 15px 18px;
     }
+    .cta-icon.bigger {
+        height: 70px;
+        width: 70px;
+    }
+    .pay-mobile-image {
+        max-width: 40%;
+        margin: 5px auto;
+    }
+    .pay-reminder {
+        flex-wrap: nowrap;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -197,6 +240,16 @@
     textarea {
         padding: 10px 15px;
     }
+    .content-table-btn-part button.completed-btn,
+    .content-table-btn-part button.edit-btn,
+    .content-table-btn-part button.print-btn,
+    .content-table-btn-part button.warning-btn,
+    .content-table-btn-part button.pending-btn,
+    .content-table-btn-part button.request-btn,
+    .content-table-btn-part button.submitted-btn,
+    .content-table-btn-part button.browse-btn {
+        padding: 6px 12px;
+    }
     .sidebar-menu-nav a p {
         font-size: 110%;
     }
@@ -207,6 +260,9 @@
         position: relative;
         bottom: 0;
         right: 0;
+    }
+    .content-formalities.blank {
+        padding: 120px 30px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -245,6 +301,51 @@
     .payment-formalities-box h3 {
         font-size: 180%;
     }
+    .field-formalities-action-part.upload {
+        margin-top: 7px;
+        padding: 14px 15px;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .field-formalities-box {
+        padding: 10px 15px;
+    }
+    .info-formalities-box-head {
+        padding: 7px 14px;
+    }
+    .info-formalities-box-body {
+        padding: 5px 10px;
+    }
+    .info-formalities-part {
+        padding: 8px 10px;
+    }
+    .info-formalities-part .info-icon {
+        height: 40px;
+        width: 40px;
+    }
+    .info-formalities-part .info-icon img {
+        max-width: 20px;
+    }
+    .info-formalities-box-cta {
+        padding: 7px 16px;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+    .cta-icon.bigger {
+        height: 60px;
+        width: 60px;
+    }
+    .cta-icon.bigger i {
+        font-size: 220%;
+    }
+    .pay-mobile-image {
+        max-width: 60%;
+        margin: 3px auto;
+    }
+    .content-formalities.blank {
+        padding: 100px 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 
@@ -252,6 +353,15 @@
 @media only screen and (max-width: 375px) {
     .top-header-content {
         max-width: 245px;
+    }
+    .info-formalities-box-cta {
+        gap: 10px;
+    }
+    .pay-mobile-image {
+        max-width: 70%;
+    }
+    .field-icon {
+        margin: 0 15px 0 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
