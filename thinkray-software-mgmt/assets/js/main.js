@@ -65,11 +65,7 @@ document.querySelectorAll(".go-back-btn").forEach((btn) => {
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 const searchTexts=[
   "Search patient, Inv No ...",
-  "Search by tests ...",
-  "Search by health packages ...",
-  "Search by reports, prescriptions ...",
-  "Search by invoice number ...",
-  "Search helps & faq's ..."
+  "Search by test name or study"
 ];
 
 const searchInput=document.querySelector(".search-input input");
