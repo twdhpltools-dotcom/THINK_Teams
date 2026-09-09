@@ -30,10 +30,9 @@
 <body>
 
   <!----------------------------------- LOG-IN-PAGE ------------------------------------------------->
-<main class="login-page">
+  <main class="login-page">
 
     <section class="login-visual">
-
       <div class="visual-overlay"></div>
 
       <div class="visual-content">
@@ -42,10 +41,8 @@
         </div>
 
         <div class="login-intro">
-          <h2>Smarter <span>Labs</span> Healthier Tomorrow</h2>
-
+          <h1>Smarter <span>Labs</span> Healthier Tomorrow</h1>
           <p class="intro-text">Simplifying diagnostic operations for a better, healthier world.</p>
-
           <div class="login-features">
             <div class="login-feature-item">
               <div class="feature-icon feature-purple">
@@ -89,7 +86,6 @@
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="login-section">
@@ -102,50 +98,59 @@
           </div>
 
           <form method="" action="">
-            <div class="form-group">
-              <label>Username</label>
-              <div class="input-group">
-                <i class="bi bi-person"></i>
-                <input type="text" placeholder="Enter username *" required />
+            <div class="row gx-3 gy-3">
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <label>Username *</label>
+                <div class="login-input">
+                  <i class="bi bi-person login-left-icon"></i>
+                  <input type="password" name="" placeholder="Enter username" required>
+                </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label>Password</label>
-              <div class="input-group">
-                <i class="bi bi-lock"></i>
-                <input type="password" id="password" placeholder="Enter password *" required />
-                <button type="button" class="password-toggle" onclick="togglePassword()">
-                  <i id="PasswordIcon" class="bi bi-eye-slash"></i>
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <label>Password *</label>
+                <div class="login-input">
+                  <i class="bi bi-lock login-left-icon"></i>
+                  <input type="password" name="" placeholder="Enter password" required>
+                  <i class="bi bi-eye login-right-icon"></i>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <div class="login-options">
+                  <label class="remember-option">
+                    <input type="checkbox" />
+                    <span>Remember me</span>
+                  </label>
+                  <a href="#">Forgot password?</a>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <div class="login-divider">
+                  <span></span>
+                  <p>OR</p>
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <button type="button" class="google-login-btn">
+                  <i class="bi bi-google"></i>
+                  <span>Sign in with Google</span>
                 </button>
               </div>
+
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <div class="content-table-btn-part mt-1">
+                  <button type="submit" class="browse-btn w-100" onclick="window.location.href='index.html'">Log In <i class="bi bi-arrow-right"></i></button>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                <p class="contact-sales">Don't have an account? <a href="#">Contact Sales</a></p>
+              </div>
             </div>
-
-            <div class="login-options">
-              <label class="remember-option">
-                <input type="checkbox" />
-                <span>Remember me</span>
-              </label>
-              <a href="#">Forgot password?</a>
-            </div>
-
-            <button type="submit" class="login-btn" onclick="window.location.href='index.html'">
-              <span>Sign In</span>
-              <i class="bi bi-arrow-right"></i>
-            </button>
-
-            <div class="login-divider">
-              <span></span>
-              <p>OR</p>
-              <span></span>
-            </div>
-
-            <button type="button" class="qr-login-btn">
-              <i class="bi bi-qr-code"></i>
-              <span>Sign in with QR Code</span>
-            </button>
-
-            <p class="contact-sales">Don't have an account? <a href="#">Contact Sales</a></p>
           </form>
         </div>
 
@@ -170,7 +175,7 @@
   <!----------------------------------- JS FOR BOOTSTRAP FILES START ------------------------------------------------->
   <script src="assets/js/bootstrap-bundle-min.js" type="text/javascript"></script>
   <!------------------------------------- JS FOR BOOTSTRAP FILES COMPLETED ------------------------------------------->
-  
+
   <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
   <script src="assets/js/custom-menu.js" type="text/javascript"></script>
   <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
