@@ -217,6 +217,18 @@
     .pay-reminder {
         flex-wrap: nowrap;
     }
+    .modal-content-box {
+        padding: 12px 18px;
+    }
+    .patient-info-editor {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 14px 22px;
+    }
+    .patient-info-editor-column {
+        height: auto;
+        width: 100%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -264,6 +276,13 @@
     .content-formalities.blank {
         padding: 120px 30px;
     }
+    .field-icon.scaled {
+        height: 55px;
+        width: 55px;
+    }
+    .upload-success-image {
+        max-width: 65px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -305,7 +324,7 @@
         margin-top: 7px;
         padding: 14px 15px;
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 12px;
     }
     .field-formalities-box {
         padding: 10px 15px;
@@ -346,6 +365,21 @@
     .content-formalities.blank {
         padding: 100px 0;
     }
+    .modal-content-box {
+        padding: 6px 8px;
+    }
+    .editor-toolbar {
+        gap: 4px;
+        padding: 0 0 10px;
+        margin-bottom: 12px;
+    }
+    .patient-info-editor {
+        padding: 12px 18px;
+        gap: 15px;
+    }
+    .patient-info-editor-row {
+        margin-bottom: 12px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 
@@ -362,6 +396,9 @@
     }
     .field-icon {
         margin: 0 15px 0 0;
+    }
+    .modal-content-box {
+        padding: 4px 5px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
