@@ -40,28 +40,20 @@ document.addEventListener("click", function () {
 });
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
 
-/*-------------------------------------- OTP-INPUT ----------------------------------------*/
-const otpInputs = document.querySelectorAll('.otp-input');
-
-otpInputs.forEach((input, index) => {
-  input.addEventListener('input', function () {
-    this.value = this.value.replace(/\D/g, '').slice(0, 1);
-    if (this.value && index < otpInputs.length - 1) {
-      otpInputs[index + 1].focus();
-    }
-  });
-
-  input.addEventListener('keydown', function (e) {
-    if (e.key === 'Backspace' && !this.value && index > 0) {
-      otpInputs[index - 1].focus();
-    }
-  });
-});
-
-function getOTP() {
-  return Array.from(otpInputs).map(input => input.value).join('');
+/* ------------------------------------- PASSWORD-ICON ------------------------------------------ */
+function togglePassword() {
+  const password = document.querySelector('.default-pass');
+  const eye = document.querySelector('.pass-eye-icon');
+  
+  if (password.type === 'password') {
+    password.type = 'text';
+    eye.className = 'fa fa-eye-slash pass-eye-icon';
+  } else {
+    password.type = 'password';
+    eye.className = 'fa fa-eye pass-eye-icon';
+  }
 }
-/*-------------------------------------- OTP-INPUT ----------------------------------------*/
+/* ------------------------------------- ASSWORD-ICON ------------------------------------------ */
 
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
@@ -78,21 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
-
-/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
-let timeLeft=30;
-const timer=document.getElementById("otpTimer");
-
-const countdown=setInterval(()=>{
-  timeLeft--;
-  timer.textContent=timeLeft;
-
-  if(timeLeft<=0){
-    clearInterval(countdown);
-    timer.parentElement.innerHTML="Resend OTP";
-  }
-},1000);
-/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
 
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 const searchTexts=[
@@ -132,9 +109,30 @@ animateSearchPlaceholder();
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 document.getElementById("FileUpload").addEventListener("change", function () {
   const file = this.files[0];
-  if (file) {
-    console.log(file.name);
-  }
+
+  if (!file) return;
+
+  const previewBox = document.getElementById("FilePreview");
+  const previewImage = document.getElementById("PreviewImage");
+  const fileName = document.getElementById("FileName");
+  const fileMeta = document.getElementById("FileMeta");
+
+  previewImage.src = URL.createObjectURL(file);
+
+  fileName.textContent = file.name;
+
+  const fileSize = (file.size / 1024).toFixed(0);
+
+  const img = new Image();
+
+  img.onload = function () {
+    fileMeta.textContent =
+      "PNG · " + fileSize + " KB · " + img.width + "×" + img.height + " px";
+  };
+
+  img.src = previewImage.src;
+
+  previewBox.classList.add("show");
 });
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 
