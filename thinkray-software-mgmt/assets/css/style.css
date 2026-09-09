@@ -230,7 +230,7 @@ main.main-page {
 section.page-section {
     height: auto;
     width: 100%;
-    max-width: calc(100% - 80px);
+    max-width: calc(100% - 300px);
     padding: 0 25px;
     margin-top: 85px;
     transition: all 0.3s ease;
