@@ -188,9 +188,9 @@ button.disbaled {
 }
 
 .content-table-btn-part button.print-btn {
-    background: #fff3fe;
-    border: 1px solid #ff24e8;
-    color: #7b006e;
+    background: #f0f0ff;
+    border: 1px solid #2824ff;
+    color: #0300a7;
 }
 
 .content-table-btn-part button.warning-btn {
@@ -202,7 +202,7 @@ button.disbaled {
 .content-table-btn-part button.pending-btn {
     background: #bbe1ff66;
     border: 1px solid var(--neutral);
-    color: #003c65;
+    color: #002950;
 }
 
 .content-table-btn-part button.request-btn {
@@ -1083,6 +1083,7 @@ span.sidebar-menu-nav-icon i {
 .content-table.pending-list .content-table-text p span {
     color: #0B63D1;
     padding-left: 4px;
+    cursor: pointer;
 }
 /* ----------------------------------------- PENDING-LIST-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1179,16 +1180,16 @@ span.sidebar-menu-nav-icon i {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
-    margin-bottom: 4px;
+    max-width: 250px;
+    margin-bottom: 1px;
 }
 
 .content-table.c-history .content-table-text p {
-    font-size: 85%;
+    font-size: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
+    max-width: 250px;
 }
 /* ----------------------------------------- CHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
