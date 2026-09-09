@@ -176,11 +176,15 @@ button.disbaled {
 }
 
 .content-table-btn-part button.completed-btn {
-    background: var(--success);
+    background: #b3ffdb66;
+    border: 1px solid var(--success);
+    color: #197449;
 }
 
 .content-table-btn-part button.edit-btn {
-    background: #0097C0;
+    background: #adedff4f;
+    border: 1px solid #0097C0;
+    color: #0e5365;
 }
 
 .content-table-btn-part button.print-btn {
@@ -192,11 +196,15 @@ button.disbaled {
 }
 
 .content-table-btn-part button.pending-btn {
-    background: var(--neutral);
+    background: #cae8ff66;
+    border: 1px solid var(--neutral);
+    color: #0364ab;
 }
 
 .content-table-btn-part button.request-btn {
-    background: var(--failure);
+    background: #ffdbdb61;
+    border: 1px solid var(--failure);
+    color: #dc3434;
 }
 
 .content-table-btn-part button.submitted-btn {
