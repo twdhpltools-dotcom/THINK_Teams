@@ -4,6 +4,9 @@
     .mobile-menu-toggle {
         display: none;
     }
+    .hide-lg {
+        display: none;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) COMPLETE ------------------------------*/
 
@@ -51,7 +54,7 @@
         max-width: 65%;
     }
     .login-section {
-        width: 35%;
+        max-width: 35%;
     }
     .login-section-inner {
         padding: 0 30px;
@@ -126,7 +129,7 @@
         max-width: 60%;
     }
     .login-section {
-        width: 40%;
+        max-width: 40%;
     }
     .login-footer {
         padding-top: 40px;
@@ -285,6 +288,35 @@
     .login-section,
     .login-visual {
         max-width: 100%;
+    }
+    .login-section {
+        padding: 35px 0;
+    }
+    .visual-content {
+        padding: 35px 30px;
+    }
+    .login-page,
+    .login-section,
+    .login-section-inner {
+        min-height: auto;
+    }
+    .login-trust {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin-top: 40px;
+    }
+    .hide-lg {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 220px;
+    }
+    .hide-sm {
+        display: none;
+    }
+    .login-logo.hide-lg {
+        margin: 0 auto 20px;
+        max-width: 220px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -447,6 +479,30 @@
     .patient-info-editor-row {
         margin-bottom: 12px;
     }
+    .login-section {
+        padding: 25px 0;
+    }
+    .visual-content {
+        padding: 25px 20px;
+    }
+    .login-section-inner {
+        padding: 0 20px;
+    }
+    .login-logo.hide-lg {
+        margin: 0 auto 18px;
+        max-width: 200px;
+    }
+    .login-features {
+        flex-direction: column;
+        align-items: start;
+        max-width: 75%;
+        padding: 15px 18px;
+        gap: 12px;
+        margin-top: 22px;
+    }
+    .login-card {
+        padding: 30px 25px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 
@@ -466,6 +522,9 @@
     }
     .modal-content-box {
         padding: 4px 5px;
+    }
+    .login-logo.hide-lg {
+        max-width: 180px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/

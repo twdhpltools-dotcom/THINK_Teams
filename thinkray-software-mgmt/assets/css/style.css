@@ -168,7 +168,7 @@ button.disbaled {
 .content-table-btn-part button.request-btn,
 .content-table-btn-part button.submitted-btn,
 .content-table-btn-part button.browse-btn {
-    padding: 7px 15px;
+    padding: 6px 15px;
     border: none;
     color: var(--light);
     font-weight: 400;
@@ -178,7 +178,7 @@ button.disbaled {
 .content-table-btn-part button.completed-btn {
     background: #b3ffdb66;
     border: 1px solid var(--success);
-    color: #197449;
+    color: #05552f;
 }
 
 .content-table-btn-part button.edit-btn {
@@ -188,23 +188,27 @@ button.disbaled {
 }
 
 .content-table-btn-part button.print-btn {
-    background: #003778;
+    background: #e1efff;
+    border: 1px solid #003778;
+    color: #00244f;
 }
 
 .content-table-btn-part button.warning-btn {
-    background: var(--warning);
+    background: #fff6f0;
+    border: 1px solid var(--warning);
+    color: #cf5c0a;
 }
 
 .content-table-btn-part button.pending-btn {
     background: #cae8ff66;
     border: 1px solid var(--neutral);
-    color: #0364ab;
+    color: #003d69;
 }
 
 .content-table-btn-part button.request-btn {
     background: #ffdbdb61;
     border: 1px solid var(--failure);
-    color: #dc3434;
+    color: #d33131;
 }
 
 .content-table-btn-part button.submitted-btn {
@@ -894,7 +898,6 @@ span.sidebar-menu-nav-icon i {
     width: 100%;
     max-width: 30%;
     min-height: 100vh;
-    padding: 45px 0;
     background: radial-gradient(
         circle at 100% 0%,
         #0d99ff12,
@@ -906,7 +909,7 @@ span.sidebar-menu-nav-icon i {
 .login-section-inner {
     width: 100%;
     padding: 0 50px;
-    min-height: calc(100vh - 70px);
+    min-height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
