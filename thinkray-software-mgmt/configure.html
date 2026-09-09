@@ -211,7 +211,7 @@
                   <h6>Signature</h6>
                 </div>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn"><i class="bi bi-pencil-square"></i> Edit</button>
+                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#signatureConfigModal"><i class="bi bi-pencil-square"></i> Edit</button>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@
                   <h6>QR code</h6>
                 </div>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn"><i class="bi bi-pencil-square"></i> Edit</button>
+                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#qrConfigModal"><i class="bi bi-pencil-square"></i> Edit</button>
                 </div>
               </div>
             </div>
@@ -258,10 +258,188 @@
                 </div>
               </div>
             </div>
+
+            <div class="field-formalities-box mt-4">
+              <div class="d-flex align-items-center">
+                <span class="field-icon new">
+                  <img src="assets/images/pictue-icon.png" alt="field icon" />
+                </span>
+                <h5>Branding</h5>
+              </div>
+              <div class="field-formalities-action-part upload">
+                <div class="d-flex align-items-center">
+                  <span class="upload-success-image">
+                    <img src="assets/images/thinklab-logo.webp" alt="UPLOADED IMAGE" />
+                  </span>
+                  <div>
+                    <h6>BIHM - Logo - png</h6>
+                    <p>PNG . 256 KB . 512x512 px</p>
+                  </div>
+                </div>
+                <div class="content-table-btn-part">
+                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#brandingConfigModal"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!----- SIGNATURE-CONFIGURE-MODAL ------->
+    <div class="modal fade" id="signatureConfigModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Signature Settings</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box py-2">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-4 col-md-4 col-sm-4 col-6">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Position X</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-md-4 col-sm-4 col-6">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Position Y</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-md-4 col-sm-4 col-12">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Width/Size</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="mt-1">
+                      <p>Signature will be shown on the report using these saved settings.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center mt-2">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- SIGNATURE-CONFIGURE-MODAL ------->
+
+    <!----- QR-CONFIGURE-MODAL ------->
+    <div class="modal fade" id="qrConfigModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>QR code Settings</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box py-2">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-12">
+                    <select name="" required="" class="py-3">
+                      <option value="0" selected="">QR Code Status</option>
+                      <option value="1">Others</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Size</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Position X</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-12">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Position Y</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center mt-2">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- QR-CONFIGURE-MODAL ------->
+
+    <!----- BRANDING-CONFIGURE-MODAL ------->
+    <div class="modal fade" id="brandingConfigModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Branding Settings</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box py-2">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-4 col-md-4 col-sm-4 col-6">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Padding Top</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-md-4 col-sm-4 col-6">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Padding Left</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-md-4 col-sm-4 col-12">
+                    <div class="content-table-btn-part d-block">
+                      <button type="button" class="submitted-btn w-100 py-3">Padding Footer</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="mt-1">
+                      <p>Branding will be shown on the report using these saved settings.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center mt-2">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- BRANDING-CONFIGURE-MODAL ------->
 
   </main>
   <!----------------------------------- CONFIGURE-PAGE ------------------------------------------------->
@@ -273,10 +451,6 @@
   <!----------------------------------- JS FOR BOOTSTRAP FILES START ------------------------------------------------->
   <script src="assets/js/bootstrap-bundle-min.js" type="text/javascript"></script>
   <!------------------------------------- JS FOR BOOTSTRAP FILES COMPLETED ------------------------------------------->
-
-  <!------------------------------------ JS FOR CUSTOM-MODAL FILES START -------------------------------------------->
-  <script src="assets/js/custom-modal.js" type="text/javascript"></script>
-  <!----------------------------------------- JS FOR CUSTOM-MODAL FILES COMPLETE ---------------------------------------->
 
   <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
   <script src="assets/js/custom-menu.js" type="text/javascript"></script>

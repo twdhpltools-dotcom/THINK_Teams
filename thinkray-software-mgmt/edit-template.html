@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Self Doctor | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Edit Individual Investigation | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,7 +29,7 @@
 
 <body>
 
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
@@ -147,7 +147,7 @@
           </span>
           <p>Recharge History</p>
         </a>
-        <a href="template.html">
+        <a href="template.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-copy"></i>
           </span>
@@ -180,7 +180,7 @@
         </a>
 
         <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html" class="active">
+          <a href="self-doctor.html">
             <span class="sidebar-menu-nav-icon">
               <i class="bi bi-person-square"></i>
             </span>
@@ -199,166 +199,112 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-plus-lg"></i> Add Doctor</button>
+        <div class="row gx-3 gy-2">
+          <div class="col-xl-9 col-md-9 col-sm-6 col-12">
+            <div class="page-section-heading py-1">
+              <h1>Chest X-Ray</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="content-table self-doctor">
-        <table>
-          <thead>
-            <tr>
-              <th>Doctor Name</th>
-              <th>Registration Number</th>
-              <th>Mobile Number</th>
-              <th>Email Address</th>
-              <th>Qualification</th>
-              <th>Modality</th>
-              <th>Status</th>
-              <th>Remarks</th>
-              <th>Signature Preview</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dr. Shibarjan Roy</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="correct">Active</p>
-                </div>
-              </td>
-              <td>-</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>DR. MD. JADAV MONDAL</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="non-correct">In-Active</p>
-                </div>
-              </td>
-              <td>Good</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Dr. Md. Jamal Naskar</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="non-correct">In-Active</p>
-                </div>
-              </td>
-              <td>-</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>DR. MD. JADAV MONDAL</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="correct">Active</p>
-                </div>
-              </td>
-              <td>-</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>DR. Bidya Roy</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>-</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="correct">Active</p>
-                </div>
-              </td>
-              <td>-</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div class="content-formalities">
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="field-formalities-box">
+              
+              <!----- HTML-LIVE-EDIT ------->
+              <div class="editor-toolbar">
+                <button type="button" onclick="editorCmd('undo')">
+                  <i class="bi bi-arrow-counterclockwise"></i>
+                </button>
 
-      <div class="table-pagination">
-        <div class="pagination-left">
-          <span class="pagination-label">Items Per Page :</span>
+                <button type="button" onclick="editorCmd('redo')">
+                  <i class="bi bi-arrow-clockwise"></i>
+                </button>
 
-          <select id="itemsPerPage" class="pagination-select">
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </div>
+                <select onchange="formatBlock(this.value)">
+                  <option value="">Formats</option>
+                  <option value="p">Paragraph</option>
+                  <option value="h1">Heading 1</option>
+                  <option value="h2">Heading 2</option>
+                  <option value="h3">Heading 3</option>
+                </select>
 
-        <div class="pagination-right">
-          <span id="pageInfo" class="page-info">1 of 10</span>
+                <button type="button" onclick="editorCmd('bold')">
+                  <i class="bi bi-type-bold"></i>
+                </button>
 
-          <button class="pagination-btn" id="firstPageBtn" type="button">
-            <i class="bi bi-chevron-bar-left"></i>
-          </button>
+                <button type="button" onclick="editorCmd('italic')">
+                  <i class="bi bi-type-italic"></i>
+                </button>
 
-          <button class="pagination-btn" id="prevPageBtn" type="button">
-            <i class="bi bi-chevron-left"></i>
-          </button>
+                <button type="button" onclick="editorCmd('underline')">
+                  <i class="bi bi-type-underline"></i>
+                </button>
 
-          <button class="pagination-btn" id="nextPageBtn" type="button">
-            <i class="bi bi-chevron-right"></i>
-          </button>
+                <button type="button" onclick="editorCmd('copy')">
+                  <i class="bi bi-files"></i>
+                </button>
 
-          <button class="pagination-btn" id="lastPageBtn" type="button">
-            <i class="bi bi-chevron-bar-right"></i>
-          </button>
+                <button type="button" onclick="editorCmd('insertUnorderedList')">
+                  <i class="bi bi-list-ul"></i>
+                </button>
+
+                <button type="button" onclick="editorCmd('insertOrderedList')">
+                  <i class="bi bi-list-ol"></i>
+                </button>
+
+                <button type="button" onclick="editorCmd('justifyLeft')">
+                  <i class="bi bi-text-left"></i>
+                </button>
+
+                <button type="button" onclick="editorCmd('justifyCenter')">
+                  <i class="bi bi-text-center"></i>
+                </button>
+
+                <button type="button" onclick="editorCmd('justifyRight')">
+                  <i class="bi bi-text-right"></i>
+                </button>
+
+                <button type="button" onclick="editorCmd('justifyFull')">
+                  <i class="bi bi-justify"></i>
+                </button>
+
+                <label class="toolbar-color">
+                  <i class="bi bi-fonts"></i>
+                  <input type="color" onchange="setTextColor(this.value)">
+                </label>
+              </div>
+
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Template Name" />
+                  </div>
+                  
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="Write the report template here..."></textarea>
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-end mt-3">
+                      <button type="submit" class="submitted-btn">Cancel</button>
+                      <button type="submit" class="browse-btn">Save Change</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!----- HTML-LIVE-EDIT ------->
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>

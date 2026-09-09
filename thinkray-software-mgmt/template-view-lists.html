@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Self Doctor | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay View Individual Investigation | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,7 +29,7 @@
 
 <body>
 
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
@@ -147,7 +147,7 @@
           </span>
           <p>Recharge History</p>
         </a>
-        <a href="template.html">
+        <a href="template.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-copy"></i>
           </span>
@@ -180,7 +180,7 @@
         </a>
 
         <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html" class="active">
+          <a href="self-doctor.html">
             <span class="sidebar-menu-nav-icon">
               <i class="bi bi-person-square"></i>
             </span>
@@ -199,123 +199,72 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+        <div class="row gx-3 gy-2 justify-content-space-between">
+          <div class="col-xl-9 col-md-9 col-sm-6 col-6">
+            <div class="page-section-heading py-0">
+              <h1>Chest X-Ray</h1>
+              <p>3 Templates</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-sm-6 col-6">
             <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-plus-lg"></i> Add Doctor</button>
+              <button type="button" class="browse-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-plus-lg"></i> Add Template</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="content-table self-doctor">
+      <div class="content-table template">
         <table>
           <thead>
             <tr>
-              <th>Doctor Name</th>
-              <th>Registration Number</th>
-              <th>Mobile Number</th>
-              <th>Email Address</th>
-              <th>Qualification</th>
-              <th>Modality</th>
-              <th>Status</th>
-              <th>Remarks</th>
-              <th>Signature Preview</th>
+              <th>Template Name</th>
+              <th>Last Updated</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Dr. Shibarjan Roy</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
               <td>
                 <div class="content-table-text">
-                  <p class="correct">Active</p>
+                  <h6>Chest X-Ray Normal</h6>
                 </div>
               </td>
-              <td>-</td>
+              <td>17 Aug 2026</td>
               <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
+                <div class="content-table-btn-part">
+                  <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>DR. MD. JADAV MONDAL</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
               <td>
                 <div class="content-table-text">
-                  <p class="non-correct">In-Active</p>
+                  <h6>Chest X-Ray AbNormal</h6>
                 </div>
               </td>
-              <td>Good</td>
+              <td>17 Aug 2026</td>
               <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
+                <div class="content-table-btn-part">
+                  <div class="content-table-btn-part">
+                    <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                    <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
+                  </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Dr. Md. Jamal Naskar</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
               <td>
                 <div class="content-table-text">
-                  <p class="non-correct">In-Active</p>
+                  <h6>Chest X-Ray Neutral</h6>
                 </div>
               </td>
-              <td>-</td>
+              <td>17 Aug 2026</td>
               <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>DR. MD. JADAV MONDAL</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>Others</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="correct">Active</p>
-                </div>
-              </td>
-              <td>-</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>DR. Bidya Roy</td>
-              <td>98A653GKB0L674E</td>
-              <td>+91 6349304309</td>
-              <td>drshibarjan500@gmail.com</td>
-              <td>MBBS/ENT</td>
-              <td>-</td>
-              <td>
-                <div class="content-table-text">
-                  <p class="correct">Active</p>
-                </div>
-              </td>
-              <td>-</td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-eye"></i> Preview</button>
+                <div class="content-table-btn-part">
+                  <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
                 </div>
               </td>
             </tr>
@@ -358,7 +307,7 @@
     </section>
 
   </main>
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
