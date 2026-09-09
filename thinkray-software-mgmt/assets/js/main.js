@@ -1,4 +1,45 @@
 /*------------------------------------------- JS FOR MAIN START ------------------------------------------*/
+/*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+/*-------------------- SUB-MENU ----------------------*/
+function toggleSubMenu(btn) {
+  const subMenu = btn.nextElementSibling;
+
+  subMenu.classList.toggle("open");
+  const chevron = btn.querySelector(".bi-chevron-down");
+
+  if (chevron) {
+    chevron.classList.toggle("rotate");
+  }
+}
+/*-------------------- SUB-MENU ----------------------*/
+
+/*-------------------- MOBILE-MENU ----------------------*/
+function openMobileMenu() {
+  const menu = document.getElementById("mobileMenuContent");
+
+  menu.classList.toggle("open");
+}
+/*-------------------- MOBILE-MENU ----------------------*/
+/*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+
+/*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
+function toggleProfileMenu(event) {
+  event.stopPropagation();
+
+  const menu = document.getElementById("ProfileSubMenu");
+  menu.classList.toggle("active");
+}
+
+document.getElementById("ProfileSubMenu").addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+document.addEventListener("click", function () {
+  const menu = document.getElementById("ProfileSubMenu");
+  menu.classList.remove("active");
+});
+/*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
+
 /*-------------------------------------- OTP-INPUT ----------------------------------------*/
 const otpInputs = document.querySelectorAll('.otp-input');
 
@@ -22,21 +63,6 @@ function getOTP() {
 }
 /*-------------------------------------- OTP-INPUT ----------------------------------------*/
 
-/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
-let timeLeft=30;
-const timer=document.getElementById("otpTimer");
-
-const countdown=setInterval(()=>{
-  timeLeft--;
-  timer.textContent=timeLeft;
-
-  if(timeLeft<=0){
-    clearInterval(countdown);
-    timer.parentElement.innerHTML="Resend OTP";
-  }
-},1000);
-/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
-
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const telInputs = document.querySelectorAll('input[type="tel"]');
@@ -53,14 +79,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- PG-VALIDATION-(INPUT-TEL) ----------------------------------------*/
 
-/*-------------------------------------- PG-BACK-FUCNTIONALITY ----------------------------------------*/
-document.querySelectorAll(".go-back-btn").forEach((btn) => {
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.history.back();
-  });
-});
-/*-------------------------------------- PG-BACK-FUCNTIONALITY ----------------------------------------*/
+/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
+let timeLeft=30;
+const timer=document.getElementById("otpTimer");
+
+const countdown=setInterval(()=>{
+  timeLeft--;
+  timer.textContent=timeLeft;
+
+  if(timeLeft<=0){
+    clearInterval(countdown);
+    timer.parentElement.innerHTML="Resend OTP";
+  }
+},1000);
+/*-------------------------------------- TIMER-COUNT ----------------------------------------*/
 
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 const searchTexts=[
@@ -105,62 +137,6 @@ document.getElementById("FileUpload").addEventListener("change", function () {
   }
 });
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-
-/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
-function openTab(btn) {
-  document.querySelectorAll(".tab-content").forEach(content=>{
-    content.classList.add("hidden");
-  });
-
-  document.querySelectorAll(".tab-btn").forEach(button=>{
-    button.classList.remove("active");
-  });
-
-  document.getElementById(btn.dataset.tab).classList.remove("hidden");
-  btn.classList.add("active");
-}
-/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
-
-/*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
-function toggleProfileMenu(event) {
-  event.stopPropagation();
-
-  const menu = document.getElementById("ProfileSubMenu");
-  menu.classList.toggle("active");
-}
-
-document.getElementById("ProfileSubMenu").addEventListener("click", function (event) {
-  event.stopPropagation();
-});
-
-document.addEventListener("click", function () {
-  const menu = document.getElementById("ProfileSubMenu");
-  menu.classList.remove("active");
-});
-/*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
-
-/*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
-/*-------------------- SUB-MENU ----------------------*/
-function toggleSubMenu(btn) {
-  const subMenu = btn.nextElementSibling;
-
-  subMenu.classList.toggle("open");
-  const chevron = btn.querySelector(".bi-chevron-down");
-
-  if (chevron) {
-    chevron.classList.toggle("rotate");
-  }
-}
-/*-------------------- SUB-MENU ----------------------*/
-
-/*-------------------- MOBILE-MENU ----------------------*/
-function openMobileMenu() {
-  const menu = document.getElementById("mobileMenuContent");
-
-  menu.classList.toggle("open");
-}
-/*-------------------- MOBILE-MENU ----------------------*/
-/*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- PAGINATION ----------------------------------------*/
 const totalItems = 100;
@@ -238,4 +214,38 @@ lastPageBtn.addEventListener("click", function () {
 
 updatePagination();
 /*-------------------------------------- PAGINATION ----------------------------------------*/
+
+/*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
+function editorCmd(command) {
+  document.execCommand(command, false, null);
+  document.getElementById("liveEditor").focus();
+}
+
+function formatBlock(value) {
+  if (!value) return;
+
+  document.execCommand("formatBlock", false, value);
+  document.getElementById("liveEditor").focus();
+}
+
+function setTextColor(color) {
+  document.execCommand("foreColor", false, color);
+  document.getElementById("liveEditor").focus();
+}
+/*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
+
+/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
+function openTab(btn) {
+  document.querySelectorAll(".tab-content").forEach(content=>{
+    content.classList.add("hidden");
+  });
+
+  document.querySelectorAll(".tab-btn").forEach(button=>{
+    button.classList.remove("active");
+  });
+
+  document.getElementById(btn.dataset.tab).classList.remove("hidden");
+  btn.classList.add("active");
+}
+/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
