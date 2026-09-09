@@ -44,6 +44,33 @@
     .info-formalities-box-body {
         padding: 12px 20px;
     }
+    .visual-content {
+        padding: 40px 35px;
+    }
+    .login-visual {
+        max-width: 65%;
+    }
+    .login-section {
+        width: 35%;
+    }
+    .login-section-inner {
+        padding: 0 30px;
+    }
+    .contact-sales {
+        margin: 18px 0 0;
+    }
+    .login-card-heading {
+        margin-bottom: 30px;
+    }
+    .login-options {
+        margin: 8px 0 0;
+    }
+    .login-features {
+        max-width: 80%;
+        margin-top: 28px;
+        padding: 12px 25px;
+        gap: 25px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -94,6 +121,32 @@
     }
     .content-formalities.blank {
         padding: 150px 50px;
+    }
+    .login-visual {
+        max-width: 60%;
+    }
+    .login-section {
+        width: 40%;
+    }
+    .login-footer {
+        padding-top: 40px;
+    }
+    .login-card {
+        padding: 30px 28px;
+    }
+    .login-card-heading {
+        margin-bottom: 22px;
+    }
+    .contact-sales {
+        margin: 10px 0 0;
+    }
+    .login-features {
+        max-width: 100%;
+        padding: 10px 25px;
+    }
+    .feature-icon {
+        height: 45px;
+        width: 45px;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -225,6 +278,13 @@
     .patient-info-editor-column {
         height: auto;
         width: 100%;
+    }
+    .login-page {
+        flex-direction: column-reverse;
+    }
+    .login-section,
+    .login-visual {
+        max-width: 100%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
