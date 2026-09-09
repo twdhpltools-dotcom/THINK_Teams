@@ -178,37 +178,37 @@ button.disbaled {
 .content-table-btn-part button.completed-btn {
     background: #b3ffdb66;
     border: 1px solid var(--success);
-    color: #05552f;
+    color: #00512b;
 }
 
 .content-table-btn-part button.edit-btn {
-    background: #adedff4f;
-    border: 1px solid #0097C0;
-    color: #0e5365;
+    background: #c5fffc;
+    border: 1px solid #00a69d;
+    color: #006561;
 }
 
 .content-table-btn-part button.print-btn {
-    background: #e1efff;
-    border: 1px solid #003778;
-    color: #00244f;
+    background: #fff3fe;
+    border: 1px solid #ff24e8;
+    color: #7b006e;
 }
 
 .content-table-btn-part button.warning-btn {
     background: #fff6f0;
     border: 1px solid var(--warning);
-    color: #cf5c0a;
+    color: #bf4f00;
 }
 
 .content-table-btn-part button.pending-btn {
-    background: #cae8ff66;
+    background: #bbe1ff66;
     border: 1px solid var(--neutral);
-    color: #003d69;
+    color: #003c65;
 }
 
 .content-table-btn-part button.request-btn {
-    background: #ffdbdb61;
+    background: #ffecec61;
     border: 1px solid var(--failure);
-    color: #d33131;
+    color: #d31f1f;
 }
 
 .content-table-btn-part button.submitted-btn {
@@ -361,10 +361,10 @@ i.sub-down-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #F2B77C;
+    border: 1px solid #bbaa2f;
     border-radius: 50%;
-    background: #FFF9F2;
-    color: var(--warning);
+    background: #fffdef;
+    color: #8f7d00;
     font-size: 85%;
     font-weight: 500;
     flex-shrink: 0;
@@ -1090,7 +1090,7 @@ span.sidebar-menu-nav-icon i {
 .content-formalities {
     height: auto;
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     color: var(--dark);
 }
 
@@ -1146,10 +1146,6 @@ span.sidebar-menu-nav-icon i {
 .content-table.history .content-table-text p {
     font-size: 95%;
     font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
 }
 
 .content-table.history .content-table-text p i {
@@ -1204,7 +1200,7 @@ span.sidebar-menu-nav-icon i {
     padding: 15px 22px;
     background: var(--light);
     border-radius: 10px;
-    box-shadow: 0 5px 15px 0 #00000020;
+    box-shadow: 0 5px 15px 0 #00000015;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -1351,7 +1347,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .field-formalities-action-part button {
-    padding: 9px 20px !important;
+    padding: 9px 15px !important;
 }
 /* ----------------------------------------- CONFIGURE-PAGE COMPLETE ---------------------------------------------- */
 
