@@ -169,7 +169,6 @@ button.disbaled {
 .content-table-btn-part button.submitted-btn,
 .content-table-btn-part button.browse-btn {
     padding: 7px 15px;
-    background: var(--success);
     border: none;
     color: var(--light);
     font-weight: 400;
@@ -206,6 +205,11 @@ button.disbaled {
     color: var(--dark);
 }
 
+.content-table-btn-part button.submitted-btn.inv {
+    font-size: 90%;
+    padding: 4px 12px;
+}
+
 .content-table-btn-part button.browse-btn {
     background: var(--primary);
 }
@@ -232,7 +236,7 @@ section.page-section {
     width: 100%;
     max-width: calc(100% - 300px);
     padding: 0 25px;
-    margin-top: 85px;
+    margin-top: 80px;
     transition: all 0.3s ease;
 }
 
@@ -352,7 +356,7 @@ i.sub-down-icon {
     right: 0;
     background: var(--primary);
     color: var(--light);
-    padding: 12px 25px;
+    padding: 9px 25px;
     transition: all 0.3s ease;
     z-index: 100;
 }
