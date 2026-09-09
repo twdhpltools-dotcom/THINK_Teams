@@ -1762,7 +1762,7 @@ form button[type="submit"] {
     height: auto;
     width: 100%;
     color: var(--dark);
-    padding: 8px 22px;
+    padding: 8px 22px 0;
 }
 
 .modal-section-heading h2 {
