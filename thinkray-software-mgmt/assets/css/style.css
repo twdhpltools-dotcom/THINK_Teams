@@ -307,7 +307,7 @@ section.page-section.expanded {
 }
 
 .login-left-icon {
-    left: 10px;
+    left: 8px;
     color: #666666bd;
 }
 
@@ -317,7 +317,7 @@ section.page-section.expanded {
 }
 
 .search-right-icon {
-    right: 10px;
+    right: 8px;
     background: var(--primary);
     color: var(--light);
 }
@@ -1115,9 +1115,6 @@ span.sidebar-menu-nav-icon i {
     font-style: normal;
     color: #0B63D1;
     cursor: pointer;
-    border: 1px solid #0b63d121;
-    padding: 2px 10px;
-    border-radius: 20px;
 }
 
 .content-table.case-list .content-table-text p span {
@@ -1131,6 +1128,8 @@ span.sidebar-menu-nav-icon i {
     text-decoration: underline;
     color: #0B63D1;
 }
+
+
 
 
 
@@ -1169,6 +1168,7 @@ span.sidebar-menu-nav-icon i {
     background: none;
     color: #d66b20;
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-btn-part button.pending-btn {
@@ -1184,6 +1184,14 @@ span.sidebar-menu-nav-icon i {
     border: none;
     background: none;
     color: #e34141;
+    font-weight: 500;
+}
+
+.content-table.case-list .content-table-btn-part button.submitted-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--dark);
     font-weight: 500;
 }
 

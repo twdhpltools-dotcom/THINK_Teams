@@ -339,7 +339,7 @@
     input,
     select,
     textarea {
-        padding: 10px 15px;
+        padding: 8px 12px;
     }
     .content-table-btn-part button.completed-btn,
     .content-table-btn-part button.edit-btn,
