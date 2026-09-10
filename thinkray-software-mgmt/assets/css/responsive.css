@@ -103,9 +103,6 @@
         padding: 0 15px;
         margin-top: 105px;
     }
-    .sidebar-menu-nav a {
-        padding: 12px 18px;
-    }
     .content-table {
         padding: 12px;
     }
@@ -343,7 +340,7 @@
         padding: 15px 0;
     }
     .sidebar-menu-top {
-        padding-bottom: 25px;
+        padding-bottom: 15px;
     }
     span.sidebar-menu-nav-icon {
         padding-right: 10px;
