@@ -318,6 +318,10 @@
         margin: 0 auto 20px;
         max-width: 220px;
     }
+    .user-wallet img {
+        max-width: 25px;
+        filter: brightness(0.6);
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
