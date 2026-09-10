@@ -222,12 +222,21 @@ button.disbaled {
     border-radius: 20px;
 }
 
-.content-table-btn-part button.submitted-btn.adjustable {
+.content-table-btn-part button.submitted-btn.conf {
     width: 100%;
-    padding: 10px 0;
-    background: #fffbfb;
-    border: 1px solid #e7e7e7;
-    border-radius: 15px;
+    font-size: 95%;
+    padding: 7px 0;
+    border-radius: 20px;
+}
+
+.content-table-btn-part button.submitted-btn.conf.yes {
+    background: #c9fffc;
+    border: 1px solid #00dcd0;
+}
+
+.content-table-btn-part button.submitted-btn.conf.no {
+    background: #fff3ee;
+    border: 1px solid #ffc9b2;
 }
 
 .content-table-btn-part button.browse-btn {
@@ -1106,7 +1115,7 @@ span.sidebar-menu-nav-icon i {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 150px;
+    max-width: 180px;
 }
 
 .content-table.case-list .content-table-text p {
@@ -1120,10 +1129,18 @@ span.sidebar-menu-nav-icon i {
     cursor: pointer;
 }
 
-.content-table.case-list .content-table-text p span {
-    font-size: 100%;
+.content-table.case-list .content-table-text h6 {
+    font-size: 90%;
+    color: var(--dark);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-table.case-list .content-table-text h6 span {
     color: var(--primary);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .content-table.case-list .content-table-text a {
@@ -1179,11 +1196,12 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.c-history .content-table-text p {
-    font-size: 80%;
+    font-size: 75%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 250px;
+    color: #626262;
 }
 /* ----------------------------------------- CHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1607,8 +1625,8 @@ span.sidebar-menu-nav-icon i {
 
 .form-formalities-box h5 {
     font-weight: 700;
-    font-size: 120%;
-    margin: 0 0 12px;
+    font-size: 110%;
+    margin: 0 0 10px;
 }
 
 form button[type="submit"] { 
@@ -1627,56 +1645,6 @@ form button[type="submit"] {
     text-decoration: underline;
 }
 /* ----------------------------------------- INTERFACE-INFO COMPLETE ---------------------------------------------- */
-
-/* ----------------------------------------- PAGINATION START ---------------------------------------------- */
-/* .table-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 14px;
-}
-
-.pagination-right {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.pagination-select {
-    height: 34px;
-    padding: 0 28px 0 10px;
-    border: 1px solid #dde2ea;
-    border-radius: 6px;
-    outline: none;
-    font-size: 70%;
-    background: #fff;
-}
-
-.page-number,
-.page-nav {
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background: transparent;
-    border-radius: 50%;
-    font-size: 95%;
-    color: #555;
-    cursor: pointer;
-}
-
-.page-nav i {
-    font-size: 75%;
-}
-
-.page-number.active,
-.page-nav {
-    background: #4fa7e8;
-    color: var(--light);
-} */
-/* ----------------------------------------- PAGINATION COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
 .modal-header {
@@ -1721,15 +1689,33 @@ form button[type="submit"] {
     margin: 0 14px 0 0;
 }
 
-.status-check-comment {
+.status-check-comment,
+.note-check-comment {
     height: auto;
     width: 100%;
+}
+
+.status-check-comment {
     padding-left: 15px;
     border-left: 3px solid #e34141b0;
 }
 
+.note-check-comment {
+    padding-left: 0;
+    border: none;
+}
+
+.note-check-comment span {
+    padding-right: 8px;
+    color: var(--failure);
+}
+
 .status-check-comment p {
-    font-size: 100%;
+    font-size: 95%;
+}
+
+.note-check-comment p {
+    font-size: 90%;
 }
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
@@ -1765,11 +1751,10 @@ form button[type="submit"] {
 
 .editor-toolbar select {
     width: unset;
-    min-width: 120px;
     border: 1px solid #edf0f4;
     background: #f8f9fb;
-    padding: 6px 12px;
-    font-size: 100%;
+    padding: 6px 8px;
+    font-size: 90%;
 }
 
 .toolbar-color {
@@ -1787,7 +1772,7 @@ form button[type="submit"] {
 }
 
 .patient-info-editor {
-    padding: 18px 30px;
+    padding: 14px 22px;
     display: flex;
     align-items: start;
     justify-content: space-between;

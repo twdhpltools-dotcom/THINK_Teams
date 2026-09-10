@@ -80,6 +80,9 @@
     .payment-formalities-box p.floating-paragraph {
         margin: 6px 0 0;
     }
+    .content-table.case-list .content-table-text h6 {
+        font-size: 85%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -150,6 +153,9 @@
     .feature-icon {
         height: 45px;
         width: 45px;
+    }
+    .content-table.case-list .content-table-text h6 {
+        font-size: 88%;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -270,7 +276,6 @@
     .patient-info-editor {
         gap: 20px;
         flex-wrap: wrap;
-        padding: 14px 22px;
     }
     .patient-info-editor-column {
         height: auto;
