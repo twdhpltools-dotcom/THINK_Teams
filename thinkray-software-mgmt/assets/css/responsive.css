@@ -270,9 +270,6 @@
     .pay-reminder {
         flex-wrap: nowrap;
     }
-    .modal-content-box {
-        padding: 12px 18px;
-    }
     .patient-info-editor {
         gap: 20px;
         flex-wrap: wrap;
@@ -321,6 +318,17 @@
     .user-wallet img {
         max-width: 25px;
         filter: brightness(0.6);
+    }
+    .modal-header {
+        padding: 8px 12px;
+    }
+    .modal-body {
+        padding: 10px 12px;
+    }
+    .editor-toolbar button,
+    .editor-toolbar select,
+    .toolbar-color {
+        padding: 0 5px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -389,6 +397,9 @@
     table thead tr th,
     table tbody tr td {
         padding: 6px 14px;
+    }
+    .status-check-comment {
+        padding-left: 12px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -475,16 +486,13 @@
     .content-formalities.blank {
         padding: 100px 0;
     }
-    .modal-content-box {
-        padding: 6px 8px;
-    }
     .editor-toolbar {
         gap: 4px;
-        padding: 0 0 10px;
-        margin-bottom: 12px;
+        padding: 0;
+        margin-bottom: 10px;
     }
     .patient-info-editor {
-        padding: 12px 18px;
+        padding: 10px 15px;
         gap: 15px;
     }
     .patient-info-editor-row {
@@ -530,9 +538,6 @@
     }
     .field-icon {
         margin: 0 15px 0 0;
-    }
-    .modal-content-box {
-        padding: 4px 5px;
     }
     .login-logo.hide-lg {
         max-width: 180px;

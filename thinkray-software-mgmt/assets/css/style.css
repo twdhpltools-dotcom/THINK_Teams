@@ -1741,7 +1741,7 @@ form button[type="submit"] {
     padding: 10px 35px !important;
 }
 
-.field-formalities-action-part.upload {
+.modal-content-box .field-formalities-action-part.upload {
     padding: 6px 10px;
 }
 
@@ -1831,6 +1831,7 @@ form button[type="submit"] {
 .patient-info-editor-row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
     margin-bottom: 14px;
 }
