@@ -1773,8 +1773,8 @@ form button[type="submit"] {
     flex-wrap: wrap;
     border-bottom: 1px solid #e6e8ed;
     background: var(--light);
-    padding: 0 0 12px;
-    margin-bottom: 14px;
+    padding: 0 0 10px;
+    margin-bottom: 12px;
 }
 
 .editor-toolbar button,
