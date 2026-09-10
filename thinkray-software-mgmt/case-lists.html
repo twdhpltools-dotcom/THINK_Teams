@@ -248,10 +248,14 @@
               <td>01</td>
               <td>
                 <div class="content-table-text">
-                  <h5>NUR ISLAM SK</h5>
-                  <p>62 yrs · Male</p>
-                  <p>Inv-1042</p>
-                  <em data-bs-toggle="modal" data-bs-target="#addClinicChargeModal">Add Clinical History</em>
+                  <div class="content-table-text d-flex align-items-center">
+                    <h5>NUR ISLAM SK</h5>
+                    <em class="ms-1" data-bs-toggle="modal" data-bs-target="#addClinicChargeModal">Add Clinical History</em>
+                  </div>
+                  <div class="d-flex align-items-end">
+                    <p class="pe-3">62 yrs · Male</p>
+                    <p>Inv-1042</p>
+                  </div>
                 </div>
               </td>
               <td>
@@ -262,7 +266,7 @@
                 </div>
               </td>
               <td>
-                <div class="content-table-btn-part mb-2">
+                <div class="content-table-btn-part mb-1">
                   <button type="button" class="completed-btn">Completed</button>
                   <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#editReportStatusModal"><i class="bi bi-pencil-square pe-0"></i></button>
                 </div>
@@ -273,13 +277,14 @@
                 </div>
               </td>
               <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
-                </div>
                 <div class="content-table-text">
-                  <p>Approved By: Dr. Abhijit</p>
-                  <h6>Last Printed: Not printed yet</h6>
-                  <a href="#">Original version</a>
+                  <p>Approved By: Dr. Abhijit <span>(Not printed yet)</span></p>
+                  <div class="d-flex align-items-center">
+                    <a href="#">Original version</a>
+                    <div class="content-table-btn-part">
+                      <button type="button" class="print-btn"><i class="bi bi-printer"></i></button>
+                    </div>
+                  </div>
                 </div>
               </td>
               <td>
@@ -293,8 +298,10 @@
               <td>
                 <div class="content-table-text">
                   <h5>Sudip Das</h5>
-                  <p>62 yrs · Male</p>
-                  <p>Inv-1042</p>
+                  <div class="d-flex align-items-end mb-1">
+                    <p class="pe-3">62 yrs · Male</p>
+                    <p>Inv-1042</p>
+                  </div>
                   <em data-bs-toggle="modal" data-bs-target="#addClinicChargeModal">Add Clinical History</em>
                 </div>
               </td>
@@ -304,7 +311,7 @@
                   <p>Breathing difficulty · PA View</p>
                   <div class="d-flex align-items-center">
                     <em>Add</em>
-                    <em class="ps-3">Modify</em>
+                    <em class="ms-1">Modify</em>
                   </div>
                 </div>
               </td>
@@ -327,8 +334,10 @@
               <td>
                 <div class="content-table-text">
                   <h5>Md. Jamal</h5>
-                  <p>62 yrs · Male</p>
-                  <p>Inv-1042</p>
+                  <div class="d-flex align-items-end mb-1">
+                    <p class="pe-3">62 yrs · Male</p>
+                    <p>Inv-1042</p>
+                  </div>
                   <em data-bs-toggle="modal" data-bs-target="#addClinicChargeModal">Add Clinical History</em>
                 </div>
               </td>
@@ -358,8 +367,10 @@
               <td>
                 <div class="content-table-text">
                   <h5>Shibarjan  Dey</h5>
-                  <p>62 yrs · Male</p>
-                  <p>Inv-1042</p>
+                  <div class="d-flex align-items-end mb-1">
+                    <p class="pe-3">62 yrs · Male</p>
+                    <p>Inv-1042</p>
+                  </div>
                   <em data-bs-toggle="modal" data-bs-target="#addClinicChargeModal">Add Clinical History</em>
                 </div>
               </td>
@@ -392,8 +403,10 @@
               <td>
                 <div class="content-table-text">
                   <h5>AJIMA KHATUN</h5>
-                  <p>62 yrs · Male</p>
-                  <p>Inv-1042</p>
+                  <div class="d-flex align-items-end mb-1">
+                    <p class="pe-3">62 yrs · Male</p>
+                    <p>Inv-1042</p>
+                  </div>
                   <em data-bs-toggle="modal" data-bs-target="#addClinicChargeModal">Add Clinical History</em>
                 </div>
               </td>
@@ -423,34 +436,19 @@
       </div>
 
       <div class="table-pagination">
-        <div class="pagination-left">
-          <span class="pagination-label">Items Per Page :</span>
-
-          <select id="itemsPerPage" class="pagination-select">
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </div>
-
         <div class="pagination-right">
-          <span id="pageInfo" class="page-info">1 of 10</span>
-
-          <button class="pagination-btn" id="firstPageBtn" type="button">
-            <i class="bi bi-chevron-bar-left"></i>
-          </button>
-
-          <button class="pagination-btn" id="prevPageBtn" type="button">
+          <button class="page-nav" type="button">
             <i class="bi bi-chevron-left"></i>
           </button>
 
-          <button class="pagination-btn" id="nextPageBtn" type="button">
-            <i class="bi bi-chevron-right"></i>
-          </button>
+          <button class="page-number active">1</button>
+          <button class="page-number">2</button>
+          <button class="page-number">3</button>
+          <button class="page-number">4</button>
+          <button class="page-number">5</button>
 
-          <button class="pagination-btn" id="lastPageBtn" type="button">
-            <i class="bi bi-chevron-bar-right"></i>
+          <button class="page-nav" type="button">
+            <i class="bi bi-chevron-right"></i>
           </button>
         </div>
       </div>
