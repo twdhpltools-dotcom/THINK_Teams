@@ -1135,13 +1135,20 @@ span.sidebar-menu-nav-icon i {
 
 
 
+.content-table.case-list {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
 
 .content-table.case-list table thead tr th {
-    font-size: 90%;
+    font-size: 95%;
+    padding: 6px 15px;
 }
 
 .content-table.case-list table tbody tr td {
     font-size: 90%;
+    padding: 4px 15px;
 }
 
 .content-table.case-list .content-table-btn-part {
@@ -1154,7 +1161,6 @@ span.sidebar-menu-nav-icon i {
     background: none;
     color: #1b8e58;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-btn-part button.warning-btn {
@@ -1163,7 +1169,6 @@ span.sidebar-menu-nav-icon i {
     background: none;
     color: #d66b20;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-btn-part button.pending-btn {
@@ -1172,7 +1177,6 @@ span.sidebar-menu-nav-icon i {
     background: none;
     color: #0560b7;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-btn-part button.request-btn {
@@ -1181,7 +1185,6 @@ span.sidebar-menu-nav-icon i {
     background: none;
     color: #e34141;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-btn-part button.edit-btn {
@@ -1663,7 +1666,7 @@ form button[type="submit"] {
 /* ----------------------------------------- SELF-DOCTOR-PAGE-ADD COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- PAGINATION START ---------------------------------------------- */
-.table-pagination {
+/* .table-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1709,7 +1712,7 @@ form button[type="submit"] {
 .page-nav {
     background: #4fa7e8;
     color: var(--light);
-}
+} */
 /* ----------------------------------------- PAGINATION COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
