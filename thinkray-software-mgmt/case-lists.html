@@ -452,17 +452,17 @@
 
     <!----- ADD-CLINICAL-HISTORY-MODAL ------->
     <div class="modal fade" id="addClinicChargeModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
                 <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <textarea rows="3" name="" value="" placeholder="Enter clinical history / reason..."></textarea>
+                    <textarea rows="2" name="" value="" placeholder="Enter clinical history / reason..."></textarea>
                   </div>
                 </div>
-                <div class="field-formalities-action-part upload py-2" onclick="document.getElementById('FileUpload').click()">
+                <div class="field-formalities-action-part upload" onclick="document.getElementById('FileUpload').click()">
                   <div class="d-flex align-items-center">
                     <span class="field-icon scaled">
                       <img src="assets/images/upload-icon-modal.png" alt="field icon">
@@ -596,10 +596,8 @@
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <textarea rows="3" name="" value="" placeholder="">Chest radiograph shows no focal air-space opacity. Cardiomediastinal silhouette is within normal limits. No pleural effusion or pneumothorax.</textarea>
                   </div>
-                </div>
-                <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="content-table-btn-part justify-content-center mt-3">
+                    <div class="content-table-btn-part justify-content-center">
                       <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save Change</button>
                     </div>
                   </div>
@@ -614,17 +612,17 @@
 
     <!----- REQUEST-RECHECK-MODAL ------->
     <div class="modal fade" id="requestRecheckModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
                 <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <textarea rows="3" name="" value="" placeholder="Enter clinical history / reason..."></textarea>
+                    <textarea rows="2" name="" value="" placeholder="Enter clinical history / reason..."></textarea>
                   </div>
                 </div>
-                <div class="field-formalities-action-part upload py-2" onclick="document.getElementById('FileUpload').click()">
+                <div class="field-formalities-action-part upload" onclick="document.getElementById('FileUpload').click()">
                   <div class="d-flex align-items-center">
                     <span class="field-icon scaled">
                       <img src="assets/images/upload-icon-modal.png" alt="field icon">
@@ -653,7 +651,7 @@
 
     <!----- STATUS-RECHECK-MODAL ------->
     <div class="modal fade" id="statusRecheckModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
             <div class="modal-section-heading">
@@ -661,11 +659,13 @@
             </div>
           </div>
           <div class="modal-body">
-            <div class="modal-content-box pt-2">
+            <div class="modal-content-box">
               <form method="" action="">
                 <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="text" value="Please review the right lower lung zone for a possible opacity." placeholder="" />
+                    <div class="status-check-comment">
+                      <p>Please review the right lower lung zone for a possible opacity.</p>
+                    </div>
                   </div>
                 </div>
               </form>
