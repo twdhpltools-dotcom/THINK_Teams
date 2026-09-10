@@ -158,7 +158,7 @@ button.disbaled {
 .content-table-btn-part {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .content-table-btn-part button.completed-btn,
@@ -169,62 +169,72 @@ button.disbaled {
 .content-table-btn-part button.request-btn,
 .content-table-btn-part button.submitted-btn,
 .content-table-btn-part button.browse-btn {
-    padding: 6px 15px;
+    background: none;
     border: none;
+    padding: 0;
     color: var(--light);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 100%;
 }
 
 .content-table-btn-part button.completed-btn {
-    background: #b3ffdb66;
-    border: 1px solid var(--success);
-    color: #00512b;
+    color: #1b8e58;
 }
 
 .content-table-btn-part button.edit-btn {
-    background: #c5fffc;
-    border: 1px solid #00a69d;
-    color: #006561;
+    color: #0e9792;
+    padding: 0 5px;
+}
+
+.content-table-btn-part button.edit-btn i {
+    font-size: 120%;
 }
 
 .content-table-btn-part button.print-btn {
-    background: #f0f0ff;
-    border: 1px solid #2824ff;
-    color: #0300a7;
+    color: #2520f7;
+}
+
+.content-table-btn-part button.print-btn i {
+    font-size: 115%;
 }
 
 .content-table-btn-part button.warning-btn {
-    background: #fff6f0;
-    border: 1px solid var(--warning);
-    color: #bf4f00;
+    color: #d66b20;
 }
 
 .content-table-btn-part button.pending-btn {
-    background: #bbe1ff66;
-    border: 1px solid var(--neutral);
-    color: #002950;
+    color: #0560b7;
 }
 
 .content-table-btn-part button.request-btn {
-    background: #ffecec61;
-    border: 1px solid var(--failure);
-    color: #d31f1f;
+    color: #e34141;
 }
 
 .content-table-btn-part button.submitted-btn {
-    background: #F2F2F2;
-    border: 1px solid #EBEBEB;
     color: var(--dark);
 }
 
 .content-table-btn-part button.submitted-btn.inv {
     font-size: 90%;
-    padding: 4px 12px;
+    padding: 2px 10px;
+    background: #fffbfb;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+}
+
+.content-table-btn-part button.submitted-btn.adjustable {
+    width: 100%;
+    padding: 10px 0;
+    background: #fffbfb;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
 }
 
 .content-table-btn-part button.browse-btn {
-    background: var(--primary);
+    padding: 8px 15px;
+    background: #fff9fe;
+    border: 1px solid #9f0d7fcf;
+    color: var(--primary);
 }
 
 hr {
@@ -249,7 +259,7 @@ section.page-section {
     width: 100%;
     max-width: calc(100% - 300px);
     padding: 0 25px;
-    margin-top: 75px;
+    margin-top: 70px;
     transition: all 0.3s ease;
 }
 
@@ -260,13 +270,14 @@ section.page-section.expanded {
 .page-section-heading {
     height: auto;
     width: 100%;
-    padding: 12px 0;
+    padding: 10px 12px;
     color: var(--dark);
+    border-left: 3px solid #e34141b0;
 }
 
 .page-section-heading h1 {
     font-weight: 700;
-    font-size: 125%;
+    font-size: 115%;
 }
 
 .page-section-heading p {
@@ -277,11 +288,6 @@ section.page-section.expanded {
     height: auto;
     width: 100%;
     overflow: auto;
-    padding: 15px;
-    border-radius: 20px;
-    border: 1px solid #E5E5E5;
-    background: #ffffff20;
-    backdrop-filter: blur(20px);
 }
 
 .login-input,
@@ -1060,10 +1066,6 @@ span.sidebar-menu-nav-icon i {
 /* ----------------------------------------- LOGIN-PAGE START ---------------------------------------------- */
 
 /* ----------------------------------------- PENDING-LIST-PAGE START ---------------------------------------------- */
-.content-table.pending-list table thead tr th {
-    background: #FFEEC8;
-}
-
 .content-table.pending-list .content-table-text h5 {
     font-size: 110%;
     white-space: nowrap;
@@ -1129,81 +1131,6 @@ span.sidebar-menu-nav-icon i {
     text-decoration: underline;
     color: #0B63D1;
 }
-
-
-
-
-
-
-.content-table.case-list {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-}
-
-.content-table.case-list .content-table-btn-part {
-    gap: 5px;
-}
-
-.content-table.case-list .content-table-btn-part button.completed-btn {
-    padding: 0;
-    border: none;
-    background: none;
-    color: #1b8e58;
-    font-weight: 500;
-}
-
-.content-table.case-list .content-table-btn-part button.warning-btn {
-    padding: 0;
-    border: none;
-    background: none;
-    color: #d66b20;
-    font-weight: 500;
-}
-
-.content-table.case-list .content-table-btn-part button.pending-btn {
-    padding: 0;
-    border: none;
-    background: none;
-    color: #0560b7;
-    font-weight: 500;
-}
-
-.content-table.case-list .content-table-btn-part button.request-btn {
-    padding: 0;
-    border: none;
-    background: none;
-    color: #e34141;
-    font-weight: 500;
-}
-
-.content-table.case-list .content-table-btn-part button.submitted-btn {
-    padding: 0;
-    border: none;
-    background: none;
-    color: var(--dark);
-    font-weight: 500;
-}
-
-.content-table.case-list .content-table-btn-part button.edit-btn {
-    background: none;
-    border: none;
-    color: #0e9792;
-    font-size: 120%;
-    padding: 0 5px;
-}
-
-.content-table.case-list .content-table-btn-part button.print-btn {
-    background: none;
-    border: none;
-    color: #2520f7;
-    font-size: 100%;
-    padding: 0;
-}
-
-.content-table.case-list .content-table-btn-part button.print-btn i {
-    font-size: 115%;
-}
 /* ----------------------------------------- CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- HISTORY-PAGE START ---------------------------------------------- */
@@ -1222,7 +1149,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.history .content-table-text p i {
-    font-size: 170%;
+    font-size: 160%;
     padding: 0 10px;
 }
 
@@ -1241,11 +1168,6 @@ span.sidebar-menu-nav-icon i {
 /* ----------------------------------------- HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- CHARGE-HISTORY-PAGE START ---------------------------------------------- */
-.content-formalities .content-table-btn-part button.print-btn {
-    padding: 11px 15px;
-    margin-left: 5px;
-}
-
 .content-table.c-history .content-table-text h6 {
     font-size: 105%;
     font-weight: 500;
@@ -1268,38 +1190,49 @@ span.sidebar-menu-nav-icon i {
 /* ----------------------------------------- RECHARGE-HISTORY-PAGE START ---------------------------------------------- */
 .payment-formalities-box {
     position: relative;
-    height: auto;
     width: 100%;
-    padding: 15px 22px;
-    background: var(--light);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px 0 #00000015;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    background: var(--light);
+    color: var(--dark);
+    box-shadow: 0 8px 24px #0000000d;
     z-index: 1;
 }
 
+.payment-formalities-box.paid-box {
+    border: 1px solid #f3d7ec;
+    background: linear-gradient(135deg, #fff 55%, #fff4fb);
+}
+
+.payment-formalities-box.recharge-box {
+    border: 1px solid #dbe7ff;
+    background: linear-gradient(135deg, #fff 55%, #f4f8ff);
+}
+
 .payment-icon {
-    height: 52px;
-    width: 52px;
+    height: 50px;
+    width: 50px;
+    margin-right: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    margin: 0 16px 0 0;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
 .payment-icon.wallet {
-    background: #F5E7F2;
+    background: #f7e8f4;
 }
+
 .payment-icon.rupee {
-    background: #E8ECFF;
+    background: #eaf0ff;
 }
 
 .payment-icon i {
-    font-size: 170%;
-    color: var(--primary);
+    font-size: 150%;
 }
 
 .payment-icon.wallet i {
@@ -1307,30 +1240,56 @@ span.sidebar-menu-nav-icon i {
 }
 
 .payment-icon.rupee i {
-    color: #0928A8;
+    color: #0b55d4;
 }
 
 .payment-formalities-box h6 {
-    font-size: 95%;
+    margin: 0 0 3px;
+    font-size: 80%;
     font-weight: 500;
 }
 
 .payment-formalities-box h3 {
-    font-size: 200%;
-    font-weight: 800;
+    margin: 0;
+    font-size: 180%;
+    font-weight: 700;
+    line-height: 1.12;
 }
 
 .payment-formalities-box h3 span {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .payment-formalities-box p.floating-paragraph {
-    position: absolute;
-    bottom: 22px;
-    right: 25px;
-    font-size: 90%;
+    margin: 8px 0 0;
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 80%;
     font-weight: 500;
-    color: #0B894D;
+    color: #0b9b58;
+    white-space: nowrap;
+}
+
+.payment-formalities-box p.recharge-date {
+  color: #71809d;
+}
+
+.payment-bg-icon {
+    position: absolute;
+    right: 18px;
+    bottom: 10px;
+    font-size: 350%;
+    opacity: 0.1;
+}
+
+.paid-box .payment-bg-icon {
+    color: var(--primary);
+}
+
+.recharge-box .payment-bg-icon {
+    color: #0b55d4;
 }
 /* ----------------------------------------- RECHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1352,7 +1311,7 @@ span.sidebar-menu-nav-icon i {
     padding: 12px 18px;
     background: var(--light);
     border-radius: 10px;
-    box-shadow: 0 5px 15px 0 #00000020;
+    box-shadow: 0 5px 15px 0 #00000010;
 }
 
 .field-formalities-box h5 {
@@ -1370,26 +1329,26 @@ span.sidebar-menu-nav-icon i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 12px;
+    padding: 3px 8px;
 }
 
 .field-formalities-action-part.upload {
     background: #FFFAFE;
     cursor: pointer;
     margin-top: 8px;
-    padding: 28px 15px;
+    padding: 10px 12px;
 }
 
 .field-icon {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     background: var(--light);
     border: 1px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    margin: 0 18px 0 0;
+    margin: 0 14px 0 0;
     flex-shrink: 0;
 }
 
@@ -1408,7 +1367,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .field-icon img {
-    max-width: 20px;
+    max-width: 22px;
 }
 
 .field-formalities-action-part h6 {
@@ -1417,10 +1376,6 @@ span.sidebar-menu-nav-icon i {
 
 .field-formalities-action-part p {
     font-size: 75%;
-}
-
-.field-formalities-action-part button {
-    padding: 9px 15px !important;
 }
 /* ----------------------------------------- CONFIGURE-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1437,7 +1392,7 @@ span.sidebar-menu-nav-icon i {
 .info-formalities-box-head {
     height: auto;
     width: 100%;
-    padding: 16px 20px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1452,8 +1407,8 @@ span.sidebar-menu-nav-icon i {
 }
 
 .info-icon {
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     background: #cfd6f64f;
     display: flex;
     align-items: center;
@@ -1464,7 +1419,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .info-icon img {
-    max-width: 30px;
+    max-width: 22px;
 }
 
 .info-icon.head-right {
@@ -1473,11 +1428,11 @@ span.sidebar-menu-nav-icon i {
 
 .info-formalities-box-head h5 {
     font-weight: 700;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .info-formalities-box-head p {
-    font-size: 85%;
+    font-size: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1487,7 +1442,7 @@ span.sidebar-menu-nav-icon i {
 .info-formalities-box-body {
     height: auto;
     width: 100%;
-    padding: 15px 20px;
+    padding: 12px 20px;
 }
 
 .info-formalities-part {
@@ -1506,12 +1461,14 @@ span.sidebar-menu-nav-icon i {
 }
 
 .info-formalities-part .info-icon {
-    height: 45px;
-    width: 45px;
+    height: unset;
+    width: unset;
+    background: none;
+    padding: 0;
 }
 
 .info-formalities-part .info-icon img {
-    max-width: 22px;
+    max-width: 17px;
 }
 
 .info-formalities-part h6 {
@@ -1529,8 +1486,8 @@ span.sidebar-menu-nav-icon i {
     height: auto;
     width: 100%;
     max-width: 95%;
-    margin: 0 auto 25px;
-    padding: 14px 25px;
+    margin: 0 auto 12px;
+    padding: 8px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1540,32 +1497,32 @@ span.sidebar-menu-nav-icon i {
 }
 
 .cta-icon {
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     background: #EEFDF9;
     border: 1px solid #A4E2C4;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    margin: 0 12px 0 0;
+    margin: 0 10px 0 0;
     flex-shrink: 0;
 }
 
 .cta-icon.bigger {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     background: #DDF6E9;
     border: none;
 }
 
 .cta-icon i {
-    font-size: 100%;
+    font-size: 90%;
     color: #0C844C;
 }
 
 .cta-icon.bigger i {
-    font-size: 250%;
+    font-size: 180%;
 }
 
 .info-formalities-box-cta h5 {
@@ -1591,29 +1548,29 @@ span.sidebar-menu-nav-icon i {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 10px 14px;
+  padding: 7px 10px;
   background: #f7fbff;
   border: 1px solid #cfe2ff;
   border-radius: 12px;
 }
 
 .pay-reminder-icon {
-    height: 40px;
-    width: 40px;
-    min-width: 40px;
+    height: 35px;
+    width: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #dbeafe;
     border-radius: 50%;
     color: #0969da;
-    font-size: 110%;
+    font-size: 100%;
+    flex-shrink: 0;
 }
 
 .pay-reminder p {
     margin: 0;
     color: #48536a;
-    font-size: 78%;
+    font-size: 75%;
     font-weight: 500;
     line-height: 1.45;
 }
@@ -1651,14 +1608,25 @@ span.sidebar-menu-nav-icon i {
 .form-formalities-box h5 {
     font-weight: 700;
     font-size: 120%;
-    margin: 10px 0 15px;
+    margin: 0 0 12px;
 }
 
 form button[type="submit"] { 
-    padding: 13px 28px !important;
+    padding: 8px 18px !important;
     margin-bottom: 2px;
 }
 /* ----------------------------------------- SELF-DOCTOR-PAGE-ADD COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- INTERFACE-INFO START ---------------------------------------------- */
+.content-table.interface .content-table-btn-part button.browse-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #bf0095;
+    font-weight: 600;
+    text-decoration: underline;
+}
+/* ----------------------------------------- INTERFACE-INFO COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- PAGINATION START ---------------------------------------------- */
 /* .table-pagination {

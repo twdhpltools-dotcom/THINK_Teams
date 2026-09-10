@@ -12,9 +12,6 @@
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) START ------------------------------*/
 @media only screen and (max-width: 1599px) {
-    html {
-        font-size: 15px;
-    }
     .user-call-supports {
         display: flex;
         align-items: center;
@@ -74,13 +71,22 @@
         padding: 12px 25px;
         gap: 25px;
     }
+    .payment-formalities-box {
+        padding: 7px 12px;
+    }
+    .payment-formalities-box h3 {
+        line-height: 1.1;
+    }
+    .payment-formalities-box p.floating-paragraph {
+        margin: 6px 0 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) START ------------------------------*/
 @media only screen and (max-width: 1299px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
     .sidebar-menu {
         max-width: 250px;
@@ -101,10 +107,7 @@
     }
     section.page-section {
         padding: 0 15px;
-        margin-top: 105px;
-    }
-    .content-table {
-        padding: 12px;
+        margin-top: 100px;
     }
     .pay-mobile-image {
         max-width: 30%;
@@ -154,7 +157,7 @@
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) START ------------------------------*/
 @media only screen and (max-width: 992px) {
     html {
-        font-size: 13px;
+        font-size: 14px;
     }
     .mobile-menu-toggle {
         display: flex;
@@ -253,9 +256,6 @@
     .profile-submenu a {
         padding: 8px 15px;
     }
-    .payment-formalities-box {
-        padding: 15px 18px;
-    }
     .cta-icon.bigger {
         height: 70px;
         width: 70px;
@@ -327,6 +327,14 @@
     .toolbar-color {
         padding: 0 5px;
     }
+    .payment-icon {
+        height: 45px;
+        width: 45px;
+        margin-right: 16px;
+    }
+    .payment-icon i {
+        font-size: 145%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -350,29 +358,11 @@
     textarea {
         padding: 8px 12px;
     }
-    .content-table-btn-part button.completed-btn,
-    .content-table-btn-part button.edit-btn,
-    .content-table-btn-part button.print-btn,
-    .content-table-btn-part button.warning-btn,
-    .content-table-btn-part button.pending-btn,
-    .content-table-btn-part button.request-btn,
-    .content-table-btn-part button.submitted-btn,
-    .content-table-btn-part button.browse-btn {
-        padding: 5px 12px;
-    }
     form button[type="submit"] {
-        padding: 9px 18px !important;
+        padding: 7px 15px !important;
     }
     .sidebar-menu-nav a p {
         font-size: 110%;
-    }
-    .payment-formalities-box {
-        padding: 10px 15px;
-    }
-    .payment-formalities-box p.floating-paragraph {
-        position: relative;
-        bottom: 0;
-        right: 0;
     }
     .content-formalities.blank {
         padding: 120px 30px;
@@ -400,6 +390,22 @@
     }
     .status-check-comment {
         padding-left: 12px;
+    }
+    .payment-icon {
+        height: 40px;
+        width: 40px;
+        margin-right: 14px;
+    }
+    .payment-icon i {
+        font-size: 140%;
+    }
+    .payment-formalities-box h6 {
+        margin: 0 0 2px;
+    }
+    .payment-bg-icon {
+        right: 12px;
+        bottom: 10px;
+        font-size: 300%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -433,10 +439,16 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .payment-formalities-box {
+        padding: 6px 10px;
+    }
     .payment-icon {
-        height: 42px;
-        width: 42px;
         margin: 0 0 8px;
+    }
+    .payment-bg-icon {
+        right: 10px;
+        bottom: 20px;
+        font-size: 280%;
     }
     .payment-formalities-box h3 {
         font-size: 180%;
@@ -458,26 +470,23 @@
     }
     .info-formalities-part {
         padding: 8px 10px;
-    }
-    .info-formalities-part .info-icon {
-        height: 40px;
-        width: 40px;
+        margin: 0 10px 0 0;
     }
     .info-formalities-part .info-icon img {
-        max-width: 20px;
+        max-width: 15px;
     }
     .info-formalities-box-cta {
-        padding: 7px 16px;
+        padding: 6px 12px;
         flex-direction: column;
         align-items: start;
         gap: 12px;
     }
     .cta-icon.bigger {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
     }
     .cta-icon.bigger i {
-        font-size: 220%;
+        font-size: 160%;
     }
     .pay-mobile-image {
         max-width: 60%;
@@ -541,6 +550,9 @@
     }
     .login-logo.hide-lg {
         max-width: 180px;
+    }
+    .payment-bg-icon {
+        display: none;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
