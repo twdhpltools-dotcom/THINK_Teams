@@ -79,7 +79,7 @@ table tbody tr {
 
 table thead tr th,
 table tbody tr td {
-    padding: 8px 15px;
+    padding: 4px 15px;
     border-bottom: 1px solid #E5E5E5;
     white-space: nowrap;
 }
@@ -124,7 +124,7 @@ textarea {
     border: 1px solid #DDE2EA;
     border-radius: 10px;
     outline: none;
-    padding: 12px 25px;
+    padding: 9px 20px;
     font-size: 95%;
     font-weight: 400;
     color: rgba(32, 32, 32, 0.8);
@@ -299,9 +299,9 @@ section.page-section.expanded {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 110%;
+    font-size: 100%;
     border-radius: 8px;
-    padding: 5px 10px;
+    padding: 3px 8px;
     cursor: pointer;
     z-index: 2;
 }
@@ -312,7 +312,7 @@ section.page-section.expanded {
 }
 
 .login-right-icon {
-    right: 10px;
+    right: 8px;
     color: #666666bd;
 }
 
@@ -357,7 +357,6 @@ i.sub-down-icon {
 .count-badge {
     height: 30px;
     width: 30px;
-    padding: 0 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -665,7 +664,7 @@ span.sidebar-menu-nav-icon {
 }
 
 span.sidebar-menu-nav-icon i {
-    font-size: 95%;
+    font-size: 100%;
 }
 
 .sidebar-menu.collapsed span.sidebar-menu-nav-icon i {
@@ -1091,7 +1090,7 @@ span.sidebar-menu-nav-icon i {
 .content-formalities {
     height: auto;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     color: var(--dark);
 }
 
@@ -1100,7 +1099,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.case-list .content-table-text h5 {
-    font-size: 110%;
+    font-size: 105%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1108,11 +1107,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.case-list .content-table-text p {
-    font-size: 85%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
+    font-size: 90%;
 }
 
 .content-table.case-list .content-table-text em {
@@ -1120,17 +1115,96 @@ span.sidebar-menu-nav-icon i {
     font-style: normal;
     color: #0B63D1;
     cursor: pointer;
+    border: 1px solid #0b63d121;
+    padding: 2px 10px;
+    border-radius: 20px;
 }
 
-.content-table.case-list .content-table-text h6 {
-    font-size: 85%;
+.content-table.case-list .content-table-text p span {
+    font-size: 100%;
     color: var(--primary);
+    font-weight: 500;
 }
 
 .content-table.case-list .content-table-text a {
-    font-size: 85%;
+    font-size: 90%;
     text-decoration: underline;
     color: #0B63D1;
+}
+
+
+
+
+
+.content-table.case-list table thead tr th {
+    font-size: 90%;
+}
+
+.content-table.case-list table tbody tr td {
+    font-size: 90%;
+}
+
+.content-table.case-list .content-table-btn-part {
+    gap: 5px;
+}
+
+.content-table.case-list .content-table-btn-part button.completed-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #1b8e58;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.content-table.case-list .content-table-btn-part button.warning-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #d66b20;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.content-table.case-list .content-table-btn-part button.pending-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #0560b7;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.content-table.case-list .content-table-btn-part button.request-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #e34141;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.content-table.case-list .content-table-btn-part button.edit-btn {
+    background: none;
+    border: none;
+    color: #0e9792;
+    font-size: 120%;
+    padding: 0 5px;
+}
+
+.content-table.case-list .count-badge {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #c3b659;
+    background: #fffdf3;
+}
+
+.content-table.case-list .content-table-btn-part button.print-btn {
+    background: none;
+    border: none;
+    color: #0500ff;
+    font-size: 120%;
+    padding: 0 10px;
 }
 /* ----------------------------------------- CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1590,89 +1664,51 @@ form button[type="submit"] {
 
 /* ----------------------------------------- PAGINATION START ---------------------------------------------- */
 .table-pagination {
-    height: auto;
-    width: 100%;
-    margin-top: 15px;
-    padding: 7px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: var(--light);
-    border: 1px solid #e8e8e8;
-    border-radius: 10px;
-}
-
-.pagination-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.pagination-label {
-    font-size: 100%;
-    font-weight: 500;
-    color: var(--dark);
-    white-space: nowrap;
-}
-
-.pagination-select {
-    height: auto;
-    padding: 12px 18px;
-    border: 1px solid #cbd5e1;
-    border-radius: 5px;
-    outline: none;
-    background: #FAFAFA;
-    color: #40445a;
-    font-size: 90%;
-    font-weight: 500;
-    cursor: pointer;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.pagination-select:focus {
-    border-color: #94a3b8;
-    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.12);
+    justify-content: center;
+    padding: 10px 14px;
 }
 
 .pagination-right {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
-.page-info {
-    margin-right: 8px;
-    font-size: 100%;
-    font-weight: 500;
-    color: var(--dark);
-    white-space: nowrap;
+.pagination-select {
+    height: 34px;
+    padding: 0 28px 0 10px;
+    border: 1px solid #dde2ea;
+    border-radius: 6px;
+    outline: none;
+    font-size: 70%;
+    background: #fff;
 }
 
-.pagination-btn {
-    height: 35px;
-    width: 35px;
+.page-number,
+.page-nav {
+    height: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    outline: none;
     background: transparent;
-    color: #818ca1;
-    font-size: 85%;
+    border-radius: 50%;
+    font-size: 95%;
+    color: #555;
     cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.25s ease;
 }
 
-.pagination-btn:hover:not(:disabled) {
-    background: #f4f6f8;
-    color: var(--dark);
+.page-nav i {
+    font-size: 75%;
 }
 
-.pagination-btn:disabled {
-    color: #e0e3e8;
-    cursor: not-allowed;
-    opacity: 0.7;
+.page-number.active,
+.page-nav {
+    background: #4fa7e8;
+    color: var(--light);
 }
 /* ----------------------------------------- PAGINATION COMPLETE ---------------------------------------------- */
 

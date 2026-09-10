@@ -382,6 +382,10 @@
         height: 32px;
         width: 32px;
     }
+    table thead tr th,
+    table tbody tr td {
+        padding: 6px 14px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
