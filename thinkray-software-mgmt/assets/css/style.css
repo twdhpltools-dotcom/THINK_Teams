@@ -12,7 +12,7 @@
     --line-height: 1.5;
     --font-weight: normal;
     --light: #ffffff;
-    --dark: #272F48;
+    --dark: #061237;
     --primary: #9F0D7F;
     --secondary: #FFEEC8;
     --success: #2F9D69;
@@ -1107,7 +1107,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.case-list .content-table-text p {
-    font-size: 90%;
+    font-size: 95%;
 }
 
 .content-table.case-list .content-table-text em {
@@ -1168,7 +1168,6 @@ span.sidebar-menu-nav-icon i {
     background: none;
     color: #d66b20;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-btn-part button.pending-btn {
