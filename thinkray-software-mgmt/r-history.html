@@ -200,29 +200,43 @@
     <section class="page-section">
       <div class="content-formalities">
         <div class="row gx-3 gy-3">
-          <div class="col-xl-4 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box">
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6 col-6">
+            <div class="payment-formalities-box paid-box">
               <span class="payment-icon wallet">
                 <i class="bi bi-wallet2"></i>
               </span>
+
               <div>
                 <h6>Total Paid Till Date</h6>
                 <h3><span>₹</span> 15,000</h3>
-                <p class="floating-paragraph">Cumulative payment</p>
+
+                <p class="floating-paragraph">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  Cumulative payment
+                </p>
               </div>
+
+              <i class="bi bi-bar-chart-fill payment-bg-icon"></i>
             </div>
           </div>
 
-          <div class="col-xl-4 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box">
+          <div class="col-xl-4 col-lg-5 col-sm-6 col-6">
+            <div class="payment-formalities-box recharge-box">
               <span class="payment-icon rupee">
-                <i class="bi bi-currency-rupee"></i>
+                <i class="bi bi-credit-card-2-front"></i>
               </span>
+
               <div>
                 <h6>Last Recharge</h6>
                 <h3><span>₹</span> 7,500</h3>
-                <p class="floating-paragraph">12 Aug 2026</p>
+
+                <p class="floating-paragraph recharge-date">
+                  <i class="bi bi-calendar3"></i>
+                  12 Aug 2026
+                </p>
               </div>
+
+              <i class="bi bi-credit-card payment-bg-icon"></i>
             </div>
           </div>
         </div>
@@ -375,39 +389,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="table-pagination">
-        <div class="pagination-left">
-          <span class="pagination-label">Items Per Page :</span>
-
-          <select id="itemsPerPage" class="pagination-select">
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
-          </select>
-        </div>
-
-        <div class="pagination-right">
-          <span id="pageInfo" class="page-info">1 of 10</span>
-
-          <button class="pagination-btn" id="firstPageBtn" type="button">
-            <i class="bi bi-chevron-bar-left"></i>
-          </button>
-
-          <button class="pagination-btn" id="prevPageBtn" type="button">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <button class="pagination-btn" id="nextPageBtn" type="button">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-
-          <button class="pagination-btn" id="lastPageBtn" type="button">
-            <i class="bi bi-chevron-bar-right"></i>
-          </button>
-        </div>
       </div>
     </section>
 
