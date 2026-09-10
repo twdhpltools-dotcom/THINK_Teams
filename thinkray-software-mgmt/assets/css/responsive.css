@@ -216,7 +216,7 @@
     }
     .user-supports {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
     .user-notification {
         position: fixed;
@@ -234,7 +234,7 @@
     .user-wallet {
         background: #e4e4e452;
         border: 1px solid #b45ba145;
-        margin: 0 auto 15px;
+        margin: 0 auto 12px;
         width: 100%;
         max-width: 60%;
         padding: 4px 0;
@@ -243,7 +243,7 @@
         color: #333;
     }
     section.page-section {
-        margin-top: 65px;
+        margin-top: 60px;
     }
     .sidebar-menu {
         max-width: 230px;
@@ -520,7 +520,7 @@
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) START ------------------------------*/
 @media only screen and (max-width: 375px) {
     .top-header-content {
-        max-width: 245px;
+        max-width: 240px;
     }
     .info-formalities-box-cta {
         gap: 10px;

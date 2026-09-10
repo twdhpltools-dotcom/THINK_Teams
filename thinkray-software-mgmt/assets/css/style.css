@@ -79,7 +79,6 @@ table tbody tr {
 
 table thead tr th,
 table tbody tr td {
-    padding: 4px 15px;
     border-bottom: 1px solid #E5E5E5;
     white-space: nowrap;
 }
@@ -88,14 +87,16 @@ table thead tr th {
     background: #FAFAFA;
     color: var(--dark);
     font-weight: 600;
-    font-size: 110%;
+    font-size: 95%;
+    padding: 6px 15px;
 }
 
 table tbody tr td {
     background: var(--light);
     color: var(--dark);
     font-weight: 400;
-    font-size: 95%;
+    font-size: 90%;
+    padding: 4px 15px;
 }
 
 form {
@@ -120,9 +121,9 @@ select,
 textarea {
     width: 100%;
     height: auto;
-    background: #FFFFFF;
+    background: var(--light);
     border: 1px solid #DDE2EA;
-    border-radius: 10px;
+    border-radius: 8px;
     outline: none;
     padding: 9px 20px;
     font-size: 95%;
@@ -248,7 +249,7 @@ section.page-section {
     width: 100%;
     max-width: calc(100% - 300px);
     padding: 0 25px;
-    margin-top: 80px;
+    margin-top: 75px;
     transition: all 0.3s ease;
 }
 
@@ -355,14 +356,14 @@ i.sub-down-icon {
 }
 
 .count-badge {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #bbaa2f;
     border-radius: 50%;
-    background: #fffdef;
+    border: 1px solid #c3b659;
+    background: #fffdf3;
     color: #8f7d00;
     font-size: 85%;
     font-weight: 500;
@@ -412,7 +413,7 @@ i.sub-down-icon {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 6px 15px;
+    padding: 6px 12px;
     border-radius: 10px;
     background: #5b064952;
     border: 1px solid #B45BA1;
@@ -423,12 +424,12 @@ i.sub-down-icon {
 }
 
 .user-wallet p {
-    font-size: 90%;
+    font-size: 80%;
     color: #FFD2F5;
 }
 
 .user-wallet h6 {
-    font-size: 120%;
+    font-size: 110%;
     font-weight: 500;
 }
 
@@ -453,11 +454,11 @@ span.call-supports-icon {
 }
 
 .user-call-supports h6 {
-    font-size: 90%;
+    font-size: 85%;
 }
 
 .user-call-supports p {
-    font-size: 85%;
+    font-size: 80%;
     color: #FFD2F5;
 }
 
@@ -496,9 +497,9 @@ span.call-supports-icon {
 }
 
 .user-profile h6 {
-    font-size: 105%;
+    font-size: 100%;
     font-weight: 500;
-    max-width: 120px;
+    max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1140,16 +1141,6 @@ span.sidebar-menu-nav-icon i {
     border-radius: 0;
 }
 
-.content-table.case-list table thead tr th {
-    font-size: 95%;
-    padding: 6px 15px;
-}
-
-.content-table.case-list table tbody tr td {
-    font-size: 90%;
-    padding: 4px 15px;
-}
-
 .content-table.case-list .content-table-btn-part {
     gap: 5px;
 }
@@ -1200,13 +1191,6 @@ span.sidebar-menu-nav-icon i {
     color: #0e9792;
     font-size: 120%;
     padding: 0 5px;
-}
-
-.content-table.case-list .count-badge {
-    height: 25px;
-    width: 25px;
-    border: 1px solid #c3b659;
-    background: #fffdf3;
 }
 
 .content-table.case-list .content-table-btn-part button.print-btn {
@@ -1392,8 +1376,8 @@ span.sidebar-menu-nav-icon i {
 .field-formalities-action-part.upload {
     background: #FFFAFE;
     cursor: pointer;
-    margin-top: 12px;
-    padding: 28px 18px;
+    margin-top: 8px;
+    padding: 28px 15px;
 }
 
 .field-icon {
@@ -1424,11 +1408,11 @@ span.sidebar-menu-nav-icon i {
 }
 
 .field-icon img {
-    max-width: 25px;
+    max-width: 20px;
 }
 
 .field-formalities-action-part h6 {
-    font-size: 100%;
+    font-size: 90%;
 }
 
 .field-formalities-action-part p {
@@ -1727,34 +1711,57 @@ form button[type="submit"] {
 /* ----------------------------------------- PAGINATION COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
+.modal-header {
+    padding: 10px 18px;
+}
+
+.modal-body {
+    padding: 15px 18px;
+}
+
 .modal-content-box {
     height: auto;
     width: 100%;
-    padding: 18px 25px;
+    padding: 0;
     color: var(--dark);
 }
 
 .modal-section-heading {
     height: auto;
     width: 100%;
-    color: var(--dark);
-    padding: 8px 22px 0;
+    color: #0560b7;
 }
 
 .modal-section-heading h2 {
     font-weight: 700;
-    font-size: 125%;
+    font-size: 115%;
 }
 
 .modal-content-box button[type="submit"] { 
-    padding: 15px 45px !important;
+    padding: 10px 35px !important;
+}
+
+.field-formalities-action-part.upload {
+    padding: 6px 10px;
 }
 
 .modal-content-box .field-icon.scaled {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 10px;
     border: 2px dashed #c7bcbc9e;
+    margin: 0 14px 0 0;
+}
+
+.status-check-comment {
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    border-left: 3px solid #e34141b0;
+}
+
+.status-check-comment p {
+    font-size: 100%;
 }
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
