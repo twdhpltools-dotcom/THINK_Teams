@@ -277,9 +277,10 @@
               <td>
                 <div class="content-table-text">
                   <div class="content-table-btn-part">
-                    <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                    <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#printConfigModal"><i class="bi bi-printer"></i></button>
+                    <h6>Printed for 2 Times <span>(Last Printed on: 18-Sep-26)</span></h6>
                   </div>
-                  <p>Approved By: Dr. Abhijit <span>(Not printed yet)</span></p>
+                  <p>Approved By: Dr. Abhijit</p>
                   <a href="#">Original version</a>
                 </div>
               </td>
@@ -430,24 +431,6 @@
           </tbody>
         </table>
       </div>
-
-      <!-- <div class="table-pagination">
-        <div class="pagination-right">
-          <button class="page-nav" type="button">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <button class="page-number active">1</button>
-          <button class="page-number">2</button>
-          <button class="page-number">3</button>
-          <button class="page-number">4</button>
-          <button class="page-number">5</button>
-
-          <button class="page-nav" type="button">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-      </div> -->
     </section>
 
     <!----- ADD-CLINICAL-HISTORY-MODAL ------->
@@ -675,6 +658,39 @@
       </div>
     </div>
     <!----- STATUS-RECHECK-MODAL ------->
+
+    <!----- PRINT-CONFIGURE-MODAL ------->
+    <div class="modal fade" id="printConfigModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Print Preferences</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <div class="content-table-btn-part">
+                      <button type="button" class="submitted-btn conf yes" onclick="window.print()">With Signature</button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <div class="content-table-btn-part">
+                      <button type="button" class="submitted-btn conf no" onclick="window.print()">Without Signature</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- PRINT-CONFIGURE-MODAL ------->
 
   </main>
   <!----------------------------------- CASE-LIST-PAGE ------------------------------------------------->
