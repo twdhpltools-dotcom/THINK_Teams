@@ -106,6 +106,12 @@ function animateSearchPlaceholder(){
 animateSearchPlaceholder();
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 
+/*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
+document.querySelector(".submitted-btn.conf").addEventListener("click", function () {
+  window.print();
+});
+/*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
+
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 document.getElementById("FileUpload").addEventListener("change", function () {
   const file = this.files[0];
@@ -135,83 +141,6 @@ document.getElementById("FileUpload").addEventListener("change", function () {
   previewBox.classList.add("show");
 });
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-
-/*-------------------------------------- PAGINATION ----------------------------------------*/
-const totalItems = 100;
-
-let currentPage = 1;
-let itemsPerPage = 10;
-
-const itemsPerPageSelect = document.getElementById("itemsPerPage");
-const pageInfo = document.getElementById("pageInfo");
-
-const firstPageBtn = document.getElementById("firstPageBtn");
-const prevPageBtn = document.getElementById("prevPageBtn");
-const nextPageBtn = document.getElementById("nextPageBtn");
-const lastPageBtn = document.getElementById("lastPageBtn");
-
-function updatePagination() {
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-  if (currentPage > totalPages) {
-    currentPage = totalPages;
-  }
-
-  pageInfo.textContent = currentPage + " of " + totalPages;
-
-  firstPageBtn.disabled = currentPage === 1;
-  prevPageBtn.disabled = currentPage === 1;
-
-  nextPageBtn.disabled = currentPage === totalPages;
-  lastPageBtn.disabled = currentPage === totalPages;
-
-  console.log({
-    currentPage,
-    itemsPerPage,
-    totalPages
-  });;
-}
-
-itemsPerPageSelect.addEventListener("change", function () {
-  itemsPerPage = parseInt(this.value);
-
-  currentPage = 1;
-
-  updatePagination();
-});
-
-firstPageBtn.addEventListener("click", function () {
-  currentPage = 1;
-
-  updatePagination();
-});
-
-prevPageBtn.addEventListener("click", function () {
-  if (currentPage > 1) {
-    currentPage--;
-  }
-
-  updatePagination();
-});
-
-nextPageBtn.addEventListener("click", function () {
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-  if (currentPage < totalPages) {
-    currentPage++;
-  }
-
-  updatePagination();
-});
-
-lastPageBtn.addEventListener("click", function () {
-  currentPage = Math.ceil(totalItems / itemsPerPage);
-
-  updatePagination();
-});
-
-updatePagination();
-/*-------------------------------------- PAGINATION ----------------------------------------*/
 
 /*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
 function editorCmd(command) {
