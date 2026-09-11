@@ -12,6 +12,9 @@
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) START ------------------------------*/
 @media only screen and (max-width: 1599px) {
+    html {
+        font-size: 15px;
+    }
     .user-call-supports {
         display: flex;
         align-items: center;
@@ -83,14 +86,17 @@
     .content-table.case-list .content-table-text h6 {
         font-size: 85%;
     }
+    .doctor-description-left {
+        padding-left: 35px;
+    }
+    .doctor-description-box {
+        padding: 15px 20px 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) START ------------------------------*/
 @media only screen and (max-width: 1299px) {
-    html {
-        font-size: 15px;
-    }
     .sidebar-menu {
         max-width: 250px;
         padding: 20px 22px;
@@ -109,6 +115,7 @@
         margin-bottom: 7px;
     }
     section.page-section {
+        height: calc(100% - 100px);
         padding: 0 15px;
         margin-top: 100px;
     }
@@ -156,6 +163,28 @@
     }
     .content-table.case-list .content-table-text h6 {
         font-size: 88%;
+    }
+    ul.doctor-info-listing li span {
+        max-width: 140px;
+    }
+    ul.doctor-info-listing li {
+        margin-bottom: 4px;
+    }
+    .doctor-name-part {
+        margin-bottom: 10px;
+    }
+    span.tat-box {
+        padding: 3px 12px;
+    }
+    .doctor-description-box {
+        padding: 14px 15px 0;
+    }
+    .doctor-description-box-count {
+        top: 13px;
+        left: 12px;
+        height: 25px;
+        width: 25px;
+        font-size: 90%;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -249,6 +278,7 @@
         color: #333;
     }
     section.page-section {
+        height: calc(100% - 60px);
         margin-top: 60px;
     }
     .sidebar-menu {
@@ -260,7 +290,7 @@
         padding-left: 40px;
     }
     .profile-submenu a {
-        padding: 8px 15px;
+        padding: 5px 15px;
     }
     .cta-icon.bigger {
         height: 70px;
@@ -340,6 +370,15 @@
     .payment-icon i {
         font-size: 145%;
     }
+    .doctor-description-box {
+        padding: 13px 14px 0;
+    }
+    .doctor-description-cta {
+        padding: 13px 18px;
+    }
+    span.tat-box {
+        gap: 8px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -412,6 +451,34 @@
         bottom: 10px;
         font-size: 300%;
     }
+    .doctor-description-right {
+        margin-top: 6px;
+    }
+    .doctor-calender-part {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    span.tat-box {
+        float: unset;
+        width: 100%;
+        gap: 10px;
+    }
+    .doctor-calender-part span.calender-chip,
+    .doctor-calender-part p {
+        margin-bottom: 0;
+    }
+    .doctor-description-cta {
+        padding: 12px 15px;
+        margin-top: 8px;
+    }
+    .doctor-description-cta .content-table-btn-part {
+        justify-content: left;
+        margin-top: 6px;
+    }
+
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -536,6 +603,27 @@
     .login-card {
         padding: 30px 25px;
     }
+    .doctor-description-left {
+        padding-left: 0;
+    }
+    .doctor-description-box-count {
+        top: 10px;
+        left: unset;
+        right: 10px;
+    }
+    ul.doctor-info-listing li span {
+        max-width: 120px;
+    }
+    .doctor-description-cta {
+        padding: 10px 15px;
+    }
+    .doctor-description-cta .content-table-btn-part {
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .doctor-calender-part p i {
+        padding-right: 6px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 
@@ -558,6 +646,20 @@
     }
     .payment-bg-icon {
         display: none;
+    }
+    ul.doctor-info-listing li span {
+        max-width: 110px;
+    }
+    .doctor-description-right {
+        margin-top: 2px;
+    }
+    .doctor-description-cta {
+        padding: 8px 12px;
+        margin-top: 5px;
+    }
+    .doctor-description-cta .content-table-btn-part {
+        flex-wrap: wrap;
+        gap: 6px 15px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/

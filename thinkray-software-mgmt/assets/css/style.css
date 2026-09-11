@@ -264,12 +264,14 @@ main.main-page {
 }
 
 section.page-section {
-    height: auto;
+    height: calc(100% - 70px);
     width: 100%;
     max-width: calc(100% - 300px);
     padding: 0 25px;
     margin-top: 70px;
     transition: all 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 section.page-section.expanded {
@@ -523,6 +525,28 @@ span.call-supports-icon {
 .user-profile i {
     padding-left: 4px;
 }
+
+.counter-chip {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #F0F0F0;
+    border: 1px solid #b45ba133;
+    font-size: 70%;
+    font-style: normal;
+}
+
+.sidebar-menu-nav a:hover .counter-chip,
+.sidebar-menu-nav a.active .counter-chip {
+    background: var(--light);
+}
 /* ----------------------------------------- TOP-HEADER SECTION COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- ANIMATED-TOGGLER-MENU START ---------------------------------------------- */
@@ -536,6 +560,7 @@ span.call-supports-icon {
     top: calc(100% + 10px);
     right: 0;
     min-width: 220px;
+    padding: 2px 0;
     background: var(--light);
     color: var(--dark);
     border: 1px solid #eeeeee;
@@ -560,9 +585,12 @@ span.call-supports-icon {
 
 .profile-submenu a {
     display: block;
-    font-size: 100%;
-    padding: 10px 15px;
+    font-size: 95%;
+    padding: 6px 15px;
     color: var(--dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .profile-submenu a.log-anchor {
@@ -1127,6 +1155,7 @@ span.sidebar-menu-nav-icon i {
     font-style: normal;
     color: #0B63D1;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-text h6 {
@@ -1166,8 +1195,8 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.history .content-table-text p i {
-    font-size: 160%;
-    padding: 0 10px;
+    font-size: 140%;
+    padding: 0 8px;
 }
 
 .content-table.history .content-table-text span.non-approved {
@@ -1268,7 +1297,6 @@ span.sidebar-menu-nav-icon i {
 }
 
 .payment-formalities-box h3 {
-    margin: 0;
     font-size: 180%;
     font-weight: 700;
     line-height: 1.12;
@@ -1814,6 +1842,204 @@ form button[type="submit"] {
     margin: 0 18px 0 0;
 }
 /* ----------------------------------------- FILE-UPLOAD COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- PENDING-ACCEPT-PAGE START ---------------------------------------------- */
+.doctor-description {
+    height: auto;
+    width: 100%;
+}
+
+.doctor-description-box {
+    position: relative;
+    width: 100%;
+    padding: 18px 25px 0;
+    overflow: hidden;
+    border-radius: 15px;
+    color: var(--dark);
+    box-shadow: 0 8px 24px #0000000d;
+    border: 1px solid #dce8fd;
+    background: linear-gradient(to top, #fff 20%, #e3effe66);
+    margin-bottom: 12px;
+    z-index: 1;
+}
+
+.doctor-description-box-count {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: #dcdcff91;
+    border: 1px solid #2520f72e;
+    color: #2520f7;
+    font-size: 100%;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.doctor-description-left {
+    height: auto;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.doctor-name-part {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.doctor-name-part h3 {
+    font-size: 120%;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+.doctor-name-part p {
+    font-size: 95%;
+    padding-left: 12px;
+    border-left: 1px solid #bfbfbf;
+}
+
+ul.doctor-info-listing {
+    height: auto;
+    width: 100%;
+}
+
+ul.doctor-info-listing li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 95%;
+}
+
+ul.doctor-info-listing li a {
+    color: #0B63D1;
+    text-decoration: underline;
+}
+
+ul.doctor-info-listing li span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 160px;
+    color: #71809d;
+}
+
+ul.doctor-info-listing li span i {
+    padding-right: 10px;
+    font-size: 110%;
+}
+
+.doctor-description-right {
+    height: auto;
+    width: 100%;
+}
+
+.doctor-calender-part {
+    text-align: right;
+}
+
+.doctor-calender-part span.calender-chip {
+    display: inline-block;
+    border-radius: 5px;
+    background: #e6e6ff91;
+    border: 1px solid #2520f72e;
+    color: #4c47ff;
+    font-size: 90%;
+    font-weight: 700;
+    padding: 3px 8px;
+    margin-bottom: 10px;
+}
+
+.doctor-calender-part p {
+    font-size: 95%;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.doctor-calender-part p i {
+    padding-right: 10px;
+}
+
+span.tat-box {
+    float: right;
+    padding: 5px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #bfeee3;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #effffb, #e9fbf7);
+    text-align: left;
+    color: #0a6d61;
+}
+
+em.tat-icon {
+    border-radius: 50%;
+    font-size: 130%;
+    font-style: normal;
+}
+
+.tat-box p {
+    margin: 0;
+    font-size: 80%;
+    font-weight: 600;
+}
+
+.tat-box h6 {
+    margin: 2px 0 0;
+    font-size: 95%;
+    font-weight: 700;
+}
+
+.doctor-description-cta {
+    height: auto;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-top: 1px solid #9f0d7f17;
+    background: linear-gradient(to bottom, #fffbfe, transparent);
+}
+
+.doctor-cta-part {
+    display: flex;
+    align-items: center;
+}
+
+.doctor-cta-part h5 {
+    font-size: 110%;
+    font-weight: 600;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.doctor-cta-part h5 i {
+    color: #1b8e58;
+    font-size: 50%;
+    padding-right: 8px;
+}
+
+.doctor-cta-part p {
+    font-size: 95%;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 1px solid #bfbfbf;
+    opacity: 0.7;
+}
+
+.doctor-description-cta .content-table-btn-part {
+    justify-content: flex-end;
+    gap: 25px;
+}
+/* -----------------------------------------PENDING-ACCEPT-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
