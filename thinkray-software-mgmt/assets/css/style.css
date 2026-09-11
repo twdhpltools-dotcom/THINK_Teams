@@ -281,14 +281,15 @@ section.page-section.expanded {
 .page-section-heading {
     height: auto;
     width: 100%;
-    padding: 10px 12px;
+    padding: 5px 12px;
     color: var(--dark);
+    background: linear-gradient(to right, #9f0d7f08, transparent);
     border-left: 3px solid #e34141b0;
 }
 
 .page-section-heading h1 {
     font-weight: 700;
-    font-size: 115%;
+    font-size: 120%;
 }
 
 .page-section-heading p {
@@ -1242,7 +1243,7 @@ span.sidebar-menu-nav-icon i {
 .payment-formalities-box {
     position: relative;
     width: 100%;
-    padding: 10px 15px;
+    padding: 8px 12px;
     display: flex;
     align-items: center;
     overflow: hidden;
