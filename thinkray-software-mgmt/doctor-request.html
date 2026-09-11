@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Accpet Pendings | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Request Reviews | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -102,7 +102,7 @@
       </div>
 
       <div class="sidebar-menu-nav">
-        <a href="doctor-index.html" class="active">
+        <a href="doctor-index.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-clock"></i>
           </span>
@@ -123,7 +123,7 @@
           <p>Approve</p>
           <em class="counter-chip">24</em>
         </a>
-        <a href="doctor-request.html">
+        <a href="doctor-request.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-file-earmark-check"></i>
           </span>
@@ -185,10 +185,9 @@
                   <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Test</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chest PA View</li>
+                  <li><span>History</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fever and cough</li>
+                  <li><span>Review Reason</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please review the impression before final dispatch.</li>
                 </ul>
               </div>
             </div>
@@ -196,8 +195,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-description-right">
                 <div class="doctor-calender-part">
-                  <span class="calender-chip">CT Scan</span>
-                  <p><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
+                  <p><span>Requested On:</span><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
                   <span class="tat-box">
                     <em class="tat-icon">
                       <i class="bi bi-clock"></i>
@@ -217,14 +215,14 @@
                   <div class="col-md-6 col-12">
                     <div class="doctor-cta-part">
                       <h5>18450</h5>
-                      <p>Niramoy Diagnostic Centre</p>
+                      <p>Diagnosis And Cure Centre</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#updateReportModal"><i class="bi bi-file-earmark-check"></i> Update Report</button>
                     </div>
                   </div>
                 </div>
@@ -241,14 +239,13 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>MD. Suraj</h3>
+                  <h3>Ananya Dey</h3>
                   <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Test</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chest PA View</li>
+                  <li><span>History</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fever and cough</li>
+                  <li><span>Review Reason</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please review the impression before final dispatch.</li>
                 </ul>
               </div>
             </div>
@@ -256,8 +253,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-description-right">
                 <div class="doctor-calender-part">
-                  <span class="calender-chip">CT Scan</span>
-                  <p><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
+                  <p><span>Requested On:</span><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
                   <span class="tat-box">
                     <em class="tat-icon">
                       <i class="bi bi-clock"></i>
@@ -270,21 +266,21 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
                   <div class="col-md-6 col-12">
                     <div class="doctor-cta-part">
                       <h5>18450</h5>
-                      <p>Niramoy Diagnostic Centre</p>
+                      <p>Diagnosis And Cure Centre</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#updateReportModal"><i class="bi bi-file-earmark-check"></i> Update Report</button>
                     </div>
                   </div>
                 </div>
@@ -301,14 +297,13 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Mriganka Dhar</h3>
+                  <h3>Md Sohail</h3>
                   <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Test</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chest PA View</li>
+                  <li><span>History</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fever and cough</li>
+                  <li><span>Review Reason</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please review the impression before final dispatch.</li>
                 </ul>
               </div>
             </div>
@@ -316,8 +311,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-description-right">
                 <div class="doctor-calender-part">
-                  <span class="calender-chip">CT Scan</span>
-                  <p><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
+                  <p><span>Requested On:</span><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
                   <span class="tat-box">
                     <em class="tat-icon">
                       <i class="bi bi-clock"></i>
@@ -330,21 +324,21 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
                   <div class="col-md-6 col-12">
                     <div class="doctor-cta-part">
                       <h5>18450</h5>
-                      <p>Niramoy Diagnostic Centre</p>
+                      <p>Diagnosis And Cure Centre</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#updateReportModal"><i class="bi bi-file-earmark-check"></i> Update Report</button>
                     </div>
                   </div>
                 </div>
@@ -361,14 +355,13 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Srimantini Krishna</h3>
-                  <p>32 yrs · Female</p>
+                  <h3>Sk. Vikash Jain</h3>
+                  <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Test</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chest PA View</li>
+                  <li><span>History</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fever and cough</li>
+                  <li><span>Review Reason</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please review the impression before final dispatch.</li>
                 </ul>
               </div>
             </div>
@@ -376,8 +369,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-description-right">
                 <div class="doctor-calender-part">
-                  <span class="calender-chip">CT Scan</span>
-                  <p><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
+                  <p><span>Requested On:</span><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
                   <span class="tat-box">
                     <em class="tat-icon">
                       <i class="bi bi-clock"></i>
@@ -390,21 +382,21 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
                   <div class="col-md-6 col-12">
                     <div class="doctor-cta-part">
                       <h5>18450</h5>
-                      <p>Niramoy Diagnostic Centre</p>
+                      <p>Diagnosis And Cure Centre</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#updateReportModal"><i class="bi bi-file-earmark-check"></i> Update Report</button>
                     </div>
                   </div>
                 </div>
@@ -421,14 +413,13 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Mr. Apurba Kanrar</h3>
-                  <p>32 yrs · Female</p>
+                  <h3>Sakil Ahmed Molla</h3>
+                  <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Test</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chest PA View</li>
+                  <li><span>History</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fever and cough</li>
+                  <li><span>Review Reason</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please review the impression before final dispatch.</li>
                 </ul>
               </div>
             </div>
@@ -436,8 +427,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-description-right">
                 <div class="doctor-calender-part">
-                  <span class="calender-chip">CT Scan</span>
-                  <p><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
+                  <p><span>Requested On:</span><i class="bi bi-calendar3"></i> 17-Aug-2026 · 12:25 AM</p>
                   <span class="tat-box">
                     <em class="tat-icon">
                       <i class="bi bi-clock"></i>
@@ -450,21 +440,21 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
                   <div class="col-md-6 col-12">
                     <div class="doctor-cta-part">
                       <h5>18450</h5>
-                      <p>Niramoy Diagnostic Centre</p>
+                      <p>Diagnosis And Cure Centre</p>
                     </div>
                   </div>
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#updateReportModal"><i class="bi bi-file-earmark-check"></i> Update Report</button>
                     </div>
                   </div>
                 </div>
@@ -475,6 +465,34 @@
 
       </div>
     </section>
+
+    <!----- UPDATE-REPORT-MODAL ------->
+    <div class="modal fade" id="updateReportModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-2">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="">SavClinical History:
+                      · Notes your symptoms, reason for the test, or relevant medical background.
+                      · Technique: Explains how the images were taken (such as angles or body positioning).e
+                    </textarea>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Update</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- UPDATE-REPORT-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->

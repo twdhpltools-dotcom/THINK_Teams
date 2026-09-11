@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Accpet Pendings | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Assigned Doctor | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -102,14 +102,14 @@
       </div>
 
       <div class="sidebar-menu-nav">
-        <a href="doctor-index.html" class="active">
+        <a href="doctor-index.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-clock"></i>
           </span>
           <p>Pending Accept</p>
           <em class="counter-chip">8</em>
         </a>
-        <a href="doctor-assign.html">
+        <a href="doctor-assign.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-person-check"></i>
           </span>
@@ -181,14 +181,14 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Amit Sharma</h3>
-                  <p>32 yrs · Male</p>
+                  <h3>Md Sohail</h3>
+                  <p>32 yrs · Female</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Unassigned</em></li>
+                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L-Spine AP/LAT</li>
+                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">LBP</a></li>
+                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">L.S SPINE AP/LAT</a></li>
                 </ul>
               </div>
             </div>
@@ -224,7 +224,8 @@
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal"><i class="bi bi-file-medical"></i> Note</button>
+                      <button type="button" class="completed-btn"><i class="bi bi-file-earmark-check"></i> Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -241,14 +242,14 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>MD. Suraj</h3>
-                  <p>32 yrs · Male</p>
+                  <h3>Ananya Dey</h3>
+                  <p>32 yrs · Female</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELF</li>
+                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L-Spine AP/LAT</li>
+                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">LBP</a></li>
+                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">L.S SPINE AP/LAT</a></li>
                 </ul>
               </div>
             </div>
@@ -270,7 +271,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
@@ -284,7 +285,8 @@
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal"><i class="bi bi-file-medical"></i> Note</button>
+                      <button type="button" class="completed-btn"><i class="bi bi-file-earmark-check"></i> Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -301,14 +303,14 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Mriganka Dhar</h3>
-                  <p>32 yrs · Male</p>
+                  <h3>Susmita Jayswal</h3>
+                  <p>32 yrs · Female</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Unassigned</em></li>
+                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L-Spine AP/LAT</li>
+                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">LBP</a></li>
+                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">L.S SPINE AP/LAT</a></li>
                 </ul>
               </div>
             </div>
@@ -330,7 +332,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
@@ -344,7 +346,8 @@
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal"><i class="bi bi-file-medical"></i> Note</button>
+                      <button type="button" class="completed-btn"><i class="bi bi-file-earmark-check"></i> Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -361,14 +364,14 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Srimantini Krishna</h3>
-                  <p>32 yrs · Female</p>
+                  <h3>MD. Subir Ali</h3>
+                  <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Unassigned</em></li>
+                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L-Spine AP/LAT</li>
+                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">LBP</a></li>
+                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">L.S SPINE AP/LAT</a></li>
                 </ul>
               </div>
             </div>
@@ -390,7 +393,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
@@ -404,7 +407,8 @@
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal"><i class="bi bi-file-medical"></i> Note</button>
+                      <button type="button" class="completed-btn"><i class="bi bi-file-earmark-check"></i> Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -421,14 +425,14 @@
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="doctor-description-left">
                 <div class="doctor-name-part">
-                  <h3>Mr. Apurba Kanrar</h3>
-                  <p>32 yrs · Female</p>
+                  <h3>Raktim Deb Sen</h3>
+                  <p>32 yrs · Male</p>
                 </div>
                 <ul class="doctor-info-listing">
-                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. S. Bannerjee</li>
-                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CT Brain</li>
-                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Headache</a></li>
-                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">AXIAL / CORONAL / SAGITTAL</a></li>
+                  <li><span>Ref Doctor</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELF</li>
+                  <li><span>Description</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L-Spine AP/LAT</li>
+                  <li><span>Distory</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">LBP</a></li>
+                  <li><span>Views</span> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">L.S SPINE AP/LAT</a></li>
                 </ul>
               </div>
             </div>
@@ -450,7 +454,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="doctor-description-cta">
                 <div class="row">
@@ -464,7 +468,8 @@
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn"><i class="bi bi-download"></i> Download</button>
                       <button type="button" class="submitted-btn"><i class="bi bi-file-earmark-text"></i> View DICOM</button>
-                      <button type="button" class="completed-btn"><i class="bi bi-check-circle"></i> Accept</button>
+                      <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal"><i class="bi bi-file-medical"></i> Note</button>
+                      <button type="button" class="completed-btn"><i class="bi bi-file-earmark-check"></i> Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -475,6 +480,31 @@
 
       </div>
     </section>
+
+    <!----- UPDATE-NOTE-MODAL ------->
+    <div class="modal fade" id="updateNoteModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-2">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="Write a note here..."></textarea>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- UPDATE-NOTE-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
