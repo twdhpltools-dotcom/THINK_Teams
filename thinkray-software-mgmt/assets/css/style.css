@@ -1946,9 +1946,8 @@ ul.doctor-info-listing li span {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
-    max-width: 160px;
-    color: #2e4777;
-    font-weight: 500;
+    max-width: 90px;
+    font-weight: 600;
 }
 
 
