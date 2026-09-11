@@ -1951,10 +1951,6 @@ ul.doctor-info-listing li span {
     font-weight: 500;
 }
 
-ul.doctor-info-listing li span i {
-    padding-right: 10px;
-    font-size: 110%;
-}
 
 .doctor-description-right {
     height: auto;
@@ -1978,7 +1974,7 @@ ul.doctor-info-listing li span i {
 }
 
 .doctor-calender-part p {
-    font-size: 90%;
+    font-size: 85%;
     opacity: 0.8;
     margin-bottom: 10px;
 }

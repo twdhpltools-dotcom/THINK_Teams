@@ -373,9 +373,6 @@
     .doctor-calender-part p span {
         padding-right: 10px;
     }
-    ul.doctor-info-listing li span i {
-        padding-right: 8px;
-    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -622,9 +619,6 @@
     }
     .doctor-calender-part p span {
         padding-right: 8px;
-    }
-    ul.doctor-info-listing li span i {
-        padding-right: 6px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
