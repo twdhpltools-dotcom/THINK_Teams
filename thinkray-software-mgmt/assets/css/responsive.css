@@ -63,7 +63,7 @@
         margin: 18px 0 0;
     }
     .login-card-heading {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .login-options {
         margin: 8px 0 0;
@@ -90,7 +90,7 @@
         padding-left: 35px;
     }
     .doctor-description-box {
-        padding: 15px 20px 0;
+        padding: 12px 14px 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
@@ -148,7 +148,7 @@
         padding: 30px 28px;
     }
     .login-card-heading {
-        margin-bottom: 22px;
+        margin-bottom: 18px;
     }
     .contact-sales {
         margin: 10px 0 0;
@@ -167,24 +167,14 @@
     ul.doctor-info-listing li span {
         max-width: 140px;
     }
-    ul.doctor-info-listing li {
-        margin-bottom: 4px;
-    }
-    .doctor-name-part {
-        margin-bottom: 10px;
-    }
-    span.tat-box {
-        padding: 3px 12px;
-    }
     .doctor-description-box {
-        padding: 14px 15px 0;
+        padding: 10px 12px 0;
     }
     .doctor-description-box-count {
         top: 13px;
         left: 12px;
         height: 25px;
         width: 25px;
-        font-size: 90%;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -197,6 +187,7 @@
     .mobile-menu-toggle {
         display: flex;
         float: right;
+        margin-right: -12px;
     }
     .top-header-content {
         display: none;
@@ -239,7 +230,7 @@
     }
     .sidebar-menu.collapsed .sidebar-menu-toggle {
         position: fixed;
-        top: 10px;
+        top: 9px;
         left: 15px;
         z-index: 102;
     }
@@ -335,6 +326,9 @@
         bottom: 0;
         margin-top: 40px;
     }
+    .login-divider {
+        margin: 0;
+    }
     .hide-lg {
         display: block;
         margin: 0 auto 20px;
@@ -373,11 +367,14 @@
     .doctor-description-box {
         padding: 13px 14px 0;
     }
-    .doctor-description-cta {
-        padding: 13px 18px;
-    }
     span.tat-box {
         gap: 8px;
+    }
+    .doctor-calender-part p span {
+        padding-right: 10px;
+    }
+    ul.doctor-info-listing li span i {
+        padding-right: 8px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -452,7 +449,7 @@
         font-size: 300%;
     }
     .doctor-description-right {
-        margin-top: 6px;
+        margin-top: 3px;
     }
     .doctor-calender-part {
         text-align: left;
@@ -463,7 +460,6 @@
     }
     span.tat-box {
         float: unset;
-        width: 100%;
         gap: 10px;
     }
     .doctor-calender-part span.calender-chip,
@@ -471,14 +467,17 @@
         margin-bottom: 0;
     }
     .doctor-description-cta {
-        padding: 12px 15px;
-        margin-top: 8px;
+        padding: 8px 15px;
+        margin-top: 3px;
     }
     .doctor-description-cta .content-table-btn-part {
         justify-content: left;
+        flex-wrap: wrap;
         margin-top: 6px;
     }
-
+    .doctor-name-part {
+        margin-bottom: 4px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -615,13 +614,16 @@
         max-width: 120px;
     }
     .doctor-description-cta {
-        padding: 10px 15px;
+        padding: 6px 12px;
     }
     .doctor-description-cta .content-table-btn-part {
-        gap: 15px;
-        margin-top: 10px;
+        gap: 5px 15px;
+        margin: 6px 0 3px;
     }
-    .doctor-calender-part p i {
+    .doctor-calender-part p span {
+        padding-right: 8px;
+    }
+    ul.doctor-info-listing li span i {
         padding-right: 6px;
     }
 }
@@ -657,9 +659,8 @@
         padding: 8px 12px;
         margin-top: 5px;
     }
-    .doctor-description-cta .content-table-btn-part {
-        flex-wrap: wrap;
-        gap: 6px 15px;
+    button i {
+        padding-right: 3px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/

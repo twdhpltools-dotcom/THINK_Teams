@@ -178,7 +178,7 @@ button.disbaled {
 }
 
 .content-table-btn-part button.completed-btn {
-    color: #1b8e58;
+    color: #007840;
 }
 
 .content-table-btn-part button.edit-btn {
@@ -971,12 +971,12 @@ span.sidebar-menu-nav-icon i {
 }
 
 .login-card-heading {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .login-card-heading h3 {
     margin: 0;
-    font-size: 220%;
+    font-size: 200%;
     font-weight: 700;
 }
 
@@ -1176,6 +1176,10 @@ span.sidebar-menu-nav-icon i {
     font-size: 90%;
     text-decoration: underline;
     color: #0B63D1;
+}
+
+.content-table.case-list .content-table-btn-part button.warning-btn {
+    text-decoration: underline;
 }
 /* ----------------------------------------- CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1852,13 +1856,13 @@ form button[type="submit"] {
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 18px 25px 0;
+    padding: 13px 18px 0;
     overflow: hidden;
     border-radius: 15px;
     color: var(--dark);
     box-shadow: 0 8px 24px #0000000d;
     border: 1px solid #dce8fd;
-    background: linear-gradient(to top, #fff 20%, #e3effe66);
+    /* background: linear-gradient(to top, #fff 20%, #e3effe66); */
     margin-bottom: 12px;
     z-index: 1;
 }
@@ -1873,10 +1877,10 @@ form button[type="submit"] {
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    background: #dcdcff91;
-    border: 1px solid #2520f72e;
+    background: #f3f3ff91;
+    border: 1px solid #2520f72b;
     color: #2520f7;
-    font-size: 100%;
+    font-size: 90%;
     font-weight: 700;
     z-index: 2;
 }
@@ -1890,17 +1894,17 @@ form button[type="submit"] {
 .doctor-name-part {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .doctor-name-part h3 {
-    font-size: 120%;
-    font-weight: 700;
+    font-size: 110%;
+    font-weight: 600;
     padding-right: 15px;
 }
 
 .doctor-name-part p {
-    font-size: 95%;
+    font-size: 90%;
     padding-left: 12px;
     border-left: 1px solid #bfbfbf;
 }
@@ -1913,13 +1917,27 @@ ul.doctor-info-listing {
 ul.doctor-info-listing li {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
-    font-size: 95%;
+    margin-bottom: 3px;
+    font-size: 85%;
+}
+
+ul.doctor-info-listing li:last-child {
+    margin-bottom: 0;
+}
+
+ul.doctor-info-listing li em {
+    color: #e34141;
+    font-weight: 500;
+    font-style: normal;
 }
 
 ul.doctor-info-listing li a {
     color: #0B63D1;
     text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
 }
 
 ul.doctor-info-listing li span {
@@ -1929,7 +1947,8 @@ ul.doctor-info-listing li span {
     text-overflow: ellipsis;
     width: 100%;
     max-width: 160px;
-    color: #71809d;
+    color: #2e4777;
+    font-weight: 500;
 }
 
 ul.doctor-info-listing li span i {
@@ -1949,61 +1968,66 @@ ul.doctor-info-listing li span i {
 .doctor-calender-part span.calender-chip {
     display: inline-block;
     border-radius: 5px;
-    background: #e6e6ff91;
-    border: 1px solid #2520f72e;
+    background: #fcfcff91;
+    border: 1px solid #2520f71f;
     color: #4c47ff;
-    font-size: 90%;
+    font-size: 80%;
     font-weight: 700;
-    padding: 3px 8px;
-    margin-bottom: 10px;
+    padding: 1px 6px;
+    margin-bottom: 8px;
 }
 
 .doctor-calender-part p {
-    font-size: 95%;
+    font-size: 90%;
     opacity: 0.8;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .doctor-calender-part p i {
-    padding-right: 10px;
+    padding-right: 3px;
+}
+
+.doctor-calender-part p span {
+    font-weight: 600;
+    color: var(--primary);
+    padding-right: 12px;
 }
 
 span.tat-box {
     float: right;
-    padding: 5px 16px;
+    padding: 2px 7px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     border: 1px solid #bfeee3;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #effffb, #e9fbf7);
+    border-radius: 50px;
+    background: #f7fffd;
     text-align: left;
     color: #0a6d61;
 }
 
 em.tat-icon {
     border-radius: 50%;
-    font-size: 130%;
+    font-size: 100%;
     font-style: normal;
 }
 
 .tat-box p {
     margin: 0;
-    font-size: 80%;
+    font-size: 70%;
     font-weight: 600;
 }
 
 .tat-box h6 {
-    margin: 2px 0 0;
-    font-size: 95%;
+    margin: 0 4px;
+    font-size: 85%;
     font-weight: 700;
 }
 
 .doctor-description-cta {
     height: auto;
     width: 100%;
-    padding: 15px 20px;
-    border-radius: 8px;
+    padding: 10px 15px;
     border-top: 1px solid #9f0d7f17;
     background: linear-gradient(to bottom, #fffbfe, transparent);
 }
@@ -2014,30 +2038,32 @@ em.tat-icon {
 }
 
 .doctor-cta-part h5 {
-    font-size: 110%;
+    font-size: 105%;
     font-weight: 600;
-    padding-right: 15px;
+    padding-right: 12px;
     display: flex;
     align-items: center;
 }
 
-.doctor-cta-part h5 i {
-    color: #1b8e58;
-    font-size: 50%;
-    padding-right: 8px;
-}
-
 .doctor-cta-part p {
-    font-size: 95%;
+    font-size: 90%;
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 8px;
     border-left: 1px solid #bfbfbf;
     opacity: 0.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
 }
 
 .doctor-description-cta .content-table-btn-part {
     justify-content: flex-end;
-    gap: 25px;
+    gap: 18px;
+}
+
+.doctor-description-cta .content-table-btn-part button {
+    font-size: 95% !important;
 }
 /* -----------------------------------------PENDING-ACCEPT-PAGE COMPLETE ---------------------------------------------- */
 
