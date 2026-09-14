@@ -151,8 +151,10 @@ button i {
     padding-right: 4px;
 }
 
+button:disabled,
 button.disbaled {
-    opacity: 0.6;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .content-table-btn-part {
@@ -283,7 +285,7 @@ section.page-section.expanded {
     width: 100%;
     padding: 5px 12px;
     color: var(--dark);
-    background: linear-gradient(to right, #9f0d7f08, transparent);
+    background: linear-gradient(to right, #f6f6ff9e, transparent);
     border-left: 3px solid #e34141b0;
 }
 
@@ -1188,10 +1190,6 @@ span.sidebar-menu-nav-icon i {
 .content-table.history .content-table-text h6 {
     font-size: 105%;
     font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
 }
 
 .content-table.history .content-table-text p {
@@ -2062,6 +2060,55 @@ em.tat-icon {
     font-size: 95% !important;
 }
 /* -----------------------------------------PENDING-ACCEPT-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- VALIDATE-ERROR START ---------------------------------------------- */
+p.login-error-msg {
+    width: 100%;
+    height: auto;
+    padding: 8px 18px;
+    margin-top: 10px;
+    color: var(--dark);
+    background: linear-gradient(to right, #e3414114, transparent);
+    border-left: 3px solid #e34141;
+    font-size: 95%;
+    font-weight: 500;
+}
+
+p.login-error-msg:empty {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+p.login-error-msg:not(:empty) {
+    visibility: visible;
+    animation: loginErrorShow 0.45s ease;
+}
+
+@keyframes loginErrorShow {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(4px);
+    }
+    60% {
+        transform: translateX(-3px);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* ----------------------------------------- VALIDATE-ERROR COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
