@@ -640,6 +640,16 @@
         justify-content: start;
         padding: 7px 0;
     }
+    .doctor-cta-part {
+        flex-wrap: wrap;
+        gap: 8px 10px;
+    }
+    .doctor-cta-part span.type {
+        margin: 0;
+    }
+    .doctor-cta-part h6.extra-specs {
+        margin: 4px 0 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 

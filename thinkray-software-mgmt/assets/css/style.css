@@ -451,6 +451,10 @@ i.sub-down-icon {
     border: 1px solid #B45BA1;
 }
 
+.user-wallet.admin {
+    gap: 8px;  
+}
+
 .user-wallet img {
     max-width: 30px;
 }
@@ -458,11 +462,13 @@ i.sub-down-icon {
 .user-wallet p {
     font-size: 80%;
     color: #FFD2F5;
+    white-space: nowrap;
 }
 
 .user-wallet h6 {
     font-size: 110%;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .user-supports {
@@ -710,7 +716,8 @@ span.profile-submenu-icon img {
     z-index: 2;
 }
 
-.sidebar-menu.collapsed .sidebar-menu-nav a {
+.sidebar-menu.collapsed .sidebar-menu-nav a,
+.sidebar-menu.collapsed .sidebar-menu-nav h5 {
     display: none;
 }
 
@@ -769,12 +776,13 @@ span.sidebar-menu-nav-icon i {
     transform: translateY(0);
 }
 
-.bi-chevron-down {
-    transition: transform 0.3s ease;
-}
-
-.bi-chevron-down.rotate {
-    transform: rotate(180deg);
+.sidebar-menu-nav h5.menu-divide-head {
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    color: var(--primary);
 }
 /* ----------------------------------------- SIDEBAR-MENU SECTION COMPLETE ---------------------------------------------- */
 
@@ -1179,11 +1187,10 @@ span.sidebar-menu-nav-icon i {
 
 .content-table.case-list .content-table-text h6 {
     font-size: 90%;
-    color: var(--dark);
     font-weight: 400;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 9px;
 }
 
 .content-table.case-list .content-table-text h6 span {
@@ -2087,10 +2094,63 @@ em.tat-icon {
     color: #53617e;
     font-size: 95%;
     font-weight: 500;
-    max-width: 250px;
+    max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.doctor-cta-part span.type {
+    display: inline-block;
+    font-size: 95%;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-left: 6px;
+    white-space: nowrap;
+    height: auto;
+    width: unset;
+}
+
+.doctor-cta-part span.type i {
+    padding-right: 1px;
+}
+
+.doctor-cta-part span.type.type-one {
+    color: #2520f7;
+    background: #fbfbff;
+    border: 1px solid #2520f761;
+}
+
+.doctor-cta-part span.type.type-two {
+    color: var(--warning);
+    background: #fffdfc;
+    border: 1px solid #f9822d66;
+}
+
+.doctor-cta-part span.type.type-three {
+    color: var(--success);
+    background: #fbfffd;
+    border: 1px solid #2f9d699e;
+}
+
+.doctor-cta-part span.type.type-four {
+    color: #0e9792;
+    background: #ddfffe;
+    border: 1px solid #0e979299;
+}
+
+.doctor-cta-part span.type.type-five {
+    color: var(--failure);
+    background: #fffafa;
+    border: 1px solid #ff68688c;
+}
+
+.doctor-cta-part h6.extra-specs {
+    font-size: 85%;
+    color: var(--dark);
+    font-weight: 400;
+    margin: 4px 0 0 10px;
 }
 
 .doctor-description-cta .content-table-btn-part {
