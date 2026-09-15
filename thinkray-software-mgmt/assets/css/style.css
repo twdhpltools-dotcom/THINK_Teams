@@ -346,7 +346,7 @@ section.page-section.expanded {
 .login-input input,
 .login-input select,
 .login-input textarea {
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 i.sub-down-icon {
@@ -1096,6 +1096,10 @@ span.sidebar-menu-nav-icon i {
     font-size: 90%;
     text-decoration: none;
     color: #695464;
+}
+
+.login-footer a:hover {
+    color: var(--primary);
 }
 
 .login-footer span {
@@ -2070,7 +2074,7 @@ p.login-error-msg {
     color: var(--dark);
     background: linear-gradient(to right, #e3414114, transparent);
     border-left: 3px solid #e34141;
-    font-size: 95%;
+    font-size: 90%;
     font-weight: 500;
 }
 
