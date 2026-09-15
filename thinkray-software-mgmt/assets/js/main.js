@@ -129,7 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 const searchTexts=[
   "Search patient, Inv No ...",
-  "Search by test name or study"
+  "Search by test name or study",
+  "Search patient, case ID"
 ];
 
 const searchInput=document.querySelector(".search-input input");
