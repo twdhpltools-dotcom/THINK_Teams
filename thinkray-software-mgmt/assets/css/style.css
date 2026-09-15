@@ -1859,7 +1859,7 @@ form button[type="submit"] {
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 18px 20px 0;
+    padding: 14px 15px 0;
     overflow: hidden;
     border-radius: 16px;
     color: var(--dark);
@@ -2080,9 +2080,9 @@ em.tat-icon {
 }
 
 .doctor-description-cta {
-    width: calc(100% + 40px);
+    width: calc(100% + 30px);
     margin-left: -20px;
-    padding: 8px 28px;
+    padding: 6px 28px;
     border-top: 1px solid #e1e9f2;
     background: linear-gradient(to right, #f7fbff, #ffffff);
 }
@@ -2090,16 +2090,15 @@ em.tat-icon {
 .doctor-cta-part {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 13px;
 }
 
 .doctor-cta-part h5 {
-    margin: 0;
-    padding: 6px 14px;
+    padding: 4px 13px;
     border-radius: 8px;
     background: #f3f8ff;
     border: 1px solid #dce8fd;
-    font-size: 110%;
+    font-size: 105%;
     font-weight: 700;
 }
 
@@ -2115,12 +2114,9 @@ em.tat-icon {
 }
 
 .doctor-cta-part p {
-    margin: 0;
-    padding: 0;
-    border: 0;
     max-width: 250px;
     color: #53617e;
-    font-size: 100%;
+    font-size: 95%;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
