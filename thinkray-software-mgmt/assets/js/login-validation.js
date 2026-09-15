@@ -7,15 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const error = document.getElementById("loginError");
 
   const logins = {
-    Centre_app: {
+    centre_app: {
       password: "12345",
       page: "index.html"
     },
-    Doctor_app: {
+    doctor_app: {
       password: "12345",
       page: "doctor-index.html"
     },
-    Admin_app: {
+    admin_app: {
       password: "12345",
       page: "admin-index.html"
     }
