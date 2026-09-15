@@ -1859,23 +1859,36 @@ form button[type="submit"] {
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 13px 18px 0;
+    padding: 18px 20px 0;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 16px;
     color: var(--dark);
-    box-shadow: 0 8px 24px #0000000d;
+    background: linear-gradient(135deg, #ffffff 65%, #f2fffb);
     border: 1px solid #dce8fd;
-    /* background: linear-gradient(to top, #fff 20%, #e3effe66); */
-    margin-bottom: 12px;
+    box-shadow: 0 10px 30px #0000000d;
+    margin-bottom: 15px;
     z-index: 1;
+}
+
+.doctor-description-box::after {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #dff9ef;
+    opacity: 0.7;
+    z-index: -1;
 }
 
 .doctor-description-box-count {
     position: absolute;
-    top: 16px;
+    top: 13px;
     left: 15px;
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1889,179 +1902,238 @@ form button[type="submit"] {
 }
 
 .doctor-description-left {
-    height: auto;
     width: 100%;
-    padding-left: 40px;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    padding-left: 45px;
+}
+
+.doctor-patient-part {
+    min-width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .doctor-name-part {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+    display: block;
+    margin: 0;
 }
 
 .doctor-name-part h3 {
-    font-size: 110%;
-    font-weight: 600;
-    padding-right: 15px;
+    margin: 0 0 1px;
+    padding: 0;
+    font-size: 145%;
+    font-weight: 700;
 }
 
 .doctor-name-part p {
-    font-size: 90%;
-    padding-left: 12px;
-    border-left: 1px solid #bfbfbf;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 95%;
+    color: #081735;
+}
+
+.doctor-name-part p span {
+    height: 18px;
+    width: 1px;
+    background: #cbd4df;
+}
+
+.doctor-name-part p i {
+    color: #1677f2;
+    font-size: 115%;
 }
 
 ul.doctor-info-listing {
-    height: auto;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 10px 20px;
+    margin: 0;
+    padding: 0 0 0 30px;
+    border-left: 1px solid #dfe6ef;
 }
 
 ul.doctor-info-listing li {
     display: flex;
-    align-items: center;
-    margin-bottom: 3px;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0;
     font-size: 85%;
+    list-style: none;
 }
 
-ul.doctor-info-listing li:last-child {
-    margin-bottom: 0;
-}
-
-ul.doctor-info-listing li em {
-    color: #e34141;
-    font-weight: 500;
-    font-style: normal;
-}
-
-ul.doctor-info-listing li a {
-    color: #0B63D1;
-    text-decoration: underline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px;
+ul.doctor-info-listing li div {
+    min-width: 0;
 }
 
 ul.doctor-info-listing li span {
     display: block;
+    width: auto;
+    max-width: none;
+    margin-bottom: 1px;
+    color: #697590;
+    font-size: 100%;
+    font-weight: 500;
+    overflow: visible;
+}
+
+ul.doctor-info-listing li p {
+    font-size: 120%;
+    font-weight: 600;
+    color: #112342;
+}
+
+ul.doctor-info-listing li a {
+    display: block;
+    font-size: 115%;
+    max-width: 220px;
+    color: #0969da;
+    text-decoration: underline;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
-    max-width: 90px;
-    font-weight: 600;
+    font-weight: 500;
 }
-
 
 .doctor-description-right {
-    height: auto;
     width: 100%;
-}
-
-.doctor-calender-part {
-    text-align: right;
+    height: 100%;
+    padding: 0 20px 20px;
+    border-left: 1px solid #dfe6ef;
 }
 
 .doctor-calender-part span.calender-chip {
-    display: inline-block;
-    border-radius: 5px;
-    background: #fcfcff91;
-    border: 1px solid #2520f71f;
-    color: #4c47ff;
-    font-size: 80%;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 15px;
+    margin-bottom: 14px;
+    border: 0;
+    border-radius: 50px;
+    background: #eaf4ff;
+    color: #0757b8;
+    font-size: 90%;
     font-weight: 700;
-    padding: 1px 6px;
-    margin-bottom: 8px;
 }
 
-.doctor-calender-part p {
-    font-size: 85%;
-    opacity: 0.8;
-    margin-bottom: 10px;
+.doctor-date {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.doctor-calender-part p i {
-    padding-right: 3px;
+.doctor-date > i {
+    color: #087368;
+    font-size: 140%;
 }
 
-.doctor-calender-part p span {
+.doctor-date span {
+    display: block;
+    margin-bottom: 2px;
+    color: #6c7790;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.doctor-date p {
+    margin: 0;
+    color: #172947;
+    font-size: 95%;
     font-weight: 600;
-    color: var(--primary);
-    padding-right: 12px;
+    opacity: 1;
 }
 
 span.tat-box {
-    float: right;
-    padding: 2px 7px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: fit-content;
+    padding: 4px 10px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    border: 1px solid #bfeee3;
-    border-radius: 50px;
-    background: #f7fffd;
-    text-align: left;
-    color: #0a6d61;
+    gap: 7px;
+    border: 0;
+    border-radius: 10px;
+    background: #e9fbf4;
+    color: #087368;
 }
 
 em.tat-icon {
-    border-radius: 50%;
-    font-size: 100%;
+    font-size: 125%;
     font-style: normal;
 }
 
 .tat-box p {
     margin: 0;
-    font-size: 70%;
-    font-weight: 600;
+    font-size: 75%;
+    font-weight: 500;
 }
 
 .tat-box h6 {
-    margin: 0 4px;
-    font-size: 85%;
+    margin: 0;
+    font-size: 92%;
     font-weight: 700;
 }
 
 .doctor-description-cta {
-    height: auto;
-    width: 100%;
-    padding: 10px 15px;
-    border-top: 1px solid #9f0d7f17;
-    background: linear-gradient(to bottom, #fffbfe, transparent);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 8px 28px;
+    border-top: 1px solid #e1e9f2;
+    background: linear-gradient(to right, #f7fbff, #ffffff);
 }
 
 .doctor-cta-part {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .doctor-cta-part h5 {
-    font-size: 105%;
-    font-weight: 600;
-    padding-right: 12px;
-    display: flex;
-    align-items: center;
+    margin: 0;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: #f3f8ff;
+    border: 1px solid #dce8fd;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.doctor-cta-part > span {
+    height: 22px;
+    width: 1px;
+    background: #d3dae4;
+}
+
+.doctor-cta-part > i {
+    color: #61718d;
+    font-size: 150%;
 }
 
 .doctor-cta-part p {
-    font-size: 90%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 250px;
+    color: #53617e;
+    font-size: 100%;
     font-weight: 500;
-    padding-left: 8px;
-    border-left: 1px solid #bfbfbf;
-    opacity: 0.7;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 220px;
 }
 
 .doctor-description-cta .content-table-btn-part {
-    justify-content: flex-end;
-    gap: 18px;
+    gap: 20px;
+    justify-content: end;
 }
 
 .doctor-description-cta .content-table-btn-part button {
-    font-size: 95% !important;
+    text-decoration: underline;
 }
 /* -----------------------------------------PENDING-ACCEPT-PAGE COMPLETE ---------------------------------------------- */
 
@@ -2074,7 +2146,7 @@ p.login-error-msg {
     color: var(--dark);
     background: linear-gradient(to right, #e3414114, transparent);
     border-left: 3px solid #e34141;
-    font-size: 90%;
+    font-size: 95%;
     font-weight: 500;
 }
 
