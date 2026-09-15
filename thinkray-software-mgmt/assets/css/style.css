@@ -122,7 +122,7 @@ textarea {
     width: 100%;
     height: auto;
     background: var(--light);
-    border: 1px solid #DDE2EA;
+    border: 1px solid #d5d8dc;
     border-radius: 8px;
     outline: none;
     padding: 9px 20px;
@@ -1873,37 +1873,6 @@ form button[type="submit"] {
     z-index: 1;
 }
 
-.doctor-description-box::after {
-    content: '';
-    position: absolute;
-    top: -80px;
-    right: -80px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background: #dff9ef;
-    opacity: 0.7;
-    z-index: -1;
-}
-
-.doctor-description-box-count {
-    position: absolute;
-    top: 13px;
-    left: 15px;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    background: #f3f3ff91;
-    border: 1px solid #2520f72b;
-    color: #2520f7;
-    font-size: 90%;
-    font-weight: 700;
-    z-index: 2;
-}
-
 .doctor-description-left {
     width: 100%;
     display: flex;
@@ -1916,7 +1885,7 @@ form button[type="submit"] {
 .doctor-patient-part {
     height: auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 440px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -1926,6 +1895,15 @@ form button[type="submit"] {
     padding: 0;
     font-size: 135%;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.doctor-name-part h3 span.doctor-description-box-count {
+    color: #7485ad;
+    font-size: 90%;
+    font-weight: 600;
 }
 
 .doctor-name-part p {
@@ -2161,6 +2139,78 @@ p.login-error-msg:not(:empty) {
     }
 }
 /* ----------------------------------------- VALIDATE-ERROR COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- SUGGESTIONS-CHIPS START ---------------------------------------------- */
+.view-selector {
+    width: 100%;
+}
+
+.selected-view-part {
+    height: auto;
+    width: 100%;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: #f4f9ff;
+    border: 1px solid #dceaff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.selected-view-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.selected-view-left h6 {
+    font-size: 95%;
+    white-space: nowrap;
+}
+
+.selected-view-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.view-chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.view-chip {
+    padding: 7px 14px;
+    border: 1px solid #d7dfe9;
+    border-radius: 7px;
+    background: var(--light);
+    color: #33415c;
+    font-size: 72%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.view-chip:hover {
+    border-color: #1687f8;
+    color: #1687f8;
+    background: #f5faff;
+}
+
+.view-chip.active {
+    border-color: #1687f8;
+    background: #eaf4ff;
+    color: #0874e4;
+    font-weight: 600;
+}
+/* ----------------------------------------- SUGGESTIONS-CHIPS COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
