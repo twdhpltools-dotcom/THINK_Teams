@@ -208,7 +208,7 @@
         </div>
       </div>
 
-      <div class="content-formalities blank">
+      <div class="content-formalities">
         <div class="row gx-3 gy-4">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="field-formalities-box">
@@ -233,6 +233,113 @@
                   <button type="button" class="browse-btn"><i class="bi bi-folder2-open"></i> Browse File</button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-formalities mt-2">
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="form-formalities-box">
+              <h5>Diacom Information</h5>
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter patient id *" required="">
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter modality *" required="">
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter patient name *" required="">
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <select name="" required="">
+                      <option value="0" selected="">Select gender *</option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                      <option value="3">Others</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="date" name="" value="" placeholder="Enter age *" required="">
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter reffered doctor *">
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="Enter study description"></textarea>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="Enter case history"></textarea>
+                  </div>
+                </div>
+
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center mt-3">
+                      <button type="submit" class="browse-btn">Confirm</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-formalities mt-2">
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="form-formalities-box">
+              <h5>Select & Add Views</h5>
+
+              <div class="view-selector">
+                <div class="selected-view-part">
+                  <div class="selected-view-left">
+                    <h6>Selected Views (<span id="selectedCount">0</span>)</h6>
+                  </div>
+
+                  <div class="content-table-btn-part">
+                    <button type="button" class="request-btn">Clear All</button>
+                  </div>
+                </div>
+
+                <div class="login-input">
+                  <i class="bi bi-search login-left-icon"></i>
+                  <input type="text" name="" placeholder="Search views (e.g., chest, skull, ribs...)">
+                </div>
+
+                <div class="view-chip-list" id="viewChipList">
+                  <button type="button" class="view-chip">CHEST PA VIEW</button>
+                  <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                  <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                  <button type="button" class="view-chip active">PNS OM VIEW</button>
+                  <button type="button" class="view-chip">CHEST PA VIEW</button>
+                  <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                  <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                  <button type="button" class="view-chip active">PNS OM VIEW</button>
+                  <button type="button" class="view-chip">CHEST PA VIEW</button>
+                  <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                  <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                  <button type="button" class="view-chip active">PNS OM VIEW</button>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
