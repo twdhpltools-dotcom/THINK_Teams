@@ -163,6 +163,19 @@ button.disbaled {
     gap: 6px;
 }
 
+.content-table-btn-part button {
+    font-size: 100%;
+}
+
+.content-table-btn-part.conf {
+    justify-content: center;
+    gap: 30px;
+}
+
+.content-table-btn-part.conf button {
+    font-size: 110%;
+}
+
 .content-table-btn-part button.completed-btn,
 .content-table-btn-part button.edit-btn,
 .content-table-btn-part button.print-btn,
@@ -176,7 +189,6 @@ button.disbaled {
     padding: 0;
     color: var(--light);
     font-weight: 500;
-    font-size: 100%;
 }
 
 .content-table-btn-part button.completed-btn {
