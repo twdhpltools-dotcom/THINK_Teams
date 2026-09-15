@@ -237,7 +237,7 @@
                 <div class="content-table-btn-part">
                   <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'"><i class="bi bi-eye pe-0"></i></button>
                   <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
-                  <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
+                  <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
                 </div>
               </td>
             </tr>
@@ -253,7 +253,7 @@
                   <div class="content-table-btn-part">
                     <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'"><i class="bi bi-eye pe-0"></i></button>
                     <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
-                    <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
+                    <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
                   </div>
                 </div>
               </td>
@@ -269,7 +269,7 @@
                 <div class="content-table-btn-part">
                   <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'"><i class="bi bi-eye pe-0"></i></button>
                   <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
-                  <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
+                  <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
                 </div>
               </td>
             </tr>
@@ -277,6 +277,37 @@
         </table>
       </div>
     </section>
+
+    <!----- DELETE-CONFIRMATION-MODAL ------->
+    <div class="modal fade" id="deleteConfModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Confirmation</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="status-check-comment">
+                      <p>Would you like to DELETE?</p>
+                    </div>
+                    <div class="content-table-btn-part conf mt-3">
+                      <button type="button" class="pending-btn" data-bs-dismiss="modal">Ok</button>
+                      <button type="button" class="request-btn" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- DELETE-CONFIRMATION-MODAL ------->
 
   </main>
   <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
