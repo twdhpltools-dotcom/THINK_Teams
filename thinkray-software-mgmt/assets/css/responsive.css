@@ -86,11 +86,11 @@
     .content-table.case-list .content-table-text h6 {
         font-size: 85%;
     }
-    .doctor-description-left {
-        padding-left: 35px;
+    ul.doctor-info-listing {
+        gap: 4px 20px;
     }
-    .doctor-description-box {
-        padding: 12px 14px 0;
+    .doctor-description-cta {
+        padding: 7px 25px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
@@ -167,14 +167,20 @@
     ul.doctor-info-listing li span {
         max-width: 140px;
     }
-    .doctor-description-box {
-        padding: 10px 12px 0;
-    }
     .doctor-description-box-count {
         top: 13px;
         left: 12px;
         height: 25px;
         width: 25px;
+    }
+    ul.doctor-info-listing {
+        gap: 3px 15px;
+    }
+    .doctor-cta-part {
+        gap: 12px;
+    }
+    .doctor-description-left {
+        margin: 10px 0;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -364,14 +370,15 @@
     .payment-icon i {
         font-size: 145%;
     }
-    .doctor-description-box {
-        padding: 13px 14px 0;
+    .doctor-patient-part {
+        max-width: 180px;
     }
-    span.tat-box {
-        gap: 8px;
+    .doctor-date {
+        margin-bottom: 11px;
     }
-    .doctor-calender-part p span {
-        padding-right: 10px;
+    .doctor-description-box::after {
+        height: 150px;
+        width: 150px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -445,26 +452,19 @@
         bottom: 10px;
         font-size: 300%;
     }
-    .doctor-description-right {
-        margin-top: 3px;
-    }
     .doctor-calender-part {
-        text-align: left;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        justify-content: space-around;
+        margin-top: 3px;
+        border-top: 1px solid #dfe6ef;
+        padding-top: 10px;
     }
     span.tat-box {
         float: unset;
         gap: 10px;
     }
-    .doctor-calender-part span.calender-chip,
-    .doctor-calender-part p {
-        margin-bottom: 0;
-    }
     .doctor-description-cta {
-        padding: 8px 15px;
         margin-top: 3px;
     }
     .doctor-description-cta .content-table-btn-part {
@@ -474,6 +474,9 @@
     }
     .doctor-name-part {
         margin-bottom: 4px;
+    }
+    ul.doctor-info-listing {
+        border-right-width: 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -601,6 +604,12 @@
     }
     .doctor-description-left {
         padding-left: 0;
+        flex-direction: column;
+        gap: 7px;
+        margin: 12px 0;
+    }
+    .doctor-patient-part {
+        max-width: 100%;
     }
     .doctor-description-box-count {
         top: 10px;
@@ -610,15 +619,27 @@
     ul.doctor-info-listing li span {
         max-width: 120px;
     }
-    .doctor-description-cta {
-        padding: 6px 12px;
-    }
     .doctor-description-cta .content-table-btn-part {
         gap: 5px 15px;
         margin: 6px 0 3px;
     }
     .doctor-calender-part p span {
         padding-right: 8px;
+    }
+    ul.doctor-info-listing {
+        border: none;
+        padding-left: 5px;
+    }
+    .doctor-calender-part span.calender-chip,
+    .doctor-date {
+        margin-bottom: 0;
+    }
+    .doctor-calender-part {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 18px;
+        justify-content: start;
+        padding: 7px 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
@@ -648,10 +669,6 @@
     }
     .doctor-description-right {
         margin-top: 2px;
-    }
-    .doctor-description-cta {
-        padding: 8px 12px;
-        margin-top: 5px;
     }
     button i {
         padding-right: 3px;

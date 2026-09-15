@@ -1854,12 +1854,15 @@ form button[type="submit"] {
 .doctor-description {
     height: auto;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 5px 18px;
 }
 
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 14px 15px 0;
+    padding: 0 15px;
     overflow: hidden;
     border-radius: 16px;
     color: var(--dark);
@@ -1904,27 +1907,24 @@ form button[type="submit"] {
 .doctor-description-left {
     width: 100%;
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: 15px;
-    padding-left: 45px;
+    padding-left: 10px;
+    margin: 12px 0;
 }
 
 .doctor-patient-part {
-    min-width: 260px;
+    height: auto;
+    width: 100%;
+    max-width: 270px;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.doctor-name-part {
-    display: block;
-    margin: 0;
-}
-
 .doctor-name-part h3 {
-    margin: 0 0 1px;
     padding: 0;
-    font-size: 145%;
+    font-size: 135%;
     font-weight: 700;
 }
 
@@ -1932,7 +1932,7 @@ form button[type="submit"] {
     display: flex;
     align-items: center;
     gap: 7px;
-    font-size: 95%;
+    font-size: 90%;
     color: #081735;
 }
 
@@ -1942,28 +1942,22 @@ form button[type="submit"] {
     background: #cbd4df;
 }
 
-.doctor-name-part p i {
-    color: #1677f2;
-    font-size: 115%;
-}
-
 ul.doctor-info-listing {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-    gap: 10px 20px;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 6px 20px;
     margin: 0;
-    padding: 0 0 0 30px;
-    border-left: 1px solid #dfe6ef;
+    padding: 0 0 0 20px;
+    border: 0 solid #dfe6ef;
+    border-left-width: 1px;
+    border-right-width: 1px;
 }
 
 ul.doctor-info-listing li {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin: 0;
-    font-size: 85%;
-    list-style: none;
 }
 
 ul.doctor-info-listing li div {
@@ -1974,49 +1968,41 @@ ul.doctor-info-listing li span {
     display: block;
     width: auto;
     max-width: none;
-    margin-bottom: 1px;
     color: #697590;
-    font-size: 100%;
+    font-size: 85%;
     font-weight: 500;
-    overflow: visible;
 }
 
 ul.doctor-info-listing li p {
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 600;
-    color: #112342;
 }
 
 ul.doctor-info-listing li a {
     display: block;
-    font-size: 115%;
-    max-width: 220px;
+    font-size: 100%;
     color: #0969da;
     text-decoration: underline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-weight: 500;
 }
 
 .doctor-description-right {
     width: 100%;
     height: 100%;
-    padding: 0 20px 20px;
-    border-left: 1px solid #dfe6ef;
+    padding-left: 4px;
 }
 
 .doctor-calender-part span.calender-chip {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 5px 15px;
-    margin-bottom: 14px;
+    padding: 4px 15px;
+    margin-bottom: 12px;
     border: 0;
     border-radius: 50px;
     background: #eaf4ff;
     color: #0757b8;
-    font-size: 90%;
+    font-size: 85%;
     font-weight: 700;
 }
 
@@ -2024,35 +2010,29 @@ ul.doctor-info-listing li a {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 13px;
 }
 
 .doctor-date > i {
     color: #087368;
-    font-size: 140%;
+    font-size: 120%;
 }
 
 .doctor-date span {
     display: block;
-    margin-bottom: 2px;
     color: #6c7790;
-    font-size: 80%;
+    font-size: 75%;
     font-weight: 500;
 }
 
 .doctor-date p {
-    margin: 0;
-    color: #172947;
-    font-size: 95%;
+    font-size: 90%;
     font-weight: 600;
-    opacity: 1;
 }
 
 span.tat-box {
-    position: absolute;
-    top: 30px;
-    right: 50px;
     width: fit-content;
-    padding: 4px 10px;
+    padding: 3px 10px;
     display: flex;
     align-items: center;
     gap: 7px;
@@ -2082,7 +2062,7 @@ em.tat-icon {
 .doctor-description-cta {
     width: calc(100% + 30px);
     margin-left: -20px;
-    padding: 6px 28px;
+    padding: 8px 25px;
     border-top: 1px solid #e1e9f2;
     background: linear-gradient(to right, #f7fbff, #ffffff);
 }
@@ -2094,11 +2074,11 @@ em.tat-icon {
 }
 
 .doctor-cta-part h5 {
-    padding: 4px 13px;
-    border-radius: 8px;
+    padding: 4px 12px;
+    border-radius: 5px;
     background: #f3f8ff;
     border: 1px solid #dce8fd;
-    font-size: 105%;
+    font-size: 100%;
     font-weight: 700;
 }
 
@@ -2110,14 +2090,14 @@ em.tat-icon {
 
 .doctor-cta-part > i {
     color: #61718d;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 .doctor-cta-part p {
-    max-width: 250px;
     color: #53617e;
     font-size: 95%;
     font-weight: 500;
+    max-width: 250px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
