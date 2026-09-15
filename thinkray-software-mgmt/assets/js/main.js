@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = logins[username].page;
     } else {
       error.innerText =
-        "You're trying to Log in, But These Credentials are not Matched According to You";
+        "You're trying to Log in, But These Credentials are not Matched ...";
     }
   });
 });

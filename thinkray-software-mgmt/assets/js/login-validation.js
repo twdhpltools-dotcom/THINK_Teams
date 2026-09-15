@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
       page: "index.html"
     },
     Doctor_app: {
-      password: "54321",
+      password: "12345",
       page: "doctor-index.html"
     },
     Admin_app: {
-      password: "00000",
+      password: "12345",
       page: "admin-index.html"
     }
   };
