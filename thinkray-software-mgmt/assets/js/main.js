@@ -168,6 +168,25 @@ document.querySelector(".submitted-btn.conf").addEventListener("click", function
 });
 /*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
 
+/*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
+function editorCmd(command) {
+  document.execCommand(command, false, null);
+  document.getElementById("liveEditor").focus();
+}
+
+function formatBlock(value) {
+  if (!value) return;
+
+  document.execCommand("formatBlock", false, value);
+  document.getElementById("liveEditor").focus();
+}
+
+function setTextColor(color) {
+  document.execCommand("foreColor", false, color);
+  document.getElementById("liveEditor").focus();
+}
+/*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
+
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 document.getElementById("FileUpload").addEventListener("change", function () {
   const file = this.files[0];
@@ -197,23 +216,4 @@ document.getElementById("FileUpload").addEventListener("change", function () {
   previewBox.classList.add("show");
 });
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-
-/*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
-function editorCmd(command) {
-  document.execCommand(command, false, null);
-  document.getElementById("liveEditor").focus();
-}
-
-function formatBlock(value) {
-  if (!value) return;
-
-  document.execCommand("formatBlock", false, value);
-  document.getElementById("liveEditor").focus();
-}
-
-function setTextColor(color) {
-  document.execCommand("foreColor", false, color);
-  document.getElementById("liveEditor").focus();
-}
-/*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
