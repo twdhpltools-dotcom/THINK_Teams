@@ -1275,16 +1275,6 @@ span.sidebar-menu-nav-icon i {
     z-index: 1;
 }
 
-.payment-formalities-box.paid-box {
-    border: 1px solid #f3d7ec;
-    background: linear-gradient(135deg, #fff 55%, #fff4fb);
-}
-
-.payment-formalities-box.recharge-box {
-    border: 1px solid #dbe7ff;
-    background: linear-gradient(135deg, #fff 55%, #f4f8ff);
-}
-
 .payment-icon {
     height: 50px;
     width: 50px;
@@ -1317,13 +1307,13 @@ span.sidebar-menu-nav-icon i {
 }
 
 .payment-formalities-box h6 {
-    margin: 0 0 3px;
+    margin: 0 0 4px;
     font-size: 80%;
     font-weight: 500;
 }
 
 .payment-formalities-box h3 {
-    font-size: 180%;
+    font-size: 170%;
     font-weight: 700;
     line-height: 1.12;
 }
@@ -1346,22 +1336,6 @@ span.sidebar-menu-nav-icon i {
 
 .payment-formalities-box p.recharge-date {
   color: #71809d;
-}
-
-.payment-bg-icon {
-    position: absolute;
-    right: 18px;
-    bottom: 10px;
-    font-size: 350%;
-    opacity: 0.1;
-}
-
-.paid-box .payment-bg-icon {
-    color: var(--primary);
-}
-
-.recharge-box .payment-bg-icon {
-    color: #0b55d4;
 }
 /* ----------------------------------------- RECHARGE-HISTORY-PAGE COMPLETE ---------------------------------------------- */
 

@@ -180,6 +180,9 @@
     .doctor-description-left {
         margin: 10px 0;
     }
+    .payment-formalities-box h3 {
+        font-size: 160%;
+    }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
 
@@ -445,9 +448,6 @@
     .payment-icon i {
         font-size: 140%;
     }
-    .payment-formalities-box h6 {
-        margin: 0 0 2px;
-    }
     .payment-bg-icon {
         right: 12px;
         bottom: 10px;
@@ -524,9 +524,6 @@
         right: 10px;
         bottom: 20px;
         font-size: 280%;
-    }
-    .payment-formalities-box h3 {
-        font-size: 180%;
     }
     .field-formalities-action-part.upload {
         margin-top: 7px;
