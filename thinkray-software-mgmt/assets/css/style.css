@@ -402,6 +402,58 @@ i.sub-down-icon {
     flex-shrink: 0;
     cursor: pointer;
 }
+
+span.type {
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    height: auto;
+    width: unset;
+}
+
+span.type i {
+    padding-right: 1px;
+}
+
+span.type.type-one {
+    color: #2520f7;
+    background: #fbfbff;
+    border: 1px solid #2520f761;
+}
+
+span.type.type-two {
+    color: var(--warning);
+    background: #fffdfc;
+    border: 1px solid #f9822d66;
+}
+
+span.type.type-three {
+    color: var(--success);
+    background: #fbfffd;
+    border: 1px solid #2f9d699e;
+}
+
+span.type.type-four {
+    color: #0e9792;
+    background: #ddfffe;
+    border: 1px solid #0e979299;
+}
+
+span.type.type-five {
+    color: var(--failure);
+    background: #fffafa;
+    border: 1px solid #ff68688c;
+}
+
+h6.extra-specs {
+    font-size: 85%;
+    color: var(--dark);
+    font-weight: 400;
+    margin: 4px 0 0 10px;
+}
 /*--------------------------------------------- PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- TOP-HEADER SECTION START ---------------------------------------------- */
@@ -1860,7 +1912,7 @@ form button[type="submit"] {
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 25px;
     overflow: hidden;
     border-radius: 16px;
     color: var(--dark);
@@ -1875,38 +1927,32 @@ form button[type="submit"] {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding-left: 10px;
+    gap: 0 30px;
     margin: 12px 0;
 }
 
-.doctor-patient-part {
-    height: auto;
-    width: 100%;
-    max-width: 440px;
+span.doctor-description-box-count {
+    color: #7485ad;
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.doctor-name-part {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 0 10px;
 }
 
 .doctor-name-part h3 {
-    font-size: 135%;
-    font-weight: 700;
-}
-
-.doctor-name-part h3 span.doctor-description-box-count {
-    color: #7485ad;
-    font-size: 90%;
+    font-size: 120%;
     font-weight: 600;
-    display: block;
-    margin-bottom: -5px;
 }
 
 .doctor-name-part p {
     display: flex;
     align-items: center;
     gap: 7px;
-    font-size: 90%;
+    font-size: 85%;
     color: #081735;
 }
 
@@ -1917,25 +1963,20 @@ form button[type="submit"] {
 }
 
 ul.doctor-info-listing {
+    height: auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(150px, 1fr));
-    gap: 6px 20px;
-    margin: 0;
-    padding: 0 0 0 20px;
-    border: 0 solid #dfe6ef;
-    border-left-width: 1px;
-    border-right-width: 1px;
+    margin: 7px 0 0;
 }
 
 ul.doctor-info-listing li {
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    margin-bottom: 2px;
 }
 
-ul.doctor-info-listing li div {
-    min-width: 0;
+ul.doctor-info-listing li:last-child {
+    margin-bottom: 0;
 }
 
 ul.doctor-info-listing li span {
@@ -1948,8 +1989,8 @@ ul.doctor-info-listing li span {
 }
 
 ul.doctor-info-listing li p {
-    font-size: 100%;
-    font-weight: 600;
+    font-size: 90%;
+    font-weight: 500;
 }
 
 ul.doctor-info-listing li a {
@@ -1960,10 +2001,8 @@ ul.doctor-info-listing li a {
     font-weight: 500;
 }
 
-.doctor-description-right {
-    width: 100%;
-    height: 100%;
-    padding-left: 4px;
+.doctor-calender-part {
+    margin: 12px 0;
 }
 
 .doctor-calender-part span.calender-chip {
@@ -1971,7 +2010,7 @@ ul.doctor-info-listing li a {
     align-items: center;
     gap: 8px;
     padding: 4px 15px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     border: 0;
     border-radius: 50px;
     background: #eaf4ff;
@@ -1983,25 +2022,18 @@ ul.doctor-info-listing li a {
 .doctor-date {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 13px;
+    gap: 10px;
+    margin-bottom: 8px;
 }
 
-.doctor-date > i {
-    color: #087368;
-    font-size: 120%;
-}
-
-.doctor-date span {
-    display: block;
-    color: #6c7790;
-    font-size: 75%;
-    font-weight: 500;
+.doctor-date i {
+    color: #0757b8;
+    font-size: 100%;
 }
 
 .doctor-date p {
     font-size: 90%;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 span.tat-box {
@@ -2009,7 +2041,7 @@ span.tat-box {
     padding: 3px 10px;
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
     border: 0;
     border-radius: 10px;
     background: #e9fbf4;
@@ -2017,26 +2049,26 @@ span.tat-box {
 }
 
 em.tat-icon {
-    font-size: 125%;
+    font-size: 115%;
     font-style: normal;
 }
 
 .tat-box p {
     margin: 0;
-    font-size: 75%;
+    font-size: 80%;
     font-weight: 500;
 }
 
 .tat-box h6 {
     margin: 0;
-    font-size: 92%;
-    font-weight: 700;
+    font-size: 90%;
+    font-weight: 600;
 }
 
 .doctor-description-cta {
-    width: calc(100% + 30px);
-    margin-left: -20px;
-    padding: 8px 25px;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    padding: 6px 25px;
     border-top: 1px solid #e1e9f2;
     background: linear-gradient(to right, #f7fbff, #ffffff);
 }
@@ -2044,7 +2076,7 @@ em.tat-icon {
 .doctor-cta-part {
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: 10px;
 }
 
 .doctor-cta-part h5 {
@@ -2062,72 +2094,14 @@ em.tat-icon {
     background: #d3dae4;
 }
 
-.doctor-cta-part > i {
-    color: #61718d;
-    font-size: 140%;
-}
-
 .doctor-cta-part p {
     color: #53617e;
     font-size: 95%;
     font-weight: 500;
-    max-width: 150px;
+    max-width: 220px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.doctor-cta-part span.type {
-    display: inline-block;
-    font-size: 95%;
-    font-weight: 500;
-    padding: 3px 8px;
-    border-radius: 20px;
-    margin-left: 6px;
-    white-space: nowrap;
-    height: auto;
-    width: unset;
-}
-
-.doctor-cta-part span.type i {
-    padding-right: 1px;
-}
-
-.doctor-cta-part span.type.type-one {
-    color: #2520f7;
-    background: #fbfbff;
-    border: 1px solid #2520f761;
-}
-
-.doctor-cta-part span.type.type-two {
-    color: var(--warning);
-    background: #fffdfc;
-    border: 1px solid #f9822d66;
-}
-
-.doctor-cta-part span.type.type-three {
-    color: var(--success);
-    background: #fbfffd;
-    border: 1px solid #2f9d699e;
-}
-
-.doctor-cta-part span.type.type-four {
-    color: #0e9792;
-    background: #ddfffe;
-    border: 1px solid #0e979299;
-}
-
-.doctor-cta-part span.type.type-five {
-    color: var(--failure);
-    background: #fffafa;
-    border: 1px solid #ff68688c;
-}
-
-.doctor-cta-part h6.extra-specs {
-    font-size: 85%;
-    color: var(--dark);
-    font-weight: 400;
-    margin: 4px 0 0 10px;
 }
 
 .doctor-description-cta .content-table-btn-part {
