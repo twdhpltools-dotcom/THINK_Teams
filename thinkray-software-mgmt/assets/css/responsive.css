@@ -174,7 +174,7 @@
         gap: 12px;
     }
     .payment-formalities-box h3 {
-        font-size: 160%;
+        font-size: 130%;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -362,7 +362,7 @@
         margin-right: 16px;
     }
     .payment-icon i {
-        font-size: 145%;
+        font-size: 140%;
     }
     .doctor-patient-part {
         max-width: 180px;
@@ -398,7 +398,7 @@
     input,
     select,
     textarea {
-        padding: 8px 12px;
+        padding: 7px 10px;
     }
     form button[type="submit"] {
         padding: 7px 15px !important;
@@ -434,12 +434,12 @@
         padding-left: 12px;
     }
     .payment-icon {
-        height: 40px;
-        width: 40px;
+        height: 38px;
+        width: 38px;
         margin-right: 14px;
     }
     .payment-icon i {
-        font-size: 140%;
+        font-size: 130%;
     }
     .payment-bg-icon {
         right: 12px;
@@ -620,9 +620,9 @@
         padding-left: 5px;
     }
     .doctor-calender-part span.calender-chip {
-        top: 50%;
-        right: 5px;
-        transform: translate(-50%, -50%);
+        top: 0;
+        right: 0;
+        position: relative;
     }
     .doctor-date {
         margin-bottom: 0;
@@ -630,7 +630,7 @@
     .doctor-calender-part {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px 18px;
+        gap: 6px 14px;
         justify-content: start;
         padding: 8px 0;
         margin: 0;
@@ -649,6 +649,12 @@
         position: absolute;
         top: 12px;
         right: 15px;
+    }
+    .login-left-icon,
+    .login-right-icon,
+    .search-right-icon {
+        border-radius: 6px;
+        padding: 3px 8px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/

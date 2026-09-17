@@ -125,7 +125,7 @@ textarea {
     border: 1px solid #d5d8dc;
     border-radius: 8px;
     outline: none;
-    padding: 9px 20px;
+    padding: 8px 15px;
     font-size: 95%;
     font-weight: 400;
     color: rgba(32, 32, 32, 0.8);
@@ -164,7 +164,7 @@ button.disbaled {
 }
 
 .content-table-btn-part button {
-    font-size: 100%;
+    font-size: 95%;
 }
 
 .content-table-btn-part.conf {
@@ -173,7 +173,7 @@ button.disbaled {
 }
 
 .content-table-btn-part.conf button {
-    font-size: 110%;
+    font-size: 105%;
 }
 
 .content-table-btn-part button.completed-btn,
@@ -407,11 +407,9 @@ span.type {
     display: inline-block;
     font-size: 90%;
     font-weight: 500;
-    padding: 3px 8px;
-    border-radius: 20px;
+    padding: 0 5px;
     white-space: nowrap;
-    height: auto;
-    width: unset;
+    cursor: pointer;
 }
 
 span.type i {
@@ -420,47 +418,34 @@ span.type i {
 
 span.type.type-one {
     color: #2520f7;
-    background: #fbfbff;
-    border: 1px solid #2520f761;
 }
 
 span.type.type-two {
     color: var(--warning);
-    background: #fffdfc;
-    border: 1px solid #f9822d66;
 }
 
 span.type.type-three {
     color: var(--success);
-    background: #fbfffd;
-    border: 1px solid #2f9d699e;
 }
 
 span.type.type-three.compact {
     color: #1c9c32;
-    border: none;
-    background: none;
     padding: 0;
-    border-radius: 0;
 }
 
 span.type.type-four {
     color: #0e9792;
-    background: #ddfffe;
-    border: 1px solid #0e979299;
 }
 
 span.type.type-five {
     color: var(--failure);
-    background: #fffafa;
-    border: 1px solid #ff68688c;
 }
 
 h6.extra-specs {
     font-size: 85%;
     color: var(--dark);
     font-weight: 400;
-    margin: 4px 0 0 10px;
+    margin: 1px 0 0 5px;
 }
 /*--------------------------------------------- PRE-DEFINED COMPLETE ---------------------------------------*/
 
@@ -1373,8 +1358,8 @@ span.sidebar-menu-nav-icon i {
 }
 
 .payment-formalities-box h3 {
-    font-size: 170%;
-    font-weight: 700;
+    font-size: 140%;
+    font-weight: 600;
     line-height: 1.12;
 }
 
@@ -1383,7 +1368,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .payment-formalities-box p.floating-paragraph {
-    margin: 8px 0 0;
+    margin: 4px 0 0;
     position: static;
     display: flex;
     align-items: center;
@@ -1761,8 +1746,14 @@ form button[type="submit"] {
     font-size: 115%;
 }
 
+.modal-section-heading p {
+    font-weight: 400;
+    font-size: 85%;
+    color: var(--dark);
+}
+
 .modal-content-box button[type="submit"] { 
-    padding: 10px 35px !important;
+    padding: 8px 35px !important;
 }
 
 .modal-content-box .field-formalities-action-part.upload {
@@ -1809,6 +1800,46 @@ form button[type="submit"] {
 
 .note-check-comment p {
     font-size: 90%;
+}
+
+.doctor-check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.doctor-check-list label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.doctor-check-list label:last-child {
+    margin-bottom: 0;
+}
+
+.doctor-check-list input {
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    border: 1px solid #bfc3c9;
+    border-radius: 6px;
+    background: var(--light);
+    cursor: pointer;
+}
+
+.doctor-check-list input:checked {
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: inset 0 0 0 6px #fff;
+}
+
+.doctor-check-list span {
+    font-size: 110%;
+    font-weight: 500;
+    color: var(--dark);
 }
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
@@ -2072,8 +2103,8 @@ span.tat-box {
     font-weight: 700;
 }
 
-.doctor-cta-part > span {
-    height: 22px;
+.doctor-cta-part > span:first-of-type {
+    height: 20px;
     width: 1px;
     background: #d3dae4;
 }
