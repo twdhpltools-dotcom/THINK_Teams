@@ -188,30 +188,32 @@ function setTextColor(color) {
 /*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
 
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-const tatTimers = document.querySelectorAll(".tat-timer");
+document.getElementById("FileUpload").addEventListener("change", function () {
+  const file = this.files[0];
 
-tatTimers.forEach(function (timer) {
-  timer.dataset.seconds = 24 * 60 * 60;
+  if (!file) return;
+
+  const previewBox = document.getElementById("FilePreview");
+  const previewImage = document.getElementById("PreviewImage");
+  const fileName = document.getElementById("FileName");
+  const fileMeta = document.getElementById("FileMeta");
+
+  previewImage.src = URL.createObjectURL(file);
+
+  fileName.textContent = file.name;
+
+  const fileSize = (file.size / 1024).toFixed(0);
+
+  const img = new Image();
+
+  img.onload = function () {
+    fileMeta.textContent =
+      "PNG · " + fileSize + " KB · " + img.width + "×" + img.height + " px";
+  };
+
+  img.src = previewImage.src;
+
+  previewBox.classList.add("show");
 });
-
-setInterval(function () {
-  tatTimers.forEach(function (timer) {
-    let totalSeconds = Number(timer.dataset.seconds);
-
-    if (totalSeconds <= 0) {
-      timer.innerText = "Out";
-      timer.classList.add("tat-out");
-      return;
-    }
-
-    totalSeconds--;
-    timer.dataset.seconds = totalSeconds;
-
-    const hours = Math.floor(totalSeconds / 3600);
-    const minutes = Math.floor((totalSeconds % 3600) / 60);
-
-    timer.innerText = hours + " Hours " + minutes + " Mins";
-  });
-}, 1000);
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
