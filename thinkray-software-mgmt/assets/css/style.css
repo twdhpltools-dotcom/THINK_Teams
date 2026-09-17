@@ -135,7 +135,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    box-shadow: 0 0 4px 0 #d52e8a75;
+    box-shadow: 0 0 4px 0 #d52e8a3d;
     border: 1px solid #d52e8a94;
 }
 
@@ -434,6 +434,14 @@ span.type.type-three {
     color: var(--success);
     background: #fbfffd;
     border: 1px solid #2f9d699e;
+}
+
+span.type.type-three.compact {
+    color: #1c9c32;
+    border: none;
+    background: none;
+    padding: 0;
+    border-radius: 0;
 }
 
 span.type.type-four {
@@ -1919,7 +1927,7 @@ form button[type="submit"] {
     background: linear-gradient(135deg, #ffffff 65%, #f2fffb);
     border: 1px solid #dce8fd;
     box-shadow: 0 10px 30px #0000000d;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     z-index: 1;
 }
 
@@ -1928,12 +1936,12 @@ form button[type="submit"] {
     display: flex;
     align-items: center;
     gap: 0 30px;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
 span.doctor-description-box-count {
     color: #7485ad;
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 600;
 }
 
@@ -1944,7 +1952,7 @@ span.doctor-description-box-count {
 }
 
 .doctor-name-part h3 {
-    font-size: 120%;
+    font-size: 105%;
     font-weight: 600;
 }
 
@@ -1965,7 +1973,7 @@ span.doctor-description-box-count {
 ul.doctor-info-listing {
     height: auto;
     width: 100%;
-    margin: 7px 0 0;
+    margin: 5px 0 0;
 }
 
 ul.doctor-info-listing li {
@@ -1984,36 +1992,30 @@ ul.doctor-info-listing li span {
     width: auto;
     max-width: none;
     color: #697590;
-    font-size: 85%;
+    font-size: 80%;
     font-weight: 500;
 }
 
 ul.doctor-info-listing li p {
-    font-size: 90%;
+    font-size: 85%;
     font-weight: 500;
 }
 
 ul.doctor-info-listing li a {
-    display: block;
-    font-size: 100%;
-    color: #0969da;
-    text-decoration: underline;
+    font-size: 85%;
     font-weight: 500;
+    color: var(--dark);
+    text-decoration: underline;
 }
 
 .doctor-calender-part {
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
 .doctor-calender-part span.calender-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 4px 15px;
-    margin-bottom: 8px;
-    border: 0;
-    border-radius: 50px;
-    background: #eaf4ff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
     color: #0757b8;
     font-size: 85%;
     font-weight: 700;
@@ -2023,12 +2025,7 @@ ul.doctor-info-listing li a {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 8px;
-}
-
-.doctor-date i {
-    color: #0757b8;
-    font-size: 100%;
+    margin-bottom: 3px;
 }
 
 .doctor-date p {
@@ -2037,19 +2034,15 @@ ul.doctor-info-listing li a {
 }
 
 span.tat-box {
-    width: fit-content;
-    padding: 3px 10px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     border: 0;
-    border-radius: 10px;
-    background: #e9fbf4;
     color: #087368;
 }
 
 em.tat-icon {
-    font-size: 115%;
+    font-size: 110%;
     font-style: normal;
 }
 
@@ -2080,11 +2073,7 @@ em.tat-icon {
 }
 
 .doctor-cta-part h5 {
-    padding: 4px 12px;
-    border-radius: 5px;
-    background: #f3f8ff;
-    border: 1px solid #dce8fd;
-    font-size: 100%;
+    font-size: 95%;
     font-weight: 700;
 }
 

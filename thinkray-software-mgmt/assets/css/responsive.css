@@ -173,9 +173,6 @@
     .doctor-cta-part {
         gap: 12px;
     }
-    .doctor-description-left {
-        margin: 10px 0;
-    }
     .payment-formalities-box h3 {
         font-size: 160%;
     }
@@ -457,10 +454,6 @@
         padding-top: 10px;
         gap: 0 14px;
     }
-    .doctor-calender-part span.calender-chip,
-    .doctor-date {
-        margin-bottom: 0;
-    }
     span.tat-box {
         float: unset;
         gap: 10px;
@@ -608,7 +601,6 @@
     }
     .doctor-description-left {
         gap: 7px;
-        margin: 10px 0;
     }
     .doctor-patient-part {
         max-width: 100%;
@@ -627,7 +619,11 @@
         border: none;
         padding-left: 5px;
     }
-    .doctor-calender-part span.calender-chip,
+    .doctor-calender-part span.calender-chip {
+        top: 50%;
+        right: 5px;
+        transform: translate(-50%, -50%);
+    }
     .doctor-date {
         margin-bottom: 0;
     }
