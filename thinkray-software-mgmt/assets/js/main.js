@@ -187,6 +187,23 @@ function setTextColor(color) {
 }
 /*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
 
+/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
+function openTab(btn) {
+  const group = btn.closest(".tab-group");
+
+  group.querySelectorAll(".tab-content").forEach(content => {
+    content.classList.add("hidden");
+  });
+
+  group.querySelectorAll(".tab-btn").forEach(button => {
+    button.classList.remove("active");
+  });
+
+  group.querySelector("." + btn.dataset.tab).classList.remove("hidden");
+  btn.classList.add("active");
+}
+/*-------------------------------------- TAB-CONTENT ----------------------------------------*/
+
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 document.getElementById("FileUpload").addEventListener("change", function () {
   const file = this.files[0];
