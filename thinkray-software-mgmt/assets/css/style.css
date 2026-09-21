@@ -122,7 +122,7 @@ textarea {
     width: 100%;
     height: auto;
     background: var(--light);
-    border: 1px solid #d5d8dc;
+    border: 1px solid #b4c6dc;
     border-radius: 8px;
     outline: none;
     padding: 8px 15px;
@@ -310,6 +310,11 @@ section.page-section.expanded {
     font-size: 90%;
 }
 
+.page-section-heading p span {
+    font-weight: 500;
+    color: #0B63D1;
+}
+
 .content-table {
     height: auto;
     width: 100%;
@@ -387,20 +392,34 @@ i.sub-down-icon {
     font-size: 140%;
 }
 
-.count-badge {
-    height: 25px;
-    width: 25px;
+.count-badge,
+.arrow-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.count-badge {
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     border: 1px solid #c3b659;
     background: #fffdf3;
     color: #8f7d00;
     font-size: 85%;
-    font-weight: 500;
-    flex-shrink: 0;
-    cursor: pointer;
+}
+
+.arrow-badge {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid #C5D4E8;
+    background: #EDF5FF;
+    color: var(--dark);
+    font-size: 100%;
 }
 
 span.type {
@@ -446,6 +465,23 @@ h6.extra-specs {
     color: var(--dark);
     font-weight: 400;
     margin: 1px 0 0 5px;
+}
+
+.trend-verified-input {
+    position: relative;
+    z-index: 2;
+}
+
+span.trend-verified-badge {
+    display: inline-block;
+    padding: 7px 20px 5px;
+    border-radius: 0 0 6px 6px;
+    background: #1EC375;
+    color: var(--light);
+    margin-top: -5px;
+    font-size: 90%;
+    position: relative;
+    z-index: 1;
 }
 /*--------------------------------------------- PRE-DEFINED COMPLETE ---------------------------------------*/
 
@@ -819,6 +855,10 @@ span.sidebar-menu-nav-icon i {
     max-height: 180px;
     opacity: 1;
     transform: translateY(0);
+}
+
+.sidebar-submenu a p {
+    font-size: 95%;
 }
 
 .sidebar-menu-nav h5.menu-divide-head {
@@ -1686,7 +1726,7 @@ span.sidebar-menu-nav-icon i {
 }
 /* ----------------------------------------- SELF-DOCTOR-LIST-PAGE COMPLETE ---------------------------------------------- */
 
-/* ----------------------------------------- SELF-DOCTOR-PAGE-ADD START ---------------------------------------------- */
+/* ----------------------------------------- SELF-DOCTOR-ADD-PAGE START ---------------------------------------------- */
 .form-formalities-box {
     height: auto;
     width: 100%;
@@ -1706,9 +1746,9 @@ form button[type="submit"] {
     padding: 8px 18px !important;
     margin-bottom: 2px;
 }
-/* ----------------------------------------- SELF-DOCTOR-PAGE-ADD COMPLETE ---------------------------------------------- */
+/* ----------------------------------------- SELF-DOCTOR-ADD-PAGE COMPLETE ---------------------------------------------- */
 
-/* ----------------------------------------- INTERFACE-INFO START ---------------------------------------------- */
+/* ----------------------------------------- INTERFACE-INFO-PAGE START ---------------------------------------------- */
 .content-table.interface .content-table-btn-part button.browse-btn {
     background: none;
     border: none;
@@ -1717,7 +1757,244 @@ form button[type="submit"] {
     font-weight: 600;
     text-decoration: underline;
 }
-/* ----------------------------------------- INTERFACE-INFO COMPLETE ---------------------------------------------- */
+/* ----------------------------------------- INTERFACE-INFO-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- DOCTOR PENDING-ACCEPT-PAGE START ---------------------------------------------- */
+.doctor-description {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 5px 18px;
+}
+
+.doctor-description-box {
+    position: relative;
+    width: 100%;
+    padding: 0 25px;
+    overflow: hidden;
+    border-radius: 16px;
+    color: var(--dark);
+    background: linear-gradient(135deg, #ffffff 65%, #f2fffb);
+    border: 1px solid #dce8fd;
+    box-shadow: 0 10px 30px #0000000d;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+.doctor-description-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    margin: 10px 0;
+}
+
+span.doctor-description-box-count {
+    color: #7485ad;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.doctor-name-part {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.doctor-name-part h3 {
+    font-size: 105%;
+    font-weight: 600;
+}
+
+.doctor-name-part p {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 85%;
+    color: #081735;
+}
+
+.doctor-name-part p span {
+    height: 18px;
+    width: 1px;
+    background: #cbd4df;
+}
+
+ul.doctor-info-listing {
+    height: auto;
+    width: 100%;
+    margin: 5px 0 0;
+}
+
+ul.doctor-info-listing li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+ul.doctor-info-listing li:last-child {
+    margin-bottom: 0;
+}
+
+ul.doctor-info-listing li span {
+    display: block;
+    width: auto;
+    max-width: none;
+    color: #697590;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+ul.doctor-info-listing li p {
+    font-size: 85%;
+    font-weight: 500;
+}
+
+ul.doctor-info-listing li a {
+    font-size: 85%;
+    font-weight: 500;
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+.doctor-calender-part {
+    margin: 10px 0;
+}
+
+.doctor-calender-part span.calender-chip {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #0757b8;
+    font-size: 85%;
+    font-weight: 700;
+}
+
+.doctor-date {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 3px;
+}
+
+.doctor-date p {
+    font-size: 90%;
+    font-weight: 500;
+}
+
+span.tat-box {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4px;
+    border: 0;
+    color: #087368;
+}
+
+.tat-box p {
+    margin: 0;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.tat-box h6 {
+    margin: 0;
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.doctor-description-cta {
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    padding: 6px 25px;
+    border-top: 1px solid #e1e9f2;
+}
+
+.doctor-cta-part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.doctor-cta-part h5 {
+    font-size: 95%;
+    font-weight: 700;
+}
+
+.doctor-cta-part > span:first-of-type {
+    height: 20px;
+    width: 1px;
+    background: #d3dae4;
+}
+
+.doctor-cta-part p {
+    color: #53617e;
+    font-size: 95%;
+    font-weight: 500;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.doctor-description-cta .content-table-btn-part {
+    gap: 20px;
+    justify-content: end;
+}
+
+.doctor-description-cta .content-table-btn-part button {
+    text-decoration: underline;
+}
+/* ----------------------------------------- DOCTOR PENDING-ACCEPT-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- ADMIN-CENTRE-PAGE START ---------------------------------------------- */
+.content-table.admin-centre .content-table-text h5 {
+    font-size: 105%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.content-table.admin-centre .content-table-text p {
+    font-size: 85%;
+}
+/* ----------------------------------------- ADMIN-CENTRE-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- ADMIN-DOCTOR-CHARGE-PAGE START ---------------------------------------------- */
+.require-form-flex-part {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.require-form-input {
+    height: auto;
+    width: 50%;
+}
+
+.info-note {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #fff9fd;
+    font-size: 85%;
+    color: var(--dark);
+    margin: 15px 0;
+}
+
+.info-note span {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #2f7df6;
+}
+/* ----------------------------------------- ADMIN-DOCTOR-CHARGE-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
 .modal-header {
@@ -1805,7 +2082,7 @@ form button[type="submit"] {
 .doctor-check-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .doctor-check-list label {
@@ -1939,196 +2216,6 @@ form button[type="submit"] {
 }
 /* ----------------------------------------- FILE-UPLOAD COMPLETE ---------------------------------------------- */
 
-/* ----------------------------------------- PENDING-ACCEPT-PAGE START ---------------------------------------------- */
-.doctor-description {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, minmax(150px, 1fr));
-    gap: 5px 18px;
-}
-
-.doctor-description-box {
-    position: relative;
-    width: 100%;
-    padding: 0 25px;
-    overflow: hidden;
-    border-radius: 16px;
-    color: var(--dark);
-    background: linear-gradient(135deg, #ffffff 65%, #f2fffb);
-    border: 1px solid #dce8fd;
-    box-shadow: 0 10px 30px #0000000d;
-    margin-bottom: 8px;
-    z-index: 1;
-}
-
-.doctor-description-left {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 0 30px;
-    margin: 10px 0;
-}
-
-span.doctor-description-box-count {
-    color: #7485ad;
-    font-size: 100%;
-    font-weight: 600;
-}
-
-.doctor-name-part {
-    display: flex;
-    align-items: center;
-    gap: 0 10px;
-}
-
-.doctor-name-part h3 {
-    font-size: 105%;
-    font-weight: 600;
-}
-
-.doctor-name-part p {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    font-size: 85%;
-    color: #081735;
-}
-
-.doctor-name-part p span {
-    height: 18px;
-    width: 1px;
-    background: #cbd4df;
-}
-
-ul.doctor-info-listing {
-    height: auto;
-    width: 100%;
-    margin: 5px 0 0;
-}
-
-ul.doctor-info-listing li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 2px;
-}
-
-ul.doctor-info-listing li:last-child {
-    margin-bottom: 0;
-}
-
-ul.doctor-info-listing li span {
-    display: block;
-    width: auto;
-    max-width: none;
-    color: #697590;
-    font-size: 80%;
-    font-weight: 500;
-}
-
-ul.doctor-info-listing li p {
-    font-size: 85%;
-    font-weight: 500;
-}
-
-ul.doctor-info-listing li a {
-    font-size: 85%;
-    font-weight: 500;
-    color: var(--dark);
-    text-decoration: underline;
-}
-
-.doctor-calender-part {
-    margin: 10px 0;
-}
-
-.doctor-calender-part span.calender-chip {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    color: #0757b8;
-    font-size: 85%;
-    font-weight: 700;
-}
-
-.doctor-date {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 3px;
-}
-
-.doctor-date p {
-    font-size: 90%;
-    font-weight: 500;
-}
-
-span.tat-box {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    border: 0;
-    color: #087368;
-}
-
-.tat-box p {
-    margin: 0;
-    font-size: 80%;
-    font-weight: 500;
-}
-
-.tat-box h6 {
-    margin: 0;
-    font-size: 90%;
-    font-weight: 600;
-}
-
-.doctor-description-cta {
-    width: calc(100% + 50px);
-    margin-left: -25px;
-    padding: 6px 25px;
-    border-top: 1px solid #e1e9f2;
-    background: linear-gradient(to right, #f7fbff, #ffffff);
-}
-
-.doctor-cta-part {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.doctor-cta-part h5 {
-    font-size: 95%;
-    font-weight: 700;
-}
-
-.doctor-cta-part > span:first-of-type {
-    height: 20px;
-    width: 1px;
-    background: #d3dae4;
-}
-
-.doctor-cta-part p {
-    color: #53617e;
-    font-size: 95%;
-    font-weight: 500;
-    max-width: 220px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.doctor-description-cta .content-table-btn-part {
-    gap: 20px;
-    justify-content: end;
-}
-
-.doctor-description-cta .content-table-btn-part button {
-    text-decoration: underline;
-}
-/* -----------------------------------------PENDING-ACCEPT-PAGE COMPLETE ---------------------------------------------- */
-
 /* ----------------------------------------- VALIDATE-ERROR START ---------------------------------------------- */
 p.login-error-msg {
     width: 100%;
@@ -2215,6 +2302,36 @@ p.login-error-msg:not(:empty) {
     font-weight: 600;
 }
 /* ----------------------------------------- SUGGESTIONS-CHIPS COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- TAB-CONTENT START ---------------------------------------------- */
+.mini-tabs {
+  display: flex;
+  padding: 3px;
+  border: 1px solid #cbdcff;
+  border-radius: 5px;
+  background: #f3f7ff;
+}
+
+.mini-tabs button {
+  padding: 4px 14px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--dark);
+  font-size: 85%;
+  cursor: pointer;
+}
+
+.mini-tabs button.active {
+  background: var(--light);
+  color: #135dcc;
+  box-shadow: 0 1px 4px #00000012;
+}
+
+.hidden {
+  display: none;
+}
+/* ----------------------------------------- TAB-CONTENT COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {

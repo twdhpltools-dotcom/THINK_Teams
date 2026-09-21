@@ -377,6 +377,13 @@
     .doctor-name-part h3 {
         gap: 4px;
     }
+    .arrow-badge {
+        height: 37px;
+        width: 37px;
+    }
+    .field-formalities-box {
+        padding: 8px 12px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -528,7 +535,7 @@
         gap: 12px;
     }
     .field-formalities-box {
-        padding: 10px 15px;
+        padding: 6px 10px;
     }
     .info-formalities-box-head {
         padding: 7px 14px;
@@ -656,6 +663,20 @@
         border-radius: 6px;
         padding: 3px 8px;
     }
+    .require-form-flex-part {
+        flex-wrap: wrap;
+        gap: 8px 0;
+    }
+    .arrow-badge {
+        height: 35px;
+        width: 35px;
+    }
+    .require-form-input {
+        width: 74%;
+    }
+    .sidebar-menu {
+        padding: 18px 10px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 
@@ -687,6 +708,9 @@
     }
     button i {
         padding-right: 3px;
+    }
+    .require-form-input {
+        width: 69%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
