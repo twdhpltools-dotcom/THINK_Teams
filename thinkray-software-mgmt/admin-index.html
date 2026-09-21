@@ -319,6 +319,7 @@
 
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
+                      <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#assignedCaseModal">Assigned</button>
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                     </div>
@@ -382,7 +383,7 @@
                       <h5>18450</h5>
                       <span></span>
                       <p>Niramoy Diagnostic Centre</p>
-                      <div>
+                      <div class="d-flex align-items-center">
                         <span class="type type-two"><i class="bi bi-clock-history"></i> Wating for Acceptance</span>
                         <h6 class="extra-specs">Dr. S. Roy, Dr. Amit Kumar Das</h6>
                       </div>
@@ -454,7 +455,7 @@
                       <h5>18450</h5>
                       <span></span>
                       <p>Niramoy Diagnostic Centre</p>
-                      <div>
+                      <div class="d-flex align-items-center">
                         <span class="type type-three"><i class="bi bi-check2-square"></i> Approved</span>
                         <h6 class="extra-specs">Dr. Surajit Paul</h6>
                       </div>
@@ -526,8 +527,8 @@
                       <h5>18450</h5>
                       <span></span>
                       <p>Niramoy Diagnostic Centre</p>
-                      <div>
-                        <span class="type type-four" data-bs-toggle="modal" data-bs-target="#assignedCaseModal"><i class="bi bi-check2-square"></i> Assigned</span>
+                      <div class="d-flex align-items-center">
+                        <span class="type type-four"><i class="bi bi-check2-square"></i> Assigned</span>
                         <h6 class="extra-specs">Dr. S. Chatterjee</h6>
                       </div>
                     </div>
@@ -598,7 +599,7 @@
                       <h5>18450</h5>
                       <span></span>
                       <p>Niramoy Diagnostic Centre</p>
-                      <div>
+                      <div class="d-flex align-items-center">
                         <span class="type type-five"><i class="bi bi-check2-square"></i> Review</span>
                         <h6 class="extra-specs">Dr. Gitali Hor, Dr. SK. Mitra, Dr. Arnab R.</h6>
                       </div>
@@ -619,7 +620,7 @@
       </div>
     </section>
 
-    <!----- ASSIGNED-CASE ------->
+    <!----- ASSIGNED-CASE-MODAL ------->
     <div class="modal fade" id="assignedCaseModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
@@ -643,7 +644,7 @@
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <div class="content-table-btn-part justify-content-center">
-                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Send</button>
                     </div>
                   </div>
                 </div>
@@ -653,7 +654,7 @@
         </div>
       </div>
     </div>
-    <!----- ASSIGNED-CASE ------->
+    <!----- ASSIGNED-CASE-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
