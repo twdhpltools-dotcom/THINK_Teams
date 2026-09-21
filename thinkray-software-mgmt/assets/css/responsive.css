@@ -485,6 +485,21 @@
     .doctor-description-box {
         padding: 0 18px;
     }
+    .mini-tabs {
+        margin-bottom: 10px;
+    }
+    .billing-box {
+        max-width: 100%;
+    }
+    .payment-history-item {
+        flex-wrap: wrap;
+    }
+    .payment-form-row .content-table-btn-part {
+        flex-wrap: wrap;
+    }
+    .billing-summary {
+        gap: 10px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -676,6 +691,40 @@
     }
     .sidebar-menu {
         padding: 18px 10px;
+    }
+    .payment-tabs {
+        padding: 6px 12px 0;
+    }
+    .payment-tabs .tab-btn {
+        padding: 10px 20px;
+    }
+    .tab-content {
+        padding: 12px 15px;
+    }
+    .payment-history-box {
+        padding: 12px 10px;
+    }
+    .payment-history-head {
+        flex-wrap: wrap;
+    }
+    .payment-history-head h5 {
+        margin-bottom: 5px;
+    }
+    .payment-history-actions {
+        flex-direction: column;
+        gap: 7px;
+    }
+    .payment-history-actions button {
+        width: 100%;
+    }
+    .payment-history-item {
+        gap: 10px;
+    }
+    .tab-content p {
+        margin-bottom: 10px;
+    }
+    .payment-form-row {
+        gap: 10px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/

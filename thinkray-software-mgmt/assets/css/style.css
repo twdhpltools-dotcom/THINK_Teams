@@ -111,11 +111,6 @@ label {
     opacity: 0.9;
 }
 
-input::placeholder,
-textarea::placeholder {
-    color: #0b122e93;
-}
-
 input,
 select,
 textarea {
@@ -132,11 +127,25 @@ textarea {
     transition: border-color 0.3s ease;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #0b122e93;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
     box-shadow: 0 0 4px 0 #d52e8a3d;
     border: 1px solid #d52e8a94;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background: #f5f6f8;
+  color: #8a94a6;
+  border-color: #e1e5eb;
+  cursor: not-allowed;
 }
 
 button {
@@ -1216,7 +1225,7 @@ span.sidebar-menu-nav-icon i {
 
 /* ----------------------------------------- PENDING-LIST-PAGE START ---------------------------------------------- */
 .content-table.pending-list .content-table-text h5 {
-    font-size: 110%;
+    font-size: 105%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1996,6 +2005,17 @@ span.tat-box {
 }
 /* ----------------------------------------- ADMIN-DOCTOR-CHARGE-PAGE COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- ADMIN-POST-PAY-PAGE START ---------------------------------------------- */
+.content-table.admin-post-pay .content-table-btn-part {
+    gap: 15px;
+}
+
+.content-table.admin-post-pay .content-table-btn-part button.print-btn,
+.content-table.admin-post-pay .content-table-btn-part button.pending-btn {
+    text-decoration: underline;
+}
+/* ----------------------------------------- ADMIN-POST-PAY-PAGE COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
 .modal-header {
     padding: 10px 18px;
@@ -2117,6 +2137,52 @@ span.tat-box {
     font-size: 110%;
     font-weight: 500;
     color: var(--dark);
+}
+
+.billing-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.billing-box {
+    height: auto;
+    width: 100%;
+    max-width: 220px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #d8dce3;
+    border-radius: 10px;
+    background: var(--light);
+}
+
+.billing-box strong {
+    font-size: 80%;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.billing-box span {
+    font-size: 85%;
+    font-weight: 500;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.billing-box.due {
+    border-color: #ff3838;
+    background: #fffafa;
+}
+
+.billing-box.due span {
+    color: #e31616;
+    font-weight: 700;
 }
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
@@ -2326,6 +2392,161 @@ p.login-error-msg:not(:empty) {
   background: var(--light);
   color: #135dcc;
   box-shadow: 0 1px 4px #00000012;
+}
+
+.payment-tab-box {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+}
+
+.payment-tabs {
+  display: flex;
+  gap: 15px;
+  padding: 8px 20px 0;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-tabs .tab-btn {
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  background: transparent;
+  color: #444;
+  font-size: 85%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.payment-tabs .tab-btn.active {
+  background: #fff;
+  color: #245eea;
+  border-color: #ddd;
+  border-radius: 6px 6px 0 0;
+}
+
+.tab-content {
+    padding: 20px 25px   ;
+}
+
+.tab-content h5 {
+    font-size: 105%;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.tab-content p {
+    font-size: 80%;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.payment-form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-history-box {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+    margin-top: 15px;
+}
+
+.payment-history-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.payment-history-head h5 {
+    margin: 0;
+    font-size: 90%;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.remaining-due {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.remaining-due span {
+    font-size: 75%;
+    font-weight: 600;
+}
+
+.remaining-due strong {
+    font-size: 85%;
+    color: #e31616;
+}
+
+.payment-history-item {
+    position: relative;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    background: var(--light);
+}
+
+.payment-history-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.payment-status-line {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 14px;
+    width: 5px;
+    border-radius: 0 5px 5px 0;
+    background: #44d79b;
+}
+
+.payment-history-left h4 {
+    margin: 0 0 4px;
+    font-size: 90%;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.payment-history-left p {
+    margin: 0 !important;
+    font-size: 70%;
+    color: #6b7280;
+}
+
+.payment-history-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-history-actions button {
+    padding: 7px 10px;
+    border: 1px solid #cfd4dc;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--dark);
+    font-size: 70%;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .hidden {
