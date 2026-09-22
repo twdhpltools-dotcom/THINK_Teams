@@ -253,27 +253,25 @@
                     <button type="button" class="tab-btn" data-tab="center" onclick="openTab(this)">Center</button>
                   </div>
                 </div>
-              
-                <form method="" action="">
-                  <div class="row gx-3 gy-3">
-                    <div class="col-xl-4 col-md-4 col-sm-12 col-12">
-                      <select name="" required="">
-                        <option value="0" selected="">Select Test *</option>
-                        <option value="1">Chest X-Ray PA View</option>
-                        <option value="2">Chest X-Ray AP View</option>
-                        <option value="3">X-Ray Knee AP / Lateral</option>
-                        <option value="4">CT Brain Plain</option>
-                      </select>
+
+                <div class="tab-content test p-0">
+                  <form method="" action="">
+                    <div class="row gx-3 gy-3">
+                      <div class="col-xl-4 col-md-4 col-sm-12 col-12">
+                        <select name="" required="">
+                          <option value="0" selected="">Select Test *</option>
+                          <option value="1">Chest X-Ray PA View</option>
+                          <option value="2">Chest X-Ray AP View</option>
+                          <option value="3">X-Ray Knee AP / Lateral</option>
+                          <option value="4">CT Brain Plain</option>
+                        </select>
+                      </div>
                     </div>
+                  </form>
+                  <div class="info-note mb-3">
+                    <span></span>
+                    Select A Test To View All Centres And Set The Doctor Charge For Each Centre.
                   </div>
-                </form>
-
-                <div class="info-note">
-                  <span></span>
-                  Select A Test To View All Centres And Set The Doctor Charge For Each Centre.
-                </div>
-
-                <div class="tab-content test">
                   <div class="content-table admin-centre">
                     <table>
                       <thead>
@@ -290,7 +288,18 @@
                           <td>₹ 120</td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <p>₹</p>
+                              ₹
+                              <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
+                            </div>
+                          </td>
+                          <td>26 Aug 2026 • 11:30 AM</td>
+                        </tr>
+                        <tr>
+                          <td>City Plus Diagnostic Centre</td>
+                          <td>₹ 120</td>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              ₹
                               <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
                             </div>
                           </td>
@@ -301,18 +310,7 @@
                           <td>₹ 120</td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <p>₹</p>
-                              <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
-                            </div>
-                          </td>
-                          <td>26 Aug 2026 • 11:30 AM</td>
-                        </tr>
-                        <tr>
-                          <td>City Diagnostic Centre</td>
-                          <td>₹ 120</td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <p>₹</p>
+                              ₹
                               <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
                             </div>
                           </td>
@@ -330,7 +328,23 @@
                   </div>
                 </div>
 
-                <div class="tab-content center hidden">
+                <div class="tab-content center p-0 hidden">
+                  <form method="" action="">
+                    <div class="row gx-3 gy-3">
+                      <div class="col-xl-4 col-md-4 col-sm-12 col-12">
+                        <select name="" required="">
+                          <option value="0" selected="">Select Centre *</option>
+                          <option value="1">Diagnosis And Cure Centre</option>
+                          <option value="2">City Plus Diagnostic Centre</option>
+                          <option value="3">City Diagnostic Centre</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="info-note mb-3">
+                    <span></span>
+                    Select A Test To View All Centres And Set The Doctor Charge For Each Centre.
+                  </div>
                   <div class="content-table admin-centre">
                     <table>
                       <thead>
@@ -344,7 +358,7 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Diagnosis And Cure Centre</td>
+                          <td>Chest X-Ray PA View</td>
                           <td>₹ 120</td>
                           <td>
                             <div class="content-table-btn-part">
@@ -353,14 +367,14 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <p>₹</p>
+                              ₹
                               <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
                             </div>
                           </td>
                           <td>26 Aug 2026 • 11:30 AM</td>
                         </tr>
                         <tr>
-                          <td>City Diagnostic Centre</td>
+                          <td>Chest X-Ray AP View</td>
                           <td>₹ 120</td>
                           <td>
                             <div class="content-table-btn-part">
@@ -369,14 +383,14 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <p>₹</p>
+                              ₹
                               <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
                             </div>
                           </td>
                           <td>26 Aug 2026 • 11:30 AM</td>
                         </tr>
                         <tr>
-                          <td>City Diagnostic Centre</td>
+                          <td>X-Ray Knee AP / Lateral</td>
                           <td>₹ 120</td>
                           <td>
                             <div class="content-table-btn-part">
@@ -385,7 +399,7 @@
                           </td>
                           <td>
                             <div class="d-flex align-items-center">
-                              <p>₹</p>
+                              ₹
                               <input class="w-auto ms-2" type="text" name="" value="120" placeholder="">
                             </div>
                           </td>

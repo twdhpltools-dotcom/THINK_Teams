@@ -570,7 +570,9 @@
         let totalSeconds = Number(timer.dataset.seconds);
 
         if (totalSeconds <= 0) {
-          timer.innerText = "Time Over";
+          timer.innerText = "Failed";
+          timer.style.color = "#e34141";
+          timer.style.fontWeight = "700";
           return;
         }
 
