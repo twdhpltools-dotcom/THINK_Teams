@@ -130,7 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const searchTexts=[
   "Search patient, Inv No ...",
   "Search by test name or study",
-  "Search patient, case ID"
+  "Search patient, case ID",
+  "Search notifications by patient name"
 ];
 
 const searchInput=document.querySelector(".search-input input");
