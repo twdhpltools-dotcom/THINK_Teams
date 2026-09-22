@@ -177,7 +177,7 @@ button.disbaled {
 }
 
 .content-table-btn-part.conf {
-    justify-content: center;
+    justify-content: end;
     gap: 30px;
 }
 
@@ -271,6 +271,10 @@ button.disbaled {
 
 hr {
     margin: 8px 0;
+}
+
+hr.pg-hr {
+    background: #848484;
 }
 
 main.main-page {
@@ -495,14 +499,16 @@ h6.extra-specs {
 
 span.trend-verified-badge {
     display: inline-block;
-    padding: 7px 20px 5px;
-    border-radius: 0 0 6px 6px;
-    background: #1EC375;
+    padding: 3px 20px;
+    border-radius: 20px;
+    background: #00ae5c;
     color: var(--light);
-    margin-top: -5px;
+    margin-top: 5px;
     font-size: 90%;
     position: relative;
     z-index: 1;
+    border: 3px solid var(--light);
+    outline: 1px solid #19e584;
 }
 /*--------------------------------------------- PRE-DEFINED COMPLETE ---------------------------------------*/
 
@@ -1246,7 +1252,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.pending-list .content-table-text p {
-    font-size: 85%;
+    font-size: 90%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1407,30 +1413,6 @@ span.sidebar-menu-nav-icon i {
 
 .payment-icon.rupee {
     background: #eaf0ff;
-}
-
-.payment-icon.approved {
-    background: #f0fff5;
-}
-
-.payment-icon.dx {
-    background: #fff4f4;
-}
-
-.payment-icon.ct {
-    background: #e2f4ff;
-}
-
-.payment-icon.mri {
-    background: #fff6f2;
-}
-
-.payment-icon.ecg {
-    background: #fdf3ff;
-}
-
-.payment-icon i {
-    font-size: 150%;
 }
 
 .payment-icon.wallet i {
@@ -2080,6 +2062,7 @@ span.tat-box {
     width: 6px;
     border-radius: 50%;
     background: #2f7df6;
+    flex-shrink: 0;
 }
 /* ----------------------------------------- ADMIN-DOCTOR-CHARGE-PAGE COMPLETE ---------------------------------------------- */
 
@@ -2206,13 +2189,35 @@ span.tat-box {
     border: none;
 }
 
-.note-check-comment span {
-    padding-right: 8px;
-    color: var(--failure);
+.status-check-comment h6 {
+    font-size: 115%;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
 .status-check-comment p {
     font-size: 95%;
+}
+
+#deleteConfModal .modal-header {
+    border: none;
+}
+
+#deleteConfModal .modal-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+#deleteConfModal .status-check-comment p {
+    color: #697590;
+    font-weight: 400;
+}
+
+.note-check-comment span {
+    padding-right: 8px;
+    color: var(--failure);
 }
 
 .note-check-comment p {
@@ -2585,7 +2590,7 @@ p.login-error-msg:not(:empty) {
 
 .payment-history-head h5 {
     margin: 0;
-    font-size: 90%;
+    font-size: 95%;
     font-weight: 600;
     color: var(--dark);
 }
