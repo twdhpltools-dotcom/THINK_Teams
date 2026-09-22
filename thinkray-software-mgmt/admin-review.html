@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Recharge History | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Admin Reviewed Reports List | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,45 +29,29 @@
 
 <body>
 
-  <!----------------------------------- RECHARHE-HISTORY-PAGE ------------------------------------------------->
+  <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
     <div class="top-header">
-      <div class="row align-items-center justify-content-between">
-
-        <div class="col-xl-3 col-lg-12 col-md-9 col-9">
-          <div class="top-header-user-name">
-            <h4>Niramay Diagnostic</h4>
-          </div>
-        </div>
+      <div class="row align-items-center justify-content-end">
 
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
-
-            <div class="user-wallet">
-              <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
-              <p>Balance</p>
-              <h6>₹6,540</h6>
+            <div class="user-wallet admin">
+              <img src="assets/images/centre-svgrepo-icon.png" alt="customer wallet icon">
+              <p>Switch to</p>
+              <h6>Centre</h6>
             </div>
 
             <div class="user-supports">
-              <div class="user-call-supports">
-                <span class="call-supports-icon">
-                  <i class="bi bi-telephone-outbound"></i>
-                </span>
-                <div>
-                  <h6>Support Call: 08062179988</h6>
-                  <p>Mon to Sat · 10 AM – 07 PM</p>
-                </div>
-              </div>
               <div class="user-notification">
                 <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
               </div>
               <div class="profile-wrapper">
 
                 <div class="user-profile" onclick="toggleProfileMenu(event)">
-                  <h6>Bactro Clinical Laboratory</h6>
+                  <h6>Admin</h6>
                   <i class="bi bi-chevron-down"></i>
                 </div>
 
@@ -75,13 +59,13 @@
                 <div id="ProfileSubMenu" class="profile-submenu">
                   <a href="change-password.html">
                     <span class="profile-submenu-icon">
-                      <img src="assets/images/password-icon.png" alt="change password icon" />
+                      <img src="assets/images/password-icon.png" alt="change password icon">
                     </span>
                     Change Password
                   </a>
                   <a href="login.html" class="log-anchor">
                     <span class="profile-submenu-icon">
-                      <img src="assets/images/logout-icon.png" alt="logout icon" />
+                      <img src="assets/images/logout-icon.png" alt="logout icon">
                     </span>
                     Logout
                   </a>
@@ -117,281 +101,259 @@
       </div>
 
       <div class="sidebar-menu-nav">
-        <a href="index.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-clock"></i>
-          </span>
-          <p>Pending</p>
-        </a>
-        <a href="case-lists.html">
+        <a href="admin-index.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-file-earmark-text"></i>
           </span>
           <p>List of Cases</p>
+          <em class="counter-chip">32</em>
         </a>
-        <a href="history.html">
+        <a href="admin-centre.html">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-file-earmark-check"></i>
+            <i class="bi bi-building-gear"></i>
           </span>
-          <p>Modify History</p>
+          <p>Centers</p>
         </a>
-        <a href="c-history.html">
+        <a href="admin-doctor.html">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-stopwatch"></i>
+            <i class="bi bi-person-square"></i>
           </span>
-          <p>Charge History</p>
+          <p>Doctors</p>
         </a>
-        <a href="r-history.html" class="active">
+        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-arrow-clockwise"></i>
+            <i class="bi bi-credit-card-2-back"></i>
           </span>
-          <p>Recharge History</p>
+          <p>Payment</p>
+          <i class="bi bi-chevron-down sub-down-icon"></i>
         </a>
+
+        <div id="ToggleSubMenu" class="sidebar-submenu">
+          <a href="admin-pre-pay.html">
+            <p>Pre - Paid</p>
+          </a>
+          <a href="admin-post-pay.html">
+            <p>Post - Paid</p>
+          </a>
+        </div>
+        
         <a href="template.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-copy"></i>
           </span>
           <p>Template</p>
         </a>
-        <a href="configure.html">
+
+        <a href="admin-review.html" class="active">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-gear"></i>
+            <i class="bi bi-star"></i>
           </span>
-          <p>Configure</p>
+          <p>Review Reports</p>
+          <em class="counter-chip">7</em>
         </a>
-        <a href="manual-add.html">
+
+        <h5 class="menu-divide-head">MIS REPORT</h5>
+
+        <a href="admin-doctor-pay.html">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-plus-circle"></i>
+            <i class="bi bi-credit-card-2-front"></i>
           </span>
-          <p>Manual Add</p>
-        </a>
-        <a href="payment.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-credit-card-2-back"></i>
-          </span>
-          <p>Online Payment</p>
+          <p>Doctor Pay</p>
         </a>
         <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-building-gear"></i>
+            <i class="bi bi-building"></i>
           </span>
-          <p>Center Info</p>
+          <p>Centre</p>
           <i class="bi bi-chevron-down sub-down-icon"></i>
         </a>
 
         <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html">
+          <a href="admin-up-value.html">
             <span class="sidebar-menu-nav-icon">
-              <i class="bi bi-person-square"></i>
+              <i class="bi bi-file-earmark-arrow-up"></i>
             </span>
-            <p>Self Doctor</p>
+            <p>Upload & Value</p>
           </a>
-          <a href="interface.html">
+          <a href="admin-fin-value.html">
             <span class="sidebar-menu-nav-icon">
-              <i class="bi bi-file-earmark-text"></i>
+              <i class="bi bi-currency-rupee"></i>
             </span>
-            <p>Interface Info</p>
+            <p>Financial Year</p>
           </a>
         </div>
+
+        <a href="admin-tat.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-stopwatch"></i>
+          </span>
+          <p>TAT</p>
+        </a>
       </div>
     </aside>
     <!----- SIDEBAR-MENU ------->
     
     <section class="page-section">
-      <div class="content-formalities pb-1">
+      <div class="content-formalities">
         <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <h1>Recharge History</h1>
+              <h1>List of Reviewed Reports</h1>
             </div>
+          </div>
+        </div>
+        <div class="row gx-3 gy-2 justify-content-end">
+          <div class="col-xl-2 col-md-2 col-sm-4 col-6">
+            <select name="">
+              <option value="0" selected="">All Study Types</option>
+              <option value="1">X-RAY</option>
+              <option value="2">CT</option>
+              <option value="3">MRI</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-2 col-sm-4 col-6">
+            <select name="">
+              <option value="0" selected="">All Centres</option>
+              <option value="1">Diagnosis &amp; Cure Centre</option>
+              <option value="2">City Diagnostic Centre</option>
+              <option value="3">Prime Scan Centre</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-2 col-sm-4 col-6">
+            <select name="">
+              <option value="0" selected="">All Doctors</option>
+              <option value="1">Dr. Abhijit Roy</option>
+              <option value="2">Dr. Swapna Khatun</option>
+              <option value="3">Dr. Mr. Azad</option>
+              <option value="4">Dr. Shibarjan Dey</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-2 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">All Case Status</option>
+              <option value="1">Open</option>
+              <option value="2">Waiting for Acceptance</option>
+              <option value="3">Assigned</option>
+              <option value="4">Renew</option>
+              <option value="5">Approved</option>
+            </select>
+          </div>
+          
+          <div class="col-xl-2 col-md-2 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">Records: 100</option>
+              <option value="1">Records: 200</option>
+              <option value="2">Records: 130</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-2 col-sm-12 col-6">
+            <input type="date" name="" placeholder="Enter Date">
           </div>
         </div>
       </div>
 
-      <div class="content-formalities pb-3">
-        <div class="row gx-3 gy-3">
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box">
-              <span class="payment-icon wallet">
-                <i class="bi bi-wallet2"></i>
-              </span>
-
-              <div>
-                <h6>Total Paid Till Date</h6>
-                <h3><span>₹</span> 15,000</h3>
-
-                <p class="floating-paragraph">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  Cumulative payment
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box">
-              <span class="payment-icon rupee">
-                <i class="bi bi-credit-card-2-front"></i>
-              </span>
-
-              <div>
-                <h6>Last Recharge</h6>
-                <h3><span>₹</span> 7,500</h3>
-
-                <p class="floating-paragraph recharge-date">
-                  <i class="bi bi-calendar3"></i>
-                  12 Aug 2026
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="content-table r-history">
+      <div class="content-table admin-review">
         <table>
           <thead>
             <tr>
-              <th>Date</th>
-              <th>Transaction ID</th>
-              <th>Method</th>
-              <th>Amount</th>
+              <th>Case ID</th>
+              <th>Patient</th>
+              <th>Centre</th>
+              <th>Modality</th>
+              <th>Requested at</th>
               <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
+              <td>TR-260825-1039</td>
+              <td>Souvik Paul</td>
+              <td>Prime Scan Centre</td>
+              <td>MRI</td>
+              <td>10:04 AM</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="warning-btn">Pending Review</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="submitted-btn">Start Review</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
+              <td>TR-260825-1039</td>
+              <td>Nandita Roy</td>
+              <td>City Diagnostic</td>
+              <td>CT</td>
+              <td>08:58 AM</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">Pending</button>
-                </div>
-              </td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="edit-btn">Resolved</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="submitted-btn">View Report</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
+              <td>TR-260825-1039</td>
+              <td>MD. Jamal Akhter</td>
+              <td>City Diagnostic</td>
+              <td>MRI</td>
+              <td>08:58 AM</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="warning-btn">Pending Review</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="submitted-btn">Start Review</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
+              <td>TR-260825-1039</td>
+              <td>Gitablai Mondal</td>
+              <td>City Diagnostic</td>
+              <td>CT</td>
+              <td>08:58 AM</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="edit-btn">Resolved</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="submitted-btn">View Report</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
+              <td>TR-260825-1039</td>
+              <td>Jagannath Bhattachrya</td>
+              <td>City Diagnostic</td>
+              <td>MRI</td>
+              <td>08:58 AM</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">Pending</button>
+                  <button type="button" class="edit-btn">Resolved</button>
                 </div>
               </td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>10-Aug-2026, 10:35 AM</td>
-              <td>RCH-120826-102</td>
-              <td>Online Payment</td>
-              <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">Pending</button>
+                  <button type="button" class="submitted-btn">View Report</button>
                 </div>
               </td>
-              <td>-</td>
             </tr>
           </tbody>
         </table>
@@ -399,7 +361,7 @@
     </section>
 
   </main>
-  <!----------------------------------- RECHARHE-HISTORY-PAGE ------------------------------------------------->
+  <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
