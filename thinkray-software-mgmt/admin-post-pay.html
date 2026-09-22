@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThinkRay Admin Post-Payment | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+
+  <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
+  <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
+  <meta name="keywords" content="Laboratory Management Software, Healthcare Software, ThinkRay Management, Lab Management, Thinkray, Medical Software India" />
+  <meta name="author" content="Thinkwide Digital Health Pvt. Ltd." />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <!------------------ CSS FOR BOOTSTRAP FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="assets/css/bootstrap-min.css">
+  <!------------------ CSS FOR BOOTSTRAP FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+  <!------------------ CSS FOR BOOTSTRAP-ICON FILES COMPLETE ---------------------->
+
+  <!------------------ CSS FOR MAIN FILES START ---------------------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!------------------ CSS FOR MAIN FILES COMPLETE ---------------------->
+</head>
+
+<body>
+
+  <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
+  <main class="main-page">
+
+    <!----- TOP-HEADER ------->
+    <div class="top-header">
+      <div class="row align-items-center justify-content-end">
+
+        <div class="col-xl-9 col-lg-12 col-md-3 col-3">
+          <div id="mobileMenuContent" class="top-header-content">
+            <div class="user-wallet admin">
+              <img src="assets/images/centre-svgrepo-icon.png" alt="customer wallet icon">
+              <p>Switch to</p>
+              <h6>Centre</h6>
+            </div>
+
+            <div class="user-supports">
+              <div class="user-notification">
+                <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
+              </div>
+              <div class="profile-wrapper">
+
+                <div class="user-profile" onclick="toggleProfileMenu(event)">
+                  <h6>Admin</h6>
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+
+                <!----- ANIMATED-TOGGLER-MENU ------->
+                <div id="ProfileSubMenu" class="profile-submenu">
+                  <a href="change-password.html">
+                    <span class="profile-submenu-icon">
+                      <img src="assets/images/password-icon.png" alt="change password icon">
+                    </span>
+                    Change Password
+                  </a>
+                  <a href="login.html" class="log-anchor">
+                    <span class="profile-submenu-icon">
+                      <img src="assets/images/logout-icon.png" alt="logout icon">
+                    </span>
+                    Logout
+                  </a>
+                </div>
+                <!----- ANIMATED-TOGGLER-MENU ------->
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mobile-menu-toggle" onclick="openMobileMenu()">
+            <i class="bi bi-three-dots-vertical"></i>
+          </div>
+        </div>
+
+      </div>        
+    </div>
+    <!----- TOP-HEADER ------->
+
+    <!----- SIDEBAR-MENU ------->
+    <aside id="SideBarMenu" class="sidebar-menu">
+      <div class="sidebar-menu-top">
+
+        <div class="logo">
+          <img src="assets/images/thinkray-logo.png" alt="logo image" />
+        </div>
+
+        <div class="sidebar-menu-toggle" onclick="toggleSideBarMenu()">
+          <img src="assets/images/menu-toggle-icon.png" alt="menu toggle icon" />
+        </div>
+
+      </div>
+
+      <div class="sidebar-menu-nav">
+        <a href="admin-index.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-text"></i>
+          </span>
+          <p>List of Cases</p>
+          <em class="counter-chip">32</em>
+        </a>
+        <a href="admin-centre.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-building-gear"></i>
+          </span>
+          <p>Centers</p>
+        </a>
+        <a href="admin-doctor.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-person-square"></i>
+          </span>
+          <p>Doctors</p>
+        </a>
+        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-credit-card-2-back"></i>
+          </span>
+          <p>Payment</p>
+          <i class="bi bi-chevron-down sub-down-icon"></i>
+        </a>
+
+        <div id="ToggleSubMenu" class="sidebar-submenu">
+          <a href="admin-pre-pay.html">
+            <p>Pre - Paid</p>
+          </a>
+          <a href="admin-post-pay.html" class="active">
+            <p>Post - Paid</p>
+          </a>
+        </div>
+        
+        <a href="template.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-copy"></i>
+          </span>
+          <p>Template</p>
+        </a>
+
+        <a href="admin-review.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-star"></i>
+          </span>
+          <p>Review Reports</p>
+          <em class="counter-chip">7</em>
+        </a>
+
+        <h5 class="menu-divide-head">MIS REPORT</h5>
+
+        <a href="admin-doctor-pay.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-credit-card-2-front"></i>
+          </span>
+          <p>Doctor Pay</p>
+        </a>
+        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-building"></i>
+          </span>
+          <p>Centre</p>
+          <i class="bi bi-chevron-down sub-down-icon"></i>
+        </a>
+
+        <div id="ToggleSubMenu" class="sidebar-submenu">
+          <a href="admin-up-value.html">
+            <span class="sidebar-menu-nav-icon">
+              <i class="bi bi-file-earmark-arrow-up"></i>
+            </span>
+            <p>Upload & Value</p>
+          </a>
+          <a href="admin-fin-value.html">
+            <span class="sidebar-menu-nav-icon">
+              <i class="bi bi-currency-rupee"></i>
+            </span>
+            <p>Financial Year</p>
+          </a>
+        </div>
+
+        <a href="admin-tat.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-stopwatch"></i>
+          </span>
+          <p>TAT</p>
+        </a>
+      </div>
+    </aside>
+    <!----- SIDEBAR-MENU ------->
+    
+    <section class="page-section">
+      <div class="content-formalities">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="page-section-heading">
+              <h1>Post-Paid List</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-3 gy-2">
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">All Centres</option>
+              <option value="1">Diagnosis &amp; Cure Centre</option>
+              <option value="2">City Diagnostic Centre</option>
+              <option value="3">Prime Scan Centre</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">Last Month</option>
+              <option value="1">Current Month</option>
+              <option value="2">3 Months</option>
+              <option value="3">6 Months</option>
+              <option value="4">1 Year</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-12 col-12">
+            <select name="">
+              <option value="0" selected="">Payment Status</option>
+              <option value="1">All</option>
+              <option value="2">Paid</option>
+              <option value="3">Partially Paid</option>
+            </select>
+          </div>
+
+          <div class="col-xl-6 col-md-3 col-sm-12 col-12">
+            <div class="content-table-btn-part text-end justify-content-end">
+              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createWalletModal"><i class="bi bi-plus-lg"></i> Create Wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-table admin-post-pay">
+        <table>
+          <thead>
+            <tr>
+              <th>Centre</th>
+              <th>Billing Cycle</th>
+              <th>Cases</th>
+              <th>Bill Amount</th>
+              <th>Paid</th>
+              <th>Last Paid Date</th>
+              <th>Outstanding</th>
+              <th>Payment Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prime Scan Centre</td>
+              <td>August 2026</td>
+              <td>386</td>
+              <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="warning-btn">Partially Paid</button>
+                </div>
+              </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make Payment</button>
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>City Diagnostic</td>
+              <td>August 2026</td>
+              <td>386</td>
+              <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="completed-btn">Paid</button>
+                </div>
+              </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Plus City Diagnostic</td>
+              <td>August 2026</td>
+              <td>386</td>
+              <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="request-btn">Due</button>
+                </div>
+              </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make Payment</button>
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Medicare Imaging</td>
+              <td>August 2026</td>
+              <td>386</td>
+              <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="warning-btn">Partially Paid</button>
+                </div>
+              </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make Payment</button>
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!----- CREATE-WALLET-MODAL ------->
+    <div class="modal fade" id="createWalletModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Create Wallet</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter Center name *" required="">
+                  </div>
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <input type="text" name="" value="" placeholder="Enter Code *" required="">
+                  </div>
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <input type="text" name="" value="" placeholder="Enter Amount *" required="">
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter Receiver URL *" required="">
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Create</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- CREATE-WALLET-MODAL ------->
+
+    <!----- MAKE-PAYMENT-MODAL ------->
+    <div class="modal fade" id="makePaymentModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Make Payment</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="billing-summary">
+                <div class="billing-box">
+                  <strong>Centre</strong>
+                  <span>Prime Scan Centre</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Invoice</strong>
+                  <span>INV-2608-0142</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Bill Amount</strong>
+                  <span>₹ 1,42,600</span>
+                </div>
+
+                <div class="billing-box due">
+                  <strong>Remaining Due</strong>
+                  <span>₹ 42,600</span>
+                </div>
+              </div>
+
+              <div class="tab-group payment-tab-box">
+                <div class="payment-tabs">
+                  <button type="button" class="tab-btn active" data-tab="payment-link" onclick="openTab(this)">Payment Link</button>
+                  <button type="button" class="tab-btn" data-tab="manual-payment" onclick="openTab(this)">Manual Payment</button>
+                </div>
+
+                <div class="tab-content payment-link">
+                  <h5>Create Payment Link</h5>
+                  <p>Generate A Secure Link For The Centre To Complete Payment Online.</p>
+
+                  <div class="payment-form-row">
+                    <input type="text" name="" value="" placeholder="Payment Amount *" required="">
+                    <div class="content-table-btn-part">
+                      <button type="button" class="browse-btn">Create Payment Link</button>
+                    </div>
+                  </div>
+
+                  <div class="payment-history-box">
+                    <div class="payment-history-head">
+                      <h5>Payment History</h5>
+
+                      <div class="remaining-due">
+                        <span>Remaining Due:</span>
+                        <strong>₹ 42,600</strong>
+                      </div>
+                    </div>
+
+                    <div class="payment-history-item">
+                      <div class="payment-history-left">
+                        <span class="payment-status-line"></span>
+                        <div>
+                          <h4>₹ 1,00,000</h4>
+                          <p>2026-08-12 · NEFT-882614 · Remaining Due ₹42,600</p>
+                        </div>
+                      </div>
+
+                      <div class="payment-history-actions">
+                        <button type="button">View Payment Details</button>
+                        <button type="button">Download Payment Slip</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-content manual-payment hidden">
+                  <h5>Manual Payment</h5>
+                  <p>Enter The Payment Details Received From The Centre.</p>
+
+                  <div class="payment-form-row flex-column">
+                    <div class="row gx-3 gy-3">
+                      <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                        <select name="" required="">
+                          <option value="0" selected="">Payment Mode *</option>
+                          <option value="1">Add Netbanking</option>
+                          <option value="1">UPI</option>
+                          <option value="1">Cash</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                        <input type="text" name="" value="" placeholder="Amount Paid *" required="">
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                        <input type="date" name="" value="" placeholder="Payment date *" required="">
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                        <input type="text" name="" value="" placeholder="Reference Number *" required="">
+                      </div>
+                    </div>
+                    <div class="content-table-btn-part justify-content-between w-100">
+                      <div class="field-formalities-action-part upload me-2" onclick="document.getElementById('FileUpload').click()">
+                        <div class="d-flex align-items-center">
+                          <span class="field-icon scaled">
+                            <img src="assets/images/upload-icon.png" alt="field icon">
+                          </span>
+                          <div>
+                            <input type="file" id="FileUpload" accept="image/*" hidden="">
+                            <h6>Upload Payment Slip</h6>
+                            <p>Select only .JPG template file</p>
+                          </div>
+                        </div>
+                        <div class="content-table-btn-part">
+                          <button type="button" class="browse-btn"><i class="bi bi-folder2-open"></i> Browse File</button>
+                        </div>
+                      </div>
+                      <button type="button" class="browse-btn">Create Payment Link</button>
+                    </div>
+                  </div>
+
+                  <div class="payment-history-box">
+                    <div class="payment-history-head">
+                      <h5>Payment History</h5>
+
+                      <div class="remaining-due">
+                        <span>Remaining Due:</span>
+                        <strong>₹ 42,600</strong>
+                      </div>
+                    </div>
+
+                    <div class="payment-history-item">
+                      <div class="payment-history-left">
+                        <span class="payment-status-line"></span>
+                        <div>
+                          <h4>₹ 1,00,000</h4>
+                          <p>2026-08-12 · NEFT-882614 · Remaining Due ₹42,600</p>
+                        </div>
+                      </div>
+
+                      <div class="payment-history-actions">
+                        <button type="button">View Payment Details</button>
+                        <button type="button">Download Payment Slip</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- MAKE-PAYMENT-MODAL ------->
+
+    <!----- VIEW-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewDetailsModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Payment Details</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="billing-summary">
+                <div class="billing-box">
+                  <strong>Centre</strong>
+                  <span>Prime Scan Centre</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Invoice</strong>
+                  <span>INV-2608-0142</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Bill Amount</strong>
+                  <span>₹ 1,42,600</span>
+                </div>
+
+                <div class="billing-box due">
+                  <strong>Remaining Due</strong>
+                  <span>₹ 42,600</span>
+                </div>
+              </div>
+
+              <div class="payment-history-box">
+                <div class="payment-history-head">
+                  <h5>Payment History</h5>
+
+                  <div class="remaining-due">
+                    <span>Remaining Due:</span>
+                    <strong>₹ 42,600</strong>
+                  </div>
+                </div>
+
+                <div class="payment-history-item">
+                  <div class="payment-history-left">
+                    <span class="payment-status-line"></span>
+                    <div>
+                      <h4>₹ 1,00,000</h4>
+                      <p>2026-08-12 · NEFT-882614 · Remaining Due ₹42,600</p>
+                    </div>
+                  </div>
+
+                  <div class="payment-history-actions">
+                    <button type="button">View Payment Details</button>
+                    <button type="button">Download Payment Slip</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-DETAILS-MODAL ------->
+
+  </main>
+  <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
+
+  <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
+  <script src="assets/js/jquery-min.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR JQUERY FILES COMPLETE ---------------------------------------->
+
+  <!----------------------------------- JS FOR BOOTSTRAP FILES START ------------------------------------------------->
+  <script src="assets/js/bootstrap-bundle-min.js" type="text/javascript"></script>
+  <!------------------------------------- JS FOR BOOTSTRAP FILES COMPLETED ------------------------------------------->
+
+  <!------------------------------------ JS FOR CUSTOM-MENU FILES START -------------------------------------------->
+  <script src="assets/js/custom-menu.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR CUSTOM-MENU FILES COMPLETE ---------------------------------------->
+
+  <!------------------------------------ JS FOR MAIN FILES START -------------------------------------------->
+  <script src="assets/js/main.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR MAIN FILES COMPLETE ---------------------------------------->
+
+</body>
+</html>
