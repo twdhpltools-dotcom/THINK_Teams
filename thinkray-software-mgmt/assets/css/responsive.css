@@ -92,6 +92,14 @@
     .doctor-description-cta {
         padding: 7px 25px;
     }
+    .payment-icon {
+        margin-right: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    .payment-icon i {
+        font-size: 130%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -384,6 +392,9 @@
     .field-formalities-box {
         padding: 8px 12px;
     }
+    .doctor-description-box.notification {
+        padding-left: 12px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -531,6 +542,16 @@
     .payment-formalities-box {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .payment-formalities-box.compact {
+        flex-direction: row;
+        align-items: center;
+    }
+    .payment-formalities-box.compact .payment-icon {
+        margin: 0 10px 0 0;
+    }
+    .payment-formalities-box.compact .payment-formalities-box h6 {
+        margin: 0 0 2px;
     }
     .payment-formalities-box {
         padding: 6px 10px;
@@ -725,6 +746,9 @@
     }
     .payment-form-row {
         gap: 10px;
+    }
+    .doctor-description-box.notification {
+        padding-left: 10px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
