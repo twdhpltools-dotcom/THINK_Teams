@@ -166,6 +166,10 @@ button.tab-btn.active .tab-indicator {
     background: linear-gradient(to left, #fff3f9, transparent);
     z-index: 2;
 }
+
+.tap-fill {
+    color: var(--primary);
+}
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PRE-LOADER START ---------------------------------------------- */
