@@ -155,6 +155,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- DOCTOR-CONSULTATION-CANCEL-MENU ----------------------------------------*/
 
+/*-------------------------------------- DOCTOR-CONSULTATION-CANCEL-TEST-MENU ----------------------------------------*/
+function openDocConstCancelTestMenu() { 
+    const DocConstCancelTestMenu = document.getElementById("DocConstCancelTestMenu"); 
+    const DocConstCancelTestMenuOverlay = document.getElementById("DocConstCancelTestMenuOverlay"); 
+ 
+    DocConstCancelTestMenu.classList.toggle("translate-y-full"); 
+    DocConstCancelTestMenu.classList.toggle("opacity-0"); 
+    DocConstCancelTestMenu.classList.toggle("translate-y-0"); 
+    DocConstCancelTestMenu.classList.toggle("opacity-100"); 
+ 
+    DocConstCancelTestMenuOverlay.classList.toggle("opacity-0"); 
+    DocConstCancelTestMenuOverlay.classList.toggle("invisible"); 
+}
+
+function closeDocConstCancelTestMenu() {
+    const DocConstCancelTestMenu = document.getElementById("DocConstCancelTestMenu");
+    const DocConstCancelTestMenuOverlay = document.getElementById("DocConstCancelTestMenuOverlay");
+
+    DocConstCancelTestMenu.classList.add("translate-y-full", "opacity-0");
+    DocConstCancelTestMenu.classList.remove("translate-y-0", "opacity-100");
+
+    DocConstCancelTestMenuOverlay.classList.add("opacity-0", "invisible");
+    DocConstCancelTestMenuOverlay.classList.remove("opacity-100");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("DocConstCancelTestMenuOverlay")?.addEventListener("click", function () {
+        closeDocConstCancelTestMenu();
+    });
+});
+/*-------------------------------------- DOCTOR-CONSULTATION-CANCEL-TEST-MENU ----------------------------------------*/
+
 /*-------------------------------------- HISTORY-SORT-MENU ----------------------------------------*/
 function openHistorySortMenu() { 
     const HistorySortMenu = document.getElementById("HistorySortMenu"); 

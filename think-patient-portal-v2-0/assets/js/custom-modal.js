@@ -169,40 +169,6 @@ document.getElementById("DocConstCancelModal")?.addEventListener("click", functi
 });
 /*-------------------------------------- DOC-CONST-CANCEL ----------------------------------------*/
 
-/*-------------------------------------- DOC-CONST-CANCEL-TEST ----------------------------------------*/
-function openDocConstCancelTestModal() {
-  const DocConstCancelTestModal = document.getElementById("DocConstCancelTestModal");
-  const DocConstCancelTestModalBox = document.getElementById("DocConstCancelTestModalBox");
-
-  DocConstCancelTestModal.classList.remove("hidden");
-  DocConstCancelTestModal.classList.add("flex");
-
-  setTimeout(() => {
-    DocConstCancelTestModalBox.classList.remove("opacity-0", "scale-95");
-    DocConstCancelTestModalBox.classList.add("opacity-100", "scale-100");
-  }, 10);
-}
-
-function closeDocConstCancelTestModal() {
-  const DocConstCancelTestModal = document.getElementById("DocConstCancelTestModal");
-  const DocConstCancelTestModalBox = document.getElementById("DocConstCancelTestModalBox");
-
-  DocConstCancelTestModalBox.classList.add("opacity-0", "scale-95");
-  DocConstCancelTestModalBox.classList.remove("opacity-100", "scale-100");
-
-  setTimeout(() => {
-    DocConstCancelTestModal.classList.add("hidden");
-    DocConstCancelTestModal.classList.remove("flex");
-  }, 300);
-}
-
-document.getElementById("DocConstCancelTestModal")?.addEventListener("click", function(e) {
-  if (e.target === this) {
-    closeDocConstCancelTestModal();
-  }
-});
-/*-------------------------------------- DOC-CONST-CANCEL-TEST ----------------------------------------*/
-
 /*-------------------------------------- DOC-CONST-DATE-PICKER ----------------------------------------*/
 function openDocConstDPickerModal() {
   const DocConstDPickerModal = document.getElementById("DocConstDPickerModal");
