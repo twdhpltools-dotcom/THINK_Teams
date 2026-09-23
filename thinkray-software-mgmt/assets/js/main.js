@@ -1,4 +1,41 @@
 /*------------------------------------------- JS FOR MAIN START ------------------------------------------*/
+/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
+const searchTexts=[
+  "Search patient, Inv No ...",
+  "Search by test name or study",
+  "Search patient, case ID",
+  "Search notifications by patient name"
+];
+
+const searchInput=document.querySelector(".search-input input");
+let textIndex=0,charIndex=0,isDeleting=false;
+
+function animateSearchPlaceholder(){
+  const text=searchTexts[textIndex];
+
+  if(!isDeleting){
+    charIndex++;
+    searchInput.placeholder=text.slice(0,charIndex);
+
+    if(charIndex===text.length){
+      isDeleting=true;
+      return setTimeout(animateSearchPlaceholder,1400);
+    }
+  }else{
+    charIndex--;
+    searchInput.placeholder=text.slice(0,charIndex);
+
+    if(charIndex===0){
+      isDeleting=false;
+      textIndex=(textIndex+1)%searchTexts.length;
+    }
+  }
+  setTimeout(animateSearchPlaceholder,isDeleting?35:55);
+}
+
+animateSearchPlaceholder();
+/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
+
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 /*-------------------- SUB-MENU ----------------------*/
 function toggleSubMenu(btn) {
@@ -23,6 +60,7 @@ function openMobileMenu() {
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
+/*-------------------- PROFILE-MENU ----------------------*/
 function toggleProfileMenu(event) {
   event.stopPropagation();
 
@@ -38,6 +76,26 @@ document.addEventListener("click", function () {
   const menu = document.getElementById("ProfileSubMenu");
   menu.classList.remove("active");
 });
+/*-------------------- PROFILE-MENU ----------------------*/
+
+/*-------------------- ADMIN-SWITCH-MENU ----------------------*/
+
+function toggleAdminSwitchMenu(event) {
+  event.stopPropagation();
+
+  const menu = document.getElementById("AdminSwitchSubMenu");
+  menu.classList.toggle("active");
+}
+
+document.getElementById("AdminSwitchSubMenu").addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+document.addEventListener("click", function () {
+  const menu = document.getElementById("AdminSwitchSubMenu");
+  menu.classList.remove("active");
+});
+/*-------------------- ADMIN-SWITCH-MENU ----------------------*/
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
 
 /* ------------------------------------- PASSWORD-ICON ------------------------------------------ */
@@ -125,43 +183,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- INPUT-TEL ----------------------------------------*/
 /*-------------------------------------- PG-VALIDATION----------------------------------------*/
-
-/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
-const searchTexts=[
-  "Search patient, Inv No ...",
-  "Search by test name or study",
-  "Search patient, case ID",
-  "Search notifications by patient name"
-];
-
-const searchInput=document.querySelector(".search-input input");
-let textIndex=0,charIndex=0,isDeleting=false;
-
-function animateSearchPlaceholder(){
-  const text=searchTexts[textIndex];
-
-  if(!isDeleting){
-    charIndex++;
-    searchInput.placeholder=text.slice(0,charIndex);
-
-    if(charIndex===text.length){
-      isDeleting=true;
-      return setTimeout(animateSearchPlaceholder,1400);
-    }
-  }else{
-    charIndex--;
-    searchInput.placeholder=text.slice(0,charIndex);
-
-    if(charIndex===0){
-      isDeleting=false;
-      textIndex=(textIndex+1)%searchTexts.length;
-    }
-  }
-  setTimeout(animateSearchPlaceholder,isDeleting?35:55);
-}
-
-animateSearchPlaceholder();
-/*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 
 /*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
 document.querySelector(".submitted-btn.conf").addEventListener("click", function () {
