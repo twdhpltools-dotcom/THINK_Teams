@@ -120,6 +120,12 @@
           </span>
           <p>Doctors</p>
         </a>
+        <a href="admin-list-view.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-grid-1x2"></i>
+          </span>
+          <p>List of Views</p>
+        </a>
         <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-credit-card-2-back"></i>
@@ -448,7 +454,7 @@
                       </div>
 
                       <div class="payment-history-actions">
-                        <button type="button">View Payment Details</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#viewPaymentDetailsModal" data-bs-dismiss="modal">View Payment Details</button>
                         <button type="button">Download Payment Slip</button>
                       </div>
                     </div>
@@ -488,7 +494,7 @@
                           <div>
                             <input type="file" id="FileUpload" accept="image/*" hidden="">
                             <h6>Upload Payment Slip</h6>
-                            <p>Select only .JPG template file</p>
+                            <p class="mb-0">Select only .JPG template file</p>
                           </div>
                         </div>
                         <div class="content-table-btn-part">
@@ -519,7 +525,7 @@
                       </div>
 
                       <div class="payment-history-actions">
-                        <button type="button">View Payment Details</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#viewPaymentDetailsModal" data-bs-dismiss="modal">View Payment Details</button>
                         <button type="button">Download Payment Slip</button>
                       </div>
                     </div>
@@ -586,7 +592,7 @@
                   </div>
 
                   <div class="payment-history-actions">
-                    <button type="button">View Payment Details</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewPaymentDetailsModal" data-bs-dismiss="modal">View Payment Details</button>
                     <button type="button">Download Payment Slip</button>
                   </div>
                 </div>
@@ -597,6 +603,52 @@
       </div>
     </div>
     <!----- VIEW-DETAILS-MODAL ------->
+
+    <!----- VIEW-PAYMENT-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewPaymentDetailsModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>View Payment Details</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="payment-view">
+                <div class="amount-box">
+                  <span>Amount Received</span>
+                  <h3>₹ 1,00,000</h3>
+                </div>
+
+                <div class="payment-details">
+                  <div class="payment-row">
+                    <span><i class="bi bi-calendar3"></i> Payment Date</span>
+                    <strong>12 Aug 2026</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span><i class="bi bi-arrow-left-right"></i> Payment Mode</span>
+                    <strong>NEFT</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span><i class="bi bi-file-earmark-text"></i> Transaction ID</span>
+                    <strong>NEFT-882614</strong>
+                  </div>
+
+                  <div class="payment-row due">
+                    <span><i class="bi bi-pie-chart"></i> Remaining Due</span>
+                    <strong>₹ 42,600</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-PAYMENT-DETAILS-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->

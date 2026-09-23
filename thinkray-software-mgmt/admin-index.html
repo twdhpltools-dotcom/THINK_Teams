@@ -120,6 +120,12 @@
           </span>
           <p>Doctors</p>
         </a>
+        <a href="admin-list-view.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-grid-1x2"></i>
+          </span>
+          <p>List of Views</p>
+        </a>
         <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-credit-card-2-back"></i>
@@ -268,7 +274,7 @@
                 <div>
                   <div class="doctor-name-part">
                     <h3>Amit Sharma</h3>
-                    <p>32 yrs <span></span> Male</p>
+                    <p>32 yrs <span></span> M</p>
                   </div>
                   <ul class="doctor-info-listing">
                     <li>
@@ -297,11 +303,6 @@
                 <div class="doctor-date">
                   <p>17-Aug-2026 · 12:25 AM</p>
                 </div>
-
-                <span class="tat-box">
-                  <p>TAT</p>
-                  <h6 class="tat-timer">24 Hours</h6>
-                </span>
               </div>
             </div>
 
@@ -321,7 +322,7 @@
                     <div class="content-table-btn-part">
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
-                      <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#assignedCaseModal">Assigned</button>
+                      <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#assignedCaseModal">Assign</button>
                     </div>
                   </div>
                 </div>
@@ -338,7 +339,7 @@
                 <div>
                   <div class="doctor-name-part">
                     <h3>Md. Azad Molla</h3>
-                    <p>32 yrs <span></span> Male</p>
+                    <p>32 yrs <span></span> M</p>
                   </div>
                   <ul class="doctor-info-listing">
                     <li>
@@ -367,11 +368,6 @@
                 <div class="doctor-date">
                   <p>17-Aug-2026 · 12:25 AM</p>
                 </div>
-
-                <span class="tat-box">
-                  <p>TAT</p>
-                  <h6 class="tat-timer">24 Hours</h6>
-                </span>
               </div>
             </div>
 
@@ -392,6 +388,7 @@
 
                   <div class="col-md-6 col-12">
                     <div class="content-table-btn-part">
+                      <span class="type type-three compact">Assigned 0 Hrs 22 Mins ago</span>
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                     </div>
@@ -410,7 +407,7 @@
                 <div>
                   <div class="doctor-name-part">
                     <h3>Mriganka Roy</h3>
-                    <p>32 yrs <span></span> Male</p>
+                    <p>32 yrs <span></span> M</p>
                   </div>
                   <ul class="doctor-info-listing">
                     <li>
@@ -441,8 +438,7 @@
                 </div>
 
                 <span class="tat-box">
-                  <p>TAT</p>
-                  <h6 class="tat-timer">24 Hours</h6>
+                  <h6 class="with-tat">Within TAT</h6>
                 </span>
               </div>
             </div>
@@ -482,7 +478,7 @@
                 <div>
                   <div class="doctor-name-part">
                     <h3>Ms. Swati Talukder</h3>
-                    <p>32 yrs <span></span> Female</p>
+                    <p>32 yrs <span></span> F</p>
                   </div>
                   <ul class="doctor-info-listing">
                     <li>
@@ -554,7 +550,7 @@
                 <div>
                   <div class="doctor-name-part">
                     <h3>Debika Ghosh Dostidar</h3>
-                    <p>32 yrs <span></span> Female</p>
+                    <p>32 yrs <span></span> F</p>
                   </div>
                   <ul class="doctor-info-listing">
                     <li>
@@ -585,8 +581,7 @@
                 </div>
 
                 <span class="tat-box">
-                  <p>TAT</p>
-                  <h6 class="tat-timer">24 Hours</h6>
+                  <h6 class="without-tat">TAT Failed</h6>
                 </span>
               </div>
             </div>
@@ -659,7 +654,7 @@
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
 
-  <!------------------------------------ JS FOR TIMER-COUNT START -------------------------------------------->
+    <!------------------------------------ JS FOR TIMER-COUNT START -------------------------------------------->
   <script type="text/javascript">
     const tatTimers = document.querySelectorAll(".tat-timer");
 
