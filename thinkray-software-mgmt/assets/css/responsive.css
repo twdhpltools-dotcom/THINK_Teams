@@ -511,6 +511,12 @@
     .billing-summary {
         gap: 10px;
     }
+    .payment-row {
+        padding: 9px 15px;
+    }
+    .amount-box h3 {
+        font-size: 160%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
