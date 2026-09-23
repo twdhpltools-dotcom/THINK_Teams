@@ -169,10 +169,11 @@
 
           <div class="col-xl-2 col-md-3 col-sm-6 col-6">
             <select name="">
-              <option value="0" selected>All Status</option>
-              <option value="1">Newest</option>
-              <option value="2">Oldest</option>
-              <option value="2">Urgent</option>
+              <option value="0" selected>50</option>
+              <option value="1">100</option>
+              <option value="2">150</option>
+              <option value="3">200</option>
+              <option value="4">250</option>
             </select>
           </div>
         </div>
@@ -240,7 +241,7 @@
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                       <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal">Note</button>
-                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#startReportModal">Start Report</button>
+                      <button type="button" class="completed-btn" onclick="window.location.href='doctor-start-report.html'">Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -310,7 +311,7 @@
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                       <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal">Note</button>
-                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#startReportModal">Start Report</button>
+                      <button type="button" class="completed-btn" onclick="window.location.href='doctor-start-report.html'">Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -380,7 +381,7 @@
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                       <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal">Note</button>
-                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#startReportModal">Start Report</button>
+                      <button type="button" class="completed-btn" onclick="window.location.href='doctor-start-report.html'">Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -450,7 +451,7 @@
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                       <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal">Note</button>
-                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#startReportModal">Start Report</button>
+                      <button type="button" class="completed-btn" onclick="window.location.href='doctor-start-report.html'">Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -520,7 +521,7 @@
                       <button type="button" class="pending-btn">Download</button>
                       <button type="button" class="submitted-btn">View DICOM</button>
                       <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#updateNoteModal">Note</button>
-                      <button type="button" class="completed-btn" data-bs-toggle="modal" data-bs-target="#startReportModal">Start Report</button>
+                      <button type="button" class="completed-btn" onclick="window.location.href='doctor-start-report.html'">Start Report</button>
                     </div>
                   </div>
                 </div>
@@ -555,127 +556,6 @@
       </div>
     </div>
     <!----- UPDATE-NOTE-MODAL ------->
-
-    <!----- EDIT-REPORT-STATUS-MODAL ------->
-    <div class="modal fade" id="startReportModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="modal-content-box">
-
-              <!----- HTML-LIVE-EDIT ------->
-              <div class="editor-toolbar">
-                <button type="button" onclick="editorCmd('undo')">
-                  <i class="bi bi-arrow-counterclockwise"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('redo')">
-                  <i class="bi bi-arrow-clockwise"></i>
-                </button>
-
-                <select onchange="formatBlock(this.value)">
-                  <option value="">Formats</option>
-                  <option value="p">Paragraph</option>
-                  <option value="h1">Heading 1</option>
-                  <option value="h2">Heading 2</option>
-                  <option value="h3">Heading 3</option>
-                </select>
-
-                <button type="button" onclick="editorCmd('bold')">
-                  <i class="bi bi-type-bold"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('italic')">
-                  <i class="bi bi-type-italic"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('underline')">
-                  <i class="bi bi-type-underline"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('copy')">
-                  <i class="bi bi-files"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('insertUnorderedList')">
-                  <i class="bi bi-list-ul"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('insertOrderedList')">
-                  <i class="bi bi-list-ol"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('justifyLeft')">
-                  <i class="bi bi-text-left"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('justifyCenter')">
-                  <i class="bi bi-text-center"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('justifyRight')">
-                  <i class="bi bi-text-right"></i>
-                </button>
-
-                <button type="button" onclick="editorCmd('justifyFull')">
-                  <i class="bi bi-justify"></i>
-                </button>
-
-                <label class="toolbar-color">
-                  <i class="bi bi-fonts"></i>
-                  <input type="color" onchange="setTextColor(this.value)">
-                </label>
-              </div>
-
-              <div class="patient-info-editor">
-                <div class="patient-info-editor-column">
-                  <div class="patient-info-editor-row">
-                    <strong>ID No</strong>
-                    <span contenteditable="true">26.08.2026, 1003</span>
-                  </div>
-
-                  <div class="patient-info-editor-row">
-                    <strong>Name</strong>
-                    <span contenteditable="true">Mr. Tapas Malik</span>
-                  </div>
-
-                  <div class="patient-info-editor-row">
-                    <strong>Referred By</strong>
-                    <span contenteditable="true">Dr. N Laha</span>
-                  </div>
-                </div>
-
-                <div class="patient-info-editor-column">
-                  <div class="patient-info-editor-row">
-                    <strong>Report Generated</strong>
-                    <span contenteditable="true">2026-08-26 03:13 PM</span>
-                  </div>
-                  <div class="patient-info-editor-row">
-                    <strong>Age | Gen</strong>
-                    <span contenteditable="true">37 Yrs | M</span>
-                  </div>
-                </div>
-              </div>
-              <!----- HTML-LIVE-EDIT ------->
-
-              <form method="" action="">
-                <div class="row gx-3 gy-3">
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <textarea rows="3" name="" value="" placeholder="">Chest radiograph shows no focal air-space opacity. Cardiomediastinal silhouette is within normal limits. No pleural effusion or pneumothorax.</textarea>
-                  </div>
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="content-table-btn-part justify-content-center">
-                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save Change</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- EDIT-REPORT-STATUS-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->

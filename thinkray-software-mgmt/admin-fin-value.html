@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Admin Doctor Pay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Admin Centre Upload & Values | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -160,7 +160,7 @@
 
         <h5 class="menu-divide-head">MIS REPORT</h5>
 
-        <a href="admin-doctor-pay.html" class="active">
+        <a href="admin-doctor-pay.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-credit-card-2-front"></i>
           </span>
@@ -181,7 +181,7 @@
             </span>
             <p>Upload & Value</p>
           </a>
-          <a href="admin-fin-value.html">
+          <a href="admin-fin-value.html" class="active">
             <span class="sidebar-menu-nav-icon">
               <i class="bi bi-currency-rupee"></i>
             </span>
@@ -205,8 +205,8 @@
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <p class="mt-0"><span>MIS REPORT</span></p>
-              <h1>Doctor Payout Summary</h1>
-              <p>25 Aug 2026</p>
+              <h1>Centre Report</h1>
+              <p>Financial Year Performance</p>
             </div>
           </div>
         </div>
@@ -215,16 +215,30 @@
             <div class="row gx-3 gy-2">
               <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
                 <select name="">
-                  <option value="0" selected="">All Doctors</option>
-                  <option value="1">Dr. Abhijit Roy</option>
-                  <option value="2">Dr. Swapna Khatun</option>
-                  <option value="3">Dr. Mr. Azad</option>
-                  <option value="4">Dr. Shibarjan Dey</option>
+                  <option value="0" selected="">All Modalities</option>
+                  <option value="1">DX</option>
+                  <option value="2">CT</option>
+                  <option value="3">MRI</option>
+                  <option value="4">ECG</option>
                 </select>
               </div>
 
               <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
-                <input type="date" name="" placeholder="Enter Date">
+                <select name="">
+                  <option value="0" selected="">All Centres</option>
+                  <option value="1">Diagnostic & Cure Centre</option>
+                  <option value="2">Plus Diagnostic Centre</option>
+                  <option value="3">Prime Scan Diagnostic</option>
+                </select>
+              </div>
+
+              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12">
+                <select name="">
+                  <option value="0" selected="">Financial Year</option>
+                  <option value="1">2025-26</option>
+                  <option value="2">2024-23</option>
+                  <option value="3">2023-22</option>
+                </select>
               </div>
             </div>
           </div>
@@ -241,85 +255,165 @@
         <table>
           <thead>
             <tr>
-              <th>Doctor</th>
-              <th>Approved Cases</th>
-              <th>DX</th>
-              <th>CT</th>
-              <th>MRI</th>
-              <th>USG</th>
-              <th>Payable</th>
+              <th>Centre Name</th>
+              <th>April</th>
+              <th>May</th>
+              <th>June</th>
+              <th>July</th>
+              <th>August</th>
+              <th>September</th>
+              <th>October</th>
+              <th>November</th>
+              <th>December</th>
+              <th>January</th>
+              <th>February</th>
+              <th>March</th>
+              <th>Economic Cycle</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Abhijit</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5>Medicare Imaging</h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
+              <td>₹ 40,907</td>
+              <td>₹ 50,674</td>
+              <td>₹ 51,986</td>
+              <td>₹ 69,975</td>
+              <td>₹ 73,550</td>
+              <td>₹ 68,120</td>
+              <td>₹ 74,200</td>
+              <td>₹ 71,500</td>
+              <td>₹ 76,000</td>
+              <td>₹ 82,150</td>
+              <td>₹ 79,880</td>
+              <td>₹ 84,420</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="type type-three">Growth (106.4%) <i class="bi bi-graph-up-arrow"></i></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Sankha Roy</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5>City Diagnostic Centre</h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
+              <td>₹ 40,907</td>
+              <td>₹ 50,674</td>
+              <td>₹ 51,986</td>
+              <td>₹ 69,975</td>
+              <td>₹ 73,550</td>
+              <td>₹ 68,120</td>
+              <td>₹ 74,200</td>
+              <td>₹ 71,500</td>
+              <td>₹ 76,000</td>
+              <td>₹ 82,150</td>
+              <td>₹ 79,880</td>
+              <td>₹ 84,420</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="type type-three">Growth (106.4%) <i class="bi bi-graph-up-arrow"></i></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Sudip Adhikari</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5>Prime Scan Centre</h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
+              <td>₹ 40,907</td>
+              <td>₹ 50,674</td>
+              <td>₹ 51,986</td>
+              <td>₹ 69,975</td>
+              <td>₹ 73,550</td>
+              <td>₹ 68,120</td>
+              <td>₹ 74,200</td>
+              <td>₹ 71,500</td>
+              <td>₹ 76,000</td>
+              <td>₹ 82,150</td>
+              <td>₹ 79,880</td>
+              <td>₹ 84,420</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="type type-three">Growth (106.4%) <i class="bi bi-graph-up-arrow"></i></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Debolina Bhattacharya</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5>Diagnosis And Cure Centre</h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
+              <td>₹ 40,907</td>
+              <td>₹ 50,674</td>
+              <td>₹ 51,986</td>
+              <td>₹ 69,975</td>
+              <td>₹ 73,550</td>
+              <td>₹ 68,120</td>
+              <td>₹ 74,200</td>
+              <td>₹ 71,500</td>
+              <td>₹ 76,000</td>
+              <td>₹ 82,150</td>
+              <td>₹ 79,880</td>
+              <td>₹ 84,420</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="type type-five">Decline (4.2%) <i class="bi bi-graph-down-arrow"></i></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Md. Sukla Bibi</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5><strong>Total</strong></h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
+              <td>
+                <strong>₹ 1,26,107</strong>
+              </td>
+              <td>
+                <strong>₹ 1,44,074</strong>
+              </td>
+              <td>
+                <strong>₹ 1,53,886</strong>
+              </td>
+              <td>
+                <strong>₹ 1,82,275</strong>
+              </td>
+              <td>
+                <strong>₹ 1,91,150</strong>
+              </td>
+              <td>
+                <strong>₹ 1,89,020</strong>
+              </td>
+              <td>
+                <strong>₹ 1,98,600</strong>
+              </td>
+              <td>
+                <strong>₹ 1,99,500</strong>
+              </td>
+              <td>
+                <strong>₹ 2,10,900</strong>
+              </td>
+              <td>
+                <strong>₹ 2,22,380</strong>
+              </td>
+              <td>
+                <strong>₹ 2,31,320</strong>
+              </td>
+              <td>
+                <strong>₹ 2,31,320</strong></td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="type type-three">Growth (106.4%) <i class="bi bi-graph-up-arrow"></i></span>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>

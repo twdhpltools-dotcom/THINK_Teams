@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Admin Doctor Pay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Admin Centre Upload & Values | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -160,7 +160,7 @@
 
         <h5 class="menu-divide-head">MIS REPORT</h5>
 
-        <a href="admin-doctor-pay.html" class="active">
+        <a href="admin-doctor-pay.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-credit-card-2-front"></i>
           </span>
@@ -189,7 +189,7 @@
           </a>
         </div>
 
-        <a href="admin-tat.html">
+        <a href="admin-tat.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
           </span>
@@ -205,25 +205,15 @@
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <p class="mt-0"><span>MIS REPORT</span></p>
-              <h1>Doctor Payout Summary</h1>
-              <p>25 Aug 2026</p>
+              <h1>TAT Report</h1>
+              <p>TAT Performance</p>
             </div>
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-between">
           <div class="col-xl-10 col-md-9 col-sm-8 col-7">
             <div class="row gx-3 gy-2">
-              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
-                <select name="">
-                  <option value="0" selected="">All Doctors</option>
-                  <option value="1">Dr. Abhijit Roy</option>
-                  <option value="2">Dr. Swapna Khatun</option>
-                  <option value="3">Dr. Mr. Azad</option>
-                  <option value="4">Dr. Shibarjan Dey</option>
-                </select>
-              </div>
-
-              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12">
                 <input type="date" name="" placeholder="Enter Date">
               </div>
             </div>
@@ -237,89 +227,64 @@
         </div>
       </div>
 
-      <div class="content-table admin-doctor-pay">
+      <div class="content-table admin-tat">
         <table>
           <thead>
             <tr>
+              <th>Case ID</th>
+              <th>Centre</th>
               <th>Doctor</th>
-              <th>Approved Cases</th>
-              <th>DX</th>
-              <th>CT</th>
-              <th>MRI</th>
-              <th>USG</th>
-              <th>Payable</th>
+              <th>Modality</th>
+              <th>Uploaded</th>
+              <th>Approved</th>
+              <th>TAT</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Abhijit</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5>TR-260825-1041</h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
+              <td>City Diagnostic</td>
+              <td>Dr. A. Mukherjee</td>
+              <td>CT</td>
+              <td>10:18 AM</td>
+              <td>11:32 AM</td>
+              <td>
+                <span class="tat-box">
+                  <h6 class="tat-timer" data-seconds="86396">23 Hours 59 Mins</h6>
+                </span>
+              </td>
+              <td>
+                <span class="tat-box">
+                  <h6 class="with-tat">Within TAT</h6>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h5>Dr. Sankha Roy</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
+                  <h5>TR-260825-1041</h5>
                 </div>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
-            </tr>
-            <tr>
+              <td>City Diagnostic</td>
+              <td>Dr. A. Mukherjee</td>
+              <td>CT</td>
+              <td>10:18 AM</td>
+              <td>11:32 AM</td>
               <td>
-                <div class="content-table-text">
-                  <h5>Dr. Sudip Adhikari</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
-                </div>
+                <span class="tat-box">
+                  <h6 class="tat-timer" data-seconds="86396">23 Hours 59 Mins</h6>
+                </span>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
-            </tr>
-            <tr>
               <td>
-                <div class="content-table-text">
-                  <h5>Dr. Debolina Bhattacharya</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
-                </div>
+                <span class="tat-box">
+                  <h6 class="without-tat">TAT Failed</h6>
+                </span>
               </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="content-table-text">
-                  <h5>Dr. Md. Sukla Bibi</h5>
-                  <p><a href="admin-doctor-pay-details.html">View Details</a></p>
-                </div>
-              </td>
-              <td>42</td>
-              <td>19</td>
-              <td>11</td>
-              <td>8</td>
-              <td>4</td>
-              <td>₹ 6,780</td>
             </tr>
           </tbody>
         </table>
@@ -328,6 +293,39 @@
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
+
+  <!------------------------------------ JS FOR TIMER-COUNT START -------------------------------------------->
+  <script type="text/javascript">
+    const tatTimers = document.querySelectorAll(".tat-timer");
+
+      tatTimers.forEach(function (timer) {
+      timer.dataset.seconds = 24 * 60 * 60;
+    });
+
+    setInterval(function () {
+      tatTimers.forEach(function (timer) {
+        let totalSeconds = Number(timer.dataset.seconds);
+
+        if (totalSeconds <= 0) {
+          timer.innerText = "Failed";
+          timer.style.color = "#e34141";
+          timer.style.fontWeight = "700";
+          return;
+        }
+
+        totalSeconds--;
+        timer.dataset.seconds = totalSeconds;
+
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+
+        timer.innerText =
+          hours + " Hours " +
+          minutes + " Mins";
+      });
+    }, 1000);
+  </script>
+  <!----------------------------------------- JS FOR TIMER-COUNT COMPLETE ---------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
