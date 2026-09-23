@@ -99,6 +99,10 @@ table tbody tr td {
     padding: 4px 15px;
 }
 
+table tbody tr td.total-table-data {
+    background: #9f0d7f0d;
+}
+
 form {
     height: auto;
     width: 100%;
@@ -120,7 +124,7 @@ textarea {
     border: 1px solid #b4c6dc;
     border-radius: 8px;
     outline: none;
-    padding: 8px 15px;
+    padding: 7px 15px;
     font-size: 95%;
     font-weight: 400;
     color: rgba(32, 32, 32, 0.8);
@@ -293,7 +297,7 @@ main.main-page {
 section.page-section {
     height: calc(100% - 70px);
     width: 100%;
-    max-width: calc(100% - 300px);
+    max-width: calc(100% - 270px);
     padding: 0 25px;
     margin-top: 70px;
     transition: all 0.3s ease;
@@ -381,7 +385,7 @@ section.page-section.expanded {
 }
 
 .search-right-icon {
-    right: 8px;
+    right: 5px;
     background: var(--primary);
     color: var(--light);
 }
@@ -517,7 +521,7 @@ span.trend-verified-badge {
 .top-header  {
     height: auto;
     width: 100%;
-    max-width: calc(100% - 300px);
+    max-width: calc(100% - 270px);
     position: fixed;
     top: 0;
     right: 0;
@@ -561,11 +565,20 @@ span.trend-verified-badge {
 }
 
 .user-wallet.admin {
-    gap: 8px;  
+    gap: 8px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
 }
 
 .user-wallet img {
     max-width: 30px;
+}
+
+.user-wallet.admin img {
+    max-width: 25px;
 }
 
 .user-wallet p {
@@ -707,6 +720,12 @@ span.call-supports-icon {
     z-index: 101;
 }
 
+.profile-submenu#AdminSwitchSubMenu {
+    top: calc(100% + -10px);
+    right: 10%;
+    min-width: 180px;
+}
+
 .profile-submenu.active {
     opacity: 1;
     visibility: visible;
@@ -745,9 +764,9 @@ span.profile-submenu-icon img {
 .sidebar-menu {
     height: 100%;
     width: 100%;
-    max-width: 300px;
+    max-width: 270px;
     background: var(--light);
-    padding: 25px 35px;
+    padding: 22px 25px;
     box-shadow: 5px 0 20px 0 #00000010;
     position: relative;
     z-index: 102;
@@ -2788,7 +2807,8 @@ p.login-error-msg:not(:empty) {
 
 /* ----------------------------------------- PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 3px;
+    height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -2796,20 +2816,11 @@ p.login-error-msg:not(:empty) {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background: #9f0d7f82;
     border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--dark);
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    background: #ccc;
 }
 /* ----------------------------------------- PG-SCROLL-BAR COMPLETE ---------------------------------------------- */

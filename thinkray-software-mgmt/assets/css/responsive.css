@@ -24,12 +24,12 @@
         margin: 0 15px;
     }
     .sidebar-menu {
-        max-width: 280px;
+        max-width: 260px;
         padding: 25px 25px;
     }
     .top-header,
     section.page-section  {
-        max-width: calc(100% - 280px);
+        max-width: calc(100% - 260px);
     }
     .pay-mobile-image {
         max-width: 70%;
@@ -416,7 +416,7 @@
     input,
     select,
     textarea {
-        padding: 7px 10px;
+        padding: 6px 10px;
     }
     form button[type="submit"] {
         padding: 7px 15px !important;
@@ -706,7 +706,8 @@
     .login-right-icon,
     .search-right-icon {
         border-radius: 6px;
-        padding: 3px 8px;
+        padding: 2px 6px;
+        font-size: 95%;
     }
     .require-form-flex-part {
         flex-wrap: wrap;
@@ -758,6 +759,9 @@
     }
     .doctor-description-box.notification {
         padding-left: 10px;
+    }
+    .content-table-btn-part button.browse-btn {
+        padding: 5px 8px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
