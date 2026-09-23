@@ -517,6 +517,9 @@
     .amount-box h3 {
         font-size: 160%;
     }
+    .content-table-btn-part button.browse-btn {
+        padding: 7px 12px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 

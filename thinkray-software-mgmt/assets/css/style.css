@@ -2128,6 +2128,26 @@ span.tat-box h6.without-tat {
 }
 /* ----------------------------------------- ADMIN-DOCTOR-PAY-PAGE COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- ADMIN-TAT-PAGE START ---------------------------------------------- */
+.content-table.admin-tat .content-table-text h5 {
+    font-size: 105%;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    color: #053db7;
+}
+
+.content-table.admin-tat span.tat-box {
+    justify-content: start;
+}
+
+.content-table.admin-tat span.tat-box h6 {
+    font-size: 100%;
+}
+/* ----------------------------------------- ADMIN-TAT-PAGE COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
 .modal-header {
     padding: 10px 18px;
