@@ -167,7 +167,7 @@ button.tab-btn.active .tab-indicator {
     z-index: 2;
 }
 
-.tap-fill {
+.bi-heart-fill {
     color: var(--primary);
 }
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
