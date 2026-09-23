@@ -38,14 +38,26 @@
 
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
-            <div class="user-wallet admin">
-              <img src="assets/images/centre-svgrepo-icon.png" alt="customer wallet icon">
-              <p>Switch to</p>
-              <h6>Centre</h6>
+            <div class="user-wallet admin" onclick="toggleAdminSwitchMenu(event)">
+              <img src="assets/images/swap-svgrepo-icon.png" alt="customer swap icon">
             </div>
 
+            <!----- ANIMATED-TOGGLER-MENU ------->
+            <div id="AdminSwitchSubMenu" class="profile-submenu">
+              <a href="index.html">
+                Centre
+              </a>
+              <a href="doctor-index.html">
+                Doctor
+              </a>
+              <a href="admin-index.html">
+                Admin
+              </a>
+            </div>
+            <!----- ANIMATED-TOGGLER-MENU ------->
+
             <div class="user-supports">
-              <div class="user-notification">
+              <div class="user-notification" onclick="window.location.href='notification.html'">
                 <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
               </div>
               <div class="profile-wrapper">
@@ -209,14 +221,27 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-between">
-          <div class="col-xl-4 col-md-6 col-sm-6 col-6">
-            <div class="search-input text-end">
-              <input type="text" name="" placeholder="" />
-              <i class="bi bi-search search-right-icon"></i>
+          <div class="col-xl-10 col-md-9 col-sm-8 col-7">
+            <div class="row gx-3 gy-2">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="search-input text-end">
+                  <input type="text" name="" placeholder="" />
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+                <select name="">
+                  <option value="0" selected="">All Status</option>
+                  <option value="1">Active</option>
+                  <option value="2">In-Active</option>
+                  <option value="3">Pending</option>
+                </select>
+              </div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="col-xl-2 col-md-3 col-sm-4 col-5">
             <div class="content-table-btn-part text-end justify-content-end">
               <button type="button" class="browse-btn" onclick="window.location.href='admin-doctor-add.html'"><i class="bi bi-plus-lg"></i> Add Doctor</button>
             </div>

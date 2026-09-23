@@ -38,14 +38,26 @@
 
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
-            <div class="user-wallet admin">
-              <img src="assets/images/centre-svgrepo-icon.png" alt="customer wallet icon">
-              <p>Switch to</p>
-              <h6>Centre</h6>
+            <div class="user-wallet admin" onclick="toggleAdminSwitchMenu(event)">
+              <img src="assets/images/swap-svgrepo-icon.png" alt="customer swap icon">
             </div>
 
+            <!----- ANIMATED-TOGGLER-MENU ------->
+            <div id="AdminSwitchSubMenu" class="profile-submenu">
+              <a href="index.html">
+                Centre
+              </a>
+              <a href="doctor-index.html">
+                Doctor
+              </a>
+              <a href="admin-index.html">
+                Admin
+              </a>
+            </div>
+            <!----- ANIMATED-TOGGLER-MENU ------->
+
             <div class="user-supports">
-              <div class="user-notification">
+              <div class="user-notification" onclick="window.location.href='notification.html'">
                 <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
               </div>
               <div class="profile-wrapper">
@@ -204,9 +216,7 @@
         <div class="row gx-3 gy-2 justify-content-space-between mb-3">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <p class="mt-0"><span>MIS REPORT</span></p>
-              <h1>Centre Report</h1>
-              <p>Centre Upload & Value</p>
+              <h1>Upload & Value Reports</h1>
             </div>
           </div>
         </div>
@@ -293,15 +303,15 @@
               <td>₹ 6,543</td>
             </tr>
             <tr>
-              <td>
+              <td class="total-table-data">
                 <div class="content-table-text">
                   <h5><strong>Total</strong></h5>
                 </div>
               </td>
-              <td>
+              <td class="total-table-data">
                 <strong>248</strong>
               </td>
-              <td>
+              <td class="total-table-data">
                 <strong>₹ 25,956</strong>
               </td>
             </tr>

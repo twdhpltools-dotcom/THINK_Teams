@@ -38,14 +38,26 @@
 
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
-            <div class="user-wallet admin">
-              <img src="assets/images/centre-svgrepo-icon.png" alt="customer wallet icon">
-              <p>Switch to</p>
-              <h6>Centre</h6>
+            <div class="user-wallet admin" onclick="toggleAdminSwitchMenu(event)">
+              <img src="assets/images/swap-svgrepo-icon.png" alt="customer swap icon">
             </div>
 
+            <!----- ANIMATED-TOGGLER-MENU ------->
+            <div id="AdminSwitchSubMenu" class="profile-submenu">
+              <a href="index.html">
+                Centre
+              </a>
+              <a href="doctor-index.html">
+                Doctor
+              </a>
+              <a href="admin-index.html">
+                Admin
+              </a>
+            </div>
+            <!----- ANIMATED-TOGGLER-MENU ------->
+
             <div class="user-supports">
-              <div class="user-notification">
+              <div class="user-notification" onclick="window.location.href='notification.html'">
                 <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
               </div>
               <div class="profile-wrapper">
@@ -204,7 +216,6 @@
         <div class="row gx-3 gy-2 justify-content-space-between mb-3">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <p class="mt-0"><span>MIS REPORT</span></p>
               <h1>Doctor Payout Summary</h1>
               <p>25 Aug 2026</p>
             </div>
