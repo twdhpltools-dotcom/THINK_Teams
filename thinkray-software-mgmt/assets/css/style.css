@@ -2423,6 +2423,13 @@ span.tat-box h6.without-tat {
 .payment-row.due strong {
     color: #e11d48;
 }
+
+.lightbox-modal-image {
+    height: auto;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    border-radius: 5px;
+}
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- HTML-LIVE-EDIT START ---------------------------------------------- */
