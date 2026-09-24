@@ -1170,8 +1170,7 @@ nav.nav {
     top: 2%;
 }
 
-.bottom-header.sticky .nav-links,
-.bottom-header.sticky .nav-search {
+.bottom-header.sticky .nav-links {
     box-shadow: none;
 }
 
@@ -1179,7 +1178,7 @@ nav.nav {
     height: auto;
     width: 100%;
     padding: 15px 35px;
-    border-radius: 100px;
+    border-radius: 50px;
     background: #ffffff75;
     border: 1px solid #ffffff3d;
     backdrop-filter: blur(15px);
@@ -1324,7 +1323,7 @@ ul.menu-useful-links li {
     height: auto;
     width: 100%;
     padding: 12px 15px;
-    border-bottom: 1px solid #00000020;
+    border-bottom: 1px solid #00000018;
 }
 
 ul.menu-useful-links li:last-child {
@@ -1594,7 +1593,7 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     max-width: 100px;
-    background-image: url(../images/bg-abs1-lgt.png);
+    background-image: url(../images/bg-abs1-lgt.webp);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -1635,7 +1634,7 @@ li.feature-types-box p {
 }
 
 .feature-card-head h5 {
-    font-size: 100%;
+    font-size: 95%;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -1708,13 +1707,13 @@ li.feature-types-box p {
 .support-card {
     height: auto;
     width: 100%;
-    padding: 10px;
     border-radius: 10px;
     background: linear-gradient(130deg, var(--defaut-light-background), #f2f2f2);
-    border-left: 3px solid var(--defaut-light-thinklab-theme);
-    box-shadow: 15px 0 2px 0 #00000010;
+    padding: 5px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
     position: relative;
     z-index: 1;
 }
@@ -1727,7 +1726,7 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     max-width: 60px;
-    background-image: url(../images/bg-abs1.png);
+    background-image: url(../images/bg-abs1.webp);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -1736,7 +1735,7 @@ li.feature-types-box p {
 }
 
 .support-card-img {
-    height: 280px;
+    height: 380px;
     width: 100%;
     border-radius: 10px;
 }
@@ -1747,18 +1746,34 @@ li.feature-types-box p {
 }
 
 .support-card-info {
-    padding-left: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(to top, #0a29a8, transparent);
+    padding: 40px 30px 20px 30px;
+    text-align: center;
+    color: var(--defaut-light-color);
+    z-index: 2;
 }
 
+.support-card-info span {
+    color: #41d74a;
+    font-size: 130%;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+
 .support-card-info h3 {
-    color: var(--defaut-dark-thinklab-theme);
-    font-size: 160%;
-    font-weight: 900;
+    font-size: 150%;
+    font-weight: 700;
 }
 
 .support-card-info p {
     font-size: 85%;
-    margin: 20px 0;
+    margin: 10px 0 0;
 }
 /*--------------------------------------------- CSS FOR SUPPORT SECTION COMPLETE ---------------------------------------*/
 
@@ -1832,7 +1847,7 @@ li.feature-types-box p {
 }
 
 .clients-map {
-    background-image: url('../images/map-creative-bg.png');
+    background-image: url('../images/map-creative-bg.webp');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1897,7 +1912,7 @@ li.feature-types-box p {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('../images/bg-shape-abs-group.png');
+    background-image: url('../images/bg-shape-abs-group.webp');
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1934,7 +1949,7 @@ li.feature-types-box p {
 }
 
 .benefits-innovate {
-    background-image: url('../images/inoovate-beehouse-bg-abs.png');
+    background-image: url('../images/inoovate-beehouse-bg-abs.webp');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1950,7 +1965,7 @@ li.feature-types-box p {
 .benefits-innovate-box {
     height: auto;
     width: 100%;
-    min-height: 240px;
+    min-height: 230px;
     background: #007cf80c;
     padding: 35px 20px;
     text-align: center;
@@ -1989,7 +2004,7 @@ li.feature-types-box p {
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    background-image: url('../images/thinklab-bg.png');
+    background-image: url('../images/thinklab-bg.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2398,7 +2413,7 @@ li.feature-types-box p {
 }
 
 .thinkray-benefits .benefits-content-box {
-    background-image: url('../images/thinkray-bg.png');
+    background-image: url('../images/thinkray-bg.webp');
 }
 
 .thinkray-benefits .benefits-content-box-overlay {
@@ -2548,7 +2563,7 @@ li.feature-types-box p {
 .thinkray-systems-content {
     height: auto;
     width: 100%;
-    background-image: url('../images/thinkray-img-shape-bg-abs.png');
+    background-image: url('../images/thinkray-img-shape-bg-abs.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -2704,7 +2719,7 @@ li.feature-types-box p {
 .thinkdigital-systems-content {
     height: auto;
     width: 100%;
-    background-image: url('../images/thinkdigital-img-shape-bg-abs.png');
+    background-image: url('../images/thinkdigital-img-shape-bg-abs.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
