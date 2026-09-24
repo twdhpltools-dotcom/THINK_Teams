@@ -1,0 +1,3861 @@
+/*--------------------------------------------- CSS FOR INCLUDING FOR FONTS START ---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/*--------------------------------------------- CSS FOR INCLUDING FOR FONTS COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PRE-DEFINED SECTION START ---------------------------------------*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+    font-size: 17px;
+}
+
+:root {
+    --defaut-light-background: #fff;
+    --defaut-dark-background: #101840;
+    --defaut-light-color: #fff;
+    --defaut-dark-color: #101840;
+    --defaut-light-thinklab-theme: #007AF8;
+    --defaut-dark-thinklab-theme: #0928A8;
+    --defaut-light-thinkdigital-theme: #24CF2E;
+    --defaut-dark-thinkdigital-theme: #02B30D;
+    --defaut-light-thinkray-theme: #FF60DC;
+    --defaut-dark-thinkray-theme: #9F0D7F;
+    --defaut-font-family: "Manrope", sans-serif;
+    --defaut-line-height: 1.2;
+    --defaut-font-weight: normal;
+    --defaut-font-style: normal;
+}
+
+body {
+	margin: 0;
+	height: auto;
+	width: 100%;
+    font-family: var(--defaut-font-family);
+	line-height: var(--defaut-line-height);
+	font-weight: var(--defaut-font-weight);
+    color: var(--defaut-dark-color);
+	background: #007cf80c;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+    font-weight: var(--defaut-font-weight);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--defaut-line-height);
+}
+
+p {
+    line-height: 1.5;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: var(--defaut-dark-color);
+}
+
+ul, 
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+ul li, 
+ol li {
+	list-style: none;
+}
+
+ul li.active a, 
+ol li.active a {
+    color: var(--defaut-dark-thinklab-theme);
+    font-weight: 700;
+}
+
+img {
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+}
+
+i {
+    font-weight: 100;
+}
+
+button {
+    outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+iframe {
+    height: auto;
+    width: 100%;
+}
+
+table {
+    height: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr th {
+    background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f2);
+    border: 2px solid #00000010;
+    padding: 15px 20px;
+    font-size: 95%;
+    font-weight: 700;
+    color: #707070;
+}
+
+table tbody tr td {
+    border: 2px solid #00000010;
+    padding: 15px 20px;
+    font-size: 85%;
+}
+
+.think-table {
+    height: auto;
+    width: 100%;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.think-table table {
+    background: var(--defaut-light-background);
+}
+
+.think-table table tbody tr td.speacial-trow {
+    background: #007cf81f;
+    font-size: 90%;
+    color: var(--defaut-dark-thinklab-theme);
+    font-weight: 700;
+}
+
+form {
+    height: auto;
+    width: 100%;
+}
+
+form .form-group {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+form .form-group h6 {
+    font-size: 90%;
+    text-align: center;
+    margin: 30px 0 0;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+form .form-group h6 a {
+    color: var(--defaut-dark-theme);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+form .form-group.special-ip {
+    padding: 35px 20px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 5px 5px 0 0 #00000010;
+    margin-bottom: 30px;
+}
+
+form .form-group.checkbox-ip {
+    display: flex;
+    align-items: center;
+}
+
+form .form-group.forget-password {
+    text-align: right;
+}
+
+form .form-group.forget-password a {
+    font-size: 95%;
+    color: var(--defaut-dark-theme);
+    font-weight: 600;
+}
+
+form .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 105%;
+    color: var(--defaut-light-thinklab-theme);
+}
+
+label {
+    font-size: 90%;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+form .form-group.checkbox-ip label {
+    margin-bottom: 0;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 1px solid #1b82ff5e;
+    border-radius: 5px;
+    padding: 10px 15px 10px 45px;
+    color: var(--defaut-dark-color);
+    font-size: 95%;
+    margin: 0;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #1b82ffbd;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1b82ffbd;
+}
+
+input[type="checkbox"] {
+    padding: 0;
+    appearance: none;
+    min-height: 20px;
+    max-width: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+input[type="checkbox"]:hover {
+    background: #ffffff70;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--defaut-light-theme);
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--defaut-light-color);
+  z-index: 2;
+}
+
+input[type=number] {
+    appearance: none;
+}
+
+input::placeholder {
+    color: #7e7e7e;
+}
+
+a.pg-btn {
+    position: relative;
+    padding: 12px 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    border-radius: 50px;
+    border: 1px solid #ffffffcc;
+    background: linear-gradient(135deg, #ffffff8c, #dcecff70);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
+    color: var(--defaut-dark-thinklab-theme);
+    text-decoration: none;
+    font-size: 95%;
+    font-weight: 600;
+    overflow: hidden;
+    z-index: 1;
+}
+
+a.pg-btn::before {
+    content: '';
+    position: absolute;
+    inset: 2px 12px auto;
+    height: 45%;
+    border-radius: 50px;
+    background: linear-gradient(to bottom,#ffffffa8,transparent);
+    pointer-events: none;
+}
+
+a.pg-btn.light {
+    color: var(--defaut-light-color);
+    background: linear-gradient(135deg, #ffffff40, #dcecff12);
+}
+
+a.pg-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+a.pg-video-btn {
+    height: auto;
+    width: 100%;
+    min-height: 80px;
+    max-width: 80px;
+    font-size: 180%;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--defaut-light-color);
+    border: 1px solid #ffffffcc;
+    background: #ffffff60;
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
+}
+
+button.pg-submit-btn {
+    height: auto;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    background: var(--defaut-light-thinklab-theme);
+    border: 1px solid #ffffff80;
+    border-radius: 10px;
+    padding: 15px 0;
+    color: var(--defaut-light-color);
+    font-weight: 600;
+}
+
+a.pg-btn,
+button.pg-submit-btn {
+    font-size: 100%;
+}
+
+hr.pg-hr {
+    height: auto;
+    width: 100%;
+    min-height: 1px;
+    background: var(--defaut-dark-background);
+    margin: 15px 0;
+}
+
+hr.pg-hr.light {
+    background: var(--defaut-light-background);
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+    max-width: 190px;
+}
+
+.logo a {
+    display: block;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.pg-section-spacing {
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.pg-section-spacing.top-spacing {
+    padding: 10px 0 0;
+}
+
+.pg-section-spacing.bottom-spacing {
+    padding: 0 0 10px;
+}
+
+.common-section {
+    background: var(--defaut-light-background);
+    border-radius: 20px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.section-overlay,
+.cta-section-overlay,
+.mini-cta-section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.section-overlay {
+    background: linear-gradient(60deg, var(--defaut-light-background) 40%, transparent 80%);
+}
+
+.section-overlay.themed-overlay {
+    background: linear-gradient(230deg, #0929a8f7, #101840cf);
+}
+
+.section-overlay.themed-overlay.thinkray-themed {
+    background: linear-gradient(130deg, #9f0d7fe3, #ff60ddd4);
+}
+
+.section-overlay.themed-overlay.thinkdigital-themed {
+    background: linear-gradient(130deg, #02b30ed0, #24cf2faf);
+}
+
+.cta-section-overlay {
+    background: #ffffff80;
+    backdrop-filter: blur(20px);
+}
+
+.mini-cta-section-overlay {
+    background: #1018408f;
+}
+
+.designed-section-dark,
+.designed-section-light {
+    position: relative;
+    z-index: 1;
+}
+
+.section-heading {
+    height: auto;
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0 35px;
+}
+
+.section-heading.divided {
+    max-width: 100%;
+    margin: 0;
+}
+
+.section-heading-img {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 220%;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.section-heading h2 span {
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.section-heading.thinkray-themed h2 span {
+    color: var(--defaut-dark-thinkray-theme);
+}
+
+.section-heading.thinkdigital-themed h2 span {
+    color: var(--defaut-dark-thinkdigital-theme);
+}
+
+.section-heading p {
+    font-size: 90%;
+}
+
+.section-masker {
+    position: relative;
+    z-index: 1;
+}
+
+.section-masker::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(to top, var(--defaut-light-background), transparent);
+    z-index: 2;
+}
+
+ul.pg-listing li {
+    font-size: 85%;
+    margin-bottom: 16px;
+    padding-left: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+ul.pg-listing li::before {
+    content: '✓';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--defaut-light-thinkdigital-theme);
+    color: var(--defaut-light-color);
+    border-radius: 50%;
+    padding: 0 3px;
+    z-index: 2;
+}
+
+ul.pg-listing li:last-child {
+    margin-bottom: 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i {
+    font-size: 90%;
+    height: auto;
+    width: 100%;
+    min-height: 30px;
+    max-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--defaut-light-background);
+    color: var(--defaut-dark-color);
+    border-radius: 50%;
+    border: 2px solid #ffffff50;
+}
+
+.social a {
+    font-size: 90%;
+    color: var(--defaut-light-color);
+    padding-left: 8px;
+}
+
+.mini-chip-divided {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+span.mini-chip {
+    display: inline-block;
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+}
+
+span.mini-chip {
+    font-size: 80%;
+    padding: 4px 15px;
+    color: var(--defaut-light-color);
+    background: #ffffff50;
+    border: 1px solid #ffffff80;
+    box-shadow: 0 2px 10px 0 #00000010;
+}
+
+.pg-decor-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: var(--defaut-light-color);
+    border-radius: 10px;
+    background: #ffffff20;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000010;
+    animation: decorChipsJumps 4s ease infinite;
+}
+
+@keyframes decorChipsJumps {
+    0% {
+        margin-bottom: -30px;
+    }
+    50% {
+        margin-bottom: 0;
+    }
+    100% {
+        margin-bottom: -30px;
+    }
+}
+
+.pg-decor-chip-img {
+    max-width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.pg-decor-chip-img::after {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to to left, #ffffff10, transparent);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 50px;
+    padding: 0 20px;
+    font-size: 200%;
+    color: var(--defaut-dark-color);
+    z-index: 2;
+}
+
+.pg-decor-chip-txt {
+    margin-left: 10px;
+}
+
+.pg-decor-chip-txt p {
+    font-size: 80%;
+    color: var(--defaut-dark-color);
+}
+
+.pg-decor-chip-txt h6 {
+    font-size: 200%;
+    font-weight: 700;
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+span.pg-offer-chip {
+    display: inline-block;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--defaut-dark-thinklab-theme);
+    font-size: 80%;
+    padding: 5px 20px;
+    color: var(--defaut-dark-color);
+    background: #007cf836;
+}
+
+.decor-para {
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffffff80, transparent);
+    border-left: 3px solid var(--defaut-dark-thinklab-theme);
+}
+
+.decor-para.thinkray-theme {
+    border-color: var(--defaut-dark-thinkray-theme);
+}
+
+.decor-para p {
+    font-size: 95%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+span.list-type-para {
+    display: block;
+    font-size: 100%;
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+span.list-type-para::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--defaut-light-color);
+    border-radius: 50%;
+    padding: 2px 5px;
+    z-index: 2;
+}
+
+span.list-type-para.correct::before {
+    content: '✓';
+    background: var(--defaut-light-thinkdigital-theme);
+}
+
+span.list-type-para.wrong::before {
+    content: '✘';
+    background: #f00;
+}
+
+h4.compact-decor-text {
+    font-size: 110%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h4.compact-decor-text::before,
+h4.compact-decor-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: var(--defaut-dark-background);
+    height: auto;
+    width: 100%;
+    min-height: 2px;
+    max-width: 60px;
+    border-radius: 50px;
+}
+
+h4.compact-decor-text::before {
+    left: 0;
+    transform: translate(100%, -50%);
+}
+
+h4.compact-decor-text::after {
+    right: 0;
+    transform: translate(-100%, -50%);
+}
+
+.diagram-img {
+    height: auto;
+    width: 100%;
+    min-height: 250px;
+    max-width: 80%;
+    border-radius: 20px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    animation: diagramJumps 4s ease infinite;
+}
+
+@keyframes diagramJumps {
+    0% {
+        margin-top: -20px;
+    }
+    50% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -20px;
+    }
+}
+
+.diagram-img.thinkray-themed {
+   clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%); 
+}
+
+.diagram-img img {
+    min-height: 550px;
+    border-radius: 20px;
+}
+
+.diagram-img.thinkray-themed img {
+   clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%); 
+}
+
+.diagram-img.thinkdigital-themed {
+    max-width: 100%;
+    background: none;
+    backdrop-filter: blur(0);
+    box-shadow: none;
+    padding: 0;
+    animation: none;
+}
+
+span.item-breaker-light,
+span.item-breaker-dark {
+    display: block;
+    height: auto;
+    width: 100%;
+    min-height: 80px;
+    max-width: 1px;
+    margin: 0 20px;
+}
+
+span.item-breaker-light {
+    background: #ffffff90;
+}
+
+span.item-breaker-dark {
+    background: #00000010;
+}
+
+.floating-number {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--defaut-dark-color);
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.floating-number.small {
+    right: 5%;
+    font-size: 120%;
+}
+
+.floating-number.big {
+    left: 5%;
+    font-size: 800%;
+    opacity: 0.2;
+}
+
+.basic-form {
+    height: auto;
+    width: 100%;
+    padding: 25px 30px;
+    background: var(--defaut-light-background);
+    border-radius: 15px;
+    box-shadow: 0 0 50px 0 #00000010;
+}
+
+.basic-form-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basic-form-head h4 {
+    font-size: 160%;
+    font-weight: 500;
+}
+
+.basic-form-head p {
+    font-size: 95%;
+}
+
+.basic-form-head .logo {
+    max-width: 180px;
+}
+
+.quote-icon {
+    height: auto;
+    width: 100%;
+    max-width: 130px;
+}
+
+.user-info-badge {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.user-info-badge-img {
+    height: auto;
+    width: 100%;
+    min-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.user-info-badge-img img {
+    min-height: 80px;
+    border-radius: 50%;
+}
+
+.user-info-badge h6 {
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.user-info-badge em {
+    display: inline-block;
+    font-size: 75%;
+    margin-bottom: 10px;
+    font-style: var(--defaut-font-style);
+}
+
+.user-info-social {
+    display: flex;
+    align-items: center;
+}
+
+.user-info-social span {
+    display: inline-block;
+    font-size: 80%;
+    margin-right: 15px;
+}
+
+.user-info-social span i {
+    font-size: 110%;
+    padding-right: 5px;
+}
+
+.side-bar {
+    height: auto;
+    width: 100%;
+}
+
+.side-bar-mark-up {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.side-bar-mark-up h5 {
+    font-size: 160%;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.side-bar-mark-up p {
+    font-size: 80%;
+}
+
+.side-bar-mark-up ul.pg-listing {
+    margin-top: 30px;
+    padding-left: 15px;
+    border-left: 1px solid var(--defaut-dark-thinklab-theme);
+}
+
+.side-bar-mark-up ul.pg-listing li {
+    padding-left: 5px;
+}
+
+.side-bar-mark-up ul.pg-listing li::before {
+    display: none;
+}
+
+.side-bar-cta {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #00000010;
+    background: linear-gradient(to left, #f2f2f2, var(--defaut-light-background), transparent);
+    padding: 20px 25px;
+}
+
+.side-bar-cta h5 {
+    font-size: 120%;
+    font-weight: 700;
+    color: var(--defaut-dark-thinklab-theme);
+    margin-bottom: 5px;
+}
+
+.side-bar-cta p {
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+.form-copyright {
+    height: auto;
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.form-copyright em {
+    font-style: var(--defaut-font-style);
+    font-size: 70%;
+}
+
+.form-copyright p a {
+    font-size: 70%;
+    font-weight: 600;
+    text-decoration: underline;
+    opacity: 0.8;
+    padding: 0 15px;
+}
+
+.form-copyright a:first-child {
+    padding-left: 0;
+}
+/*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
+
+/* ----------------------------------------- CSS FOR PRE-LOADER COMPLETE ---------------------------------------------- */
+.pg-pre-loader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffffd7;
+  backdrop-filter: blur(20px);
+  z-index: 1001;
+  perspective: 1000px;
+}
+
+.book-loader {
+  position: relative;
+  width: 110px;
+  height: 80px;
+  transform-style: preserve-3d;
+}
+
+.book-cover,
+.book-page {
+  position: absolute;
+  top: 0;
+  width: 55px;
+  height: 80px;
+  border-radius: 8px;
+  transform-origin: left center;
+}
+
+.book-cover {
+  left: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--defaut-light-thinklab-theme);
+  animation: pgLoaderBookClose 1s ease-in-out forwards;
+}
+
+.book-cover .load-icon-img {
+  height: auto;
+  width: 100%;
+  max-width: 40px;
+}
+
+.book-cover img {
+  height: auto;
+  width: 100%;
+}
+
+.book-page {
+  left: 55px;
+  background: #eef5ff;
+  border: 1px solid #d9e6ff;
+  animation: pgLoaderBookOpen 1s ease-in-out forwards;
+}
+
+.book-page.page-one {
+    animation-delay: 0.05s;
+}
+
+.book-page.page-two {
+    animation-delay: 0.15s;
+}
+
+.book-page.page-three {
+    animation-delay: 0.25s;
+}
+
+@keyframes pgLoaderBookOpen {
+    0% {
+        transform:rotateY(0deg);
+    }
+    100% {
+        transform:rotateY(-180deg);
+    }
+}
+
+@keyframes pgLoaderBookClose {
+    0% {
+        transform:rotateY(-180deg);
+    }
+    100% {
+        transform:rotateY(0deg);
+    }
+}
+
+.pg-pre-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s ease-in-out;
+}
+/* ----------------------------------------- CSS FOR PRE-LOADER COMPLETE ---------------------------------------------- */
+
+/*--------------------------------------------- CSS FOR HEADER START ---------------------------------------*/
+header.main-header {
+    height: auto;
+    width: 100%;
+}
+
+nav.nav {
+    height: auto;
+    width: 100%;
+}
+
+.top-header {
+    width: 100%;
+    padding: 6px 0;
+    background: var(--defaut-light-thinklab-theme);
+    color: var(--defaut-light-color);
+    position: relative;
+    z-index: 2;
+}
+
+.top-header::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 50%;
+    background: var(--defaut-dark-thinklab-theme);
+    clip-path: polygon(0 1%, 100% 0, 92% 100%, 0 100%);
+    z-index: 1;    
+}
+
+.top-header-social {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.top-header-news {
+    height: auto;
+    width: 100%;
+    text-align: right;
+}
+
+.top-header-news h6 {
+    font-size: 100%;
+    font-weight: var(--defaut-font-weight);
+    font-style: italic;
+}
+
+.top-header-news h6 span {
+    font-weight: 600;
+    font-style: var(--defaut-font-style);
+}
+
+.mobile-header {
+    height: auto;
+    width: 100%;
+}
+
+.bottom-header {
+    position: fixed;
+    top: 7%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    color: var(--defaut-dark-color);
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+}
+
+.bottom-header.sticky {
+    top: 2%;
+}
+
+.bottom-header.sticky .nav-links,
+.bottom-header.sticky .nav-search {
+    box-shadow: none;
+}
+
+.nav-links {
+    height: auto;
+    width: 100%;
+    padding: 15px 35px;
+    border-radius: 100px;
+    background: #ffffff75;
+    border: 1px solid #ffffff3d;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .75);
+}
+
+ul.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul.menu li {
+    font-size: 100%;
+    padding-left: 30px;
+}
+
+ul.menu li.sub-links {
+    position: relative;
+    z-index: 1;
+}
+
+ul.menu li i {
+    font-size: 75%;
+    padding-left: 8px;
+}
+
+.nav-search {
+    height: auto;
+    width: 100%;
+    background: var(--defaut-light-background);
+    box-shadow: 0 0 15px 0 #00000010;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-search a {
+    display: block;
+    width: 85%;
+}
+
+.nav-search a span {
+    font-size: 100%;
+}
+
+.nav-search a span i {
+    position: absolute;
+    top: 30%;
+    left: -3%;
+    font-size: 100%;
+    padding: 6px;
+    border-radius: 50%;
+    background: #f2f2f2;
+    z-index: 2;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    min-width: 250px;
+    background: #fffffff2;
+    backdrop-filter: blur(40px);
+    border-bottom: 2px solid #00000020;
+    padding: 15px 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #00000010;
+    z-index: 10;
+}
+
+.sub-menu.product-menu {
+    position: fixed;
+    top: 42px;
+    max-width: 100%;
+    padding: 20px 25px;
+}
+
+.sub-menu-links h6 {
+    font-size: 110%;
+    color: var(--defaut-dark-thinklab-theme);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+ul.menu-product-links {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+ul.menu-product-links li.menu-product-links-box {
+    height: auto;
+    width: 100%;
+    max-width: 48%;
+    border-radius: 10px;
+    background: var(--defaut-light-background);
+    box-shadow: 0 0 5px 0 #00000010;
+    padding: 18px 25px;
+    margin-bottom: 0;
+}
+
+li.menu-product-links-box img {
+    height: auto;
+    width: 100%;
+    max-width: 130px;
+}
+
+li.menu-product-links-box h6 {
+    font-size: 130%;
+    font-weight: 700;
+}
+
+li.menu-product-links-box p {
+    font-size: 75%;
+    margin: 14px 0;
+}
+
+li.menu-product-links-box a.pg-btn {
+    padding: 8px 25px;
+    font-size: 90%;
+}
+
+li.menu-product-links-box a.pg-btn i {
+    padding-left: 0;
+}
+
+ul.menu-useful-links {
+    height: auto;
+    width: 100%;
+}
+
+ul.menu-useful-links li {
+    height: auto;
+    width: 100%;
+    padding: 12px 15px;
+    border-bottom: 1px solid #00000020;
+}
+
+ul.menu-useful-links li:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+
+ul.menu li.sub-links:hover .sub-menu {
+    display: block;
+}
+
+header.main-header.login-header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header.main-header.login-header .top-header .social i {
+    font-size: 130%;
+    background: none;
+    color: var(--defaut-light-color);
+    border: none;
+}
+/*--------------------------------------------- CSS FOR HEADER COMPLETE ---------------------------------------*/
+
+/* ----------------------------------------- CSS FOR MOBILE-MANU-TOGGLER START ---------------------------------------------- */
+button.mobile-toggler {
+    position: fixed;
+    top: 8%;
+    right: 5%;
+    height: auto;
+    width: 100%;
+    max-width: 45px;
+    padding: 8px;
+    border: 1px solid #ffffffcc;
+    background: #ffffff60;
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.mobile-toggler span {
+    display: block;
+    height: auto;
+    width: 100%;
+    min-height: 2px;
+    max-width: 80%;
+    background: var(--defaut-dark-background);
+    border-radius: 10px;
+    margin-bottom: 6px;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+}
+button.mobile-toggler span:last-child {
+    margin-bottom: 0;
+}
+
+button.mobile-toggler.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+button.mobile-toggler.active span:nth-child(2) {
+    opacity: 0;
+}
+
+button.mobile-toggler.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    margin-bottom: 0;
+}
+/* ----------------------------------------- CSS FOR MOBILE-MANU-TOGGLER COMPLETE ---------------------------------------------- */
+
+/*--------------------------------------------- CSS FOR HERO SECTION START ---------------------------------------*/
+.hero {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.hero.thinkdigital-themed {
+    height: 80vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffffbf;
+    backdrop-filter: blur(20px);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero.thinkray-themed .hero-overlay {
+    height: 70%;
+}
+
+.hero-content,
+.hero-img {
+    padding: 120px 0 0;
+}
+
+.hero-content {
+    height: auto;
+    width: 100%;
+    color: var(--defaut-dark-color);
+}
+
+.hero-content.thinkdigital-themed {
+    text-align: right;
+}
+
+.hero-content h1 {
+    font-size: 250%;
+    font-weight: 900;
+    margin: 25px 0;
+}
+
+.hero-content h1 span {
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.hero-content.thinkray-themed h1 span {
+    color: var(--defaut-dark-thinkray-theme);
+}
+
+.hero-content.thinkdigital-themed h1 span {
+    color: var(--defaut-dark-thinkdigital-theme);
+}
+
+.hero-content .decor-para {
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 95%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-img .pg-decor-chip {
+    position: absolute;
+    bottom: 5%;
+    left: -50%;
+    z-index: 2;
+}
+
+.hero-img.thinkray-themed .pg-decor-chip {
+    bottom: 45%;
+    left: unset;
+    right: 50%;
+}
+
+.hero-img.thinkdigital-themed .pg-decor-chip {
+    bottom: 15%;
+    left: 50%;
+}
+
+.hero-unque-decor,
+.thinkray-hero-unque-decor,
+.thinkdigital-hero-unque-decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-unque-decor-img,
+.thinkray-hero-unque-decor-img,
+.thinkdigital-hero-unque-decor-img {
+    height: auto;
+    width: 100%;
+}
+
+.thinkray-hero-unque-decor {
+    bottom: 10%;
+    left: 20%;
+}
+
+.thinkray-hero-unque-decor-img {
+    max-width: 180px;
+}
+
+.thinkdigital-hero-unque-decor-img {
+    max-width: 60%;
+}
+/*--------------------------------------------- CSS FOR HERO SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR BRANDING SECTION START ---------------------------------------*/
+.branding {
+    color: var(--defaut-dark-color);
+}
+/*--------------------------------------------- CSS FOR BRANDING SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR FEATURE SECTION START ---------------------------------------*/
+.feature {
+    color: var(--defaut-dark-color);
+}
+
+.feature-types {
+    height: auto;
+    width: 100%;
+}
+
+.feature-types ul li.feature-types-box {
+    height: auto;
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(130deg, var(--defaut-light-background), #f2f2f277);
+    box-shadow: 0 5px 20px 0 #00000010;
+    border-left: 2px solid var(--defaut-dark-thinklab-theme);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+li.feature-types-box h6 {
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 110%;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+li.feature-types-box p {
+    font-size: 80%;
+}
+
+.feature-card {
+    height: 440px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid #00000010;
+    color: var(--defaut-light-color);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card::after {
+    content: '';
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    background-image: url(../images/bg-abs1-lgt.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.feature-card-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature-card-img img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.feature-card-head {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    border-radius: 50px;
+    background: linear-gradient(315deg, #1018401f, #0928a824);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    padding: 6px 30px;
+    z-index: 2;
+}
+
+.feature-card.thinkray-themed .feature-card-head {
+    background: linear-gradient(140deg, var(--defaut-dark-background), var(--defaut-dark-thinkray-theme));
+}
+
+.feature-card.thinkdigital-themed .feature-card-head {
+    background: linear-gradient(140deg, var(--defaut-dark-background), var(--defaut-dark-thinkdigital-theme));
+}
+
+.feature-card-head h5 {
+    font-size: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.feature-card-info {
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 40%, transparent 100%);
+    backdrop-filter: blur(2px);
+    padding: 60px 22px 15px 22px;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.feature-card.thinkray-themed .feature-card-info {
+    background: linear-gradient(to top, var(--defaut-light-thinkray-theme) 40%, transparent 100%);
+}
+
+.feature-card.thinkdigital-themed .feature-card-info {
+    background: linear-gradient(to top, var(--defaut-light-thinkdigital-theme) 100%, transparent 100%);
+}
+
+.feature-card-info-icon-img {
+    opacity: 0;
+    visibility: hidden;
+    height: auto;
+    width: 100%;
+    max-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    background: var(--defaut-light-background);
+    border: 1px solid #007cf828;
+    margin-bottom: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.feature-card-info h3 {
+    font-size: 160%;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.feature-card-info p {
+    font-size: 90%;
+    margin-bottom: 22px;
+}
+
+.feature-card:hover .feature-card-info {
+    bottom: 0;
+}
+
+.feature-card:hover .feature-card-info-icon-img {
+    opacity: 1;
+    visibility: visible;
+}
+/*--------------------------------------------- CSS FOR FEATURE SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR SUPPORT SECTION START ---------------------------------------*/
+.support {
+    color: var(--defaut-dark-color);
+}
+
+.support-card {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(130deg, var(--defaut-light-background), #f2f2f2);
+    border-left: 3px solid var(--defaut-light-thinklab-theme);
+    box-shadow: 15px 0 2px 0 #00000010;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.support-card::after {
+    content: '';
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    height: auto;
+    width: 100%;
+    max-width: 60px;
+    background-image: url(../images/bg-abs1.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.support-card-img {
+    height: 280px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.support-card-img img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.support-card-info {
+    padding-left: 25px;
+}
+
+.support-card-info h3 {
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 160%;
+    font-weight: 900;
+}
+
+.support-card-info p {
+    font-size: 85%;
+    margin: 20px 0;
+}
+/*--------------------------------------------- CSS FOR SUPPORT SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR RELIABLE SECTION START ---------------------------------------*/
+.reliable {
+    color: var(--defaut-dark-color);
+}
+
+.reliable .common-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.indicator-card {
+    height: auto;
+    width: 100%;
+    padding: 15px 22px;
+    background: var(--defaut-light-background);
+    box-shadow: 0 5px 20px 0 #00000010;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.indicator-card:nth-child(odd) {
+    margin-left: 0;
+}
+
+.indicator-card-icon {
+    padding-right: 20px;
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.indicator-card-icon i {
+    font-size: 160%;
+}
+
+.indicator-card-info h6 {
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.indicator-card-info p {
+    font-size: 80%;
+}
+
+.reliable-img {
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+/*--------------------------------------------- CSS FOR RELIABLE SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR FORM-CHANGER SECTION START ---------------------------------------*/
+.form-changer {
+    color: var(--defaut-dark-color);
+}
+/*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR CLIENTS SECTION START ---------------------------------------*/
+.clients {
+    color: var(--defaut-dark-color);
+}
+
+.clients-map {
+    background-image: url('../images/map-creative-bg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.clients-map h5 {
+    font-size: 180%;
+}
+
+.clients-map p {
+    font-size: 110%;
+    font-weight: 600;
+    margin-top: 20px;
+        color: var(--defaut-dark-thinklab-theme);
+}
+
+.clients-map h3 {
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 680%;
+    font-weight: 700;
+    margin: 100px 0;
+}
+
+.clients-content {
+    height: auto;
+    width: 100%;
+}
+
+.clients-content-box {
+    height: auto;
+    width: 100%;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background: var(--defaut-light-background);
+    border-left: 3px solid var(--defaut-dark-thinklab-theme);
+    box-shadow: 10px 10px 0 0 #00000010;
+    margin-bottom: 30px;
+}
+
+.clients-img {
+    height: auto;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*--------------------------------------------- CSS FOR CLIENTS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
+.form-changer {
+    color: var(--defaut-dark-color);
+    position: relative;
+    z-index: 1;
+}
+
+.form-changer-bg-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/bg-shape-abs-group.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: -1;
+}
+
+.form-changer-content .basic-form {
+    margin-top: 30px;
+    box-shadow: 0 0 30px 0 #00000010;
+}
+
+.form-changer-img {
+    height: auto;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 10px;
+    background: var(--defaut-light-background);
+    box-shadow: 0 0 10px 0 #00000010;
+    border: 1px solid #007cf828;
+    cursor: pointer;
+}
+
+.form-changer-img img {
+    border-radius: 10px;
+}
+/*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR BENEFITS SECTION START ---------------------------------------*/
+.benefits {
+    color: var(--defaut-dark-color);
+}
+
+.benefits-innovate {
+    background-image: url('../images/inoovate-beehouse-bg-abs.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.benefits-innovate h5 {
+    font-size: 220%;
+    color: var(--defaut-dark-thinklab-theme);
+    margin-bottom: 25px;
+}
+
+.benefits-innovate-box {
+    height: auto;
+    width: 100%;
+    min-height: 240px;
+    background: #007cf80c;
+    padding: 35px 20px;
+    text-align: center;
+    clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 99%, 50% 100%, 0% 70%, 0% 30%);
+}
+
+.benefits-innovate-box-icon-img {
+    height: auto;
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto 18px;
+}
+
+.benefits-innovate-box h6 {
+    font-size: 100%;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.benefits-innovate-box p {
+    font-size: 70%;
+}
+
+.benefits-content {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+    color: var(--defaut-light-color);
+}
+
+.benefits-content-box {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url('../images/thinklab-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-content-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(130deg, #0929a8b7, #007cf8da);
+    z-index: -1;
+}
+
+.benefits-content-box-listing {
+    margin: 25px 0;
+    padding: 22px 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffffff40, transparent);
+    border-left: 3px solid #ffffff80;
+}
+/*--------------------------------------------- CSS FOR BENEFITS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR BLOG-GALLERY SECTION START ---------------------------------------*/
+.blog-gallery {
+    color: var(--defaut-dark-color);
+    position: relative;
+    z-index: 1;
+}
+
+.blog-gallery-card {
+    height: auto;
+    width: 100%;
+    color: var(--defaut-dark-color);
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-gallery-card.long {
+    color: var(--defaut-light-color);
+    margin-bottom: 0;
+}
+
+.blog-gallery-card-img {
+    padding: 4px;
+    border: 1px solid #00000010;
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-gallery-card.long .blog-gallery-card-img {
+    height: 600px;
+}
+
+.blog-gallery-card-img img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.blog-gallery-card span.pg-chip {
+    margin: 25px 0;
+}
+
+.blog-gallery-card h6 {
+    font-size: 110%;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.long-blog-gallery-card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 20%, transparent 100%);
+    padding: 40px 25px 18px 25px;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+}
+/*--------------------------------------------- CSS FOR BLOG-GALLERY SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR CONTACT SECTION START ---------------------------------------*/
+.contact,
+.main-contact {
+    color: var(--defaut-dark-color);
+}
+
+.contact-content {
+    height: auto;
+    width: 100%;
+    padding: 25px 0;
+    color: var(--defaut-light-color);
+}
+
+.main-contact .contact-content {
+    color: var(--defaut-dark-color);
+}
+
+.contact-content h3 {
+    font-size: 250%;
+    margin: 25px 0;
+}
+
+.contact-content h6 {
+    font-size: 130%;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.contact-content-info-box {
+    padding: 30px 35px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #ffffff20, transparent);
+    border-right: 3px solid #ffffff80;
+}
+
+.contact-content-info-box .social {
+    justify-content: end;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+}
+
+.contact-content-info-box .social:last-child {
+    margin-bottom: 0;
+}
+
+.contact-content-info-box .social i {
+    font-size: 120%;
+    min-height: 45px;
+    max-width: 45px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 2px 0 #ffffff50;
+}
+
+.contact-content-info-box .social p {
+    font-size: 95%;
+    margin-bottom: 2px;
+}
+
+.contact-content-info-box .social a {
+    font-size: 100%;
+    padding-left: 0;
+}
+
+.contact-content-info-box .social span {
+    font-size: 100%;
+    line-height: 1.3;
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.contact-content-img-box {
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-content-img {
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contact-content-img img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.contact-content-img-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------------------------------------- CSS FOR CONTACT SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR TESTIMONIALS SECTION START ---------------------------------------*/
+.testimonials {
+    color: var(--defaut-dark-color);
+}
+
+.testimonials-content {
+    height: auto;
+    width: 100%;
+    padding: 60px 0 0;
+}
+/*--------------------------------------------- CSS FOR TESTIMONIALS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR FAQ'S SECTION START ---------------------------------------*/
+.faqs {
+    color: var(--defaut-dark-color);
+}
+
+.faqs-content {
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+/*--------------------------------------------- CSS FOR FAQ'S SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR GMAP SECTION START ---------------------------------------*/
+.gmap {
+    color: var(--defaut-dark-color);
+}
+
+.gmap-content {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.gmap-content iframe {
+    height: auto;
+    width: 100%;
+    min-height: 600px;
+    border-radius: 20px;
+}
+
+.gmap-content-info {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+}
+
+.gmap-content-info-img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.gmap-content-info-img img {
+    border-radius: 10px;
+}
+
+.gmap-content-info-txt {
+    height: auto;
+    width: 100%;
+    background: var(--defaut-light-background);
+    border-radius: 10px;
+    padding: 20px 25px;
+}
+
+.gmap-content-info-txt h5 {
+    font-size: 140%;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.gmap-content-info-txt p {
+    font-size: 80%;
+}
+
+.gmap-content-info-txt h6 {
+    font-size: 120%;
+    margin-bottom: 15px;
+}
+/*--------------------------------------------- CSS FOR GMAP SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR MAIN-CTA SECTION START ---------------------------------------*/
+.main-cta {
+    color: var(--defaut-dark-color);
+}
+
+.main-cta .common-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.main-cta-content {
+    text-align: center;
+}
+
+.main-cta-content .section-heading h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+/*--------------------------------------------- CSS FOR MAIN-CTA SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKRAY-TYPES SECTION START ---------------------------------------*/
+.thinkray-types {
+    color: var(--defaut-dark-color);
+}
+
+.thinkray-types-box {
+    height: auto;
+    width: 100%;
+    border: 1px solid #00000010;
+    padding: 30px 25px;
+}
+
+.thinkray-types-box.thinkray-themed {
+    background: linear-gradient(-130deg, var(--defaut-dark-thinkray-theme), var(--defaut-light-thinkray-theme));
+    color: var(--defaut-light-color);
+}
+
+.thinkray-types-box-icon-img {
+    height: auto;
+    width: 100%;
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.thinkray-types-box h5 {
+    color: var(--defaut-dark-thinkray-theme);
+    font-size: 160%;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.thinkray-types-box.thinkray-themed h5 {
+    color: var(--defaut-light-color);
+}
+
+.thinkray-types-box p {
+    font-size: 85%;
+}
+/*--------------------------------------------- CSS FOR THINKRAY-TYPES SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKRAY-BENEFITS SECTION START ---------------------------------------*/
+.benefits.thinkray-benefits {
+    color: var(--defaut-dark-color);
+}
+
+.thinkray-benefits .benefits-innovate h5 {
+    color: var(--defaut-dark-thinkray-theme);
+    margin-bottom: 25px;
+}
+
+.thinkray-benefits .benefits-innovate p {
+    font-size: 95%;
+}
+
+.thinkray-benefits-innovate-content {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.thinkray-benefits-innovate-content-box {
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+    background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f277);
+    border-bottom: 1px solid #00000010;
+    margin-bottom: 15px;
+}
+
+.thinkray-benefits-innovate-content-box h3 {
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.thinkray-benefits-innovate-content-box h3 span {
+    font-size: 400%;
+    font-weight: 900;
+    padding-right: 25px;
+    opacity: 0.1;
+}
+
+.thinkray-benefits-innovate-content-box p {
+    font-size: 85%;
+}
+
+.thinkray-benefits .benefits-content-box {
+    padding: 0;
+}
+
+.thinkray-benefits .benefits-content-box {
+    background-image: url('../images/thinkray-bg.png');
+}
+
+.thinkray-benefits .benefits-content-box-overlay {
+    background: linear-gradient(130deg, #9f0d7fd3, #ff60ddc5);
+}
+
+.thinkray-benefits-content-box-img {
+    height: auto;
+    width: 100%;
+}
+/*--------------------------------------------- CSS FOR THINKRAY-BENEFITS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR BAR-STRIPES SECTION START ---------------------------------------*/
+.bar-stripes {
+    color: var(--defaut-light-color);
+}
+
+.bar-stripes-marqee {
+    height: auto;
+    width: 100%;
+    background: var(--defaut-dark-background);
+    padding: 15px 0;
+}
+/*--------------------------------------------- CSS FOR BAR-STRIPES SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKRAY-SUCCESS SECTION START ---------------------------------------*/
+.thinkray-success {
+    color: var(--defaut-dark-color);
+}
+
+.thinkray-success-img-box {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 20px;
+}
+
+.thinkray-success-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.thinkray-success-img img {
+    border-radius: 20px;
+}
+
+.thinkray-success-img-text {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    padding: 18px 25px;
+    border-radius: 10px;
+    border-left: 3px solid #ffffff80;
+    background: #ffffff20;
+    backdrop-filter: blur(20px);
+    color: var(--defaut-light-color);
+    text-align: center;
+    z-index: 2;
+}
+
+.thinkray-success-img-text p {
+    font-size: 85%;
+    margin-bottom: 2px;
+}
+
+.thinkray-success-img-text h5 {
+    font-size: 280%;
+    font-weight: 900;
+}
+
+.thinkray-success-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.thinkray-success-content-box {
+    height: auto;
+    width: 100%;
+    max-width: 48%;
+    border-radius: 15px;
+    background: var(--defaut-light-background);
+    border: 1px solid #00000010;
+    box-shadow: 0 10px 20px 0 #00000010;
+    padding: 60px 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.thinkray-success-content-box-icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: auto;
+    width: 100%;
+    min-height: 70px;
+    max-width: 70px;
+    opacity: 0.1;
+}
+
+.thinkray-success-content-box p {
+    font-size: 85%;
+}
+
+.thinkray-success-content-box h4 {
+    color: var(--defaut-dark-thinkray-theme);
+    font-size: 280%;
+    font-weight: 900;
+    margin: 8px 0;
+}
+
+.thinkray-success-content-box h6 {
+    font-size: 110%;
+}
+/*--------------------------------------------- CSS FOR THINKRAY-SUCCESS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKRAY-RELIABLE SECTION START ---------------------------------------*/
+.indicator-card.thinkray-themed {
+    height: 100%;
+    padding: 15px 25px;
+    margin-left: 0;
+}
+
+.indicator-card.thinkray-themed .indicator-card-icon {
+    color: var(--defaut-dark-thinkray-theme);
+}
+
+.thinkray-reliable .reliable-img {
+    max-width: 100%;
+}
+/*--------------------------------------------- CSS FOR THINKRAY-RELIABLE SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKRAY-SYSTEMS SECTION START ---------------------------------------*/
+.thinkray-systems {
+    color: var(--defaut-dark-color);
+}
+
+.thinkray-systems-content {
+    height: auto;
+    width: 100%;
+    background-image: url('../images/thinkray-img-shape-bg-abs.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.thinkray-systems-small-img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 150px;
+    border-radius: 10px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 0 #00000020;
+    padding: 10px;
+}
+
+.thinkray-systems-small-img img {
+    border-radius: 10px;
+}
+
+.thinkray-systems-big-img {
+    height: auto;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.thinkray-floating-systems-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 45px;
+    z-index: 2;
+}
+
+.thinkray-floating-systems-content.top {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thinkray-floating-systems-content.left {
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.thinkray-floating-systems-content.right {
+    bottom: 10%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.thinkray-systems-content-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+}
+
+.thinkray-systems-content-box.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.thinkray-systems-content-box-icon {
+    height: auto;
+    width: 100%;
+    min-height: 70px;
+    max-width: 70px;
+    border-radius: 50%;
+    background: var(--defaut-light-background);
+    box-shadow: 0 10px 20px 0 #00000010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thinkray-systems-content-box-icon i {
+    font-size: 180%;
+    color: var(--defaut-dark-thinkray-theme);
+}
+
+.thinkray-systems-content-box h6 {
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.thinkray-systems-content-box p {
+    font-size: 75%;
+}
+/*--------------------------------------------- CSS FOR THINKRAY-SYSTEMS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKDIGITAL-TYPES SECTION START ---------------------------------------*/
+.thinkdigital-types {
+    color: var(--defaut-dark-color);
+}
+
+.thinkdigital-types-box {
+    height: auto;
+    width: 100%;
+    background: #ffffff70;
+    backdrop-filter: blur(20px);
+    border: 1px solid #00000010;
+    padding: 35px 45px;
+}
+
+.thinkdigital-types-box-icon-img {
+    height: auto;
+    width: 100%;
+    max-width: 70px;
+    margin-bottom: 20px;
+}
+
+.thinkdigital-types-box h5 {
+    font-size: 170%;
+    font-weight: 700;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.thinkdigital-types-box h5::after {
+    content: '';
+    position: absolute;
+    bottom: -35%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    max-width: 60px;
+    border-radius: 50px;
+    background: var(--defaut-dark-thinkdigital-theme);
+    z-index: 2;
+}
+
+.thinkdigital-types-box p {
+    font-size: 95%;
+}
+/*--------------------------------------------- CSS FOR THINKDIGITAL-TYPES SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR THINKDIGITAL-SYSTEMS SECTION START ---------------------------------------*/
+.thinkdigital-systems {
+    color: var(--defaut-dark-color);
+}
+
+.thinkdigital-systems-content {
+    height: auto;
+    width: 100%;
+    background-image: url('../images/thinkdigital-img-shape-bg-abs.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.thinkdigital-systems-divider-part {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.thinkdigital-systems-divider {
+    height: auto;
+    width: 100%;
+    max-width: 35%;
+}
+
+.indicator-card.thinkdigital-themed {
+    padding: 25px 35px;
+    margin-left: 0;
+    border-left: 3px solid var(--defaut-dark-thinkdigital-theme);
+    margin-bottom: 25px;
+}
+
+.indicator-card.thinkdigital-themed .indicator-card-icon {
+    color: var(--defaut-dark-thinkdigital-theme);
+}
+
+.thinkdigital-systems-big-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 100%;
+    max-width: 35%;
+}
+/*--------------------------------------------- CSS FOR THINKDIGITAL-SYSTEMS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR ABOUT SECTION START ---------------------------------------*/
+.about {
+    color: var(--defaut-dark-color);
+}
+
+.about-img {
+    height: auto;
+    width: 100%;
+}
+
+.digirel-content-box-listing {
+    margin: 35px 0;
+    padding: 30px 35px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f2f2f291, var(--defaut-light-background));
+    box-shadow: 0 2px 10px 0 #00000010;
+}
+/*--------------------------------------------- CSS FOR ABOUT SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR MINI-CTA SECTION START ---------------------------------------*/
+.mini-cta {
+    color: var(--defaut-light-color);
+}
+
+.mini-cta .common-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.mini-cta-content {
+    padding: 10px 20px 0;
+    text-align: center;
+    margin: 60px 0;
+    background: #ffffff10;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+.mini-cta-content .section-heading h2 {
+    font-size: 230%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mini-cta-content .pg-video-btn {
+    margin: 30px auto 0;
+}
+/*--------------------------------------------- CSS FOR MINI-CTA SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR OUR-TEAMS SECTION START ---------------------------------------*/
+.our-teams {
+    color: var(--defaut-dark-color);
+}
+
+.our-teams-img {
+    height: auto;
+    width: 100%;
+}
+
+.our-teams-divide-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-teams-divide-content p {
+    font-size: 85%;
+}
+
+.our-teams-slider {
+    height: auto;
+    width: 100%;
+    padding: 35px 0;
+}
+
+.our-teams-img-box {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px 0 #00000020;
+    padding: 2px;
+}
+
+.our-teams-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-teams-img img {
+    border-radius: 20px;
+}
+
+.our-teams-img-box span.pg-chip {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.our-teams-img-text {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 18px 22px;
+    border-radius: 10px;
+    background: #ffffffbf;
+    backdrop-filter: blur(20px);
+    color: var(--defaut-dark-color);
+    z-index: 2;
+}
+
+.our-teams-img-text h5 {
+    font-size: 170%;
+    font-weight: 700;
+}
+
+.our-teams-img-text p {
+    font-size: 85%;
+    margin-bottom: 2px;
+}
+
+.our-teams-img-text .user-info-badge {
+    text-align: start;
+    display: block;
+}
+
+.our-teams-img-text .user-info-badge em {
+    margin-bottom: 0;
+}
+/*--------------------------------------------- CSS FOR OUR-TEAMS SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR CASE-STUDY SECTION START ---------------------------------------*/
+.case-study {
+    color: var(--defaut-dark-color);
+}
+
+.case-study-card {
+    height: 450px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px 0 #00000010;
+    padding: 2px;
+    color: var(--defaut-light-color);
+    position: relative;
+    z-index: 1;
+}
+
+.case-study-card-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.case-study-card-img img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.case-study-card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to top, #00000050, transparent);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: end;
+    padding: 30px 25px;
+}
+
+.case-study-card-info h4 {
+    font-size: 140%;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.case-study-card-info p {
+    font-size: 80%;
+    margin-bottom: 25px;
+}
+/*--------------------------------------------- CSS FOR CASE-STUDY SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR HAMBURGER SECTION START ---------------------------------------*/
+.hamburger {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hamburger-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, var(--defaut-light-background), #f2f2f2, var(--defaut-light-background));
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hamburger-content {
+    height: auto;
+    width: 100%;
+    padding: 150px 0 70px;
+    text-align: center;
+    color: var(--defaut-dark-color);
+}
+
+.hamburger-content h1 {
+    font-size: 250%;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.hamburger-content h1 span {
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.breadcrumb-menu {
+    height: auto;
+    width: 100%;
+}
+
+.breadcrumb-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb-menu ul li {
+    font-size: 100%;
+}
+
+.breadcrumb-menu ul li i {
+    margin: 0 15px;
+}
+/*--------------------------------------------- CSS FOR HAMBURGER SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR EVENT-GALLERY SECTION START ---------------------------------------*/
+.event-gallery {
+    color: var(--defaut-dark-color);
+}
+
+.event-gallery-box {
+    height: 300px;
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #00000010;
+}
+
+.event-gallery-box-img {
+    height: 100%;
+    width: 100%;
+}
+
+.event-gallery-box-img img {
+    height: 100%;
+}
+/*--------------------------------------------- CSS FOR EVENT-GALLERY SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PRICING SECTION START ---------------------------------------*/
+.pricing {
+    color: var(--defaut-dark-color);
+}
+
+.pricing-content {
+    height: auto;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.pricing-card {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff50;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 10px 0 #00000010;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-card::before {
+    display: none;
+    content: 'Recommended';
+    position: absolute;
+    top: -5%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background: linear-gradient(230deg, var(--defaut-light-thinklab-theme), var(--defaut-dark-thinklab-theme));
+    color: var(--defaut-light-color);
+}
+
+.pricing-card.active::before {
+    display: block;
+}
+
+.pricing-card.active.thinkray-themed::before {
+    background: linear-gradient(230deg, var(--defaut-light-thinkray-theme), var(--defaut-dark-thinkray-theme));
+}
+
+.pricing-card-content {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f2);
+    padding: 0 15px;
+}
+
+.pricing-card.active .pricing-card-content {
+    background: linear-gradient(to bottom, var(--defaut-light-background), #007cf81e);
+}
+
+.pricing-card.active.thinkray-themed .pricing-card-content {
+    background: linear-gradient(to bottom, var(--defaut-light-backgroun), #ff60dd18);
+}
+
+.pricing-card-top,
+.pricing-card-middle,
+.pricing-card-bottom {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.pricing-card-top h3 {
+    font-size: 160%;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.pricing-card-top p {
+    font-size: 85%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.pricing-card-middle h2 {
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 250%;
+    font-weight: 900;
+}
+
+.pricing-card-middle h2 span {
+    display: block;
+    color: var(--defaut-dark-color);
+    font-size: 50%;
+    font-weight: var(--defaut-font-weight);
+}
+
+.pricing-card.thinkray-themed .pricing-card-middle h2 {
+    color: var(--defaut-dark-thinkray-theme);
+}
+
+.pricing-card-middle p {
+    font-size: 90%;
+    margin: 18px 0;
+}
+
+.pricing-card-bottom ul.pg-listing li {
+    font-size: 90%;
+    margin-bottom: 26px;
+}
+
+.pricing-card-bottom ul.pg-listing.thinkray-themed li {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.pricing-card-bottom ul.pg-listing.thinkray-themed li span {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.pricing-card-enterprise {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card-enterprise-notice {
+    height: auto;
+    width: 100%;
+    padding: 25px 15px;
+    border: 1px solid #00000010;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pricing-card-enterprise-notice h3 {
+    font-size: 150%;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pricing-card-enterprise-notice p {
+    font-size: 85%;
+    margin-bottom: 25px;
+}
+
+.pricing-card-top-icon-img {
+    height: auto;
+    width: 100%;
+    max-width: 60px;
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+/*--------------------------------------------- CSS FOR PRICING SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PRICING-METHOD SECTION START ---------------------------------------*/
+.pricing-method {
+    color: var(--defaut-dark-color);
+}
+
+.pricing-method-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #00000010;
+    background: var(--defaut-light-background);
+}
+
+.pricing-method-box-icon-img {
+    height: auto;
+    width: 100%;
+    max-width: 60px;
+    margin-right: 15px;
+}
+
+.pricing-method-box-text {
+    height: auto;
+    width: 100%;
+    max-width: 80%;
+}
+
+.pricing-method-box-text h6 {
+    font-size: 140%;
+    font-weight: 700;
+    color: var(--defaut-dark-thinklab-theme);
+    margin-bottom: 18px;
+}
+
+.pricing-method-box-text p {
+    font-size: 80%;
+}
+/*--------------------------------------------- CSS FOR PRICING-METHOD SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PRODUCT-COMPARISON SECTION START ---------------------------------------*/
+.product-comparison {
+    color: var(--defaut-dark-color);
+}
+
+.product-comparison-side-bar {
+    position: sticky;
+    top: 15%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding: 40px 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #00000010;
+    background: var(--defaut-light-background);
+}
+
+.product-comparison-content {
+    height: auto;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.product-comparison-content-heading {
+    margin-bottom: 35px;
+}
+
+.product-comparison-content-heading h3 {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.product-comparison-content-body h6 {
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.product-comparison-content-body p {
+    font-size: 90%;
+    margin: 28px 0;
+}
+
+.product-comparison-content-body p:last-child {
+    margin-bottom: 0;
+}
+
+.product-comparison-content-body p span {
+    font-weight: 700;
+}
+
+.product-comparison-content-body a {
+    color: var(--defaut-dark-thinklab-theme);
+    font-weight: 700;
+}
+/*--------------------------------------------- CSS FOR PRODUCT-COMPARISON SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR FOOTER START ---------------------------------------*/
+footer.main-footer {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px 0 15px;
+    z-index: 1;
+}
+
+.main-footer-content {
+    padding: 35px 30px;
+    border-radius: 20px;
+    background: #ffffff1f;
+    border: 1px solid #ffffff2e;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .75);
+}
+
+.main-footer-info {
+    height: auto;
+    width: 100%;
+}
+
+.main-footer-info .logo {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.main-footer-info h3 {
+    font-size: 180%;
+}
+
+.main-footer-info h6 {
+    font-size: 130%;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.main-footer-info .contact-content-info-box {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.main-footer-info .contact-content-info-box .social {
+    justify-content: start;
+    flex-direction: row;
+}
+
+.main-footer-info .contact-content-info-box .social i {
+    border-radius: 50px;
+    box-shadow: none;
+}
+
+.main-footer-info .contact-content-info-box .social a {
+    padding-left: 0;
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.main-footer-links {
+    height: auto;
+    width: 100%;
+}
+
+.main-footer-links h6 {
+    font-size: 125%;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+ul.footer-menu li {
+    font-size: 100%;
+    white-space: nowrap;
+    margin-bottom: 22px;
+    padding-left: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+ul.footer-menu li:last-child {
+    margin-bottom: 0;
+}
+
+ul.footer-menu li a i {
+    font-size: 95%;
+    padding-right: 8px;
+}
+
+ul.footer-menu li:hover {
+    text-decoration: underline;
+}
+
+.copyright-footer-content {
+    margin-top: 20px;
+    padding: 0 30px;
+    border-radius: 10px;
+}
+
+.copyright-footer-content-txt h4 {
+    font-size: 110%;
+    line-height: 1.5;
+}
+
+.copyright-footer-content-icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.copyright-footer-content-icon .social {
+    height: auto;
+    width: 100%;
+    max-width: 55px;
+}
+
+.copyright-footer-content-icon .social i {
+    min-height: 40px;
+    max-width: 40px;
+    font-size: 120%;
+}
+/*--------------------------------------------- CSS FOR FOOTER COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR LOGIN-HERO SECTION START ---------------------------------------*/
+.login-hero {
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.login-hero .hero {
+    height: auto;
+}
+
+.login-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    max-width: 35%;
+    border-radius: 20px;        
+    z-index: 2;
+}
+
+.login-form .basic-form {
+    height: 100vh;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .basic-form-head .logo {
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+.login-hero-carousel {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.login-hero-carousel-overlay {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(130deg, var(--defaut-light-background), #ffffffba); */
+    background: #fff;
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 1;
+}
+
+.login-hero .hero-content {
+    padding: 100px 170px 30px;
+    color: var(--defaut-dark-color);
+}
+
+.login-hero .hero-content h2 {
+    font-size: 220%;
+    font-weight: 900;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.login-hero .hero-content h2 span {
+    color: var(--defaut-dark-thinklab-theme);
+}
+
+.login-hero .hero-content h6 {
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+.login-hero .hero-content .hero-feature-img {
+    height: auto;
+    width: 100%;
+    min-height: 300px;
+    max-width: 50%;
+    margin: 22px 0;
+}
+
+.login-hero .hero-content .hero-feature-img.centered-new {
+    min-height: auto;
+    margin-top: 250px;
+}
+
+.login-pg-decor-chip {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.login-pg-decor-chip .pg-decor-chip {
+    justify-content: start;
+    padding: 0;
+    color: var(--defaut-dark-color);
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    animation: none;
+    transform: scale(0.7);
+}
+
+.login-pg-decor-chip .pg-decor-chip-img {
+    max-width: 40%;
+    margin-bottom: 5px;
+}
+
+.login-pg-decor-chip .pg-decor-chip-txt h6 {
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 220%;
+    margin-bottom: 0;
+}
+
+.login-pg-decor-chip p {
+    font-size: 80%;
+    margin-bottom: 0;
+}
+
+.login-hero-cta {
+    height: auto;
+    width: 100%;
+    padding: 35px 0 0;
+}
+
+.login-hero-cta h5 {
+    font-size: 85%;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.login-hero-cta h5 span {
+    display: inline;
+    font-size: 100%;
+    font-weight: 400;
+}
+    
+.login-hero-cta span {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*--------------------------------------------- CSS FOR LOGIN-HERO SECTION COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR OWL-CAROUSEL START ---------------------------------------*/
+.owl-carousel.carousel-masker {
+    position: relative;
+    z-index: 1;
+}
+
+.owl-carousel.carousel-masker::before,
+.owl-carousel.carousel-masker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100px;
+    z-index: 2;
+}
+
+.owl-carousel.carousel-masker::before {
+    left: 0;
+    background: linear-gradient(to right, var(--defaut-light-background), transparent);
+}
+
+.owl-carousel.carousel-masker::after {
+    right: 0;
+    background: linear-gradient(to left, var(--defaut-light-background), transparent);
+}
+
+.owl-dots {
+    text-align: center;
+    margin: 35px 0 0;
+}
+
+.owl-dot span {
+    height: 8px;
+    width: 20px;
+    background: #f2f2f2;
+    box-shadow: 0 0 2px 0 #00000010;
+    display: block;
+    border-radius: 20px;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-dot.active span {
+    background: linear-gradient(-45deg, var(--defaut-light-thinklab-theme), var(--defaut-dark-thinklab-theme));
+    width: 40px;
+    border-radius: 20px;
+}
+
+.testimonial-showcase {
+    position: relative;
+    padding: 30px 0;
+}
+
+.testimonial-showcase .owl-item {
+    opacity: 0.2;
+    transform: scale(0.8);
+    backdrop-filter: blur(20px);
+    transition: all 0.45s ease-in-out;
+}
+
+.testimonial-showcase .owl-item .testimonials-card-info {
+    display: none;
+}
+
+.testimonial-showcase .owl-item.active.center {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.testimonial-showcase .owl-item.active.center .testimonials-card-info {
+    display: block;
+}
+
+.testimonial-showcase .owl-item.active:not(.center) {
+    opacity: 0.55;
+    transform: scale(0.90);
+}
+
+.login-hero .login-hero-carousel .owl-carousel .owl-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.login-hero .login-hero-carousel .owl-carousel .owl-item:not(.active) {
+    opacity: 0;
+}
+
+.login-hero .login-hero-carousel .carousel-progress {
+    height: 6px;
+    width: 100%;
+    max-width: 30%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.carousel-progress {
+  height: 4px;
+  background: #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+.carousel-progress .progress-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 50px;
+  background: linear-gradient(to right, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme));
+}
+
+.our-teams-slider.owl-stage,
+.branding-box-slider.owl-stage {
+    display: block;
+}
+
+.our-teams-slider .owl-item,
+.branding-box-slider.owl-stage {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.our-teams-slider .owl-item.active,
+.branding-box-slider .owl-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*--------------------------------------------- CSS FOR OWL-CAROUSEL COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR ACCORDIAN START ---------------------------------------*/
+.accordion-item {
+    border: none;
+    margin-bottom: 12px;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    color: var(--defaut-dark-color);
+    background: #007af808;
+    border-radius: 5px;
+    border: 1px solid #00000010;
+    padding: 12px 22px;
+    font-size: 105%;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 18px 30px;
+}
+
+.accordion-body p {
+    font-size: 90%;
+}
+
+.accordion-body p span {
+    text-decoration: underline;
+}
+/*--------------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR MARQUEE START ---------------------------------------*/
+.marquee {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+}
+
+.marquee::before,
+.marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 30px;
+    z-index: 2;
+}
+
+.marquee::before {
+    left: 0;
+    background: linear-gradient(to right, var(--defaut-light-thinklab-theme), transparent);
+}
+
+.marquee::after {
+    right: 0;
+    background: linear-gradient(to left, var(--defaut-light-thinklab-theme), transparent);
+}
+
+header.main-header .top-header-news .marquee {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    animation: marqueeScroll 10s linear infinite;
+    gap: 25px;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+header.main-header .top-header-news .marquee-content span {
+    font-size: 95%;
+    font-weight: var(--defaut-font-weight);
+}
+
+header.main-header .top-header-news .marquee-content span em {
+    font-weight: 600;
+}
+/*--------------------------------------------- CSS FOR MARQUEE COMPLETE ---------------------------------------*/
+
+/*--------------------------------------------- CSS FOR PASSWORD-ICON START ---------------------------------------*/
+.password-input {
+    position: relative;
+    z-index: 1;
+}
+
+.password-input .pass-eye-icon {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 110%;
+    color: #ccc;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.password-input .pass-eye-icon:hover {
+    color: var(--defaut-dark-color);
+}
+/*--------------------------------------------- CSS FOR PASSWORD-ICON COMPLETE ---------------------------------------*/
+
+/* ----------------------------------------- CSS FOR TOGGLE-SWITCH START ---------------------------------------------- */
+/* .login-form-switch {
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    height: auto;
+    width: 100%;
+    max-width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.pg-submit-btn.switch-btn {
+    font-size: 90%;
+    padding: 10px 0;
+}
+
+.pg-submit-btn.switch-btn.active {
+    background: #fff ;
+    color: var(--defaut-dark-theme);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.login-form {
+    display: none;
+}
+
+.login-form.active {
+    display: block;
+} */
+/* ----------------------------------------- CSS FOR TOGGLE-SWITCH COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR TARGETED-HIGHLIGHTER START ---------------------------------------------- */
+.pg-listing.targeter li.active {
+    background: var(--defaut-light-thinklab-theme);
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--defaut-light-color);
+}
+/* ----------------------------------------- CSS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
