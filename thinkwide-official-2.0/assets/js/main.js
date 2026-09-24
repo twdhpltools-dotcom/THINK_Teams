@@ -162,7 +162,7 @@ $(document).ready(function(){
   var owl = $('#support_carousel');
   
   owl.owlCarousel({
-      margin: 50,
+      margin: 20,
       loop: true,
       autoplay: true,
       autoplayTimeout: 2500,
@@ -178,7 +178,7 @@ $(document).ready(function(){
           items: 2
         },
         1000: {
-          items: 2
+          items: 3
         }
       }
   });
