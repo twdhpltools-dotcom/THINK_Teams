@@ -1751,7 +1751,8 @@ li.feature-types-box p {
     left: 0;
     height: auto;
     width: 100%;
-    background: linear-gradient(to top, #0a29a8, transparent);
+    background: linear-gradient(to top, #0a29a8d9, transparent);
+    backdrop-filter: blur(4px);
     padding: 40px 30px 20px 30px;
     text-align: center;
     color: var(--defaut-light-color);
