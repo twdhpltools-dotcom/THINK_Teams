@@ -58,6 +58,16 @@ function openMobileMenu() {
   menu.classList.toggle("open");
 }
 /*-------------------- MOBILE-MENU ----------------------*/
+
+/*-------------------- CHARGE-SECTION ----------------------*/
+function openChargeSection() {
+  const chargeSection = document.getElementById("chargeSectionContent");
+
+  if (chargeSection) {
+    chargeSection.classList.toggle("open");
+  }
+}
+/*-------------------- CHARGE-SECTION ----------------------*/
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
