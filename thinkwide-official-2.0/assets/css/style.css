@@ -2303,15 +2303,6 @@ li.feature-types-box p {
 .main-cta {
     color: var(--defaut-dark-color);
 }
-
-.main-cta .common-section {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-
 .main-cta-content {
     text-align: center;
 }
@@ -3830,41 +3821,17 @@ header.main-header .top-header-news .marquee-content span em {
 }
 /*--------------------------------------------- CSS FOR PASSWORD-ICON COMPLETE ---------------------------------------*/
 
-/* ----------------------------------------- CSS FOR TOGGLE-SWITCH START ---------------------------------------------- */
-/* .login-form-switch {
-    position: absolute;
-    top: 10%;
-    right: 40%;
+/*--------------------------------------------- CSS FOR MODAL START ---------------------------------------*/
+.modal#invoiceSowerModal .modal-header {
+    border: none;
+}
+
+.invoice-shower-modal-img {
     height: auto;
     width: 100%;
-    max-width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    z-index: 2;
+    border-radius: 10px;
 }
-
-.pg-submit-btn.switch-btn {
-    font-size: 90%;
-    padding: 10px 0;
-}
-
-.pg-submit-btn.switch-btn.active {
-    background: #fff ;
-    color: var(--defaut-dark-theme);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.login-form {
-    display: none;
-}
-
-.login-form.active {
-    display: block;
-} */
-/* ----------------------------------------- CSS FOR TOGGLE-SWITCH COMPLETE ---------------------------------------------- */
+/*--------------------------------------------- CSS FOR MODAL COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR TARGETED-HIGHLIGHTER START ---------------------------------------------- */
 .pg-listing.targeter li.active {
