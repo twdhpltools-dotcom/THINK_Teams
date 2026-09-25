@@ -273,6 +273,12 @@ button.disbaled {
     color: var(--primary);
 }
 
+.content-table-btn-part button.browse-btn.chat {
+    height: auto;
+    width: 100%;
+    padding: 7px 0 !important;
+}
+
 hr {
     margin: 8px 0;
 }
@@ -1950,12 +1956,48 @@ ul.doctor-info-listing li a {
 
 .doctor-calender-part {
     margin: 10px 0;
+    position: relative;
+    text-align: right;
+    z-index: 1;
 }
 
-.doctor-calender-part span.calender-chip {
+.note-reminder-blinker {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 30px;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid #ffffffcc;
+    background: linear-gradient(135deg, #ffffff8c, #dcecff70);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: reminderBubble 2s ease infinite;
+}
+
+@keyframes reminderBubble {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.note-reminder-blinker i {
+    font-size: 90%;
+    color: var(--primary);
+}
+
+span.calender-chip {
     color: #0757b8;
     font-size: 85%;
     font-weight: 700;
@@ -2166,6 +2208,25 @@ span.tat-box h6.without-tat {
     font-size: 100%;
 }
 /* ----------------------------------------- ADMIN-TAT-PAGE COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- ADMIN-FIX-ERROR START ---------------------------------------------- */
+.content-table.admin-fix-error .content-table-text h5 {
+    font-size: 105%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.content-table.admin-fix-error .content-table-text p {
+    font-size: 100%;
+    padding: 0 5px;
+}
+
+.content-table.admin-fix-error .content-table-btn-part button.request-btn {
+    text-decoration: underline;
+}
+/* ----------------------------------------- ADMIN-FIX-ERROR COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- MODAL START ---------------------------------------------- */
 .modal-header {
@@ -2430,6 +2491,57 @@ span.tat-box h6.without-tat {
     border: 2px solid #f6f6f6;
     border-radius: 5px;
 }
+
+/* ----------------------------------------- CHAT-INTERFACE START ---------------------------------------------- */
+.chat-body {
+    width: 100%;
+    background: var(--light);
+}
+
+.chat-row {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-row.sent {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.chat-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f2ff;
+    font-size: 105%;
+    color: #697590;
+}
+
+.chat-msg {
+    max-width: 280px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: #f4f0fb;
+    color: #16204b;
+    font-size: 85%;
+    text-align: left;
+}
+
+.sent .chat-msg {
+    background: #0560b7bf;
+    color: var(--light);
+}
+
+.chat-time {
+    display: block;
+    margin-top: 5px;
+    color: #8b97b0;
+    font-size: 65%;
+}
+/* ----------------------------------------- CHAT-INTERFACE COMPLETE ---------------------------------------------- */
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- HTML-LIVE-EDIT START ---------------------------------------------- */
@@ -2601,11 +2713,6 @@ p.login-error-msg:not(:empty) {
     transition: 0.2s ease;
 }
 
-.view-chip-list.test-view .view-chip {
-    padding: 6px 15px;
-    font-size: 80%;
-}
-
 .view-chip:hover {
     border-color: #1687f8;
     color: #1687f8;
@@ -2617,13 +2724,6 @@ p.login-error-msg:not(:empty) {
     background: #eaf4ff;
     color: #0874e4;
     font-weight: 600;
-}
-
-.view-chip-list.test-view .view-chip:hover,
-.view-chip-list.test-view .view-chip.active {
-    background: var(--light);
-    border-color: #d7dfe9;
-    color: #33415c;
 }
 /* ----------------------------------------- SUGGESTIONS-CHIPS COMPLETE ---------------------------------------------- */
 

@@ -100,6 +100,9 @@
     .payment-icon i {
         font-size: 130%;
     }
+    .note-reminder-blinker {
+        left: 30%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -183,6 +186,10 @@
     }
     .payment-formalities-box h3 {
         font-size: 130%;
+    }
+    .note-reminder-blinker {
+        top: 20px;
+        left: 0;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -520,6 +527,14 @@
     .content-table-btn-part button.browse-btn {
         padding: 7px 12px;
     }
+    .note-reminder-blinker {
+        top: 30%;
+        left: unset;
+        right: 0;
+    }
+    .doctor-date {
+        margin-bottom: 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -671,14 +686,6 @@
         border: none;
         padding-left: 5px;
     }
-    .doctor-calender-part span.calender-chip {
-        top: 0;
-        right: 0;
-        position: relative;
-    }
-    .doctor-date {
-        margin-bottom: 0;
-    }
     .doctor-calender-part {
         display: flex;
         flex-wrap: wrap;
@@ -762,6 +769,12 @@
     }
     .content-table-btn-part button.browse-btn {
         padding: 5px 8px;
+    }
+    .note-reminder-blinker {
+        top: 25%;
+    }
+    .content-table-btn-part button.browse-btn.chat {
+        padding: 6px 0 !important;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
