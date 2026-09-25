@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Admin List of Views | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Admin Centre Charge | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,7 +29,7 @@
 
 <body>
 
-  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
+  <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
@@ -120,7 +120,7 @@
           <p>List of Cases</p>
           <em class="counter-chip">32</em>
         </a>
-        <a href="admin-centre.html">
+        <a href="admin-centre.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-building-gear"></i>
           </span>
@@ -132,7 +132,7 @@
           </span>
           <p>Doctors</p>
         </a>
-        <a href="admin-list-view.html" class="active">
+        <a href="admin-list-view.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-grid-1x2"></i>
           </span>
@@ -223,16 +223,17 @@
         <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <h1>List of Views</h1>
+              <h1>Add Centre Charge Details</h1>
+              <p><span>Diagnosis And Cure Centre</span></p>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-between">
-          <div class="col-xl-10 col-md-9 col-sm-8 col-7">
-            <div class="row gx-3 gy-2">
+        <div class="row gx-3 gy-2 justify-content-between mb-3">
+          <div class="col-xl-10 col-md-9 col-sm-6 col-7">
+            <div class="row gx-3 gy-2 align-items-center">
               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
                 <div class="search-input text-end">
-                  <input type="text" name="" placeholder="Search by test name or">
+                  <input type="text" name="" placeholder="" />
                   <i class="bi bi-search search-right-icon"></i>
                 </div>
               </div>
@@ -240,182 +241,54 @@
               <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
                 <select name="">
                   <option value="0" selected="">All Modalities</option>
-                  <option value="1">DX</option>
+                  <option value="1">Ray</option>
                   <option value="2">CT</option>
-                  <option value="3">MRI</option>
-                  <option value="4">ECG</option>
+                  <option value="1">MRI</option>
+                  <option value="2">EXG</option>
                 </select>
               </div>
 
-              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12">
-                <select name="">
-                  <option value="0" selected="">All Status</option>
-                  <option value="1">Active</option>
-                  <option value="2">In-Active</option>
-                </select>
+              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+                <div class="content-table-btn-part">
+                  <button type="submit" class="submitted-btn" onclick="openChargeSection(event)"><i class="bi bi-copy"></i> Copy Charges</button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-3 col-sm-4 col-5">
+          <div class="col-xl-2 col-md-3 col-sm-6 col-5">
             <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal"><i class="bi bi-plus-lg"></i> Add Views</button>
+              <button type="button" class="browse-btn">Save Charges</button>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="content-table admin-doctor-pay">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>View Name</th>
-              <th>Modality</th>
-              <th>TAT</th>
-              <th>Status</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>
-                <div class="content-table-text">
-                  <h5>Chest PA View</h5>
-                </div>
-              </td>
-              <td>RAY</td>
-              <td>15 min</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Active</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>
-                <div class="content-table-text">
-                  <h5>Chest AP View</h5>
-                </div>
-              </td>
-              <td>MRI</td>
-              <td>20 min</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">In-Active</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>
-                <div class="content-table-text">
-                  <h5>CT Brain Non Contrast</h5>
-                </div>
-              </td>
-              <td>CT</td>
-              <td>30 min</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">In-Active</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>
-                <div class="content-table-text">
-                  <h5>MRI Knee Joint</h5>
-                </div>
-              </td>
-              <td>RAY</td>
-              <td>45 min</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Active</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!----- UPDATE-VIEW-MODAL ------->
-    <div class="modal fade" id="updateViewModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-section-heading">
-              <h2>Add View</h2>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal-content-box">
+        <div id="chargeSectionContent" class="row gx-3 gy-4 mb-3">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="form-formalities-box">
+              <h5>Copy charges from another centre</h5>
               <form method="" action="">
-                <div class="row gx-3 gy-2">
-                  <div class="col-xl-6 col-md-8 col-sm-8 col-8">
-                    <select name="">
-                      <option value="0" selected="">Modality</option>
-                      <option value="1">DX</option>
-                      <option value="2">CT</option>
-                      <option value="3">MRI</option>
-                      <option value="4">ECG</option>
+                <div class="require-form-flex-part">
+                  <div class="require-form-input">
+                    <label>From Centre *</label>
+                    <select name="" required="">
+                      <option value="0" selected="">Select Center *</option>
+                      <option value="1">Diagnostic &amp; Cure Centre</option>
+                      <option value="2">City Diagnostic Centre</option>
+                      <option value="3">Prime Scan Centre</option>
                     </select>
                   </div>
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="text" name="" value="" placeholder="Enter view name ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter TAT value ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter doctor price ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter price ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <select name="">
-                      <option value="0" selected="">Status</option>
-                      <option value="1">Active</option>
-                      <option value="2">In-Active</option>
+                  <span class="arrow-badge mx-3"><i class="bi bi-arrow-right"></i></span>
+                  <div class="require-form-input">
+                    <label>To Centre *</label>
+                    <select name="" required="">
+                      <option value="0" selected="">Select Center *</option>
+                      <option value="1">Diagnostic &amp; Cure Centre</option>
+                      <option value="2">City Diagnostic Centre</option>
+                      <option value="3">Prime Scan Centre</option>
                     </select>
                   </div>
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="content-table-btn-part justify-content-center mt-2">
-                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
-                    </div>
+                  <div class="content-table-btn-part ms-3">
+                    <button type="submit" class="browse-btn">Copy</button>
                   </div>
                 </div>
               </form>
@@ -423,11 +296,62 @@
           </div>
         </div>
       </div>
-    </div>
-    <!----- UPDATE-VIEW-MODAL ------->
+
+      <div class="content-table admin-centre">
+        <table>
+          <thead>
+            <tr>
+              <th>View Name</th>
+              <th>Modality</th>
+              <th>Default Centre Price</th>
+              <th>Centre Charge</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chest AP View</td>
+              <td>CT</td>
+              <td>₹ 160</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  ₹
+                  <input class="w-auto ms-2" type="text" name="" value="160" placeholder="">
+                </div>
+              </td>
+              <td>- -</td>
+            </tr>
+            <tr>
+              <td>Chest PA View</td>
+              <td>RAY</td>
+              <td>₹ 180</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  ₹
+                  <input class="w-auto ms-2" type="text" name="" value="180" placeholder="">
+                </div>
+              </td>
+              <td>- -</td>
+            </tr>
+            <tr>
+              <td>CT Brain Non Contrast</td>
+              <td>MRI</td>
+              <td>₹ 600</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  ₹
+                  <input class="w-auto ms-2" type="text" name="" value="600" placeholder="">
+                </div>
+              </td>
+              <td>- -</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
   </main>
-  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
+  <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
