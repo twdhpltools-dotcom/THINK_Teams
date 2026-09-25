@@ -199,6 +199,13 @@ document.querySelector(".submitted-btn.conf").addEventListener("click", function
 });
 /*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
 
+/*-------------------------------------- CLICK-CHANGE ----------------------------------------*/
+function markPaid(btn) {
+  btn.classList.toggle("paid");
+  btn.innerText = btn.classList.contains("paid") ? "Paid" : "Mark as Paid";
+}
+/*-------------------------------------- CLICK-CHANGE ----------------------------------------*/
+
 /*-------------------------------------- HTML-LIVE-EDIT ----------------------------------------*/
 function editorCmd(command) {
   document.execCommand(command, false, null);
