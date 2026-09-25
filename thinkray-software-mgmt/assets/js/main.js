@@ -58,17 +58,15 @@ function openMobileMenu() {
   menu.classList.toggle("open");
 }
 /*-------------------- MOBILE-MENU ----------------------*/
-
-/*-------------------- CHARGE-SECTION ----------------------*/
-function openChargeSection() {
-  const chargeSection = document.getElementById("chargeSectionContent");
-
-  if (chargeSection) {
-    chargeSection.classList.toggle("open");
-  }
-}
-/*-------------------- CHARGE-SECTION ----------------------*/
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+
+/*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+/*-------------------- CHARGE-SECTION ----------------------*/
+document.querySelector(".toggle-btn").addEventListener("click", () => {
+  document.querySelector(".toggle-div").classList.toggle("hidden");
+});
+/*-------------------- CHARGE-SECTION ----------------------*/
+/*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
 /*-------------------- PROFILE-MENU ----------------------*/
