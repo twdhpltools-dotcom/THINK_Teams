@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Admin List of Views | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Admin Fixes of Errors | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -132,13 +132,13 @@
           </span>
           <p>Doctors</p>
         </a>
-        <a href="admin-list-view.html" class="active">
+        <a href="admin-list-view.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-grid-1x2"></i>
           </span>
           <p>List of Views</p>
         </a>
-        <a href="admin-fix-error.html">
+        <a href="admin-fix-error.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-exclamation-triangle"></i>
           </span>
@@ -223,57 +223,27 @@
         <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <h1>List of Views</h1>
+              <h1>Fix Error</h1>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-between">
-          <div class="col-xl-10 col-md-9 col-sm-8 col-7">
-            <div class="row gx-3 gy-2">
-              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
-                <div class="search-input text-end">
-                  <input type="text" name="" placeholder="Search by test name or">
-                  <i class="bi bi-search search-right-icon"></i>
-                </div>
-              </div>
-
-              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
-                <select name="">
-                  <option value="0" selected="">All Modalities</option>
-                  <option value="1">DX</option>
-                  <option value="2">CT</option>
-                  <option value="3">MRI</option>
-                  <option value="4">ECG</option>
-                </select>
-              </div>
-
-              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12">
-                <select name="">
-                  <option value="0" selected="">All Status</option>
-                  <option value="1">Active</option>
-                  <option value="2">In-Active</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 col-md-3 col-sm-4 col-5">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal"><i class="bi bi-plus-lg"></i> Add Views</button>
-            </div>
+        <div class="row gx-3 gy-2 justify-content-end">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+            <input type="date" name="" placeholder="Search by date" />
           </div>
         </div>
       </div>
 
-      <div class="content-table admin-doctor-pay">
+      <div class="content-table admin-fix-error">
         <table>
           <thead>
             <tr>
               <th>#</th>
-              <th>View Name</th>
-              <th>Modality</th>
-              <th>TAT</th>
-              <th>Status</th>
+              <th>Invoice</th>
+              <th>Patient Name</th>
+              <th>Centre</th>
+              <th>View Change</th>
+              <th>Charge Impact</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -282,87 +252,99 @@
               <td>1</td>
               <td>
                 <div class="content-table-text">
-                  <h5>Chest PA View</h5>
+                  <h5>1083</h5>
                 </div>
               </td>
-              <td>RAY</td>
-              <td>30 min</td>
+              <td>Rahul Das</td>
+              <td>Diagnosis And Cure Centre</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Active</button>
+                  <button type="button" class="edit-btn px-0">Chest PA View</button>
+                  <div class="content-table-text">
+                    <p><i class="bi bi-arrow-right"></i></p>
+                  </div>
+                  <button type="button" class="pending-btn">Chest AP View</button>
                 </div>
               </td>
+              <td>₹180 <i class="bi bi-arrow-right"></i> ₹190</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
+                  <button type="button" class="request-btn">Fix Error</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>2</td>
+              <td>1</td>
               <td>
                 <div class="content-table-text">
-                  <h5>Chest AP View</h5>
+                  <h5>1083</h5>
                 </div>
               </td>
-              <td>RAY</td>
-              <td>30 min</td>
+              <td>Priya Roy	</td>
+              <td>Diagnosis And Cure Centre</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">In-Active</button>
+                  <button type="button" class="edit-btn px-0">Chest PA View</button>
+                  <div class="content-table-text">
+                    <p><i class="bi bi-arrow-right"></i></p>
+                  </div>
+                  <button type="button" class="pending-btn">Chest AP View</button>
                 </div>
               </td>
+              <td>₹180 <i class="bi bi-arrow-right"></i> ₹190</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
+                  <button type="button" class="request-btn">Fix Error</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>3</td>
+              <td>1</td>
               <td>
                 <div class="content-table-text">
-                  <h5>CT Brain Non Contrast</h5>
+                  <h5>1083</h5>
                 </div>
               </td>
-              <td>RAY</td>
-              <td>30 min</td>
+              <td>Agnimitra Deb</td>
+              <td>Diagnosis And Cure Centre</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">In-Active</button>
+                  <button type="button" class="edit-btn px-0">Chest PA View</button>
+                  <div class="content-table-text">
+                    <p><i class="bi bi-arrow-right"></i></p>
+                  </div>
+                  <button type="button" class="pending-btn">Chest AP View</button>
                 </div>
               </td>
+              <td>₹180 <i class="bi bi-arrow-right"></i> ₹190</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
+                  <button type="button" class="request-btn">Fix Error</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>4</td>
+              <td>1</td>
               <td>
                 <div class="content-table-text">
-                  <h5>MRI Knee Joint</h5>
+                  <h5>1083</h5>
                 </div>
               </td>
-              <td>RAY</td>
-              <td>30 min</td>
+              <td>Ananya Sen</td>
+              <td>Diagnosis And Cure Centre</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Active</button>
+                  <button type="button" class="edit-btn px-0">Chest PA View</button>
+                  <div class="content-table-text">
+                    <p><i class="bi bi-arrow-right"></i></p>
+                  </div>
+                  <button type="button" class="pending-btn">Chest AP View</button>
                 </div>
               </td>
+              <td>₹180 <i class="bi bi-arrow-right"></i> ₹190</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#updateViewModal">
-                    <i class="bi bi-pencil-square pe-0"></i>
-                  </button>
+                  <button type="button" class="request-btn">Fix Error</button>
                 </div>
               </td>
             </tr>
@@ -370,61 +352,6 @@
         </table>
       </div>
     </section>
-
-    <!----- UPDATE-VIEW-MODAL ------->
-    <div class="modal fade" id="updateViewModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-section-heading">
-              <h2>Add View</h2>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal-content-box">
-              <form method="" action="">
-                <div class="row gx-3 gy-2">
-                  <div class="col-xl-6 col-md-8 col-sm-8 col-8">
-                    <select name="">
-                      <option value="0" selected="">Modality</option>
-                      <option value="1">DX</option>
-                      <option value="2">CT</option>
-                      <option value="3">MRI</option>
-                      <option value="4">ECG</option>
-                    </select>
-                  </div>
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="text" name="" value="" placeholder="Enter view name ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter TAT value ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter doctor price ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter price ..."></textarea>
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <select name="">
-                      <option value="0" selected="">Status</option>
-                      <option value="1">Active</option>
-                      <option value="2">In-Active</option>
-                    </select>
-                  </div>
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="content-table-btn-part justify-content-center mt-2">
-                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- UPDATE-VIEW-MODAL ------->
 
   </main>
   <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->

@@ -280,6 +280,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
                 <span class="calender-chip">
                   CT
                 </span>
@@ -350,6 +354,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
                 <span class="calender-chip">
                   CT
                 </span>
@@ -490,6 +498,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
                 <span class="calender-chip">
                   CT
                 </span>
@@ -556,6 +568,79 @@
       </div>
     </div>
     <!----- UPDATE-NOTE-MODAL ------->
+
+    <!----- REMINDER-NOTE-MODAL ------->
+    <div class="modal fade" id="reminderNoteModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Chat for your Note overview</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              
+              <!----- CHAT-INTERFACE ------->
+              <div class="chat-body">
+                <div class="chat-row received">
+                  <div class="chat-icon">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div>
+                    <div class="chat-msg">
+                      Hello! <br />
+                      How can we help you today?
+                    </div>
+                    <span class="chat-time">10:30 AM</span>
+                  </div>
+                </div>
+
+                <div class="chat-row sent">
+                  <div>
+                    <div class="chat-msg">Can I get pricing details?</div>
+                    <span class="chat-time">10:31 AM ✓✓</span>
+                  </div>
+                </div>
+
+                <div class="chat-row received">
+                  <div class="chat-icon">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div>
+                    <div class="chat-msg">
+                      Sure! Please let us know which product you are interested in
+                      (ThinkLab / ThinkRay / ThinkDigital)?
+                    </div>
+                    <span class="chat-time">10:31 AM</span>
+                  </div>
+                </div>
+              </div>
+              <!----- CHAT-INTERFACE ------->
+
+              <hr class="pg-hr my-3" />
+
+              <form method="" action="">
+                <div class="row gx-3 gy-2">
+                  <div class="col-xl-9 col-md-9 col-sm-9 col-8">
+                    <div class="login-input">
+                      <i class="bi bi-paperclip login-left-icon"></i>
+                      <input type="text" name="" placeholder="Send message here..." required="">
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-3 col-4">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn chat" data-bs-dismiss="modal">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- REMINDER-NOTE-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
