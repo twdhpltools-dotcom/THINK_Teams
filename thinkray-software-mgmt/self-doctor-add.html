@@ -269,7 +269,7 @@
                     </div>
                   </div>
                   <div class="content-table-btn-part">
-                    <button type="button" class="request-btn"><i class="bi bi-trash pe-0"></i></button>
+                    <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
                   </div>
                 </div>
                 <div class="row gx-3 gy-3">
@@ -285,6 +285,37 @@
         </div>
       </div>
     </section>
+
+    <!----- DELETE-CONFIRMATION-MODAL ------->
+    <div class="modal fade" id="deleteConfModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="status-check-comment">
+                      <h6>Delete this item?</h6>
+                      <p>Are you sure want to delete this item?</p>
+                    </div>
+                    <hr class="pg-hr my-3" />
+                    <div class="content-table-btn-part conf">
+                      <button type="button" class="pending-btn" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="request-btn" data-bs-dismiss="modal">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- DELETE-CONFIRMATION-MODAL ------->
 
   </main>
   <!----------------------------------- SELF-DOCTOR-ADD-PAGE ------------------------------------------------->
