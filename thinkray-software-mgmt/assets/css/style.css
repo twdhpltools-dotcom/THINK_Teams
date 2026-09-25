@@ -1797,7 +1797,7 @@ span.sidebar-menu-nav-icon i {
 .form-formalities-box h5 {
     font-weight: 700;
     font-size: 110%;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
 }
 
 form button[type="submit"] { 
@@ -2116,6 +2116,13 @@ span.tat-box h6.without-tat {
     width: 50%;
 }
 
+.divider-part-section {
+    padding: 15px 12px;
+    background: #fff9fd;
+    color: var(--dark);
+    margin: 15px 0;
+}
+
 .info-note {
     padding: 10px 12px;
     display: flex;
@@ -2219,8 +2226,21 @@ span.tat-box h6.without-tat {
 }
 
 .content-table.admin-fix-error .content-table-text p {
-    font-size: 100%;
-    padding: 0 5px;
+    font-size: 95%;
+    font-weight: 500;
+}
+
+.content-table.admin-fix-error .content-table-text p span.non-approved {
+    color: #CE0104;
+}
+
+.content-table.admin-fix-error .content-table-text p span.approved {
+    color: #0B894D;
+}
+
+.content-table.admin-fix-error .content-table-text p i {
+    font-size: 130%;
+    padding: 0 8px;
 }
 
 .content-table.admin-fix-error .content-table-btn-part button.request-btn {
