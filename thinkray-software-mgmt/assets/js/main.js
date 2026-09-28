@@ -14,9 +14,12 @@ let textIndex=0,charIndex=0,isDeleting=false;
 function animateSearchPlaceholder(){
   const text=searchTexts[textIndex];
 
-  if(!isDeleting){
+    if (!isDeleting) {
     charIndex++;
-    searchInput.placeholder=text.slice(0,charIndex);
+
+    if (searchInput) {
+      searchInput.placeholder = text.slice(0, charIndex);
+    }
 
     if(charIndex===text.length){
       isDeleting=true;
@@ -24,7 +27,9 @@ function animateSearchPlaceholder(){
     }
   }else{
     charIndex--;
-    searchInput.placeholder=text.slice(0,charIndex);
+    if (searchInput) {
+      searchInput.placeholder = text.slice(0, charIndex);
+    }
 
     if(charIndex===0){
       isDeleting=false;
@@ -62,8 +67,8 @@ function openMobileMenu() {
 
 /*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 /*-------------------- CHARGE-SECTION ----------------------*/
-document.querySelector(".toggle-btn").addEventListener("click", () => {
-  document.querySelector(".toggle-div").classList.toggle("hidden");
+document.querySelector(".toggle-btn")?.addEventListener("click", () => {
+  document.querySelector(".toggle-div")?.classList.toggle("hidden");
 });
 /*-------------------- CHARGE-SECTION ----------------------*/
 /*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
@@ -88,7 +93,6 @@ document.addEventListener("click", function () {
 /*-------------------- PROFILE-MENU ----------------------*/
 
 /*-------------------- ADMIN-SWITCH-MENU ----------------------*/
-
 function toggleAdminSwitchMenu(event) {
   event.stopPropagation();
 
@@ -96,13 +100,12 @@ function toggleAdminSwitchMenu(event) {
   menu.classList.toggle("active");
 }
 
-document.getElementById("AdminSwitchSubMenu").addEventListener("click", function (event) {
+document.getElementById("AdminSwitchSubMenu")?.addEventListener("click", function (event) {
   event.stopPropagation();
 });
 
 document.addEventListener("click", function () {
-  const menu = document.getElementById("AdminSwitchSubMenu");
-  menu.classList.remove("active");
+  document.getElementById("AdminSwitchSubMenu")?.classList.remove("active");
 });
 /*-------------------- ADMIN-SWITCH-MENU ----------------------*/
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
@@ -154,10 +157,10 @@ document.addEventListener("DOMContentLoaded", function () {
     error.innerText = "";
   }
 
-  user.addEventListener("input", checkLoginFields);
-  pass.addEventListener("input", checkLoginFields);
+  user?.addEventListener("input", checkLoginFields);
+  pass?.addEventListener("input", checkLoginFields);
 
-  form.addEventListener("submit", function (e) {
+  form?.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const username = user.value.trim();
@@ -194,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*-------------------------------------- PG-VALIDATION----------------------------------------*/
 
 /*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
-document.querySelector(".submitted-btn.conf").addEventListener("click", function () {
+document.querySelector(".submitted-btn.conf")?.addEventListener("click", function () {
   window.print();
 });
 /*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
@@ -243,7 +246,7 @@ function openTab(btn) {
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
-document.getElementById("FileUpload").addEventListener("change", function () {
+document.getElementById("FileUpload")?.addEventListener("change", function () {
   const file = this.files[0];
 
   if (!file) return;
