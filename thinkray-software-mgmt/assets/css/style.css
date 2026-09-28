@@ -22,7 +22,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 15px;
     overflow-x: hidden;
 }
 
@@ -244,8 +244,8 @@ button.disbaled {
 .content-table-btn-part button.submitted-btn.inv {
     font-size: 90%;
     padding: 2px 10px;
-    background: #fffbfb;
-    border: 1px solid #e7e7e7;
+    background: #f8f8ff;
+    border: 1px solid #2520f745;
     border-radius: 20px;
 }
 
@@ -794,7 +794,7 @@ span.profile-submenu-icon img {
 .sidebar-menu-top {
     height: auto;
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -809,16 +809,12 @@ span.profile-submenu-icon img {
     transition: all 0.4s ease;
 }
 
-.sidebar-menu.collapsed .logo {
-  display: none;
-}
-
 .sidebar-menu-toggle {
     position: absolute;
     bottom: 80px;
-    right: -25px;
+    right: -20px;
     height: auto;
-    width: 25px;
+    width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -826,7 +822,7 @@ span.profile-submenu-icon img {
     background: #F9F9F9;
     border: 1px solid #DDDDDD;
     border-left-width: 0;
-    padding: 10px 5px;
+    padding: 10px 2px;
     cursor: pointer;
     z-index: 103;
 }
@@ -863,8 +859,9 @@ span.profile-submenu-icon img {
     z-index: 2;
 }
 
-.sidebar-menu.collapsed .sidebar-menu-nav a,
-.sidebar-menu.collapsed .sidebar-menu-nav h5 {
+.sidebar-menu.collapsed .sidebar-menu-nav a p,
+.sidebar-menu.collapsed .sidebar-menu-nav h5,
+.sidebar-menu.collapsed .sidebar-menu-nav a .counter-chip {
     display: none;
 }
 
@@ -1310,6 +1307,9 @@ span.sidebar-menu-nav-icon i {
     width: 100%;
     padding-bottom: 12px;
     color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content-formalities.blank {
@@ -2224,8 +2224,8 @@ span.tat-box h6.without-tat {
 }
 
 .pay-icon {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3050,6 +3050,262 @@ p.login-error-msg:not(:empty) {
     cursor: pointer;
 }
 /* ----------------------------------------- TAB-CONTENT COMPLETE ---------------------------------------------- */
+
+
+/* ----------------------------------------- EXTRA-CHANGES START ---------------------------------------------- */
+.report-layout{
+  width:100%;
+  display:grid;
+  grid-template-columns:32% 68%;
+  gap:12px;
+}
+
+.template-panel,
+.preview-panel{
+  border:1px solid #dbe2ec;
+  border-radius:8px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.panel-title,
+.preview-head{
+  min-height:48px;
+  padding:12px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid #e5e9ef;
+  font-size:82%;
+  font-weight:700;
+  color:var(--dark);
+}
+
+.template-search{
+  padding:10px;
+}
+
+.template-search input{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #cfd8e6;
+  border-radius:6px;
+  outline:none;
+  font-size:70%;
+}
+
+.template-item{
+  padding:10px 12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid #edf0f4;
+}
+
+.template-item h6{
+  margin:0;
+  font-size:74%;
+  color:var(--dark);
+}
+
+.template-item p{
+  margin:3px 0 0;
+  font-size:60%;
+  color:#8a94a6;
+}
+
+.template-item button,
+.preview-head button{
+  padding:8px 12px;
+  border:0;
+  border-radius:5px;
+  background:#176fe8;
+  color:#fff;
+  font-size:65%;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.preview-head{
+  justify-content:space-between;
+}
+
+.preview-head h5{
+  margin:0;
+  font-size:82%;
+}
+
+.preview-content{
+  padding:22px 16px;
+  font-size:72%;
+  color:var(--dark);
+}
+
+.preview-content ol{
+  margin:0;
+  padding-left:18px;
+}
+
+.preview-content li{
+  margin-bottom:7px;
+}
+
+.report-result{
+  display:none;
+  padding:14px;
+}
+
+.report-paper{
+  min-height:430px;
+  padding:30px 18px;
+  margin-top:10px;
+  border:1px solid #d6deea;
+  background:#fff;
+  font-size:72%;
+  line-height:1.6;
+}
+
+.report-paper h4{
+  text-align:center;
+  text-decoration:underline;
+  font-size:80%;
+  margin-bottom:20px;
+}
+
+.report-paper p{
+  margin:3px 0 25px;
+}
+
+.clear-report{
+  padding:8px 12px;
+  border:0;
+  border-radius:5px;
+  background:#f4b000;
+  font-size:65%;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.report-editor-box{
+  width:100%;
+  border:1px solid #dbe2eb;
+  border-radius:8px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.report-editor-head{
+  min-height:54px;
+  padding:10px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #e5e9ef;
+}
+
+.report-editor-head h5{
+  margin:0;
+  font-size:85%;
+  color:var(--dark);
+}
+
+.report-actions{
+  display:flex;
+  gap:8px;
+}
+
+.report-actions button{
+  padding:9px 14px;
+  border:0;
+  border-radius:5px;
+  color:#fff;
+  font-size:65%;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.approve-btn{background:#dc3e49;}
+.save-btn{background:#2d58e8;}
+
+.editor-toolbar{
+  padding:8px 14px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  border-bottom:1px solid #e4e8ef;
+}
+
+.editor-toolbar button{
+  min-width:28px;
+  padding:5px 7px;
+  border:0;
+  background:transparent;
+  color:var(--dark);
+  font-size:68%;
+  cursor:pointer;
+}
+
+.editor-toolbar select{
+  padding:7px 10px;
+  border:1px solid #cfd8e5;
+  border-radius:5px;
+  outline:none;
+  font-size:65%;
+}
+
+.report-editor-content{
+  padding:13px;
+}
+
+.patient-info-table{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border:1px dashed #cbd5e1;
+}
+
+.patient-info-table > div{
+  display:grid;
+  grid-template-columns:34% 66%;
+  min-height:28px;
+  border-right:1px dashed #cbd5e1;
+  border-bottom:1px dashed #cbd5e1;
+}
+
+.patient-info-table span,
+.patient-info-table strong{
+  padding:7px 8px;
+  font-size:60%;
+  color:var(--dark);
+}
+
+.patient-info-table span{
+  border-right:1px dashed #cbd5e1;
+  font-weight:500;
+}
+
+.patient-info-table strong{
+  font-weight:600;
+}
+
+.report-writing-area{
+  min-height:350px;
+  padding:18px 12px;
+  border:1px solid #e3e7ed;
+  border-top:0;
+  font-size:70%;
+  color:var(--dark);
+}
+
+.report-writing-area h4{
+  margin:0 0 22px;
+  text-align:center;
+  text-decoration:underline;
+  font-size:78%;
+}
+
+.report-writing-area p{
+  margin:3px 0;
+}
+/* ----------------------------------------- EXTRA-CHANGES START ---------------------------------------------- */
 
 /* ----------------------------------------- PG-SCROLL-BAR START ---------------------------------------------- */
 ::-webkit-scrollbar {
