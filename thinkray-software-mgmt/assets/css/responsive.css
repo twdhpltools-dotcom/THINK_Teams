@@ -20,9 +20,6 @@
         align-items: center;
         padding: 0 20px;
     }
-    .user-notification {
-        margin: 0 15px;
-    }
     .sidebar-menu {
         max-width: 260px;
         padding: 25px 25px;
@@ -418,7 +415,7 @@
         padding-bottom: 15px;
     }
     span.sidebar-menu-nav-icon {
-        padding-right: 10px;
+        padding-right: 8px;
     }
     input,
     select,
@@ -435,8 +432,8 @@
         padding: 120px 30px;
     }
     .field-icon.scaled {
-        height: 55px;
-        width: 55px;
+        height: 50px;
+        width: 50px;
     }
     .upload-success-image {
         max-width: 65px;
@@ -534,6 +531,10 @@
     }
     .doctor-date {
         margin-bottom: 0;
+    }
+    .pay-row {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/

@@ -637,7 +637,7 @@ span.call-supports-icon {
     border-radius: 10px;
     background: #5b064952;
     border: 1px solid #B45BA1;
-    margin: 0 18px;
+    margin: 0 15px;
     cursor: pointer;
     z-index: 1;
 }
@@ -861,7 +861,7 @@ span.profile-submenu-icon img {
 }
 
 span.sidebar-menu-nav-icon {
-    padding-right: 14px;
+    padding-right: 10px;
 }
 
 span.sidebar-menu-nav-icon i {
@@ -1414,9 +1414,10 @@ span.sidebar-menu-nav-icon i {
     display: flex;
     align-items: center;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
     background: var(--light);
     color: var(--dark);
+    border: 1px solid #cdd7ea7d;
     box-shadow: 0 8px 24px #0000000d;
     z-index: 1;
 }
@@ -1552,8 +1553,8 @@ span.sidebar-menu-nav-icon i {
 }
 
 .field-icon.scaled {
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
     border: none;
     border-radius: 50px;
     box-shadow: 0 8px 15px 0 #00000010;
@@ -1792,16 +1793,24 @@ span.sidebar-menu-nav-icon i {
 .form-formalities-box {
     height: auto;
     width: 100%;
-    padding: 12px 18px;
+    padding: 10px 15px;
     background: var(--light);
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 #00000020;
 }
 
 .form-formalities-box h5 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 110%;
-    margin: 0 0 8px;
+    margin: 0 0 6px;
+    color: var(--dark);
+}
+
+.form-formalities-box p {
+    font-weight: 500;
+    font-size: 85%;
+    color: #7485ad;
+    margin-bottom: 12px;
 }
 
 form button[type="submit"] { 
@@ -1833,12 +1842,12 @@ form button[type="submit"] {
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 0 25px;
+    padding: 0 20px;
     overflow: hidden;
     border-radius: 12px;
     color: var(--dark);
     background: var(--light);
-    border: 1px solid #dce8fd;
+    border: 1px solid #cdd7ea;
     margin-bottom: 8px;
     z-index: 1;
 }
@@ -1858,11 +1867,11 @@ form button[type="submit"] {
     display: flex;
     align-items: center;
     gap: 0 30px;
-    margin: 10px 0;
+    margin: 7px 0;
 }
 
 .doctor-description-box.notification .doctor-description-left {
-    margin: 8px 0;
+    margin: 6px 0;
 }
 
 span.doctor-description-box-count {
@@ -1922,14 +1931,14 @@ span.doctor-description-box-count {
 ul.doctor-info-listing {
     height: auto;
     width: 100%;
-    margin: 5px 0 0;
+    margin: 3px 0 0;
 }
 
 ul.doctor-info-listing li {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 ul.doctor-info-listing li:last-child {
@@ -1975,7 +1984,7 @@ ul.doctor-info-listing li a {
     background: linear-gradient(135deg, #ffffff8c, #dcecff70);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
-    box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
+    border: 1px solid #0560b729;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1997,7 +2006,7 @@ ul.doctor-info-listing li a {
 
 .note-reminder-blinker i {
     font-size: 90%;
-    color: var(--primary);
+    color: #0757b8;
 }
 
 span.calender-chip {
@@ -2132,7 +2141,8 @@ span.tat-box h6.without-tat {
     align-items: center;
     gap: 7px;
     background: #fff9fd;
-    font-size: 85%;
+    border: 1px solid #cdd7ea7d;
+    font-size: 90%;
     color: var(--dark);
     margin: 15px 0 0;
 }
@@ -2168,6 +2178,72 @@ span.tat-box h6.without-tat {
 /* ----------------------------------------- ADMIN-REVIEW-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- ADMIN-DOCTOR-PAY-PAGE START ---------------------------------------------- */
+.pay-row {
+    width: 100%;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #e5eaf0;
+    border-radius: 8px;
+    background: var(--light);
+}
+
+.pay-period {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pay-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #f6eaff;
+    color: var(--primary);
+    font-size: 140%;
+}
+
+.pay-row span {
+    font-size: 70%;
+    font-weight: 700;
+    color: #8a94a6;
+}
+
+.pay-row h5,
+.pay-row h6,
+.pay-row p {
+    margin: 3px 0 0;
+    color: var(--dark);
+}
+
+.pay-row h5 {
+    font-size: 100%;
+}
+
+.pay-row h6 {
+    font-size: 90%;
+}
+
+.pay-row p {
+    font-size: 75%;
+    color: #667085;
+}
+
+.paid {
+    padding: 6px 14px;
+    text-align: center;
+    border-radius: 6px;
+    background: #e9fbf3;
+    color: #15945b;
+    font-size: 75%;
+    font-weight: 600;
+}
+
 .content-table.admin-doctor-pay .content-table-text h5 {
     font-size: 105%;
     white-space: nowrap;
@@ -2333,12 +2409,14 @@ span.tat-box h6.without-tat {
 
 #deleteConfModal .modal-header {
     border: none;
+    padding: 5px 18px;
 }
 
 #deleteConfModal .modal-header .btn-close {
     position: absolute;
     top: 20px;
     right: 20px;
+    font-size: 13px;
     z-index: 2;
 }
 
@@ -2567,6 +2645,14 @@ span.tat-box h6.without-tat {
 /* ----------------------------------------- CHAT-INTERFACE COMPLETE ---------------------------------------------- */
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- CLICK-CHANGE START ---------------------------------------------- */
+button.submitted-btn.inv.dyna.paid{
+    background: #22c55e;
+    border-color: #22c55e;
+    color: var(--light);
+}
+/* ----------------------------------------- CLICK-CHANGE COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- HTML-LIVE-EDIT START ---------------------------------------------- */
 .editor-toolbar {
     display: flex;
@@ -2725,7 +2811,7 @@ p.login-error-msg:not(:empty) {
 }
 
 .view-chip {
-    padding: 7px 14px;
+    padding: 5px 12px;
     border: 1px solid #d7dfe9;
     border-radius: 7px;
     background: var(--light);
