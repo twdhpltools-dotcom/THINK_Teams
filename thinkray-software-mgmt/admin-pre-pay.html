@@ -418,6 +418,164 @@
     </div>
     <!----- RECHARGE-WALLET-MODAL ------->
 
+    <!----- VIEW-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewDetailsModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Pre-Paid Details</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="account-summary">
+                <div class="summary-item">
+                  <span>Current Balance</span>
+                  <strong>₹ 18,420</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Status</span>
+                  <strong>Active</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Last Payment</span>
+                  <strong>24 Aug 2026</strong>
+                </div>
+              </div>
+
+              <div class="payment-history-box">
+                <div class="payment-history-head">
+                  <h5>Payment History</h5>
+                </div>
+
+                <div class="content-table admin-centre">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Payment Date</th>
+                        <th>Amount</th>
+                        <th>Payment Mode</th>
+                        <th>Transaction ID</th>
+                        <th>Status</th>
+                        <th>Receipt</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>24-Aug-2026</td>
+                        <td>₹ 25,480</td>
+                        <td>Online</td>
+                        <td>PAY-240826-01</td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="completed-btn">Paid</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
+                          </div>
+                        </td>
+                      </tr>
+                     <tr>
+                        <td>10-Aug-2026</td>
+                        <td>₹ 25,480</td>
+                        <td>Bank Transfer</td>
+                        <td>PAY-240826-01</td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="completed-btn">Paid</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>15-Oct-2026</td>
+                        <td>₹ 25,480</td>
+                        <td>Online</td>
+                        <td>PAY-240826-01</td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="completed-btn">Paid</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-DETAILS-MODAL ------->
+
+    <!----- VIEW-DOWNLOAD-RECEIPT-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewDownloadReceiptDetailsModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header justify-content-end">
+            <div class="content-table-btn-part text-end justify-content-end">
+              <button type="button" class="browse-btn"><i class="bi bi-download"></i> Download</button>
+            </div>
+          </div>
+          <div class="modal-body pt-2">
+            <div class="modal-content-box">
+              <div class="pre-pdf-downloader">
+                <img src="assets/images/thinkray-logo.png" alt="thinkray-logo" />
+                <h5>Pre-Paid Payment Receipt</h5>
+              </div>
+              <div class="payment-view">
+                <div class="payment-details">
+                  <div class="payment-row">
+                    <span>Centre</span>
+                    <strong>Medicare Imaging</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Payment Date</span>
+                    <strong>24-Aug-2026</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Amount</span>
+                    <strong>₹ 25,260</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Payment Mode</span>
+                    <strong>Online</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Transaction ID</span>
+                    <strong>PAY-240826-01</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Status</span>
+                    <strong>Paid</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-DOWNLOAD-RECEIPT-DETAILS-MODAL ------->
+
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
 
