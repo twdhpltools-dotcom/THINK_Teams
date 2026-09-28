@@ -521,6 +521,10 @@ span.trend-verified-badge {
     border: 3px solid var(--light);
     outline: 1px solid #19e584;
 }
+
+.hidden {
+  display: none;
+}
 /*--------------------------------------------- PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- TOP-HEADER SECTION START ---------------------------------------------- */
@@ -2158,7 +2162,20 @@ span.tat-box h6.without-tat {
 
 /* ----------------------------------------- ADMIN-POST-PAY-PAGE START ---------------------------------------------- */
 .content-table.admin-post-pay .content-table-btn-part {
-    gap: 15px;
+    gap: 12px;
+}
+
+.content-table.admin-post-pay .content-table-btn-part h6 {
+    font-size: 90%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.content-table.admin-post-pay .content-table-btn-part h6 span {
+    color: var(--primary);
+    font-weight: 600;
 }
 
 .content-table.admin-post-pay .content-table-btn-part button.print-btn,
@@ -2474,50 +2491,65 @@ span.tat-box h6.without-tat {
     color: var(--dark);
 }
 
-.billing-summary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+.account-summary {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid #dfe5ec;
+    border-radius: 6px;
+    overflow: hidden;
+    background: VAR(--light);
 }
 
-.billing-box {
+.account-summary.post-pay {
+    grid-template-columns: repeat(4,1fr);
+}
+
+.summary-item {
+    padding: 7px 10px;
+    border-right: 1px solid #e5e9ef;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.summary-item:last-child {
+    border: 0;
+}
+
+.summary-item span {
+    display: block;
+    color: #7c8799;
+    font-size: 80%;
+}
+
+.summary-item strong {
+    display: block;
+    margin-top: 1px;
+    color: var(--dark);
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.summary-item strong.due {
+    color: #e34141;
+}
+
+.pre-pdf-downloader {
     height: auto;
     width: 100%;
-    max-width: 220px;
-    padding: 12px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    border: 1px solid #d8dce3;
-    border-radius: 10px;
-    background: var(--light);
-}
-
-.billing-box strong {
-    font-size: 80%;
+    margin-bottom: 5px;
     color: var(--dark);
-    white-space: nowrap;
 }
 
-.billing-box span {
-    font-size: 85%;
-    font-weight: 500;
-    color: var(--dark);
-    white-space: nowrap;
+.pre-pdf-downloader img {
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 5px;
 }
 
-.billing-box.due {
-    border-color: #ff3838;
-    background: #fffafa;
-}
-
-.billing-box.due span {
-    color: #e31616;
-    font-weight: 700;
+.pre-pdf-downloader h5 {
+    font-size: 115%;
+    font-weight: 400;
 }
 
 .payment-view {
@@ -2568,13 +2600,14 @@ span.tat-box h6.without-tat {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 85%;
+    font-size: 90%;
     color:  #636b7b;
 }
 
 .payment-row strong {
-    font-size: 80%;
+    font-size: 85%;
     color: var(--dark);
+    font-weight: 500;
 }
 
 .payment-row.due {
@@ -2876,12 +2909,12 @@ p.login-error-msg:not(:empty) {
 }
 
 .payment-tabs .tab-btn {
-  padding: 10px 25px;
+  padding: 8px 15px;
   border: 1px solid transparent;
   border-bottom: 0;
   background: transparent;
   color: #444;
-  font-size: 85%;
+  font-size: 90%;
   font-weight: 600;
   cursor: pointer;
 }
@@ -2894,7 +2927,7 @@ p.login-error-msg:not(:empty) {
 }
 
 .tab-content {
-    padding: 18px 22px;
+    padding: 15px 20px;
 }
 
 .tab-content h5 {
@@ -2916,7 +2949,7 @@ p.login-error-msg:not(:empty) {
 
 .payment-history-box {
     width: 100%;
-    padding: 16px 20px;
+    padding: 10px 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background: #fafafa;
@@ -2927,7 +2960,7 @@ p.login-error-msg:not(:empty) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .payment-history-head h5 {
@@ -2938,18 +2971,18 @@ p.login-error-msg:not(:empty) {
 }
 
 .remaining-due {
-    padding: 8px 12px;
+    padding: 4px 10px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     border: 1px solid #d7d7d7;
-    border-radius: 5px;
-    background: #fff;
+    border-radius: 50px;
+    background: #fff0f0f2;
 }
 
 .remaining-due span {
     font-size: 80%;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .remaining-due strong {
@@ -2959,7 +2992,7 @@ p.login-error-msg:not(:empty) {
 
 .payment-history-item {
     position: relative;
-    padding: 14px 18px;
+    padding: 10px 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2987,16 +3020,9 @@ p.login-error-msg:not(:empty) {
 }
 
 .payment-history-left h4 {
-    margin: 0 0 4px;
-    font-size: 100%;
-    font-weight: 700;
+    font-size: 95%;
+    font-weight: 500;
     color: var(--dark);
-}
-
-.payment-history-left p {
-    margin: 0 !important;
-    font-size: 75%;
-    color: #6b7280;
 }
 
 .payment-history-actions {
@@ -3014,10 +3040,6 @@ p.login-error-msg:not(:empty) {
     font-size: 80%;
     font-weight: 600;
     cursor: pointer;
-}
-
-.hidden {
-  display: none;
 }
 /* ----------------------------------------- TAB-CONTENT COMPLETE ---------------------------------------------- */
 
