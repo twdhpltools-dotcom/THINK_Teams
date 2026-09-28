@@ -240,12 +240,6 @@
         width: 0;
         padding: 0;
     }
-    .sidebar-menu.collapsed .sidebar-menu-toggle {
-        position: fixed;
-        top: 9px;
-        left: 15px;
-        z-index: 102;
-    }
     .top-header,
     .top-header.expanded,
     section.page-section,
@@ -290,7 +284,6 @@
     }
     .top-header-user-name {
         margin-bottom: 0;
-        padding-left: 40px;
     }
     .profile-submenu a {
         padding: 5px 15px;
@@ -432,8 +425,8 @@
         padding: 120px 30px;
     }
     .field-icon.scaled {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
     }
     .upload-success-image {
         max-width: 65px;
@@ -442,8 +435,8 @@
         padding: 0 15px;
     }
     .sidebar-menu-toggle {
-        height: 32px;
-        width: 32px;
+        right: -22px;
+        width: 22px;
     }
     table thead tr th {
         padding: 7px 14px;
@@ -534,7 +527,7 @@
     }
     .pay-row {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 7px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -542,7 +535,7 @@
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) START ------------------------------*/
 @media only screen and (max-width: 576px) {
     .sidebar-menu-top .logo {
-        max-width: 170px;
+        max-width: 150px;
     }
     .table-pagination {
         justify-content: center;
@@ -776,6 +769,10 @@
     }
     .content-table-btn-part button.browse-btn.chat {
         padding: 6px 0 !important;
+    }
+    .pay-row {
+        flex-wrap: wrap;
+        gap: 5px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
