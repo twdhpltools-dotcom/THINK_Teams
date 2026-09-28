@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 justify-content-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Cases List</h1>
@@ -213,14 +213,14 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="search-input">
               <input type="text" name="" placeholder="" />
               <i class="bi bi-search search-right-icon"></i>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
             <select name="">
               <option value="0" selected>All Study Types</option>
               <option value="1">X-Ray</option>
@@ -230,7 +230,7 @@
             </select>
           </div>
 
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
             <select name="">
               <option value="0" selected>All Status</option>
               <option value="1">Completed</option>
@@ -238,7 +238,7 @@
             </select>
           </div>
 
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
             <input type="date" name="" placeholder="" />
           </div>
         </div>
@@ -248,7 +248,7 @@
         <table>
           <thead>
             <tr>
-              <th>SL</th>
+              <th>#</th>
               <th>Patient info</th>
               <th>Study Description</th>
               <th>Status</th>
@@ -275,7 +275,7 @@
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
                   <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
-                  <em onclick="window.location.href='manual-add.html'">Add View</em>
+                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
                 </div>
               </td>
               <td>
@@ -291,8 +291,9 @@
                 <div class="content-table-text">
                   <div class="content-table-btn-part">
                     <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#printConfigModal"><i class="bi bi-printer"></i></button>
+                    <h6>Printed for 2 Times</h6>
                   </div>
-                  <h6>Printed for 2 Times <span>(Last Printed at: 10:24 AM)</span></h6>
+                  <h6><span>(Last Printed at: 10:24 AM)</span></h6>
                   <p>Approved By: Dr. Abhijit</p>
                 </div>
               </td>
@@ -326,8 +327,8 @@
                   <h5>Chest X-Ray</h5>
                   <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <div class="d-flex align-items-center">
-                    <em onclick="window.location.href='manual-add.html'">Add View</em>
-                    <em class="ps-3" onclick="window.location.href='manual-add.html'">Modify</em>
+                    <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
+                    <em class="ms-2" data-bs-toggle="modal" data-bs-target="#addViewManualModal">Modify</em>
                   </div>
                 </div>
               </td>
@@ -363,7 +364,7 @@
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
                   <p>Breathing difficulty · PA View</p>
-                  <em onclick="window.location.href='manual-add.html'">Add View</em>
+                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
                 </div>
               </td>
               <td>
@@ -399,8 +400,8 @@
                   <h5>Chest X-Ray</h5>
                   <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <div class="d-flex align-items-center">
-                    <em onclick="window.location.href='manual-add.html'">Add View</em>
-                    <em class="ps-3" onclick="window.location.href='manual-add.html'">Modify</em>
+                    <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
+                    <em class="ms-2" data-bs-toggle="modal" data-bs-target="#addViewManualModal">Modify</em>
                   </div>
                 </div>
               </td>
@@ -436,7 +437,7 @@
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
                   <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
-                  <em onclick="window.location.href='manual-add.html'">Add View</em>
+                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
                 </div>
               </td>
               <td>
@@ -471,7 +472,7 @@
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
                   <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
-                  <em onclick="window.location.href='manual-add.html'">Add View</em>
+                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
                 </div>
               </td>
               <td>
@@ -778,6 +779,69 @@
       </div>
     </div>
     <!----- BREATHING-FULL-MODAL ------->
+
+    <!----- ADD-VIEW-MANUAL-MODAL ------->
+    <div class="modal fade" id="addViewManualModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="row gx-3 gy-4">
+                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                  <div class="form-formalities-box">
+                    <div class="row gx-3 gy-2 align-items-center justify-content-end mb-2">
+                      <div class="col-xl-8 col-md-6 col-sm-12 col-12">
+                        <h5>Select &amp; Add Views</h5>
+                      </div>
+                      <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                        <div class="content-table-btn-part text-end align-items-center justify-content-end">
+                          <p class="pe-2 mb-0" style="white-space: nowrap; color: var(--dark);">9 Selected</p>
+                          <select name="">
+                            <option value="1" selected="">All Modalities</option>
+                            <option value="2">DX</option>
+                            <option value="3">CT</option>
+                            <option value="4">MRI</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="view-selector">
+                      <div class="login-input">
+                        <i class="bi bi-search login-left-icon"></i>
+                        <input type="text" name="" placeholder="Search views">
+                      </div>
+
+                      <div class="view-chip-list" id="viewChipList">
+                        <button type="button" class="view-chip">CHEST PA VIEW</button>
+                        <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                        <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                        <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                        <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                        <button type="button" class="view-chip active">PNS OM VIEW</button>
+                        <button type="button" class="view-chip">CHEST PA VIEW</button>
+                        <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                        <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                        <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                        <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                        <button type="button" class="view-chip active">PNS OM VIEW</button>
+                        <button type="button" class="view-chip">CHEST PA VIEW</button>
+                        <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                        <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                        <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                        <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                        <button type="button" class="view-chip active">PNS OM VIEW</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- ADD-VIEW-MANUAL-MODAL ------->
 
   </main>
   <!----------------------------------- CASE-LIST-PAGE ------------------------------------------------->

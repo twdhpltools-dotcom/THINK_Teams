@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay View Billing History | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Doctor Start Create Report | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,7 +29,7 @@
 
 <body>
 
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
@@ -38,36 +38,21 @@
 
         <div class="col-xl-3 col-lg-12 col-md-9 col-9">
           <div class="top-header-user-name">
-            <h4>Niramay Diagnostic</h4>
+            <h4>Thinkray Doctor</h4>
           </div>
         </div>
 
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet">
-              <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
-              <p>Balance</p>
-              <h6>₹6,540</h6>
-            </div>
-
             <div class="user-supports">
-              <div class="user-call-supports">
-                <span class="call-supports-icon">
-                  <i class="bi bi-telephone-outbound"></i>
-                </span>
-                <div>
-                  <h6>Support Call: 08062179988</h6>
-                  <p>Mon to Sat · 10 AM – 07 PM</p>
-                </div>
-              </div>
               <div class="user-notification" onclick="window.location.href='notification.html'">
                 <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
               </div>
               <div class="profile-wrapper">
 
                 <div class="user-profile" onclick="toggleProfileMenu(event)">
-                  <h6>Bactro Clinical Laboratory</h6>
+                  <h6>Dr. Abhijit Das</h6>
                   <i class="bi bi-chevron-down"></i>
                 </div>
 
@@ -75,13 +60,13 @@
                 <div id="ProfileSubMenu" class="profile-submenu">
                   <a href="change-password.html">
                     <span class="profile-submenu-icon">
-                      <img src="assets/images/password-icon.png" alt="change password icon" />
+                      <img src="assets/images/password-icon.png" alt="change password icon">
                     </span>
                     Change Password
                   </a>
                   <a href="login.html" class="log-anchor">
                     <span class="profile-submenu-icon">
-                      <img src="assets/images/logout-icon.png" alt="logout icon" />
+                      <img src="assets/images/logout-icon.png" alt="logout icon">
                     </span>
                     Logout
                   </a>
@@ -117,41 +102,33 @@
       </div>
 
       <div class="sidebar-menu-nav">
-        <a href="index.html">
+        <a href="doctor-index.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-clock"></i>
           </span>
-          <p>Pending</p>
+          <p>Pending Accept</p>
+          <em class="counter-chip">8</em>
         </a>
-        <a href="case-lists.html">
+        <a href="doctor-assign.html" class="active">
           <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-file-earmark-text"></i>
+            <i class="bi bi-person-check"></i>
           </span>
-          <p>List of Cases</p>
+          <p>Assign</p>
+          <em class="counter-chip">12</em>
         </a>
-        <a href="history.html">
+        <a href="doctor-approve.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-check2-circle"></i>
+          </span>
+          <p>Approve</p>
+          <em class="counter-chip">24</em>
+        </a>
+        <a href="doctor-request.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-file-earmark-check"></i>
           </span>
-          <p>Modify History</p>
-        </a>
-        <a href="c-history.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-stopwatch"></i>
-          </span>
-          <p>Charge History</p>
-        </a>
-        <a href="r-history.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-arrow-clockwise"></i>
-          </span>
-          <p>Recharge History</p>
-        </a>
-        <a href="b-history.html" class="active">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-clipboard2-data"></i>
-          </span>
-          <p>Billing History</p>
+          <p>Request Review</p>
+          <em class="counter-chip">4</em>
         </a>
         <a href="template.html">
           <span class="sidebar-menu-nav-icon">
@@ -159,46 +136,6 @@
           </span>
           <p>Template</p>
         </a>
-        <a href="configure.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-gear"></i>
-          </span>
-          <p>Configure</p>
-        </a>
-        <a href="manual-add.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-plus-circle"></i>
-          </span>
-          <p>Manual Add</p>
-        </a>
-        <a href="payment.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-credit-card-2-back"></i>
-          </span>
-          <p>Online Payment</p>
-        </a>
-        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-building-gear"></i>
-          </span>
-          <p>Center Info</p>
-          <i class="bi bi-chevron-down sub-down-icon"></i>
-        </a>
-
-        <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html">
-            <span class="sidebar-menu-nav-icon">
-              <i class="bi bi-person-square"></i>
-            </span>
-            <p>Self Doctor</p>
-          </a>
-          <a href="interface.html">
-            <span class="sidebar-menu-nav-icon">
-              <i class="bi bi-file-earmark-text"></i>
-            </span>
-            <p>Interface Info</p>
-          </a>
-        </div>
       </div>
     </aside>
     <!----- SIDEBAR-MENU ------->
@@ -208,94 +145,143 @@
         <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <h1>September 2026 Billing</h1>
-              <p>TR-INV-SEP-2026-014 · 8 Cases</p>
-            </div>
-          </div>
-        </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn"><i class="bi bi-file-earmark-arrow-down"></i> Download Invoice</button>
-              <button type="button" class="browse-btn">Pay Now</button>
+              <h1>Create Report</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="form-formalities-box">
-        <h5 class="mb-0">Case Details</h5>
-        <p>Cases included in this bill</p>
+      <div class="content-formalities d-block">
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            
 
-        <div class="content-table self-doctor">
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Inv No</th>
-                <th>Patient</th>
-                <th>Study</th>
-                <th>Date</th>
-                <th>Charge</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>01</td>
-                <td>Inv-1078</td>
-                <td>Rina Das</td>
-                <td>CT Brain Plain</td>
-                <td>03 Sep 2026</td>
-                <td>₹ 2,400</td>
-              </tr>
-              <tr>
-                <td>01</td>
-                <td>Inv-1078</td>
-                <td>Subhajit Roy</td>
-                <td>Chest X-Ray PA</td>
-                <td>03 Sep 2026</td>
-                <td>₹ 2,400</td>
-              </tr>
-              <tr>
-                <td>01</td>
-                <td>Inv-1078</td>
-                <td>Ananya Sen</td>
-                <td>MRI Knee Plain</td>
-                <td>03 Sep 2026</td>
-                <td>₹ 2,400</td>
-              </tr>
-              <tr>
-                <td>01</td>
-                <td>Inv-1078</td>
-                <td>Rina Das</td>
-                <td>CT Brain Plain</td>
-                <td>03 Sep 2026</td>
-                <td>₹ 2,400</td>
-              </tr>
-              <tr>
-                <td>01</td>
-                <td>Inv-1078</td>
-                <td>Subhajit Roy</td>
-                <td>Chest X-Ray PA</td>
-                <td>03 Sep 2026</td>
-                <td>₹ 2,400</td>
-              </tr>
-              <tr>
-                <td>01</td>
-                <td>Inv-1078</td>
-                <td>Ananya Sen</td>
-                <td>MRI Knee Plain</td>
-                <td>03 Sep 2026</td>
-                <td>₹ 2,400</td>
-              </tr>
-            </tbody>
-          </table>
+
+
+<!-----  EXTRA-CHANGES ------->
+<div class="report-editor-box">
+
+  <div class="report-editor-head">
+    <h5>Create Report</h5>
+
+    <div class="report-actions">
+      <button type="button" class="approve-btn">Approve & Done</button>
+      <button type="button" class="save-btn">Save</button>
+    </div>
+  </div>
+
+  <div class="editor-toolbar">
+    <button type="button" onclick="editorCmd('undo')">
+      <i class="bi bi-arrow-counterclockwise"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('redo')">
+      <i class="bi bi-arrow-clockwise"></i>
+    </button>
+
+    <select onchange="formatBlock(this.value)">
+      <option value="">Formats</option>
+      <option value="p">Paragraph</option>
+      <option value="h1">Heading 1</option>
+      <option value="h2">Heading 2</option>
+      <option value="h3">Heading 3</option>
+    </select>
+
+    <button type="button" onclick="editorCmd('bold')">
+      <i class="bi bi-type-bold"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('italic')">
+      <i class="bi bi-type-italic"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('underline')">
+      <i class="bi bi-type-underline"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('copy')">
+      <i class="bi bi-files"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('insertUnorderedList')">
+      <i class="bi bi-list-ul"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('insertOrderedList')">
+      <i class="bi bi-list-ol"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('justifyLeft')">
+      <i class="bi bi-text-left"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('justifyCenter')">
+      <i class="bi bi-text-center"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('justifyRight')">
+      <i class="bi bi-text-right"></i>
+    </button>
+
+    <button type="button" onclick="editorCmd('justifyFull')">
+      <i class="bi bi-justify"></i>
+    </button>
+
+    <label class="toolbar-color">
+      <i class="bi bi-fonts"></i>
+      <input type="color" onchange="setTextColor(this.value)">
+    </label>
+  </div>
+
+  <div class="report-editor-content">
+
+    <div class="patient-info-table">
+
+      <div><span>Case No.</span><strong>18521</strong></div>
+      <div><span>Study</span><strong>L-S SPINE AP/LAT</strong></div>
+
+      <div><span>Patient Name</span><strong>Md Sohail</strong></div>
+      <div><span>Modality</span><strong>DX</strong></div>
+
+      <div><span>Age / Gen</span><strong>23 Years | Male</strong></div>
+      <div><span>Date / Time</span><strong>18 Aug 2026 04:11 PM</strong></div>
+
+      <div><span>Referred by</span><strong>Unassigned</strong></div>
+      <div><span>Centre</span><strong>KMCK by Reliable</strong></div>
+
+    </div>
+
+    <div class="report-writing-area">
+      <h4>L-SPINE</h4>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  function showReport(){
+  document.getElementById("previewInstruction").style.display = "none";
+  document.getElementById("reportResult").style.display = "block";
+}
+
+function clearReport(){
+  document.getElementById("reportResult").style.display = "none";
+  document.getElementById("previewInstruction").style.display = "block";
+}
+</script>
+<!-----  EXTRA-CHANGES ------->
+
+
+
+
+          </div>
         </div>
       </div>
     </section>
 
   </main>
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
