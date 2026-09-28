@@ -63,6 +63,14 @@ function openMobileMenu() {
   menu.classList.toggle("open");
 }
 /*-------------------- MOBILE-MENU ----------------------*/
+/*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+
+/*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
+/*-------------------- CHARGE-SECTION ----------------------*/
+document.querySelector(".toggle-btn")?.addEventListener("click", () => {
+  document.querySelector(".toggle-div")?.classList.toggle("hidden");
+});
+/*-------------------- CHARGE-SECTION ----------------------*/
 
 /*-------------------- SELECT-RESPECTIVE ----------------------*/
 const tdsSelect = document.getElementById("tdsSelect");
@@ -82,14 +90,6 @@ tdsSelect.addEventListener("change", function () {
   }
 });
 /*-------------------- SELECT-RESPECTIVE ----------------------*/
-/*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
-
-/*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
-/*-------------------- CHARGE-SECTION ----------------------*/
-document.querySelector(".toggle-btn")?.addEventListener("click", () => {
-  document.querySelector(".toggle-div")?.classList.toggle("hidden");
-});
-/*-------------------- CHARGE-SECTION ----------------------*/
 /*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
