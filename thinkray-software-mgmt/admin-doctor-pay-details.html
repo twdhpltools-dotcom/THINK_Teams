@@ -229,59 +229,40 @@
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
           <div class="col-xl-2 col-md-3 col-sm-4 col-5">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn"><i class="bi bi-download"></i> Export Report</button>
-            </div>
+            <input type="date" name="" placeholder="Enter Date">
           </div>
         </div>
       </div>
 
-      <div class="content-formalities pb-4">
-        <div class="row gx-3 gy-3">
-          <div class="col-xl-2 col-lg-3 col-md-12 col-sm-12 col-12">
-            <div class="payment-formalities-box compact">
-              <div>
-                <h6>Total Approved Cases</h6>
-                <h3>42</h3>
-              </div>
+      <div class="form-formalities-box mb-3">
+        <h5 class="mb-0">Payment History</h5>
+        <p>Payment History</p>
+
+        <div class="pay-row">
+          <div class="pay-period">
+            <div class="pay-icon">₹</div>
+            <div>
+              <h6>10 Aug 2026 – 18 Aug 2026</h6>
+              <p>Payment period</p>
             </div>
           </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box compact">
-              <div>
-                <h6>DX</h6>
-                <h3>19</h3>
-              </div>
-            </div>
+          <div>
+            <span>PAYMENT DATE</span>
+            <h6>20 Aug 2026</h6>
           </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box compact">
-              <div>
-                <h6>CT</h6>
-                <h3>11</h3>
-              </div>
-            </div>
+          <div>
+            <span>AMOUNT</span>
+            <h5>₹3,000</h5>
           </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box compact">
-              <div>
-                <h6>MRI</h6>
-                <h3>8</h3>
-              </div>
-            </div>
+          <div>
+            <span>PAYMENT DETAILS</span>
+            <p>Bank Transfer · TXN-DOC-001</p>
           </div>
 
-          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6">
-            <div class="payment-formalities-box compact">
-              <div>
-                <h6>ECG</h6>
-                <h3>4</h3>
-              </div>
-            </div>
-          </div>
+          <div class="paid">Paid</div>
         </div>
       </div>
 
@@ -289,8 +270,8 @@
         <div class="row gx-3 gy-2 justify-content-between">
           <div class="col-xl-6 col-md-6 col-sm-6 col-6">
             <div class="page-section-heading others">
-              <h2>Approved Cases & Patient Details</h2>
-              <p>42 approved cases</p>
+              <h2>Approved Cases</h2>
+              <p>30 approved cases</p>
             </div>
           </div>
           <div class="col-xl-2 col-md-2 col-sm-6 col-6">
@@ -420,15 +401,15 @@
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
-              <td colspan="6">
+              <td colspan="6"><b>Total</b></td>
+              <td>
                 <div class="d-flex align-items-center">
-                  <b>Total</b>
-                  <div class="content-table-btn-part ms-2">
+                  <b>₹ 720</b>
+                  <div class="content-table-btn-part ms-3">
                     <button type="button" class="submitted-btn inv dyna" onclick="markPaid(this)">Mark as Paid</button>
                   </div>
                 </div>
               </td>
-              <td><b>₹ 720</b></td>
             </tr>
           </tbody>
         </table>
