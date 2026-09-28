@@ -208,6 +208,13 @@
           </a>
         </div>
 
+        <a href="admin-tds.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+          </span>
+          <p>TDS</p>
+        </a>
+
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -258,7 +265,7 @@
 
           <div class="col-xl-6 col-md-3 col-sm-12 col-12">
             <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createCentreModal"><i class="bi bi-plus-lg"></i> Add Centre</button>
+              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createCentreModal"><i class="bi bi-plus-lg"></i> Create Credit Account</button>
             </div>
           </div>
         </div>
@@ -284,7 +291,7 @@
               <td>₹ 1,42,600</td>
               <td>
                 <div class="content-table-btn-part">
-                  <h6><span>2%</span> ₹ 2,850</h6>
+                  <h6><span>2%</span> (₹ 2,850)</h6>
                 </div>
               </td>
               <td>
@@ -314,7 +321,7 @@
               <td>₹ 1,42,600</td>
               <td>
                 <div class="content-table-btn-part">
-                  <h6><span>2%</span> ₹ 2,850</h6>
+                  <h6><span>2%</span> (₹ 2,850)</h6>
                 </div>
               </td>
               <td>
@@ -357,16 +364,14 @@
                     </select>
                   </div>
                   <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <select name="" required>
+                    <select name="" id="tdsSelect" required>
                       <option value="0" selected="">TDS *</option>
                       <option value="1">No</option>
                       <option value="2">Yes</option>
                     </select>
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="note-check-comment">
-                      <p><span>*</span>Centre can be changed later. A Centre change applies to future billing only and does not change historical transactions.</p>
-                    </div>
+                    <input type="number" id="tdsPercentageBox" name="" value="" placeholder="Enter TDS Percentage (%) *" required />
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <div class="content-table-btn-part justify-content-center">

@@ -274,7 +274,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p>Breathing difficulty · PA View</p>
+                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
@@ -283,25 +283,27 @@
                   <button type="button" class="completed-btn">Completed</button>
                   <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#editReportStatusModal"><i class="bi bi-pencil-square pe-0"></i></button>
                 </div>
-                <div class="content-table-btn-part">
-                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">1</span>
-                  <span class="count-badge mx-1" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">2</span>
-                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">3</span>
+                <div class="content-table-text">
+                  <a href="#">Original version</a>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="content-table-btn-part">
                     <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#printConfigModal"><i class="bi bi-printer"></i></button>
-                    <h6>Printed for 2 Times <span>(Last Printed at: 10:24 AM)</span></h6>
                   </div>
+                  <h6>Printed for 2 Times <span>(Last Printed at: 10:24 AM)</span></h6>
                   <p>Approved By: Dr. Abhijit</p>
-                  <a href="#">Original version</a>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn" class="edit-btn" data-bs-toggle="modal" data-bs-target="#requestRecheckModal">Request Recheck</button>
+                  <button type="button" class="warning-btn" class="edit-btn" data-bs-toggle="modal" data-bs-target="#requestRecheckModal">Request Review</button>
+                </div>
+                <div class="content-table-btn-part mt-1">
+                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">1</span>
+                  <span class="count-badge mx-1" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">2</span>
+                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">3</span>
                 </div>
               </td>
             </tr>
@@ -322,7 +324,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p>Breathing difficulty · PA View</p>
+                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <div class="d-flex align-items-center">
                     <em onclick="window.location.href='manual-add.html'">Add View</em>
                     <em class="ps-3" onclick="window.location.href='manual-add.html'">Modify</em>
@@ -339,7 +341,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn disbaled">Request Recheck</button>
+                  <button type="button" class="warning-btn disbaled">Request Review</button>
                 </div>
               </td>
             </tr>
@@ -395,7 +397,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p>Breathing difficulty · PA View</p>
+                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <div class="d-flex align-items-center">
                     <em onclick="window.location.href='manual-add.html'">Add View</em>
                     <em class="ps-3" onclick="window.location.href='manual-add.html'">Modify</em>
@@ -412,7 +414,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn disbaled">Request Recheck</button>
+                  <button type="button" class="warning-btn disbaled">Request Review</button>
                 </div>
               </td>
             </tr>
@@ -433,7 +435,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p>Breathing difficulty · PA View</p>
+                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
@@ -468,7 +470,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p>Breathing difficulty · PA View</p>
+                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
                   <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
@@ -749,6 +751,33 @@
       </div>
     </div>
     <!----- PRINT-CONFIGURE-MODAL ------->
+
+    <!----- BREATHING-FULL-MODAL ------->
+    <div class="modal fade" id="breatingFullModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>Study Description</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="status-check-comment">
+                      <p>Breathing difficulty with intermittent chest discomfort and persistent cough for the last few days. PA view requested. Please correlate with clinical findings and review the chest radiograph carefully.</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- BREATHING-FULL-MODAL ------->
 
   </main>
   <!----------------------------------- CASE-LIST-PAGE ------------------------------------------------->

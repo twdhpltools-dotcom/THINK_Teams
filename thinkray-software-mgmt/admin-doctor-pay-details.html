@@ -208,6 +208,13 @@
           </a>
         </div>
 
+        <a href="admin-tds.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+          </span>
+          <p>TDS</p>
+        </a>
+
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -227,54 +234,17 @@
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-2 col-md-3 col-sm-4 col-5">
-            <input type="date" name="" placeholder="Enter Date">
-          </div>
-        </div>
-      </div>
-
-      <div class="form-formalities-box mb-3">
-        <h5 class="mb-0">Payment History</h5>
-        <p>Payment History</p>
-
-        <div class="pay-row">
-          <div class="pay-period">
-            <div class="pay-icon">₹</div>
-            <div>
-              <h6>10 Aug 2026 – 18 Aug 2026</h6>
-              <p>Payment period</p>
-            </div>
-          </div>
-
-          <div>
-            <span>PAYMENT DATE</span>
-            <h6>20 Aug 2026</h6>
-          </div>
-
-          <div>
-            <span>AMOUNT</span>
-            <h5>₹3,000</h5>
-          </div>
-
-          <div>
-            <span>PAYMENT DETAILS</span>
-            <p>Bank Transfer · TXN-DOC-001</p>
-          </div>
-
-          <div class="paid">Paid</div>
-        </div>
       </div>
 
       <div class="content-formalities">
         <div class="row gx-3 gy-2 justify-content-between">
-          <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
             <div class="page-section-heading others">
-              <h2>Approved Cases</h2>
+              <h2>Case History</h2>
               <p>30 approved cases</p>
             </div>
           </div>
-          <div class="col-xl-2 col-md-2 col-sm-6 col-6">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
             <select name="">
               <option value="0" selected="">All Modalities</option>
               <option value="1">RDX</option>
@@ -282,6 +252,15 @@
               <option value="1">MRI</option>
               <option value="2">ECG</option>
             </select>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-5">
+            <input type="date" name="" placeholder="Enter Date">
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-4 col-5">
+            <div class="content-table-btn-part text-end justify-content-end">
+              <button type="button" class="browse-btn" onclick="window.location.href='admin-doctor-pay-history.html'">Payment History</button>
+              <button type="button" class="browse-btn">Export</button>
+            </div>
           </div>
         </div>
       </div>
@@ -295,7 +274,7 @@
               <th>Centre</th>
               <th>Study</th>
               <th>Modality</th>
-              <th>Approved Date & Time</th>
+              <th>Date</th>
               <th>Doctor Charge</th>
             </tr>
           </thead>
@@ -303,101 +282,96 @@
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h6>TR-260810-1101</h6>
+                  <h6>26013</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Rupali Guha Roy</h5>
-                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>Diagnosis And Cure Centre</td>
               <td>Chest X-Ray PA View</td>
               <td>DX</td>
-              <td>10 Aug 2026 · 09:00</td>
+              <td>10-Aug-2026</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h6>TR-260810-1101</h6>
+                  <h6>26013</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>MD. Ajima Mondal</h5>
-                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>City Diagnostic</td>
               <td>X-Ray Knee AP/Lateral</td>
               <td>DX</td>
-              <td>10 Aug 2026 · 09:00</td>
+              <td>10-Aug-2026</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h6>TR-260810-1101</h6>
+                  <h6>26013</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Ms. Chaitali Dhar</h5>
-                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>Prime Scan Centre</td>
               <td>Hand AP/Oblique View</td>
               <td>DX</td>
-              <td>10 Aug 2026 · 09:00</td>
+              <td>10-Aug-2026</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h6>TR-260810-1101</h6>
+                  <h6>26013</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Abdullah Ali SK</h5>
-                    <p>24 yrs · M</p>
                   </div>
                 </div>
               </td>
               <td>Diagnosis And Cure Centre</td>
               <td>Chest X-Ray PA View</td>
               <td>DX</td>
-              <td>10 Aug 2026 · 09:00</td>
+              <td>10-Aug-2026</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
               <td>
                 <div class="content-table-text">
-                  <h6>TR-260810-1101</h6>
+                  <h6>26013</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Rupali Guha Roy</h5>
-                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>City Diagnostic</td>
               <td>X-Ray Knee AP/Lateral</td>
               <td>DX</td>
-              <td>10 Aug 2026 · 09:00</td>
+              <td>10-Aug-2026</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
