@@ -63,6 +63,25 @@ function openMobileMenu() {
   menu.classList.toggle("open");
 }
 /*-------------------- MOBILE-MENU ----------------------*/
+
+/*-------------------- SELECT-RESPECTIVE ----------------------*/
+const tdsSelect = document.getElementById("tdsSelect");
+const tdsPercentageBox = document.getElementById("tdsPercentageBox");
+const tdsPercentage = document.getElementById("tdsPercentage");
+
+tdsPercentageBox.style.display = "none";
+
+tdsSelect.addEventListener("change", function () {
+  if (this.value === "2") {
+    tdsPercentageBox.style.display = "block";
+    tdsPercentage.required = true;
+  } else {
+    tdsPercentageBox.style.display = "none";
+    tdsPercentage.required = false;
+    tdsPercentage.value = "";
+  }
+});
+/*-------------------- SELECT-RESPECTIVE ----------------------*/
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
 /*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
