@@ -157,12 +157,13 @@
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
           <div class="col-xl-5 col-md-5 col-sm-5 col-5">
-            <select name="" required>
-              <option value="0">Date</option>
-              <option value="1">Today</option>
-              <option value="2">This Month</option>
-              <option value="3">Last Month</option>
-              <option value="4">Last Year</option>
+            <select id="dateFilter" onchange="openCustomDate(this)">
+              <option value="1" selected>Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">7 days</option>
+              <option value="4">15 days</option>
+              <option value="5">1 month</option>
+              <option value="6">Customized Date Range</option>
             </select>
           </div>
           <div class="col-xl-7 col-md-7 col-sm-7 col-7">
@@ -229,10 +230,11 @@
           <span>Show</span>
 
           <select class="page-limit">
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-            <option value="100">100</option>
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
           </select>
 
           <span>per page</span>
