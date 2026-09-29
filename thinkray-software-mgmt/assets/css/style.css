@@ -287,7 +287,6 @@ button.disbaled {
 }
 
 .content-table-btn-part button.browse-btn {
-    padding: 8px 15px;
     background: #fff9fe;
     border: 1px solid #9f0d7fcf;
     color: var(--primary);
@@ -3134,6 +3133,7 @@ p.login-error-msg:not(:empty) {
     padding: 7px 14px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 12px;
     background: var(--light);
     border: 1px solid #b4c6dc;
@@ -3182,7 +3182,7 @@ p.login-error-msg:not(:empty) {
 }
 
 .status-content {
-    padding: 5px 15px 10px;
+    padding: 0 15px 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 6px 10px;
@@ -3192,7 +3192,7 @@ p.login-error-msg:not(:empty) {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 80%;
+    font-size: 85%;
     cursor: pointer;
     white-space: nowrap;
 }

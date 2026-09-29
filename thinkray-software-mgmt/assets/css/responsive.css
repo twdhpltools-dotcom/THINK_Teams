@@ -692,14 +692,14 @@
     }
     ul.doctor-info-listing {
         border: none;
-        padding-left: 5px;
     }
     .doctor-calender-part {
         display: flex;
-        flex-wrap: wrap;
-        gap: 6px 14px;
+        flex-direction: column;
+        align-items: start;
+        gap: 4px 14px;
         justify-content: start;
-        padding: 8px 0;
+        padding: 6px 0;
         margin: 0;
     }
     .doctor-cta-part {
