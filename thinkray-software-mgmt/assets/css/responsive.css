@@ -188,10 +188,6 @@
         top: 20px;
         left: 0;
     }
-    .content-formalities {
-        flex-direction: column;
-        align-items: start;
-    }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
 
@@ -400,6 +396,9 @@
     .doctor-description-box.notification {
         padding-left: 12px;
     }
+    .content-formalities {
+        flex-wrap: wrap;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -539,6 +538,10 @@
     }
     .field-formalities-box h5 {
         margin-bottom: 5px;
+    }
+    .filter-content {
+        min-width: 300px;
+        top: 40px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -784,6 +787,9 @@
     .pay-row {
         flex-wrap: wrap;
         gap: 5px;
+    }
+    .filter-content {
+        min-width: 280px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
