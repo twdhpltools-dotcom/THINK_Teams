@@ -267,7 +267,6 @@ function openTab(btn) {
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 document.getElementById("FileUpload")?.addEventListener("change", function () {
   const file = this.files[0];
-
   if (!file) return;
 
   const previewBox = document.getElementById("FilePreview");
@@ -275,20 +274,23 @@ document.getElementById("FileUpload")?.addEventListener("change", function () {
   const fileName = document.getElementById("FileName");
   const fileMeta = document.getElementById("FileMeta");
 
-  previewImage.src = URL.createObjectURL(file);
-
   fileName.textContent = file.name;
 
-  const fileSize = (file.size / 1024).toFixed(0);
+  const fileURL = URL.createObjectURL(file);
+  previewImage.src = fileURL;
+
+  const fileSize = Math.round(file.size / 1024);
 
   const img = new Image();
 
   img.onload = function () {
     fileMeta.textContent =
-      "PNG · " + fileSize + " KB · " + img.width + "×" + img.height + " px";
+      file.type.replace("image/", "").toUpperCase() +
+      " · " + fileSize + " KB · " +
+      img.width + "×" + img.height + " px";
   };
 
-  img.src = previewImage.src;
+  img.src = fileURL;
 
   previewBox.classList.add("show");
 });
