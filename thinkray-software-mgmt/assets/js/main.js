@@ -264,6 +264,62 @@ function openTab(btn) {
 }
 /*-------------------------------------- TAB-CONTENT ----------------------------------------*/
 
+/*-------------------------------------- ACCORDIAN ----------------------------------------*/
+/*-------------------- FILTER-SEARCH ----------------------*/
+function toggleFilter(btn) {
+  btn.nextElementSibling.classList.toggle("hidden");
+  btn.querySelector("i")?.classList.toggle("rotate");
+}
+
+function toggleStatus(btn) {
+  btn.nextElementSibling.classList.toggle("hidden");
+  btn.querySelector("i")?.classList.toggle("rotate");
+}
+/*-------------------- FILTER-SEARCH ----------------------*/
+/*-------------------------------------- ACCORDIAN ----------------------------------------*/
+
+/*-------------------------------------- PAGINATION-SORT ----------------------------------------*/
+const totalItems = 95;
+
+const range = document.querySelector(".page-range");
+const limit = document.querySelector(".page-limit");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+let currentPage = 1;
+
+function updatePagination(){
+  const perPage = Number(limit.value);
+
+  const start = (currentPage - 1) * perPage + 1;
+  const end = Math.min(currentPage * perPage, totalItems);
+
+  range.textContent = `${start} to ${end}`;
+
+  prev.disabled = currentPage === 1;
+  next.disabled = end >= totalItems;
+}
+
+next.addEventListener("click", function(){
+  currentPage++;
+  updatePagination();
+});
+
+prev.addEventListener("click", function(){
+  if(currentPage > 1){
+    currentPage--;
+    updatePagination();
+  }
+});
+
+limit.addEventListener("change", function(){
+  currentPage = 1;
+  updatePagination();
+});
+
+updatePagination();
+/*-------------------------------------- PAGINATION-SORT ----------------------------------------*/
+
 /*-------------------------------------- FILE-UPLOAD ----------------------------------------*/
 document.getElementById("FileUpload")?.addEventListener("change", function () {
   const file = this.files[0];
