@@ -284,7 +284,7 @@
                   <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#editReportStatusModal"><i class="bi bi-pencil-square pe-0"></i></button>
                 </div>
                 <div class="content-table-text">
-                  <a href="#">Original version</a>
+                  <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewOriginalReportModal">Original version</a>
                 </div>
               </td>
               <td>
@@ -301,7 +301,7 @@
                 <div class="content-table-btn-part">
                   <button type="button" class="warning-btn" class="edit-btn" data-bs-toggle="modal" data-bs-target="#requestRecheckModal">Request Review</button>
                 </div>
-                <div class="content-table-btn-part mt-1">
+                <div class="content-table-btn-part mt-2">
                   <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">1</span>
                   <span class="count-badge mx-1" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">2</span>
                   <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">3</span>
@@ -498,6 +498,12 @@
     <div class="modal fade" id="addClinicChargeModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Add Clinical History</h2>
+            </div>
+          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
@@ -537,6 +543,12 @@
     <div class="modal fade" id="editReportStatusModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Edit Report Status</h2>
+            </div>
+          </div>
           <div class="modal-body">
             <div class="modal-content-box">
 
@@ -658,6 +670,12 @@
     <div class="modal fade" id="requestRecheckModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Request for  Review</h2>
+            </div>
+          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
@@ -698,6 +716,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Recheck 1</h2>
             </div>
@@ -725,6 +744,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Print Preferences</h2>
             </div>
@@ -758,6 +778,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Study Description</h2>
             </div>
@@ -784,15 +805,18 @@
     <div class="modal fade" id="addViewManualModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Select & Add Views</h2>
+            </div>
+          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <div class="row gx-3 gy-4">
                 <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                   <div class="form-formalities-box">
                     <div class="row gx-3 gy-2 align-items-center justify-content-end mb-2">
-                      <div class="col-xl-8 col-md-6 col-sm-12 col-12">
-                        <h5>Select &amp; Add Views</h5>
-                      </div>
                       <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                         <div class="content-table-btn-part text-end align-items-center justify-content-end">
                           <p class="pe-2 mb-0" style="white-space: nowrap; color: var(--dark);">9 Selected</p>
@@ -836,12 +860,41 @@
                   </div>
                 </div>
               </div>
+              <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center mt-3">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!----- ADD-VIEW-MANUAL-MODAL ------->
+
+    <!----- VIEW-ORIGINAL-REPORT-MODAL ------->
+    <div class="modal fade" id="viewOriginalReportModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Original Report</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="lightbox-modal-image">
+                <img src="assets/images/main-report.jpg" alt="Main Report Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-ORIGINAL-REPORT-MODAL ------->
 
   </main>
   <!----------------------------------- CASE-LIST-PAGE ------------------------------------------------->
