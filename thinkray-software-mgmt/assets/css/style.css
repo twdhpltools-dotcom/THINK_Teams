@@ -827,6 +827,15 @@ span.profile-submenu-icon img {
     z-index: 103;
 }
 
+.sidebar-menu-toggle img {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.sidebar-menu-toggle img.rotate {
+    transform: rotate(0deg);
+}
+
 .sidebar-menu-nav {
     height: auto;
     width: 100%;
@@ -874,11 +883,11 @@ span.sidebar-menu-nav-icon {
 }
 
 span.sidebar-menu-nav-icon i {
-    font-size: 100%;
+    font-size: 110%;
 }
 
 .sidebar-menu.collapsed span.sidebar-menu-nav-icon i {
-    font-size: 110%;
+    font-size: 120%;
 }
 
 .sidebar-menu-nav a p {
@@ -1319,7 +1328,7 @@ span.sidebar-menu-nav-icon i {
 .instructed-part {
     display: flex;
     align-items: center;
-    gap: 0 10px;
+    gap: 0 7px;
 }
 
 .content-table.case-list .content-table-text h5 {
@@ -2788,6 +2797,23 @@ button.submitted-btn.inv.dyna.paid{
     max-width: 75px;
     margin: 0 18px 0 0;
 }
+
+#FilePreview {
+   display: none;
+}
+
+#FilePreview.show {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#FileName {
+    display: block;
+    margin: 0;
+    font-size: 75%;
+    color: var(--dark);
+}
 /* ----------------------------------------- FILE-UPLOAD COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- VALIDATE-ERROR START ---------------------------------------------- */
@@ -3050,7 +3076,6 @@ p.login-error-msg:not(:empty) {
     cursor: pointer;
 }
 /* ----------------------------------------- TAB-CONTENT COMPLETE ---------------------------------------------- */
-
 
 /* ----------------------------------------- EXTRA-CHANGES START ---------------------------------------------- */
 .report-layout{
