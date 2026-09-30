@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet" onclick="window.location.href='C-history.html'">
+            <div class="user-wallet">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,110 +205,53 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Notifications</h1>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-3 col-md-3 col-sm-6 col-6">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn">Mark all as read</button>
-            </div>
-          </div>
-          <div class="col-xl-9 col-md-9 col-sm-6 col-6">
-            <div class="filter-box">
-              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                Search &amp; Filter
-                <i class="bi bi-chevron-up" id="filterArrow"></i>
-              </button>
-
-              <div class="filter-content hidden">
-                <h5>Search</h5>
-
+        <div class="row gx-3 gy-2 justify-content-between">
+          <div class="col-xl-10 col-md-9 col-sm-8 col-7">
+            <div class="row gx-3 gy-2">
+              <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="search-input">
-                  <input type="text" name="" placeholder="Search n">
+                  <input type="text" name="" placeholder="" />
                   <i class="bi bi-search search-right-icon"></i>
                 </div>
+              </div>
 
-                <hr class="pg-hr mt-3 mb-2">
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6">
+                <select name="">
+                  <option value="0" selected>All Notifications</option>
+                  <option value="1">Last Months</option>
+                  <option value="2">2 Months ago</option>
+                  <option value="3">6 Months ago</option>
+                  <option value="4">1 Year ago</option>
+                </select>
+              </div>
 
-                <h5>Filters</h5>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Notifications
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> Last Months</label>
-                    <label><input type="checkbox"> 2 Months ago</label>
-                    <label><input type="checkbox"> 6 Months ago</label>
-                    <label><input type="checkbox"> 1 Year ago</label>
-                  </div>
-                </div>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Case Status
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> Open</label>
-                    <label><input type="checkbox"> Waiting for Acceptance</label>
-                    <label><input type="checkbox"> Assigned</label>
-                    <label><input type="checkbox"> Renew</label>
-                    <label><input type="checkbox"> Approved</label>
-                  </div>
-                </div>
-
-                <div class="filter-final">
-                  <div class="content-table-btn-part text-end justify-content-end">
-                    <button type="button" class="submitted-btn">Clear All</button>
-                    <button type="button" class="browse-btn">Apply</button>
-                  </div>
-                </div>
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6">
+                <select name="">
+                  <option value="0" selected>All Case Status</option>
+                  <option value="1">Open</option>
+                  <option value="2">Waiting for Acceptance</option>
+                  <option value="3">Assigned</option>
+                  <option value="4">Renew</option>
+                  <option value="5">Approved</option>
+                </select>
               </div>
             </div>
           </div>
+          
+          <div class="col-xl-2 col-md-3 col-sm-4 col-5">
+            <div class="content-table-btn-part text-end justify-content-end">
+              <button type="button" class="browse-btn"><i class="bi bi-check2-circle"></i> Mark all as read</button>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="doctor-description">
         <div class="doctor-description-box notification">

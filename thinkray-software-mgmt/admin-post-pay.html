@@ -208,13 +208,6 @@
           </a>
         </div>
 
-        <a href="admin-tds.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-file-earmark-bar-graph"></i>
-          </span>
-          <p>TDS</p>
-        </a>
-
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -227,179 +220,142 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Post-Paid List</h1>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-3 col-md-3 col-sm-3 col-12">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createCentreModal">Create Credit Account</button>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-3 col-sm-3 col-4">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected="">Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
+        <div class="row gx-3 gy-2">
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">All Centres</option>
+              <option value="1">Diagnosis &amp; Cure Centre</option>
+              <option value="2">City Diagnostic Centre</option>
+              <option value="3">Prime Scan Centre</option>
             </select>
           </div>
-          <div class="col-xl-4 col-md-4 col-sm-4 col-6">
-            <div class="filter-box">
-              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                Search &amp; Filter
-                <i class="bi bi-chevron-up" id="filterArrow"></i>
-              </button>
 
-              <div class="filter-content hidden">
-                <h5>Search</h5>
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">Last Month</option>
+              <option value="1">Current Month</option>
+              <option value="2">3 Months</option>
+              <option value="3">6 Months</option>
+              <option value="4">1 Year</option>
+            </select>
+          </div>
 
-                <div class="search-input">
-                  <input type="text" name="" placeholder="Search n">
-                  <i class="bi bi-search search-right-icon"></i>
-                </div>
+          <div class="col-xl-2 col-md-3 col-sm-12 col-12">
+            <select name="">
+              <option value="0" selected="">Payment Status</option>
+              <option value="1">All</option>
+              <option value="2">Paid</option>
+              <option value="3">Partially Paid</option>
+            </select>
+          </div>
 
-                <hr class="pg-hr mt-3 mb-2">
-
-                <h5>Filters</h5>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Centres
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> Diagnosis &amp; Cure Centre</label>
-                    <label><input type="checkbox"> City Diagnostic Centre</label>
-                    <label><input type="checkbox"> Prime Scan Centre</label>
-                  </div>
-                </div>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Payment Status
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> Paid</label>
-                    <label><input type="checkbox"> Partially Paid</label>
-                  </div>
-                </div>
-
-
-                <div class="filter-final">
-                  <div class="content-table-btn-part text-end justify-content-end">
-                    <button type="button" class="submitted-btn">Clear All</button>
-                    <button type="button" class="browse-btn">Apply</button>
-                  </div>
-                </div>
-              </div>
+          <div class="col-xl-6 col-md-3 col-sm-12 col-12">
+            <div class="content-table-btn-part text-end justify-content-end">
+              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createWalletModal"><i class="bi bi-plus-lg"></i> Create Wallet</button>
             </div>
           </div>
         </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-table admin-post-pay">
         <table>
           <thead>
             <tr>
-              <th>#</th>
               <th>Centre</th>
-              <th>Billing Month</th>
+              <th>Billing Cycle</th>
               <th>Cases</th>
               <th>Bill Amount</th>
-              <th>TDS</th>
+              <th>Paid</th>
+              <th>Last Paid Date</th>
+              <th>Outstanding</th>
+              <th>Payment Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>01</td>
               <td>Prime Scan Centre</td>
               <td>August 2026</td>
               <td>386</td>
               <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
               <td>
                 <div class="content-table-btn-part">
-                  <h6><span>2%</span> (₹ 2,850)</h6>
+                  <button type="button" class="warning-btn">Partially Paid</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
+                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make Payment</button>
                   <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
-                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>City Diagnostic</td>
               <td>August 2026</td>
               <td>386</td>
               <td>₹ 1,42,600</td>
-              <td>-</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="completed-btn">Paid</button>
+                </div>
+              </td>
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
-                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>Plus City Diagnostic</td>
               <td>August 2026</td>
               <td>386</td>
               <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
               <td>
                 <div class="content-table-btn-part">
-                  <h6><span>2%</span> (₹ 2,850)</h6>
+                  <button type="button" class="request-btn">Due</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
+                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make Payment</button>
                   <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
-                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Medicare Imaging</td>
+              <td>August 2026</td>
+              <td>386</td>
+              <td>₹ 1,42,600</td>
+              <td>₹ 1,00,000</td>
+              <td>12 Aug 2026</td>
+              <td>₹ 42,600</td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="warning-btn">Partially Paid</button>
+                </div>
+              </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal">Make Payment</button>
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
                 </div>
               </td>
             </tr>
@@ -408,14 +364,13 @@
       </div>
     </section>
 
-    <!----- CREATE-CENTRE-MODAL ------->
-    <div class="modal fade" id="createCentreModal" data-bs-keyboard="false" tabindex="-1">
+    <!----- CREATE-WALLET-MODAL ------->
+    <div class="modal fade" id="createWalletModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
-              <h2>Add Centre</h2>
+              <h2>Create Wallet</h2>
             </div>
           </div>
           <div class="modal-body">
@@ -423,32 +378,20 @@
               <form method="" action="">
                 <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <select name="" required>
-                      <option value="0" selected="">Select Centre *</option>
-                      <option value="1">Diagnosis &amp; Cure Centre</option>
-                      <option value="2">City Diagnostic Centre</option>
-                      <option value="3">Prime Scan Centre</option>
-                    </select>
+                    <input type="text" name="" value="" placeholder="Enter Center name *" required="">
                   </div>
                   <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <select name="" required>
-                      <option value="0" selected="">Billing Cycle *</option>
-                      <option value="1">Monthly</option>
-                    </select>
+                    <input type="text" name="" value="" placeholder="Enter Code *" required="">
                   </div>
                   <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <select name="" id="tdsSelect" required>
-                      <option value="0" selected="">TDS *</option>
-                      <option value="1">No</option>
-                      <option value="2">Yes</option>
-                    </select>
+                    <input type="text" name="" value="" placeholder="Enter Amount *" required="">
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="number" id="tdsPercentageBox" name="" value="" placeholder="Enter TDS Percentage (%) *" required />
+                    <input type="text" name="" value="" placeholder="Enter Receiver URL *" required="">
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <div class="content-table-btn-part justify-content-center">
-                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Add Centre</button>
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Create</button>
                     </div>
                   </div>
                 </div>
@@ -458,26 +401,41 @@
         </div>
       </div>
     </div>
-    <!----- CREATE-CENTRE-MODAL ------->
+    <!----- CREATE-WALLET-MODAL ------->
 
     <!----- MAKE-PAYMENT-MODAL ------->
     <div class="modal fade" id="makePaymentModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
-              <div class="d-flex align-items-center">
-                <h2>Make Payment</h2>
-                <div class="content-table-btn-part ms-2">
-                  <button type="button" class="warning-btn">Partially Paid</button>
-                </div>
-              </div>
-              <p>Prime Scan Centre</p>
+              <h2>Make Payment</h2>
             </div>
           </div>
           <div class="modal-body">
             <div class="modal-content-box">
+              <div class="billing-summary">
+                <div class="billing-box">
+                  <strong>Centre</strong>
+                  <span>Prime Scan Centre</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Invoice</strong>
+                  <span>INV-2608-0142</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Bill Amount</strong>
+                  <span>₹ 1,42,600</span>
+                </div>
+
+                <div class="billing-box due">
+                  <strong>Remaining Due</strong>
+                  <span>₹ 42,600</span>
+                </div>
+              </div>
+
               <div class="tab-group payment-tab-box">
                 <div class="payment-tabs">
                   <button type="button" class="tab-btn active" data-tab="payment-link" onclick="openTab(this)">Payment Link</button>
@@ -489,19 +447,19 @@
                   <p>Generate A Secure Link For The Centre To Complete Payment Online.</p>
 
                   <div class="payment-form-row">
-                    <input type="text" name="" value="39748" placeholder="Payment Amount *" required="">
+                    <input type="text" name="" value="" placeholder="Payment Amount *" required="">
                     <div class="content-table-btn-part">
-                      <button type="button" class="browse-btn toggle-btn">Create Payment Link</button>
+                      <button type="button" class="browse-btn">Create Payment Link</button>
                     </div>
                   </div>
 
-                  <div class="payment-history-box toggle-div hidden">
+                  <div class="payment-history-box">
                     <div class="payment-history-head">
-                      <h5>Payment Link Created</h5>
+                      <h5>Payment History</h5>
 
                       <div class="remaining-due">
-                        <span>Status:</span>
-                        <strong>Pending</strong>
+                        <span>Remaining Due:</span>
+                        <strong>₹ 42,600</strong>
                       </div>
                     </div>
 
@@ -509,45 +467,44 @@
                       <div class="payment-history-left">
                         <span class="payment-status-line"></span>
                         <div>
-                          <h4>https://pay.thinkray.example/pp1/H64WKBOP</h4>
+                          <h4>₹ 1,00,000</h4>
+                          <p>2026-08-12 · NEFT-882614 · Remaining Due ₹42,600</p>
                         </div>
                       </div>
 
                       <div class="payment-history-actions">
-                        <button type="button">Copy Link</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#viewPaymentDetailsModal" data-bs-dismiss="modal">View Payment Details</button>
+                        <button type="button">Download Payment Slip</button>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="tab-content manual-payment hidden">
-                  <h5>Record Manual Payment</h5>
-                  <p>Use this for cash, UPI, cheque, bank transfer, or other offline payments.</p>
+                  <h5>Manual Payment</h5>
+                  <p>Enter The Payment Details Received From The Centre.</p>
 
                   <div class="payment-form-row flex-column">
                     <div class="row gx-3 gy-3">
                       <div class="col-xl-6 col-md-6 col-sm-12 col-12">
                         <select name="" required="">
-                          <option value="0">Payment Mode *</option>
+                          <option value="0" selected="">Payment Mode *</option>
                           <option value="1">Add Netbanking</option>
                           <option value="1">UPI</option>
-                          <option value="1" selected="">Cash</option>
+                          <option value="1">Cash</option>
                         </select>
                       </div>
                       <div class="col-xl-6 col-md-6 col-sm-12 col-12">
-                        <input type="text" name="" value="39748" placeholder="Amount Paid *" required="">
+                        <input type="text" name="" value="" placeholder="Amount Paid *" required="">
                       </div>
                       <div class="col-xl-6 col-md-6 col-sm-12 col-12">
                         <input type="date" name="" value="" placeholder="Payment date *" required="">
                       </div>
                       <div class="col-xl-6 col-md-6 col-sm-12 col-12">
-                        <input type="text" name="" value="" placeholder="Transaction ID (optional)">
-                      </div>
-                      <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                        <textarea rows="3" name="" value="" placeholder="Add payment note"></textarea>
+                        <input type="text" name="" value="" placeholder="Reference Number *" required="">
                       </div>
                     </div>
-                    <div class="content-table-btn-part justify-content-between w-100 mt-0">
+                    <div class="content-table-btn-part justify-content-between w-100">
                       <div class="field-formalities-action-part upload me-2" onclick="document.getElementById('FileUpload').click()">
                         <div class="d-flex align-items-center">
                           <span class="field-icon scaled">
@@ -555,7 +512,7 @@
                           </span>
                           <div>
                             <input type="file" id="FileUpload" accept="image/*" hidden="">
-                            <h6>Upload Payment Slip (optional)</h6>
+                            <h6>Upload Payment Slip</h6>
                             <p class="mb-0">Select only .JPG template file</p>
                           </div>
                         </div>
@@ -563,143 +520,35 @@
                           <button type="button" class="browse-btn"><i class="bi bi-folder2-open"></i> Browse File</button>
                         </div>
                       </div>
-                    </div>
-                    <div class="content-table-btn-part justify-content-between w-100 mt-1">
-                      <button type="button" class="browse-btn">Save Payment</button>
+                      <button type="button" class="browse-btn">Create Payment Link</button>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="payment-history-box">
-                <div class="content-formalities">
-                  <div class="row gx-3 gy-2 mb-2">
-                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                      <div class="payment-history-head">
-                        <h5>Payment History</h5>
+                  <div class="payment-history-box">
+                    <div class="payment-history-head">
+                      <h5>Payment History</h5>
+
+                      <div class="remaining-due">
+                        <span>Remaining Due:</span>
+                        <strong>₹ 42,600</strong>
                       </div>
                     </div>
-                  </div>
-                  <div class="row gx-3 gy-2 justify-content-end">
-                    <div class="col-xl-4 col-md-4 col-sm-4 col-5">
-                      <select id="dateFilter" onchange="openCustomDate(this)">
-                        <option value="1" selected>Today</option>
-                        <option value="2">Yesterday</option>
-                        <option value="3">7 days</option>
-                        <option value="4">15 days</option>
-                        <option value="5">1 month</option>
-                        <option value="6">Customized Date Range</option>
-                      </select>
-                    </div>
-                    <div class="col-xl-6 col-md-6 col-sm-6 col-7">
-                      <div class="filter-box">
-                        <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                          Search & Filter
-                          <i class="bi bi-chevron-up" id="filterArrow"></i>
-                        </button>
 
-                        <div class="filter-content hidden">
-                          <h5>Search</h5>
-
-                          <div class="search-input">
-                            <input type="text" name="" placeholder="" />
-                            <i class="bi bi-search search-right-icon"></i>
-                          </div>
-
-                          <hr class="pg-hr mt-3 mb-2" />
-
-                          <h5>Filters</h5>
-
-                          <button type="button" class="status-head" onclick="toggleStatus(this)">
-                            Modalitity
-                            <i class="bi bi-chevron-up"></i>
-                          </button>
-
-                          <div class="status-part hidden">
-                            <div class="status-content">
-                              <label><input type="checkbox"> All</label>
-                              <label><input type="checkbox"> DX</label>
-                              <label><input type="checkbox"> CT</label>
-                              <label><input type="checkbox"> MRI</label>
-                              <label><input type="checkbox"> ECG</label>
-                            </div>
-                          </div>
-
-                          <div class="filter-final">
-                            <div class="content-table-btn-part text-end justify-content-end">
-                              <button type="button" class="submitted-btn">Clear All</button>
-                              <button type="button" class="browse-btn">Apply</button>
-                            </div>
-                          </div>
+                    <div class="payment-history-item">
+                      <div class="payment-history-left">
+                        <span class="payment-status-line"></span>
+                        <div>
+                          <h4>₹ 1,00,000</h4>
+                          <p>2026-08-12 · NEFT-882614 · Remaining Due ₹42,600</p>
                         </div>
                       </div>
+
+                      <div class="payment-history-actions">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#viewPaymentDetailsModal" data-bs-dismiss="modal">View Payment Details</button>
+                        <button type="button">Download Payment Slip</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <!----- PAGINATION-SORT ------->
-                <div class="pagination-bar">
-                  <div class="pagination-left">
-                    <button type="button" class="page-arrow prev">
-                      <i class="bi bi-chevron-left"></i>
-                    </button>
-
-                    <span class="page-range">1 to 10</span>
-
-                    <button type="button" class="page-arrow next">
-                      <i class="bi bi-chevron-right"></i>
-                    </button>
-                  </div>
-
-                  <div class="pagination-right">
-                    <span>Show</span>
-
-                    <select class="page-limit">
-                      <option value="0" selected>50</option>
-                      <option value="1">100</option>
-                      <option value="2">150</option>
-                      <option value="3">200</option>
-                      <option value="4">250</option>
-                    </select>
-
-                    <span>per page</span>
-                  </div>
-                </div>
-                <!----- PAGINATION-SORT ------->
-
-                <div class="content-table admin-centre">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Payment Date</th>
-                        <th>Amount</th>
-                        <th>Payment Mode</th>
-                        <th>Transaction ID</th>
-                        <th>Status</th>
-                        <th>Receipt</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>01</td>
-                        <td>24-Aug-2026</td>
-                        <td>₹ 1,00,000</td>
-                        <td>Bank Transfer</td>
-                        <td>NEFT-882614</td>
-                        <td>
-                          <div class="content-table-btn-part">
-                            <button type="button" class="completed-btn">Paid</button>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="content-table-btn-part">
-                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                 </div>
               </div>
             </div>
@@ -714,183 +563,57 @@
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
-              <div class="d-flex align-items-center">
-                <h2>Billing Details</h2>
-                <div class="content-table-btn-part ms-2">
-                  <button type="button" class="warning-btn">Partially Paid</button>
-                </div>
-              </div>
-              <p>Prime Scan Centre</p>
+              <h2>Payment Details</h2>
             </div>
           </div>
           <div class="modal-body">
             <div class="modal-content-box">
-              <div class="account-summary post-pay">
-                <div class="summary-item">
-                  <span>Billing Month</span>
-                  <strong>August 2026</strong>
+              <div class="billing-summary">
+                <div class="billing-box">
+                  <strong>Centre</strong>
+                  <span>Prime Scan Centre</span>
                 </div>
-                <div class="summary-item">
-                  <span>Cases</span>
-                  <strong>386</strong>
-                </div>
-                <div class="summary-item">
-                  <span>Bill Amount</span>
-                  <strong>₹ 1,42,600</strong>
-                </div>
-                <div class="summary-item">
-                  <span>TDS</span>
-                  <strong>2% (₹ 2,852)</strong>
-                </div>
-                <div class="summary-item">
-                  <span>Actual Payable</span>
-                  <strong>₹ 1,39,748</strong>
-                </div>
-                <div class="summary-item">
-                  <span>Paid Amount</span>
-                  <strong>₹1,00,000</strong>
-                </div>
-                <div class="summary-item">
-                  <span>Paid Amount</span>
-                  <strong class="due">39,748</strong>
-                </div>
-              </div>
 
-              <div class="content-table-btn-part mt-3">
-                <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#makePaymentModal" data-bs-dismiss="modal">Make Payment</button>
+                <div class="billing-box">
+                  <strong>Invoice</strong>
+                  <span>INV-2608-0142</span>
+                </div>
+
+                <div class="billing-box">
+                  <strong>Bill Amount</strong>
+                  <span>₹ 1,42,600</span>
+                </div>
+
+                <div class="billing-box due">
+                  <strong>Remaining Due</strong>
+                  <span>₹ 42,600</span>
+                </div>
               </div>
 
               <div class="payment-history-box">
-                <div class="content-formalities">
-                  <div class="row gx-3 gy-2 mb-2">
-                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                      <div class="payment-history-head">
-                        <h5>Payment History</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row gx-3 gy-2 justify-content-end">
-                    <div class="col-xl-4 col-md-4 col-sm-4 col-5">
-                      <select id="dateFilter" onchange="openCustomDate(this)">
-                        <option value="1" selected>Today</option>
-                        <option value="2">Yesterday</option>
-                        <option value="3">7 days</option>
-                        <option value="4">15 days</option>
-                        <option value="5">1 month</option>
-                        <option value="6">Customized Date Range</option>
-                      </select>
-                    </div>
-                    <div class="col-xl-6 col-md-6 col-sm-6 col-7">
-                      <div class="filter-box">
-                        <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                          Search & Filter
-                          <i class="bi bi-chevron-up" id="filterArrow"></i>
-                        </button>
+                <div class="payment-history-head">
+                  <h5>Payment History</h5>
 
-                        <div class="filter-content hidden">
-                          <h5>Search</h5>
-
-                          <div class="search-input">
-                            <input type="text" name="" placeholder="" />
-                            <i class="bi bi-search search-right-icon"></i>
-                          </div>
-
-                          <hr class="pg-hr mt-3 mb-2" />
-
-                          <h5>Filters</h5>
-
-                          <button type="button" class="status-head" onclick="toggleStatus(this)">
-                            Modalitity
-                            <i class="bi bi-chevron-up"></i>
-                          </button>
-
-                          <div class="status-part hidden">
-                            <div class="status-content">
-                              <label><input type="checkbox"> All</label>
-                              <label><input type="checkbox"> DX</label>
-                              <label><input type="checkbox"> CT</label>
-                              <label><input type="checkbox"> MRI</label>
-                              <label><input type="checkbox"> ECG</label>
-                            </div>
-                          </div>
-
-                          <div class="filter-final">
-                            <div class="content-table-btn-part text-end justify-content-end">
-                              <button type="button" class="submitted-btn">Clear All</button>
-                              <button type="button" class="browse-btn">Apply</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="remaining-due">
+                    <span>Remaining Due:</span>
+                    <strong>₹ 42,600</strong>
                   </div>
                 </div>
 
-                <!----- PAGINATION-SORT ------->
-                <div class="pagination-bar">
-                  <div class="pagination-left">
-                    <button type="button" class="page-arrow prev">
-                      <i class="bi bi-chevron-left"></i>
-                    </button>
-
-                    <span class="page-range">1 to 10</span>
-
-                    <button type="button" class="page-arrow next">
-                      <i class="bi bi-chevron-right"></i>
-                    </button>
+                <div class="payment-history-item">
+                  <div class="payment-history-left">
+                    <span class="payment-status-line"></span>
+                    <div>
+                      <h4>₹ 1,00,000</h4>
+                      <p>2026-08-12 · NEFT-882614 · Remaining Due ₹42,600</p>
+                    </div>
                   </div>
 
-                  <div class="pagination-right">
-                    <span>Show</span>
-
-                    <select class="page-limit">
-                      <option value="0" selected>50</option>
-                      <option value="1">100</option>
-                      <option value="2">150</option>
-                      <option value="3">200</option>
-                      <option value="4">250</option>
-                    </select>
-
-                    <span>per page</span>
+                  <div class="payment-history-actions">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewPaymentDetailsModal" data-bs-dismiss="modal">View Payment Details</button>
+                    <button type="button">Download Payment Slip</button>
                   </div>
-                </div>
-                <!----- PAGINATION-SORT ------->
-
-                <div class="content-table admin-centre">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Payment Date</th>
-                        <th>Amount</th>
-                        <th>Payment Mode</th>
-                        <th>Transaction ID</th>
-                        <th>Status</th>
-                        <th>Receipt</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>01</td>
-                        <td>24-Aug-2026</td>
-                        <td>₹ 1,00,000</td>
-                        <td>Bank Transfer</td>
-                        <td>NEFT-882614</td>
-                        <td>
-                          <div class="content-table-btn-part">
-                            <button type="button" class="completed-btn">Paid</button>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="content-table-btn-part">
-                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                 </div>
               </div>
             </div>
@@ -900,117 +623,42 @@
     </div>
     <!----- VIEW-DETAILS-MODAL ------->
 
-    <!----- VIEW-DOWNLOAD-INVOICE-DETAILS-MODAL ------->
-    <div class="modal fade" id="viewDownloadInvoiceDetailsModal" data-bs-keyboard="false" tabindex="-1">
+    <!----- VIEW-PAYMENT-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewPaymentDetailsModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
-          <div class="modal-header justify-content-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body pt-2">
-            <div class="modal-content-box">
-              <div class="pre-pdf-downloader">
-                <div>
-                  <img src="assets/images/thinkray-logo.png" alt="thinkray-logo" />
-                  <h5>Post-Paid Invoice</h5>
-                </div>
-                <div class="content-table-btn-part text-end justify-content-end">
-                  <button type="button" class="browse-btn"><i class="bi bi-download"></i> Download</button>
-                </div>
-              </div>
-              <div class="payment-view">
-                <div class="payment-details">
-                  <div class="payment-row">
-                    <span>Centre</span>
-                    <strong>Prime Scan Centre</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Cases</span>
-                    <strong>386</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Bill Amount</span>
-                    <strong>₹ 1,42,600</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>TDS</span>
-                    <strong>2% - ₹ 2,852</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Actual Payable</span>
-                    <strong>₹ 1,39,600</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Paid Amount</span>
-                    <strong>₹ 1,00,000</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Remaining Due</span>
-                    <strong>₹ 39,748</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Payment Status</span>
-                    <strong>Partially Paid</strong>
-                  </div>
-                </div>
-              </div>
+          <div class="modal-header">
+            <div class="modal-section-heading">
+              <h2>View Payment Details</h2>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!----- VIEW-DOWNLOAD-INVOICE-DETAILS-MODAL ------->
-
-    <!----- VIEW-DOWNLOAD-RECEIPT-DETAILS-MODAL ------->
-    <div class="modal fade" id="viewDownloadReceiptDetailsModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header justify-content-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body pt-2">
+          <div class="modal-body">
             <div class="modal-content-box">
-              <div class="pre-pdf-downloader">
-                <div>
-                  <img src="assets/images/thinkray-logo.png" alt="thinkray-logo" />
-                  <h5>Payment Receipt</h5>
-                </div>
-                <div class="content-table-btn-part text-end justify-content-end">
-                  <button type="button" class="browse-btn"><i class="bi bi-download"></i> Download</button>
-                </div>
-              </div>
               <div class="payment-view">
+                <div class="amount-box">
+                  <span>Amount Received</span>
+                  <h3>₹ 1,00,000</h3>
+                </div>
+
                 <div class="payment-details">
                   <div class="payment-row">
-                    <span>Centre</span>
-                    <strong>Prime Scan Centre</strong>
+                    <span><i class="bi bi-calendar3"></i> Payment Date</span>
+                    <strong>12 Aug 2026</strong>
                   </div>
 
                   <div class="payment-row">
-                    <span>Amount</span>
-                    <strong>₹ 1,00,000</strong>
+                    <span><i class="bi bi-arrow-left-right"></i> Payment Mode</span>
+                    <strong>NEFT</strong>
                   </div>
 
                   <div class="payment-row">
-                    <span>Payment Mode</span>
-                    <strong>Bank Transfer</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Transaction ID</span>
+                    <span><i class="bi bi-file-earmark-text"></i> Transaction ID</span>
                     <strong>NEFT-882614</strong>
                   </div>
 
-                  <div class="payment-row">
-                    <span>Status</span>
-                    <strong>Paid</strong>
+                  <div class="payment-row due">
+                    <span><i class="bi bi-pie-chart"></i> Remaining Due</span>
+                    <strong>₹ 42,600</strong>
                   </div>
                 </div>
               </div>
@@ -1019,7 +667,7 @@
         </div>
       </div>
     </div>
-    <!----- VIEW-DOWNLOAD-RECEIPT-DETAILS-MODAL ------->
+    <!----- VIEW-PAYMENT-DETAILS-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->

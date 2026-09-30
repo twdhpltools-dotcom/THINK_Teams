@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet" onclick="window.location.href='C-history.html'">
+            <div class="user-wallet">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Billing History</h1>
@@ -213,55 +213,12 @@
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected>Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
-            </select>
-          </div>
-        </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-table self-doctor">
         <table>
           <thead>
             <tr>
-              <th>#</th>
               <th>Billing Month</th>
               <th>Total Cases</th>
               <th>Bill Amount</th>
@@ -272,7 +229,6 @@
           </thead>
           <tbody>
             <tr>
-              <td>01</td>
               <td>September 2026</td>
               <td>8</td>
               <td>₹ 18,500</td>
@@ -281,13 +237,12 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" onclick="window.location.href='view-b-history.html'">View</button>
-                  <button type="button" class="print-btn px-1" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
+                  <button type="button" class="print-btn px-2">Invoice</button>
                   <button type="button" class="completed-btn">Pay Now</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>July 2026</td>
               <td>8</td>
               <td>₹ 18,500</td>
@@ -296,13 +251,12 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" onclick="window.location.href='view-b-history.html'">View</button>
-                  <button type="button" class="print-btn px-1" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
+                  <button type="button" class="print-btn px-2">Invoice</button>
                   <button type="button" class="completed-btn">Pay Now</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>August 2026</td>
               <td>8</td>
               <td>₹ 18,500</td>
@@ -311,13 +265,12 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" onclick="window.location.href='view-b-history.html'">View</button>
-                  <button type="button" class="print-btn px-1" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
-                  <button type="button" class="completed-btn" disabled>No Link</button>
+                  <button type="button" class="print-btn px-2">Invoice</button>
+                  <button type="button" class="completed-btn">Pay Now</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>September 2026</td>
               <td>8</td>
               <td>₹ 18,500</td>
@@ -326,13 +279,12 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" onclick="window.location.href='view-b-history.html'">View</button>
-                  <button type="button" class="print-btn px-1" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
-                  <button type="button" class="completed-btn" disabled>No Link</button>
+                  <button type="button" class="print-btn px-2">Invoice</button>
+                  <button type="button" class="completed-btn">Pay Now</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>July 2026</td>
               <td>8</td>
               <td>₹ 18,500</td>
@@ -341,13 +293,12 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" onclick="window.location.href='view-b-history.html'">View</button>
-                  <button type="button" class="print-btn px-1" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
-                  <button type="button" class="completed-btn" disabled>No Link</button>
+                  <button type="button" class="print-btn px-2">Invoice</button>
+                  <button type="button" class="completed-btn">Pay Now</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>August 2026</td>
               <td>8</td>
               <td>₹ 18,500</td>
@@ -356,8 +307,8 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="pending-btn" onclick="window.location.href='view-b-history.html'">View</button>
-                  <button type="button" class="print-btn px-1" data-bs-toggle="modal" data-bs-target="#viewDownloadInvoiceDetailsModal">Invoice</button>
-                  <button type="button" class="completed-btn" disabled>Paid</button>
+                  <button type="button" class="print-btn px-2">Invoice</button>
+                  <button type="button" class="completed-btn">Pay Now</button>
                 </div>
               </td>
             </tr>
@@ -365,74 +316,6 @@
         </table>
       </div>
     </section>
-
-    <!----- VIEW-DOWNLOAD-INVOICE-DETAILS-MODAL ------->
-    <div class="modal fade" id="viewDownloadInvoiceDetailsModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header justify-content-end">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body pt-2">
-            <div class="modal-content-box">
-              <div class="pre-pdf-downloader">
-                <div>
-                  <img src="assets/images/thinkray-logo.png" alt="thinkray-logo" />
-                  <h5>Post-Paid Invoice</h5>
-                </div>
-                <div class="content-table-btn-part text-end justify-content-end">
-                  <button type="button" class="browse-btn"><i class="bi bi-download"></i> Download</button>
-                </div>
-              </div>
-              <div class="payment-view">
-                <div class="payment-details">
-                  <div class="payment-row">
-                    <span>Centre</span>
-                    <strong>Prime Scan Centre</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Cases</span>
-                    <strong>386</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Bill Amount</span>
-                    <strong>₹ 1,42,600</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>TDS</span>
-                    <strong>2% - ₹ 2,852</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Actual Payable</span>
-                    <strong>₹ 1,39,600</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Paid Amount</span>
-                    <strong>₹ 1,00,000</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Remaining Due</span>
-                    <strong>₹ 39,748</strong>
-                  </div>
-
-                  <div class="payment-row">
-                    <span>Payment Status</span>
-                    <strong>Partially Paid</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- VIEW-DOWNLOAD-INVOICE-DETAILS-MODAL ------->
 
   </main>
   <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->

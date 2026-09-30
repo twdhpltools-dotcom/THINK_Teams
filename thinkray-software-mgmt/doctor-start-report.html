@@ -120,7 +120,7 @@
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-check2-circle"></i>
           </span>
-          <p>Approved</p>
+          <p>Approve</p>
           <em class="counter-chip">24</em>
         </a>
         <a href="doctor-request.html">
@@ -151,102 +151,120 @@
         </div>
       </div>
 
-      <div class="content-formalities d-block">
+      <div class="content-formalities">
         <div class="row gx-3 gy-4">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-            
+            <div class="field-formalities-box">
+              
+              <!----- HTML-LIVE-EDIT ------->
+              <div class="editor-toolbar">
+                <button type="button" onclick="editorCmd('undo')">
+                  <i class="bi bi-arrow-counterclockwise"></i>
+                </button>
 
+                <button type="button" onclick="editorCmd('redo')">
+                  <i class="bi bi-arrow-clockwise"></i>
+                </button>
 
+                <select onchange="formatBlock(this.value)">
+                  <option value="">Formats</option>
+                  <option value="p">Paragraph</option>
+                  <option value="h1">Heading 1</option>
+                  <option value="h2">Heading 2</option>
+                  <option value="h3">Heading 3</option>
+                </select>
 
-<!-----  EXTRA-CHANGES ------->
-<div class="report-layout">
+                <button type="button" onclick="editorCmd('bold')">
+                  <i class="bi bi-type-bold"></i>
+                </button>
 
-  <div class="template-panel">
-    <div class="panel-title">L-Spine Templates</div>
+                <button type="button" onclick="editorCmd('italic')">
+                  <i class="bi bi-type-italic"></i>
+                </button>
 
-    <div class="template-search">
-      <input type="text" placeholder="Search Templates">
-    </div>
+                <button type="button" onclick="editorCmd('underline')">
+                  <i class="bi bi-type-underline"></i>
+                </button>
 
-    <div class="template-item">
-      <h6>Normal L-Spine</h6>
-      <button type="button" onclick="showReport()">Select</button>
-    </div>
+                <button type="button" onclick="editorCmd('copy')">
+                  <i class="bi bi-files"></i>
+                </button>
 
-    <div class="template-item">
-      <h6>Degenerative Changes</h6>
-      <button type="button" onclick="showReportTwo()">Select</button>
-    </div>
-  </div>
+                <button type="button" onclick="editorCmd('insertUnorderedList')">
+                  <i class="bi bi-list-ul"></i>
+                </button>
 
-  <div class="preview-panel">
+                <button type="button" onclick="editorCmd('insertOrderedList')">
+                  <i class="bi bi-list-ol"></i>
+                </button>
 
-    <div class="preview-head">
-      <h5>Report Preview</h5>
-      <button type="button" onclick="window.location.href='doctor-start-create-report.html'">Next To Report</button>
-    </div>
+                <button type="button" onclick="editorCmd('justifyLeft')">
+                  <i class="bi bi-text-left"></i>
+                </button>
 
-    <div class="preview-content" id="previewInstruction">
-      <ol>
-        <li>Choose an appropriate template from the left side.</li>
-        <li>Review the selected report format.</li>
-        <li>Click <strong>Next To Report</strong> to open the report editor.</li>
-      </ol>
-    </div>
+                <button type="button" onclick="editorCmd('justifyCenter')">
+                  <i class="bi bi-text-center"></i>
+                </button>
 
-    <div class="report-result" id="reportResult">
-      <button type="button" class="clear-report" onclick="clearReport()">Clear Report</button>
+                <button type="button" onclick="editorCmd('justifyRight')">
+                  <i class="bi bi-text-right"></i>
+                </button>
 
-      <div class="report-paper">
-        <h4>L-SPINE</h4>
+                <button type="button" onclick="editorCmd('justifyFull')">
+                  <i class="bi bi-justify"></i>
+                </button>
 
-        <strong>Findings:</strong>
-        <p>
-          Alignment and vertebral body heights are maintained.<br>
-          Disc spaces are preserved.
-        </p>
+                <label class="toolbar-color">
+                  <i class="bi bi-fonts"></i>
+                  <input type="color" onchange="setTextColor(this.value)">
+                </label>
+              </div>
 
-        <strong>Impression:</strong>
-        <p>No significant radiographic abnormality.</p>
-      </div>
-    </div>
+              <div class="patient-info-editor">
+                <div class="patient-info-editor-column">
+                  <div class="patient-info-editor-row">
+                    <strong>ID No</strong>
+                    <span contenteditable="true">26.08.2026, 1003</span>
+                  </div>
 
-    <div class="report-result" id="reportResultTwo">
-      <button type="button" class="clear-report" onclick="clearReport()">Clear Report</button>
+                  <div class="patient-info-editor-row">
+                    <strong>Name</strong>
+                    <span contenteditable="true">Mr. Tapas Malik</span>
+                  </div>
 
-      <div class="report-paper">
-        <h4>L-SPINE</h4>
+                  <div class="patient-info-editor-row">
+                    <strong>Referred By</strong>
+                    <span contenteditable="true">Dr. N Laha</span>
+                  </div>
+                </div>
 
-        <strong>Findings:</strong>
-        <p>
-          Multilevel marginal osteophytes with disc space reduction.
-        </p>
+                <div class="patient-info-editor-column">
+                  <div class="patient-info-editor-row">
+                    <strong>Report Generated</strong>
+                    <span contenteditable="true">2026-08-26 03:13 PM</span>
+                  </div>
+                  <div class="patient-info-editor-row">
+                    <strong>Age | Gen</strong>
+                    <span contenteditable="true">37 Yrs | M</span>
+                  </div>
+                </div>
+              </div>
 
-        <strong>Impression:</strong>
-        <p>Degenerative spondylotic changes.</p>
-      </div>
-    </div>
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="">Chest radiograph shows no focal air-space opacity. Cardiomediastinal silhouette is within normal limits. No pleural effusion or pneumothorax.</textarea>
+                  </div>
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save Change</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!----- HTML-LIVE-EDIT ------->
 
-  </div>
-
-</div>
-
-<script>
-  function showReport(){
-  document.getElementById("previewInstruction").style.display = "none";
-  document.getElementById("reportResult").style.display = "block";
-}
-
-function clearReport(){
-  document.getElementById("reportResult").style.display = "none";
-  document.getElementById("previewInstruction").style.display = "block";
-}
-</script>
-<!-----  EXTRA-CHANGES ------->
-
-
-
-
+            </div>
           </div>
         </div>
       </div>

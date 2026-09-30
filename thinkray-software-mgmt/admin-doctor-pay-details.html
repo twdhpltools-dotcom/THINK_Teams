@@ -208,13 +208,6 @@
           </a>
         </div>
 
-        <a href="admin-tds.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-file-earmark-bar-graph"></i>
-          </span>
-          <p>TDS</p>
-        </a>
-
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -226,8 +219,8 @@
     <!----- SIDEBAR-MENU ------->
     
     <section class="page-section">
-      <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+      <div class="content-formalities pb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Dr. Abhijit</h1>
@@ -235,105 +228,60 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-4 col-12">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" onclick="window.location.href='admin-doctor-pay-history.html'">Payment History</button>
-              <button type="button" class="browse-btn">Export</button>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-3 col-sm-3 col-4">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected="">Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
-            </select>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-4 col-6">
-            <div class="filter-box">
-              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                Search &amp; Filter
-                <i class="bi bi-chevron-up" id="filterArrow"></i>
-              </button>
-
-              <div class="filter-content hidden">
-                <h5>Search</h5>
-
-                <div class="search-input">
-                  <input type="text" name="" placeholder="Search n">
-                  <i class="bi bi-search search-right-icon"></i>
-                </div>
-
-                <hr class="pg-hr mt-3 mb-2">
-
-                <h5>Filters</h5>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Modalitity
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> DX</label>
-                    <label><input type="checkbox"> CT</label>
-                    <label><input type="checkbox"> MRI</label>
-                    <label><input type="checkbox"> ECG</label>
-                  </div>
-                </div>
-
-                <div class="filter-final">
-                  <div class="content-table-btn-part text-end justify-content-end">
-                    <button type="button" class="submitted-btn">Clear All</button>
-                    <button type="button" class="browse-btn">Apply</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-xl-2 col-md-3 col-sm-4 col-5">
+            <input type="date" name="" placeholder="Enter Date">
           </div>
         </div>
       </div>
 
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
+      <div class="form-formalities-box mb-3">
+        <h5 class="mb-0">Payment History</h5>
+        <p>Payment History</p>
 
-          <span class="page-range">1 to 10</span>
+        <div class="pay-row">
+          <div class="pay-period">
+            <div class="pay-icon">₹</div>
+            <div>
+              <h6>10 Aug 2026 – 18 Aug 2026</h6>
+              <p>Payment period</p>
+            </div>
+          </div>
 
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
+          <div>
+            <span>PAYMENT DATE</span>
+            <h6>20 Aug 2026</h6>
+          </div>
 
-        <div class="pagination-right">
-          <span>Show</span>
+          <div>
+            <span>AMOUNT</span>
+            <h5>₹3,000</h5>
+          </div>
 
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
+          <div>
+            <span>PAYMENT DETAILS</span>
+            <p>Bank Transfer · TXN-DOC-001</p>
+          </div>
 
-          <span>per page</span>
+          <div class="paid">Paid</div>
         </div>
       </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-formalities">
         <div class="row gx-3 gy-2 justify-content-between">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="col-xl-6 col-md-6 col-sm-6 col-6">
             <div class="page-section-heading others">
-              <h2>Case History</h2>
+              <h2>Approved Cases</h2>
               <p>30 approved cases</p>
             </div>
+          </div>
+          <div class="col-xl-2 col-md-2 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected="">All Modalities</option>
+              <option value="1">RDX</option>
+              <option value="2">CT</option>
+              <option value="1">MRI</option>
+              <option value="2">ECG</option>
+            </select>
           </div>
         </div>
       </div>
@@ -342,119 +290,118 @@
         <table>
           <thead>
             <tr>
-              <th>#</th>
               <th>Case Id</th>
               <th>Patient Details</th>
               <th>Centre</th>
               <th>Study</th>
               <th>Modality</th>
-              <th>Date</th>
+              <th>Approved Date & Time</th>
               <th>Doctor Charge</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
-                  <h6>26013</h6>
+                  <h6>TR-260810-1101</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Rupali Guha Roy</h5>
+                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>Diagnosis And Cure Centre</td>
               <td>Chest X-Ray PA View</td>
               <td>DX</td>
-              <td>10-Aug-2026</td>
+              <td>10 Aug 2026 · 09:00</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
-                  <h6>26013</h6>
+                  <h6>TR-260810-1101</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>MD. Ajima Mondal</h5>
+                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>City Diagnostic</td>
               <td>X-Ray Knee AP/Lateral</td>
               <td>DX</td>
-              <td>10-Aug-2026</td>
+              <td>10 Aug 2026 · 09:00</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
-                  <h6>26013</h6>
+                  <h6>TR-260810-1101</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Ms. Chaitali Dhar</h5>
+                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>Prime Scan Centre</td>
               <td>Hand AP/Oblique View</td>
               <td>DX</td>
-              <td>10-Aug-2026</td>
+              <td>10 Aug 2026 · 09:00</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
-                  <h6>26013</h6>
+                  <h6>TR-260810-1101</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Abdullah Ali SK</h5>
+                    <p>24 yrs · M</p>
                   </div>
                 </div>
               </td>
               <td>Diagnosis And Cure Centre</td>
               <td>Chest X-Ray PA View</td>
               <td>DX</td>
-              <td>10-Aug-2026</td>
+              <td>10 Aug 2026 · 09:00</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
-                  <h6>26013</h6>
+                  <h6>TR-260810-1101</h6>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
                   <div class="instructed-part">
                     <h5>Rupali Guha Roy</h5>
+                    <p>24 yrs · F</p>
                   </div>
                 </div>
               </td>
               <td>City Diagnostic</td>
               <td>X-Ray Knee AP/Lateral</td>
               <td>DX</td>
-              <td>10-Aug-2026</td>
+              <td>10 Aug 2026 · 09:00</td>
               <td><b>₹ 120</b></td>
             </tr>
             <tr>
-              <td colspan="7"><b>Total</b></td>
+              <td colspan="6"><b>Total</b></td>
               <td>
                 <div class="d-flex align-items-center">
                   <b>₹ 720</b>

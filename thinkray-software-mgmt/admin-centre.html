@@ -208,13 +208,6 @@
           </a>
         </div>
 
-        <a href="admin-tds.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-file-earmark-bar-graph"></i>
-          </span>
-          <p>TDS</p>
-        </a>
-
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -227,111 +220,47 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>List of Centres</h1>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-3 col-md-3 col-sm-3 col-12">
+        <div class="row gx-3 gy-2 justify-content-between">
+          <div class="col-xl-10 col-md-9 col-sm-6 col-7">
+            <div class="row gx-3 gy-2">
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="search-input text-end">
+                  <input type="text" name="" placeholder="" />
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6">
+                <select name="">
+                  <option value="0" selected="">All Status</option>
+                  <option value="1">Active</option>
+                  <option value="2">In-Active</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-6 col-5">
             <div class="content-table-btn-part text-end justify-content-end">
               <button type="button" class="browse-btn" onclick="window.location.href='admin-centre-add.html'"><i class="bi bi-plus-lg"></i> Add Centre</button>
             </div>
           </div>
-          <div class="col-xl-3 col-md-3 col-sm-3 col-4">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected>Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
-            </select>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-4 col-6">
-            <div class="filter-box">
-              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                Search & Filter
-                <i class="bi bi-chevron-up" id="filterArrow"></i>
-              </button>
-
-              <div class="filter-content hidden">
-                <h5>Search</h5>
-
-                <div class="search-input">
-                  <input type="text" name="" placeholder="" />
-                  <i class="bi bi-search search-right-icon"></i>
-                </div>
-
-                <hr class="pg-hr mt-3 mb-2" />
-
-                <h5>Filters</h5>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Modalitity
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> DX</label>
-                    <label><input type="checkbox"> CT</label>
-                    <label><input type="checkbox"> MRI</label>
-                    <label><input type="checkbox"> ECG</label>
-                  </div>
-                </div>
-
-                <div class="filter-final">
-                  <div class="content-table-btn-part text-end justify-content-end">
-                    <button type="button" class="submitted-btn">Clear All</button>
-                    <button type="button" class="browse-btn">Apply</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-table admin-centre">
         <table>
           <thead>
             <tr>
-              <th>#</th>
               <th>Centre</th>
+              <th>Centre Code URL</th>
               <th>Payment Type</th>
               <th>Status</th>
               <th>Action</th>
@@ -339,132 +268,156 @@
           </thead>
           <tbody>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h5>Diagnosis And Cure Centre</h5>
                 </div>
               </td>
+              <td>DAC-001</td>
               <td>Pre-Paid</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Active</button>
+                  <button type="button" class="completed-btn">Active</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">Edit</button>
-                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">Configure</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">
+                    <i class="bi bi-pencil-square pe-0"></i>
+                  </button>
+                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">
+                    <i class="bi bi-gear pe-0"></i>
+                  </button>
                   <button type="button" class="pending-btn ps-2" onclick="window.location.href='admin-centre-charge.html'">Charge</button>
                   <button type="button" class="submitted-btn ps-2" onclick="window.location.href='interface.html'">Interface Info</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h5>City Diagnostic Centre</h5>
                 </div>
               </td>
+              <td>DAC-001</td>
               <td>Pre-Paid</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Active</button>
+                  <button type="button" class="completed-btn">Active</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">Edit</button>
-                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">Configure</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">
+                    <i class="bi bi-pencil-square pe-0"></i>
+                  </button>
+                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">
+                    <i class="bi bi-gear pe-0"></i>
+                  </button>
                   <button type="button" class="pending-btn ps-2" onclick="window.location.href='admin-centre-charge.html'">Charge</button>
                   <button type="button" class="submitted-btn ps-2" onclick="window.location.href='interface.html'">Interface Info</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h5>Prime Scan Centre</h5>
                 </div>
               </td>
+              <td>DAC-001</td>
               <td>Pre-Paid</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Active</button>
+                  <button type="button" class="completed-btn">Active</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">Edit</button>
-                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">Configure</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">
+                    <i class="bi bi-pencil-square pe-0"></i>
+                  </button>
+                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">
+                    <i class="bi bi-gear pe-0"></i>
+                  </button>
                   <button type="button" class="pending-btn ps-2" onclick="window.location.href='admin-centre-charge.html'">Charge</button>
                   <button type="button" class="submitted-btn ps-2" onclick="window.location.href='interface.html'">Interface Info</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h5>Diagnosis And Cure Centre</h5>
                 </div>
               </td>
+              <td>DAC-001</td>
               <td>Pre-Paid</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Active</button>
+                  <button type="button" class="completed-btn">Active</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">Edit</button>
-                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">Configure</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">
+                    <i class="bi bi-pencil-square pe-0"></i>
+                  </button>
+                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">
+                    <i class="bi bi-gear pe-0"></i>
+                  </button>
                   <button type="button" class="pending-btn ps-2" onclick="window.location.href='admin-centre-charge.html'">Charge</button>
                   <button type="button" class="submitted-btn ps-2" onclick="window.location.href='interface.html'">Interface Info</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h5>City Diagnostic Centre</h5>
                 </div>
               </td>
+              <td>DAC-001</td>
               <td>Pre-Paid</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Active</button>
+                  <button type="button" class="completed-btn">Active</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">Edit</button>
-                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">Configure</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">
+                    <i class="bi bi-pencil-square pe-0"></i>
+                  </button>
+                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">
+                    <i class="bi bi-gear pe-0"></i>
+                  </button>
                   <button type="button" class="pending-btn ps-2" onclick="window.location.href='admin-centre-charge.html'">Charge</button>
                   <button type="button" class="submitted-btn ps-2" onclick="window.location.href='interface.html'">Interface Info</button>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h5>Prime Scan Centre</h5>
                 </div>
               </td>
+              <td>DAC-001</td>
               <td>Pre-Paid</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Active</button>
+                  <button type="button" class="completed-btn">Active</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">Edit</button>
-                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">Configure</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='admin-centre-add.html'">
+                    <i class="bi bi-pencil-square pe-0"></i>
+                  </button>
+                  <button type="button" class="print-btn" onclick="window.location.href='configure.html'">
+                    <i class="bi bi-gear pe-0"></i>
+                  </button>
                   <button type="button" class="pending-btn ps-2" onclick="window.location.href='admin-centre-charge.html'">Charge</button>
                   <button type="button" class="submitted-btn ps-2" onclick="window.location.href='interface.html'">Interface Info</button>
                 </div>

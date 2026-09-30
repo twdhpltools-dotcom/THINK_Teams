@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet" onclick="window.location.href='C-history.html'">
+            <div class="user-wallet">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Charge History</h1>
@@ -213,59 +213,20 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-4 col-md-4 col-sm-4 col-4">
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
             <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn">Print</button>
+              <input type="date" name="" placeholder="">
+              <button type="button" class="browse-btn"><i class="bi bi-printer"></i> Print</button>
             </div>
           </div>
-          <div class="col-xl-8 col-md-8 col-sm-8 col-8">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected="">Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
-            </select>
-          </div>
         </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-table c-history">
         <table>
           <thead>
             <tr>
-              <th>#</th>
+              <th>SL</th>
               <th>Date</th>
               <th>Patient Name</th>
               <th>Value</th>

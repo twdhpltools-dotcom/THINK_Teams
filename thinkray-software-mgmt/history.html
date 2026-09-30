@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet" onclick="window.location.href='C-history.html'">
+            <div class="user-wallet">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Modify History</h1>
@@ -213,68 +213,29 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected>Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
-            </select>
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <input type="date" value="" placeholder="Enter date" />
           </div>
         </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-table history">
         <table>
           <thead>
             <tr>
-              <th>#</th>
               <th>Patient Info</th>
               <th>Modifications</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>01</td>
               <td>
                 <div class="d-flex align-items-center">
                   <div class="content-table-text">
-                    <div class="instructed-part">
-                      <h6>NUR ISLAM SK</h6>
-                      <p>62 yrs · M</p>
-                    </div>
+                    <h6>NUR ISLAM SK</h6>
+                  </div>
+                  <div class="content-table-btn-part ps-1">
+                    <button type="button" class="submitted-btn inv">Inv-1042</button>
                   </div>
                 </div>
               </td>
@@ -290,14 +251,13 @@
               </td>
             </tr>
             <tr>
-              <td>02</td>
               <td>
                 <div class="d-flex align-items-center">
                   <div class="content-table-text">
-                    <div class="instructed-part">
-                      <h6>MD. ASIF</h6>
-                      <p>62 yrs · M</p>
-                    </div>
+                    <h6>MD. ASIF</h6>
+                  </div>
+                  <div class="content-table-btn-part ps-1">
+                    <button type="button" class="submitted-btn inv">Inv-1042</button>
                   </div>
                 </div>
               </td>
@@ -313,14 +273,13 @@
               </td>
             </tr>
             <tr>
-              <td>03</td>
               <td>
                 <div class="d-flex align-items-center">
                   <div class="content-table-text">
-                    <div class="instructed-part">
-                      <h6>Jagat Mukherjee</h6>
-                      <p>62 yrs · M</p>
-                    </div>
+                    <h6>Jagat Mukherjee</h6>
+                  </div>
+                  <div class="content-table-btn-part ps-1">
+                    <button type="button" class="submitted-btn inv">Inv-1042</button>
                   </div>
                 </div>
               </td>
@@ -336,14 +295,13 @@
               </td>
             </tr>
             <tr>
-              <td>04</td>
               <td>
                 <div class="d-flex align-items-center">
                   <div class="content-table-text">
-                    <div class="instructed-part">
-                      <h6>Reshmi Chatterjee</h6>
-                      <p>62 yrs · F</p>
-                    </div>
+                    <h6>Reshmi Chatterjee</h6>
+                  </div>
+                  <div class="content-table-btn-part ps-1">
+                    <button type="button" class="submitted-btn inv">Inv-1042</button>
                   </div>
                 </div>
               </td>
@@ -359,14 +317,13 @@
               </td>
             </tr>
             <tr>
-              <td>05</td>
               <td>
                 <div class="d-flex align-items-center">
                   <div class="content-table-text">
-                    <div class="instructed-part">
-                      <h6>MEHERJABIN MOLLA</h6>
-                      <p>62 yrs · M</p>
-                    </div>
+                    <h6>MEHERJABIN MOLLA</h6>
+                  </div>
+                  <div class="content-table-btn-part ps-1">
+                    <button type="button" class="submitted-btn inv">Inv-1042</button>
                   </div>
                 </div>
               </td>
@@ -382,14 +339,13 @@
               </td>
             </tr>
             <tr>
-              <td>06</td>
               <td>
                 <div class="d-flex align-items-center">
                   <div class="content-table-text">
-                    <div class="instructed-part">
-                      <h6>Jasim Naskar</h6>
-                      <p>62 yrs · M</p>
-                    </div>
+                    <h6>Jasim Naskar</h6>
+                  </div>
+                  <div class="content-table-btn-part ps-1">
+                    <button type="button" class="submitted-btn inv">Inv-1042</button>
                   </div>
                 </div>
               </td>

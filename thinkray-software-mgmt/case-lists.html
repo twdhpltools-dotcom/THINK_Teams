@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet" onclick="window.location.href='C-history.html'">
+            <div class="user-wallet">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Cases List</h1>
@@ -213,110 +213,42 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-4 col-md-4 col-sm-4 col-4">
-            <select id="dateFilter" onchange="openCustomDate(this)">
-              <option value="1" selected>Today</option>
-              <option value="2">Yesterday</option>
-              <option value="3">7 days</option>
-              <option value="4">15 days</option>
-              <option value="5">1 month</option>
-              <option value="6">Customized Date Range</option>
-            </select>
-          </div>
-          <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-            <div class="filter-box">
-              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                Search & Filter
-                <i class="bi bi-chevron-up" id="filterArrow"></i>
-              </button>
-
-              <div class="filter-content hidden">
-                <h5>Search</h5>
-
-                <div class="search-input">
-                  <input type="text" name="" placeholder="" />
-                  <i class="bi bi-search search-right-icon"></i>
-                </div>
-
-                <hr class="pg-hr mt-3 mb-2" />
-
-                <h5>Filters</h5>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Study Types
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> X-Ray</label>
-                    <label><input type="checkbox"> CT</label>
-                    <label><input type="checkbox"> MRI</label>
-                    <label><input type="checkbox"> ECG</label>
-                  </div>
-                </div>
-
-                <button type="button" class="status-head" onclick="toggleStatus(this)">
-                  Status
-                  <i class="bi bi-chevron-up"></i>
-                </button>
-
-                <div class="status-part hidden">
-                  <div class="status-content">
-                    <label><input type="checkbox"> All</label>
-                    <label><input type="checkbox"> Completed</label>
-                    <label><input type="checkbox"> Recheck</label>
-                  </div>
-                </div>
-
-                <div class="filter-final">
-                  <div class="content-table-btn-part text-end justify-content-end">
-                    <button type="button" class="submitted-btn">Clear All</button>
-                    <button type="button" class="browse-btn">Apply</button>
-                  </div>
-                </div>
-              </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+            <div class="search-input">
+              <input type="text" name="" placeholder="" />
+              <i class="bi bi-search search-right-icon"></i>
             </div>
           </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected>All Study Types</option>
+              <option value="1">X-Ray</option>
+              <option value="2">CT</option>
+              <option value="3">MRI</option>
+              <option value="4">ECG</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <select name="">
+              <option value="0" selected>All Status</option>
+              <option value="1">Completed</option>
+              <option value="2">Recheck</option>
+            </select>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+            <input type="date" name="" placeholder="" />
+          </div>
         </div>
       </div>
-
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
 
       <div class="content-table case-list">
         <table>
           <thead>
             <tr>
-              <th>#</th>
+              <th>SL</th>
               <th>Patient info</th>
               <th>Study Description</th>
               <th>Status</th>
@@ -342,37 +274,34 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
-                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
+                  <p>Breathing difficulty · PA View</p>
+                  <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn non-clickable">Completed</button>
-                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#editReportStatusModal">Edit</button>
+                  <button type="button" class="completed-btn">Completed</button>
+                  <button type="button" class="edit-btn" data-bs-toggle="modal" data-bs-target="#editReportStatusModal"><i class="bi bi-pencil-square pe-0"></i></button>
                 </div>
-                <div class="content-table-text mt-1">
-                  <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewOriginalReportModal">Original version</a>
+                <div class="content-table-btn-part">
+                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">1</span>
+                  <span class="count-badge mx-1" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">2</span>
+                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">3</span>
                 </div>
               </td>
               <td>
                 <div class="content-table-text">
-                  <div class="content-table-btn-part mb-1">
-                    <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#printConfigModal">Print</button>
-                    <h6>Printed for 2 Times</h6>
+                  <div class="content-table-btn-part">
+                    <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#printConfigModal"><i class="bi bi-printer"></i></button>
+                    <h6>Printed for 2 Times <span>(Last Printed at: 10:24 AM)</span></h6>
                   </div>
-                  <h6><span>(Last Printed at: 10:24 AM)</span></h6>
                   <p>Approved By: Dr. Abhijit</p>
+                  <a href="#">Original version</a>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn" class="edit-btn" data-bs-toggle="modal" data-bs-target="#requestRecheckModal">Request Review</button>
-                </div>
-                <div class="content-table-btn-part mt-2">
-                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">1</span>
-                  <span class="count-badge mx-1" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">2</span>
-                  <span class="count-badge" data-bs-toggle="modal" data-bs-target="#statusRecheckModal">3</span>
+                  <button type="button" class="warning-btn" class="edit-btn" data-bs-toggle="modal" data-bs-target="#requestRecheckModal">Request Recheck</button>
                 </div>
               </td>
             </tr>
@@ -393,16 +322,16 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
+                  <p>Breathing difficulty · PA View</p>
                   <div class="d-flex align-items-center">
-                    <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
-                    <em class="ms-2" data-bs-toggle="modal" data-bs-target="#addViewManualModal">Modify</em>
+                    <em onclick="window.location.href='manual-add.html'">Add View</em>
+                    <em class="ps-3" onclick="window.location.href='manual-add.html'">Modify</em>
                   </div>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn non-clickable">Pending</button>
+                  <button type="button" class="pending-btn">Pending</button>
                 </div>
               </td>
               <td>
@@ -410,7 +339,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn disbaled">Request Review</button>
+                  <button type="button" class="warning-btn disbaled">Request Recheck</button>
                 </div>
               </td>
             </tr>
@@ -432,12 +361,12 @@
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
                   <p>Breathing difficulty · PA View</p>
-                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
+                  <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn non-clickable">Recheck Requested</button>
+                  <button type="button" class="request-btn">Recheck Requested</button>
                 </div>
               </td>
               <td>
@@ -466,16 +395,16 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
+                  <p>Breathing difficulty · PA View</p>
                   <div class="d-flex align-items-center">
-                    <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
-                    <em class="ms-2" data-bs-toggle="modal" data-bs-target="#addViewManualModal">Modify</em>
+                    <em onclick="window.location.href='manual-add.html'">Add View</em>
+                    <em class="ps-3" onclick="window.location.href='manual-add.html'">Modify</em>
                   </div>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn non-clickable">Pending</button>
+                  <button type="button" class="pending-btn">Pending</button>
                 </div>
               </td>
               <td>
@@ -483,7 +412,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn disbaled">Request Review</button>
+                  <button type="button" class="warning-btn disbaled">Request Recheck</button>
                 </div>
               </td>
             </tr>
@@ -504,13 +433,13 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
-                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
+                  <p>Breathing difficulty · PA View</p>
+                  <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn non-clickable">Recheck Requested</button>
+                  <button type="button" class="request-btn">Recheck Requested</button>
                 </div>
               </td>
               <td>
@@ -539,13 +468,13 @@
               <td>
                 <div class="content-table-text">
                   <h5>Chest X-Ray</h5>
-                  <p data-bs-toggle="modal" data-bs-target="#breatingFullModal">Breathing difficulty...</p>
-                  <em data-bs-toggle="modal" data-bs-target="#addViewManualModal">Add View</em>
+                  <p>Breathing difficulty · PA View</p>
+                  <em onclick="window.location.href='manual-add.html'">Add View</em>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn non-clickable">Recheck Requested</button>
+                  <button type="button" class="request-btn">Recheck Requested</button>
                 </div>
               </td>
               <td>
@@ -566,12 +495,6 @@
     <div class="modal fade" id="addClinicChargeModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>Add Clinical History</h2>
-            </div>
-          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
@@ -611,12 +534,6 @@
     <div class="modal fade" id="editReportStatusModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>Edit Report Status</h2>
-            </div>
-          </div>
           <div class="modal-body">
             <div class="modal-content-box">
 
@@ -738,12 +655,6 @@
     <div class="modal fade" id="requestRecheckModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>Request for  Review</h2>
-            </div>
-          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
@@ -784,7 +695,6 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Recheck 1</h2>
             </div>
@@ -812,7 +722,6 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Print Preferences</h2>
             </div>
@@ -840,129 +749,6 @@
       </div>
     </div>
     <!----- PRINT-CONFIGURE-MODAL ------->
-
-    <!----- BREATHING-FULL-MODAL ------->
-    <div class="modal fade" id="breatingFullModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>Study Description</h2>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal-content-box">
-              <form method="" action="">
-                <div class="row gx-3 gy-3">
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="status-check-comment">
-                      <p>Breathing difficulty with intermittent chest discomfort and persistent cough for the last few days. PA view requested. Please correlate with clinical findings and review the chest radiograph carefully.</p>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- BREATHING-FULL-MODAL ------->
-
-    <!----- ADD-VIEW-MANUAL-MODAL ------->
-    <div class="modal fade" id="addViewManualModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>Select & Add Views</h2>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal-content-box">
-              <div class="row gx-3 gy-4">
-                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                  <div class="form-formalities-box">
-                    <div class="row gx-3 gy-2 align-items-center justify-content-end mb-2">
-                      <div class="col-xl-4 col-md-6 col-sm-12 col-12">
-                        <div class="content-table-btn-part text-end align-items-center justify-content-end">
-                          <p class="pe-2 mb-0" style="white-space: nowrap; color: var(--dark);">9 Selected</p>
-                          <select name="">
-                            <option value="1" selected="">All Modalities</option>
-                            <option value="2">DX</option>
-                            <option value="3">CT</option>
-                            <option value="4">MRI</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="view-selector">
-                      <div class="login-input">
-                        <i class="bi bi-search login-left-icon"></i>
-                        <input type="text" name="" placeholder="Search views">
-                      </div>
-
-                      <div class="view-chip-list" id="viewChipList">
-                        <button type="button" class="view-chip">CHEST PA VIEW</button>
-                        <button type="button" class="view-chip active">CHEST AP VIEW</button>
-                        <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
-                        <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
-                        <button type="button" class="view-chip active">SKULL AP VIEW</button>
-                        <button type="button" class="view-chip active">PNS OM VIEW</button>
-                        <button type="button" class="view-chip">CHEST PA VIEW</button>
-                        <button type="button" class="view-chip active">CHEST AP VIEW</button>
-                        <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
-                        <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
-                        <button type="button" class="view-chip active">SKULL AP VIEW</button>
-                        <button type="button" class="view-chip active">PNS OM VIEW</button>
-                        <button type="button" class="view-chip">CHEST PA VIEW</button>
-                        <button type="button" class="view-chip active">CHEST AP VIEW</button>
-                        <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
-                        <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
-                        <button type="button" class="view-chip active">SKULL AP VIEW</button>
-                        <button type="button" class="view-chip active">PNS OM VIEW</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row gx-3 gy-3">
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="content-table-btn-part justify-content-center mt-3">
-                      <button type="submit" class="browse-btn" data-bs-dismiss="modal">Save</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- ADD-VIEW-MANUAL-MODAL ------->
-
-    <!----- VIEW-ORIGINAL-REPORT-MODAL ------->
-    <div class="modal fade" id="viewOriginalReportModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>Original Report</h2>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal-content-box">
-              <div class="lightbox-modal-image">
-                <img src="assets/images/main-report.jpg" alt="Main Report Image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- VIEW-ORIGINAL-REPORT-MODAL ------->
 
   </main>
   <!----------------------------------- CASE-LIST-PAGE ------------------------------------------------->

@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet" onclick="window.location.href='C-history.html'">
+            <div class="user-wallet">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Pending List</h1>
@@ -214,41 +214,11 @@
         </div>
       </div>
 
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
-
       <div class="content-table pending-list">
         <table>
           <thead>
             <tr>
-              <th>#</th>
+              <th>SL</th>
               <th>Patient info</th>
               <th>Ref Doctor</th>
               <th>Info</th>
@@ -271,7 +241,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>1 Images</h5>
-                  <p>24.84 MB <span data-bs-toggle="modal" data-bs-target="#viewImageModal">View</span></p>
+                  <p>24.84 MB <span>View</span></p>
                 </div>
               </td>
               <td>
@@ -295,7 +265,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>1 Images</h5>
-                  <p>24.84 MB <span data-bs-toggle="modal" data-bs-target="#viewImageModal">View</span></p>
+                  <p>24.84 MB <span>View</span></p>
                 </div>
               </td>
               <td>
@@ -319,7 +289,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>1 Images</h5>
-                  <p>24.84 MB <span data-bs-toggle="modal" data-bs-target="#viewImageModal">View</span></p>
+                  <p>24.84 MB <span>View</span></p>
                 </div>
               </td>
               <td>
@@ -343,7 +313,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>1 Images</h5>
-                  <p>24.84 MB <span data-bs-toggle="modal" data-bs-target="#viewImageModal">View</span></p>
+                  <p>24.84 MB <span>View</span></p>
                 </div>
               </td>
               <td>
@@ -367,7 +337,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>1 Images</h5>
-                  <p>24.84 MB <span data-bs-toggle="modal" data-bs-target="#viewImageModal">View</span></p>
+                  <p>24.84 MB <span>View</span></p>
                 </div>
               </td>
               <td>
@@ -391,7 +361,7 @@
               <td>
                 <div class="content-table-text">
                   <h5>1 Images</h5>
-                  <p>24.84 MB <span data-bs-toggle="modal" data-bs-target="#viewImageModal">View</span></p>
+                  <p>24.84 MB <span>View</span></p>
                 </div>
               </td>
               <td>
@@ -404,28 +374,6 @@
         </table>
       </div>
     </section>
-
-    <!----- VIEW-IMAGE-MODAL ------->
-    <div class="modal fade" id="viewImageModal" data-bs-keyboard="false" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-section-heading">
-              <h2>View Image</h2>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal-content-box">
-              <div class="lightbox-modal-image">
-                <img src="assets/images/main-report.jpg" alt="Main Report Image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----- VIEW-IMAGE-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-LIST-PAGE ------------------------------------------------->
