@@ -161,13 +161,6 @@
             <p>Post - Paid</p>
           </a>
         </div>
-        
-        <a href="template.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-copy"></i>
-          </span>
-          <p>Template</p>
-        </a>
 
         <a href="admin-review.html">
           <span class="sidebar-menu-nav-icon">
@@ -200,6 +193,12 @@
             </span>
             <p>Upload & Value</p>
           </a>
+          <a href="admin-up-value.html">
+            <span class="sidebar-menu-nav-icon">
+              <i class="bi bi-file-earmark-arrow-up"></i>
+            </span>
+            <p>Upload & Value</p>
+          </a>
           <a href="admin-fin-value.html">
             <span class="sidebar-menu-nav-icon">
               <i class="bi bi-currency-rupee"></i>
@@ -207,6 +206,13 @@
             <p>Financial Year</p>
           </a>
         </div>
+
+        <a href="admin-tds.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+          </span>
+          <p>TDS</p>
+        </a>
 
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
@@ -220,7 +226,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Add Centre Information</h1>
@@ -233,22 +239,11 @@
         <div class="row gx-3 gy-4">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="form-formalities-box">
-              <h5>Fill The Details</h5>
+              <h5 class="mb-2">Centre Information</h5>
               <form method="" action="">
                 <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <input type="text" name="" value="" placeholder="Enter centre name *" required>
-                  </div>
-
-                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
-                    <div class="trend-verified-input">
-                      <input type="text" name="" value="" placeholder="Enter User Name *" required>
-                    </div>
-                    <span class="trend-verified-badge">validate</span>
-                  </div>
-
-                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
-                    <input type="password" name="" value="" placeholder="Enter Password *" required>
                   </div>
 
                   <div class="col-xl-6 col-md-6 col-sm-12 col-12">
@@ -268,9 +263,42 @@
                   </div>
 
                   <div class="col-xl-6 col-md-6 col-sm-12 col-12">
-                    <input type="email" name="" value="" placeholder="Enter email address *" required>
+                    <input type="email" name="" value="" placeholder="Enter email address">
                   </div>
 
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter city">
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <textarea rows="3" name="" placeholder="Enter centre address"></textarea>
+                  </div>
+                </div>
+              </form>
+
+              <hr class="pg-hr my-3" />
+
+              <h5 class="mb-2">Login & Access</h5>
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <div class="trend-verified-input">
+                      <input type="text" name="" value="" placeholder="Enter User Name *" required>
+                      <span class="trend-verified-badge">validate</span>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="password" name="" value="" placeholder="Enter Password *" required>
+                  </div>
+                </div>
+              </form>
+
+              <hr class="pg-hr my-3" />
+
+              <h5 class="mb-2">Billing & Status</h5>
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
                   <div class="col-xl-6 col-md-6 col-sm-12 col-12">
                     <select name="" required>
                       <option value="0" selected="">Select payment type *</option>
@@ -278,11 +306,7 @@
                       <option value="1">Post-Paid</option>
                     </select>
                   </div>
-
-                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
-                    <input type="text" name="" value="" placeholder="Enter city *" required>
-                  </div>
-
+                  
                   <div class="col-xl-6 col-md-6 col-sm-12 col-12">
                     <select name="" required>
                       <option value="0">Select status *</option>
@@ -290,15 +314,12 @@
                       <option value="1">In-active</option>
                     </select>
                   </div>
-
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <textarea rows="3" name="" placeholder="Enter centre address"></textarea>
-                  </div>
                 </div>
                 <div class="row gx-3 gy-3">
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <div class="content-table-btn-part justify-content-center mt-3">
-                      <button type="submit" class="browse-btn" onclick="window.location.href='admin-centre.html'">Add Centre</button>
+                    <div class="content-table-btn-part justify-content-end mt-4">
+                      <button type="button" class="submitted-btn" onclick="window.location.href='admin-centre.html'">Cancel</button>
+                      <button type="button" class="browse-btn" onclick="window.location.href='admin-centre.html'">Add Centre</button>
                     </div>
                   </div>
                 </div>

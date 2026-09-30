@@ -161,13 +161,6 @@
             <p>Post - Paid</p>
           </a>
         </div>
-        
-        <a href="template.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-copy"></i>
-          </span>
-          <p>Template</p>
-        </a>
 
         <a href="admin-review.html">
           <span class="sidebar-menu-nav-icon">
@@ -208,6 +201,13 @@
           </a>
         </div>
 
+        <a href="admin-tds.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+          </span>
+          <p>TDS</p>
+        </a>
+
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -220,7 +220,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2 w-100">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Add Doctor Signature</h1>
@@ -230,7 +230,7 @@
       </div>
 
       <div class="content-formalities">
-        <div class="row gx-3 gy-3">
+        <div class="row gx-3 gy-3 w-100">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="field-formalities-box">
               <div class="field-formalities-action-part upload" onclick="document.getElementById('FileUpload').click()">
@@ -240,12 +240,12 @@
                   </span>
                   <div>
                     <input type="file" id="FileUpload" accept="image/*" hidden="">
-                    <h6>Upload Branding Page</h6>
+                    <h6>Upload Signature</h6>
                     <p>Select only .JPG template file</p>
                   </div>
                 </div>
                 <div class="content-table-btn-part">
-                  <button type="button" class="browse-btn"><i class="bi bi-folder2-open"></i> Browse File</button>
+                  <button type="button" class="browse-btn">Browse File</button>
                 </div>
               </div>
             </div>
@@ -277,6 +277,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Signature Settings</h2>
             </div>
@@ -316,6 +317,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Confirmation</h2>
             </div>

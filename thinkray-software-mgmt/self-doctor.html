@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet">
+            <div class="user-wallet" onclick="window.location.href='C-history.html'">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Self Doctors List</h1>
@@ -213,18 +213,49 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-plus-lg"></i> Add Doctor</button>
+              <button type="button" class="browse-btn" onclick="window.location.href='self-doctor-add.html'">Add Doctor</button>
             </div>
           </div>
         </div>
       </div>
 
+      <!----- PAGINATION-SORT ------->
+      <div class="pagination-bar">
+        <div class="pagination-left">
+          <button type="button" class="page-arrow prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <span class="page-range">1 to 10</span>
+
+          <button type="button" class="page-arrow next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="pagination-right">
+          <span>Show</span>
+
+          <select class="page-limit">
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
+          </select>
+
+          <span>per page</span>
+        </div>
+      </div>
+      <!----- PAGINATION-SORT ------->
+
       <div class="content-table self-doctor">
         <table>
           <thead>
             <tr>
+              <th>#</th>
               <th>Doctor Name</th>
               <th>Mobile Number</th>
               <th>Qualification</th>
@@ -234,77 +265,82 @@
           </thead>
           <tbody>
             <tr>
+              <td>01</td>
               <td>Dr. Shibarjan Roy</td>
               <td>+91 6349304309</td>
               <td>MBBS/ENT</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn">Approved</button>
+                  <button type="button" class="pending-btn non-clickable">Approved</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>DR. MD. JADAV MONDAL</td>
               <td>+91 6349304309</td>
               <td>MBBS/ENT</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">Pending</button>
+                  <button type="button" class="request-btn non-clickable">Pending</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>Dr. Md. Jamal Naskar</td>
               <td>+91 6349304309</td>
               <td>MBBS/ENT</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">Pending</button>
+                  <button type="button" class="request-btn non-clickable">Pending</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>DR. MD. JADAV MONDAL</td>
               <td>+91 6349304309</td>
               <td>MBBS/ENT</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn">Approved</button>
+                  <button type="button" class="pending-btn non-clickable">Approved</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>DR. Bidya Roy</td>
               <td>+91 6349304309</td>
               <td>MBBS/ENT</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn">Approved</button>
+                  <button type="button" class="pending-btn non-clickable">Approved</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'"><i class="bi bi-pencil-square pe-0"></i></button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
                 </div>
               </td>
             </tr>

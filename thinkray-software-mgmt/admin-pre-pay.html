@@ -161,13 +161,6 @@
             <p>Post - Paid</p>
           </a>
         </div>
-        
-        <a href="template.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-copy"></i>
-          </span>
-          <p>Template</p>
-        </a>
 
         <a href="admin-review.html">
           <span class="sidebar-menu-nav-icon">
@@ -208,6 +201,13 @@
           </a>
         </div>
 
+        <a href="admin-tds.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+          </span>
+          <p>TDS</p>
+        </a>
+
         <a href="admin-tat.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-stopwatch"></i>
@@ -220,45 +220,121 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Pre-Paid List</h1>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-between">
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
-            <select name="">
-              <option value="0" selected="">All Centres</option>
-              <option value="1">Diagnosis &amp; Cure Centre</option>
-              <option value="2">City Diagnostic Centre</option>
-              <option value="3">Prime Scan Centre</option>
+        <div class="row gx-3 gy-2 justify-content-end">
+          <div class="col-xl-3 col-md-3 col-sm-3 col-12">
+            <div class="content-table-btn-part text-end justify-content-end">
+              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createWalletModal">Create Wallet</button>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-3 col-sm-3 col-4">
+            <select id="dateFilter" onchange="openCustomDate(this)">
+              <option value="1" selected="">Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">7 days</option>
+              <option value="4">15 days</option>
+              <option value="5">1 month</option>
+              <option value="6">Customized Date Range</option>
             </select>
           </div>
+          <div class="col-xl-4 col-md-4 col-sm-4 col-6">
+            <div class="filter-box">
+              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
+                Search &amp; Filter
+                <i class="bi bi-chevron-up" id="filterArrow"></i>
+              </button>
 
-          <div class="col-xl-2 col-md-2 col-sm-6 col-6">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" data-bs-toggle="modal" data-bs-target="#createWalletModal"><i class="bi bi-plus-lg"></i> Create Wallet</button>
+              <div class="filter-content hidden">
+                <h5>Search</h5>
+
+                <div class="search-input">
+                  <input type="text" name="" placeholder="Search n">
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+
+                <hr class="pg-hr mt-3 mb-2">
+
+                <h5>Filters</h5>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  Centres
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> Diagnosis &amp; Cure Centre</label>
+                    <label><input type="checkbox"> City Diagnostic Centre</label>
+                    <label><input type="checkbox"> Prime Scan Centre</label>
+                  </div>
+                </div>
+
+                <div class="filter-final">
+                  <div class="content-table-btn-part text-end justify-content-end">
+                    <button type="button" class="submitted-btn">Clear All</button>
+                    <button type="button" class="browse-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!----- PAGINATION-SORT ------->
+      <div class="pagination-bar">
+        <div class="pagination-left">
+          <button type="button" class="page-arrow prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <span class="page-range">1 to 10</span>
+
+          <button type="button" class="page-arrow next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="pagination-right">
+          <span>Show</span>
+
+          <select class="page-limit">
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
+          </select>
+
+          <span>per page</span>
+        </div>
+      </div>
+      <!----- PAGINATION-SORT ------->
+
       <div class="content-table admin-centre">
         <table>
           <thead>
             <tr>
+              <th>#</th>
               <th>Centre</th>
               <th>Wallet Balance</th>
               <th>Today's Cases</th>
               <th>Today's Usage</th>
               <th>Last Recharge</th>
               <th>Recharge</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td>01</td>
               <td>Medicare Imaging</td>
               <td>₹ 18,420</td>
               <td>36</td>
@@ -269,8 +345,14 @@
                   <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#rechargeWalletModal"><i class="bi bi-currency-rupee"></i> Recharge</button>
                 </div>
               </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>City Diagnostic</td>
               <td>₹ 18,420</td>
               <td>36</td>
@@ -281,8 +363,14 @@
                   <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#rechargeWalletModal"><i class="bi bi-currency-rupee"></i> Recharge</button>
                 </div>
               </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>Plus City Diagnostic</td>
               <td>₹ 18,420</td>
               <td>36</td>
@@ -293,8 +381,14 @@
                   <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#rechargeWalletModal"><i class="bi bi-currency-rupee"></i> Recharge</button>
                 </div>
               </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
+                </div>
+              </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>Medicare Imaging</td>
               <td>₹ 18,420</td>
               <td>36</td>
@@ -303,6 +397,11 @@
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="print-btn" data-bs-toggle="modal" data-bs-target="#rechargeWalletModal"><i class="bi bi-currency-rupee"></i> Recharge</button>
+                </div>
+              </td>
+              <td>
+                <div class="content-table-btn-part">
+                  <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDetailsModal">View Details</button>
                 </div>
               </td>
             </tr>
@@ -316,6 +415,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Create Wallet</h2>
             </div>
@@ -324,17 +424,23 @@
             <div class="modal-content-box">
               <form method="" action="">
                 <div class="row gx-3 gy-3">
-                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="text" name="" value="" placeholder="Enter Center name *" required="">
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <select name="" required>
+                      <option value="0" selected>All Centres *</option>
+                      <option value="1">Prime Scan Diagnostics</option>
+                      <option value="2">City Diagnostic Centre</option>
+                      <option value="3">Medicure Diagnosis</option>
+                    </select>
                   </div>
                   <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter Code *" required="">
-                  </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter Amount *" required="">
+                    <select name="" id="tdsSelect" required>
+                      <option value="0" selected="">TDS *</option>
+                      <option value="1">No</option>
+                      <option value="2">Yes</option>
+                    </select>
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="text" name="" value="" placeholder="Enter Receiver URL *" required="">
+                    <input type="number" id="tdsPercentageBox" name="" value="" placeholder="Enter TDS Percentage (%) *" required />
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <div class="content-table-btn-part justify-content-center">
@@ -355,6 +461,7 @@
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
           <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="modal-section-heading">
               <h2>Recharge Wallet</h2>
             </div>
@@ -367,7 +474,10 @@
                     <input type="text" name="" value="" placeholder="Enter Amount *" required="">
                   </div>
                   <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="TDS calculated Amount *" required="">
+                    <input type="number" name="" value="" placeholder="TDS Calculated Amount">
+                  </div>
+                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+                    <input type="number" name="" value="" placeholder="Enter Payable Amount  *" required="">
                   </div>
                   <div class="col-xl-6 col-md-6 col-sm-6 col-6">
                     <select name="">
@@ -377,11 +487,8 @@
                       <option value="1">Cash</option>
                     </select>
                   </div>
-                  <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-                    <input type="text" name="" value="" placeholder="Enter Payable Amount  *" required="">
-                  </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                    <input type="text" name="" value="" placeholder="Enter Transaction Number *" required="">
+                    <input type="text" name="" value="" placeholder="Enter Transaction Number">
                   </div>
                   <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                     <div class="content-table-btn-part justify-content-center">
@@ -396,6 +503,263 @@
       </div>
     </div>
     <!----- RECHARGE-WALLET-MODAL ------->
+
+    <!----- VIEW-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewDetailsModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Pre-Paid Details</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <div class="account-summary">
+                <div class="summary-item">
+                  <span>Current Balance</span>
+                  <strong>₹ 18,420</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Status</span>
+                  <strong>Active</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Last Payment</span>
+                  <strong>24 Aug 2026</strong>
+                </div>
+              </div>
+
+              <div class="payment-history-box">
+                <div class="content-formalities">
+                  <div class="row gx-3 gy-2 mb-2">
+                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                      <div class="payment-history-head">
+                        <h5>Payment History</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-3 gy-2 justify-content-end">
+                    <div class="col-xl-4 col-md-4 col-sm-4 col-5">
+                      <select id="dateFilter" onchange="openCustomDate(this)">
+                        <option value="1" selected>Today</option>
+                        <option value="2">Yesterday</option>
+                        <option value="3">7 days</option>
+                        <option value="4">15 days</option>
+                        <option value="5">1 month</option>
+                        <option value="6">Customized Date Range</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-6 col-7">
+                      <div class="filter-box">
+                        <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
+                          Search & Filter
+                          <i class="bi bi-chevron-up" id="filterArrow"></i>
+                        </button>
+
+                        <div class="filter-content hidden">
+                          <h5>Search</h5>
+
+                          <div class="search-input">
+                            <input type="text" name="" placeholder="" />
+                            <i class="bi bi-search search-right-icon"></i>
+                          </div>
+
+                          <hr class="pg-hr mt-3 mb-2" />
+
+                          <h5>Filters</h5>
+
+                          <button type="button" class="status-head" onclick="toggleStatus(this)">
+                            Payment Mode
+                            <i class="bi bi-chevron-up"></i>
+                          </button>
+
+                          <div class="status-part hidden">
+                            <div class="status-content">
+                              <label><input type="checkbox"> All</label>
+                              <label><input type="checkbox"> UPI</label>
+                              <label><input type="checkbox"> Card</label>
+                              <label><input type="checkbox"> Bank Transfer</label>
+                              <label><input type="checkbox"> Cash</label>
+                            </div>
+                          </div>
+
+                          <div class="filter-final">
+                            <div class="content-table-btn-part text-end justify-content-end">
+                              <button type="button" class="submitted-btn">Clear All</button>
+                              <button type="button" class="browse-btn">Apply</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!----- PAGINATION-SORT ------->
+                <div class="pagination-bar">
+                  <div class="pagination-left">
+                    <button type="button" class="page-arrow prev">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+
+                    <span class="page-range">1 to 10</span>
+
+                    <button type="button" class="page-arrow next">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+                  </div>
+
+                  <div class="pagination-right">
+                    <span>Show</span>
+
+                    <select class="page-limit">
+                      <option value="0" selected>50</option>
+                      <option value="1">100</option>
+                      <option value="2">150</option>
+                      <option value="3">200</option>
+                      <option value="4">250</option>
+                    </select>
+
+                    <span>per page</span>
+                  </div>
+                </div>
+                <!----- PAGINATION-SORT ------->
+
+                <div class="content-table admin-centre">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Payment Date</th>
+                        <th>Amount</th>
+                        <th>Payment Mode</th>
+                        <th>Transaction ID</th>
+                        <th>Status</th>
+                        <th>Receipt</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>24-Aug-2026</td>
+                        <td>₹ 25,480</td>
+                        <td>Online</td>
+                        <td>PAY-240826-01</td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="completed-btn">Paid</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
+                          </div>
+                        </td>
+                      </tr>
+                     <tr>
+                        <td>01</td>
+                        <td>10-Aug-2026</td>
+                        <td>₹ 25,480</td>
+                        <td>Bank Transfer</td>
+                        <td>PAY-240826-01</td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="completed-btn">Paid</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>01</td>
+                        <td>15-Oct-2026</td>
+                        <td>₹ 25,480</td>
+                        <td>Online</td>
+                        <td>PAY-240826-01</td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="completed-btn">Paid</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="content-table-btn-part">
+                            <button type="button" class="pending-btn" data-bs-toggle="modal" data-bs-target="#viewDownloadReceiptDetailsModal" data-bs-dismiss="modal">View Details</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-DETAILS-MODAL ------->
+
+    <!----- VIEW-DOWNLOAD-RECEIPT-DETAILS-MODAL ------->
+    <div class="modal fade" id="viewDownloadReceiptDetailsModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <div class="modal-content-box">
+              <div class="pre-pdf-downloader">
+                <div>
+                  <img src="assets/images/thinkray-logo.png" alt="thinkray-logo" />
+                  <h5>Pre-Paid Payment Receipt</h5>
+                </div>
+                <div class="content-table-btn-part text-end justify-content-end">
+                  <button type="button" class="browse-btn"><i class="bi bi-download"></i> Download</button>
+                </div>
+              </div>
+              <div class="payment-view">
+                <div class="payment-details">
+                  <div class="payment-row">
+                    <span>Centre</span>
+                    <strong>Medicare Imaging</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Payment Date</span>
+                    <strong>24-Aug-2026</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Amount</span>
+                    <strong>₹ 25,260</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Payment Mode</span>
+                    <strong>Online</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Transaction ID</span>
+                    <strong>PAY-240826-01</strong>
+                  </div>
+
+                  <div class="payment-row">
+                    <span>Status</span>
+                    <strong>Paid</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-DOWNLOAD-RECEIPT-DETAILS-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->

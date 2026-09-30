@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay View Individual Investigation | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay View Individual Investigation List | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -34,40 +34,36 @@
 
     <!----- TOP-HEADER ------->
     <div class="top-header">
-      <div class="row align-items-center justify-content-between">
-
-        <div class="col-xl-3 col-lg-12 col-md-9 col-9">
-          <div class="top-header-user-name">
-            <h4>Niramay Diagnostic</h4>
-          </div>
-        </div>
+      <div class="row align-items-center justify-content-end">
 
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
-
-            <div class="user-wallet">
-              <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
-              <p>Balance</p>
-              <h6>₹6,540</h6>
+            <div class="user-wallet admin" onclick="toggleAdminSwitchMenu(event)">
+              <img src="assets/images/swap-svgrepo-icon.png" alt="customer swap icon">
             </div>
 
+            <!----- ANIMATED-TOGGLER-MENU ------->
+            <div id="AdminSwitchSubMenu" class="profile-submenu">
+              <a href="index.html">
+                Centre
+              </a>
+              <a href="doctor-index.html">
+                Doctor
+              </a>
+              <a href="admin-index.html">
+                Admin
+              </a>
+            </div>
+            <!----- ANIMATED-TOGGLER-MENU ------->
+
             <div class="user-supports">
-              <div class="user-call-supports">
-                <span class="call-supports-icon">
-                  <i class="bi bi-telephone-outbound"></i>
-                </span>
-                <div>
-                  <h6>Support Call: 08062179988</h6>
-                  <p>Mon to Sat · 10 AM – 07 PM</p>
-                </div>
-              </div>
               <div class="user-notification" onclick="window.location.href='notification.html'">
                 <img src="assets/images/notification-svgrepo-icon.png" alt="notification icon" />
               </div>
               <div class="profile-wrapper">
 
                 <div class="user-profile" onclick="toggleProfileMenu(event)">
-                  <h6>Bactro Clinical Laboratory</h6>
+                  <h6>Admin</h6>
                   <i class="bi bi-chevron-down"></i>
                 </div>
 
@@ -75,13 +71,13 @@
                 <div id="ProfileSubMenu" class="profile-submenu">
                   <a href="change-password.html">
                     <span class="profile-submenu-icon">
-                      <img src="assets/images/password-icon.png" alt="change password icon" />
+                      <img src="assets/images/password-icon.png" alt="change password icon">
                     </span>
                     Change Password
                   </a>
                   <a href="login.html" class="log-anchor">
                     <span class="profile-submenu-icon">
-                      <img src="assets/images/logout-icon.png" alt="logout icon" />
+                      <img src="assets/images/logout-icon.png" alt="logout icon">
                     </span>
                     Logout
                   </a>
@@ -117,106 +113,124 @@
       </div>
 
       <div class="sidebar-menu-nav">
-        <a href="index.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-clock"></i>
-          </span>
-          <p>Pending</p>
-        </a>
-        <a href="case-lists.html">
+        <a href="admin-index.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-file-earmark-text"></i>
           </span>
           <p>List of Cases</p>
+          <em class="counter-chip">32</em>
         </a>
-        <a href="history.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-file-earmark-check"></i>
-          </span>
-          <p>Modify History</p>
-        </a>
-        <a href="c-history.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-stopwatch"></i>
-          </span>
-          <p>Charge History</p>
-        </a>
-        <a href="r-history.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-arrow-clockwise"></i>
-          </span>
-          <p>Recharge History</p>
-        </a>
-        <a href="b-history.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-clipboard2-data"></i>
-          </span>
-          <p>Billing History</p>
-        </a>
-        <a href="template.html" class="active">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-copy"></i>
-          </span>
-          <p>Template</p>
-        </a>
-        <a href="configure.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-gear"></i>
-          </span>
-          <p>Configure</p>
-        </a>
-        <a href="manual-add.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-plus-circle"></i>
-          </span>
-          <p>Manual Add</p>
-        </a>
-        <a href="payment.html">
-          <span class="sidebar-menu-nav-icon">
-            <i class="bi bi-credit-card-2-back"></i>
-          </span>
-          <p>Online Payment</p>
-        </a>
-        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
+        <a href="admin-centre.html">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-building-gear"></i>
           </span>
-          <p>Center Info</p>
+          <p>Centers</p>
+        </a>
+        <a href="admin-doctor.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-person-square"></i>
+          </span>
+          <p>Doctors</p>
+        </a>
+        <a href="admin-list-view.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-grid-1x2"></i>
+          </span>
+          <p>List of Views</p>
+        </a>
+        <a href="admin-fix-error.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-exclamation-triangle"></i>
+          </span>
+          <p>Fix Error</p>
+          <em class="counter-chip">3</em>
+        </a>
+        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-credit-card-2-back"></i>
+          </span>
+          <p>Payment</p>
           <i class="bi bi-chevron-down sub-down-icon"></i>
         </a>
 
         <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html">
-            <span class="sidebar-menu-nav-icon">
-              <i class="bi bi-person-square"></i>
-            </span>
-            <p>Self Doctor</p>
+          <a href="admin-pre-pay.html" class="active">
+            <p>Pre - Paid</p>
           </a>
-          <a href="interface.html">
-            <span class="sidebar-menu-nav-icon">
-              <i class="bi bi-file-earmark-text"></i>
-            </span>
-            <p>Interface Info</p>
+          <a href="admin-post-pay.html">
+            <p>Post - Paid</p>
           </a>
         </div>
+
+        <a href="admin-review.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-star"></i>
+          </span>
+          <p>Review Reports</p>
+          <em class="counter-chip">7</em>
+        </a>
+
+        <h5 class="menu-divide-head">MIS REPORT</h5>
+
+        <a href="admin-doctor-pay.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-credit-card-2-front"></i>
+          </span>
+          <p>Doctor Pay</p>
+        </a>
+        <a href="javascript:void(0)" onclick="toggleSubMenu(this)">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-building"></i>
+          </span>
+          <p>Centre</p>
+          <i class="bi bi-chevron-down sub-down-icon"></i>
+        </a>
+
+        <div id="ToggleSubMenu" class="sidebar-submenu">
+          <a href="admin-up-value.html">
+            <span class="sidebar-menu-nav-icon">
+              <i class="bi bi-file-earmark-arrow-up"></i>
+            </span>
+            <p>Upload & Value</p>
+          </a>
+          <a href="admin-fin-value.html">
+            <span class="sidebar-menu-nav-icon">
+              <i class="bi bi-currency-rupee"></i>
+            </span>
+            <p>Financial Year</p>
+          </a>
+        </div>
+
+        <a href="admin-tds.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+          </span>
+          <p>TDS</p>
+        </a>
+
+        <a href="admin-tat.html">
+          <span class="sidebar-menu-nav-icon">
+            <i class="bi bi-stopwatch"></i>
+          </span>
+          <p>TAT</p>
+        </a>
       </div>
     </aside>
     <!----- SIDEBAR-MENU ------->
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Chest X-Ray</h1>
-              <p>3 Templates</p>
             </div>
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-plus-lg"></i> Add Template</button>
+              <button type="button" class="browse-btn" onclick="window.location.href='edit-template.html'">Add Template</button>
             </div>
           </div>
         </div>
@@ -226,13 +240,15 @@
         <table>
           <thead>
             <tr>
+              <th>#</th>
               <th>Template Name</th>
-              <th>Updated by</th>
+              <th>Updated By</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h6>Chest X-Ray Normal</h6>
@@ -246,13 +262,18 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'"><i class="bi bi-eye pe-0"></i></button>
-                  <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
-                  <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
+                  <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'">View</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'">Edit</button>
+                  <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal">Delete</button>
+                  <label class="switch mb-0">
+                    <input type="checkbox" name="" checked />
+                    <span class="slider"></span>
+                  </label>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h6>Chest X-Ray AbNormal</h6>
@@ -267,14 +288,19 @@
               <td>
                 <div class="content-table-btn-part">
                   <div class="content-table-btn-part">
-                    <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'"><i class="bi bi-eye pe-0"></i></button>
-                    <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
-                    <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
+                    <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'">View</button>
+                    <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'">Edit</button>
+                    <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal">Delete</button>
+                    <label class="switch mb-0">
+                    <input type="checkbox" name="" checked />
+                      <span class="slider"></span>
+                    </label>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>01</td>
               <td>
                 <div class="content-table-text">
                   <h6>Chest X-Ray Neutral</h6>
@@ -288,9 +314,13 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'"><i class="bi bi-eye pe-0"></i></button>
-                  <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'"><i class="bi bi-pencil-square pe-0"></i></button>
-                  <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal"><i class="bi bi-trash pe-0"></i></button>
+                  <button type="button" class="warning-btn" onclick="window.location.href='view-template.html'">View</button>
+                  <button type="button" class="edit-btn" onclick="window.location.href='edit-template.html'">Edit</button>
+                  <button type="button" class="request-btn" data-bs-toggle="modal" data-bs-target="#deleteConfModal">Delete</button>
+                  <label class="switch mb-0">
+                    <input type="checkbox" name="" checked />
+                    <span class="slider"></span>
+                  </label>
                 </div>
               </td>
             </tr>

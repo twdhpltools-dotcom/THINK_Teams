@@ -120,7 +120,7 @@
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-check2-circle"></i>
           </span>
-          <p>Approve</p>
+          <p>Approved</p>
           <em class="counter-chip">24</em>
         </a>
         <a href="doctor-request.html">
@@ -148,29 +148,132 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Payment Summary</h1>
-              <p>01 Aug 2026 – 15 Aug 2026</p>
             </div>
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 col-12">
-            <input type="date" name="" placeholder="Enter Date">
+          <div class="col-xl-4 col-md-4 col-sm-4 col-4">
+            <select id="dateFilter" onchange="openCustomDate(this)">
+              <option value="1" selected="">Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">7 days</option>
+              <option value="4">15 days</option>
+              <option value="5">1 month</option>
+              <option value="6">Customized Date Range</option>
+            </select>
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+            <div class="filter-box">
+              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
+                Search &amp; Filter
+                <i class="bi bi-chevron-up" id="filterArrow"></i>
+              </button>
+
+              <div class="filter-content hidden">
+                <h5>Search</h5>
+
+                <div class="search-input">
+                  <input type="text" name="" placeholder="Search n">
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+
+                <hr class="pg-hr mt-3 mb-2">
+
+                <h5>Filters</h5>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  Centres
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> City Diagnostic Centre</label>
+                    <label><input type="checkbox"> Plus Diagnostic Centre</label>
+                    <label><input type="checkbox"> Medicure Diagnosis</label>
+                  </div>
+                </div>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  Modalitity
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> RDX</label>
+                    <label><input type="checkbox"> CT</label>
+                    <label><input type="checkbox"> MRI</label>
+                    <label><input type="checkbox"> ECG</label>
+                  </div>
+                </div>
+
+                <div class="filter-final">
+                  <div class="content-table-btn-part text-end justify-content-end">
+                    <button type="button" class="submitted-btn">Clear All</button>
+                    <button type="button" class="browse-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!----- PAGINATION-SORT ------->
+      <div class="pagination-bar">
+        <div class="pagination-left">
+          <button type="button" class="page-arrow prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <span class="page-range">1 to 10</span>
+
+          <button type="button" class="page-arrow next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="pagination-right">
+          <span>Show</span>
+
+          <select class="page-limit">
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
+          </select>
+
+          <span>per page</span>
+        </div>
+      </div>
+      <!----- PAGINATION-SORT ------->
+
       <div class="form-formalities-box mb-4">
-        <h5 class="mb-0">Case History</h5>
-        <p>01 Aug 2026 – 15 Aug 2026</p>
+        <div class="d-flex align-items-start justify-content-between flex-wrap">
+          <div>
+            <h5 class="mb-0">Case History</h5>
+            <p class="mb-0">01 Aug 2026 – 15 Aug 2026</p>
+          </div>
+
+          <div class="content-table-btn-part text-end justify-content-end mb-3">
+            <button type="button" class="browse-btn" onclick="window.location.href='doctor-payment-history.html'">Payment History</button>
+            <button type="button" class="browse-btn">Export</button>
+          </div>
+        </div>
       
         <div class="content-table admin-tat">
           <table>
             <thead>
               <tr>
+                <th>#</th>
                 <th>Case No.</th>
                 <th>Approved Date & Time</th>
                 <th>Patient</th>
@@ -182,6 +285,7 @@
             </thead>
             <tbody>
               <tr>
+                <td>01</td>
                 <td>
                   <div class="content-table-text">
                     <h5>18451</h5>
@@ -199,6 +303,7 @@
                 <td>₹650</td>
               </tr>
               <tr>
+                <td>01</td>
                 <td>
                   <div class="content-table-text">
                     <h5>18451</h5>
@@ -216,6 +321,7 @@
                 <td>₹650</td>
               </tr>
               <tr>
+                <td>01</td>
                 <td>
                   <div class="content-table-text">
                     <h5>18451</h5>
@@ -231,35 +337,6 @@
                   </div>
                 </td>
                 <td>₹650</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="form-formalities-box">
-        <h5 class="mb-0">Payment Record</h5>
-        <p>01 Aug 2026 – 15 Aug 2026</p>
-      
-        <div class="content-table admin-tat">
-          <table>
-            <thead>
-              <tr>
-                <th>Paid Date</th>
-                <th>Paid Amount</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2026-08-16</td>
-                <td>₹10,000</td>
-                <td>Payment for 1 Aug – 15 Aug</td>
-              </tr>
-              <tr>
-                <td>2026-08-16</td>
-                <td>₹10,000</td>
-                <td>Payment for 1 Aug – 15 Aug</td>
               </tr>
             </tbody>
           </table>

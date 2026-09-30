@@ -120,7 +120,7 @@
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-check2-circle"></i>
           </span>
-          <p>Approve</p>
+          <p>Approved</p>
           <em class="counter-chip">24</em>
         </a>
         <a href="doctor-request.html">
@@ -148,7 +148,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Approve</h1>
@@ -156,34 +156,118 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-4 col-md-6 col-sm-12 col-12">
-            <div class="search-input">
-              <input type="text" name="" placeholder="" />
-              <i class="bi bi-search search-right-icon"></i>
+          <div class="col-xl-4 col-md-4 col-sm-4 col-4">
+            <select id="dateFilter" onchange="openCustomDate(this)">
+              <option value="1" selected>Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">7 days</option>
+              <option value="4">15 days</option>
+              <option value="5">1 month</option>
+              <option value="6">Customized Date Range</option>
+            </select>
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+            <div class="filter-box">
+              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
+                Search & Filter
+                <i class="bi bi-chevron-up" id="filterArrow"></i>
+              </button>
+
+              <div class="filter-content hidden">
+                <h5>Search</h5>
+
+                <div class="search-input">
+                  <input type="text" name="" placeholder="" />
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+
+                <hr class="pg-hr mt-3 mb-2" />
+
+                <h5>Filters</h5>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  Centre
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> City Diagnostic Centre</label>
+                    <label><input type="checkbox"> Prime Diagnostic Centre</label>
+                    <label><input type="checkbox"> Plsu Diagnosis</label>
+                  </div>
+                </div>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  Modalitity
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> DX</label>
+                    <label><input type="checkbox"> CT</label>
+                    <label><input type="checkbox"> MRI</label>
+                    <label><input type="checkbox"> ECG</label>
+                  </div>
+                </div>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  TAT
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> Within TAT</label>
+                    <label><input type="checkbox"> TAT Failed</label>
+                  </div>
+                </div>
+
+                <div class="filter-final">
+                  <div class="content-table-btn-part text-end justify-content-end">
+                    <button type="button" class="submitted-btn">Clear All</button>
+                    <button type="button" class="browse-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
-            <select name="">
-              <option value="0" selected>All Study Types</option>
-              <option value="2">DX</option>
-              <option value="3">CT</option>
-              <option value="4">MRI</option>
-              <option value="4">ECG</option>
-            </select>
-          </div>
-
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
-            <select name="">
-              <option value="0" selected>50</option>
-              <option value="1">100</option>
-              <option value="2">150</option>
-              <option value="3">200</option>
-              <option value="4">250</option>
-            </select>
           </div>
         </div>
       </div>
+
+      <!----- PAGINATION-SORT ------->
+      <div class="pagination-bar">
+        <div class="pagination-left">
+          <button type="button" class="page-arrow prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <span class="page-range">1 to 10</span>
+
+          <button type="button" class="page-arrow next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="pagination-right">
+          <span>Show</span>
+
+          <select class="page-limit">
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
+          </select>
+
+          <span>per page</span>
+        </div>
+      </div>
+      <!----- PAGINATION-SORT ------->
 
       <div class="doctor-description">
         <div class="doctor-description-box">
@@ -216,6 +300,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderReviewModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
                 <span class="calender-chip">
                   CT
                 </span>
@@ -285,6 +373,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
                 <span class="calender-chip">
                   CT
                 </span>
@@ -354,6 +446,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+
                 <span class="calender-chip">
                   CT
                 </span>
@@ -423,6 +519,10 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
+                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderReviewModal">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+                
                 <span class="calender-chip">
                   CT
                 </span>
@@ -533,10 +633,16 @@
       </div>
     </section>
 
-    <!----- UPDATE-NOTE-MODAL ------->
+    <!----- UPDATE-REVIEW-MODAL ------->
     <div class="modal fade" id="updateReviewModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Update Review</h2>
+            </div>
+          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <form method="" action="">
@@ -556,12 +662,18 @@
         </div>
       </div>
     </div>
-    <!----- UPDATE-NOTE-MODAL ------->
+    <!----- UPDATE-REVIEW-MODAL ------->
 
     <!----- VIEW-REPORT-MODAL ------->
     <div class="modal fade" id="viewReportModal" data-bs-keyboard="false" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>View Report</h2>
+            </div>
+          </div>
           <div class="modal-body">
             <div class="modal-content-box">
               <div class="lightbox-modal-image">
@@ -573,6 +685,150 @@
       </div>
     </div>
     <!----- VIEW-REPORT-MODAL ------->
+
+    <!----- REMINDER-NOTE-MODAL ------->
+    <div class="modal fade" id="reminderNoteModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Note</h2>
+              <p>Case ID- 18450</p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              
+              <!----- CHAT-INTERFACE ------->
+              <div class="chat-body">
+                <div class="chat-row received">
+                  <div>
+                    <p class="chat-person">City Diagnostic</p>
+                    <div class="chat-msg">
+                      Please check the chest findings once before finalizing.
+                    </div>
+                    <span class="chat-time">22-Aug-2026 • 10:30 AM</span>
+                  </div>
+                </div>
+
+                <div class="chat-row sent">
+                  <div>
+                    <p class="chat-person">You</p>
+                    <div class="chat-msg">
+                      Checked. I will update the report accordingly.
+                    </div>
+                    <span class="chat-time">22-Aug-2026 • 10:31 AM ✓</span>
+                  </div>
+                </div>
+
+                <div class="chat-row received">
+                  <div>
+                    <p class="chat-person">City Diagnostic</p>
+                    <div class="chat-msg">
+                      ok
+                    </div>
+                    <span class="chat-time">22-Aug-2026 • 10:31 AM</span>
+                  </div>
+                </div>
+              </div>
+              <!----- CHAT-INTERFACE ------->
+
+              <hr class="pg-hr my-3" />
+
+              <form method="" action="">
+                <div class="row gx-3 gy-2">
+                  <div class="col-xl-9 col-md-9 col-sm-9 col-8">
+                    <div class="login-input">
+                      <i class="bi bi-paperclip login-left-icon"></i>
+                      <input type="text" name="" placeholder="Send message here..." required="">
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-3 col-4">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn chat" data-bs-dismiss="modal">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- REMINDER-NOTE-MODAL ------->
+
+    <!----- REMINDER-REVIEW-MODAL ------->
+    <div class="modal fade" id="reminderReviewModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Review</h2>
+              <p>Case ID- 18450</p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              
+              <!----- CHAT-INTERFACE ------->
+              <div class="chat-body">
+                <div class="chat-row received">
+                  <div>
+                    <p class="chat-person">City Diagnostic</p>
+                    <div class="chat-msg">
+                      Please check the chest findings once before finalizing.
+                    </div>
+                    <span class="chat-time">22-Aug-2026 • 10:30 AM</span>
+                  </div>
+                </div>
+
+                <div class="chat-row sent">
+                  <div>
+                    <p class="chat-person">You</p>
+                    <div class="chat-msg">
+                      Checked. I will update the report accordingly.
+                    </div>
+                    <span class="chat-time">22-Aug-2026 • 10:31 AM ✓</span>
+                  </div>
+                </div>
+
+                <div class="chat-row received">
+                  <div>
+                    <p class="chat-person">City Diagnostic</p>
+                    <div class="chat-msg">
+                      ok
+                    </div>
+                    <span class="chat-time">22-Aug-2026 • 10:31 AM</span>
+                  </div>
+                </div>
+              </div>
+              <!----- CHAT-INTERFACE ------->
+
+              <hr class="pg-hr my-3" />
+
+              <form method="" action="">
+                <div class="row gx-3 gy-2">
+                  <div class="col-xl-9 col-md-9 col-sm-9 col-8">
+                    <div class="login-input">
+                      <i class="bi bi-paperclip login-left-icon"></i>
+                      <input type="text" name="" placeholder="Send message here..." required="">
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-3 col-sm-3 col-4">
+                    <div class="content-table-btn-part justify-content-center">
+                      <button type="submit" class="browse-btn chat" data-bs-dismiss="modal">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- REMINDER-REVIEW-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->

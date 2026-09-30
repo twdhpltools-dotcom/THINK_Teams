@@ -45,7 +45,7 @@
         <div class="col-xl-9 col-lg-12 col-md-3 col-3">
           <div id="mobileMenuContent" class="top-header-content">
 
-            <div class="user-wallet">
+            <div class="user-wallet" onclick="window.location.href='C-history.html'">
               <img src="assets/images/wallet-svgrepo-icon.png" alt="customer wallet icon" />
               <p>Balance</p>
               <h6>₹6,540</h6>
@@ -204,8 +204,8 @@
     <!----- SIDEBAR-MENU ------->
     
     <section class="page-section">
-      <div class="content-formalities pb-1">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+      <div class="content-formalities">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>Recharge History</h1>
@@ -213,13 +213,20 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-2 col-md-3 col-sm-6 col-6">
-            <input type="date" value="" placeholder="Enter date" />
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <select id="dateFilter" onchange="openCustomDate(this)">
+              <option value="1" selected>Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">7 days</option>
+              <option value="4">15 days</option>
+              <option value="5">1 month</option>
+              <option value="6">Customized Date Range</option>
+            </select>
           </div>
         </div>
       </div>
 
-      <div class="content-formalities pb-3">
+      <div class="content-formalities d-block pb-3">
         <div class="row gx-3 gy-3">
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
             <div class="payment-formalities-box">
@@ -259,10 +266,41 @@
         </div>
       </div>
 
+      <!----- PAGINATION-SORT ------->
+      <div class="pagination-bar">
+        <div class="pagination-left">
+          <button type="button" class="page-arrow prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <span class="page-range">1 to 10</span>
+
+          <button type="button" class="page-arrow next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="pagination-right">
+          <span>Show</span>
+
+          <select class="page-limit">
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
+          </select>
+
+          <span>per page</span>
+        </div>
+      </div>
+      <!----- PAGINATION-SORT ------->
+
       <div class="content-table r-history">
         <table>
           <thead>
             <tr>
+              <th>#</th>
               <th>Date</th>
               <th>Transaction ID</th>
               <th>Method</th>
@@ -273,94 +311,100 @@
           </thead>
           <tbody>
             <tr>
+              <td>01</td>
               <td>10-Aug-2026, 10:35 AM</td>
               <td>RCH-120826-102</td>
               <td>Cash</td>
               <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="completed-btn non-clickable">Success</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="print-btn">Print</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>02</td>
               <td>10-Aug-2026, 10:35 AM</td>
               <td>RCH-120826-102</td>
               <td>Netbanking</td>
               <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="completed-btn non-clickable">Success</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="print-btn">Print</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>03</td>
               <td>10-Aug-2026, 10:35 AM</td>
               <td>RCH-120826-102</td>
               <td>Netbanking</td>
               <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="request-btn">Pending</button>
+                  <button type="button" class="request-btn non-clickable">Pending</button>
                 </div>
               </td>
               <td>-</td>
             </tr>
             <tr>
+              <td>04</td>
               <td>10-Aug-2026, 10:35 AM</td>
               <td>RCH-120826-102</td>
               <td>Cash</td>
               <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="completed-btn non-clickable">Success</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="print-btn">Print</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>05</td>
               <td>10-Aug-2026, 10:35 AM</td>
               <td>RCH-120826-102</td>
               <td>Cash</td>
               <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="completed-btn non-clickable">Success</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="print-btn">Print</button>
                 </div>
               </td>
             </tr>
             <tr>
+              <td>06</td>
               <td>10-Aug-2026, 10:35 AM</td>
               <td>RCH-120826-102</td>
               <td>UPI</td>
               <td>₹ 10,000</td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn">Success</button>
+                  <button type="button" class="completed-btn non-clickable">Success</button>
                 </div>
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="print-btn"><i class="bi bi-printer"></i> Print</button>
+                  <button type="button" class="print-btn">Print</button>
                 </div>
               </td>
             </tr>
