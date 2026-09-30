@@ -42,6 +42,16 @@ function animateSearchPlaceholder(){
 animateSearchPlaceholder();
 /*-------------------------------------- SEARCH-BAR ANIMATION ----------------------------------------*/
 
+/*-------------------------------------- CHIP-ACTIVATOR ----------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".view-chip").forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+  });
+});
+/*-------------------------------------- CHIP-ACTIVATOR ----------------------------------------*/
+
 /*-------------------------------------- SUB-MENU-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 /*-------------------- SUB-MENU ----------------------*/
 function toggleSubMenu(btn) {
