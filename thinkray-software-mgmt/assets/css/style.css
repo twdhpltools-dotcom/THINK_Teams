@@ -2869,7 +2869,7 @@ p.login-error-msg:not(:empty) {
     margin-top: 15px;
 }
 
-.view-chip {
+button.view-chip {
     padding: 5px 12px;
     border: 1px solid #d7dfe9;
     border-radius: 7px;
@@ -2877,17 +2877,16 @@ p.login-error-msg:not(:empty) {
     color: #33415c;
     font-size: 75%;
     font-weight: 500;
-    cursor: pointer;
-    transition: 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
-.view-chip:hover {
+button.view-chip:hover {
     border-color: #1687f8;
     color: #1687f8;
     background: #f5faff;
 }
 
-.view-chip.active {
+button.view-chip.active {
     border-color: #1687f8;
     background: #eaf4ff;
     color: #0874e4;
