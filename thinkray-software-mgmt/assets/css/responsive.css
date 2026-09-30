@@ -526,6 +526,7 @@
         margin-bottom: 5px;
     }
     .filter-content {
+        max-height: 480px;
         min-width: 300px;
         top: 40px;
     }
