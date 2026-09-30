@@ -187,7 +187,7 @@ button.disbaled {
 
 .content-table-btn-part.conf {
     justify-content: end;
-    gap: 30px;
+    gap: 15px;
 }
 
 .content-table-btn-part.conf button {
@@ -219,10 +219,6 @@ button.disbaled {
     color: #0e9792;
     background: #f5ffff;
     border-color: #0e979299;
-}
-
-.content-table-btn-part button.edit-btn i {
-    font-size: 120%;
 }
 
 .content-table-btn-part button.print-btn {
@@ -1347,7 +1343,7 @@ span.sidebar-menu-nav-icon i {
 .content-formalities {
     height: auto;
     width: 100%;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     color: var(--dark);
     display: flex;
     align-items: center;
@@ -1404,7 +1400,6 @@ span.sidebar-menu-nav-icon i {
 
 .content-table.history .content-table-text p {
     font-size: 95%;
-    font-weight: 500;
 }
 
 .content-table.history .content-table-text p i {
@@ -1860,16 +1855,6 @@ form button[type="submit"] {
 }
 /* ----------------------------------------- SELF-DOCTOR-ADD-PAGE COMPLETE ---------------------------------------------- */
 
-/* ----------------------------------------- INTERFACE-INFO-PAGE START ---------------------------------------------- */
-.content-table.interface .content-table-btn-part button.browse-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    color: #bf0095;
-    font-weight: 600;
-}
-/* ----------------------------------------- INTERFACE-INFO-PAGE COMPLETE ---------------------------------------------- */
-
 /* ----------------------------------------- DOCTOR PENDING-ACCEPT-PAGE START ---------------------------------------------- */
 .doctor-description {
     position: relative;
@@ -1884,7 +1869,7 @@ form button[type="submit"] {
 .doctor-description-box {
     position: relative;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 18px;
     overflow: hidden;
     border-radius: 12px;
     color: var(--dark);
@@ -1900,8 +1885,7 @@ form button[type="submit"] {
 }
 
 .doctor-description-box.notification.read {
-    border: 1px solid #0000000d;
-    border-left-width: 0;
+    border: 1px solid #cdd7ea;
 }
 
 .doctor-description-left {
@@ -1979,7 +1963,7 @@ ul.doctor-info-listing {
 ul.doctor-info-listing li {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 1px;
 }
 

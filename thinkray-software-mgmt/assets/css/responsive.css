@@ -535,6 +535,9 @@
     .status-content {
         padding: 0 10px 10px;
     }
+    .form-formalities-box p {
+        margin-bottom: 8px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
