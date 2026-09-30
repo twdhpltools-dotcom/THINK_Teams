@@ -140,9 +140,6 @@
     .info-formalities-box-cta {
         padding: 8px 18px;
     }
-    .content-formalities.blank {
-        padding: 150px 50px;
-    }
     .login-visual {
         max-width: 60%;
     }
@@ -417,19 +414,11 @@
     span.sidebar-menu-nav-icon {
         padding-right: 8px;
     }
-    input,
-    select,
-    textarea {
-        padding: 6px 10px;
-    }
     form button[type="submit"] {
         padding: 7px 15px !important;
     }
     .sidebar-menu-nav a p {
         font-size: 110%;
-    }
-    .content-formalities.blank {
-        padding: 120px 30px;
     }
     .field-icon.scaled {
         height: 45px;
@@ -521,9 +510,6 @@
     .amount-box h3 {
         font-size: 160%;
     }
-    .content-table-btn-part button.browse-btn {
-        padding: 7px 12px;
-    }
     .note-reminder-blinker {
         top: 30%;
         left: unset;
@@ -542,6 +528,12 @@
     .filter-content {
         min-width: 300px;
         top: 40px;
+    }
+    .filter-content h5 {
+        margin-bottom: 3px;
+    }
+    .status-content {
+        padding: 0 10px 10px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -567,9 +559,6 @@
         padding: 2px 0;
         border-radius: 8px;
         max-width: 80%;
-    }
-    .content-formalities {
-        padding-bottom: 12px;
     }
     .payment-formalities-box {
         flex-direction: column;
@@ -635,9 +624,6 @@
         max-width: 60%;
         margin: 3px auto;
     }
-    .content-formalities.blank {
-        padding: 100px 0;
-    }
     .editor-toolbar {
         gap: 4px;
         padding: 0;
@@ -699,7 +685,7 @@
         align-items: start;
         gap: 4px 14px;
         justify-content: start;
-        padding: 6px 0;
+        padding: 4px 0;
         margin: 0;
     }
     .doctor-cta-part {
@@ -753,9 +739,6 @@
     .payment-history-head {
         flex-wrap: wrap;
     }
-    .payment-history-head h5 {
-        margin-bottom: 5px;
-    }
     .payment-history-actions {
         flex-direction: column;
         gap: 7px;
@@ -790,6 +773,28 @@
     }
     .filter-content {
         min-width: 280px;
+    }
+    .charge-pg-part {
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+    .charge-pg-part .row {
+        width: 100%;
+    }
+    .status-head {
+        padding: 8px 12px;
+    }
+    .mini-tabs {
+        margin-bottom: 5px;
+    }
+    .form-formalities-box h5 {
+        margin: 0 0 5px;
+    }
+    .pagination-bar {
+        margin: 5px 0 4px;
+    }
+    .account-summary.post-pay {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/

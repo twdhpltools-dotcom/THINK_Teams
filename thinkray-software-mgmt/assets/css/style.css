@@ -88,7 +88,7 @@ table thead tr th {
     color: var(--dark);
     font-weight: 500;
     font-size: 105%;
-    padding: 10px 15px;
+    padding: 6px 15px;
     border-right: 1px solid #E5E5E5;
 }
 
@@ -101,7 +101,7 @@ table tbody tr td {
     color: var(--dark);
     font-weight: 400;
     font-size: 90%;
-    padding: 8px 15px;
+    padding: 5px 15px;
 }
 
 table tbody tr td.total-table-data {
@@ -204,7 +204,7 @@ button.disbaled {
 .content-table-btn-part button.browse-btn {
     background: transparent;
     border: 1px solid transparent;
-    padding: 4px 12px;
+    padding: 5px 12px;
     color: var(--dark);
     font-weight: 500;
 }
@@ -219,7 +219,6 @@ button.disbaled {
     color: #0e9792;
     background: #f5ffff;
     border-color: #0e979299;
-    padding: 0 5px;
 }
 
 .content-table-btn-part button.edit-btn i {
@@ -296,6 +295,12 @@ button.disbaled {
     height: auto;
     width: 100%;
     padding: 7px 0 !important;
+}
+
+.content-table-btn-part button.non-clickable {
+    background: none;
+    padding: 0;
+    border: none;
 }
 
 hr {
@@ -501,11 +506,11 @@ span.type.type-two {
 }
 
 span.type.type-three {
-    color: var(--success);
+    color: #007840;
 }
 
 span.type.type-three.compact {
-    color: #e72c4c;
+    color: #e34141;
     padding: 0;
 }
 
@@ -548,6 +553,12 @@ span.trend-verified-badge {
 
 .hidden {
   display: none;
+}
+
+.charge-pg-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /*--------------------------------------------- PRE-DEFINED COMPLETE ---------------------------------------*/
 
@@ -596,6 +607,7 @@ span.trend-verified-badge {
     border-radius: 10px;
     background: #5b064952;
     border: 1px solid #B45BA1;
+    cursor: pointer;
 }
 
 .user-wallet.admin {
@@ -1328,7 +1340,6 @@ span.sidebar-menu-nav-icon i {
     color: #0B63D1;
     padding-left: 4px;
     cursor: pointer;
-    text-decoration: underline;
 }
 /* ----------------------------------------- PENDING-LIST-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1336,15 +1347,11 @@ span.sidebar-menu-nav-icon i {
 .content-formalities {
     height: auto;
     width: 100%;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
     color: var(--dark);
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.content-formalities.blank {
-    padding: 180px 70px;
 }
 
 .instructed-part {
@@ -1371,7 +1378,6 @@ span.sidebar-menu-nav-icon i {
     font-style: normal;
     color: #0B63D1;
     cursor: pointer;
-    text-decoration: underline;
 }
 
 .content-table.case-list .content-table-text h6 {
@@ -1386,12 +1392,7 @@ span.sidebar-menu-nav-icon i {
 
 .content-table.case-list .content-table-text a {
     font-size: 90%;
-    text-decoration: underline;
     color: #0B63D1;
-}
-
-.content-table.case-list .content-table-btn-part button.warning-btn {
-    text-decoration: underline;
 }
 /* ----------------------------------------- CASE-LIST-PAGE COMPLETE ---------------------------------------------- */
 
@@ -1564,7 +1565,7 @@ span.sidebar-menu-nav-icon i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 8px;
+    padding: 4px 5px;
 }
 
 .field-formalities-action-part.upload {
@@ -1825,7 +1826,6 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.self-doctor-list .content-table-text h6 a {
-    text-decoration: underline;
     color: #0B63D1;
 }
 /* ----------------------------------------- SELF-DOCTOR-LIST-PAGE COMPLETE ---------------------------------------------- */
@@ -1867,7 +1867,6 @@ form button[type="submit"] {
     padding: 0;
     color: #bf0095;
     font-weight: 600;
-    text-decoration: underline;
 }
 /* ----------------------------------------- INTERFACE-INFO-PAGE COMPLETE ---------------------------------------------- */
 
@@ -2006,7 +2005,6 @@ ul.doctor-info-listing li a {
     font-size: 85%;
     font-weight: 500;
     color: var(--dark);
-    text-decoration: underline;
 }
 
 .doctor-calender-part {
@@ -2211,22 +2209,7 @@ span.tat-box h6.without-tat {
 .content-table.admin-post-pay .content-table-btn-part h6 span {
     font-weight: 600;
 }
-
-.content-table.admin-post-pay .content-table-btn-part button.print-btn,
-.content-table.admin-post-pay .content-table-btn-part button.pending-btn {
-    text-decoration: underline;
-}
 /* ----------------------------------------- ADMIN-POST-PAY-PAGE COMPLETE ---------------------------------------------- */
-
-/* ----------------------------------------- ADMIN-REVIEW-PAGE START ---------------------------------------------- */
-.content-table.admin-review .content-table-btn-part button.submitted-btn {
-    text-decoration: underline;
-}
-
-.content-table.admin-review .content-table-btn-part button.edit-btn {
-    padding: 0;
-}
-/* ----------------------------------------- ADMIN-REVIEW-PAGE COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- ADMIN-DOCTOR-PAY-PAGE START ---------------------------------------------- */
 .pay-row {
@@ -2328,7 +2311,6 @@ span.tat-box h6.without-tat {
 
 .content-table.admin-doctor-pay .content-table-text p a {
     color: #0B63D1;
-    text-decoration: underline;
 }
 /* ----------------------------------------- ADMIN-DOCTOR-PAY-PAGE COMPLETE ---------------------------------------------- */
 
@@ -2382,10 +2364,6 @@ span.tat-box h6.without-tat {
 .content-table.admin-fix-error .content-table-text EM {
     font-size: 90%;
     font-style: normal;
-}
-
-.content-table.admin-fix-error .content-table-btn-part button.request-btn {
-    text-decoration: underline;
 }
 /* ----------------------------------------- ADMIN-FIX-ERROR COMPLETE ---------------------------------------------- */
 
@@ -3019,7 +2997,7 @@ p.login-error-msg:not(:empty) {
 
 .payment-form-row {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .payment-history-box {
@@ -3035,13 +3013,12 @@ p.login-error-msg:not(:empty) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
 }
 
 .payment-history-head h5 {
     margin: 0;
     font-size: 95%;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--dark);
 }
 
@@ -3130,7 +3107,7 @@ p.login-error-msg:not(:empty) {
 .filter-toggle {
     height: auto;
     width: 100%;
-    padding: 7px 14px;
+    padding: 6px 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3183,16 +3160,17 @@ p.login-error-msg:not(:empty) {
 
 .status-content {
     padding: 0 15px 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px 18px;
+    flex-wrap: wrap;
 }
 
 .status-content label {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 85%;
+    font-size: 90%;
     cursor: pointer;
     white-space: nowrap;
 }
@@ -3217,7 +3195,7 @@ p.login-error-msg:not(:empty) {
     height: auto;
     width: 100%;
     border-top: 1px solid #cccccc85;
-    padding: 10px 15px 0;
+    padding: 10px 0 0;
 }
 
 .filter-final .content-table-btn-part {
@@ -3462,7 +3440,6 @@ p.login-error-msg:not(:empty) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--light);
 }
 
 .pagination-left,
