@@ -205,7 +205,7 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
+        <div class="row gx-3 gy-2 mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
               <h1>List of Investigations</h1>
@@ -213,14 +213,62 @@
           </div>
         </div>
         <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <div class="search-input">
-              <input type="text" name="" placeholder="" />
-              <i class="bi bi-search search-right-icon"></i>
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="filter-box">
+              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
+                Search & Filter
+                <i class="bi bi-chevron-up" id="filterArrow"></i>
+              </button>
+
+              <div class="filter-content hidden">
+                <h5>Search</h5>
+
+                <div class="search-input">
+                  <input type="text" name="" placeholder="" />
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+
+                <div class="filter-final mt-3">
+                  <div class="content-table-btn-part text-end justify-content-end">
+                    <button type="button" class="submitted-btn">Clear All</button>
+                    <button type="button" class="browse-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!----- PAGINATION-SORT ------->
+      <div class="pagination-bar">
+        <div class="pagination-left">
+          <button type="button" class="page-arrow prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <span class="page-range">1 to 10</span>
+
+          <button type="button" class="page-arrow next">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="pagination-right">
+          <span>Show</span>
+
+          <select class="page-limit">
+            <option value="0" selected>50</option>
+            <option value="1">100</option>
+            <option value="2">150</option>
+            <option value="3">200</option>
+            <option value="4">250</option>
+          </select>
+
+          <span>per page</span>
+        </div>
+      </div>
+      <!----- PAGINATION-SORT ------->
 
       <div class="content-table template">
         <table>
@@ -242,7 +290,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="submitted-btn">3 Templates</button>
+                  <button type="button" class="submitted-btn non-clickable">3 Templates</button>
                 </div>
               </td>
               <td>
@@ -260,7 +308,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="submitted-btn">3 Templates</button>
+                  <button type="button" class="submitted-btn non-clickable">3 Templates</button>
                 </div>
               </td>
               <td>
@@ -278,7 +326,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="submitted-btn">3 Templates</button>
+                  <button type="button" class="submitted-btn non-clickable">3 Templates</button>
                 </div>
               </td>
               <td>
@@ -296,7 +344,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="submitted-btn">3 Templates</button>
+                  <button type="button" class="submitted-btn non-clickable">3 Templates</button>
                 </div>
               </td>
               <td>
@@ -314,7 +362,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="submitted-btn">3 Templates</button>
+                  <button type="button" class="submitted-btn non-clickable">3 Templates</button>
                 </div>
               </td>
               <td>
