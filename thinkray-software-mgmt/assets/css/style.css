@@ -261,6 +261,12 @@ button.disbaled {
     background: none;
 }
 
+.content-table-btn-part button.submitted-btn.inv.dyna {
+    border: 1px solid #9f0d7f8a;
+    padding: 1px 5px;
+    background: #fff8fd;
+}
+
 .content-table-btn-part button.submitted-btn.conf {
     width: 100%;
     font-size: 95%;
@@ -1716,14 +1722,14 @@ span.sidebar-menu-nav-icon i {
 }
 
 .pay-reminder {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 7px 10px;
-  background: #f7fbff;
-  border: 1px solid #cfe2ff;
-  border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 7px 10px;
+    background: #f7fbff;
+    border: 1px solid #cfe2ff;
+    border-radius: 12px;
 }
 
 .pay-reminder-icon {
@@ -2489,13 +2495,14 @@ span.tat-box h6.without-tat {
     color: var(--dark);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
 .pre-pdf-downloader img {
     height: auto;
     width: 100%;
-    max-width: 100px;
+    max-width: 120px;
     margin-bottom: 3px;
 }
 
