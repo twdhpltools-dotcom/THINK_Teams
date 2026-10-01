@@ -400,6 +400,9 @@
     .note-reminder-blinker {
         left: -50%;
     }
+    .patient-info-editor-row span {
+        text-align: right;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -565,6 +568,12 @@
     }
     .doctor-cta-part p {
         max-width: 140px;
+    }
+    .report-layout {
+        grid-template-columns: 1fr;
+    }
+    .preview-content {
+        padding: 18px 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
