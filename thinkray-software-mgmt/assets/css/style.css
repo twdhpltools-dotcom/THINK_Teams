@@ -1813,7 +1813,7 @@ span.sidebar-menu-nav-icon i {
     width: 100%;
     padding: 0 18px;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 8px;
     color: var(--dark);
     background: var(--light);
     border: 1px solid #cdd7ea;
@@ -1822,7 +1822,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .doctor-description-box.notification {
-    border-left: 3px solid #5aa3fe;
+    border-left: 3px solid #9f0d7fc7;
     padding-left: 15px;
 }
 
@@ -1860,7 +1860,7 @@ span.doctor-description-box-count {
 }
 
 .doctor-description-box.notification .doctor-name-part h3 {
-    font-size: 95%;
+    font-size: 100%;
     position: relative;
     z-index: 1;
     color: var(--dark);
@@ -1875,7 +1875,7 @@ span.doctor-description-box-count {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    border: 2px solid #5aa3fe;
+    border: 2px solid #9f0d7fc7;
     box-shadow: 0 0 10px 0 #5aa4fe82;
 }
 
@@ -1883,55 +1883,16 @@ span.doctor-description-box-count {
     display: none;
 }
 
-.doctor-name-part p {
-    display: flex;
-    align-items: center;
-    gap: 7px;
+p.doctor-info-listing {
+    color: #646464;
     font-size: 85%;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+p.doctor-info-listing span {
     color: #697590;
-}
-
-.doctor-name-part p span {
-    height: 18px;
-    width: 1px;
-    background: #cbd4df;
-}
-
-ul.doctor-info-listing {
-    height: auto;
-    width: 100%;
-    margin: 3px 0 0;
-}
-
-ul.doctor-info-listing li {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 1px;
-}
-
-ul.doctor-info-listing li:last-child {
-    margin-bottom: 0;
-}
-
-ul.doctor-info-listing li span {
-    display: block;
-    width: auto;
-    max-width: none;
-    color: #697590;
-    font-size: 80%;
     font-weight: 500;
-}
-
-ul.doctor-info-listing li p {
-    font-size: 85%;
-    font-weight: 500;
-}
-
-ul.doctor-info-listing li a {
-    font-size: 85%;
-    font-weight: 500;
-    color: var(--dark);
 }
 
 .doctor-calender-part {
@@ -2544,7 +2505,7 @@ span.tat-box h6.without-tat {
 }
 
 .payment-row {
-    padding: 11px 15px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
