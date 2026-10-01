@@ -1314,13 +1314,14 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.case-list .content-table-text em i {
-    padding: 4px 6px;
+    padding: 2px 4px;
     background: linear-gradient(135deg, #ffffff8c, #7cfff3c2);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     border: 1px solid #00000010;
     border-radius: 20px;
-    font-size: 120%;
+    font-size: 115%;
+    margin-left: 4px;
 }
 
 .content-table.case-list .content-table-text h6 {
@@ -1787,6 +1788,7 @@ span.sidebar-menu-nav-icon i {
     font-size: 110%;
     margin: 0 0 6px;
     color: var(--dark);
+    white-space: nowrap;
 }
 
 .form-formalities-box p {
@@ -1824,10 +1826,12 @@ span.sidebar-menu-nav-icon i {
 .doctor-description-box.notification {
     border-left: 3px solid #9f0d7fc7;
     padding-left: 15px;
+    background: #9f0d7f08;
 }
 
 .doctor-description-box.notification.read {
     border: 1px solid #cdd7ea;
+    background: none;
 }
 
 .doctor-description-left {
@@ -1839,7 +1843,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .doctor-description-box.notification .doctor-description-left {
-    margin: 6px 0;
+    margin: 8px 0;
 }
 
 span.doctor-description-box-count {
@@ -1877,10 +1881,49 @@ span.doctor-description-box-count {
     border-radius: 50%;
     border: 2px solid #9f0d7fc7;
     box-shadow: 0 0 10px 0 #5aa4fe82;
+    display: none;
 }
 
 .doctor-description-box.notification.read .doctor-name-part h3::after {
     display: none;
+}
+
+ul.doctor-info-listing {
+    height: auto;
+    width: 100%;
+    margin: 3px 0 0;
+}
+
+ul.doctor-info-listing li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1px;
+}
+
+ul.doctor-info-listing li:last-child {
+    margin-bottom: 0;
+}
+
+ul.doctor-info-listing li span {
+    display: block;
+    width: auto;
+    max-width: none;
+    color: #697590;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+ul.doctor-info-listing li p {
+    font-size: 85%;
+    font-weight: 500;
+}
+
+ul.doctor-info-listing li a {
+    font-size: 85%;
+    font-weight: 500;
+    color: var(--dark);
+    text-decoration: underline;
 }
 
 p.doctor-info-listing {
@@ -2680,12 +2723,21 @@ button.submitted-btn.inv.dyna.paid{
     font-size: 90%;
     font-weight: 600;
     color: #343746;
+    display: block;
+    width: 110px;
+    white-space: nowrap;
 }
 
 .patient-info-editor-row span {
     font-size: 90%;
     color: #5e6372;
     outline: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    text-transform: uppercase;
 }
 /* ----------------------------------------- HTML-LIVE-EDIT COMPLETE ---------------------------------------------- */
 
