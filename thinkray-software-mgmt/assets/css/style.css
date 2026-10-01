@@ -154,7 +154,6 @@ input:read-only {
     background: #f5f6f8;
     color: #8a94a6;
     border-color: #e1e5eb;
-    cursor: not-allowed;
 }
 
 button {
@@ -1995,36 +1994,24 @@ ul.doctor-info-listing li a {
     position: absolute;
     top: 30px;
     left: 50%;
-    height: 30px;
-    width: 30px;
+    padding: 2px 14px;
     border-radius: 50px;
-    border: 1px solid #ffffffcc;
-    background: linear-gradient(135deg, #ffffff8c, #dcecff70);
+    background: linear-gradient(135deg, #ffffff8c, #7cfff3c2);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     border: 1px solid #0560b729;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 85%;
+    color: var(--dark);
     cursor: pointer;
-    animation: reminderBubble 2s ease infinite;
 }
 
-@keyframes reminderBubble {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.note-reminder-blinker i {
-    font-size: 90%;
-    color: #0757b8;
+.note-reminder-blinker.two {
+    background: linear-gradient(135deg, #fbdaff6e, #dcecff26);
+    border: 1px solid #0560b729;
+    cursor: pointer;
 }
 
 span.calender-chip {
@@ -3273,6 +3260,83 @@ label.switch input:checked + .slider::before {
     transform: translateX(14px);
 }
 /* ----------------------------------------- TOGGLER-SWITCH COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- SELECTED-FILTUR START ---------------------------------------------- */
+.applied-filter-box {
+    width: 100%;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+
+.applied-filter-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.applied-filter-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.applied-filter-title h5 {
+    font-size: 105%;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.applied-filter-title span {
+    padding: 3px 10px;
+    border-radius: 5px;
+    background: #eaf3ff;
+    color: #1e73e8;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 700;
+}
+
+button.clear-all-btn {
+    border: 0;
+    background: transparent;
+    color: #e34141;
+    font-size: 85%;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.applied-filter-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: thin;
+}
+
+button.filter-chip {
+    flex: 0 0 auto;
+    padding: 5px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #d3d9e1;
+    border-radius: 50px;
+    background: var(--light);
+    color: var(--primary);
+    font-size: 90%;
+    font-weight: 500;
+}
+
+button.filter-chip strong {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+button.filter-chip i {
+    font-size: 90%;
+}
+/* ----------------------------------------- SELECTED-FILTUR COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- EXTRA-CHANGES START ---------------------------------------------- */
 .report-layout{

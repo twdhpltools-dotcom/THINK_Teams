@@ -539,6 +539,15 @@
     .form-formalities-box p {
         margin-bottom: 8px;
     }
+    .applied-filter-scroll {
+        gap: 8px;
+    }
+    button.filter-chip {
+        padding: 4px 10px;
+    }
+    .applied-filter-box {
+        padding: 5px 0;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
