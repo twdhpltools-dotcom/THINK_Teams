@@ -59,15 +59,12 @@
                 <!----- ANIMATED-TOGGLER-MENU ------->
                 <div id="ProfileSubMenu" class="profile-submenu">
                   <a href="change-password.html">
-                    <span class="profile-submenu-icon">
-                      <img src="assets/images/password-icon.png" alt="change password icon">
+                    
                     </span>
                     Change Password
                   </a>
                   <a href="login.html" class="log-anchor">
-                    <span class="profile-submenu-icon">
-                      <img src="assets/images/logout-icon.png" alt="logout icon">
-                    </span>
+                    
                     Logout
                   </a>
                 </div>
@@ -367,8 +364,8 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
-                <div class="note-reminder-blinker two" data-bs-toggle="modal" data-bs-target="#reminderReviewModal">
-                  Review
+                <div class="note-reminder-blinker">
+                  <p class="two" data-bs-toggle="modal" data-bs-target="#reminderReviewModal">Review</p>
                 </div>
 
                 <span class="calender-chip">
@@ -440,8 +437,8 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
-                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
-                  Note
+                <div class="note-reminder-blinker">
+                  <p data-bs-toggle="modal" data-bs-target="#reminderNoteModal">Note</p>
                 </div>
 
                 <span class="calender-chip">
@@ -513,8 +510,8 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
-                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderNoteModal">
-                  Note
+                <div class="note-reminder-blinker">
+                  <p data-bs-toggle="modal" data-bs-target="#reminderNoteModal">Note</p>
                 </div>
 
                 <span class="calender-chip">
@@ -586,8 +583,9 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="doctor-calender-part">
-                <div class="note-reminder-blinker" data-bs-toggle="modal" data-bs-target="#reminderReviewModal">
-                  Review
+                <div class="note-reminder-blinker">
+                  <p class="two" data-bs-toggle="modal" data-bs-target="#reminderReviewModal">Review</p>
+                  <p class="three" data-bs-toggle="modal" data-bs-target="#viewClinicChargeModal">Clinical Charge</p>
                 </div>
                 
                 <span class="calender-chip">
@@ -896,6 +894,50 @@
       </div>
     </div>
     <!----- REMINDER-REVIEW-MODAL ------->
+
+    <!----- VIEW-CLINICAL-HISTORY-MODAL ------->
+    <div class="modal fade" id="viewClinicChargeModal" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-section-heading">
+              <h2>Clinical History</h2>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-content-box">
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="status-check-comment">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, repellat voluptate tempore consequuntur nobis maiores.</p>
+                    </div>
+                  </div>
+
+                  <hr class="pg-hr" />
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="status-check-comment">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </div>
+                  </div>
+
+                  <hr class="pg-hr" />
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <div class="status-check-comment">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sequi, debitis repellendus expedita nemo maiores voluptate quas quisquam?</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- VIEW-CLINICAL-HISTORY-MODAL ------->
 
   </main>
   <!----------------------------------- PENDING-ACCEPT-PAGE ------------------------------------------------->
