@@ -152,6 +152,9 @@
     .login-card {
         padding: 30px 28px;
     }
+    .login-page.change-pass .login-card {
+        padding: 32px 25px;
+    }
     .login-card-heading {
         margin-bottom: 18px;
     }
@@ -548,6 +551,9 @@
     .applied-filter-box {
         padding: 5px 0;
     }
+    .login-footer {
+        padding-top: 30px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
@@ -660,7 +666,7 @@
     }
     .login-logo.hide-lg {
         margin: 0 auto 18px;
-        max-width: 200px;
+        max-width: 180px;
     }
     .login-features {
         flex-direction: column;
@@ -672,6 +678,9 @@
     }
     .login-card {
         padding: 28px 22px;
+    }
+    .login-page.change-pass .login-section-inner {
+        max-width: 380px;
     }
     .doctor-description-left {
         gap: 7px;

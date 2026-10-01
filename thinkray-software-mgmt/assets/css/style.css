@@ -788,6 +788,7 @@ span.call-supports-icon {
 
 span.profile-submenu-icon {
     padding-right: 5px;
+    display: none;
 }
 
 span.profile-submenu-icon img {
@@ -1155,6 +1156,10 @@ span.sidebar-menu-nav-icon i {
         var(--light);
 }
 
+.login-page.change-pass .login-section {
+    max-width: 100%;
+}
+
 .login-section-inner {
     width: 100%;
     padding: 0 50px;
@@ -1166,6 +1171,11 @@ span.sidebar-menu-nav-icon i {
     justify-content: center;
 }
 
+.login-page.change-pass .login-section-inner {
+    max-width: 450px;
+    padding: 0
+}
+
 .login-card {
     width: 100%;
     padding: 40px;
@@ -1174,6 +1184,10 @@ span.sidebar-menu-nav-icon i {
     border-radius: 15px;
     box-shadow: 0 20px 60px #272f4814;
     color: var(--dark);
+}
+
+.login-page.change-pass .login-card {
+    padding: 35px;
 }
 
 .login-card-heading {
@@ -1190,88 +1204,8 @@ span.sidebar-menu-nav-icon i {
     font-size: 95%;
 }
 
-.login-options {
-    margin: 12px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.remember-option {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    cursor: pointer;
-}
-
-.remember-option input {
-    accent-color: var(--primary);
-    cursor: pointer;
-}
-
-.remember-option span,
-.login-options a {
-    font-size: 95%;
-    white-space: nowrap;
-}
-
-.remember-option span {
-    color: var(--dark);
-}
-
-.login-options a {
-    color: var(--primary);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.login-divider {
-    margin: 0 0 5px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.login-divider span {
-    height: 1px;
-    flex: 1;
-    background: #E4E7EC;
-}
-
-.login-divider p {
-    margin: 0;
-    font-size: 85%;
-    font-weight: 600;
-    color: #7D8492;
-}
-
-.google-login-btn {
-    height: auto;
-    width: 100%;
-    padding: 12px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: 1px solid #DDE2EA;
-    outline: none;
-    border-radius: 8px;
-    background: #9f0d7f05;
-    color: var(--dark);
-    font-size: 90%;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.25s ease;
-}
-
-.google-login-btn i {
-    color: var(--primary);
-    font-size: 110%;
-}
-
-.google-login-btn:hover {
-    border-color: #9f0d7f59;
-    background: #9f0d7f06;
+.login-page button.browse-btn {
+    padding: 8px 12px;
 }
 
 .contact-sales {
@@ -1367,7 +1301,7 @@ span.sidebar-menu-nav-icon i {
 }
 
 .content-table.case-list .content-table-text em {
-    font-size: 85%;
+    font-size: 90%;
     font-style: normal;
     color: #0B63D1;
     cursor: pointer;
@@ -1993,25 +1927,31 @@ ul.doctor-info-listing li a {
 .note-reminder-blinker {
     position: absolute;
     top: 30px;
-    left: 50%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.note-reminder-blinker p {
     padding: 2px 14px;
     border-radius: 50px;
     background: linear-gradient(135deg, #ffffff8c, #7cfff3c2);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
-    border: 1px solid #0560b729;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid #00000010;
     font-size: 85%;
     color: var(--dark);
+    white-space: nowrap;
     cursor: pointer;
 }
 
-.note-reminder-blinker.two {
+.note-reminder-blinker p.two {
     background: linear-gradient(135deg, #fbdaff6e, #dcecff26);
-    border: 1px solid #0560b729;
-    cursor: pointer;
+}
+
+.note-reminder-blinker p.three {
+    background: linear-gradient(135deg, #f6ffd36e, #fdfff926);
 }
 
 span.calender-chip {
@@ -2647,7 +2587,7 @@ p.chat-person {
     display: block;
     margin-bottom: 5px;
     color: var(--dark);
-    font-size: 74%;
+    font-size: 75%;
 }
 
 .chat-msg {
@@ -2656,7 +2596,7 @@ p.chat-person {
     border-radius: 10px;
     background: #f4f0fb;
     color: #16204b;
-    font-size: 85%;
+    font-size: 90%;
     text-align: left;
 }
 
@@ -2667,9 +2607,9 @@ p.chat-person {
 
 span.chat-time {
     display: block;
-    margin-top: 5px;
+    margin-top: 7px;
     color: #8b97b0;
-    font-size: 65%;
+    font-size: 70%;
 }
 /* ----------------------------------------- CHAT-INTERFACE COMPLETE ---------------------------------------------- */
 /* ----------------------------------------- MODAL COMPLETE ---------------------------------------------- */
@@ -2805,7 +2745,6 @@ p.login-error-msg {
     background: linear-gradient(to right, #e3414114, transparent);
     border-left: 3px solid #e34141;
     font-size: 95%;
-    font-weight: 500;
 }
 
 p.login-error-msg:empty {
