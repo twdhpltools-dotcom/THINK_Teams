@@ -156,103 +156,124 @@
 
 
 <!-----  EXTRA-CHANGES ------->
-<div class="report-editor-box">
+<div class="form-formalities-box">
 
   <div class="report-editor-head">
     <h5>Create Report</h5>
 
-    <div class="report-actions">
-      <button type="button" class="approve-btn">Approve & Done</button>
-      <button type="button" class="save-btn">Save</button>
+    <div class="content-table-btn-part text-end justify-content-end">
+      <button type="button" class="pending-btn">Approve & Done</button>
+      <button type="button" class="completed-btn">Save</button>
     </div>
   </div>
 
-  <div class="editor-toolbar">
-    <button type="button" onclick="editorCmd('undo')">
-      <i class="bi bi-arrow-counterclockwise"></i>
-    </button>
+    <!----- HTML-LIVE-EDIT ------->
+    <div class="editor-toolbar">
+      <button type="button" onclick="editorCmd('undo')">
+        <i class="bi bi-arrow-counterclockwise"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('redo')">
-      <i class="bi bi-arrow-clockwise"></i>
-    </button>
+      <button type="button" onclick="editorCmd('redo')">
+        <i class="bi bi-arrow-clockwise"></i>
+      </button>
 
-    <select onchange="formatBlock(this.value)">
-      <option value="">Formats</option>
-      <option value="p">Paragraph</option>
-      <option value="h1">Heading 1</option>
-      <option value="h2">Heading 2</option>
-      <option value="h3">Heading 3</option>
-    </select>
+      <select onchange="formatBlock(this.value)">
+        <option value="">Formats</option>
+        <option value="p">Paragraph</option>
+        <option value="h1">Heading 1</option>
+        <option value="h2">Heading 2</option>
+        <option value="h3">Heading 3</option>
+      </select>
 
-    <button type="button" onclick="editorCmd('bold')">
-      <i class="bi bi-type-bold"></i>
-    </button>
+      <button type="button" onclick="editorCmd('bold')">
+        <i class="bi bi-type-bold"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('italic')">
-      <i class="bi bi-type-italic"></i>
-    </button>
+      <button type="button" onclick="editorCmd('italic')">
+        <i class="bi bi-type-italic"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('underline')">
-      <i class="bi bi-type-underline"></i>
-    </button>
+      <button type="button" onclick="editorCmd('underline')">
+        <i class="bi bi-type-underline"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('copy')">
-      <i class="bi bi-files"></i>
-    </button>
+      <button type="button" onclick="editorCmd('copy')">
+        <i class="bi bi-files"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('insertUnorderedList')">
-      <i class="bi bi-list-ul"></i>
-    </button>
+      <button type="button" onclick="editorCmd('insertUnorderedList')">
+        <i class="bi bi-list-ul"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('insertOrderedList')">
-      <i class="bi bi-list-ol"></i>
-    </button>
+      <button type="button" onclick="editorCmd('insertOrderedList')">
+        <i class="bi bi-list-ol"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('justifyLeft')">
-      <i class="bi bi-text-left"></i>
-    </button>
+      <button type="button" onclick="editorCmd('justifyLeft')">
+        <i class="bi bi-text-left"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('justifyCenter')">
-      <i class="bi bi-text-center"></i>
-    </button>
+      <button type="button" onclick="editorCmd('justifyCenter')">
+        <i class="bi bi-text-center"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('justifyRight')">
-      <i class="bi bi-text-right"></i>
-    </button>
+      <button type="button" onclick="editorCmd('justifyRight')">
+        <i class="bi bi-text-right"></i>
+      </button>
 
-    <button type="button" onclick="editorCmd('justifyFull')">
-      <i class="bi bi-justify"></i>
-    </button>
+      <button type="button" onclick="editorCmd('justifyFull')">
+        <i class="bi bi-justify"></i>
+      </button>
 
-    <label class="toolbar-color">
-      <i class="bi bi-fonts"></i>
-      <input type="color" onchange="setTextColor(this.value)">
-    </label>
-  </div>
-
-  <div class="report-editor-content">
-
-    <div class="patient-info-table">
-
-      <div><span>Case No.</span><strong>18521</strong></div>
-      <div><span>Study</span><strong>L-S SPINE AP/LAT</strong></div>
-
-      <div><span>Patient Name</span><strong>Md Sohail</strong></div>
-      <div><span>Modality</span><strong>DX</strong></div>
-
-      <div><span>Age / Gen</span><strong>23 Years | Male</strong></div>
-      <div><span>Date / Time</span><strong>18 Aug 2026 04:11 PM</strong></div>
-
-      <div><span>Referred by</span><strong>Unassigned</strong></div>
-      <div><span>Centre</span><strong>KMCK by Reliable</strong></div>
-
+      <label class="toolbar-color">
+        <i class="bi bi-fonts"></i>
+        <input type="color" onchange="setTextColor(this.value)">
+      </label>
     </div>
 
-    <div class="report-writing-area">
-      <h4>L-SPINE</h4>
-    </div>
+    <div class="patient-info-editor">
+      <div class="patient-info-editor-column">
+        <div class="patient-info-editor-row">
+          <strong>ID No</strong>
+          <span contenteditable="true">26.08.2026, 1003</span>
+        </div>
 
-  </div>
+        <div class="patient-info-editor-row">
+          <strong>Name</strong>
+          <span contenteditable="true">Mr. Tapas Malik</span>
+        </div>
+
+        <div class="patient-info-editor-row">
+          <strong>Referred By</strong>
+          <span contenteditable="true">Dr. N Laha</span>
+        </div>
+      </div>
+
+      <div class="patient-info-editor-column">
+        <div class="patient-info-editor-row">
+          <strong>Report Generated</strong>
+          <span contenteditable="true">2026-08-26 03:13 PM</span>
+        </div>
+        <div class="patient-info-editor-row">
+          <strong>Age | Gen</strong>
+          <span contenteditable="true">37 Yrs | M</span>
+        </div>
+      </div>
+    </div>
+    <!----- HTML-LIVE-EDIT ------->
+
+    <form method="" action="">
+      <div class="row gx-3 gy-3">
+        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+          <textarea rows="3" name="" value="" placeholder="">Chest radiograph shows no focal air-space opacity. Cardiomediastinal silhouette is within normal limits. No pleural effusion or pneumothorax.</textarea>
+        </div>
+        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+          <div class="content-table-btn-part justify-content-center">
+            <button type="submit" class="browse-btn" data-bs-dismiss="modal">Update</button>
+          </div>
+        </div>
+      </div>
+    </form>
 
 </div>
 

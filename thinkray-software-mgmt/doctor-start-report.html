@@ -158,29 +158,35 @@
 <!-----  EXTRA-CHANGES ------->
 <div class="report-layout">
 
-  <div class="template-panel">
+  <div class="form-formalities-box">
     <div class="panel-title">L-Spine Templates</div>
 
-    <div class="template-search">
+    <div class="search-input my-3">
       <input type="text" placeholder="Search Templates">
     </div>
 
     <div class="template-item">
       <h6>Normal L-Spine</h6>
-      <button type="button" onclick="showReport()">Select</button>
+      <div class="content-table-btn-part text-end justify-content-end">
+        <button type="button" class="pending-btn" onclick="showReport()">Select</button>
+      </div>
     </div>
 
     <div class="template-item">
       <h6>Degenerative Changes</h6>
-      <button type="button" onclick="showReportTwo()">Select</button>
+      <div class="content-table-btn-part text-end justify-content-end">
+        <button type="button" class="pending-btn" onclick="showReport()">Select</button>
+      </div>
     </div>
   </div>
 
-  <div class="preview-panel">
+  <div class="form-formalities-box">
 
     <div class="preview-head">
       <h5>Report Preview</h5>
-      <button type="button" onclick="window.location.href='doctor-start-create-report.html'">Next To Report</button>
+      <div class="content-table-btn-part text-end justify-content-end">
+        <button type="button" class="browse-btn"  onclick="window.location.href='doctor-start-create-report.html'">Next To Report</button>
+      </div>
     </div>
 
     <div class="preview-content" id="previewInstruction">
@@ -192,7 +198,9 @@
     </div>
 
     <div class="report-result" id="reportResult">
-      <button type="button" class="clear-report" onclick="clearReport()">Clear Report</button>
+      <div class="content-table-btn-part text-end">
+        <button type="button" class="warning-btn" onclick="clearReport()">Clear Report</button>
+      </div>
 
       <div class="report-paper">
         <h4>L-SPINE</h4>
