@@ -83,9 +83,6 @@
     .content-table.case-list .content-table-text h6 {
         font-size: 85%;
     }
-    ul.doctor-info-listing {
-        gap: 4px 20px;
-    }
     .doctor-description-cta {
         padding: 7px 25px;
     }
@@ -98,7 +95,7 @@
         font-size: 130%;
     }
     .note-reminder-blinker {
-        left: 30%;
+        left: -50%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
@@ -175,18 +172,15 @@
     ul.doctor-info-listing li span {
         max-width: 140px;
     }
-    ul.doctor-info-listing {
-        gap: 3px 15px;
-    }
-    .doctor-cta-part {
-        gap: 12px;
-    }
     .payment-formalities-box h3 {
         font-size: 130%;
     }
     .note-reminder-blinker {
-        top: 20px;
-        left: 0;
+        top: 50px;
+        left: -70%;
+    }
+    .doctor-cta-part p {
+        max-width: 120px;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -266,6 +260,7 @@
     }
     .user-profile h6 {
         max-width: 170px;
+        font-size: 90%;
     }
     .user-wallet {
         background: #e4e4e452;
@@ -399,6 +394,12 @@
     .content-formalities {
         flex-wrap: wrap;
     }
+    .doctor-cta-part p {
+        max-width: 90px;
+    }
+    .note-reminder-blinker {
+        left: -50%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -463,10 +464,12 @@
     .doctor-calender-part {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         margin-top: 3px;
         border-top: 1px solid #dfe6ef;
         padding-top: 10px;
-        gap: 0 14px;
+        gap: 2px 14px;
+        margin: 0 0 8px;
     }
     span.tat-box {
         float: unset;
@@ -514,9 +517,12 @@
         font-size: 160%;
     }
     .note-reminder-blinker {
-        top: 30%;
-        left: unset;
+        position: relative;
+        top: 0;
+        left: 0;
         right: 0;
+        width: 100%;
+        margin-bottom: 7px;
     }
     .doctor-date {
         margin-bottom: 0;
@@ -553,6 +559,12 @@
     }
     .login-footer {
         padding-top: 30px;
+    }
+    h6.extra-specs {
+        margin: 0 0 0 5px;
+    }
+    .doctor-cta-part p {
+        max-width: 140px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -702,23 +714,15 @@
         border: none;
     }
     .doctor-calender-part {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 4px 14px;
-        justify-content: start;
-        padding: 4px 0;
+        padding: 8px 0 2px;
         margin: 0;
     }
     .doctor-cta-part {
         flex-wrap: wrap;
-        gap: 8px 10px;
+        gap: 6px 10px;
     }
     .doctor-cta-part span.type {
         margin: 0;
-    }
-    .doctor-cta-part h6.extra-specs {
-        margin: 4px 0 0;
     }
     span.doctor-description-box-count {
         position: absolute;

@@ -1204,7 +1204,7 @@ span.sidebar-menu-nav-icon i {
     font-size: 95%;
 }
 
-.login-page button.browse-btn {
+.login-pagebutton.browse-btn {
     padding: 8px 12px;
 }
 
@@ -1305,6 +1305,16 @@ span.sidebar-menu-nav-icon i {
     font-style: normal;
     color: #0B63D1;
     cursor: pointer;
+}
+
+.content-table.case-list .content-table-text em i {
+    padding: 4px 6px;
+    background: linear-gradient(135deg, #ffffff8c, #7cfff3c2);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid #00000010;
+    border-radius: 20px;
+    font-size: 120%;
 }
 
 .content-table.case-list .content-table-text h6 {
@@ -1844,9 +1854,10 @@ span.doctor-description-box-count {
 }
 
 .doctor-description-box.notification .doctor-name-part h3 {
-    font-size: 100%;
+    font-size: 95%;
     position: relative;
     z-index: 1;
+    color: var(--dark);
 }
 
 .doctor-description-box.notification .doctor-name-part h3::after {
