@@ -167,70 +167,8 @@
     </div>
   </div>
 
+
     <!----- HTML-LIVE-EDIT ------->
-    <div class="editor-toolbar">
-      <button type="button" onclick="editorCmd('undo')">
-        <i class="bi bi-arrow-counterclockwise"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('redo')">
-        <i class="bi bi-arrow-clockwise"></i>
-      </button>
-
-      <select onchange="formatBlock(this.value)">
-        <option value="">Formats</option>
-        <option value="p">Paragraph</option>
-        <option value="h1">Heading 1</option>
-        <option value="h2">Heading 2</option>
-        <option value="h3">Heading 3</option>
-      </select>
-
-      <button type="button" onclick="editorCmd('bold')">
-        <i class="bi bi-type-bold"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('italic')">
-        <i class="bi bi-type-italic"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('underline')">
-        <i class="bi bi-type-underline"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('copy')">
-        <i class="bi bi-files"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('insertUnorderedList')">
-        <i class="bi bi-list-ul"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('insertOrderedList')">
-        <i class="bi bi-list-ol"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('justifyLeft')">
-        <i class="bi bi-text-left"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('justifyCenter')">
-        <i class="bi bi-text-center"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('justifyRight')">
-        <i class="bi bi-text-right"></i>
-      </button>
-
-      <button type="button" onclick="editorCmd('justifyFull')">
-        <i class="bi bi-justify"></i>
-      </button>
-
-      <label class="toolbar-color">
-        <i class="bi bi-fonts"></i>
-        <input type="color" onchange="setTextColor(this.value)">
-      </label>
-    </div>
-
     <div class="patient-info-editor">
       <div class="patient-info-editor-column">
         <div class="patient-info-editor-row">
@@ -262,10 +200,11 @@
     </div>
     <!----- HTML-LIVE-EDIT ------->
 
+
     <form method="" action="">
       <div class="row gx-3 gy-3">
         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-          <textarea rows="3" name="" value="" placeholder="">Chest radiograph shows no focal air-space opacity. Cardiomediastinal silhouette is within normal limits. No pleural effusion or pneumothorax.</textarea>
+          <textarea rows="3" class="tinyMcHtmlEdit" name="tinyMcHtmlEdit" value="" placeholder="">Chest radiograph shows no focal air-space opacity. Cardiomediastinal silhouette is within normal limits. No pleural effusion or pneumothorax.</textarea>
         </div>
         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
           <div class="content-table-btn-part justify-content-center">
@@ -300,6 +239,11 @@ function clearReport(){
 
   </main>
   <!----------------------------------- TEMPLATE-PAGE ------------------------------------------------->
+
+  <!------------------------------------ JS FOR TINYMCE-EDITOR-(INIT) FILES START -------------------------------------------->
+  <script src="https://v6.thinklab.solutions/common/third-party/tinymce/tinymce.min.js" type="text/javascript"></script>
+  <script src="assets/js/tinymce-editor.js" type="text/javascript"></script>
+  <!----------------------------------------- JS FOR TINYMCE-EDITOR-(INIT) FILES COMPLETE ---------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
