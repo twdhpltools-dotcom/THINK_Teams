@@ -873,7 +873,7 @@ span.profile-submenu-icon img {
     display: block;
     padding: 12px 18px;
     color: #444;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 6px;
     z-index: 1;
 }
@@ -3285,6 +3285,7 @@ button.filter-chip strong {
 
 button.filter-chip i {
     font-size: 90%;
+    color: var(--dark);
 }
 /* ----------------------------------------- SELECTED-FILTUR COMPLETE ---------------------------------------------- */
 
