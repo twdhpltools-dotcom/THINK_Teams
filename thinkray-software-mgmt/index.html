@@ -212,6 +212,42 @@
             </div>
           </div>
         </div>
+        <div class="row gx-3 gy-2 justify-content-end">
+          <div class="col-xl-4 col-md-4 col-sm-4 col-4">
+            <select id="dateFilter" onchange="openCustomDate(this)">
+              <option value="1" selected>Today</option>
+              <option value="2">Yesterday</option>
+              <option value="3">7 days</option>
+              <option value="4">15 days</option>
+              <option value="5">1 month</option>
+              <option value="6">Customized Date Range</option>
+            </select>
+          </div>
+          <div class="col-xl-6 col-md-6 col-sm-6 col-6">
+            <div class="filter-box">
+              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
+                Search & Filter
+                <i class="bi bi-chevron-up" id="filterArrow"></i>
+              </button>
+
+              <div class="filter-content hidden">
+                <h5>Search</h5>
+
+                <div class="search-input">
+                  <input type="text" name="" placeholder="" />
+                  <i class="bi bi-search search-right-icon"></i>
+                </div>
+
+                <div class="filter-final mt-3">
+                  <div class="content-table-btn-part text-end justify-content-end">
+                    <button type="button" class="submitted-btn">Clear All</button>
+                    <button type="button" class="browse-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!----- PAGINATION-SORT ------->
@@ -276,7 +312,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add.html'">Finish Upload</button>
+                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add-clone.html'">Finish Upload</button>
                 </div>
               </td>
             </tr>
@@ -300,7 +336,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add.html'">Finish Upload</button>
+                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add-clone.html'">Finish Upload</button>
                 </div>
               </td>
             </tr>
@@ -324,7 +360,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add.html'">Finish Upload</button>
+                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add-clone.html'">Finish Upload</button>
                 </div>
               </td>
             </tr>
@@ -348,7 +384,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add.html'">Finish Upload</button>
+                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add-clone.html'">Finish Upload</button>
                 </div>
               </td>
             </tr>
@@ -372,7 +408,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add.html'">Finish Upload</button>
+                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add-clone.html'">Finish Upload</button>
                 </div>
               </td>
             </tr>
@@ -396,7 +432,7 @@
               </td>
               <td>
                 <div class="content-table-btn-part">
-                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add.html'">Finish Upload</button>
+                  <button type="button" class="completed-btn" onclick="window.location.href='manual-add-clone.html'">Finish Upload</button>
                 </div>
               </td>
             </tr>

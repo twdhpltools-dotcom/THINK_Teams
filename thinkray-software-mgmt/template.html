@@ -228,7 +228,26 @@
                   <i class="bi bi-search search-right-icon"></i>
                 </div>
 
-                <div class="filter-final mt-3">
+                <hr class="pg-hr mt-3 mb-2" />
+
+                <h5>Filters</h5>
+
+                <button type="button" class="status-head" onclick="toggleStatus(this)">
+                  Modalitity
+                  <i class="bi bi-chevron-up"></i>
+                </button>
+
+                <div class="status-part hidden">
+                  <div class="status-content">
+                    <label><input type="checkbox"> All</label>
+                    <label><input type="checkbox"> DX</label>
+                    <label><input type="checkbox"> CT</label>
+                    <label><input type="checkbox"> MRI</label>
+                    <label><input type="checkbox"> ECG</label>
+                  </div>
+                </div>
+
+                <div class="filter-final">
                   <div class="content-table-btn-part text-end justify-content-end">
                     <button type="button" class="submitted-btn">Clear All</button>
                     <button type="button" class="browse-btn">Apply</button>
@@ -343,6 +362,7 @@
             <tr>
               <th>#</th>
               <th>Views</th>
+              <th>Modalitities</th>
               <th>Templates</th>
               <th>Action</th>
             </tr>
@@ -355,6 +375,7 @@
                   <h6>Chest X-Ray Normal</h6>
                 </div>
               </td>
+              <td>CT</td>
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="submitted-btn non-clickable">3 Templates</button>
@@ -373,6 +394,7 @@
                   <h6>CT Brain</h6>
                 </div>
               </td>
+              <td>MRI</td>
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="submitted-btn non-clickable">3 Templates</button>
@@ -391,6 +413,7 @@
                   <h6>MRI Knee</h6>
                 </div>
               </td>
+              <td>CT</td>
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="submitted-btn non-clickable">3 Templates</button>
@@ -409,6 +432,7 @@
                   <h6>Chest X-Ray Normal</h6>
                 </div>
               </td>
+              <td>MRI</td>
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="submitted-btn non-clickable">3 Templates</button>
@@ -427,6 +451,7 @@
                   <h6>MRI Knee</h6>
                 </div>
               </td>
+              <td>CT</td>
               <td>
                 <div class="content-table-btn-part">
                   <button type="button" class="submitted-btn non-clickable">3 Templates</button>

@@ -3,7 +3,7 @@
 <head>      
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThinkRay Self Doctor | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
+  <title>ThinkRay Manual Add | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health</title>
 
   <meta name="title" content="Welcome To ThinkRay | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
   <meta name="description" content="ThinkRay Laboratory Management | The Extraordinary Laboratory Management System Software | Thinkwide Digital Health" />
@@ -29,7 +29,7 @@
 
 <body>
 
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- MANUAL-ADD-PAGE ------------------------------------------------->
   <main class="main-page">
 
     <!----- TOP-HEADER ------->
@@ -165,7 +165,7 @@
           </span>
           <p>Configure</p>
         </a>
-        <a href="manual-add.html">
+        <a href="manual-add.html" class="active">
           <span class="sidebar-menu-nav-icon">
             <i class="bi bi-plus-circle"></i>
           </span>
@@ -186,7 +186,7 @@
         </a>
 
         <div id="ToggleSubMenu" class="sidebar-submenu">
-          <a href="self-doctor.html" class="active">
+          <a href="self-doctor.html">
             <span class="sidebar-menu-nav-icon">
               <i class="bi bi-person-square"></i>
             </span>
@@ -205,39 +205,111 @@
     
     <section class="page-section">
       <div class="content-formalities">
-        <div class="row gx-3 gy-2 mb-2">
+        <div class="row gx-3 gy-2 justify-content-space-between mb-2">
           <div class="col-xl-12 col-md-12 col-sm-12 col-12">
             <div class="page-section-heading">
-              <h1>Self Doctors List</h1>
+              <h1>Finish Upload</h1>
             </div>
           </div>
         </div>
-        <div class="row gx-3 gy-2 justify-content-end">
-          <div class="col-xl-4 col-md-4 col-sm-5 col-5">
-            <div class="content-table-btn-part text-end justify-content-end">
-              <button type="button" class="browse-btn" onclick="window.location.href='self-doctor-add.html'">Add Doctor</button>
+      </div>
+
+      <div class="content-formalities mt-2">
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="form-formalities-box">
+              <h5>Diacom Information</h5>
+              <form method="" action="">
+                <div class="row gx-3 gy-3">
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter patient id *" required="">
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter modality *" required="">
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter patient name *" required="">
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <select name="" required="">
+                      <option value="0" selected="">Select gender *</option>
+                      <option value="1">M</option>
+                      <option value="2">F</option>
+                      <option value="3">Others</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <input type="number" name="" value="" placeholder="Enter age *" required="">
+                  </div>
+
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" name="" value="" placeholder="Enter reffered doctor *">
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="Enter study description"></textarea>
+                  </div>
+
+                  <div class="col-xl-6 col-md-6 col-sm-12 col-12">
+                    <textarea rows="3" name="" value="" placeholder="Enter case history"></textarea>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-xl-8 col-md-8 col-sm-7 col-7">
-            <div class="filter-box">
-              <button type="button" class="filter-toggle" onclick="toggleFilter(this)">
-                Search &amp; Filter
-                <i class="bi bi-chevron-up" id="filterArrow"></i>
-              </button>
+        </div>
+      </div>
 
-              <div class="filter-content hidden">
-                <h5>Search</h5>
-
-                <div class="search-input">
-                  <input type="text" name="" placeholder="Search n">
-                  <i class="bi bi-search search-right-icon"></i>
+      <div class="content-formalities mt-2">
+        <div class="row gx-3 gy-4">
+          <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="form-formalities-box">
+              <div class="row gx-3 gy-2 align-items-center justify-content-end mb-2">
+                <div class="col-xl-9 col-md-9 col-sm-12 col-12">
+                  <h5>Select & Add Views</h5>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-12 col-12">
+                  <div class="content-table-btn-part text-end align-items-center justify-content-end">
+                    <p class="pe-2 mb-0" style="white-space: nowrap; color: var(--dark);">9 Selected</p>
+                    <select name="">
+                      <option value="1" selected>All Modalities</option>
+                      <option value="2">DX</option>
+                      <option value="3">CT</option>
+                      <option value="4">MRI</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="view-selector">
+                <div class="login-input">
+                  <i class="bi bi-search login-left-icon"></i>
+                  <input type="text" name="" placeholder="Search views">
                 </div>
 
-                <div class="filter-final mt-3">
-                  <div class="content-table-btn-part text-end justify-content-end">
-                    <button type="button" class="submitted-btn">Clear All</button>
-                    <button type="button" class="browse-btn">Apply</button>
-                  </div>
+                <div class="view-chip-list" id="viewChipList">
+                  <button type="button" class="view-chip">CHEST PA VIEW</button>
+                  <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                  <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                  <button type="button" class="view-chip active">PNS OM VIEW</button>
+                  <button type="button" class="view-chip">CHEST PA VIEW</button>
+                  <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                  <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                  <button type="button" class="view-chip active">PNS OM VIEW</button>
+                  <button type="button" class="view-chip">CHEST PA VIEW</button>
+                  <button type="button" class="view-chip active">CHEST AP VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/PA VIEW</button>
+                  <button type="button" class="view-chip">CHEST AP/LAT VIEW</button>
+                  <button type="button" class="view-chip active">SKULL AP VIEW</button>
+                  <button type="button" class="view-chip active">PNS OM VIEW</button>
                 </div>
               </div>
             </div>
@@ -245,136 +317,17 @@
         </div>
       </div>
 
-      <!----- PAGINATION-SORT ------->
-      <div class="pagination-bar">
-        <div class="pagination-left">
-          <button type="button" class="page-arrow prev">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <span class="page-range">1 to 10</span>
-
-          <button type="button" class="page-arrow next">
-            <i class="bi bi-chevron-right"></i>
-          </button>
+      <div class="row gx-3 gy-3">
+        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+          <div class="content-table-btn-part justify-content-center mt-3 mb-4">
+            <button type="submit" class="browse-btn">Confirm</button>
+          </div>
         </div>
-
-        <div class="pagination-right">
-          <span>Show</span>
-
-          <select class="page-limit">
-            <option value="0" selected>50</option>
-            <option value="1">100</option>
-            <option value="2">150</option>
-            <option value="3">200</option>
-            <option value="4">250</option>
-          </select>
-
-          <span>per page</span>
-        </div>
-      </div>
-      <!----- PAGINATION-SORT ------->
-
-      <div class="content-table self-doctor">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Doctor Name</th>
-              <th>Mobile Number</th>
-              <th>Qualification</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>01</td>
-              <td>Dr. Shibarjan Roy</td>
-              <td>+91 6349304309</td>
-              <td>MBBS/ENT</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn non-clickable">Approved</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>DR. MD. JADAV MONDAL</td>
-              <td>+91 6349304309</td>
-              <td>MBBS/ENT</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="request-btn non-clickable">Pending</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>Dr. Md. Jamal Naskar</td>
-              <td>+91 6349304309</td>
-              <td>MBBS/ENT</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="request-btn non-clickable">Pending</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>DR. MD. JADAV MONDAL</td>
-              <td>+91 6349304309</td>
-              <td>MBBS/ENT</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn non-clickable">Approved</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>DR. Bidya Roy</td>
-              <td>+91 6349304309</td>
-              <td>MBBS/ENT</td>
-              <td>
-                <div class="content-table-btn-part">
-                  <button type="button" class="pending-btn non-clickable">Approved</button>
-                </div>
-              </td>
-              <td>
-                <div class="content-table-btn-part mb-1">
-                  <button type="button" class="edit-btn" onclick="window.location.href='self-doctor-add.html'">Edit</button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </section>
 
   </main>
-  <!----------------------------------- SELF-DOCTOR-LIST-PAGE ------------------------------------------------->
+  <!----------------------------------- MANUAL-ADD-PAGE ------------------------------------------------->
 
   <!------------------------------------ JS FOR JQUERY FILES START -------------------------------------------->
   <script src="assets/js/jquery-min.js" type="text/javascript"></script>
