@@ -133,21 +133,6 @@ document.addEventListener("click", function () {
 /*-------------------- ADMIN-SWITCH-MENU ----------------------*/
 /*-------------------------------------- ANIMATED-TOGGLER-MENU ----------------------------------------*/
 
-/* ------------------------------------- PASSWORD-ICON ------------------------------------------ */
-function togglePassword() {
-  const password = document.querySelector('.default-pass');
-  const eye = document.querySelector('.pass-eye-icon');
-  
-  if (password.type === 'password') {
-    password.type = 'text';
-    eye.className = 'fa fa-eye-slash pass-eye-icon';
-  } else {
-    password.type = 'password';
-    eye.className = 'fa fa-eye pass-eye-icon';
-  }
-}
-/* ------------------------------------- PASSWORD-ICON ------------------------------------------ */
-
 /*-------------------------------------- PG-VALIDATION----------------------------------------*/
 /*-------------------------------------- LOGIN ----------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
@@ -218,6 +203,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*-------------------------------------- INPUT-TEL ----------------------------------------*/
 /*-------------------------------------- PG-VALIDATION----------------------------------------*/
+
+/* ------------------------------------- PASSWORD-ICON ------------------------------------------ */
+function togglePassword() {
+  const password = document.querySelector('.default-pass');
+  const eye = document.querySelector('.pass-eye-icon');
+  
+  if (password.type === 'password') {
+    password.type = 'text';
+    eye.className = 'fa fa-eye-slash pass-eye-icon';
+  } else {
+    password.type = 'password';
+    eye.className = 'fa fa-eye pass-eye-icon';
+  }
+}
+/* ------------------------------------- PASSWORD-ICON ------------------------------------------ */
 
 /*-------------------------------------- PRINT-SCREEN ----------------------------------------*/
 document.querySelector(".submitted-btn.conf")?.addEventListener("click", function () {
