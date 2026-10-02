@@ -526,6 +526,7 @@
         right: 0;
         width: 100%;
         margin-bottom: 7px;
+        justify-content: start;
     }
     .doctor-date {
         margin-bottom: 0;

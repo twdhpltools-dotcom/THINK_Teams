@@ -275,13 +275,13 @@ button.disbaled {
 }
 
 .content-table-btn-part button.submitted-btn.conf.yes {
-    background: #c9fffc;
-    border: 1px solid #00dcd0;
+    background: #f3fffe;
+    border: 1px solid #00dcd08a;
 }
 
 .content-table-btn-part button.submitted-btn.conf.no {
-    background: #fff3ee;
-    border: 1px solid #ffc9b2;
+    background: #fffcfc;
+    border: 1px solid #ffc9b2c9;
 }
 
 .content-table-btn-part button.browse-btn {
