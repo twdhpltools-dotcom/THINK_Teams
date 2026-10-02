@@ -8,12 +8,12 @@
 ::before {
     margin: 0;
     padding: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	max-width: 100%;
-	overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
     font-size: 17px;
 }
 
@@ -35,16 +35,16 @@ html {
 }
 
 body {
-	margin: 0;
-	height: auto;
-	width: 100%;
+    margin: 0;
+    height: auto;
+    width: 100%;
     font-family: var(--defaut-font-family);
-	line-height: var(--defaut-line-height);
-	font-weight: var(--defaut-font-weight);
+    line-height: var(--defaut-line-height);
+    font-weight: var(--defaut-font-weight);
     color: var(--defaut-dark-color);
-	background: #007cf80c;
-	position: relative;
-	scroll-behavior: smooth;
+    background: #007cf80c;
+    position: relative;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -54,7 +54,7 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
+    margin: 0;
     font-weight: var(--defaut-font-weight);
 }
 
@@ -73,31 +73,31 @@ p {
 
 a,
 a:hover {
-	text-decoration: none;
-	color: var(--defaut-dark-color);
+    text-decoration: none;
+    color: var(--defaut-dark-color);
 }
 
-ul, 
+ul,
 ol {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
-ul li, 
+ul li,
 ol li {
-	list-style: none;
+    list-style: none;
 }
 
-ul li.active a, 
+ul li.active a,
 ol li.active a {
     color: var(--defaut-dark-thinklab-theme);
     font-weight: 700;
 }
 
 img {
-	height: auto;
-	width: 100%;
-	object-fit: cover;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 i {
@@ -109,7 +109,7 @@ button {
 }
 
 button:focus {
-	outline: none;
+    outline: none;
 }
 
 iframe {
@@ -276,13 +276,13 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:checked::after {
-  content: '✓';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--defaut-light-color);
-  z-index: 2;
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--defaut-light-color);
+    z-index: 2;
 }
 
 input[type=number] {
@@ -301,7 +301,7 @@ a.pg-btn {
     gap: 14px;
     border-radius: 50px;
     border: 1px solid #ffffffcc;
-    background: linear-gradient(135deg, #ffffff8c, #dcecff70);
+    background: linear-gradient(to top, #eaeaea, #ffffffd6);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
@@ -319,13 +319,13 @@ a.pg-btn::before {
     inset: 2px 12px auto;
     height: 45%;
     border-radius: 50px;
-    background: linear-gradient(to bottom,#ffffffa8,transparent);
+    background: linear-gradient(to bottom, #ffffffa8, transparent);
     pointer-events: none;
 }
 
 a.pg-btn.light {
     color: var(--defaut-light-color);
-    background: linear-gradient(135deg, #ffffff40, #dcecff12);
+    background: linear-gradient(135deg, #ffffff00, #dcecff00);
 }
 
 a.pg-btn span {
@@ -379,6 +379,11 @@ hr.pg-hr {
 
 hr.pg-hr.light {
     background: var(--defaut-light-background);
+}
+
+main {
+    height: auto;
+    width: 100%;
 }
 
 .logo {
@@ -483,7 +488,7 @@ hr.pg-hr.light {
 }
 
 .section-heading h2 {
-    font-size: 220%;
+    font-size: 210%;
     font-weight: 700;
     margin: 0 0 12px;
 }
@@ -524,7 +529,7 @@ hr.pg-hr.light {
 
 ul.pg-listing li {
     font-size: 85%;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding-left: 28px;
     position: relative;
     z-index: 1;
@@ -602,21 +607,25 @@ span.mini-chip {
     padding: 8px 12px;
     color: var(--defaut-light-color);
     border-radius: 10px;
-    background: #ffffff20;
-    backdrop-filter: blur(20px);
+    border: 1px solid #ffffffcc;
+    background: linear-gradient(135deg, #ffffff8c, #dcecff70);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
     box-shadow: 0 0 20px 0 #00000010;
     animation: decorChipsJumps 4s ease infinite;
 }
 
 @keyframes decorChipsJumps {
     0% {
-        margin-bottom: -30px;
+        transform: translateY(-30px);
     }
+
     50% {
-        margin-bottom: 0;
+        transform: translateY(0);
     }
+
     100% {
-        margin-bottom: -30px;
+        transform: translateY(-30px);
     }
 }
 
@@ -720,7 +729,7 @@ span.list-type-para.wrong::before {
 }
 
 h4.compact-decor-text {
-    font-size: 110%;
+    font-size: 115%;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -735,25 +744,25 @@ h4.compact-decor-text::after {
     height: auto;
     width: 100%;
     min-height: 2px;
-    max-width: 60px;
+    max-width: 130px;
     border-radius: 50px;
 }
 
 h4.compact-decor-text::before {
     left: 0;
-    transform: translate(100%, -50%);
+    transform: translate(0, -50%);
 }
 
 h4.compact-decor-text::after {
     right: 0;
-    transform: translate(-100%, -50%);
+    transform: translate(0, -50%);
 }
 
 .diagram-img {
     height: auto;
     width: 100%;
-    min-height: 250px;
-    max-width: 80%;
+    min-height: 220px;
+    max-width: 90%;
     border-radius: 20px;
     background: #ffffff50;
     backdrop-filter: blur(20px);
@@ -761,10 +770,9 @@ h4.compact-decor-text::after {
     padding: 10px;
     position: relative;
     z-index: 1;
-    animation: diagramJumps 4s ease infinite;
 }
 
-@keyframes diagramJumps {
+/* @keyframes diagramJumps {
     0% {
         margin-top: -20px;
     }
@@ -774,10 +782,10 @@ h4.compact-decor-text::after {
     100% {
         margin-top: -20px;
     }
-}
+} */
 
 .diagram-img.thinkray-themed {
-   clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%); 
+    clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%);
 }
 
 .diagram-img img {
@@ -786,7 +794,7 @@ h4.compact-decor-text::after {
 }
 
 .diagram-img.thinkray-themed img {
-   clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%); 
+    clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%);
 }
 
 .diagram-img.thinkdigital-themed {
@@ -997,63 +1005,64 @@ span.item-breaker-dark {
 .form-copyright a:first-child {
     padding-left: 0;
 }
+
 /*--------------------------------------------- CSS FOR PRE-DEFINED COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PRE-LOADER COMPLETE ---------------------------------------------- */
 .pg-pre-loader {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffffd7;
-  backdrop-filter: blur(20px);
-  z-index: 1001;
-  perspective: 1000px;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffffd7;
+    backdrop-filter: blur(20px);
+    z-index: 1001;
+    perspective: 1000px;
 }
 
 .book-loader {
-  position: relative;
-  width: 110px;
-  height: 80px;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 110px;
+    height: 80px;
+    transform-style: preserve-3d;
 }
 
 .book-cover,
 .book-page {
-  position: absolute;
-  top: 0;
-  width: 55px;
-  height: 80px;
-  border-radius: 8px;
-  transform-origin: left center;
+    position: absolute;
+    top: 0;
+    width: 55px;
+    height: 80px;
+    border-radius: 8px;
+    transform-origin: left center;
 }
 
 .book-cover {
-  left: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--defaut-light-thinklab-theme);
-  animation: pgLoaderBookClose 1s ease-in-out forwards;
+    left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--defaut-light-thinklab-theme);
+    animation: pgLoaderBookClose 1s ease-in-out forwards;
 }
 
 .book-cover .load-icon-img {
-  height: auto;
-  width: 100%;
-  max-width: 40px;
+    height: auto;
+    width: 100%;
+    max-width: 40px;
 }
 
 .book-cover img {
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .book-page {
-  left: 55px;
-  background: #eef5ff;
-  border: 1px solid #d9e6ff;
-  animation: pgLoaderBookOpen 1s ease-in-out forwards;
+    left: 55px;
+    background: #eef5ff;
+    border: 1px solid #d9e6ff;
+    animation: pgLoaderBookOpen 1s ease-in-out forwards;
 }
 
 .book-page.page-one {
@@ -1070,27 +1079,30 @@ span.item-breaker-dark {
 
 @keyframes pgLoaderBookOpen {
     0% {
-        transform:rotateY(0deg);
+        transform: rotateY(0deg);
     }
+
     100% {
-        transform:rotateY(-180deg);
+        transform: rotateY(-180deg);
     }
 }
 
 @keyframes pgLoaderBookClose {
     0% {
-        transform:rotateY(-180deg);
+        transform: rotateY(-180deg);
     }
+
     100% {
-        transform:rotateY(0deg);
+        transform: rotateY(0deg);
     }
 }
 
 .pg-pre-loader.hide {
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.35s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s ease-in-out;
 }
+
 /* ----------------------------------------- CSS FOR PRE-LOADER COMPLETE ---------------------------------------------- */
 
 /*--------------------------------------------- CSS FOR HEADER START ---------------------------------------*/
@@ -1123,7 +1135,7 @@ nav.nav {
     max-width: 50%;
     background: var(--defaut-dark-thinklab-theme);
     clip-path: polygon(0 1%, 100% 0, 92% 100%, 0 100%);
-    z-index: 1;    
+    z-index: 1;
 }
 
 .top-header-social {
@@ -1335,7 +1347,7 @@ ul.menu li.sub-links:hover .sub-menu {
     display: block;
 }
 
-header.main-header.login-header  {
+header.main-header.login-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -1348,6 +1360,7 @@ header.main-header.login-header .top-header .social i {
     color: var(--defaut-light-color);
     border: none;
 }
+
 /*--------------------------------------------- CSS FOR HEADER COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR MOBILE-MANU-TOGGLER START ---------------------------------------------- */
@@ -1384,6 +1397,7 @@ button.mobile-toggler span {
     transition: all 0.4s ease-in-out;
     transform-origin: center;
 }
+
 button.mobile-toggler span:last-child {
     margin-bottom: 0;
 }
@@ -1400,6 +1414,7 @@ button.mobile-toggler.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     margin-bottom: 0;
 }
+
 /* ----------------------------------------- CSS FOR MOBILE-MANU-TOGGLER COMPLETE ---------------------------------------------- */
 
 /*--------------------------------------------- CSS FOR HERO SECTION START ---------------------------------------*/
@@ -1421,10 +1436,10 @@ button.mobile-toggler.active span:nth-child(3) {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffffffbf;
-    backdrop-filter: blur(20px);
     height: 100%;
     width: 100%;
+    background: #ffffff96;
+    backdrop-filter: blur(2px);
     z-index: -1;
 }
 
@@ -1482,13 +1497,23 @@ button.mobile-toggler.active span:nth-child(3) {
     height: auto;
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     z-index: 1;
 }
 
-.hero-img .pg-decor-chip {
+.hero-img .pg-decor-chip.one {
+    position: absolute;
+    top: 25%;
+    left: -28%;
+    z-index: 2;
+}
+
+.hero-img .pg-decor-chip.two {
     position: absolute;
     bottom: 5%;
-    left: -50%;
+    right: -28%;
     z-index: 2;
 }
 
@@ -1533,12 +1558,14 @@ button.mobile-toggler.active span:nth-child(3) {
 .thinkdigital-hero-unque-decor-img {
     max-width: 60%;
 }
+
 /*--------------------------------------------- CSS FOR HERO SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BRANDING SECTION START ---------------------------------------*/
 .branding {
     color: var(--defaut-dark-color);
 }
+
 /*--------------------------------------------- CSS FOR BRANDING SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR FEATURE SECTION START ---------------------------------------*/
@@ -1581,6 +1608,7 @@ li.feature-types-box p {
     border: 1px solid #00000010;
     color: var(--defaut-light-color);
     overflow: hidden;
+    cursor: pointer;
     position: relative;
     z-index: 1;
 }
@@ -1645,7 +1673,7 @@ li.feature-types-box p {
     left: 0;
     height: auto;
     width: 100%;
-    background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 40%, transparent 100%);
+    background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 60%, transparent 100%);
     backdrop-filter: blur(2px);
     padding: 60px 22px 15px 22px;
     border-radius: 0 0 10px 10px;
@@ -1679,13 +1707,13 @@ li.feature-types-box p {
 }
 
 .feature-card-info h3 {
-    font-size: 160%;
+    font-size: 150%;
     font-weight: 900;
     margin-bottom: 8px;
 }
 
 .feature-card-info p {
-    font-size: 90%;
+    font-size: 85%;
     margin-bottom: 22px;
 }
 
@@ -1697,6 +1725,7 @@ li.feature-types-box p {
     opacity: 1;
     visibility: visible;
 }
+
 /*--------------------------------------------- CSS FOR FEATURE SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR SUPPORT SECTION START ---------------------------------------*/
@@ -1760,7 +1789,7 @@ li.feature-types-box p {
 }
 
 .support-card-info span {
-    color: #41d74a;
+    color: #83ff8b;
     font-size: 130%;
     font-weight: 700;
     margin-bottom: 2px;
@@ -1776,6 +1805,7 @@ li.feature-types-box p {
     font-size: 85%;
     margin: 10px 0 0;
 }
+
 /*--------------------------------------------- CSS FOR SUPPORT SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR RELIABLE SECTION START ---------------------------------------*/
@@ -1834,12 +1864,14 @@ li.feature-types-box p {
     max-width: 90%;
     margin: 0 auto;
 }
+
 /*--------------------------------------------- CSS FOR RELIABLE SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION START ---------------------------------------*/
 .form-changer {
     color: var(--defaut-dark-color);
 }
+
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR CLIENTS SECTION START ---------------------------------------*/
@@ -1860,10 +1892,9 @@ li.feature-types-box p {
 }
 
 .clients-map p {
-    font-size: 110%;
+    font-size: 125%;
     font-weight: 600;
-    margin-top: 20px;
-        color: var(--defaut-dark-thinklab-theme);
+    color: var(--defaut-dark-thinklab-theme);
 }
 
 .clients-map h3 {
@@ -1897,6 +1928,7 @@ li.feature-types-box p {
     align-items: center;
     justify-content: center;
 }
+
 /*--------------------------------------------- CSS FOR CLIENTS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
@@ -1929,9 +1961,9 @@ li.feature-types-box p {
 .form-changer-img {
     height: auto;
     width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 5px;
+    max-width: 90%;
+    margin-left: auto;
+    padding: 3px;
     border-radius: 10px;
     background: var(--defaut-light-background);
     box-shadow: 0 0 10px 0 #00000010;
@@ -1942,6 +1974,7 @@ li.feature-types-box p {
 .form-changer-img img {
     border-radius: 10px;
 }
+
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BENEFITS SECTION START ---------------------------------------*/
@@ -1954,23 +1987,22 @@ li.feature-types-box p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 30px 0;
+    padding: 30px 0 0;
 }
 
 .benefits-innovate h5 {
-    font-size: 220%;
+    font-size: 180%;
     color: var(--defaut-dark-thinklab-theme);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .benefits-innovate-box {
     height: auto;
     width: 100%;
-    min-height: 230px;
     background: #007cf80c;
-    padding: 35px 20px;
+    padding: 20px 40px;
     text-align: center;
-    clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 99%, 50% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .benefits-innovate-box-icon-img {
@@ -1988,6 +2020,10 @@ li.feature-types-box p {
 
 .benefits-innovate-box p {
     font-size: 70%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .benefits-content {
@@ -1997,7 +2033,7 @@ li.feature-types-box p {
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
-    padding: 10px;
+    padding: 3px;
     color: var(--defaut-light-color);
 }
 
@@ -2032,6 +2068,7 @@ li.feature-types-box p {
     background: linear-gradient(to right, #ffffff40, transparent);
     border-left: 3px solid #ffffff80;
 }
+
 /*--------------------------------------------- CSS FOR BENEFITS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BLOG-GALLERY SECTION START ---------------------------------------*/
@@ -2093,6 +2130,7 @@ li.feature-types-box p {
     border-radius: 0 0 10px 10px;
     z-index: 2;
 }
+
 /*--------------------------------------------- CSS FOR BLOG-GALLERY SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR CONTACT SECTION START ---------------------------------------*/
@@ -2133,7 +2171,7 @@ li.feature-types-box p {
 .contact-content-info-box .social {
     justify-content: end;
     flex-direction: row-reverse;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .contact-content-info-box .social:last-child {
@@ -2173,7 +2211,7 @@ li.feature-types-box p {
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
-    padding: 10px;
+    padding: 3px;
     position: relative;
     z-index: 1;
 }
@@ -2201,6 +2239,100 @@ li.feature-types-box p {
     justify-content: center;
     align-items: center;
 }
+
+.basic-form.contact-form {
+    height: auto;
+    width: 100%;
+    max-width: 520px;
+    padding: 30px 35px;
+    text-align: center;
+    color: var(--defaut-light-color);
+    background: rgba(255, 255, 255, .10);
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 15px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .35),
+        inset 0 1px 1px rgba(255, 255, 255, .12);
+    backdrop-filter: blur(15px);
+}
+
+.basic-form.dark.contact-form {
+    color: var(--defaut-dark-color);
+    background: none;
+    border: 1px solid rgba(255, 255, 255, .35);
+    box-shadow: 0 0 30px 0 #00000010;
+    text-align: left;
+}
+
+.basic-form.contact-form .basic-form-head {
+    display: block;
+}
+
+.basic-form.contact-form .basic-form-head h4 {
+    font-size: 140%;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.basic-form.contact-form .basic-form-head p {
+    font-size: 95%;
+    color: #b9c2da;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+form .form-group.input-box {
+    text-align: left;
+    position: relative;
+    margin-bottom: 12px;
+    z-index: 1;
+}
+
+form .form-group.input-box label {
+    font-size: 80%;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+
+form .form-group.input-box input,
+form .form-group.input-box select,
+form .form-group.input-box textarea {
+    padding: 15px 50px 15px 42px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 10px;
+    outline: none;
+    color: var(--defaut-light-color);
+    background: rgba(255, 255, 255, .04);
+    font-size: 95%;
+}
+
+.basic-form.dark.contact-form form .form-group.input-box input,
+.basic-form.dark.contact-form form .form-group.input-box select,
+.basic-form.dark.contact-form form .form-group.input-box textarea {
+    border: 1px solid rgb(27 27 27 / 15%);
+    color: var(--defaut-dark-color);
+    background: rgb(151 151 151 / 4%);
+}
+
+form .form-group.input-box input::placeholder,
+form .form-group.input-box textarea::placeholder {
+    color: #dae0f1;
+}
+
+.basic-form.dark.contact-form form .form-group.input-box input::placeholder,
+.basic-form.dark.contact-form form .form-group.input-box textarea::placeholder {
+    color: #2e2e2e;
+}
+
+form .form-group.input-box i {
+    top: 65%;
+    color: #dae0f1;
+    font-size: 100%;
+}
+
+.basic-form.dark.contact-form form .form-group.input-box i {
+    color: #cacaca;
+}
+
 /*--------------------------------------------- CSS FOR CONTACT SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR TESTIMONIALS SECTION START ---------------------------------------*/
@@ -2213,6 +2345,7 @@ li.feature-types-box p {
     width: 100%;
     padding: 60px 0 0;
 }
+
 /*--------------------------------------------- CSS FOR TESTIMONIALS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR FAQ'S SECTION START ---------------------------------------*/
@@ -2226,6 +2359,7 @@ li.feature-types-box p {
     max-width: 90%;
     margin: 0 auto;
 }
+
 /*--------------------------------------------- CSS FOR FAQ'S SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR GMAP SECTION START ---------------------------------------*/
@@ -2297,12 +2431,14 @@ li.feature-types-box p {
     font-size: 120%;
     margin-bottom: 15px;
 }
+
 /*--------------------------------------------- CSS FOR GMAP SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MAIN-CTA SECTION START ---------------------------------------*/
 .main-cta {
     color: var(--defaut-dark-color);
 }
+
 .main-cta-content {
     text-align: center;
 }
@@ -2311,6 +2447,7 @@ li.feature-types-box p {
     font-weight: 700;
     margin-bottom: 25px;
 }
+
 /*--------------------------------------------- CSS FOR MAIN-CTA SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKRAY-TYPES SECTION START ---------------------------------------*/
@@ -2351,6 +2488,7 @@ li.feature-types-box p {
 .thinkray-types-box p {
     font-size: 85%;
 }
+
 /*--------------------------------------------- CSS FOR THINKRAY-TYPES SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKRAY-BENEFITS SECTION START ---------------------------------------*/
@@ -2416,6 +2554,7 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
 }
+
 /*--------------------------------------------- CSS FOR THINKRAY-BENEFITS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BAR-STRIPES SECTION START ---------------------------------------*/
@@ -2429,6 +2568,7 @@ li.feature-types-box p {
     background: var(--defaut-dark-background);
     padding: 15px 0;
 }
+
 /*--------------------------------------------- CSS FOR BAR-STRIPES SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKRAY-SUCCESS SECTION START ---------------------------------------*/
@@ -2529,6 +2669,7 @@ li.feature-types-box p {
 .thinkray-success-content-box h6 {
     font-size: 110%;
 }
+
 /*--------------------------------------------- CSS FOR THINKRAY-SUCCESS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKRAY-RELIABLE SECTION START ---------------------------------------*/
@@ -2545,6 +2686,7 @@ li.feature-types-box p {
 .thinkray-reliable .reliable-img {
     max-width: 100%;
 }
+
 /*--------------------------------------------- CSS FOR THINKRAY-RELIABLE SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKRAY-SYSTEMS SECTION START ---------------------------------------*/
@@ -2654,6 +2796,7 @@ li.feature-types-box p {
 .thinkray-systems-content-box p {
     font-size: 75%;
 }
+
 /*--------------------------------------------- CSS FOR THINKRAY-SYSTEMS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKDIGITAL-TYPES SECTION START ---------------------------------------*/
@@ -2701,6 +2844,7 @@ li.feature-types-box p {
 .thinkdigital-types-box p {
     font-size: 95%;
 }
+
 /*--------------------------------------------- CSS FOR THINKDIGITAL-TYPES SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR THINKDIGITAL-SYSTEMS SECTION START ---------------------------------------*/
@@ -2755,6 +2899,7 @@ li.feature-types-box p {
     width: 100%;
     max-width: 35%;
 }
+
 /*--------------------------------------------- CSS FOR THINKDIGITAL-SYSTEMS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR ABOUT SECTION START ---------------------------------------*/
@@ -2774,6 +2919,7 @@ li.feature-types-box p {
     background: linear-gradient(to right, #f2f2f291, var(--defaut-light-background));
     box-shadow: 0 2px 10px 0 #00000010;
 }
+
 /*--------------------------------------------- CSS FOR ABOUT SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MINI-CTA SECTION START ---------------------------------------*/
@@ -2807,6 +2953,7 @@ li.feature-types-box p {
 .mini-cta-content .pg-video-btn {
     margin: 30px auto 0;
 }
+
 /*--------------------------------------------- CSS FOR MINI-CTA SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR OUR-TEAMS SECTION START ---------------------------------------*/
@@ -2895,6 +3042,7 @@ li.feature-types-box p {
 .our-teams-img-text .user-info-badge em {
     margin-bottom: 0;
 }
+
 /*--------------------------------------------- CSS FOR OUR-TEAMS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR CASE-STUDY SECTION START ---------------------------------------*/
@@ -2950,6 +3098,7 @@ li.feature-types-box p {
     font-size: 80%;
     margin-bottom: 25px;
 }
+
 /*--------------------------------------------- CSS FOR CASE-STUDY SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR HAMBURGER SECTION START ---------------------------------------*/
@@ -3006,6 +3155,7 @@ li.feature-types-box p {
 .breadcrumb-menu ul li i {
     margin: 0 15px;
 }
+
 /*--------------------------------------------- CSS FOR HAMBURGER SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR EVENT-GALLERY SECTION START ---------------------------------------*/
@@ -3028,6 +3178,7 @@ li.feature-types-box p {
 .event-gallery-box-img img {
     height: 100%;
 }
+
 /*--------------------------------------------- CSS FOR EVENT-GALLERY SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PRICING SECTION START ---------------------------------------*/
@@ -3190,6 +3341,7 @@ li.feature-types-box p {
     margin-bottom: 15px;
     opacity: 0.6;
 }
+
 /*--------------------------------------------- CSS FOR PRICING SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PRICING-METHOD SECTION START ---------------------------------------*/
@@ -3230,6 +3382,7 @@ li.feature-types-box p {
 .pricing-method-box-text p {
     font-size: 80%;
 }
+
 /*--------------------------------------------- CSS FOR PRICING-METHOD SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PRODUCT-COMPARISON SECTION START ---------------------------------------*/
@@ -3286,6 +3439,7 @@ li.feature-types-box p {
     color: var(--defaut-dark-thinklab-theme);
     font-weight: 700;
 }
+
 /*--------------------------------------------- CSS FOR PRODUCT-COMPARISON SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR FOOTER START ---------------------------------------*/
@@ -3318,12 +3472,12 @@ footer.main-footer {
 .main-footer-info .logo {
     height: auto;
     width: 100%;
-    max-width: 200px;
+    max-width: 190px;
     margin-bottom: 15px;
 }
 
 .main-footer-info h3 {
-    font-size: 180%;
+    font-size: 160%;
 }
 
 .main-footer-info h6 {
@@ -3414,6 +3568,7 @@ ul.footer-menu li:hover {
     max-width: 40px;
     font-size: 120%;
 }
+
 /*--------------------------------------------- CSS FOR FOOTER COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR LOGIN-HERO SECTION START ---------------------------------------*/
@@ -3435,7 +3590,7 @@ ul.footer-menu li:hover {
     height: auto;
     width: 100%;
     max-width: 35%;
-    border-radius: 20px;        
+    border-radius: 20px;
     z-index: 2;
 }
 
@@ -3556,7 +3711,7 @@ ul.footer-menu li:hover {
     font-size: 100%;
     font-weight: 400;
 }
-    
+
 .login-hero-cta span {
     height: auto;
     width: 100%;
@@ -3564,6 +3719,7 @@ ul.footer-menu li:hover {
     align-items: center;
     justify-content: space-between;
 }
+
 /*--------------------------------------------- CSS FOR LOGIN-HERO SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR OWL-CAROUSEL START ---------------------------------------*/
@@ -3663,18 +3819,18 @@ ul.footer-menu li:hover {
 }
 
 .carousel-progress {
-  height: 4px;
-  background: #ddd;
-  border-radius: 50px;
-  overflow: hidden;
-  margin: 16px 0;
+    height: 4px;
+    background: #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 16px 0;
 }
 
 .carousel-progress .progress-bar {
-  height: 100%;
-  width: 0;
-  border-radius: 50px;
-  background: linear-gradient(to right, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme));
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    background: linear-gradient(to right, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme));
 }
 
 .our-teams-slider.owl-stage,
@@ -3694,6 +3850,7 @@ ul.footer-menu li:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
 /*--------------------------------------------- CSS FOR OWL-CAROUSEL COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR ACCORDIAN START ---------------------------------------*/
@@ -3729,6 +3886,7 @@ ul.footer-menu li:hover {
 .accordion-body p span {
     text-decoration: underline;
 }
+
 /*--------------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MARQUEE START ---------------------------------------*/
@@ -3778,6 +3936,7 @@ header.main-header .top-header-news .marquee {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -3795,6 +3954,7 @@ header.main-header .top-header-news .marquee-content span {
 header.main-header .top-header-news .marquee-content span em {
     font-weight: 600;
 }
+
 /*--------------------------------------------- CSS FOR MARQUEE COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PASSWORD-ICON START ---------------------------------------*/
@@ -3819,9 +3979,15 @@ header.main-header .top-header-news .marquee-content span em {
 .password-input .pass-eye-icon:hover {
     color: var(--defaut-dark-color);
 }
+
 /*--------------------------------------------- CSS FOR PASSWORD-ICON COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MODAL START ---------------------------------------*/
+.modal-header {
+    border-bottom: 0;
+    padding: 12px 18px;
+}
+
 .modal#invoiceSowerModal .modal-header {
     border: none;
 }
@@ -3831,6 +3997,20 @@ header.main-header .top-header-news .marquee-content span em {
     width: 100%;
     border-radius: 10px;
 }
+
+.video-player-modal-img {
+    height: calc(100vh - 300px);
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.video-player-modal-img iframe {
+    height: 100%;
+    width: 100%;
+}
+
 /*--------------------------------------------- CSS FOR MODAL COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR TARGETED-HIGHLIGHTER START ---------------------------------------------- */
@@ -3841,4 +4021,159 @@ header.main-header .top-header-news .marquee-content span em {
     font-weight: 700;
     color: var(--defaut-light-color);
 }
+
 /* ----------------------------------------- CSS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER START ---------------------------------------------- */
+.device-showcase {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devices {
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.monitor {
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.45s ease;
+}
+
+.monitor-frame {
+    position: relative;
+    padding: 12px 12px 40px;
+    border-radius: 27px 27px 18px 18px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .18), inset 0 1px rgba(255, 255, 255, .25);
+    background: radial-gradient(circle at 70% 40%, #ffffff 0%, #c8c8c8 40%, #ffffff 100%);
+    z-index: 1;
+}
+
+.monitor-screen {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.monitor-screen img {
+    width: 100%;
+    height: 350px;
+}
+
+.monitor-frame:after {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #777;
+}
+
+.monitor-neck {
+    width: 130px;
+    height: 78px;
+    margin: auto;
+    background: linear-gradient(90deg,
+            #a7aaad,
+            #e4e6e8 50%,
+            #9ea2a5);
+    clip-path: polygon(28% 0,
+            72% 0,
+            82% 100%,
+            18% 100%);
+}
+
+.monitor-base {
+    width: 240px;
+    height: 22px;
+    margin: -2px auto 0;
+    border-radius: 50%;
+    background: linear-gradient(#d9dbdd,
+            #999da1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, .12);
+}
+
+.mobile {
+    position: absolute;
+    left: 50px;
+    bottom: -15px;
+    width: 205px;
+    opacity: 0;
+    transform: translateX(-80px) translateY(15px) rotate(-2deg);
+    pointer-events: none;
+    transition: opacity 0.65s ease,
+        transform 0.65s cubic-bezier(.2, .8, .2, 1);
+    z-index: 3;
+}
+
+.devices.phone-active .mobile {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(0);
+    pointer-events: auto;
+}
+
+.mobile-frame {
+    position: relative;
+    padding: 3px;
+    background: #111315eb;
+    border-radius: 30px;
+    border: 2px solid #333;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, .25);
+    z-index: 1;
+}
+
+.mobile-frame:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 5px;
+    background: #26282b;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.mobile-screen {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.mobile-screen img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+.click-hint {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    letter-spacing: .4px;
+    color: #76808a;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.devices.phone-active+.click-hint {
+    opacity: 0;
+}
+
+/* ----------------------------------------- CSS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER COMPLETE ---------------------------------------------- */

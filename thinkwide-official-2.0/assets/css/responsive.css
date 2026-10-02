@@ -55,7 +55,7 @@
         padding: 20px 0;
     }
     .support-card-img {
-        height: 300px;
+        height: 350px;
     }
     .clients-content-box {
         padding: 8px 20px;
@@ -71,12 +71,8 @@
         max-width: 50px;
         margin: 0 auto 15px;
     }
-    .benefits-innovate h5 {
-        margin-bottom: 30px;
-    }
     .benefits-innovate-box {
-        min-height: 210px;
-        padding: 30px 20px;
+        padding: 20px 30px;
     }
     .benefits-content-box {
         padding: 20px 35px;
@@ -184,6 +180,13 @@
     .form-copyright {
         margin-top: 25px;
     }
+    .hero-img .pg-decor-chip.two {
+        right: -8%;
+    }
+    h4.compact-decor-text::before,
+    h4.compact-decor-text::after {
+        max-width: 90px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -272,6 +275,7 @@
     }
     .form-changer-content .basic-form {
         margin-top: 20px;
+        padding: 22px 30px;
     }
     form .form-group {
         margin-bottom: 12px;
@@ -284,8 +288,7 @@
         padding: 18px 15px;
     }
     .benefits-innovate-box {
-        min-height: 200px;
-        padding: 25px 10px;
+        padding: 15px 30px;
     }
     .long-blog-gallery-card-info {
         padding: 30px 18px 15px 18px;
@@ -324,12 +327,14 @@
     .gmap-content iframe {
         min-height: 480px;
     }
-    .main-footer-info .logo {
-        max-width: 200px;
-        margin-bottom: 20px;
-    }
     .branding-box-heading-icon-img {
         max-width: 120px;
+    }
+    .pg-decor-chip {
+        padding: 8px 0;
+    }
+    .hero-img .pg-decor-chip.two {
+        right: -5%;
     }
     .top-header {
         padding: 6px 0;
@@ -476,6 +481,18 @@
     .main-footer-content {
         padding: 28px 25px;
     }
+    .mobile {
+        left: 40px;
+        width: 185px;
+    }
+    .mobile-screen,
+    .mobile-screen img {
+        height: 350px;
+    }
+    h4.compact-decor-text::before,
+    h4.compact-decor-text::after {
+        max-width: 50px;
+    }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
 
@@ -610,8 +627,7 @@
         padding: 12px 15px;
     }
     .hero-img .pg-decor-chip {
-        left: -30%;
-        bottom: -5%;
+        display: none;
     }
     .branding-box-heading-icon-img {
         margin: 2px auto;
@@ -669,9 +685,6 @@
         margin: 0 auto 14px;
         max-width: 70%;
     }
-    .reliable-img {
-        max-width: 80%;
-    }
     .indicator-card-icon {
         padding-right: 20px;
     }
@@ -709,7 +722,7 @@
         right: 5%;
     }
     .benefits-innovate h5 {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .blog-gallery-card.long {
         position: sticky;
@@ -929,6 +942,24 @@
     .copyright-footer-content-icon .social {
         max-width: 48px;
     }
+    .video-player-modal-img {
+        height: calc(100vh - 400px);
+    }
+    .monitor-screen,
+    .monitor-screen img {
+        height: 300px;
+    }
+    .mobile-screen,
+    .mobile-screen img {
+        height: 300px;
+    }
+    .mobile {
+        left: 30px;
+        width: 165px;
+    }
+    .basic-form.contact-form {
+        max-width: 100%;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
@@ -961,8 +992,12 @@
         width: 100%;
         max-width: 48%;
     }
+    form .form-group.input-box label {
+        margin-bottom: 5px;
+    }
     .hero {
         height: auto;
+        padding-bottom: 15px;
     }
     .hero-content, .hero-img {
         padding: 35px 0 0;
@@ -992,9 +1027,6 @@
     }
     .feature-types {
         margin-bottom: 20px;
-    }
-    .support-card-img {
-        height: 250px;
     }
     ul.pg-listing li {
         margin-bottom: 12px;
@@ -1233,14 +1265,41 @@
     ul.menu {
         margin-top: 35px;
     }
+    .contact-content-img-box {
+        margin-top: 0;
+    }
+    form .form-group.input-box input,
+    form .form-group.input-box select,
+    form .form-group.input-box textarea {
+        padding: 10px 40px 10px 35px;
+    }
+    .monitor-screen,
+    .monitor-screen img {
+        height: 250px;
+    }
+    .mobile-screen,
+    .mobile-screen img {
+        height: 250px;
+    }
+    .mobile {
+        width: 145px;
+    }
+    .monitor-frame {
+        border-radius: 20px 20px 18px 18px;
+        padding: 10px 10px 22px;
+    }
+    .mobile-frame {
+        padding: 2px;
+        border-radius: 20px;
+    }
+    .mobile-screen {
+        border-radius: 15px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) START ------------------------------*/
 @media only screen and (max-width: 576px) {
-    html {
-        font-size: 12px;
-    }
     button.mobile-toggler {
         max-width: 40px;
     }
@@ -1360,9 +1419,6 @@
     .indicator-card {
         margin: 0 auto 10px;
         max-width: 90%;
-    }
-    .benefits-innovate-box {
-        margin-bottom: 10px;
     }
     .benefits-content-box {
         padding: 15px 20px;
@@ -1536,9 +1592,6 @@
     .pricing-card-top-icon-img {
         max-width: 50px;
     }
-    .contact-content-img-box {
-        margin-top: 20px;
-    }
     .product-comparison-side-bar {
         padding: 20px 20px;
     }
@@ -1590,6 +1643,8 @@
     }
     .benefits-innovate-box {
         padding: 22px 15px;
+        margin-bottom: 10px;
+        clip-path: polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
     }
     .benefits-innovate-box-icon-img {
         max-width: 40px;
@@ -1606,6 +1661,25 @@
     }
     .feature-types ul li.feature-types-box {
         padding: 10px 18px;
+    }
+    .basic-form.contact-form {
+        padding: 25px 25px;
+    }
+    .monitor-screen,
+    .monitor-screen img {
+        height: 220px;
+    }
+    .mobile-screen,
+    .mobile-screen img {
+        height: 190px;
+    }
+    .mobile {
+        left: 20px;
+        width: 100px;
+    }
+    .mobile-frame:before {
+        width: 25px;
+        height: 4px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
@@ -1665,9 +1739,6 @@
     }
     .basic-form {
         padding: 25px 25px;
-    }
-    .benefits-innovate-box {
-       padding: 45px 35px;
     }
     .benefits-innovate {
         padding: 20px 0;
