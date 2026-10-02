@@ -77,22 +77,31 @@ function openMobileMenu() {
 
 /*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 /*-------------------- SELECT-RESPECTIVE ----------------------*/
-const tdsSelect = document.getElementById("tdsSelect");
-const tdsPercentageBox = document.getElementById("tdsPercentageBox");
-const tdsPercentage = document.getElementById("tdsPercentage");
+const tdsBox = document.getElementById("tdsPercentageBox");
 
-tdsPercentageBox.style.display = "none";
+if (tdsBox) {
+  tdsBox.style.display = "none";
+}
 
-tdsSelect.addEventListener("change", function () {
-  if (this.value === "2") {
-    tdsPercentageBox.style.display = "block";
-    tdsPercentage.required = true;
+function toggleTDS(select) {
+  const box = document.getElementById("tdsPercentageBox");
+  if (!box) return;
+
+  const input = box.querySelector("input");
+
+  if (select.value === "2") {
+    box.style.display = "block";
+
+    if (input) input.required = true;
   } else {
-    tdsPercentageBox.style.display = "none";
-    tdsPercentage.required = false;
-    tdsPercentage.value = "";
+    box.style.display = "none";
+
+    if (input) {
+      input.required = false;
+      input.value = "";
+    }
   }
-});
+}
 /*-------------------- SELECT-RESPECTIVE ----------------------*/
 /*-------------------------------------- DEFAULT-SHOW/HIDE-FUCNTIONALITY ----------------------------------------*/
 
