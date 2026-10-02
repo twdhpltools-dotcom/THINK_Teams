@@ -1,5 +1,4 @@
 /*------------------------------------------- JS FOR MAIN START ------------------------------------------*/
-
 /*-------------------------------------- PRE-LOADER ----------------------------------------*/
 window.addEventListener("load", function () {
   const preloader = document.getElementById("pg_pre_loader");
@@ -123,10 +122,13 @@ $(document).ready(function(){
           items: 1
         },
         600: {
-          items: 1
+          items: 2
         },
         1000: {
           items: 2
+        },
+        1200: {
+          items: 3
         }
       }
   });
@@ -198,10 +200,13 @@ $(document).ready(function(){
       autoplayHoverPause: true,
       responsive: {
         0: {
+          items: 2
+        },
+        300: {
           items: 3
         },
         600: {
-          items: 4
+          items: 3
         },
         1000: {
           items: 4
@@ -225,10 +230,13 @@ $(document).ready(function(){
       rtl: true,
       responsive: {
         0: {
+          items: 2
+        },
+        300: {
           items: 3
         },
         600: {
-          items: 4
+          items: 3
         },
         1000: {
           items: 4
@@ -251,10 +259,13 @@ $(document).ready(function(){
       autoplayHoverPause: true,
       responsive: {
         0: {
+          items: 2
+        },
+        300: {
           items: 3
         },
         600: {
-          items: 4
+          items: 3
         },
         1000: {
           items: 4
@@ -357,33 +368,49 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ----------------------------------------- JS FOR COUNTER START ---------------------------------------------- */
 $(document).ready(function () {
   let counted = false;
+  const counterSection = $('.counter').first().closest('section');
 
-  $(window).on("scroll", function () {
-    let sectionTop = $('section').offset().top - window.innerHeight;
-    if (!counted && $(window).scrollTop() > sectionTop) {
+  $(window).on('scroll', function () {
+    if (!counterSection.length || counted) return;
+
+    const sectionTop = counterSection.offset().top;
+    const scrollBottom = $(window).scrollTop() + $(window).height();
+
+    if (scrollBottom >= sectionTop + 100) {
+
       $('.counter').each(function () {
-        let $this = $(this),
-        countTo = $this.attr('data-count');
+        const $this = $(this);
+        const countTo = Number($this.attr('data-count'));
+        const suffix = $this.data('suffix') || '';
 
         $({ countNum: 0 }).animate(
           { countNum: countTo },
           {
-              duration: 2000,
-              easing: 'swing',
-              step: function () {
-                  let suffix = $this.data('suffix') || "";
-                  $this.html(Math.floor(this.countNum) + " <span>" + suffix + "</span>");
-              },
-              complete: function () {
-                  let suffix = $this.data('suffix') || "";
-                  $this.html(this.countNum + " <span>" + suffix + "</span>");
-              }
+            duration: 2000,
+            easing: 'swing',
+
+            step: function () {
+              $this.html(
+                Math.floor(this.countNum) +
+                ' <span>' + suffix + '</span>'
+              );
+            },
+
+            complete: function () {
+              $this.html(
+                countTo +
+                ' <span>' + suffix + '</span>'
+              );
+            }
           }
         );
       });
+
       counted = true;
     }
   });
+
+  $(window).trigger('scroll');
 });
 /* ----------------------------------------- JS FOR COUNTER COMPLETE ---------------------------------------------- */
 
@@ -407,5 +434,4 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 /* ----------------------------------------- JS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
-
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
