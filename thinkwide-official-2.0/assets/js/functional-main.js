@@ -355,13 +355,11 @@ $(document).ready(function () {
       $left
         .css({
           display: 'block',
-          opacity: 0,
           transform: 'translateX(-35px)'
         })
         .animate(
-          { opacity: 1 },
           {
-            duration: 400,
+            duration: 2500,
             step: function () {
               $(this).css(
                 'transform',
@@ -378,13 +376,11 @@ $(document).ready(function () {
       $feature
         .stop(true)
         .css({
-          opacity: 0,
           transform: 'translateX(-15px)'
         })
         .animate(
-          { opacity: 1 },
           {
-            duration: 300,
+            duration: 2500,
             step: function () {
               $(this).css(
                 'transform',
@@ -398,7 +394,7 @@ $(document).ready(function () {
     setTimeout(function () {
       $('#feature_carousel')
         .trigger('refresh.owl.carousel');
-    }, 450);
+    }, 1500);
   });
 });
 /* ----------------------------------------- JS FOR CONCEPTUAL-FEATURE-SLIDER COMPLETE ---------------------------------------------- */
