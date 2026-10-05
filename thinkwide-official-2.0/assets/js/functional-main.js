@@ -204,41 +204,102 @@ $(document).ready(function () {
   /* Feature content */
   const features = {
 
-    "Online Prescription": [
-      ["Upload Prescription", "Patients can easily upload their prescription online."],
-      ["Select Tests", "Required tests can be selected directly from the prescription."],
-      ["Book Online", "Complete the booking process quickly and conveniently."],
-      ["Track Booking", "Patients can easily track their booking status."]
-    ],
+  "Online Prescription": [
+      [
+          "Create Digital Prescriptions",
+          "Create clear and structured prescriptions digitally with medicines, dosage and instructions."
+      ],
+      [
+          "Quick Medicine Selection",
+          "Search and select medicines from a ready medicine list for faster prescription entry."
+      ],
+      [
+          "Set Dose & Duration",
+          "Add dosage, frequency, timing and duration for every prescribed medicine."
+      ],
+      [
+          "Easy Prescription Access",
+          "Keep prescriptions digitally available for convenient access and future reference."
+      ]
+  ],
 
-    "Doctor Portal": [
-      ["Patient Management", "Manage patient information from one place."],
-      ["View Reports", "Access patient diagnostic reports instantly."],
-      ["Prescription Access", "Quickly review uploaded prescriptions."],
-      ["Easy Monitoring", "Monitor patient activity through the portal."]
-    ],
+  "Patient App": [
+      [
+          "Book Tests Online",
+          "Patients can select tests or packages and book lab visits or home collections easily."
+      ],
+      [
+          "Access Lab Reports",
+          "View and download completed laboratory reports directly from the app."
+      ],
+      [
+          "Manage Family Members",
+          "Add family members and manage their bookings and health records from one account."
+      ],
+      [
+          "Track Health Records",
+          "Keep previous reports, prescriptions and diagnostic records organized in one place."
+      ]
+  ],
 
-    "Patient App": [
-      ["Book Tests", "Patients can book diagnostic tests directly."],
-      ["View Reports", "Access reports anytime from the app."],
-      ["Online Payment", "Pay outstanding bills securely online."],
-      ["Track Appointments", "Check appointment and booking status easily."]
-    ],
+  "Doctor App": [
+      [
+          "Access Patient Reports",
+          "Doctors can securely view available patient investigation reports from one place."
+      ],
+      [
+          "View Report History",
+          "Access previous diagnostic reports to review a patient's investigation history."
+      ],
+      [
+          "Create Digital Prescriptions",
+          "Prepare structured prescriptions with medicines, dosage, duration and instructions."
+      ],
+      [
+          "Manage Patient Follow-Ups",
+          "Keep patient consultations and follow-up information organized for easier reference."
+      ]
+  ],
 
-    "Collector App": [
-      ["Receive Booking", "Collectors receive assigned collection bookings."],
-      ["Sample Collection", "Manage sample collection efficiently."],
-      ["Live Status", "Update collection status in real time."],
-      ["Sample Handover", "Complete sample handover with proper tracking."]
-    ],
+  "Collector App": [
+      [
+          "Manage Assigned Collections",
+          "Collectors can view assigned home collection cases with patient and visit details."
+      ],
+      [
+          "Track Collection Status",
+          "Update every step from accepting a case to reaching the patient and collecting samples."
+      ],
+      [
+          "Manage Samples & Barcodes",
+          "Record collected samples, tube details and barcode information directly from the app."
+      ],
+      [
+          "Complete Sample Handover",
+          "Record sample handover details to maintain a clear collection-to-lab workflow."
+      ]
+  ],
 
-    "Smart Report": [
-      ["Automatic Analysis", "Report data is processed automatically."],
-      ["AI Verification", "AI assists in validating report information."],
-      ["Trend Analysis", "Previous results can be compared visually."],
-      ["Smart Insights", "Patients receive easy-to-understand report insights."]
-    ]
-  };
+  "Smart Report": [
+      [
+          "Make Reports Easier to Read",
+          "Present laboratory results in a clear and patient-friendly digital format."
+      ],
+      [
+          "Highlight Important Results",
+          "Help patients quickly identify values that require attention within their report."
+      ],
+      [
+          "Understand Result Trends",
+          "Show previous and current results together to make changes over time easier to follow."
+      ],
+      [
+          "Deliver a Better Report Experience",
+          "Turn a standard laboratory report into a more informative and engaging patient experience."
+      ]
+  ]
+
+};
 
 
   /* DEFAULT : LEFT HIDDEN + CAROUSEL FULL WIDTH */
