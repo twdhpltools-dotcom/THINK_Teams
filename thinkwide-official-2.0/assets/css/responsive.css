@@ -64,9 +64,6 @@
         font-size: 600%;
         margin: 80px 0;
     }
-    .benefits-innovate {
-        padding: 20px 0;
-    }
     .benefits-innovate-box-icon-img {
         max-width: 50px;
         margin: 0 auto 15px;
@@ -183,6 +180,9 @@
     h4.compact-decor-text::before,
     h4.compact-decor-text::after {
         max-width: 90px;
+    }
+    .form-changer-img {
+        height: 650px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
@@ -489,6 +489,17 @@
     h4.compact-decor-text::before,
     h4.compact-decor-text::after {
         max-width: 50px;
+    }
+    .form-changer-img {
+        height: auto;
+    }
+    form .form-group.input-box input,
+    form .form-group.input-box select,
+    form .form-group.input-box textarea {
+        padding: 12px 10px 12px 35px;
+    }
+    form .form-group.input-box select {
+        padding: 11px 10px 11px 35px;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -1762,9 +1773,6 @@
     }
     .basic-form {
         padding: 25px 25px;
-    }
-    .benefits-innovate {
-        padding: 20px 0;
     }
     .benefits-content-box {
         padding: 12px 18px;

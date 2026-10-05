@@ -309,13 +309,13 @@ a.pg-btn {
     display: inline-flex;
     align-items: center;
     gap: 14px;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px solid #ffffffcc;
-    background: linear-gradient(to top, #eaeaea, #ffffffd6);
+    background: linear-gradient(90deg, #09bb9b 0%, #33ceea 35%, #359ae3 68%, #8ab4ff 100%);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
-    color: var(--defaut-dark-thinklab-theme);
+    color: var(--defaut-light-color);
     text-decoration: none;
     font-size: 95%;
     font-weight: 600;
@@ -334,7 +334,7 @@ a.pg-btn::before {
 }
 
 a.pg-btn.light {
-    color: var(--defaut-light-color);
+    border-radius: 50px;
     background: linear-gradient(135deg, #ffffff00, #dcecff00);
 }
 
@@ -1980,7 +1980,7 @@ li.feature-types-box p {
 }
 
 .form-changer-img {
-    height: 600px;
+    height: 720px;
     width: 100%;
     max-width: 90%;
     margin-left: auto;
@@ -2009,7 +2009,7 @@ li.feature-types-box p {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 30px 0 0;
+    padding: 10px 0 0;
 }
 
 .benefits-innovate h5 {
@@ -3622,6 +3622,7 @@ ul.footer-menu li:hover {
     height: auto;
     width: 100%;
     max-width: 55px;
+    cursor: pointer;
 }
 
 .copyright-footer-content-icon .social i {
@@ -3926,7 +3927,7 @@ ul.footer-menu li:hover {
     background: #007af808;
     border-radius: 5px;
     border: 1px solid #00000010;
-    padding: 12px 22px;
+    padding: 14px 22px;
     font-size: 100%;
     font-weight: 600;
 }
