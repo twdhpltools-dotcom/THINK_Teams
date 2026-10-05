@@ -109,7 +109,7 @@ $(document).ready(function(){
   var owl = $('#feature_carousel');
   
   owl.owlCarousel({
-      margin: 30,
+      margin: 20,
       loop: true,
       autoplay: true,
       autoplayTimeout: 2500,
