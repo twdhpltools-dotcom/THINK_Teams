@@ -369,7 +369,7 @@ button.pg-submit-btn {
     background: var(--defaut-light-thinklab-theme);
     border: 1px solid #ffffff80;
     border-radius: 10px;
-    padding: 15px 0;
+    padding: 12px 0;
     color: var(--defaut-light-color);
     font-weight: 600;
 }
@@ -769,7 +769,7 @@ h4.compact-decor-text::after {
 }
 
 .diagram-img {
-    height: 550px;
+    height: 100%;
     width: 100%;
     max-width: 90%;
     border-radius: 20px;
@@ -799,7 +799,7 @@ h4.compact-decor-text::after {
 }
 
 .diagram-img img {
-    min-height: 550px;
+    min-height: 100%;
     border-radius: 20px;
 }
 
@@ -1179,7 +1179,7 @@ nav.nav {
 
 .bottom-header {
     position: fixed;
-    top: 7%;
+    top: 6%;
     left: 0;
     height: auto;
     width: 100%;
@@ -1189,7 +1189,7 @@ nav.nav {
 }
 
 .bottom-header.sticky {
-    top: 2%;
+    top: 1%;
 }
 
 .bottom-header.sticky .nav-links {
@@ -1689,7 +1689,6 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 60%, transparent 100%);
-    backdrop-filter: blur(2px);
     padding: 60px 22px 15px 22px;
     border-radius: 0 0 10px 10px;
     z-index: 2;
@@ -1796,7 +1795,6 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     background: linear-gradient(to top, #0a29a8d9, transparent);
-    backdrop-filter: blur(4px);
     padding: 40px 30px 20px 30px;
     text-align: center;
     color: var(--defaut-light-color);
@@ -1980,10 +1978,8 @@ li.feature-types-box p {
 }
 
 .form-changer-img {
-    height: 720px;
+    height: auto;
     width: 100%;
-    max-width: 90%;
-    margin-left: auto;
     padding: 3px;
     border-radius: 10px;
     background: var(--defaut-light-background);
@@ -2055,7 +2051,7 @@ li.feature-types-box p {
 }
 
 .benefits-content {
-    height: auto;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
     background: #ffffff50;
@@ -2184,9 +2180,8 @@ li.feature-types-box p {
 }
 
 .contact-content {
-    height: auto;
+    height: 100%;
     width: 100%;
-    padding: 25px 0;
     color: var(--defaut-light-color);
 }
 
@@ -2248,8 +2243,7 @@ li.feature-types-box p {
 }
 
 .contact-content-img-box {
-    margin-top: 30px;
-    height: auto;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
     background: #ffffff50;
@@ -2261,7 +2255,7 @@ li.feature-types-box p {
 }
 
 .contact-content-img {
-    height: 450px;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
 }
@@ -2340,7 +2334,7 @@ form .form-group.input-box label {
 form .form-group.input-box input,
 form .form-group.input-box select,
 form .form-group.input-box textarea {
-    padding: 15px 10px 15px 42px;
+    padding: 12px 10px 12px 42px;
     border: 1px solid rgba(255, 255, 255, .15);
     border-radius: 10px;
     outline: none;
@@ -2352,14 +2346,12 @@ form .form-group.input-box textarea {
 .basic-form.dark.contact-form form .form-group.input-box input,
 .basic-form.dark.contact-form form .form-group.input-box select,
 .basic-form.dark.contact-form form .form-group.input-box textarea {
-    border: 1px solid #23b3ffb8;
     color: var(--defaut-dark-color);
-    background: var(--light);
-    box-shadow: 0 4px 10px 0 #46abfa1a;
+    background: #23b3ff1f;
 }
 
 form .form-group.input-box select {
-    padding: 13px 10px 13px 42px;
+    padding: 10px 10px 10px 42px;
 }
 
 form .form-group.input-box input::placeholder,
@@ -2379,7 +2371,7 @@ form .form-group.input-box i {
 }
 
 .basic-form.dark.contact-form form .form-group.input-box i {
-    color: #cacaca;
+    color: #23b2ff;
 }
 
 /*--------------------------------------------- CSS FOR CONTACT SECTION COMPLETE ---------------------------------------*/
