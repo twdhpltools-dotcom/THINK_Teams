@@ -14,7 +14,7 @@
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) START ------------------------------*/
 @media only screen and (max-width: 1599px) {
     html {
-        font-size: 16px;
+        font-size: 15px;
     }
     form .form-group {
         margin-bottom: 15px;
@@ -68,7 +68,7 @@
         padding: 20px 30px;
     }
     .benefits-content-box {
-        padding: 20px 35px;
+        padding: 20px 30px;
     }
     .contact-content h3 {
         margin: 15px 0 0;
@@ -127,10 +127,6 @@
         padding: 22px 30px;
         margin-bottom: 20px;
     }
-    a.pg-video-btn {
-        min-height: 90px;
-        max-width: 90px;
-    }
     .thinkdigital-systems-divider-part {
         padding: 30px 0;
     }
@@ -174,13 +170,16 @@
     h4.compact-decor-text::after {
         max-width: 90px;
     }
+    .form-changer-img {
+        padding: 20px 25px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) START ------------------------------*/
 @media only screen and (max-width: 1299px) {
     html {
-        font-size: 15px;
+        font-size: 14px;
     }
     .login-form {
         position: relative;
@@ -260,17 +259,13 @@
     .form-changer-content .basic-form {
         padding: 22px 30px;
     }
-    .form-changer-img img {
-        max-width: 80%;
-    }
     form .form-group {
         margin-bottom: 12px;
     }
     .benefits-content-box {
-        padding: 15px 30px;
+        padding: 15px 22px;
     }
     .benefits-content-box-listing {
-        margin: 20px 0;
         padding: 18px 15px;
     }
     .benefits-innovate-box {
@@ -327,7 +322,7 @@
     }
     .hero-content,
     .hero-img {
-        padding: 60px 0;
+        padding: 20px 0;
     }
     .sub-menu.product-menu {
         min-width: 700px;
@@ -378,8 +373,8 @@
         margin: 40px 0;
     }
     a.pg-video-btn {
-        min-height: 80px;
-        max-width: 80px;
+        min-height: 70px;
+        max-width: 70px;
     }
     .case-study-card {
         height: 360px;
@@ -453,7 +448,7 @@
         margin: 0 0 8px;
     }
     .section-heading {
-        padding: 15px 0 30px;
+        padding: 9px 0 22px;
     }
     .indicator-card {
         margin-bottom: 15px;
@@ -490,7 +485,7 @@
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) START ------------------------------*/
 @media only screen and (max-width: 992px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
     .mobile-header {
         height: 100vh;
@@ -598,17 +593,12 @@
     span.pg-chip {
         padding: 5px 20px;
     }
-    /* span.pg-chip::after {
-        left: 8%;
-        min-height: 25px;
-        max-width: 25px;
-    } */
     .hero-feature-img {
         max-width: 75%;
     }
     .hero-content,
     .hero-img {
-        padding: 40px 0;
+        padding: 10px 0;
     }
     .pg-decor-chip {
         padding: 12px 15px;
@@ -798,7 +788,6 @@
         margin-top: 30px;
     }
     .form-changer-img {
-        height: auto;
         max-width: 100%;
         margin: 20px auto 0;
     }
@@ -957,31 +946,17 @@
     .benefits-innovate-box h6 {
         margin-bottom: 6px;
     }
-    .contact-content,
-    .benefits-content {
+    .contact-content {
         height: auto;
     }
     .feature-types {
         max-width: 350px;
-    }
-    .form-changer-img img {
-        max-width: 100%;
-        position: relative;
-        margin: 0 auto;
-        bottom: 0;
-        right: 0;
-    }
-    .form-changer-img .section-heading h2 {
-        margin: 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) START ------------------------------*/
 @media only screen and (max-width: 768px) {
-    html {
-        font-size: 13px;
-    }
     .login-form {
         max-width: 90%;
     }
@@ -1014,7 +989,7 @@
         padding-bottom: 15px;
     }
     .hero-content {
-        padding: 20px 0 0;
+        padding: 10px 0 0;
     }
     .hero-img {
         padding: 0;
@@ -1310,7 +1285,7 @@
     }
     .accordion-button,
     .accordion-button:not(.collapsed) {
-        padding: 13px 15px;
+        padding: 14px 15px;
     }
     .accordion-body {
         padding: 12px 18px;
@@ -1322,7 +1297,7 @@
         margin-top: 1px;
     }
     .form-changer-img {
-        padding: 25px 30px;
+        padding: 18px 20px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -1492,7 +1467,7 @@
     }
     .form-changer-img {
         margin: 15px auto 0;
-        padding: 18px 20px;
+        padding: 15px 18px;
     }
     .benefits-content-box-listing {
         margin: 15px 0;
@@ -1664,7 +1639,7 @@
         margin: 12px 0;
     }
     .section-heading {
-        padding: 12px 0 20px;
+        padding: 8px 0 18px;
     }
     .clients-content-box {
         padding: 4px 15px;

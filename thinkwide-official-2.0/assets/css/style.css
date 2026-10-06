@@ -14,7 +14,7 @@
 html {
     max-width: 100%;
     overflow-x: hidden;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 :root {
@@ -484,7 +484,7 @@ main {
     max-width: 60%;
     margin: 0 auto;
     text-align: center;
-    padding: 15px 0 35px;
+    padding: 10px 0 25px;
 }
 
 .section-heading.divided {
@@ -502,7 +502,7 @@ main {
 .section-heading h2 {
     font-size: 210%;
     font-weight: 700;
-    margin: 0 0 12px;
+    margin: 0 0 10px;
 }
 
 .section-heading h2 span {
@@ -1454,7 +1454,7 @@ button.mobile-toggler.active span:nth-child(3) {
 
 .hero-content,
 .hero-img {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .hero-content {
@@ -1584,6 +1584,7 @@ button.mobile-toggler.active span:nth-child(3) {
 }
 
 .feature-types {
+    position: absolute;
     height: 100%;
     width: 100%;
     max-width: 440px;
@@ -1793,7 +1794,7 @@ li.feature-types-box p {
     left: 0;
     height: auto;
     width: 100%;
-    background: linear-gradient(to top, #0a29a8d9, transparent);
+    background: linear-gradient(to top, #0a29a8c4 40%, transparent);
     padding: 40px 30px 20px 30px;
     text-align: center;
     color: var(--defaut-light-color);
@@ -1801,12 +1802,11 @@ li.feature-types-box p {
 }
 
 .support-card-info span {
-    color: #83ff8b;
+    color: #4ce956;
     font-size: 130%;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 2px;
 }
-
 
 .support-card-info h3 {
     font-size: 150%;
@@ -1945,6 +1945,8 @@ li.feature-types-box p {
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
+    aspect-ratio: 3 / 2;
 }
 
 /*--------------------------------------------- CSS FOR CLIENTS SECTION COMPLETE ---------------------------------------*/
@@ -1981,9 +1983,9 @@ li.feature-types-box p {
 }
 
 .form-changer-img {
-    height: 100%;
+    height: auto;
     width: 100%;
-    padding: 35px 40px;
+    padding: 25px 30px;
     border-radius: 20px;
     box-shadow: 0 0 10px 0 #00000010;
     border: 1px solid #007cf828;
@@ -2001,15 +2003,10 @@ li.feature-types-box p {
 .form-changer-img .section-heading h2 {
     font-size: 180%;
     font-weight: 700;
-    margin: 0 0 40px;
+    margin: 0;
 }
 
 .form-changer-img img {
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    border-radius: 10px;
-    max-width: 68%;
     box-shadow: 0 0 20px 0 #00000040;
 }
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
@@ -2028,9 +2025,9 @@ li.feature-types-box p {
 }
 
 .benefits-innovate h5 {
-    font-size: 180%;
+    font-size: 190%;
     color: var(--defaut-dark-thinklab-theme);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .benefits-innovate p {
@@ -2070,7 +2067,7 @@ li.feature-types-box p {
 }
 
 .benefits-content {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 20px;
     background: #ffffff50;
@@ -2081,14 +2078,14 @@ li.feature-types-box p {
 }
 
 .benefits-content-box {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 20px;
     background-image: url('../images/thinklab-bg.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 25px 40px;
+    padding: 25px 30px;
     position: relative;
     z-index: 1;
 }
@@ -2104,9 +2101,13 @@ li.feature-types-box p {
     z-index: -1;
 }
 
+.benefits-content-box .section-heading h2 {
+    font-size: 200%;
+}
+
 .benefits-content-box-listing {
     margin: 25px 0;
-    padding: 22px 15px;
+    padding: 18px 15px;
     border-radius: 10px;
     background: linear-gradient(to right, #ffffff40, transparent);
     border-left: 3px solid #ffffff80;
@@ -2115,6 +2116,10 @@ li.feature-types-box p {
 .benefits-content-box-listing ul.pg-listing li {
     font-size: 95%;
     margin-bottom: 20px;
+}
+
+.benefits-content-box-listing ul.pg-listing li:last-child {
+    margin: 0;
 }
 
 .benefits-content-box-listing ul.pg-listing li span {
@@ -2148,10 +2153,14 @@ li.feature-types-box p {
 
 .blog-gallery-card-img {
     padding: 4px;
-    border: 1px solid #00000010;
+    border: 1px solid #b6daff;
     height: 320px;
     width: 100%;
     border-radius: 10px;
+}
+
+.blog-gallery-card.long .blog-gallery-card-img {
+    border-color: transparent;
 }
 
 .blog-gallery-card.long .blog-gallery-card-img {
@@ -2161,10 +2170,6 @@ li.feature-types-box p {
 .blog-gallery-card-img img {
     height: 100%;
     border-radius: 10px;
-}
-
-.blog-gallery-card span.pg-chip {
-    margin: 25px 0;
 }
 
 .blog-gallery-card h6 {
@@ -3940,7 +3945,7 @@ ul.footer-menu li:hover {
     background: #007af808;
     border-radius: 5px;
     border: 1px solid #00000010;
-    padding: 15px 22px;
+    padding: 16px 22px;
     font-size: 100%;
     font-weight: 600;
 }
@@ -3975,7 +3980,7 @@ ul.footer-menu li:hover {
     height: 3px;
     width: 0;
     background: var(--defaut-dark-thinklab-theme);
-    animation: faqProgress 8s linear forwards;
+    animation: faqProgress 5s linear forwards;
 }
 
 @keyframes faqProgress {
