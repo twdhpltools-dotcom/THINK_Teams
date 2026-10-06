@@ -198,8 +198,11 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   const $feature = $('.feature-types');
-  const $left = $feature.closest('.feature-types');
   const $right = $('#feature_carousel').closest('.col-lg-8, .col-lg-12');
+
+  let activeTitle = null;
+  let isOpen = false;
+  let animating = false;
 
   const features = {
 
@@ -240,20 +243,79 @@ $(document).ready(function () {
 
   };
 
-  $right
-    .removeClass('col-lg-8')
-    .addClass('col-lg-12');
+  $right.removeClass('col-lg-8').addClass('col-lg-12');
 
-  $left.css({
+  $feature.css({
     display: 'none',
-    position: 'absolute',
-    left: '0',
-    top: '0',
-    zIndex: '20',
-    opacity: '0'
+    opacity: '0',
+    transform: 'translateX(-80px)',
+    transition: 'transform .85s cubic-bezier(.22,1,.36,1), opacity .65s ease',
+    willChange: 'transform, opacity'
   });
 
+  function setContent(title) {
+
+    let html = '';
+
+    features[title].forEach(function (item, i) {
+      html += `
+        <li class="feature-types-box">
+          <h6>${i + 1}. ${item[0]}</h6>
+          <p>${item[1]}</p>
+        </li>
+      `;
+    });
+
+    $feature.find('ul').html(html);
+  }
+
+  function showFeature(title) {
+
+    setContent(title);
+
+    $feature.css({
+      display: 'block',
+      opacity: '0',
+      transform: 'translateX(-80px)'
+    });
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        $feature.css({
+          opacity: '1',
+          transform: 'translateX(0)'
+        });
+      });
+    });
+
+    activeTitle = title;
+    isOpen = true;
+  }
+
+  function hideFeature(callback) {
+
+    animating = true;
+
+    $feature.css({
+      opacity: '0',
+      transform: 'translateX(-80px)'
+    });
+
+    setTimeout(function () {
+
+      $feature.css('display', 'none');
+
+      isOpen = false;
+      animating = false;
+
+      if (callback) callback();
+
+    }, 850);
+  }
+
   $('#feature_carousel').on('click', '.feature-card', function () {
+
+    if (animating) return;
 
     const title = $(this)
       .find('.feature-card-info h3')
@@ -262,60 +324,96 @@ $(document).ready(function () {
 
     if (!features[title]) return;
 
-    function loadFeature() {
 
-      let html = '';
+    /* SAME CARD → CLOSE */
 
-      features[title].forEach(function (item, i) {
-        html += `
-          <li class="feature-types-box">
-            <h6>${i + 1}. ${item[0]}</h6>
-            <p>${item[1]}</p>
-          </li>
-        `;
+    if (isOpen && activeTitle === title) {
+
+      hideFeature(function () {
+        activeTitle = null;
       });
 
-      $feature.find('ul').html(html);
-
-      $left
-        .css({
-          display: 'block',
-          marginLeft: '-60px',
-          opacity: '0'
-        })
-        .stop(true)
-        .animate({
-          marginLeft: '0',
-          opacity: '1'
-        }, 700);
+      return;
     }
 
 
-    if ($left.is(':visible')) {
+    /* DIFFERENT CARD → OUT → CHANGE → IN */
 
-      $left
-        .stop(true)
-        .animate({
-          marginLeft: '-60px',
-          opacity: '0'
-        }, 450, function () {
+    if (isOpen) {
 
-          $left.hide();
+      hideFeature(function () {
 
-          setTimeout(function () {
-            loadFeature();
-          }, 120);
+        setTimeout(function () {
+          showFeature(title);
+        }, 150);
 
-        });
+      });
 
-    } else {
-
-      loadFeature();
-
+      return;
     }
+
+
+    /* FIRST OPEN */
+
+    showFeature(title);
 
   });
 
 });
 /* ----------------------------------------- JS FOR CONCEPTUAL-FEATURE-SLIDER COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- JS FOR FUNCTIONAL-ACCORDIAN START ---------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const accordion = document.getElementById("accordionFaq");
+  if (!accordion) return;
+
+  const items = [...accordion.querySelectorAll(".accordion-item")];
+  const delay = 5000;
+  let timer;
+
+  function closeOthers(activeItem) {
+    items.forEach(function (item) {
+      if (item === activeItem) return;
+
+      const collapse = item.querySelector(".accordion-collapse");
+      const instance = bootstrap.Collapse.getOrCreateInstance(collapse, {
+        toggle: false
+      });
+      instance.hide();
+    });
+  }
+
+  function startAccordion(item) {
+    clearTimeout(timer);
+
+    items.forEach(el => el.classList.remove("auto-active"));
+    item.classList.add("auto-active");
+
+    closeOthers(item);
+
+    const currentIndex = items.indexOf(item);
+    const nextIndex = (currentIndex + 1) % items.length;
+
+    timer = setTimeout(function () {
+      const nextCollapse = items[nextIndex].querySelector(".accordion-collapse");
+      bootstrap.Collapse.getOrCreateInstance(nextCollapse).show();
+    }, delay);
+  }
+
+  items.forEach(function (item) {
+    const collapse = item.querySelector(".accordion-collapse");
+
+    collapse.addEventListener("shown.bs.collapse", function () {
+      startAccordion(item);
+    });
+  });
+
+  const opened =
+    items.find(item =>
+      item.querySelector(".accordion-collapse").classList.contains("show")
+    ) || items[0];
+
+  startAccordion(opened);
+});
+/* ----------------------------------------- JS FOR FUNCTIONAL-ACCORDIAN COMPLETE ---------------------------------------------- */
 /*------------------------------------------- JS FOR FUNCTIONAL-MAIN COMPLETE ------------------------------------------*/
