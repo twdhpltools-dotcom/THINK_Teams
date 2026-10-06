@@ -316,10 +316,6 @@
     .sucess-box-icon-img {
         max-width: 70px;
     }
-    .hero-content,
-    .hero-img {
-        padding: 20px 0;
-    }
     .sub-menu.product-menu {
         min-width: 700px;
     }
@@ -595,10 +591,6 @@
     }
     .hero-feature-img {
         max-width: 75%;
-    }
-    .hero-content,
-    .hero-img {
-        padding: 10px 0;
     }
     .pg-decor-chip {
         padding: 12px 15px;
