@@ -434,4 +434,59 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 /* ----------------------------------------- JS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- JS FOR FUNCTIONAL-ACCORDIAN START ---------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const accordion = document.getElementById("accordionFaq");
+  if (!accordion) return;
+
+  const items = [...accordion.querySelectorAll(".accordion-item")];
+  const delay = 8000;
+  let timer;
+
+  function closeOthers(activeItem) {
+    items.forEach(function (item) {
+      if (item === activeItem) return;
+
+      const collapse = item.querySelector(".accordion-collapse");
+      const instance = bootstrap.Collapse.getOrCreateInstance(collapse, {
+        toggle: false
+      });
+      instance.hide();
+    });
+  }
+
+  function startAccordion(item) {
+    clearTimeout(timer);
+
+    items.forEach(el => el.classList.remove("auto-active"));
+    item.classList.add("auto-active");
+
+    closeOthers(item);
+
+    const currentIndex = items.indexOf(item);
+    const nextIndex = (currentIndex + 1) % items.length;
+
+    timer = setTimeout(function () {
+      const nextCollapse = items[nextIndex].querySelector(".accordion-collapse");
+      bootstrap.Collapse.getOrCreateInstance(nextCollapse).show();
+    }, delay);
+  }
+
+  items.forEach(function (item) {
+    const collapse = item.querySelector(".accordion-collapse");
+
+    collapse.addEventListener("shown.bs.collapse", function () {
+      startAccordion(item);
+    });
+  });
+
+  const opened =
+    items.find(item =>
+      item.querySelector(".accordion-collapse").classList.contains("show")
+    ) || items[0];
+
+  startAccordion(opened);
+});
+/* ----------------------------------------- JS FOR FUNCTIONAL-ACCORDIAN COMPLETE ---------------------------------------------- */
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
