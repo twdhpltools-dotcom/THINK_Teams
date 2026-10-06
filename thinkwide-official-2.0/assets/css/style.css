@@ -1284,7 +1284,7 @@ ul.menu li i {
     font-size: 110%;
     color: var(--defaut-dark-thinklab-theme);
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 ul.menu-product-links {
@@ -1292,7 +1292,7 @@ ul.menu-product-links {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 15px;
 }
 
 ul.menu-product-links li.menu-product-links-box {
@@ -1302,7 +1302,7 @@ ul.menu-product-links li.menu-product-links-box {
     border-radius: 10px;
     background: var(--defaut-light-background);
     box-shadow: 0 0 5px 0 #00000010;
-    padding: 18px 25px;
+    padding: 15px 20px;
     margin-bottom: 0;
 }
 
@@ -1319,7 +1319,7 @@ li.menu-product-links-box h6 {
 
 li.menu-product-links-box p {
     font-size: 75%;
-    margin: 14px 0;
+    margin: 12px 0;
 }
 
 li.menu-product-links-box a.pg-btn {
@@ -1339,7 +1339,7 @@ ul.menu-useful-links {
 ul.menu-useful-links li {
     height: auto;
     width: 100%;
-    padding: 12px 15px;
+    padding: 12px 10px;
     border-bottom: 1px solid #00000018;
 }
 
@@ -1983,7 +1983,7 @@ li.feature-types-box p {
 }
 
 .form-changer-img {
-    height: auto;
+    height: 100%;
     width: 100%;
     padding: 25px 30px;
     border-radius: 20px;
@@ -2008,6 +2008,11 @@ li.feature-types-box p {
 
 .form-changer-img img {
     box-shadow: 0 0 20px 0 #00000040;
+    position: absolute;
+    left: 10%;
+    transform: translate(10%, 0);
+    z-index: 2;
+    max-width: 65%;
 }
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
 
@@ -2047,8 +2052,8 @@ li.feature-types-box p {
 .benefits-innovate-box-icon-img {
     height: auto;
     width: 100%;
-    max-width: 60px;
-    margin: 0 auto 18px;
+    max-width: 45px;
+    margin: 0 auto 15px;
 }
 
 .benefits-innovate-box h6 {
@@ -2148,7 +2153,6 @@ li.feature-types-box p {
 
 .blog-gallery-card.long {
     color: var(--defaut-light-color);
-    margin-bottom: 0;
 }
 
 .blog-gallery-card-img {
@@ -2446,7 +2450,7 @@ form .form-group.input-box i {
 .gmap-content iframe {
     height: auto;
     width: 100%;
-    min-height: 600px;
+    min-height: 570px;
     border-radius: 20px;
 }
 
@@ -2462,7 +2466,7 @@ form .form-group.input-box i {
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
-    padding: 10px;
+    padding: 5px;
 }
 
 .gmap-content-info-img {
@@ -2487,14 +2491,14 @@ form .form-group.input-box i {
 .gmap-content-info-txt h5 {
     font-size: 140%;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .gmap-content-info-txt h4 {
     font-size: 95%;
     font-weight: 600;
     color: var(--defaut-dark-thinklab-theme);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .gmap-content-info-txt p {
@@ -2502,8 +2506,8 @@ form .form-group.input-box i {
 }
 
 .gmap-content-info-txt h6 {
-    font-size: 115%;
-    margin-bottom: 12px;
+    font-size: 110%;
+    margin-bottom: 10px;
 }
 
 /*--------------------------------------------- CSS FOR GMAP SECTION COMPLETE ---------------------------------------*/
@@ -4168,8 +4172,8 @@ header.main-header .top-header-news .marquee-content span em {
 }
 
 .monitor-screen img {
-    width: 100%;
     height: 350px;
+    width: fit-content !important;
 }
 
 .monitor-frame:after {
@@ -4257,8 +4261,8 @@ header.main-header .top-header-news .marquee-content span em {
 }
 
 .mobile-screen img {
-    width: 100%;
     height: 390px;
+    width: fit-content !important;
     object-fit: cover;
     display: block;
 }
