@@ -310,12 +310,13 @@ a.pg-btn {
     align-items: center;
     gap: 14px;
     border-radius: 10px;
-    border: 1px solid #ffffffcc;
-    background: linear-gradient(90deg, #09bb9b 0%, #33ceea 35%, #359ae3 68%, #8ab4ff 100%);
+    border: 1px solid #67abffd9;
+    background: #ffffffa3;
+    /* background: linear-gradient(90deg, #09bb9b 0%, #33ceea 35%, #359ae3 68%, #8ab4ff 100%); */
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
-    color: var(--defaut-light-color);
+    color: var(--defaut-dark-color);
     text-decoration: none;
     font-size: 95%;
     font-weight: 600;
@@ -323,7 +324,13 @@ a.pg-btn {
     z-index: 1;
 }
 
-a.pg-btn::before {
+a.pg-btn.light {
+    color: var(--defaut-light-color);
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ffffff00, #dcecff00);
+}
+
+a.pg-btn.light::before {
     content: '';
     position: absolute;
     inset: 2px 12px auto;
@@ -331,11 +338,6 @@ a.pg-btn::before {
     border-radius: 50px;
     background: linear-gradient(to bottom, #ffffffa8, transparent);
     pointer-events: none;
-}
-
-a.pg-btn.light {
-    border-radius: 50px;
-    background: linear-gradient(135deg, #ffffff00, #dcecff00);
 }
 
 a.pg-btn span {
@@ -771,13 +773,6 @@ h4.compact-decor-text::after {
 .diagram-img {
     height: 100%;
     width: 100%;
-    max-width: 90%;
-    border-radius: 20px;
-    background: #ffffff50;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 20px 0 #00000020;
-    padding: 5px;
-    overflow: hidden;
     position: relative;
     z-index: 1;
 }
@@ -1429,7 +1424,7 @@ button.mobile-toggler.active span:nth-child(3) {
 
 /*--------------------------------------------- CSS FOR HERO SECTION START ---------------------------------------*/
 .hero {
-    height: 90vh;
+    height: auto;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -1439,7 +1434,7 @@ button.mobile-toggler.active span:nth-child(3) {
 }
 
 .hero.thinkdigital-themed {
-    height: 80vh;
+    height: auto;
 }
 
 .hero-overlay {
@@ -1459,7 +1454,7 @@ button.mobile-toggler.active span:nth-child(3) {
 
 .hero-content,
 .hero-img {
-    padding: 120px 0 0;
+    padding: 80px 0;
 }
 
 .hero-content {
@@ -1521,14 +1516,14 @@ button.mobile-toggler.active span:nth-child(3) {
 .hero-img .pg-decor-chip.one {
     position: absolute;
     top: 25%;
-    left: -28%;
+    left: 0;
     z-index: 2;
 }
 
 .hero-img .pg-decor-chip.two {
     position: absolute;
-    bottom: 5%;
-    right: -28%;
+    bottom: 25%;
+    right: -25%;
     z-index: 2;
 }
 
@@ -1589,8 +1584,12 @@ button.mobile-toggler.active span:nth-child(3) {
 }
 
 .feature-types {
-    height: auto;
+    height: 100%;
     width: 100%;
+    max-width: 440px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+    background: var(--defaut-light-background);
 }
 
 .feature-types ul li.feature-types-box {
@@ -1684,7 +1683,7 @@ li.feature-types-box p {
 
 .feature-card-info {
     position: absolute;
-    bottom: -40%;
+    bottom: -45%;
     left: 0;
     height: auto;
     width: 100%;
@@ -1837,7 +1836,7 @@ li.feature-types-box p {
 .indicator-card {
     height: auto;
     width: 100%;
-    padding: 15px 22px;
+    padding: 14px 22px;
     background: var(--defaut-light-background);
     box-shadow: 0 5px 20px 0 #00000010;
     border-radius: 10px;
@@ -1870,7 +1869,7 @@ li.feature-types-box p {
 .indicator-card-info p {
     font-size: 80%;
     opacity: 0.8;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .reliable-img {
@@ -1972,27 +1971,47 @@ li.feature-types-box p {
     z-index: -1;
 }
 
+.form-changer-content {
+    height: 100%;
+    width: 100%;
+}
+
 .form-changer-content .basic-form {
-    margin-top: 25px;
     box-shadow: 0 0 30px 0 #00000010;
 }
 
 .form-changer-img {
-    height: auto;
+    height: 100%;
     width: 100%;
-    padding: 3px;
-    border-radius: 10px;
-    background: var(--defaut-light-background);
+    padding: 35px 40px;
+    border-radius: 20px;
     box-shadow: 0 0 10px 0 #00000010;
     border: 1px solid #007cf828;
     cursor: pointer;
+    color: var(--defaut-light-color);
     overflow: hidden;
+    background-image: url('../images/form-changer-abs.webp');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.form-changer-img .section-heading h2 {
+    font-size: 180%;
+    font-weight: 700;
+    margin: 0 0 40px;
 }
 
 .form-changer-img img {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
     border-radius: 10px;
+    max-width: 68%;
+    box-shadow: 0 0 20px 0 #00000040;
 }
-
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BENEFITS SECTION START ---------------------------------------*/
@@ -2282,7 +2301,7 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     max-width: 520px;
-    padding: 30px 35px;
+    padding: 25px 35px;
     text-align: center;
     color: var(--defaut-light-color);
     background: rgba(255, 255, 255, .10);
@@ -2296,7 +2315,7 @@ li.feature-types-box p {
 .basic-form.dark.contact-form {
     color: var(--defaut-dark-color);
     background: none;
-    border: 1px solid rgba(255, 255, 255, .35);
+    border: 1px solid rgb(217 231 255);
     box-shadow: 0 0 30px 0 #00000010;
     text-align: left;
 }
@@ -2328,7 +2347,7 @@ form .form-group.input-box {
 form .form-group.input-box label {
     font-size: 80%;
     margin-bottom: 7px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 form .form-group.input-box input,
@@ -2341,13 +2360,16 @@ form .form-group.input-box textarea {
     color: var(--defaut-light-color);
     background: rgba(255, 255, 255, .04);
     font-size: 90%;
+    font-weight: 500;
 }
 
 .basic-form.dark.contact-form form .form-group.input-box input,
 .basic-form.dark.contact-form form .form-group.input-box select,
 .basic-form.dark.contact-form form .form-group.input-box textarea {
     color: var(--defaut-dark-color);
-    background: #23b3ff1f;
+    background: var(--defaut-light-background);
+    border-color: #e1e4eb;
+    padding: 12px 10px 12px 10px;
 }
 
 form .form-group.input-box select {
@@ -2373,7 +2395,6 @@ form .form-group.input-box i {
 .basic-form.dark.contact-form form .form-group.input-box i {
     color: #23b2ff;
 }
-
 /*--------------------------------------------- CSS FOR CONTACT SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR TESTIMONIALS SECTION START ---------------------------------------*/
@@ -3919,7 +3940,7 @@ ul.footer-menu li:hover {
     background: #007af808;
     border-radius: 5px;
     border: 1px solid #00000010;
-    padding: 14px 22px;
+    padding: 15px 22px;
     font-size: 100%;
     font-weight: 600;
 }
@@ -3941,6 +3962,30 @@ ul.footer-menu li:hover {
     text-decoration: underline;
 }
 
+.accordion.faqs .accordion-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion.faqs .accordion-item.auto-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: var(--defaut-dark-thinklab-theme);
+    animation: faqProgress 8s linear forwards;
+}
+
+@keyframes faqProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width:100%;
+    }
+}
 /*--------------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MARQUEE START ---------------------------------------*/
