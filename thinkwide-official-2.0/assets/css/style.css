@@ -1675,6 +1675,31 @@ button.mobile-toggler.active span:nth-child(3) {
     border-left: 2px solid var(--defaut-dark-thinklab-theme);
     border-radius: 10px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-types ul li.feature-types-box::after {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    left: 2px;
+    height: 100%;
+    width: 1px;
+    background: var(--defaut-light-thinklab-theme);
+    border-radius: 20px;
+    z-index: 2; */
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    height: 2px;
+    width: 100%;
+    max-width: 90%;
+    background: var(--defaut-light-thinklab-theme);
+    border-radius: 20px;
+    z-index: 2;
 }
 
 li.feature-types-box h6 {
@@ -4277,7 +4302,7 @@ header.main-header .top-header-news .marquee-content span em {
 
 .monitor-screen img {
     height: 350px;
-    width: fit-content !important;
+    object-fit: unset;
 }
 
 .monitor-frame:after {
