@@ -440,4 +440,62 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 /* ----------------------------------------- JS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- JS FOR SCROLL-PERFORMANCE-OPTIMIZER START ---------------------------------------------- */
+(function () {
+  'use strict';
+
+  function optimizeAOS() {
+    if (!window.AOS || typeof window.AOS.init !== 'function') return;
+
+    window.AOS.init({
+      once: true,
+      mirror: false,
+      offset: 70,
+      duration: 450,
+      easing: 'ease-out',
+      debounceDelay: 80,
+      throttleDelay: 120
+    });
+  }
+
+  function optimizeVideoModal() {
+    var modal = document.getElementById('playVideoModal');
+    if (!modal) return;
+
+    var iframe = modal.querySelector('iframe[data-video-src]');
+    if (!iframe) return;
+
+    modal.addEventListener('show.bs.modal', function () {
+      if (iframe.src === 'about:blank' || iframe.getAttribute('src') === 'about:blank') {
+        iframe.src = iframe.dataset.videoSrc;
+      }
+    });
+
+    modal.addEventListener('hidden.bs.modal', function () {
+      // Stop playback and release the embedded page when closed.
+      iframe.src = 'about:blank';
+    });
+  }
+
+  function addPassiveScrollHints() {
+    var noop = function () { };
+    window.addEventListener('touchstart', noop, { passive: true });
+    window.addEventListener('touchmove', noop, { passive: true });
+    window.addEventListener('wheel', noop, { passive: true });
+  }
+
+  function initPerformanceFixes() {
+    optimizeAOS();
+    optimizeVideoModal();
+    addPassiveScrollHints();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPerformanceFixes, { once: true });
+  } else {
+    initPerformanceFixes();
+  }
+})();
+/* ----------------------------------------- JS FOR SCROLL-PERFORMANCE-OPTIMIZER COMPLETE ---------------------------------------------- */
 /*------------------------------------------- JS FOR MAIN COMPLETE ------------------------------------------*/
