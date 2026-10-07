@@ -555,8 +555,9 @@ ul.pg-listing li::before {
     background: var(--defaut-light-thinkdigital-theme);
     color: var(--defaut-light-color);
     border-radius: 50%;
-    padding: 0 3px;
+    padding: 2px 5px;
     z-index: 2;
+    font-size: 75%;
 }
 
 ul.pg-listing li:last-child {
@@ -582,6 +583,7 @@ ul.pg-listing li:last-child {
     color: var(--defaut-dark-color);
     border-radius: 50%;
     border: 2px solid #ffffff50;
+    flex-shrink: 0;
 }
 
 .social a {
@@ -616,9 +618,9 @@ span.mini-chip {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 12px;
+    padding: 7px 8px;
     color: var(--defaut-light-color);
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid #ffffffcc;
     background: linear-gradient(135deg, #ffffff8c, #dcecff70);
     backdrop-filter: blur(18px) saturate(180%);
@@ -693,10 +695,12 @@ span.pg-offer-chip {
 }
 
 .decor-para {
-    padding: 12px 22px;
-    border-radius: 10px;
-    background: linear-gradient(to right, #ffffff80, transparent);
-    border-left: 3px solid var(--defaut-dark-thinklab-theme);
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #ffffff80, transparent, #ffffff80);
+    border: 0 solid var(--defaut-dark-thinklab-theme);
+    border-left-width: 3px;
+    border-right-width: 3px;
 }
 
 .decor-para.thinkray-theme {
@@ -2240,7 +2244,7 @@ li.feature-types-box p {
 .contact-content-info-box .social {
     justify-content: end;
     flex-direction: row-reverse;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .contact-content-info-box .social:last-child {
@@ -2248,9 +2252,9 @@ li.feature-types-box p {
 }
 
 .contact-content-info-box .social i {
-    font-size: 120%;
-    min-height: 45px;
-    max-width: 45px;
+    font-size: 100%;
+    min-height: 35px;
+    max-width: 35px;
     border-radius: 5px;
     border: none;
     box-shadow: 5px 5px 2px 0 #ffffff50;
@@ -3600,13 +3604,13 @@ footer.main-footer {
 .main-footer-links h6 {
     font-size: 125%;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 ul.footer-menu li {
     font-size: 100%;
     white-space: nowrap;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-left: 10px;
     transition: all 0.4s ease-in-out;
 }

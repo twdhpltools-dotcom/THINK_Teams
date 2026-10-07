@@ -216,9 +216,6 @@
     .hero-content h1 {
         margin: 18px 0;
     }
-    .diagram-img {
-        max-width: 100%;
-    }
     .d-none-xl-device {
         display: none !important;
     }
@@ -892,14 +889,6 @@
     .benefits-content {
         margin-top: 15px;
     }
-    .main-footer-links h6 {
-        margin-bottom: 25px;
-    }
-    .contact-content-info-box .social i {
-        font-size: 110%;
-        min-height: 35px;
-        max-width: 35px;
-    }
     .copyright-footer-content-icon .social i {
         min-height: 35px;
         max-width: 35px;
@@ -991,7 +980,7 @@
         bottom: 100%;
     }
     .decor-para {
-        padding: 10px 18px;
+        padding: 10px 14px;
     }
     .branding-box-carousel {
         max-width: 80%;
@@ -1034,9 +1023,6 @@
     }
     .branding-box-heading-icon-img {
         max-width: 100px;
-    }
-    .main-footer-links h6 {
-        margin-bottom: 22px;
     }
     .copyright-footer-content-txt {
         text-align: center;
@@ -1228,7 +1214,7 @@
         margin: 18px 0;
     }
     ul.footer-menu li {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
     }
     .copyright-footer-content-icon .social {
         max-width: 45px;
@@ -1295,6 +1281,9 @@
         left: 0;
         max-width: 100%;
         transform: unset;
+    }
+    .main-footer-links h6 {
+        margin-bottom: 18px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -1650,9 +1639,6 @@
         max-width: 40px;
         margin: 0 auto 12px;
     }
-    .main-footer-links h6 {
-        margin-bottom: 20px;
-    }
     .bottom-header {
         top: 4%;
     }
@@ -1764,8 +1750,9 @@
         padding: 20px 15px;
     }
     .social i {
-        min-height: 30px;
-        max-width: 30px;
+        min-height: 25px;
+        max-width: 25px;
+        font-size: 95%;
     }
     .thinkray-hero-unque-decor-img {
         max-width: 90px;
