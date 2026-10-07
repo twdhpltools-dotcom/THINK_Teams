@@ -392,14 +392,14 @@ $(document).ready(function () {
             step: function () {
               $this.html(
                 Math.floor(this.countNum) +
-                ' <span>' + suffix + '</span>'
+                '<span>' + suffix + '</span>'
               );
             },
 
             complete: function () {
               $this.html(
                 countTo +
-                ' <span>' + suffix + '</span>'
+                '<span>' + suffix + '</span>'
               );
             }
           }
