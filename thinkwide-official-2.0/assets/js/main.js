@@ -13,23 +13,23 @@ window.addEventListener("load", function () {
 
 /* ----------------------------------------- JS FOR MOBILE-MANU-TOGGLER START ---------------------------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("mobileToggler");
-    const mobileHeader = document.querySelector(".mobile-header");
+  const toggleBtn = document.getElementById("mobileToggler");
+  const mobileHeader = document.querySelector(".mobile-header");
 
-    toggleBtn.addEventListener("click", function () {
-        toggleBtn.classList.toggle("active");
-        mobileHeader.classList.toggle("active");
-    });
+  toggleBtn.addEventListener("click", function () {
+    toggleBtn.classList.toggle("active");
+    mobileHeader.classList.toggle("active");
+  });
 });
 /* ----------------------------------------- JS FOR MOBILE-MANU-TOGGLER COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- JS FOR STICKY HEADER START ---------------------------------------------- */
 $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 50) {
-        $(".bottom-header").addClass("sticky");
-    } else {
-        $(".bottom-header").removeClass("sticky");
-    }
+  if ($(window).scrollTop() > 50) {
+    $(".bottom-header").addClass("sticky");
+  } else {
+    $(".bottom-header").removeClass("sticky");
+  }
 });
 /* ----------------------------------------- JS FOR STICKY HEADER COMPLETE ---------------------------------------------- */
 
@@ -37,7 +37,7 @@ $(window).on("scroll", function () {
 function togglePassword() {
   const password = document.querySelector('.default-pass');
   const eye = document.querySelector('.pass-eye-icon');
-  
+
   if (password.type === 'password') {
     password.type = 'text';
     eye.className = 'fa fa-eye-slash pass-eye-icon';
@@ -65,34 +65,34 @@ document.addEventListener("DOMContentLoaded", function () {
 /*-------------------------------------- INPUT-TEL-VALIDATION ----------------------------------------*/
 
 /* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) START ---------------------------------------------- */
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#login_hero_carousel');
   var timeout = 4000;
-  
+
   owl.owlCarousel({
-      margin: 10,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: timeout,
-      autoplaySpeed: 800,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      onInitialized: startProgress,
-      onTranslate: resetProgress,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
+    margin: 10,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: timeout,
+    autoplaySpeed: 800,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    onInitialized: startProgress,
+    onTranslate: resetProgress,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
       }
+    }
   });
 
   function startProgress() {
@@ -105,220 +105,220 @@ $(document).ready(function(){
   }
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#feature_carousel');
-  
+
   owl.owlCarousel({
-      margin: 20,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplaySpeed: 2500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 2
-        },
-        1200: {
-          items: 3
-        }
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplaySpeed: 2500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 2
+      },
+      1200: {
+        items: 3
       }
+    }
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#thinkray_feature_carousel');
-  
+
   owl.owlCarousel({
-      margin: 30,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplaySpeed: 2500,
-      nav: false,
-      dots: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
+    margin: 30,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplaySpeed: 2500,
+    nav: false,
+    dots: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
       }
+    }
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#support_carousel');
-  
+
   owl.owlCarousel({
-      margin: 20,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplaySpeed: 2500,
-      nav: false,
-      dots: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplaySpeed: 2500,
+    nav: false,
+    dots: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
       }
+    }
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#clients_one_carousel');
-  
+
   owl.owlCarousel({
-      margin: 50,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 1500,
-      autoplaySpeed: 1500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 2
-        },
-        300: {
-          items: 3
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 4
-        }
+    margin: 50,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      300: {
+        items: 3
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
       }
+    }
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#clients_two_carousel');
-  
+
   owl.owlCarousel({
-      margin: 50,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 1500,
-      autoplaySpeed: 1500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      rtl: true,
-      responsive: {
-        0: {
-          items: 2
-        },
-        300: {
-          items: 3
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 4
-        }
+    margin: 50,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    rtl: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      300: {
+        items: 3
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
       }
+    }
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#clients_three_carousel');
-  
+
   owl.owlCarousel({
-      margin: 50,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 1500,
-      autoplaySpeed: 1500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 2
-        },
-        300: {
-          items: 3
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 4
-        }
+    margin: 50,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    autoplaySpeed: 1500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      300: {
+        items: 3
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
       }
+    }
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#teams_carousel');
-  
+
   owl.owlCarousel({
-      margin: 20,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplaySpeed: 2500,
-      nav: false,
-      dots: true,
-      autoplayHoverPause: true,
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      items: 1
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplaySpeed: 2500,
+    nav: false,
+    dots: true,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items: 1
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   var owl = $('#payment_method_carousel');
-  
+
   owl.owlCarousel({
-      margin: 20,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 2500,
-      autoplaySpeed: 2500,
-      nav: false,
-      dots: false,
-      autoplayHoverPause: true,
-      center: true,
-      responsive: {
-        0: {
-          items: 4
-        },
-        450: {
-          items: 3
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 4
-        }
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplaySpeed: 2500,
+    nav: false,
+    dots: false,
+    autoplayHoverPause: true,
+    center: true,
+    responsive: {
+      0: {
+        items: 4
+      },
+      450: {
+        items: 3
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 4
       }
+    }
   });
 });
 /* ----------------------------------------- JS FOR OWL-CAROUSEL (INIT) COMPLETE ---------------------------------------------- */
@@ -328,7 +328,7 @@ function togglePassword() {
   // const password = document.getElementById('login_pass');
   const password = document.querySelector('.default-pass');
   const eye = document.querySelector('.pass-eye-icon');
-  
+
   if (password.type === 'password') {
     password.type = 'text';
     eye.className = 'fa fa-eye-slash pass-eye-icon';
@@ -350,10 +350,10 @@ AOS.init({
 
 /* ----------------------------------------- JS FOR TOGGLE-SWITCH START ---------------------------------------------- */
 document.querySelectorAll('.switch-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
+  btn.addEventListener('click', function () {
     document.querySelectorAll('.switch-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.login-form').forEach(form => form.classList.remove('active'));
-    
+
     this.classList.add('active');
     const targetId = this.getAttribute('data-target');
     document.getElementById(targetId).classList.add('active');
@@ -367,50 +367,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ----------------------------------------- JS FOR COUNTER START ---------------------------------------------- */
 $(document).ready(function () {
-  let counted = false;
-  const counterSection = $('.counter').first().closest('section');
+
+  const counterSections = $('.counter').closest('section');
 
   $(window).on('scroll', function () {
-    if (!counterSection.length || counted) return;
 
-    const sectionTop = counterSection.offset().top;
-    const scrollBottom = $(window).scrollTop() + $(window).height();
+    counterSections.each(function () {
+      const $section = $(this);
 
-    if (scrollBottom >= sectionTop + 100) {
+      if ($section.data('counted')) return;
 
-      $('.counter').each(function () {
-        const $this = $(this);
-        const countTo = Number($this.attr('data-count'));
-        const suffix = $this.data('suffix') || '';
+      const sectionTop = $section.offset().top;
+      const scrollBottom = $(window).scrollTop() + $(window).height();
 
-        $({ countNum: 0 }).animate(
-          { countNum: countTo },
-          {
-            duration: 2000,
-            easing: 'swing',
+      if (scrollBottom >= sectionTop + 100) {
+        $section.find('.counter').each(function () {
 
-            step: function () {
-              $this.html(
-                Math.floor(this.countNum) +
-                '<span>' + suffix + '</span>'
-              );
-            },
+          const $this = $(this);
+          const countTo = Number($this.attr('data-count'));
+          const suffix = $this.data('suffix') || '';
 
-            complete: function () {
-              $this.html(
-                countTo +
-                '<span>' + suffix + '</span>'
-              );
+          $({ countNum: 0 }).animate(
+            { countNum: countTo },
+            {
+              duration: 3500,
+              easing: 'swing',
+
+              step: function () {
+                $this.html(
+                  Math.floor(this.countNum) +
+                  '<span>' + suffix + '</span>'
+                );
+              },
+
+              complete: function () {
+                $this.html(
+                  countTo +
+                  '<span>' + suffix + '</span>'
+                );
+              }
             }
-          }
-        );
-      });
+          );
+        });
 
-      counted = true;
-    }
+        $section.data('counted', true);
+      }
+    });
   });
 
   $(window).trigger('scroll');
+
 });
 /* ----------------------------------------- JS FOR COUNTER COMPLETE ---------------------------------------------- */
 
