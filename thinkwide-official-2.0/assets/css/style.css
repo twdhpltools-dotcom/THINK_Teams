@@ -1,5 +1,5 @@
 /*--------------------------------------------- CSS FOR INCLUDING FOR FONTS START ---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 /*--------------------------------------------- CSS FOR INCLUDING FOR FONTS COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR PRE-DEFINED SECTION START ---------------------------------------*/
@@ -28,7 +28,7 @@ html {
     --defaut-dark-thinkdigital-theme: #02B30D;
     --defaut-light-thinkray-theme: #FF60DC;
     --defaut-dark-thinkray-theme: #9F0D7F;
-    --defaut-font-family: "Manrope", sans-serif;
+    --defaut-font-family: "DM Sans", sans-serif;
     --defaut-line-height: 1.2;
     --defaut-font-weight: normal;
     --defaut-font-style: normal;
@@ -1701,6 +1701,18 @@ li.feature-types-box p {
     z-index: 1;
 }
 
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    min-height: 100px;
+    background: linear-gradient(to bottom, #0e1a4c42, transparent);
+    z-index: 2;
+}
+
 .feature-card::after {
     content: '';
     position: absolute;
@@ -1867,15 +1879,15 @@ li.feature-types-box p {
     left: 0;
     height: auto;
     width: 100%;
-    background: linear-gradient(to top, #0a29a8c4 40%, transparent);
-    padding: 40px 30px 20px 30px;
+    background: linear-gradient(to top, #0a29a8c4 50%, transparent);
+    padding: 50px 30px 20px 30px;
     text-align: center;
     color: var(--defaut-light-color);
     z-index: 2;
 }
 
 .support-card-info span {
-    color: #4ce956;
+    color: #28de33;
     font-size: 130%;
     font-weight: 600;
     margin-bottom: 2px;
@@ -1990,7 +2002,7 @@ li.feature-types-box p {
     color: var(--defaut-dark-thinklab-theme);
     font-size: 680%;
     font-weight: 700;
-    margin: 100px 0 0;
+    margin: 100px 0 8px;
 }
 
 .clients-map h6 {
@@ -2081,6 +2093,7 @@ li.feature-types-box p {
     font-size: 180%;
     font-weight: 700;
     margin: 0;
+    text-align: center;
 }
 
 .form-changer-img img {

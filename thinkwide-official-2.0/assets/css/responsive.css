@@ -48,17 +48,14 @@
         font-size: 250%;
     }
     .branding-box {
-        padding: 20px 0;
+        padding: 5px 0;
     }
     .support-card-img {
         height: 350px;
     }
-    .clients-content-box {
-        padding: 8px 20px;
-    }
     .clients-map h3 {
         font-size: 600%;
-        margin: 80px 0;
+        margin: 100px 0 10px;
     }
     .benefits-innovate-box {
         padding: 20px 30px;
@@ -171,6 +168,16 @@
     }
     .branding {
         padding: 20px 0 3px;
+    }
+    .diagram-img {
+        max-width: 75%;
+    }
+    .pg-decor-chip {
+        transform: scale(0.8) !important;
+    }
+    .monitor-screen,
+    .monitor-screen img {
+        height: 295px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
@@ -472,6 +479,16 @@
     .branding-box-heading-icon-img img {
         width: 60px;
         flex: 0 0 60px;
+    }
+    .diagram-img {
+        max-width: 90%;
+    }
+    .pg-decor-chip {
+        transform: scale(1) !important;
+    }
+    .monitor-screen,
+    .monitor-screen img {
+        height: 240px;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -897,7 +914,7 @@
     }
     .monitor-screen,
     .monitor-screen img {
-        height: 300px;
+        height: 340px;
     }
     .mobile-screen,
     .mobile-screen img {
@@ -934,6 +951,9 @@
     .branding-box-heading {
         justify-content: center;
         margin-bottom: 4px;
+    }
+    .feature-card::before {
+        min-height: 70px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -1286,6 +1306,9 @@
     .branding-box-heading {
         justify-content: flex-start;
         margin-bottom: 12px;
+    }
+    .diagram-img {
+        max-width: 100%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -1651,7 +1674,7 @@
     }
     .monitor-screen,
     .monitor-screen img {
-        height: 220px;
+        height: 160px;
     }
     .mobile-screen,
     .mobile-screen img {
@@ -1689,6 +1712,9 @@
         flex-wrap: wrap;
         gap: 6px;
         margin-bottom: 16px;
+    }
+    .feature-card::before {
+        min-height: 50px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
@@ -1731,9 +1757,6 @@
     }
     .login-form-body {
         padding: 18px 20px;
-    }
-    .clients-map h3 {
-        margin: 30px 0;
     }
     .basic-form {
         padding: 25px 25px;
