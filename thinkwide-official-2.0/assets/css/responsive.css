@@ -169,6 +169,9 @@
     .form-changer-img {
         padding: 20px 25px;
     }
+    .branding {
+        padding: 20px 0 3px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
 
@@ -218,9 +221,6 @@
     }
     .d-none-xl-device {
         display: none !important;
-    }
-    .branding-box-heading-icon-img {
-        margin: 5px auto;
     }
     .branding-box {
         padding: 10px 0;
@@ -297,9 +297,6 @@
     }
     .gmap-content iframe {
         min-height: 450px;
-    }
-    .branding-box-heading-icon-img {
-        max-width: 120px;
     }
     .pg-decor-chip {
         padding: 8px 0;
@@ -472,6 +469,10 @@
         left: 5%;
         max-width: 75%;
     }
+    .branding-box-heading-icon-img img {
+        width: 60px;
+        flex: 0 0 60px;
+    }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
 
@@ -594,9 +595,6 @@
     }
     .hero-img .pg-decor-chip {
         display: none;
-    }
-    .branding-box-heading-icon-img {
-        margin: 2px auto;
     }
     .feature-card {
         height: 350px;
@@ -883,9 +881,6 @@
     .feature-types ul li.feature-types-box {
         margin-bottom: 15px;
     }
-    .benefits-innovate-box {
-        min-height: 140px;
-    }
     .benefits-content {
         margin-top: 15px;
     }
@@ -932,6 +927,13 @@
     }
     .feature-types {
         max-width: 350px;
+    }
+    .branding-box {
+        padding: 12px 0;
+    }
+    .branding-box-heading {
+        justify-content: center;
+        margin-bottom: 4px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -1018,11 +1020,7 @@
         display: none;
     }
     .benefits-innovate-box {
-        min-height: auto;
         padding: 25px 40px;
-    }
-    .branding-box-heading-icon-img {
-        max-width: 100px;
     }
     .copyright-footer-content-txt {
         text-align: center;
@@ -1193,9 +1191,6 @@
         top: 6%;
         right: 2%;
     }
-    .gmap-content {
-        padding: 0 10px;
-    }
     .gmap-content-info {
         right: 0;
         padding: 5px;
@@ -1284,6 +1279,13 @@
     }
     .main-footer-links h6 {
         margin-bottom: 18px;
+    }
+    .branding-box {
+        padding: 15px 0;
+    }
+    .branding-box-heading {
+        justify-content: flex-start;
+        margin-bottom: 12px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -1632,7 +1634,6 @@
     }
     .benefits-innovate-box {
         padding: 16px 15px;
-        margin-bottom: 10px;
         clip-path: polygon(10% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
     }
     .benefits-innovate-box-icon-img {
@@ -1682,6 +1683,12 @@
     }
     .blog-gallery-card {
         margin-bottom: 10px;
+    }
+    .branding-box-heading {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 16px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/

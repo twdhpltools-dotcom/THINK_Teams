@@ -1578,7 +1578,75 @@ button.mobile-toggler.active span:nth-child(3) {
 
 /*--------------------------------------------- CSS FOR BRANDING SECTION START ---------------------------------------*/
 .branding {
+    padding: 42px 0 25px;
     color: var(--defaut-dark-color);
+    background: #f7f8fc;
+}
+
+.branding-box-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--defaut-dark-color);
+}
+
+.branding-box-heading-icon-img {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+}
+
+.branding-box-heading-icon-img img {
+    width: 75px;
+    flex: 0 0 75px;
+}
+
+.branding-box-heading-icon-img h5 {
+    font-size: 130%;
+    font-weight: 700;
+    color: var(--defaut-dark-thinkdigital-theme);
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.branding-box-heading-icon-img h3 {
+    font-size: 270%;
+    font-weight: 700;
+    color: var(--defaut-light-thinklab-theme);
+    white-space: nowrap;
+}
+
+.branding-box-heading-text h6 {
+    font-size: 135%;
+    font-weight: 700;
+}
+
+.branding-box-heading-text p {
+    margin-top: 2px;
+    font-size: 100%;
+    color: #4f5258;
+    font-weight: 500;
+}
+
+.branding-box-heading-text span {
+    font-weight: 700;
+}
+
+.branding-box-heading-text h4 {
+    font-size: 250%;
+    font-weight: 700;
+    color: var(--defaut-dark-thinklab-theme);
+    white-space: nowrap;
+}
+
+.item-breaker-dark {
+    width: 1px;
+    height: 45px;
+    background: #e2e5eb;
+}
+
+.branding-box-slider {
+    width: 100%;
 }
 
 /*--------------------------------------------- CSS FOR BRANDING SECTION COMPLETE ---------------------------------------*/
@@ -1899,7 +1967,7 @@ li.feature-types-box p {
 .clients-map {
     background-image: url('../images/map-creative-bg.webp');
     background-position: center;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -1912,6 +1980,10 @@ li.feature-types-box p {
     font-size: 125%;
     font-weight: 600;
     color: var(--defaut-dark-thinklab-theme);
+    background: var(--defaut-light-background);
+    display: inline;
+    border-radius: 40px;
+    padding: 2px 12px;
 }
 
 .clients-map h3 {
@@ -2020,6 +2092,7 @@ li.feature-types-box p {
     z-index: 2;
     max-width: 65%;
 }
+
 /*--------------------------------------------- CSS FOR FORM-CHANGER SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BENEFITS SECTION START ---------------------------------------*/
@@ -2047,7 +2120,7 @@ li.feature-types-box p {
 }
 
 .benefits-innovate-box {
-    height: auto;
+    height: 100%;
     width: 100%;
     background: #007cf80c;
     padding: 30px 40px;
@@ -2139,6 +2212,7 @@ li.feature-types-box p {
     color: #ececec;
     margin-top: 5px;
 }
+
 /*--------------------------------------------- CSS FOR BENEFITS SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR BLOG-GALLERY SECTION START ---------------------------------------*/
@@ -2376,7 +2450,13 @@ form .form-group.input-box textarea {
     background: rgba(255, 255, 255, .04);
     font-size: 90%;
     font-weight: 500;
+    min-height: 38px;
 }
+
+form .form-group.input-box select {
+    padding: 10px 10px 10px 42px;
+}
+
 
 .basic-form.dark.contact-form form .form-group.input-box input,
 .basic-form.dark.contact-form form .form-group.input-box select,
@@ -2384,12 +2464,13 @@ form .form-group.input-box textarea {
     color: var(--defaut-dark-color);
     background: var(--defaut-light-background);
     border-color: #e1e4eb;
-    padding: 12px 10px 12px 10px;
+    padding: 12px 10px;
 }
 
-form .form-group.input-box select {
-    padding: 10px 10px 10px 42px;
+.basic-form.dark.contact-form form .form-group.input-box select {
+    padding: 11px 10px;
 }
+
 
 form .form-group.input-box input::placeholder,
 form .form-group.input-box textarea::placeholder {
@@ -2410,6 +2491,7 @@ form .form-group.input-box i {
 .basic-form.dark.contact-form form .form-group.input-box i {
     color: #23b2ff;
 }
+
 /*--------------------------------------------- CSS FOR CONTACT SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR TESTIMONIALS SECTION START ---------------------------------------*/
@@ -2448,7 +2530,7 @@ form .form-group.input-box i {
     height: auto;
     width: 100%;
     border-radius: 20px;
-    padding: 0 30px;
+    padding: 0 10px;
     position: relative;
     z-index: 1;
 }
@@ -3596,6 +3678,10 @@ footer.main-footer {
     color: var(--defaut-dark-thinklab-theme);
 }
 
+.main-footer-info .contact-content-info-box .social span {
+    color: var(--defaut-dark-color);
+}
+
 .main-footer-links {
     height: auto;
     width: 100%;
@@ -3923,20 +4009,17 @@ ul.footer-menu li:hover {
     background: linear-gradient(to right, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme));
 }
 
-.our-teams-slider.owl-stage,
-.branding-box-slider.owl-stage {
+.our-teams-slider.owl-stage {
     display: block;
 }
 
-.our-teams-slider .owl-item,
-.branding-box-slider.owl-stage {
+.our-teams-slider .owl-item {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease;
 }
 
-.our-teams-slider .owl-item.active,
-.branding-box-slider .owl-item.active {
+.our-teams-slider .owl-item.active {
     opacity: 1;
     transform: translateY(0);
 }
@@ -3997,10 +4080,12 @@ ul.footer-menu li:hover {
     from {
         width: 0;
     }
+
     to {
-        width:100%;
+        width: 100%;
     }
 }
+
 /*--------------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MARQUEE START ---------------------------------------*/
