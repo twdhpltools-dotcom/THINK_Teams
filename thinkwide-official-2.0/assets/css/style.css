@@ -452,7 +452,7 @@ main {
 }
 
 .section-overlay.themed-overlay {
-    background: linear-gradient(230deg, #0929a8f7, #101840cf);
+    background: linear-gradient(230deg, #0929a8b8, #101840ad);
 }
 
 .section-overlay.themed-overlay.thinkray-themed {
@@ -1578,7 +1578,7 @@ button.mobile-toggler.active span:nth-child(3) {
 
 /*--------------------------------------------- CSS FOR BRANDING SECTION START ---------------------------------------*/
 .branding {
-    padding: 42px 0 25px;
+    padding: 38px 0 20px;
     color: var(--defaut-dark-color);
     background: #f7f8fc;
 }
@@ -1586,6 +1586,7 @@ button.mobile-toggler.active span:nth-child(3) {
 .branding-box-heading {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     color: var(--defaut-dark-color);
 }
@@ -1677,29 +1678,6 @@ button.mobile-toggler.active span:nth-child(3) {
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
-}
-
-.feature-types ul li.feature-types-box::after {
-    /* content: '';
-    position: absolute;
-    top: 0;
-    left: 2px;
-    height: 100%;
-    width: 1px;
-    background: var(--defaut-light-thinklab-theme);
-    border-radius: 20px;
-    z-index: 2; */
-
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 4px;
-    height: 2px;
-    width: 100%;
-    max-width: 90%;
-    background: var(--defaut-light-thinklab-theme);
-    border-radius: 20px;
-    z-index: 2;
 }
 
 li.feature-types-box h6 {
@@ -2231,8 +2209,10 @@ li.feature-types-box p {
     margin: 25px 0;
     padding: 18px 15px;
     border-radius: 10px;
-    background: linear-gradient(to right, #ffffff40, transparent);
-    border-left: 3px solid #ffffff80;
+    background: linear-gradient(to right, #ffffff20, transparent, #ffffff20);
+    border: 0 solid #ffffff80;
+    border-left-width: 3px;
+    border-right-width: 3px;
 }
 
 .benefits-content-box-listing ul.pg-listing li {
@@ -2311,8 +2291,8 @@ li.feature-types-box p {
     left: 0;
     height: auto;
     width: 100%;
-    background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 20%, transparent 100%);
-    padding: 40px 25px 18px 25px;
+    background: linear-gradient(to top, var(--defaut-light-thinklab-theme) 50%, transparent 100%);
+    padding: 50px 25px 18px 25px;
     border-radius: 0 0 10px 10px;
     z-index: 2;
 }
@@ -4391,8 +4371,6 @@ header.main-header .top-header-news .marquee-content span em {
 
 .mobile-screen img {
     height: 390px;
-    width: fit-content !important;
-    object-fit: cover;
     display: block;
 }
 
