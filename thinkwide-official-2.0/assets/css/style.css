@@ -2044,7 +2044,7 @@ li.feature-types-box p {
 .clients-content-box {
     height: auto;
     width: 100%;
-    padding: 5px 22px;
+    padding: 2px 22px;
     border-radius: 10px;
     background: var(--defaut-light-background);
     border-left: 3px solid var(--defaut-dark-thinklab-theme);
@@ -2428,7 +2428,7 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     max-width: 520px;
-    padding: 25px 35px;
+    padding: 22px 30px;
     text-align: center;
     color: var(--defaut-light-color);
     background: rgba(255, 255, 255, .10);
