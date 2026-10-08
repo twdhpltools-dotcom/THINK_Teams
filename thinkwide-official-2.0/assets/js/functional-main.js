@@ -1,87 +1,40 @@
 /*------------------------------------------- JS FOR FUNCTIONAL-MAIN START ------------------------------------------*/
 /* ----------------------------------------- JS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER START ---------------------------------------------- */
 $(document).ready(function () {
-
-
-  /* =============================
-     CAROUSELS
-  ============================== */
-
   const desktop = $(".desktop-carousel");
-
   const mobile = $(".mobile-carousel");
 
-
-
-  /* Desktop = MASTER carousel */
-
   desktop.owlCarousel({
-
     items: 1,
-
     loop: true,
-
     autoplay: true,
-
     autoplayTimeout: 4000,
-
     autoplaySpeed: 900,
-
     smartSpeed: 900,
-
     mouseDrag: false,
-
     touchDrag: false,
-
     pullDrag: false,
-
     dots: false,
-
-    nav: false
-
+    nav: false,
+    autoplayHoverPause: true
   });
-
-
-
-  /* Mobile = SLAVE carousel */
 
   mobile.owlCarousel({
-
     items: 1,
-
     loop: true,
-
     autoplay: false,
-
     smartSpeed: 900,
-
     mouseDrag: false,
-
     touchDrag: false,
-
     pullDrag: false,
-
     dots: false,
-
-    nav: false
-
+    nav: false,
+    autoplayHoverPause: true
   });
-
-
-
-  /* =============================
-     SYNCHRONIZE BOTH
-  ============================== */
 
   desktop.on(
     "changed.owl.carousel",
     function (event) {
-
-      /*
-       Get real slide index.
-       Owl creates clones when loop=true,
-       therefore relative() is important.
-      */
 
       const index =
         event.relatedTarget.relative(
@@ -101,21 +54,12 @@ $(document).ready(function () {
     }
   );
 
-
-
-  /* =============================
-     SHOW MOBILE
-  ============================== */
-
   function showMobile() {
 
     const wrapper =
       document.getElementById(
         "deviceShowcase"
       );
-
-
-    /* only show once */
 
     if (
       !wrapper.classList.contains(
@@ -126,13 +70,6 @@ $(document).ready(function () {
       wrapper.classList.add(
         "phone-active"
       );
-
-
-      /*
-       immediately synchronize
-       mobile with current
-       monitor slide
-      */
 
       const desktopData =
         desktop.data(
@@ -156,21 +93,12 @@ $(document).ready(function () {
       );
 
     }
-
   }
-
-
-
-  /* monitor click */
 
   $("#monitorDevice").on(
     "click",
     showMobile
   );
-
-
-
-  /* keyboard support */
 
   $("#monitorDevice").on(
     "keydown",
@@ -189,8 +117,6 @@ $(document).ready(function () {
 
     }
   );
-
-
 });
 /* ----------------------------------------- JS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER COMPLETE ---------------------------------------------- */
 
@@ -254,7 +180,6 @@ $(document).ready(function () {
   });
 
   function setContent(title) {
-
     let html = '';
 
     features[title].forEach(function (item, i) {
@@ -270,7 +195,6 @@ $(document).ready(function () {
   }
 
   function showFeature(title) {
-
     setContent(title);
 
     $feature.css({
@@ -293,7 +217,6 @@ $(document).ready(function () {
   }
 
   function hideFeature(callback) {
-
     animating = true;
 
     $feature.css({
@@ -302,7 +225,6 @@ $(document).ready(function () {
     });
 
     setTimeout(function () {
-
       $feature.css('display', 'none');
 
       isOpen = false;
@@ -324,9 +246,6 @@ $(document).ready(function () {
 
     if (!features[title]) return;
 
-
-    /* SAME CARD → CLOSE */
-
     if (isOpen && activeTitle === title) {
 
       hideFeature(function () {
@@ -336,11 +255,7 @@ $(document).ready(function () {
       return;
     }
 
-
-    /* DIFFERENT CARD → OUT → CHANGE → IN */
-
     if (isOpen) {
-
       hideFeature(function () {
 
         setTimeout(function () {
@@ -351,14 +266,9 @@ $(document).ready(function () {
 
       return;
     }
-
-
-    /* FIRST OPEN */
-
     showFeature(title);
 
   });
-
 });
 /* ----------------------------------------- JS FOR CONCEPTUAL-FEATURE-SLIDER COMPLETE ---------------------------------------------- */
 
