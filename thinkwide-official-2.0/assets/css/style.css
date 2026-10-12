@@ -555,7 +555,11 @@ ul.pg-listing li::before {
     background: var(--defaut-light-thinkdigital-theme);
     color: var(--defaut-light-color);
     border-radius: 50%;
-    padding: 2px 5px;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
     font-size: 75%;
 }
@@ -751,6 +755,11 @@ h4.compact-decor-text {
     z-index: 1;
 }
 
+h4.compact-decor-text.hero-text {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
 h4.compact-decor-text::before,
 h4.compact-decor-text::after {
     content: '';
@@ -769,9 +778,17 @@ h4.compact-decor-text::before {
     transform: translate(0, -50%);
 }
 
+h4.compact-decor-text.hero-text::before {
+    display: none;
+}
+
 h4.compact-decor-text::after {
     right: 0;
     transform: translate(0, -50%);
+}
+
+h4.compact-decor-text.hero-text::after {
+    right: 25%;
 }
 
 .diagram-img {
@@ -795,6 +812,7 @@ h4.compact-decor-text::after {
 
 .diagram-img.thinkray-themed {
     clip-path: polygon(65% 0, 100% 0, 100% 76%, 77% 77%, 54% 100%, 0 100%, 0 69%);
+    max-width: 95%;
 }
 
 .diagram-img img {
@@ -1375,7 +1393,7 @@ header.main-header.login-header .top-header .social i {
 /* ----------------------------------------- CSS FOR MOBILE-MANU-TOGGLER START ---------------------------------------------- */
 button.mobile-toggler {
     position: fixed;
-    top: 8%;
+    top: 6%;
     right: 5%;
     height: auto;
     width: 100%;
@@ -1445,13 +1463,13 @@ button.mobile-toggler.active span:nth-child(3) {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #ffffff96;
+    background: #ffffffe4;
     backdrop-filter: blur(2px);
     z-index: -1;
 }
 
 .hero.thinkray-themed .hero-overlay {
-    height: 70%;
+    height: 80%;
 }
 
 .container.hero-container {
@@ -1474,7 +1492,7 @@ button.mobile-toggler.active span:nth-child(3) {
 
 .hero-content h1 {
     font-size: 250%;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .hero-content h1 span {
@@ -1785,6 +1803,7 @@ li.feature-types-box p {
 
 .feature-card.thinkray-themed .feature-card-info {
     background: linear-gradient(to top, var(--defaut-light-thinkray-theme) 40%, transparent 100%);
+    bottom: -40%;
 }
 
 .feature-card.thinkdigital-themed .feature-card-info {
@@ -2005,7 +2024,7 @@ li.feature-types-box p {
     color: var(--defaut-dark-thinklab-theme);
     font-size: 680%;
     font-weight: 700;
-    margin: 100px 0 8px;
+    margin: 100px 0 12px;
 }
 
 .clients-map h6 {
@@ -2090,6 +2109,17 @@ li.feature-types-box p {
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+}
+
+.form-changer-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #ffffff20;
+    z-index: -1;
 }
 
 .form-changer-img .section-heading h2 {
@@ -2643,7 +2673,7 @@ form .form-group.input-box i {
     height: auto;
     width: 100%;
     border: 1px solid #00000010;
-    padding: 30px 25px;
+    padding: 20px 18px;
 }
 
 .thinkray-types-box.thinkray-themed {
@@ -2654,15 +2684,15 @@ form .form-group.input-box i {
 .thinkray-types-box-icon-img {
     height: auto;
     width: 100%;
-    max-width: 70px;
-    margin-bottom: 15px;
+    max-width: 50px;
+    margin-bottom: 10px;
 }
 
 .thinkray-types-box h5 {
     color: var(--defaut-dark-thinkray-theme);
     font-size: 160%;
-    font-weight: 700;
-    margin-bottom: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .thinkray-types-box.thinkray-themed h5 {
@@ -2671,6 +2701,10 @@ form .form-group.input-box i {
 
 .thinkray-types-box p {
     font-size: 85%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 /*--------------------------------------------- CSS FOR THINKRAY-TYPES SECTION COMPLETE ---------------------------------------*/
@@ -2682,7 +2716,6 @@ form .form-group.input-box i {
 
 .thinkray-benefits .benefits-innovate h5 {
     color: var(--defaut-dark-thinkray-theme);
-    margin-bottom: 25px;
 }
 
 .thinkray-benefits .benefits-innovate p {
@@ -2692,13 +2725,13 @@ form .form-group.input-box i {
 .thinkray-benefits-innovate-content {
     height: auto;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .thinkray-benefits-innovate-content-box {
     height: auto;
     width: 100%;
-    padding: 10px 30px;
+    padding: 8px 18px;
     background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f277);
     border-bottom: 1px solid #00000010;
     margin-bottom: 15px;
@@ -2707,19 +2740,23 @@ form .form-group.input-box i {
 .thinkray-benefits-innovate-content-box h3 {
     display: flex;
     align-items: center;
-    font-size: 120%;
-    font-weight: 700;
+    font-size: 110%;
+    font-weight: 600;
 }
 
 .thinkray-benefits-innovate-content-box h3 span {
-    font-size: 400%;
-    font-weight: 900;
+    font-size: 300%;
+    font-weight: 600;
     padding-right: 25px;
     opacity: 0.1;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 60px;
 }
 
-.thinkray-benefits-innovate-content-box p {
-    font-size: 85%;
+.thinkray-benefits .benefits-innovate .thinkray-benefits-innovate-content-box p {
+    margin-bottom: 0;
 }
 
 .thinkray-benefits .benefits-content-box {
@@ -2761,13 +2798,14 @@ form .form-group.input-box i {
 }
 
 .thinkray-success-img-box {
-    height: auto;
+    height: 400px;
     width: 100%;
     border-radius: 20px;
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
-    padding: 20px;
+    padding: 5px;
+    overflow: hidden;
 }
 
 .thinkray-success-img {
@@ -2779,6 +2817,7 @@ form .form-group.input-box i {
 }
 
 .thinkray-success-img img {
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -2786,7 +2825,7 @@ form .form-group.input-box i {
     position: absolute;
     bottom: 8%;
     right: 8%;
-    padding: 18px 25px;
+    padding: 14px 20px;
     border-radius: 10px;
     border-left: 3px solid #ffffff80;
     background: #ffffff20;
@@ -2803,7 +2842,7 @@ form .form-group.input-box i {
 
 .thinkray-success-img-text h5 {
     font-size: 280%;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .thinkray-success-content {
@@ -2823,7 +2862,7 @@ form .form-group.input-box i {
     background: var(--defaut-light-background);
     border: 1px solid #00000010;
     box-shadow: 0 10px 20px 0 #00000010;
-    padding: 60px 25px;
+    padding: 20px 22px;
     position: relative;
     z-index: 1;
 }
@@ -2834,8 +2873,8 @@ form .form-group.input-box i {
     right: 5%;
     height: auto;
     width: 100%;
-    min-height: 70px;
-    max-width: 70px;
+    min-height: 50px;
+    max-width: 50px;
     opacity: 0.1;
 }
 
@@ -2845,9 +2884,9 @@ form .form-group.input-box i {
 
 .thinkray-success-content-box h4 {
     color: var(--defaut-dark-thinkray-theme);
-    font-size: 280%;
-    font-weight: 900;
-    margin: 8px 0;
+    font-size: 220%;
+    font-weight: 700;
+    margin: 4px 0;
 }
 
 .thinkray-success-content-box h6 {
@@ -2858,8 +2897,6 @@ form .form-group.input-box i {
 
 /*--------------------------------------------- CSS FOR THINKRAY-RELIABLE SECTION START ---------------------------------------*/
 .indicator-card.thinkray-themed {
-    height: 100%;
-    padding: 15px 25px;
     margin-left: 0;
 }
 
@@ -2893,12 +2930,12 @@ form .form-group.input-box i {
     height: auto;
     width: 100%;
     max-width: 250px;
-    margin: 0 auto 150px;
+    margin: 0 auto 120px;
     border-radius: 10px;
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
-    padding: 10px;
+    padding: 5px;
 }
 
 .thinkray-systems-small-img img {
@@ -2956,25 +2993,27 @@ form .form-group.input-box i {
 .thinkray-systems-content-box-icon {
     height: auto;
     width: 100%;
-    min-height: 70px;
-    max-width: 70px;
+    min-height: 55px;
+    max-width: 55px;
     border-radius: 50%;
     background: var(--defaut-light-background);
     box-shadow: 0 10px 20px 0 #00000010;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .thinkray-systems-content-box-icon i {
-    font-size: 180%;
+    font-size: 150%;
     color: var(--defaut-dark-thinkray-theme);
 }
 
 .thinkray-systems-content-box h6 {
     font-size: 120%;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+    white-space: nowrap;
 }
 
 .thinkray-systems-content-box p {
@@ -3733,7 +3772,7 @@ ul.footer-menu li:hover {
 }
 
 .copyright-footer-content {
-    margin-top: 20px;
+    margin-top: 16px;
     padding: 0 30px;
     border-radius: 10px;
 }
@@ -4288,11 +4327,11 @@ header.main-header .top-header-news .marquee-content span em {
 .monitor-frame:after {
     content: '';
     position: absolute;
-    bottom: 9px;
+    bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: #777;
 }
@@ -4353,11 +4392,11 @@ header.main-header .top-header-news .marquee-content span em {
 .mobile-frame:before {
     content: '';
     position: absolute;
-    top: 5px;
+    top: 8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 48px;
-    height: 5px;
+    width: 45px;
+    height: 8px;
     background: #26282b;
     border-radius: 20px;
     z-index: 10;

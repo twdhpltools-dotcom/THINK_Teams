@@ -52,7 +52,7 @@
     }
     .clients-map h3 {
         font-size: 600%;
-        margin: 100px 0 10px;
+        margin: 100px 0 18px;
     }
     .benefits-innovate-box {
         padding: 20px 30px;
@@ -73,7 +73,7 @@
         max-width: 70%;
     }
     .copyright-footer-content {
-        margin-top: 15px;
+        margin-top: 14px;
     }
     footer.main-footer {
         padding: 15px 0 10px;
@@ -90,22 +90,49 @@
         max-width: 120px;
     }
     .thinkray-types-box-icon-img {
-        max-width: 60px;
+        max-width: 45px;
+    }
+    .thinkray-types-box {
+        padding: 18px 15px;
+    }
+    .thinkray-types-box h5 {
+        margin-bottom: 6px;
     }
     .thinkray-benefits-innovate-content-box {
-        margin-bottom: 10px;
+        padding: 6px 14px;
     }
-    .thinkray-benefits-innovate-content {
-        margin-top: 30px;
+    .thinkray-benefits-innovate-content-box h3 span {
+        font-size: 280%;
     }
-    .thinkray-success-img-box {
-        padding: 15px;
+    .thinkray-benefits .benefits-innovate p {
+        margin-bottom: 8px;
+    }
+    .thinkray-success-img-text {
+        padding: 10px 20px;
     }
     .thinkray-success-content-box {
-        padding: 50px 25px;
+        padding: 15px 18px;
     }
     .thinkray-success-content-box h4 {
-        margin: 5px 0;
+        margin: 2px 0;
+    }
+    .thinkray-success-content-box-icon {
+        min-height: 40px;
+        max-width: 40px;
+    }
+    .thinkray-systems-small-img {
+        max-width: 200px;
+        margin: 0 auto 100px;
+    }
+    .thinkray-systems-content-box-icon {
+        min-height: 45px;
+        max-width: 45px;
+    }
+    .thinkray-systems-content-box-icon i {
+        font-size: 135%;
+    }
+    .thinkray-floating-systems-content.top {
+        top: 38%;
     }
     .thinkdigital-types-box-icon-img {
         max-width: 60px;
@@ -326,27 +353,33 @@
     .sub-menu-links h6 {
         margin-bottom: 15px;
     }
-    .thinkray-types-box {
-        padding: 25px 20px;
-    }
-    .thinkray-types-box-icon-img {
-        max-width: 50px;
-    }
-    .indicator-card.thinkray-themed {
-        padding: 10px 25px;
-    }
     .thinkray-systems-small-img {
-        max-width: 220px;
+        max-width: 180px;
+        margin: 0 auto 80px;
+    }
+    .thinkray-benefits-innovate-content {
+        margin-top: 10px;
+    }
+    .thinkray-benefits-innovate-content-box {
+        margin-bottom: 7px;
+    }
+    .thinkray-success-img-box {
+        height: 350px;
+    }
+    .thinkray-success-content-box {
+        padding: 12px 15px;
+    }
+    .thinkray-success-content-box h4 {
+        font-size: 200%;
+    }
+    .feature-card.thinkray-themed .feature-card-info {
+        bottom: -35%;
     }
     .thinkray-floating-systems-content {
         gap: 35px;
     }
     .thinkray-floating-systems-content.top {
-        top: 45%;
-    }
-    .thinkray-systems-content-box-icon {
-        min-height: 60px;
-        max-width: 60px;
+        top: 40%;
     }
     .thinkdigital-types-box {
         padding: 22px 30px;
@@ -486,6 +519,12 @@
     .monitor-screen,
     .monitor-screen img {
         height: 240px;
+    }
+    h4.compact-decor-text.hero-text::after {
+        display: none;
+    }
+    .hero-content h6 {
+        margin: 18px 0;
     }
 }   
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
@@ -779,7 +818,7 @@
         margin: 20px 0;
     }
     .main-footer-links {
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .form-changer-img {
         height: auto;
@@ -809,9 +848,8 @@
     .thinkray-floating-systems-content {
         gap: 15px;
     }
-    .thinkray-systems-small-img {
-        margin: 0 auto 120px;
-        max-width: 180px;
+    .thinkray-floating-systems-content.top {
+        top: 45%;
     }
     .thinkray-floating-systems-content.left,
     .thinkray-floating-systems-content.right {
@@ -901,7 +939,6 @@
     .copyright-footer-content-icon .social i {
         min-height: 35px;
         max-width: 35px;
-        font-size: 110%;
     }
     .copyright-footer-content-icon .social {
         max-width: 48px;
@@ -950,6 +987,12 @@
     }
     .feature-card::before {
         min-height: 70px;
+    }
+    .thinkray-success-img-box {
+        height: 400px;
+    }
+    .feature-card.thinkray-themed .feature-card-info {
+        bottom: -42%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
@@ -1062,17 +1105,8 @@
     .thinkray-types-box {
         margin-bottom: 10px;
     }
-    .thinkray-benefits-innovate-content-box {
-        margin-bottom: 5px;
-    }
-    .thinkray-benefits-innovate-content {
-        margin-top: 20px;
-    }
     .marquee-content span {
         font-size: 180%;
-    }
-    .thinkray-success-content-box {
-        padding: 40px 25px;
     }
     .thinkray-reliable .reliable-img {
         max-width: 80%;
@@ -1084,8 +1118,14 @@
     .thinkray-systems-big-img {
         max-width: 45%;
     }
+    .thinkray-floating-systems-content.right {
+        right: -25%;
+    }
     .thinkray-floating-systems-content.left {
-        left: 15%;
+        left: 12%;
+    }
+    .thinkray-floating-systems-content.left, .thinkray-floating-systems-content.right {
+        bottom: -10px;
     }
     .thinkray-floating-systems-content {
         gap: 10px;
@@ -1204,7 +1244,6 @@
         max-width: 70px;
     }
     button.mobile-toggler {
-        top: 6%;
         right: 2%;
     }
     .gmap-content-info {
@@ -1225,7 +1264,7 @@
         margin: 18px 0;
     }
     ul.footer-menu li {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
     .copyright-footer-content-icon .social {
         max-width: 45px;
@@ -1305,6 +1344,30 @@
     }
     .diagram-img {
         max-width: 100%;
+    }
+    .hero-content.thinkray-themed {
+        padding: 25px 0 0;
+    }
+    h4.compact-decor-text.hero-text {
+        margin-bottom: 10px;
+    }
+    .thinkray-types-box-icon-img {
+        max-width: 40px;
+    }
+    .thinkray-benefits-innovate-content-box h3 span {
+        max-width: 40px;
+    }
+    .thinkray-success-img-box {
+        height: 350px;
+    }
+    .thinkray-reliable .reliable-img {
+        margin: 0 auto;
+    }
+    .feature-card.thinkray-themed .feature-card-info {
+        bottom: -40%;
+    }
+    .thinkray-floating-systems-content.top {
+        top: 48%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
@@ -1467,7 +1530,7 @@
         padding: 10px 12px;
     }
     .main-footer-links {
-        margin-top: 25px;
+        margin-top: 20px;
     }
     .main-footer-info .logo {
         max-width: 160px;
@@ -1500,14 +1563,12 @@
     .thinkray-success-content-box {
         max-width: 100%;
     }
-    .thinkray-success-content-box {
-        padding: 25px 25px;
-    }
     .thinkray-success-content {
-        gap: 15px;
+        gap: 14px;
+        margin: 20px 0 10px;
     }
     .thinkray-systems-small-img {
-        margin: 0 auto 35px;
+        margin: 0 auto 12px;
         max-width: 80%;
     }
     .thinkray-systems-big-img {
@@ -1518,7 +1579,7 @@
         position: relative;
         height: auto;
         width: 100%;
-        margin: 30px 0;
+        margin: 25px 0;
     }
     .thinkray-floating-systems-content.left,
     .thinkray-floating-systems-content.right,
@@ -1538,11 +1599,8 @@
         text-align: left;
     }
     .thinkray-types-box {
-        padding: 20px 15px;
-    }
-    .thinkray-success-content-box-icon {
-        min-height: 60px;
-        max-width: 60px;
+        margin-bottom: 8px;
+        padding: 14px 12px;
     }
     .contact-content-info-box .social {
         margin-bottom: 10px;
@@ -1642,9 +1700,6 @@
         margin: 20px auto 0;
         max-width: 100%;
     }
-    .hero-content h1 {
-        margin: 12px 0;
-    }
     .section-heading {
         padding: 7px 0 15px;
     }
@@ -1711,6 +1766,9 @@
     }
     .feature-card::before {
         min-height: 50px;
+    }
+    .thinkray-success-img-box {
+        height: auto;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
@@ -1786,9 +1844,6 @@
     .thinkray-benefits-innovate-content-box {
         padding: 10px 20px;
     }
-    .thinkray-success-content-box {
-        padding: 20px 20px;
-    }
     .thinkray-success-content {
         gap: 12px;
     }
@@ -1835,6 +1890,12 @@
     }
     .feature-card-info {
         bottom: -55%;
+    }
+    .hero-content h1 {
+        margin: 15px 0;
+    }
+    .thinkray-success-content-box h4 {
+        font-size: 180%;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
