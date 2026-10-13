@@ -181,7 +181,12 @@
         margin-top: 25px;
     }
     .hero-img .pg-decor-chip.two {
-        right: -8%;
+        right: -20%;
+        top: 0;
+    }
+    .hero-img .pg-decor-chip.one {
+        bottom: 15%;
+        left: 0;
     }
     h4.compact-decor-text::before,
     h4.compact-decor-text::after {
@@ -334,6 +339,7 @@
     }
     .hero-img .pg-decor-chip.two {
         right: -5%;
+        top: -10%;
     }
     .top-header {
         padding: 6px 0;
