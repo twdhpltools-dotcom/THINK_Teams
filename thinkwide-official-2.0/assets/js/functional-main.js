@@ -1,8 +1,15 @@
 /*------------------------------------------- JS FOR FUNCTIONAL-MAIN START ------------------------------------------*/
 /* ----------------------------------------- JS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER START ---------------------------------------------- */
 $(document).ready(function () {
+
   const desktop = $(".desktop-carousel");
   const mobile = $(".mobile-carousel");
+  const monitor = $("#monitorDevice");
+
+  let mouseX = 50;
+  let mouseY = 50;
+  let zoomFrame = null;
+
 
   desktop.owlCarousel({
     items: 1,
@@ -19,6 +26,7 @@ $(document).ready(function () {
     autoplayHoverPause: true
   });
 
+
   mobile.owlCarousel({
     items: 1,
     loop: true,
@@ -28,95 +36,159 @@ $(document).ready(function () {
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    nav: false,
-    autoplayHoverPause: true
+    nav: false
   });
 
-  desktop.on(
-    "changed.owl.carousel",
-    function (event) {
 
-      const index =
-        event.relatedTarget.relative(
-          event.item.index
-        );
+  desktop.on("changed.owl.carousel", function (event) {
 
+    const index = event.relatedTarget.relative(event.item.index);
 
-      mobile.trigger(
-        "to.owl.carousel",
-        [
-          index,
-          900,
-          true
-        ]
-      );
+    mobile.trigger("to.owl.carousel", [
+      index,
+      900,
+      true
+    ]);
 
-    }
-  );
+  });
+
 
   function showMobile() {
 
-    const wrapper =
-      document.getElementById(
-        "deviceShowcase"
+    const wrapper = document.getElementById("deviceShowcase");
+
+    if (!wrapper) return;
+
+    if (!wrapper.classList.contains("phone-active")) {
+
+      wrapper.classList.add("phone-active");
+
+      const desktopData = desktop.data("owl.carousel");
+
+      if (!desktopData) return;
+
+      const index = desktopData.relative(
+        desktopData.current()
       );
 
-    if (
-      !wrapper.classList.contains(
-        "phone-active"
-      )
-    ) {
-
-      wrapper.classList.add(
-        "phone-active"
-      );
-
-      const desktopData =
-        desktop.data(
-          "owl.carousel"
-        );
-
-
-      const index =
-        desktopData.relative(
-          desktopData.current()
-        );
-
-
-      mobile.trigger(
-        "to.owl.carousel",
-        [
-          index,
-          0,
-          true
-        ]
-      );
+      mobile.trigger("to.owl.carousel", [
+        index,
+        0,
+        true
+      ]);
 
     }
+
   }
 
-  $("#monitorDevice").on(
-    "click",
-    showMobile
-  );
 
-  $("#monitorDevice").on(
-    "keydown",
-    function (e) {
+  monitor.on("click", showMobile);
 
-      if (
-        e.key === "Enter" ||
-        e.key === " "
-      ) {
 
-        e.preventDefault();
+  monitor.on("keydown", function (e) {
 
-        showMobile();
-
-      }
-
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      showMobile();
     }
-  );
+
+  });
+
+
+  function getMobileImage() {
+    return mobile
+      .find(".owl-item.active")
+      .find("img")
+      .first();
+  }
+
+
+  mobile.find(".owl-stage-outer").css({
+    overflow: "hidden"
+  });
+
+
+  mobile.find("img").css({
+    width: "100%",
+    display: "block",
+    transform: "scale(1)",
+    transformOrigin: "50% 50%",
+    transition: "transform .35s ease"
+  });
+
+
+  monitor.on("mouseenter", function () {
+
+    const img = getMobileImage();
+
+    img.css({
+      transition: "transform .25s ease"
+    });
+
+  });
+
+
+  monitor.on("mousemove", function (e) {
+
+    const rect = this.getBoundingClientRect();
+
+    mouseX =
+      ((e.clientX - rect.left) / rect.width) * 100;
+
+    mouseY =
+      ((e.clientY - rect.top) / rect.height) * 100;
+
+
+    mouseX = Math.max(0, Math.min(100, mouseX));
+    mouseY = Math.max(0, Math.min(100, mouseY));
+
+
+    if (zoomFrame) {
+      cancelAnimationFrame(zoomFrame);
+    }
+
+
+    zoomFrame = requestAnimationFrame(function () {
+
+      const img = getMobileImage();
+
+      if (!img.length) return;
+
+      img.css({
+        transform: "scale(1.5)",
+        transformOrigin:
+          mouseX + "% " + mouseY + "%"
+      });
+
+    });
+
+  });
+
+
+  monitor.on("mouseleave", function () {
+
+    if (zoomFrame) {
+      cancelAnimationFrame(zoomFrame);
+    }
+
+    mobile.find(".owl-item img").css({
+      transform: "scale(1)",
+      transformOrigin: "50% 50%",
+      transition: "transform .4s ease"
+    });
+
+  });
+
+
+  mobile.on("translated.owl.carousel", function () {
+
+    mobile.find(".owl-item img").css({
+      transform: "scale(1)",
+      transformOrigin: "50% 50%"
+    });
+
+  });
+
 });
 /* ----------------------------------------- JS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER COMPLETE ---------------------------------------------- */
 
