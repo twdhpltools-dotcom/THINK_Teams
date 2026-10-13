@@ -1,0 +1,605 @@
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) START ------------------------------*/
+@media only screen and (max-width: 1920px) {
+    .mobile-toggler {
+        display: none;
+    }
+
+    .d-none-xl-device,
+    .d-none-sm-device {
+        display: block;
+    }
+
+    .d-none-for-mob {
+        display: block;
+    }
+
+    .d-block-for-mob {
+        display: none;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1920PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) START ------------------------------*/
+@media only screen and (max-width: 1599px) {
+    html {
+        font-size: 16px;
+    }
+
+    form .form-group {
+        margin-bottom: 15px;
+    }
+
+    form .form-group.special-ip {
+        padding: 20px 15px;
+    }
+
+    .common-section {
+        padding: 20px 0;
+    }
+
+    .login-hero .hero-content .hero-feature-img {
+        max-width: 45%;
+    }
+
+    .login-pg-decor-chip {
+        margin-top: 10px;
+    }
+
+    .form-copyright {
+        margin-top: 20px;
+    }
+
+    form .form-group h6 {
+        margin: 25px 0 0;
+    }
+
+    .hero-text-content .logo {
+        max-width: 200px;
+    }
+
+    .login-form {
+        right: 40px;
+        max-width: 420px;
+    }
+
+    .login-card .logo {
+        max-width: 140px;
+        margin: 0 auto 15px;
+    }
+
+    .login-card {
+        padding: 22px 40px;
+    }
+    .hero-text-content {
+        max-width: 60%;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) START ------------------------------*/
+@media only screen and (max-width: 1299px) {
+    .hero-feature-img {
+        max-width: 70%;
+    }
+
+    .nav-links {
+        padding: 25px 22px;
+    }
+
+    ul.menu li {
+        padding-left: 15px;
+    }
+
+    .d-none-xl-device {
+        display: none !important;
+    }
+
+    .pg-section-spacing {
+        padding: 15px 0;
+    }
+
+    .pg-section-spacing.top-spacing {
+        padding: 15px 0 0;
+    }
+
+    .pg-section-spacing.bottom-spacing {
+        padding: 0 0 15px;
+    }
+
+    .common-section {
+        padding: 15px 0;
+    }
+
+    .section-heading {
+        padding: 20px 0 45px;
+    }
+
+    .form-changer-content .basic-form {
+        margin-top: 30px;
+    }
+
+    form .form-group {
+        margin-bottom: 12px;
+    }
+
+    a.pg-btn {
+        padding: 10px 65px 10px 30px;
+    }
+
+    .login-form .basic-form {
+        padding: 0 20px;
+    }
+
+    .login-form {
+        right: 20px;
+    }
+
+    .hero-text-content {
+        flex-wrap: wrap;
+        max-width: 55%;
+        padding-left: 30px;
+    }
+
+    .puja-abs {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1299PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) START ------------------------------*/
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+
+    .mobile-header {
+        height: 100vh;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ffffff90;
+        backdrop-filter: blur(20px);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all 0.4s ease;
+        overflow-y: auto;
+        z-index: 10;
+    }
+
+    .mobile-header.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .mobile-toggler {
+        display: flex;
+    }
+
+    .sub-menu {
+        position: relative;
+        top: 20px;
+        min-width: 100% !important;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+
+    .sub-menu.product-menu {
+        padding: 20px 20px;
+    }
+
+    .sub-menu-links {
+        margin: 12px 0;
+    }
+
+    .sub-menu-links h6 {
+        font-size: 110%;
+    }
+
+    li.menu-product-links-box p {
+        font-size: 50%;
+        margin: 15px 0;
+    }
+
+    li.menu-product-links-box a.pg-btn {
+        padding: 10px 60px 10px 20px;
+        font-size: 60%;
+    }
+
+    ul.menu-useful-links li {
+        font-size: 90% !important;
+        padding: 10px 20px;
+        margin-bottom: 0 !important;
+        border: none;
+    }
+
+    .bottom-header {
+        position: relative;
+    }
+
+    .bottom-header .logo {
+        max-width: 220px;
+    }
+
+    .nav-links {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    ul.menu {
+        margin-top: 40px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ul.menu li {
+        padding-left: 10px;
+        margin-bottom: 22px;
+        font-size: 140%;
+    }
+
+    span.pg-chip {
+        padding: 5px 20px;
+    }
+
+    .login-hero {
+        height: auto;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .hero-content,
+    .hero-img {
+        padding: 100px 0 0;
+    }
+
+    .hero-content h1 {
+        margin: 20px 0;
+    }
+
+    .section-heading h2 {
+        margin: 20px 0;
+    }
+
+    .pg-section-spacing {
+        padding: 10px 0;
+    }
+
+    .pg-section-spacing.top-spacing {
+        padding: 10px 0 0;
+    }
+
+    .pg-section-spacing.bottom-spacing {
+        padding: 0 0 10px;
+    }
+
+    .common-section {
+        padding: 10px 0;
+    }
+
+    .section-heading {
+        max-width: 80%;
+        padding: 20px 0 40px;
+    }
+
+    hr.pg-hr {
+        margin: 12px 0;
+    }
+
+    .login-hero .hero-content {
+        padding: 40px 50px;
+    }
+
+    .login-form .basic-form {
+        height: auto;
+    }
+
+    .login-form .basic-form {
+        padding: 0 50px;
+    }
+
+    .login-form {
+        max-width: 100%;
+        position: relative;
+        right: 0;
+        transform: unset;
+        margin: 30px 0;
+    }
+
+    header.main-header {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .login-hero-carousel {
+        height: auto;
+    }
+
+    .hero-text-content {
+        max-width: 100%;
+    }
+
+    ul.pg-listing li {
+        margin-bottom: 17px;
+    }
+
+    h4.puja-text {
+        margin-top: 30px;
+    }
+
+    .d-none-for-mob {
+        display: none;
+    }
+    
+    .d-block-for-mob {
+        display: block;
+    }
+
+    .logo.d-block-for-mob {
+        max-width: 180px;
+        margin: 0 auto;
+        padding-bottom: 12px;
+    }
+
+    .puja-abs {
+        max-width: 600px;
+    }
+
+    .hero-text-content {
+        padding: 0;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 992PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) START ------------------------------*/
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .login-form {
+        height: auto;
+        padding: 0 30px;
+    }
+
+    .hero-feature-img {
+        max-width: 100%;
+    }
+
+    .hero-content {
+        padding: 50px 0;
+    }
+
+    header.main-header .top-header-news .marquee {
+        margin: 2px 0;
+        max-width: 100%;
+    }
+
+    .pg-submit-btn.switch-btn {
+        height: auto;
+        width: 100%;
+        max-width: 48%;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content,
+    .hero-img {
+        padding: 40px 0 0;
+    }
+
+    .section-heading {
+        max-width: 100%;
+        padding: 20px 0 35px;
+    }
+
+    .marquee-content span {
+        font-size: 180%;
+    }
+
+    .top-header-news {
+        display: none;
+    }
+
+    table thead tr th,
+    table tbody tr td {
+        padding: 10px 8px;
+    }
+
+    .login-hero .hero-content {
+        padding: 0 40px 20px;
+    }
+
+    .social i {
+        min-height: 30px;
+        max-width: 30px;
+    }
+
+    .hero-content h1 {
+        margin: 10px 0;
+    }
+
+    .login-form .basic-form {
+        padding: 0;
+    }
+
+    .social {
+        z-index: 2;
+        position: relative;
+    }
+
+    .benefit-item {
+        min-height: 125px;
+    }
+
+    .login-help-temp {
+        margin: 5px 0 0;
+    }
+
+    .puja-abs {
+        max-width: 500px;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 768PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) START ------------------------------*/
+@media only screen and (max-width: 576px) {
+    button.mobile-toggler {
+        max-width: 50px;
+    }
+
+    .login-form {
+        max-width: 100%;
+    }
+
+    input[type="checkbox"] {
+        min-height: 15px;
+        max-width: 15px;
+        border-radius: 5px;
+        margin-right: 8px;
+    }
+
+    form .form-group {
+        margin-bottom: 10px;
+    }
+
+    hr.pg-hr {
+        margin: 15px 0;
+    }
+
+    label {
+        margin-bottom: 6px;
+    }
+
+    form .form-group.special-ip {
+        padding: 15px 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px 15px 10px 30px;
+    }
+
+    .login-input i {
+        top: 13px;
+    }
+
+    .nw-ico-clss {
+        left: 10px;
+    }
+
+    form .form-group h6 {
+        margin: 20px 0 0
+    }
+
+    .basic-form {
+        padding: 30px 30px;
+    }
+
+    .login-hero .hero-content {
+        padding: 0 20px 18px;
+    }
+
+    .login-form .basic-form {
+        padding: 0;
+    }
+
+    .social i {
+        min-height: 22px;
+        max-width: 22px;
+        font-size: 88%;
+    }
+
+    .social a {
+        font-size: 90%;
+        padding-left: 6px;
+    }
+
+    .login-card {
+        padding: 15px 30px 25px;
+    }
+
+    .benefit-content h4 {
+        font-size: 75%;
+    }
+
+    .login-form .basic-form-head {
+        margin-bottom: 22px;
+    }
+
+    .hero-feature-img {
+        display: none;
+    }
+
+    .login-form {
+        margin: 25px 0;
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        margin: 5px 0;
+        font-size: 250%;
+    }
+
+    .hero-benefits {
+        margin-top: 18px;
+        justify-content: center;
+    }
+
+    .benefit-item {
+        border: none;
+        width: 100%;
+        max-width: 35%;
+    }
+
+    .benefit-icon svg {
+        width: 35%;
+    }
+
+    .social.address {
+        display: none;
+    }
+
+    .top-header::after {
+        max-width: 62%;
+    }
+
+    .hero-color-line {
+        margin: 15px 0;
+    }
+
+    .benefit-item {
+        min-height: auto;
+    }
+
+    .logo.d-block-for-mob {
+        max-width: 140px;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) START ------------------------------*/
+@media only screen and (max-width: 375px) {
+    .logo.d-block-for-mob {
+        max-width: 115px;
+    }
+}
+
+/*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
