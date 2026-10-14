@@ -660,8 +660,8 @@ span.mini-chip {
     right: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to to left, #ffffff10, transparent);
-    backdrop-filter: blur(2px);
+    background: linear-gradient(to left, #ffffff2e, transparent);
+    backdrop-filter: blur(1px);
     display: flex;
     align-items: center;
     justify-content: end;
@@ -1345,7 +1345,7 @@ li.menu-product-links-box p {
 }
 
 li.menu-product-links-box a.pg-btn {
-    padding: 8px 25px;
+    padding: 8px 15px;
     font-size: 90%;
 }
 
@@ -1430,7 +1430,7 @@ button.mobile-toggler span:last-child {
 }
 
 button.mobile-toggler.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 button.mobile-toggler.active span:nth-child(2) {

@@ -356,9 +356,6 @@
     ul.menu-product-links li.menu-product-links-box {
         padding: 15px 22px;
     }
-    .sub-menu-links h6 {
-        margin-bottom: 15px;
-    }
     .thinkray-systems-small-img {
         max-width: 180px;
         margin: 0 auto 80px;
@@ -566,28 +563,41 @@
     .sub-menu {
         position: relative;
         top: 15px;
+        background: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        border: none;
+        padding: 12px 0;
         min-width: 100% !important;
-        margin-bottom: 20px;
-        padding: 15px 20px;
+        margin-bottom: 8px;
     }
     .sub-menu.product-menu {
-        padding: 8px 18px;
         position: relative;
         top: 15px;
         left: 0;
+        padding: 0;
+    }
+    ul.menu-product-links {
+        gap: 12px;
     }
     ul.menu-product-links li.menu-product-links-box {
-        padding: 12px 18px;
+        padding: 10px 15px;
+    }
+    ul.menu-product-links li.menu-product-links-box:last-child {
+        margin-bottom: 18px;
     }
     .sub-menu-links {
-        margin: 12px 0;
+        margin: 0;
     }
     .sub-menu-links h6 {
         font-size: 110%;
     }
     li.menu-product-links-box p {
-        font-size: 50%;
-        margin: 15px 0;
+        font-size: 55%;
+        margin: 10px 0;
+    }
+    li.menu-product-links-box a.pg-btn {
+        font-size: 75%;
     }
     ul.menu-useful-links li {
         font-size: 90% !important;
@@ -617,7 +627,7 @@
         flex-direction: column;
     }
     ul.menu li {
-        padding-left: 10px;
+        padding-left: 5px;
         margin-bottom: 22px;
         font-size: 125%;
     }
@@ -709,7 +719,7 @@
         max-width: 70%;
     }
     .indicator-card-icon {
-        padding-right: 20px;
+        padding-right: 15px;
     }
     .clients-map p {
         margin-top: 10px;
@@ -1275,9 +1285,6 @@
     .copyright-footer-content-icon .social {
         max-width: 45px;
     }
-    .sub-menu.product-menu {
-        padding: 5px 15px;
-    }
     .sub-menu-links h6 {
         margin-bottom: 10px;
     }
@@ -1387,14 +1394,7 @@
         max-width: 90%;
         margin-bottom: 5px;
     }
-    .sub-menu {
-        padding: 10px 12px;
-    }
-    .sub-menu.product-menu {
-        padding: 15px 18px;
-    }
     ul.menu-product-links li.menu-product-links-box {
-        padding: 15px 18px;
         max-width: 100%;
     }
     li.menu-product-links-box img {
@@ -1775,6 +1775,22 @@
     }
     .thinkray-success-img-box {
         height: auto;
+    }
+    .monitor-frame {
+        padding: 7px 7px 20px;
+    }
+    .monitor-frame:after {
+        bottom: 8px;
+        width: 5px;
+        height: 5px;
+    }
+    .monitor-neck {
+        width: 85px;
+        height: 45px;
+    }
+    .monitor-base {
+        width: 200px;
+        height: 15px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
