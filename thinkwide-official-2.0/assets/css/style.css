@@ -472,12 +472,6 @@ main {
     background: #1018408f;
 }
 
-.designed-section-dark,
-.designed-section-light {
-    position: relative;
-    z-index: 1;
-}
-
 .section-heading {
     height: auto;
     width: 100%;
@@ -1347,6 +1341,7 @@ li.menu-product-links-box p {
 li.menu-product-links-box a.pg-btn {
     padding: 8px 15px;
     font-size: 90%;
+    box-shadow: unset;
 }
 
 li.menu-product-links-box a.pg-btn i {
@@ -1368,6 +1363,7 @@ ul.menu-useful-links li {
 ul.menu-useful-links li:last-child {
     border: none;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 ul.menu li.sub-links:hover .sub-menu {
