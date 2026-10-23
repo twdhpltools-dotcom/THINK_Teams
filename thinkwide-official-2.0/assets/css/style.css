@@ -305,10 +305,10 @@ input::placeholder {
 
 a.pg-btn {
     position: relative;
-    padding: 12px 28px;
+    padding: 12px 25px;
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     border-radius: 10px;
     border: 1px solid #67abffd9;
     background: #ffffffa3;
@@ -460,7 +460,7 @@ main {
 }
 
 .section-overlay.themed-overlay.thinkdigital-themed {
-    background: linear-gradient(130deg, #02b30ed0, #24cf2faf);
+    background: linear-gradient(130deg, #18266d, #091733a6);
 }
 
 .cta-section-overlay {
@@ -495,7 +495,7 @@ main {
 
 .section-heading h2 {
     font-size: 210%;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 10px;
 }
 
@@ -549,13 +549,13 @@ ul.pg-listing li::before {
     background: var(--defaut-light-thinkdigital-theme);
     color: var(--defaut-light-color);
     border-radius: 50%;
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
-    font-size: 75%;
+    font-size: 65%;
 }
 
 ul.pg-listing li:last-child {
@@ -819,7 +819,7 @@ h4.compact-decor-text.hero-text::after {
 }
 
 .diagram-img.thinkdigital-themed {
-    max-width: 100%;
+    max-width: 65%;
     background: none;
     backdrop-filter: blur(0);
     box-shadow: none;
@@ -1325,7 +1325,7 @@ ul.menu-product-links li.menu-product-links-box {
 li.menu-product-links-box img {
     height: auto;
     width: 100%;
-    max-width: 130px;
+    max-width: 125px;
 }
 
 li.menu-product-links-box h6 {
@@ -1449,10 +1449,6 @@ button.mobile-toggler.active span:nth-child(3) {
     z-index: 1;
 }
 
-.hero.thinkdigital-themed {
-    height: auto;
-}
-
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -1488,7 +1484,7 @@ button.mobile-toggler.active span:nth-child(3) {
 
 .hero-content h1 {
     font-size: 250%;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .hero-content h1 span {
@@ -1530,6 +1526,10 @@ button.mobile-toggler.active span:nth-child(3) {
     align-items: center;
     justify-content: end;
     z-index: 1;
+}
+
+.hero-img.thinkdigital-themed {
+    justify-content: center;
 }
 
 .hero-img .pg-decor-chip.one {
@@ -1803,7 +1803,7 @@ li.feature-types-box p {
 }
 
 .feature-card.thinkdigital-themed .feature-card-info {
-    background: linear-gradient(to top, var(--defaut-light-thinkdigital-theme) 100%, transparent 100%);
+    background: linear-gradient(to top, var(--defaut-light-thinkdigital-theme) 70%, transparent 100%);
 }
 
 .feature-card-info-icon-img {
@@ -1825,7 +1825,7 @@ li.feature-types-box p {
 
 .feature-card-info h3 {
     font-size: 150%;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
@@ -3029,20 +3029,20 @@ form .form-group.input-box i {
     background: #ffffff70;
     backdrop-filter: blur(20px);
     border: 1px solid #00000010;
-    padding: 35px 45px;
+    padding: 15px 20px;
 }
 
 .thinkdigital-types-box-icon-img {
     height: auto;
     width: 100%;
-    max-width: 70px;
-    margin-bottom: 20px;
+    max-width: 45px;
+    margin-bottom: 15px;
 }
 
 .thinkdigital-types-box h5 {
-    font-size: 170%;
-    font-weight: 700;
-    margin-bottom: 35px;
+    font-size: 150%;
+    font-weight: 600;
+    margin-bottom: 20px;
     position: relative;
     z-index: 1;
 }
@@ -3099,10 +3099,8 @@ form .form-group.input-box i {
 }
 
 .indicator-card.thinkdigital-themed {
-    padding: 25px 35px;
     margin-left: 0;
     border-left: 3px solid var(--defaut-dark-thinkdigital-theme);
-    margin-bottom: 25px;
 }
 
 .indicator-card.thinkdigital-themed .indicator-card-icon {
@@ -3116,7 +3114,7 @@ form .form-group.input-box i {
     transform: translate(-50%, -50%);
     height: auto;
     width: 100%;
-    max-width: 35%;
+    max-width: 28%;
 }
 
 /*--------------------------------------------- CSS FOR THINKDIGITAL-SYSTEMS SECTION COMPLETE ---------------------------------------*/
@@ -3132,8 +3130,8 @@ form .form-group.input-box i {
 }
 
 .digirel-content-box-listing {
-    margin: 35px 0;
-    padding: 30px 35px;
+    margin: 25px 0;
+    padding: 18px 22px;
     border-radius: 10px;
     background: linear-gradient(to right, #f2f2f291, var(--defaut-light-background));
     box-shadow: 0 2px 10px 0 #00000010;
@@ -3155,9 +3153,9 @@ form .form-group.input-box i {
 }
 
 .mini-cta-content {
-    padding: 10px 20px 0;
+    padding: 10px 20px;
     text-align: center;
-    margin: 60px 0;
+    margin: 30px 0;
     background: #ffffff10;
     backdrop-filter: blur(20px);
     border-radius: 20px;
@@ -3166,11 +3164,11 @@ form .form-group.input-box i {
 .mini-cta-content .section-heading h2 {
     font-size: 230%;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .mini-cta-content .pg-video-btn {
-    margin: 30px auto 0;
+    margin: 20px auto 0;
 }
 
 /*--------------------------------------------- CSS FOR MINI-CTA SECTION COMPLETE ---------------------------------------*/
@@ -3270,7 +3268,7 @@ form .form-group.input-box i {
 }
 
 .case-study-card {
-    height: 450px;
+    height: 400px;
     width: 100%;
     border-radius: 10px;
     background: #ffffff50;
@@ -3295,27 +3293,27 @@ form .form-group.input-box i {
 
 .case-study-card-img-overlay {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(to top, #00000050, transparent);
-    backdrop-filter: blur(2px);
+    background: #00000020;
+    backdrop-filter: blur(8px);
     display: flex;
     align-items: end;
-    padding: 30px 25px;
+    padding: 25px 25px 15px;
 }
 
 .case-study-card-info h4 {
     font-size: 140%;
     font-weight: 700;
-    margin: 15px 0;
+    margin: 15px 0 8px;
 }
 
 .case-study-card-info p {
     font-size: 80%;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 /*--------------------------------------------- CSS FOR CASE-STUDY SECTION COMPLETE ---------------------------------------*/
@@ -3341,7 +3339,7 @@ form .form-group.input-box i {
 .hamburger-content {
     height: auto;
     width: 100%;
-    padding: 150px 0 70px;
+    padding: 110px 0 30px;
     text-align: center;
     color: var(--defaut-dark-color);
 }
@@ -3796,6 +3794,13 @@ ul.footer-menu li:hover {
     min-height: 40px;
     max-width: 40px;
     font-size: 120%;
+    transition: all 0.4s ease-in-out;
+}
+
+.copyright-footer-content-icon .social i:hover {
+    background: var(--defaut-dark-thinklab-theme);
+    color: var(--defaut-light-color);
+    border-color: transparent;
 }
 
 /*--------------------------------------------- CSS FOR FOOTER COMPLETE ---------------------------------------*/

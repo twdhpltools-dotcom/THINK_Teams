@@ -1365,10 +1365,14 @@
         margin-bottom: 10px;
     }
     .thinkray-types-box-icon-img {
-        max-width: 40px;
+        max-width: 32px;
+    }
+    .thinkray-types-box h5 {
+        margin-bottom: 3px;
     }
     .thinkray-benefits-innovate-content-box h3 span {
-        max-width: 40px;
+        font-size: 260%;
+        max-width: 35px;
     }
     .thinkray-success-img-box {
         height: 350px;
