@@ -126,7 +126,7 @@ table {
 table thead tr th {
     background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f2);
     border: 2px solid #00000010;
-    padding: 15px 20px;
+    padding: 14px 18px;
     font-size: 95%;
     font-weight: 700;
     color: #707070;
@@ -134,7 +134,7 @@ table thead tr th {
 
 table tbody tr td {
     border: 2px solid #00000010;
-    padding: 15px 20px;
+    padding: 14px 18px;
     font-size: 85%;
 }
 
@@ -144,7 +144,7 @@ table tbody tr td {
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
-    padding: 10px;
+    padding: 5px;
     overflow-x: auto;
 }
 
@@ -909,13 +909,13 @@ span.item-breaker-dark {
 .user-info-badge-img {
     height: auto;
     width: 100%;
-    min-height: 80px;
-    max-width: 80px;
+    min-height: 70px;
+    max-width: 70px;
     border-radius: 50%;
 }
 
 .user-info-badge-img img {
-    min-height: 80px;
+    min-height: 70px;
     border-radius: 50%;
 }
 
@@ -927,7 +927,7 @@ span.item-breaker-dark {
 .user-info-badge em {
     display: inline-block;
     font-size: 75%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-style: var(--defaut-font-style);
 }
 
@@ -955,13 +955,13 @@ span.item-breaker-dark {
 .side-bar-mark-up {
     height: auto;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .side-bar-mark-up h5 {
     font-size: 160%;
-    font-weight: 700;
-    margin-bottom: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .side-bar-mark-up p {
@@ -969,8 +969,8 @@ span.item-breaker-dark {
 }
 
 .side-bar-mark-up ul.pg-listing {
-    margin-top: 30px;
-    padding-left: 15px;
+    margin-top: 20px;
+    padding-left: 10px;
     border-left: 1px solid var(--defaut-dark-thinklab-theme);
 }
 
@@ -988,7 +988,7 @@ span.item-breaker-dark {
     border-radius: 10px;
     border: 1px solid #00000010;
     background: linear-gradient(to left, #f2f2f2, var(--defaut-light-background), transparent);
-    padding: 20px 25px;
+    padding: 12px 15px;
 }
 
 .side-bar-cta h5 {
@@ -1515,7 +1515,7 @@ button.mobile-toggler.active span:nth-child(3) {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .hero-img {
@@ -2431,10 +2431,14 @@ li.feature-types-box p {
 }
 
 .basic-form.contact-form {
-    height: auto;
+    height: 100%;
     width: 100%;
     max-width: 520px;
     padding: 22px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: var(--defaut-light-color);
     background: rgba(255, 255, 255, .10);
@@ -3089,7 +3093,7 @@ form .form-group.input-box i {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .thinkdigital-systems-divider {
@@ -3302,7 +3306,7 @@ form .form-group.input-box i {
     backdrop-filter: blur(8px);
     display: flex;
     align-items: end;
-    padding: 25px 25px 15px;
+    padding: 22px 25px 15px;
 }
 
 .case-study-card-info h4 {
@@ -3339,14 +3343,14 @@ form .form-group.input-box i {
 .hamburger-content {
     height: auto;
     width: 100%;
-    padding: 110px 0 30px;
+    padding: 115px 0 35px;
     text-align: center;
     color: var(--defaut-dark-color);
 }
 
 .hamburger-content h1 {
     font-size: 250%;
-    font-weight: 900;
+    font-weight: 600;
     margin-bottom: 25px;
 }
 
@@ -3609,11 +3613,11 @@ form .form-group.input-box i {
 
 .product-comparison-side-bar {
     position: sticky;
-    top: 15%;
+    top: 10%;
     left: 0;
     height: auto;
     width: 100%;
-    padding: 40px 35px;
+    padding: 22px 20px;
     border-radius: 10px;
     box-shadow: 0 0 30px 0 #00000010;
     background: var(--defaut-light-background);
@@ -3622,26 +3626,26 @@ form .form-group.input-box i {
 .product-comparison-content {
     height: auto;
     width: 100%;
-    padding: 30px 20px;
+    padding: 15px 10px;
 }
 
 .product-comparison-content-heading {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .product-comparison-content-heading h3 {
-    font-size: 200%;
-    font-weight: 700;
+    font-size: 180%;
+    font-weight: 600;
 }
 
 .product-comparison-content-body h6 {
     font-size: 150%;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .product-comparison-content-body p {
     font-size: 90%;
-    margin: 28px 0;
+    margin: 18px 0;
 }
 
 .product-comparison-content-body p:last-child {
@@ -4096,7 +4100,7 @@ ul.footer-menu li:hover {
     background: #007af808;
     border-radius: 5px;
     border: 1px solid #00000010;
-    padding: 16px 22px;
+    padding: 16px 20px;
     font-size: 100%;
     font-weight: 600;
 }
@@ -4107,7 +4111,7 @@ ul.footer-menu li:hover {
 }
 
 .accordion-body {
-    padding: 18px 30px;
+    padding: 18px 20px;
 }
 
 .accordion-body p {
