@@ -441,6 +441,27 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 /* ----------------------------------------- JS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- JS FOR PG-SCROLL-INDICATOR START ---------------------------------------------- */
+const bar = document.createElement("div");
+bar.className = "scroll-progress";
+document.body.appendChild(bar);
+
+function updateScrollProgress() {
+  const doc = document.documentElement;
+  const maxScroll = doc.scrollHeight - doc.clientHeight;
+
+  const progress = maxScroll > 0
+  ? (doc.scrollTop / maxScroll) * 100
+  : 0;
+
+  bar.style.width = progress + "%";
+}
+
+window.addEventListener("scroll", updateScrollProgress, { passive: true });
+window.addEventListener("resize", updateScrollProgress);
+updateScrollProgress();
+/* ----------------------------------------- JS FOR PG-SCROLL-INDICATOR COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- JS FOR SCROLL-PERFORMANCE-OPTIMIZER START ---------------------------------------------- */
 (function () {
   'use strict';
