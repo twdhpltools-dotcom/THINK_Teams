@@ -401,7 +401,7 @@ main {
 .logo {
     height: auto;
     width: 100%;
-    max-width: 190px;
+    max-width: 180px;
 }
 
 .logo a {
@@ -455,13 +455,13 @@ main {
     background: linear-gradient(230deg, #0929a8b8, #101840ad);
 }
 
-.section-overlay.themed-overlay.thinkray-themed {
+/* .section-overlay.themed-overlay.thinkray-themed {
     background: linear-gradient(130deg, #9f0d7fe3, #ff60ddd4);
 }
 
 .section-overlay.themed-overlay.thinkdigital-themed {
     background: linear-gradient(130deg, #18266d, #091733a6);
-}
+} */
 
 .cta-section-overlay {
     background: #ffffff80;
@@ -586,6 +586,7 @@ ul.pg-listing li:last-child {
 
 .social a {
     font-size: 90%;
+    font-weight: 500;
     color: var(--defaut-light-color);
     padding-left: 8px;
 }
@@ -920,8 +921,8 @@ span.item-breaker-dark {
 }
 
 .user-info-badge h6 {
-    font-size: 120%;
-    font-weight: 700;
+    font-size: 110%;
+    font-weight: 500;
 }
 
 .user-info-badge em {
@@ -1227,6 +1228,7 @@ ul.menu {
 
 ul.menu li {
     font-size: 100%;
+    font-weight: 450;
     padding-left: 30px;
 }
 
@@ -1237,7 +1239,7 @@ ul.menu li.sub-links {
 
 ul.menu li i {
     font-size: 75%;
-    padding-left: 8px;
+    padding-left: 6px;
 }
 
 .nav-search {
@@ -1300,7 +1302,7 @@ ul.menu li i {
     font-size: 110%;
     color: var(--defaut-dark-thinklab-theme);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 ul.menu-product-links {
@@ -1356,7 +1358,7 @@ ul.menu-useful-links {
 ul.menu-useful-links li {
     height: auto;
     width: 100%;
-    padding: 12px 10px;
+    padding: 12px 5px;
     border-bottom: 1px solid #00000018;
 }
 
@@ -1403,9 +1405,15 @@ button.mobile-toggler {
     border-radius: 5px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     cursor: pointer;
     z-index: 10;
+}
+
+button.mobile-toggler.active {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: unset;
 }
 
 button.mobile-toggler span {
@@ -1419,6 +1427,10 @@ button.mobile-toggler span {
     margin-bottom: 6px;
     transition: all 0.4s ease-in-out;
     transform-origin: center;
+}
+
+button.mobile-toggler span:nth-child(2) {
+    max-width: 50%;
 }
 
 button.mobile-toggler span:last-child {
@@ -1771,11 +1783,7 @@ li.feature-types-box p {
 }
 
 .feature-card.thinkray-themed .feature-card-head {
-    background: linear-gradient(140deg, var(--defaut-dark-background), var(--defaut-dark-thinkray-theme));
-}
-
-.feature-card.thinkdigital-themed .feature-card-head {
-    background: linear-gradient(140deg, var(--defaut-dark-background), var(--defaut-dark-thinkdigital-theme));
+    background: linear-gradient(140deg, #10184026, #9f0d7f38);
 }
 
 .feature-card-head h5 {
@@ -1798,12 +1806,13 @@ li.feature-types-box p {
 }
 
 .feature-card.thinkray-themed .feature-card-info {
-    background: linear-gradient(to top, var(--defaut-light-thinkray-theme) 40%, transparent 100%);
+    background: linear-gradient(to top, var(--defaut-light-thinkray-theme) 60%, transparent 100%);
     bottom: -40%;
 }
 
 .feature-card.thinkdigital-themed .feature-card-info {
-    background: linear-gradient(to top, var(--defaut-light-thinkdigital-theme) 70%, transparent 100%);
+    background: linear-gradient(to top, var(--defaut-light-thinkdigital-theme) 40%, transparent 100%);
+    bottom: -5%;
 }
 
 .feature-card-info-icon-img {
@@ -2119,8 +2128,8 @@ li.feature-types-box p {
 }
 
 .form-changer-img .section-heading h2 {
-    font-size: 180%;
-    font-weight: 700;
+    font-size: 190%;
+    font-weight: 600;
     margin: 0;
     text-align: center;
 }
@@ -2193,7 +2202,7 @@ li.feature-types-box p {
 }
 
 .benefits-content {
-    height: auto;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
     background: #ffffff50;
@@ -2204,8 +2213,12 @@ li.feature-types-box p {
 }
 
 .benefits-content-box {
-    height: auto;
+    height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 20px;
     background-image: url('../images/thinklab-bg.webp');
     background-position: center;
@@ -2289,9 +2302,6 @@ li.feature-types-box p {
 
 .blog-gallery-card.long .blog-gallery-card-img {
     border-color: transparent;
-}
-
-.blog-gallery-card.long .blog-gallery-card-img {
     height: 400px;
 }
 
@@ -2621,18 +2631,18 @@ form .form-group.input-box i {
     width: 100%;
     background: var(--defaut-light-background);
     border-radius: 10px;
-    padding: 20px 25px;
+    padding: 18px 22px;
 }
 
 .gmap-content-info-txt h5 {
     font-size: 140%;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
 .gmap-content-info-txt h4 {
     font-size: 95%;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--defaut-dark-thinklab-theme);
     margin-bottom: 4px;
 }
@@ -2731,10 +2741,14 @@ form .form-group.input-box i {
 .thinkray-benefits-innovate-content-box {
     height: auto;
     width: 100%;
-    padding: 8px 18px;
+    padding: 6px 18px;
     background: linear-gradient(to bottom, var(--defaut-light-background), #f2f2f277);
     border-bottom: 1px solid #00000010;
     margin-bottom: 15px;
+}
+
+.thinkray-benefits-innovate-content-box:last-child {
+    margin-bottom: 0;
 }
 
 .thinkray-benefits-innovate-content-box h3 {
@@ -2752,7 +2766,7 @@ form .form-group.input-box i {
     display: block;
     height: auto;
     width: 100%;
-    max-width: 60px;
+    max-width: 50px;
 }
 
 .thinkray-benefits .benefits-innovate .thinkray-benefits-innovate-content-box p {
@@ -2800,7 +2814,7 @@ form .form-group.input-box i {
 .thinkray-success-img-box {
     height: 400px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 20px 0 #00000020;
@@ -2818,7 +2832,7 @@ form .form-group.input-box i {
 
 .thinkray-success-img img {
     height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .thinkray-success-img-text {
@@ -2858,7 +2872,7 @@ form .form-group.input-box i {
     height: auto;
     width: 100%;
     max-width: 48%;
-    border-radius: 15px;
+    border-radius: 10px;
     background: var(--defaut-light-background);
     border: 1px solid #00000010;
     box-shadow: 0 10px 20px 0 #00000010;
@@ -2884,7 +2898,7 @@ form .form-group.input-box i {
 
 .thinkray-success-content-box h4 {
     color: var(--defaut-dark-thinkray-theme);
-    font-size: 220%;
+    font-size: 200%;
     font-weight: 700;
     margin: 4px 0;
 }
@@ -3040,7 +3054,7 @@ form .form-group.input-box i {
     height: auto;
     width: 100%;
     max-width: 45px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .thinkdigital-types-box h5 {
@@ -3208,11 +3222,12 @@ form .form-group.input-box i {
 .our-teams-img-box {
     height: auto;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #ffffff50;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px 0 #00000020;
     padding: 2px;
+    overflow: hidden;
 }
 
 .our-teams-img {
@@ -3224,7 +3239,7 @@ form .form-group.input-box i {
 }
 
 .our-teams-img img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .our-teams-img-box span.pg-chip {
@@ -3235,19 +3250,19 @@ form .form-group.input-box i {
 
 .our-teams-img-text {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    padding: 18px 22px;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px 12px;
     border-radius: 10px;
-    background: #ffffffbf;
-    backdrop-filter: blur(20px);
+    background: #ffffffc2;
+    backdrop-filter: blur(10px);
     color: var(--defaut-dark-color);
     z-index: 2;
 }
 
 .our-teams-img-text h5 {
-    font-size: 170%;
-    font-weight: 700;
+    font-size: 130%;
+    font-weight: 600;
 }
 
 .our-teams-img-text p {
@@ -3311,8 +3326,8 @@ form .form-group.input-box i {
 
 .case-study-card-info h4 {
     font-size: 140%;
-    font-weight: 700;
-    margin: 15px 0 8px;
+    font-weight: 600;
+    margin: 15px 0 6px;
 }
 
 .case-study-card-info p {
@@ -4209,7 +4224,7 @@ header.main-header .top-header-news .marquee {
 
 header.main-header .top-header-news .marquee-content span {
     font-size: 95%;
-    font-weight: var(--defaut-font-weight);
+    font-weight: 300;
 }
 
 header.main-header .top-header-news .marquee-content span em {
@@ -4435,3 +4450,17 @@ header.main-header .top-header-news .marquee-content span em {
 }
 
 /* ----------------------------------------- CSS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER COMPLETE ---------------------------------------------- */
+
+/* ----------------------------------------- CSS FOR PG-SCROLL-INDICATOR START ---------------------------------------------- */
+.scroll-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme), var(--defaut-dark-thinkray-theme), var(--defaut-light-thinkray-theme), var(--defaut-dark-thinkdigital-theme), var(--defaut-light-thinkdigital-theme));
+    z-index: 1000;
+    transition: width 0.2s ease-out;
+}
+
+/* ----------------------------------------- CSS FOR PG-SCROLL-INDICATOR COMPLETE ---------------------------------------------- */

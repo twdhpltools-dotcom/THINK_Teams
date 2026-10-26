@@ -98,10 +98,10 @@
         margin-bottom: 6px;
     }
     .thinkray-benefits-innovate-content-box {
-        padding: 6px 14px;
+        padding: 5px 14px;
     }
     .thinkray-benefits-innovate-content-box h3 span {
-        font-size: 280%;
+        font-size: 250%;
     }
     .thinkray-benefits .benefits-innovate p {
         margin-bottom: 8px;
@@ -155,15 +155,6 @@
     .pricing-card-bottom {
         padding: 12px 0;
     }
-    .product-comparison-content-body p {
-        margin: 20px 0;
-    }
-    .side-bar-mark-up ul.pg-listing {
-        margin-top: 25px;
-    }
-    .side-bar-mark-up {
-        margin-bottom: 30px;
-    }
     .login-hero .hero-content .hero-feature-img {
         max-width: 45%;
         min-height: 250px;
@@ -207,6 +198,16 @@
     }
     .diagram-img.thinkdigital-themed {
         max-width: 55%;
+    }
+    .hamburger-content {
+        padding: 100px 0 30px;
+    }
+    table thead tr th,
+    table tbody tr td {
+        padding: 12px 15px;
+    }
+    hr.pg-hr {
+        margin: 12px 0;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 1599PX) COMPLETE ------------------------------*/
@@ -407,9 +408,6 @@
     .our-teams-slider {
         padding: 50px 0;
     }
-    .hamburger-content {
-        padding: 140px 0 50px;
-    }
     .event-gallery-box {
         height: 250px;
     }
@@ -419,20 +417,8 @@
     button.pg-submit-btn {
         padding: 12px 0;
     }
-    .product-comparison-side-bar {
-        padding: 30px 25px;
-    }
-    .side-bar-mark-up h5 {
-        margin-bottom: 12px;
-    }
     .side-bar-mark-up {
-        margin-bottom: 25px;
-    }
-    .side-bar-cta {
-        padding: 15px 18px;
-    }
-    .product-comparison-content-heading {
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     }
     .product-comparison-content-body p {
         margin: 15px 0;
@@ -597,15 +583,18 @@
     }
     ul.menu-useful-links li {
         font-size: 90% !important;
-        padding: 10px 20px;
+        padding: 10px 5px;
         margin-bottom: 0 !important;
         border: none;
+    }
+    li.menu-product-links-box p {
+        margin: 8px 0;
     }
     .bottom-header {
         position: relative;
     }
     .bottom-header .logo {
-        max-width: 180px;
+        max-width: 170px;
     }
     .bottom-header {
         top: 5%;
@@ -618,7 +607,7 @@
         border: none
     }
     ul.menu {
-        margin-top: 40px;
+        margin-top: 35px;
         align-items: flex-start;
         flex-direction: column;
     }
@@ -788,16 +777,12 @@
     .quote-icon {
         max-width: 80px;
     }
-    hr.pg-hr {
-        margin: 12px 0;
-    }
     .user-info-badge {
         flex-wrap: wrap;
     }
     .user-info-badge-img {
         min-height: 50px;
         max-width: 50px;
-        margin: 5px 15px;
     }
     .user-info-badge-img img {
         min-height: 50px;
@@ -904,7 +889,7 @@
         margin: 12px 0 8px;
     }
     .hamburger-content {
-        padding: 50px 0 40px;
+        padding: 40px 0 30px;
     }
     .bottom-header.sticky {
         padding: 60px 0 20px;
@@ -924,11 +909,11 @@
     .pricing-method-box-icon-img {
         margin: 0 0 5px;
     }
-    .product-comparison-content-body p {
-        margin: 18px 0;
-    }
     .product-comparison-content {
-        padding: 30px 10px;
+        padding: 28px 0;
+    }
+    .contact-content-info-box .social {
+        margin-bottom: 10px;
     }
     .login-hero .hero-content {
         padding: 40px 50px 20px;
@@ -943,7 +928,8 @@
         margin-bottom: 15px;
     }
     .benefits-content {
-        margin-top: 15px;
+        margin: 12px 0;
+        height: auto;
     }
     .copyright-footer-content-icon .social i {
         min-height: 35px;
@@ -1199,7 +1185,7 @@
         margin: 15px 0 0;
     }
     .hamburger-content {
-        padding: 40px 0 30px;
+        padding: 30px 0 20px;
     }
     .hamburger-content h1 {
         margin-bottom: 15px;
@@ -1222,15 +1208,16 @@
     .top-header-news {
         display: none;
     }
-    .product-comparison-content-heading {
-        margin-bottom: 25px;
-    }
-    .product-comparison-content-body p {
-        margin: 15px 0;
-    }
     table thead tr th,
     table tbody tr td {
         padding: 10px 8px;
+    }
+    .think-table table thead tr th,
+    .think-table table tbody tr td {
+        white-space: nowrap;
+    }
+    span.list-type-para {
+        padding-left: 22px;
     }
     .owl-carousel.carousel-masker::before, .owl-carousel.carousel-masker::after {
         max-width: 80px;
@@ -1276,10 +1263,10 @@
         padding: 22px 18px;
     }
     .main-footer-info .logo {
-        max-width: 180px;
+        max-width: 170px;
     }
     .main-footer-info h6 {
-        margin: 18px 0;
+        margin: 15px 0;
     }
     ul.footer-menu li {
         margin-bottom: 15px;
@@ -1287,16 +1274,16 @@
     .copyright-footer-content-icon .social {
         max-width: 45px;
     }
-    .sub-menu-links h6 {
-        margin-bottom: 10px;
-    }
     ul.menu {
-        margin-top: 35px;
+        margin-top: 30px;
     }
     form .form-group.input-box input,
     form .form-group.input-box select,
     form .form-group.input-box textarea {
         padding: 10px 8px 10px 35px;
+    }
+    .thinkdigital-systems-content {
+        background-position: top;
     }
     .monitor-screen,
     .monitor-screen img {
@@ -1401,7 +1388,7 @@
         max-width: 40px;
     }
     button.mobile-toggler span {
-        max-width: 90%;
+        max-width: 70%;
         margin-bottom: 5px;
     }
     ul.menu-product-links li.menu-product-links-box {
@@ -1679,16 +1666,13 @@
         max-width: 50px;
     }
     .product-comparison-side-bar {
-        padding: 20px 20px;
+        padding: 18px 15px;
     }
     .pg-decor-chip {
         padding: 9px 10px;
     }
     .hero-img .pg-decor-chip {
         left: 45%;
-    }
-    .side-bar-mark-up ul.pg-listing {
-        margin-top: 20px;
     }
     .product-comparison-content-heading {
         margin-bottom: 20px;
@@ -1749,6 +1733,9 @@
     .mobile-screen img {
         height: 190px;
     }
+    ul.menu-product-links li.menu-product-links-box {
+        padding: 10px 12px;
+    }
     .mobile {
         left: 20px;
         width: 100px;
@@ -1771,7 +1758,7 @@
         margin-bottom: 12px;
     }
     .benefits-content {
-        margin-top: 5px;
+        margin: 10px 0;
     }
     .blog-gallery-card {
         margin-bottom: 10px;
@@ -1804,18 +1791,29 @@
         width: 200px;
         height: 15px;
     }
+    .side-bar-mark-up ul.pg-listing {
+        margin-top: 18px;
+    }
+    .side-bar-mark-up {
+        margin-bottom: 20px;
+    }
+    .product-comparison-content {
+        padding: 25px 0;
+    }
+    span.list-type-para::before {
+        padding: 0 3px;
+    }
+    .decor-para {
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 576PX) COMPLETE ------------------------------*/
 
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) START ------------------------------*/
 @media only screen and (max-width: 375px) {
     button.mobile-toggler {
-        max-width: 40px;
         padding: 6px;
-    }
-    button.mobile-toggler span {
-        max-width: 75%;
-        margin-bottom: 5px;
     }
     .nav-search {
         padding: 10px 25px;
@@ -1876,7 +1874,7 @@
         max-width: 90px;
     }
     .thinkray-benefits-innovate-content-box {
-        padding: 10px 20px;
+        padding: 5px 12px;
     }
     .thinkray-success-content {
         gap: 12px;
@@ -1896,9 +1894,6 @@
     }
     .product-comparison-content-body p {
         margin: 12px 0;
-    }
-    .side-bar-mark-up ul.pg-listing {
-        margin-top: 15px;
     }
     .side-bar-mark-up {
         margin-bottom: 20px;
@@ -1920,6 +1915,9 @@
     }
     .thinkray-success-content-box h4 {
         font-size: 180%;
+    }
+    .benefits-innovate h5 {
+        margin-bottom: 10px;
     }
 }
 /*----------------------------- MEDIA QUERRY CSS FOR (RESPONSIVE FOR MAXIMUM 375PX) COMPLETE ------------------------------*/
