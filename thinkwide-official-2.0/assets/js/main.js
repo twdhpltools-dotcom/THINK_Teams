@@ -309,14 +309,14 @@ $(document).ready(function () {
       0: {
         items: 4
       },
-      450: {
-        items: 3
+      400: {
+        items: 6
       },
       600: {
-        items: 2
+        items: 8
       },
-      1000: {
-        items: 4
+      990: {
+        items: 5
       }
     }
   });
@@ -361,7 +361,7 @@ document.querySelectorAll('.switch-btn').forEach(btn => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("admin_login_form").classList.add("active");
+  document.getElementById("admin_login_form")?.classList.add("active");
 });
 /* ----------------------------------------- JS FOR TOGGLE-SWITCH COMPLETE ---------------------------------------------- */
 
@@ -441,6 +441,31 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 /* ----------------------------------------- JS FOR TARGETED-HIGHLIGHTER COMPLETE ---------------------------------------------- */
 
+/* ----------------------------------------- JS FOR LIGHTBOX START ---------------------------------------------- */
+const lightbox = document.createElement('div');
+lightbox.className = 'gallery-lightbox';
+lightbox.innerHTML = '<span class="gallery-lightbox-close">&times;</span><img alt="Gallery Image">';
+document.body.appendChild(lightbox);
+
+document.querySelectorAll('.event-gallery-box-hover').forEach(item => {
+    item.addEventListener('click', () => {
+        const img = item.closest('.event-gallery-box').querySelector('img');
+        lightbox.querySelector('img').src = img.currentSrc || img.src;
+        lightbox.classList.add('active');
+    });
+});
+
+lightbox.addEventListener('click', e => {
+    if (e.target !== lightbox.querySelector('img')) {
+        lightbox.classList.remove('active');
+    }
+});
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') lightbox.classList.remove('active');
+});
+/* ----------------------------------------- JS FOR LIGHTBOX COMPLETE ---------------------------------------------- */
+
 /* ----------------------------------------- JS FOR PG-SCROLL-INDICATOR START ---------------------------------------------- */
 const bar = document.createElement("div");
 bar.className = "scroll-progress";
@@ -494,7 +519,6 @@ updateScrollProgress();
     });
 
     modal.addEventListener('hidden.bs.modal', function () {
-      // Stop playback and release the embedded page when closed.
       iframe.src = 'about:blank';
     });
   }

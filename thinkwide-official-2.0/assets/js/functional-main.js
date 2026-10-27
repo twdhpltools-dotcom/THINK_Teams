@@ -1,7 +1,6 @@
 /*------------------------------------------- JS FOR FUNCTIONAL-MAIN START ------------------------------------------*/
 /* ----------------------------------------- JS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER START ---------------------------------------------- */
 $(document).ready(function () {
-
   const desktop = $(".desktop-carousel");
   const mobile = $(".mobile-carousel");
   const monitor = $("#monitorDevice");
@@ -9,7 +8,6 @@ $(document).ready(function () {
   let mouseX = 50;
   let mouseY = 50;
   let zoomFrame = null;
-
 
   desktop.owlCarousel({
     items: 1,
@@ -26,7 +24,6 @@ $(document).ready(function () {
     autoplayHoverPause: true
   });
 
-
   mobile.owlCarousel({
     items: 1,
     loop: true,
@@ -39,9 +36,7 @@ $(document).ready(function () {
     nav: false
   });
 
-
   desktop.on("changed.owl.carousel", function (event) {
-
     const index = event.relatedTarget.relative(event.item.index);
 
     mobile.trigger("to.owl.carousel", [
@@ -49,12 +44,9 @@ $(document).ready(function () {
       900,
       true
     ]);
-
   });
 
-
   function showMobile() {
-
     const wrapper = document.getElementById("deviceShowcase");
 
     if (!wrapper) return;
@@ -76,24 +68,17 @@ $(document).ready(function () {
         0,
         true
       ]);
-
     }
-
   }
-
 
   monitor.on("click", showMobile);
 
-
   monitor.on("keydown", function (e) {
-
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       showMobile();
     }
-
   });
-
 
   function getMobileImage() {
     return mobile
@@ -102,11 +87,9 @@ $(document).ready(function () {
       .first();
   }
 
-
   mobile.find(".owl-stage-outer").css({
     overflow: "hidden"
   });
-
 
   mobile.find("img").css({
     width: "100%",
@@ -116,25 +99,20 @@ $(document).ready(function () {
     transition: "transform .35s ease"
   });
 
-
   monitor.on("mouseenter", function () {
-
     const img = getMobileImage();
 
     img.css({
       transition: "transform .25s ease"
     });
-
   });
 
 
   monitor.on("mousemove", function (e) {
-
     const rect = this.getBoundingClientRect();
 
     mouseX =
       ((e.clientX - rect.left) / rect.width) * 100;
-
     mouseY =
       ((e.clientY - rect.top) / rect.height) * 100;
 
@@ -142,14 +120,11 @@ $(document).ready(function () {
     mouseX = Math.max(0, Math.min(100, mouseX));
     mouseY = Math.max(0, Math.min(100, mouseY));
 
-
     if (zoomFrame) {
       cancelAnimationFrame(zoomFrame);
     }
 
-
     zoomFrame = requestAnimationFrame(function () {
-
       const img = getMobileImage();
 
       if (!img.length) return;
@@ -161,9 +136,7 @@ $(document).ready(function () {
       });
 
     });
-
   });
-
 
   monitor.on("mouseleave", function () {
 
@@ -179,7 +152,6 @@ $(document).ready(function () {
 
   });
 
-
   mobile.on("translated.owl.carousel", function () {
 
     mobile.find(".owl-item img").css({
@@ -188,13 +160,11 @@ $(document).ready(function () {
     });
 
   });
-
 });
 /* ----------------------------------------- JS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER COMPLETE ---------------------------------------------- */
 
 /* ----------------------------------------- JS FOR CONCEPTUAL-FEATURE-SLIDER START ---------------------------------------------- */
 $(document).ready(function () {
-
   const $feature = $('.feature-types');
   const $right = $('#feature_carousel').closest('.col-lg-8, .col-lg-12');
 
@@ -308,7 +278,6 @@ $(document).ready(function () {
   }
 
   $('#feature_carousel').on('click', '.feature-card', function () {
-
     if (animating) return;
 
     const title = $(this)
@@ -335,11 +304,9 @@ $(document).ready(function () {
         }, 150);
 
       });
-
       return;
     }
     showFeature(title);
-
   });
 });
 /* ----------------------------------------- JS FOR CONCEPTUAL-FEATURE-SLIDER COMPLETE ---------------------------------------------- */
