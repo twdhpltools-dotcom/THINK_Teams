@@ -39,11 +39,13 @@ body {
     height: auto;
     width: 100%;
     font-family: var(--defaut-font-family);
+    font-size: 100%;
     line-height: var(--defaut-line-height);
     font-weight: var(--defaut-font-weight);
     color: var(--defaut-dark-color);
     background: #007cf80c;
     position: relative;
+    z-index: 1;
     scroll-behavior: smooth;
 }
 
@@ -91,7 +93,7 @@ ol li {
 ul li.active a,
 ol li.active a {
     color: var(--defaut-dark-thinklab-theme);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 img {
@@ -544,18 +546,19 @@ ul.pg-listing li {
 ul.pg-listing li::before {
     content: '✓';
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translate(0, -50%);
     background: var(--defaut-light-thinkdigital-theme);
     color: var(--defaut-light-color);
     border-radius: 50%;
-    height: 16px;
-    width: 16px;
+    height: 15px;
+    width: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
-    font-size: 65%;
+    font-size: 60%;
 }
 
 ul.pg-listing li:last-child {
@@ -686,11 +689,12 @@ span.pg-offer-chip {
     display: inline-block;
     border-radius: 5px;
     backdrop-filter: blur(10px);
-    border: 1px solid var(--defaut-dark-thinklab-theme);
-    font-size: 80%;
-    padding: 5px 20px;
+    border: 1px solid #0928a857;
+    font-size: 75%;
+    font-weight: 500;
+    padding: 4px 12px;
     color: var(--defaut-dark-color);
-    background: #007cf836;
+    background: #007cf80a;
 }
 
 .decor-para {
@@ -718,7 +722,7 @@ span.pg-offer-chip {
 span.list-type-para {
     display: block;
     font-size: 100%;
-    padding-left: 30px;
+    padding-left: 24px;
     position: relative;
     z-index: 1;
 }
@@ -727,9 +731,14 @@ span.list-type-para::before {
     position: absolute;
     top: 0;
     left: 0;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--defaut-light-color);
+    font-size: 80%;
     border-radius: 50%;
-    padding: 2px 5px;
     z-index: 2;
 }
 
@@ -2347,8 +2356,36 @@ li.feature-types-box p {
     color: var(--defaut-light-color);
 }
 
-.main-contact .contact-content {
+.main-contact .contact-content,
+.main-contact .basic-form.contact-form,
+.main-contact .basic-form.contact-form .basic-form-head p {
     color: var(--defaut-dark-color);
+}
+
+.main-contact .basic-form.contact-form {
+    box-shadow: 0 25px 60px rgb(0 0 0 / 10%), inset 0 1px 1px rgba(255, 255, 255, .12);
+}
+
+.main-contact form .form-group.input-box input,
+.main-contact form .form-group.input-box select,
+.main-contact form .form-group.input-box textarea {
+    border: 1px solid #0928a838;
+    color: var(--defaut-dark-color);
+}
+
+.main-contact form .form-group.input-box input::placeholder,
+.main-contact form .form-group.input-box textarea::placeholder {
+    color: #454b5a;
+}
+
+form .form-group.input-box i {
+    top: 65%;
+    color: #dae0f1;
+    font-size: 100%;
+}
+
+.main-contact form .form-group.input-box i {
+    color: #8c9bdc;
 }
 
 .contact-content h3 {
@@ -2443,7 +2480,7 @@ li.feature-types-box p {
 .basic-form.contact-form {
     height: 100%;
     width: 100%;
-    max-width: 520px;
+    max-width: 550px;
     padding: 22px 30px;
     display: flex;
     flex-direction: column;
@@ -3196,11 +3233,6 @@ form .form-group.input-box i {
     color: var(--defaut-dark-color);
 }
 
-.our-teams-img {
-    height: auto;
-    width: 100%;
-}
-
 .our-teams-divide-content {
     height: auto;
     width: 100%;
@@ -3216,11 +3248,10 @@ form .form-group.input-box i {
 .our-teams-slider {
     height: auto;
     width: 100%;
-    padding: 35px 0;
 }
 
 .our-teams-img-box {
-    height: auto;
+    height: 100%;
     width: 100%;
     border-radius: 10px;
     background: #ffffff50;
@@ -3295,6 +3326,7 @@ form .form-group.input-box i {
     box-shadow: 0 0 30px 0 #00000010;
     padding: 2px;
     color: var(--defaut-light-color);
+    overflow: hidden;
     position: relative;
     z-index: 1;
 }
@@ -3322,6 +3354,7 @@ form .form-group.input-box i {
     display: flex;
     align-items: end;
     padding: 22px 25px 15px;
+    transition: all 0.4s ease-in-out;
 }
 
 .case-study-card-info h4 {
@@ -3349,7 +3382,6 @@ form .form-group.input-box i {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to left, var(--defaut-light-background), #f2f2f2, var(--defaut-light-background));
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -3388,6 +3420,11 @@ form .form-group.input-box i {
     font-size: 100%;
 }
 
+.breadcrumb-menu ul li.active {
+    color: var(--defaut-dark-thinklab-theme);
+    font-weight: 600;
+}
+
 .breadcrumb-menu ul li i {
     margin: 0 15px;
 }
@@ -3404,6 +3441,42 @@ form .form-group.input-box i {
     width: 100%;
     padding: 4px;
     border: 1px solid #00000010;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.event-gallery-box-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000035;
+    backdrop-filter: blur(2px);
+    color: var(--defaut-light-color);
+    border-radius: 10px;
+    z-index: 2;
+    transform: scale(1.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-gallery-box-hover span {
+    font-size: 400%;
+    font-weight: 300;
+}
+
+.event-gallery-box:hover .event-gallery-box-hover {
+    transform: scale(0.9);
+    opacity: 1;
+    visibility: visible;
 }
 
 .event-gallery-box-img {
@@ -3425,7 +3498,7 @@ form .form-group.input-box i {
 .pricing-content {
     height: auto;
     width: 100%;
-    margin: 40px 0;
+    margin: 35px 0;
 }
 
 .pricing-card {
@@ -3434,8 +3507,8 @@ form .form-group.input-box i {
     border-radius: 10px;
     background: #ffffff50;
     backdrop-filter: blur(20px);
-    box-shadow: 0 5px 10px 0 #00000010;
-    padding: 10px;
+    box-shadow: 0 10px 25px 0 #0000001a;
+    padding: 5px;
     position: relative;
     z-index: 1;
 }
@@ -3448,11 +3521,14 @@ form .form-group.input-box i {
     left: 0;
     height: auto;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     border-radius: 10px 10px 0 0;
     text-align: center;
+    font-size: 105%;
+    font-weight: 500;
     background: linear-gradient(230deg, var(--defaut-light-thinklab-theme), var(--defaut-dark-thinklab-theme));
     color: var(--defaut-light-color);
+    z-index: 2;
 }
 
 .pricing-card.active::before {
@@ -3484,13 +3560,13 @@ form .form-group.input-box i {
 .pricing-card-bottom {
     height: auto;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .pricing-card-top h3 {
-    font-size: 160%;
-    font-weight: 700;
-    margin: 12px 0;
+    font-size: 150%;
+    font-weight: 600;
+    margin: 15px 0 5px;
 }
 
 .pricing-card-top p {
@@ -3503,14 +3579,14 @@ form .form-group.input-box i {
 
 .pricing-card-middle h2 {
     color: var(--defaut-dark-thinklab-theme);
-    font-size: 250%;
-    font-weight: 900;
+    font-size: 230%;
+    font-weight: 700;
 }
 
 .pricing-card-middle h2 span {
     display: block;
     color: var(--defaut-dark-color);
-    font-size: 50%;
+    font-size: 40%;
     font-weight: var(--defaut-font-weight);
 }
 
@@ -3519,25 +3595,30 @@ form .form-group.input-box i {
 }
 
 .pricing-card-middle p {
-    font-size: 90%;
+    font-size: 85%;
+    font-weight: 500;
     margin: 18px 0;
+    padding: 4px 0;
+    background: linear-gradient(45deg, #c0ab0017, transparent, #c0ab0017);
+    border-radius: 5px;
+    text-align: center;
 }
 
 .pricing-card-bottom ul.pg-listing li {
     font-size: 90%;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 }
 
 .pricing-card-bottom ul.pg-listing.thinkray-themed li {
-    font-size: 100%;
+    font-size: 95%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
 
 .pricing-card-bottom ul.pg-listing.thinkray-themed li span {
-    font-size: 110%;
+    font-size: 105%;
     font-weight: 700;
 }
 
@@ -3553,21 +3634,21 @@ form .form-group.input-box i {
 .pricing-card-enterprise-notice {
     height: auto;
     width: 100%;
-    padding: 25px 15px;
+    padding: 20px 10px;
     border: 1px solid #00000010;
     border-radius: 10px;
     text-align: center;
 }
 
 .pricing-card-enterprise-notice h3 {
-    font-size: 150%;
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-size: 145%;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .pricing-card-enterprise-notice p {
     font-size: 85%;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .pricing-card-top-icon-img {
@@ -3588,35 +3669,48 @@ form .form-group.input-box i {
 .pricing-method-box {
     height: 100%;
     width: 100%;
-    display: flex;
-    padding: 30px 20px;
+    padding: 25px 18px;
     border-radius: 10px;
     box-shadow: 0 0 30px 0 #00000010;
     background: var(--defaut-light-background);
 }
 
-.pricing-method-box-icon-img {
-    height: auto;
-    width: 100%;
-    max-width: 60px;
-    margin-right: 15px;
-}
-
 .pricing-method-box-text {
     height: auto;
     width: 100%;
-    max-width: 80%;
 }
 
-.pricing-method-box-text h6 {
-    font-size: 140%;
+.pricing-method-box-icon-img {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pricing-method-box-icon-img img {
+    max-width: 60px; 
+    margin-right: 10px;
+}
+
+.pricing-method-box-icon-img h6 {
+    font-size: 135%;
     font-weight: 700;
     color: var(--defaut-dark-thinklab-theme);
-    margin-bottom: 18px;
+}
+
+.pricing-method-box-text ul.pg-listing li {
+    font-size: 90%;
 }
 
 .pricing-method-box-text p {
-    font-size: 80%;
+    font-size: 85%;
+}
+
+.payment-method-img {
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    padding: 0 8px;
 }
 
 /*--------------------------------------------- CSS FOR PRICING-METHOD SECTION COMPLETE ---------------------------------------*/
@@ -4004,7 +4098,7 @@ ul.footer-menu li:hover {
 
 .owl-dots {
     text-align: center;
-    margin: 35px 0 0;
+    margin: 25px 0 0;
 }
 
 .owl-dot span {
@@ -4103,7 +4197,7 @@ ul.footer-menu li:hover {
 
 /*--------------------------------------------- CSS FOR OWL-CAROUSEL COMPLETE ---------------------------------------*/
 
-/*--------------------------------------------- CSS FOR ACCORDIAN START ---------------------------------------*/
+/*--------------------------------------------- CSS FOR FUNCTIONAL-ACCORDIAN START ---------------------------------------*/
 .accordion-item {
     border: none;
     margin-bottom: 15px;
@@ -4147,9 +4241,9 @@ ul.footer-menu li:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 3px;
+    height: 4px;
     width: 0;
-    background: var(--defaut-dark-thinklab-theme);
+    background: var(--defaut-light-thinklab-theme);
     animation: faqProgress 5s linear forwards;
 }
 
@@ -4157,13 +4251,12 @@ ul.footer-menu li:hover {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
 }
 
-/*--------------------------------------------- CSS FOR ACCORDIAN COMPLETE ---------------------------------------*/
+/*--------------------------------------------- CSS FOR FUNCTIONAL-ACCORDIAN COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR MARQUEE START ---------------------------------------*/
 .marquee {
@@ -4450,6 +4543,54 @@ header.main-header .top-header-news .marquee-content span em {
 }
 
 /* ----------------------------------------- CSS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER COMPLETE ---------------------------------------------- */
+
+/*--------------------------------------------- CSS FOR LIGHTBOX START ---------------------------------------*/
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    background: #000000cc;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 25px;
+    cursor: zoom-out;
+}
+
+.gallery-lightbox.active {
+    display: flex;
+}
+
+.gallery-lightbox img {
+    max-width: 50%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #ffffff6e;
+    animation: zoomIn 0.25s ease-in-out;
+}
+
+.gallery-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--defaut-light-color);
+    font-size: 280%;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*--------------------------------------------- CSS LIGHTBOX COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PG-SCROLL-INDICATOR START ---------------------------------------------- */
 .scroll-progress {
