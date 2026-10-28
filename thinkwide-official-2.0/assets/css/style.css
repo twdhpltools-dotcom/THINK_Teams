@@ -311,7 +311,7 @@ a.pg-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid #67abffd9;
     background: #ffffffa3;
     /* background: linear-gradient(90deg, #09bb9b 0%, #33ceea 35%, #359ae3 68%, #8ab4ff 100%); */
@@ -319,7 +319,6 @@ a.pg-btn {
     -webkit-backdrop-filter: blur(18px) saturate(180%);
     box-shadow: 0 10px 22px #397bd62b, inset 0 2px 2px #ffffff, inset 0 -2px 5px #7fb2ff30;
     color: var(--defaut-dark-color);
-    text-decoration: none;
     font-size: 95%;
     font-weight: 600;
     overflow: hidden;
@@ -381,6 +380,20 @@ button.pg-submit-btn {
 a.pg-btn,
 button.pg-submit-btn {
     font-size: 100%;
+}
+
+a.pg-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--defaut-dark-thinklab-theme);
+    font-size: 95%;
+    font-weight: 600;
+}
+
+a.pg-link i {
+    font-size: 100%;
+    transform: rotate(-30deg);
 }
 
 hr.pg-hr {
@@ -605,15 +618,21 @@ span.mini-chip {
     display: inline-block;
     border-radius: 100px;
     backdrop-filter: blur(10px);
-}
-
-span.mini-chip {
     font-size: 80%;
     padding: 4px 15px;
     color: var(--defaut-light-color);
     background: #ffffff50;
     border: 1px solid #ffffff80;
     box-shadow: 0 2px 10px 0 #00000010;
+}
+
+span.mini-chip.dark {
+    color: var(--defaut-dark-color);
+    border-color: #0928a814;
+}
+
+span.pg-chip {
+
 }
 
 .pg-decor-chip {
@@ -992,6 +1011,44 @@ span.item-breaker-dark {
     display: none;
 }
 
+.side-bar-mark-up .event-gallery-box {
+    height: 90px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.side-bar-mark-up .event-gallery-box-hover {
+    border-radius: 5px;
+}
+
+.side-bar-mark-up .event-gallery-box-hover span {
+    font-size: 350%;
+}
+
+.side-bar-mark-up .event-gallery-box:hover .event-gallery-box-hover {
+    transform: scale(0.8);
+}
+
+.side-bar-cta-head {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0 15px;
+}
+
+.side-bar-cta-head h4 {
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.side-bar-cta-head h4 em {
+    color: #76808a;
+    font-size: 80%;
+    font-weight: 500;
+}
+
 .side-bar-cta {
     height: auto;
     width: 100%;
@@ -1057,6 +1114,7 @@ span.item-breaker-dark {
     width: 110px;
     height: 80px;
     transform-style: preserve-3d;
+    z-index: 1;
 }
 
 .book-cover,
@@ -1352,6 +1410,7 @@ li.menu-product-links-box p {
 li.menu-product-links-box a.pg-btn {
     padding: 8px 15px;
     font-size: 90%;
+    border-radius: 6px;
     box-shadow: unset;
 }
 
@@ -1960,7 +2019,7 @@ li.feature-types-box p {
     padding: 14px 22px;
     background: var(--defaut-light-background);
     box-shadow: 0 5px 20px 0 #00000010;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 18px;
     display: flex;
     align-items: center;
@@ -2254,6 +2313,8 @@ li.feature-types-box p {
 }
 
 .benefits-content-box-listing {
+    height: auto;
+    width: 100%;
     margin: 25px 0;
     padding: 18px 15px;
     border-radius: 10px;
@@ -2292,7 +2353,7 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     color: var(--defaut-dark-color);
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     position: relative;
     z-index: 1;
 }
@@ -2342,6 +2403,55 @@ li.feature-types-box p {
     z-index: 2;
 }
 
+.blog-gallery-card-mini {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: var(--defaut-dark-color);
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-gallery-card-mini-img {
+    padding: 2px;
+    border: 1px solid #b6daff;
+    height: auto;
+    width: 100%;
+    height: 75px;
+    max-width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-gallery-card-mini-img img {
+    height: 100%;
+}
+
+.blog-gallery-card-mini span {
+    display: block;
+    font-size: 80%;
+    font-weight: 500;
+    color: #7f7f7f;
+    margin-bottom: 7px;
+}
+
+.blog-gallery-card-mini h6 {
+    font-size: 95%;
+    font-weight: 600;
+}
+
+.blog-gallery-card-mini p {
+    font-size: 75%;
+    margin-top: 4px;
+}
+
+.blog-gallery-card-mini:last-child {
+    margin-bottom: 0;
+}
+
 /*--------------------------------------------- CSS FOR BLOG-GALLERY SECTION COMPLETE ---------------------------------------*/
 
 /*--------------------------------------------- CSS FOR CONTACT SECTION START ---------------------------------------*/
@@ -2379,9 +2489,9 @@ li.feature-types-box p {
 }
 
 form .form-group.input-box i {
-    top: 65%;
+    top: 68%;
     color: #dae0f1;
-    font-size: 100%;
+    font-size: 105%;
 }
 
 .main-contact form .form-group.input-box i {
@@ -2529,7 +2639,7 @@ form .form-group.input-box {
 }
 
 form .form-group.input-box label {
-    font-size: 80%;
+    font-size: 85%;
     margin-bottom: 7px;
     font-weight: 500;
 }
@@ -2575,12 +2685,6 @@ form .form-group.input-box textarea::placeholder {
 .basic-form.dark.contact-form form .form-group.input-box input::placeholder,
 .basic-form.dark.contact-form form .form-group.input-box textarea::placeholder {
     color: #696969;
-}
-
-form .form-group.input-box i {
-    top: 65%;
-    color: #dae0f1;
-    font-size: 100%;
 }
 
 .basic-form.dark.contact-form form .form-group.input-box i {
@@ -3560,7 +3664,7 @@ form .form-group.input-box i {
 .pricing-card-bottom {
     height: auto;
     width: 100%;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .pricing-card-top h3 {
@@ -3597,7 +3701,7 @@ form .form-group.input-box i {
 .pricing-card-middle p {
     font-size: 85%;
     font-weight: 500;
-    margin: 18px 0;
+    margin: 15px 0;
     padding: 4px 0;
     background: linear-gradient(45deg, #c0ab0017, transparent, #c0ab0017);
     border-radius: 5px;
@@ -3689,7 +3793,7 @@ form .form-group.input-box i {
 }
 
 .pricing-method-box-icon-img img {
-    max-width: 60px; 
+    max-width: 60px;
     margin-right: 10px;
 }
 
@@ -4251,6 +4355,7 @@ ul.footer-menu li:hover {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -4585,11 +4690,13 @@ header.main-header .top-header-news .marquee-content span em {
         transform: scale(.9);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 /*--------------------------------------------- CSS LIGHTBOX COMPLETE ---------------------------------------*/
 
 /* ----------------------------------------- CSS FOR PG-SCROLL-INDICATOR START ---------------------------------------------- */
