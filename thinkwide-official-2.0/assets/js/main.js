@@ -448,21 +448,21 @@ lightbox.innerHTML = '<span class="gallery-lightbox-close">&times;</span><img al
 document.body.appendChild(lightbox);
 
 document.querySelectorAll('.event-gallery-box-hover').forEach(item => {
-    item.addEventListener('click', () => {
-        const img = item.closest('.event-gallery-box').querySelector('img');
-        lightbox.querySelector('img').src = img.currentSrc || img.src;
-        lightbox.classList.add('active');
-    });
+  item.addEventListener('click', () => {
+    const img = item.closest('.event-gallery-box').querySelector('img');
+    lightbox.querySelector('img').src = img.currentSrc || img.src;
+    lightbox.classList.add('active');
+  });
 });
 
 lightbox.addEventListener('click', e => {
-    if (e.target !== lightbox.querySelector('img')) {
-        lightbox.classList.remove('active');
-    }
+  if (e.target !== lightbox.querySelector('img')) {
+    lightbox.classList.remove('active');
+  }
 });
 
 document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') lightbox.classList.remove('active');
+  if (e.key === 'Escape') lightbox.classList.remove('active');
 });
 /* ----------------------------------------- JS FOR LIGHTBOX COMPLETE ---------------------------------------------- */
 
@@ -476,8 +476,8 @@ function updateScrollProgress() {
   const maxScroll = doc.scrollHeight - doc.clientHeight;
 
   const progress = maxScroll > 0
-  ? (doc.scrollTop / maxScroll) * 100
-  : 0;
+    ? (doc.scrollTop / maxScroll) * 100
+    : 0;
 
   bar.style.width = progress + "%";
 }
@@ -499,7 +499,7 @@ updateScrollProgress();
       mirror: false,
       offset: 70,
       duration: 450,
-      easing: 'ease-out',
+      easing: 'ease-in-out',
       debounceDelay: 80,
       throttleDelay: 120
     });
