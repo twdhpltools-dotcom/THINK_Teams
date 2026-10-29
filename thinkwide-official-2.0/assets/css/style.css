@@ -393,7 +393,7 @@ a.pg-link {
 
 a.pg-link i {
     font-size: 100%;
-    transform: rotate(-30deg);
+    transform: rotate(-45deg);
 }
 
 hr.pg-hr {
@@ -4706,7 +4706,7 @@ header.main-header .top-header-news .marquee-content span em {
     left: 0;
     width: 0;
     height: 6px;
-    background: linear-gradient(90deg, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme), var(--defaut-dark-thinkray-theme), var(--defaut-light-thinkray-theme), var(--defaut-dark-thinkdigital-theme), var(--defaut-light-thinkdigital-theme));
+    background: linear-gradient(90deg, var(--defaut-dark-thinklab-theme), var(--defaut-light-thinklab-theme));
     z-index: 1000;
     transition: width 0.2s ease-out;
 }
