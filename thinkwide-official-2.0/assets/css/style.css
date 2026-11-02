@@ -1348,7 +1348,7 @@ ul.menu li i {
     left: 0;
     height: auto;
     width: 100%;
-    min-width: 250px;
+    min-width: 220px;
     background: #fffffff2;
     backdrop-filter: blur(40px);
     border-bottom: 2px solid #00000020;
@@ -1427,7 +1427,6 @@ ul.menu-useful-links li {
     height: auto;
     width: 100%;
     padding: 12px 5px;
-    border-bottom: 1px solid #00000018;
 }
 
 ul.menu-useful-links li:last-child {
@@ -1818,10 +1817,6 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     max-width: 100px;
-    background-image: url(../images/bg-abs1-lgt.webp);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
     opacity: 0.5;
     z-index: 2;
 }
@@ -1902,8 +1897,8 @@ li.feature-types-box p {
 
 .feature-card-info h3 {
     font-size: 150%;
-    font-weight: 700;
-    margin-bottom: 8px;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .feature-card-info p {
@@ -1949,10 +1944,6 @@ li.feature-types-box p {
     height: auto;
     width: 100%;
     max-width: 60px;
-    background-image: url(../images/bg-abs1.webp);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
     opacity: 0.2;
     z-index: 2;
 }
@@ -2149,10 +2140,6 @@ li.feature-types-box p {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('../images/bg-shape-abs-group.webp');
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
     text-align: center;
     z-index: -1;
 }
@@ -2941,8 +2928,8 @@ form .form-group.input-box textarea::placeholder {
 .bar-stripes-marqee {
     height: auto;
     width: 100%;
-    background: var(--defaut-dark-background);
-    padding: 15px 0;
+    background: var(--defaut-light-thinklab-theme);
+    padding: 8px 0;
 }
 
 /*--------------------------------------------- CSS FOR BAR-STRIPES SECTION COMPLETE ---------------------------------------*/
@@ -3439,6 +3426,19 @@ form .form-group.input-box textarea::placeholder {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.case-study-card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #00000015 10%, transparent 100%);
+    z-index: 2;
 }
 
 .case-study-card-img img {
@@ -3458,6 +3458,7 @@ form .form-group.input-box textarea::placeholder {
     display: flex;
     align-items: end;
     padding: 22px 25px 15px;
+    z-index: 3;
     transition: all 0.4s ease-in-out;
 }
 
@@ -3602,7 +3603,7 @@ form .form-group.input-box textarea::placeholder {
 .pricing-content {
     height: auto;
     width: 100%;
-    margin: 35px 0;
+    margin: 25px 0;
 }
 
 .pricing-card {
@@ -4202,12 +4203,12 @@ ul.footer-menu li:hover {
 
 .owl-dots {
     text-align: center;
-    margin: 25px 0 0;
+    margin: 18px 0 0;
 }
 
 .owl-dot span {
-    height: 8px;
-    width: 20px;
+    height: 6px;
+    width: 15px;
     background: #f2f2f2;
     box-shadow: 0 0 2px 0 #00000010;
     display: block;
@@ -4402,6 +4403,7 @@ header.main-header .top-header-news .marquee {
 .marquee-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     animation: marqueeScroll 10s linear infinite;
     gap: 25px;
 }
@@ -4414,6 +4416,11 @@ header.main-header .top-header-news .marquee {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.marquee-content span {
+    font-size: 150%;
+    font-weight: 300;
 }
 
 .marquee:hover .marquee-content {
@@ -4501,7 +4508,7 @@ header.main-header .top-header-news .marquee-content span em {
 /* ----------------------------------------- CSS FOR EXCEPTIONAL-MONITOR-MOBILE-SLIDER START ---------------------------------------------- */
 .device-showcase {
     position: relative;
-    padding: 20px 0 20px 40px;
+    padding: 10px 0 10px 40px;
     display: flex;
     justify-content: end;
     align-items: center;
