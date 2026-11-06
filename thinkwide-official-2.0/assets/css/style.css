@@ -1256,7 +1256,7 @@ nav.nav {
 
 .bottom-header {
     position: fixed;
-    top: 6%;
+    top: 0;
     left: 0;
     height: auto;
     width: 100%;
@@ -1265,24 +1265,21 @@ nav.nav {
     z-index: 10;
 }
 
-.bottom-header.sticky {
-    top: 1%;
-}
-
 .bottom-header.sticky .nav-links {
-    box-shadow: none;
+    padding: 18px 35px;
+    background: #ffffff91;
+    border-color: #ffffff3d;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .75);
 }
 
 .nav-links {
     height: auto;
     width: 100%;
-    padding: 15px 35px;
-    border-radius: 50px;
-    background: #ffffff91;
-    border: 1px solid #ffffff3d;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(18px) saturate(180%);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .75);
+    padding: 20px 35px;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
 }
 
 ul.menu {
@@ -1294,7 +1291,7 @@ ul.menu {
 ul.menu li {
     font-size: 100%;
     font-weight: 450;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 ul.menu li.sub-links {
@@ -1347,8 +1344,7 @@ ul.menu li i {
     height: auto;
     width: 100%;
     min-width: 220px;
-    background: #fffffff2;
-    backdrop-filter: blur(40px);
+    background: var(--defaut-light-background);
     border-bottom: 2px solid #00000020;
     padding: 15px 18px;
     border-radius: 10px;
@@ -1358,9 +1354,11 @@ ul.menu li i {
 
 .sub-menu.product-menu {
     position: fixed;
-    top: 42px;
-    max-width: 100%;
-    padding: 20px 25px;
+    top: 45px;
+    left: 30%;
+    max-width: 60%;
+    padding: 18px 20px;
+    z-index: 10;
 }
 
 .sub-menu-links h6 {
@@ -1381,7 +1379,7 @@ ul.menu-product-links {
 ul.menu-product-links li.menu-product-links-box {
     height: auto;
     width: 100%;
-    max-width: 48%;
+    max-width: 23%;
     border-radius: 10px;
     background: var(--defaut-light-background);
     box-shadow: 0 0 5px 0 #00000010;
@@ -1392,12 +1390,16 @@ ul.menu-product-links li.menu-product-links-box {
 li.menu-product-links-box img {
     height: auto;
     width: 100%;
-    max-width: 125px;
+    max-width: 110px;
 }
 
 li.menu-product-links-box h6 {
-    font-size: 130%;
-    font-weight: 700;
+    font-size: 100%;
+    font-weight: 500;
+    margin: 12px 0 8px;
+    color: var(--defaut-dark-color);
+    line-height: 1.3;
+    opacity: 0.8;
 }
 
 li.menu-product-links-box p {
@@ -2504,7 +2506,7 @@ form .form-group.input-box i {
 .contact-content-info-box .social {
     justify-content: end;
     flex-direction: row-reverse;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 
 .contact-content-info-box .social:last-child {
@@ -3880,22 +3882,14 @@ form .form-group.input-box textarea::placeholder {
 footer.main-footer {
     height: auto;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     padding: 20px 0 15px;
     z-index: 1;
 }
 
 .main-footer-content {
-    padding: 35px 30px;
-    border-radius: 20px;
-    background: #ffffff1f;
-    border: 1px solid #ffffff2e;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(18px) saturate(180%);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .75);
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #00000030;
 }
 
 .main-footer-info {
@@ -3907,7 +3901,7 @@ footer.main-footer {
     height: auto;
     width: 100%;
     max-width: 190px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .main-footer-info h3 {
@@ -3920,9 +3914,10 @@ footer.main-footer {
 }
 
 .main-footer-info h6 {
-    font-size: 120%;
-    font-weight: 700;
-    margin: 15px 0;
+    font-size: 110%;
+    font-weight: 600;
+    margin: 12px 0;
+    opacity: 0.9;
 }
 
 .main-footer-info .contact-content-info-box {
@@ -3956,16 +3951,16 @@ footer.main-footer {
 }
 
 .main-footer-links h6 {
-    font-size: 125%;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 110%;
+    font-weight: 600;
+    margin-bottom: 18px;
+    opacity: 0.9;
 }
 
 ul.footer-menu li {
-    font-size: 100%;
+    font-size: 95%;
     white-space: nowrap;
-    margin-bottom: 18px;
-    padding-left: 10px;
+    margin-bottom: 10px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -3984,12 +3979,10 @@ ul.footer-menu li:hover {
 
 .copyright-footer-content {
     margin-top: 16px;
-    padding: 0 30px;
-    border-radius: 10px;
 }
 
 .copyright-footer-content-txt h4 {
-    font-size: 110%;
+    font-size: 100%;
     line-height: 1.5;
 }
 
@@ -4003,7 +3996,7 @@ ul.footer-menu li:hover {
 .copyright-footer-content-icon .social {
     height: auto;
     width: 100%;
-    max-width: 55px;
+    max-width: 50px;
     cursor: pointer;
 }
 

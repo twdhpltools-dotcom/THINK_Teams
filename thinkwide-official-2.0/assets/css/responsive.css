@@ -100,8 +100,8 @@
         padding: 15px 0 10px;
     }
 
-    .sub-menu {
-        padding: 30px 25px;
+    ul.menu-product-links li.menu-product-links-box {
+        padding: 12px 15px;
     }
 
     .sub-menu.product-menu {
@@ -109,7 +109,12 @@
     }
 
     li.menu-product-links-box img {
-        max-width: 120px;
+        max-width: 105px;
+    }
+
+    li.menu-product-links-box h6 {
+        font-size: 95%;
+        margin: 10px 0 8px;
     }
 
     .thinkray-types-box-icon-img {
