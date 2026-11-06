@@ -1294,8 +1294,9 @@
     }
 
     .copyright-footer-content-icon .social i {
-        min-height: 35px;
-        max-width: 35px;
+        height: 35px;
+        width: 35px;
+        font-size: 130%;
     }
 
     .copyright-footer-content-icon .social {
@@ -2573,8 +2574,8 @@
     }
 
     .social i {
-        min-height: 25px;
-        max-width: 25px;
+        height: 25px;
+        width: 25px;
         font-size: 95%;
     }
 
