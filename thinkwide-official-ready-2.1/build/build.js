@@ -1,7 +1,3 @@
-/* Builds the static ThinkWide website into the repository root.
-   Usage (from the repository root):  node build/build.js
-   Edit page text in build/templates.js and the menu/footer in build/partials/*.html.
-   Testimonials, analyzers, client logos and the form endpoint are in assets/js/data.js (no rebuild needed). */
 const fs = require('fs');
 const path = require('path');
 const { ROUTES, NAVMAP, META, ic } = require('./templates.js');
@@ -54,7 +50,7 @@ function page(key, bodyHTML, metaOverride) {
 <meta property="og:description" content="${esc(desc)}">
 <meta name="theme-color" content="#0A29AA">
 <meta property="og:image" content="assets/img/hero-lab.webp">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/libertinus-serif-display.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="assets/fonts/inter.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
