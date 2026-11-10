@@ -22,7 +22,7 @@ sitemap.xml  robots.txt  .nojekyll
 assets/css/style.css       All styling (colours and fonts are at the top)
 assets/js/data.js          ← EDIT HERE: testimonials, analyzer list, client logos, form endpoint
 assets/js/main.js          Menus, product tour, forms (no need to edit)
-assets/img/                favicon.svg; put client logos in assets/img/clients/
+assets/img/                favicon.ico; put client logos in assets/img/clients/
 
 build/build.js             Regenerates every .html page
 build/templates.js         Page text for all pages
