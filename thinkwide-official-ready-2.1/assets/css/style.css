@@ -436,7 +436,7 @@ body::before {
 .nav-links {
    display: flex;
    align-items: center;
-   gap: 2px;
+   gap: 4px;
    margin: 0 0 0 auto;
    list-style: none;
    padding: 0
@@ -563,7 +563,8 @@ body::before {
 }
 
 .mega-col a .ico {
-   color: var(--blue)
+   /* color: var(--blue); */
+   color: #0a27a8;
 }
 
 .mega-col a:hover {
@@ -3141,6 +3142,7 @@ footer.site {
 
 .faddr>div {
    display: flex;
+   align-items: start;
    gap: 10px
 }
 
@@ -3159,14 +3161,14 @@ footer.site {
 }
 
 .social a {
-   width: 38px;
-   height: 38px;
+   width: 42px;
+   height: 42px;
    border-radius: 10px;
    border: 1px solid var(--dark-line);
    display: grid;
    place-items: center;
-   font-size: .76rem;
-   font-weight: 800;
+   font-size: 22px;
+   font-weight: 600;
    color: #fff;
    background: rgba(255, 255, 255, .04)
 }
@@ -3184,7 +3186,6 @@ footer.site {
    display: flex;
    justify-content: space-between;
    gap: 16px;
-   flex-wrap: wrap;
    padding-block: 22px;
    font-size: .84rem
 }
@@ -4359,7 +4360,8 @@ footer.site::before {
 }
 
 .faddr .ico {
-   color: var(--blue)
+   color: var(--blue);
+   padding-top: 3px;
 }
 
 .faddr a:hover {
